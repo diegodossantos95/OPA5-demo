@@ -1,0 +1,16 @@
+[{
+	"CompanyCode":"CA01",
+	"CompanyCodeName": "Company CA"
+},{
+	"CompanyCode":"CH01",
+	"CompanyCodeName": "Company CH"
+},{
+	"CompanyCode":"DE01",
+	"CompanyCodeName": "Company DE"
+},{
+	"CompanyCode":"IN01",
+	"CompanyCodeName": "Company IN"
+},{
+	"CompanyCode":"US01",
+	"CompanyCodeName": "Company US"
+}]

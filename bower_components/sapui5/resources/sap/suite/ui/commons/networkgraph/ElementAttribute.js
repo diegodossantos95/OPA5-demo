@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/core/Element"],function(E){var a=E.extend("sap.suite.ui.commons.networkgraph.ElementAttribute",{metadata:{library:"sap.suite.ui.commons",properties:{label:{type:"string",group:"Misc",defaultValue:null},value:{type:"string",group:"Misc",defaultValue:null},visible:{type:"boolean",group:"Misc",defaultValue:true}}}});return a;});

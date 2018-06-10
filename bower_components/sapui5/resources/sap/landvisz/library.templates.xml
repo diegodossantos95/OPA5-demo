@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Library name="sap.landvisz" xmlns="http://www.sap.com/ui5/ide/templates/xmlview">
+<Template name="sap.landvisz.ConnectionEntity" alias="ConnectionEntity,Entity">
+	<jsTemplate><![CDATA[new sap.landvisz.ConnectionEntity({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	connectionId: undefined, // string
+	size: undefined, // string
+	type: undefined, // sap.landvisz.ConnectionType
+	linkId: undefined, // string
+	linkedHeader: undefined, // string
+	dependencyTooltip: undefined, // string
+	showOverlay: true, // boolean
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	connectionData: [], // sap.landvisz.internal.LinearRowField
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<ConnectionEntity xmlns="sap.landvisz"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	connectionId=""
+	size=""
+	type=""
+	linkId=""
+	linkedHeader=""
+	dependencyTooltip=""
+	showOverlay="true"
+	validateFieldGroup="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+		<connectionData></connectionData> <!-- sap.landvisz.internal.LinearRowField -->
+</ConnectionEntity>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.landvisz.Connector" alias="Connector">
+	<jsTemplate><![CDATA[new sap.landvisz.Connector({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	source: undefined, // string
+	target: undefined, // string
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<Connector xmlns="sap.landvisz"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	source=""
+	target=""
+	validateFieldGroup="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+</Connector>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.landvisz.LandscapeEntity" alias="LandscapeEntity,Entity">
+	<jsTemplate><![CDATA[new sap.landvisz.LandscapeEntity({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	systemName: undefined, // string
+	type: undefined, // sap.landvisz.LandscapeObject
+	qualifierText: undefined, // string
+	qualifierTooltip: undefined, // string
+	qualifierType: undefined, // string
+	renderingSize: sap.landvisz.EntityCSSSize.Regular, // sap.landvisz.EntityCSSSize
+	defaultState: undefined, // string
+	description: undefined, // string
+	actions: undefined, // object
+	systemStatus: sap.landvisz.ModelingStatus.NORMAL, // sap.landvisz.ModelingStatus
+	statusTooltip: undefined, // string
+	explodeViewWidth: undefined, // sap.ui.core.CSSSize
+	explodeViewHeight: undefined, // sap.ui.core.CSSSize
+	showCustomActions: true, // boolean
+	showEntityActions: true, // boolean
+	systemId: undefined, // string
+	stateIconSrc: undefined, // string
+	stateIconTooltip: undefined, // string
+	componentType: undefined, // sap.landvisz.ComponentType
+	componentTypeTooltip: undefined, // string
+	trackSystemCount: undefined, // string
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	dataContainers: [], // sap.landvisz.internal.DataContainer
+	actionBar: [], // sap.landvisz.internal.ActionBar
+	entityStatus: undefined, // sap.ui.commons.Image
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	mouseOverIdenIcon: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	statusSelect: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	trackInfoPress: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<LandscapeEntity xmlns="sap.landvisz"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	systemName=""
+	type=""
+	qualifierText=""
+	qualifierTooltip=""
+	qualifierType=""
+	renderingSize="Regular"
+	defaultState=""
+	description=""
+	actions=""
+	systemStatus="NORMAL"
+	statusTooltip=""
+	explodeViewWidth=""
+	explodeViewHeight=""
+	showCustomActions="true"
+	showEntityActions="true"
+	systemId=""
+	stateIconSrc=""
+	stateIconTooltip=""
+	componentType=""
+	componentTypeTooltip=""
+	trackSystemCount=""
+	validateFieldGroup=""
+	mouseOverIdenIcon=""
+	statusSelect=""
+	trackInfoPress="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+		<dataContainers></dataContainers> <!-- sap.landvisz.internal.DataContainer -->
+		<actionBar></actionBar> <!-- sap.landvisz.internal.ActionBar -->
+		<entityStatus></entityStatus> <!-- sap.ui.commons.Image -->
+</LandscapeEntity>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.landvisz.LandscapeViewer" alias="LandscapeViewer,Viewer">
+	<jsTemplate><![CDATA[new sap.landvisz.LandscapeViewer({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	type: undefined, // string
+	currentEntity: undefined, // string
+	defaultDependencyView: sap.landvisz.DependencyType.NETWORK_VIEW, // sap.landvisz.DependencyType
+	height: undefined, // int
+	width: undefined, // int
+	title: undefined, // string
+	networkDependencyLabel: "Network View", // string
+	boxDependencyLabel: "Box View", // string
+	boxDependencyLevels: undefined, // string[]
+	showDependencyNavigator: true, // boolean
+	visibleDependency: sap.landvisz.DependencyVisibility.BOTH, // sap.landvisz.DependencyVisibility
+	viewType: undefined, // sap.landvisz.ViewType
+	navigationPath: undefined, // string
+	hasParent: true, // boolean
+	selectionViewPosition: sap.landvisz.SelectionViewPosition.CENTER, // sap.landvisz.SelectionViewPosition
+	showClose: true, // boolean
+	componentViewLabel: "Component View", // string
+	deploymentViewLabel: "Deployment View", // string
+	solutionOptionType: undefined, // sap.landvisz.OptionType
+	solutionType: undefined, // sap.landvisz.SolutionType
+	showDeploymentTypeSection: false, // boolean
+	deploymentOptionsLabel: "Deployment Options :", // string
+	deploymentOptionsTooltip: undefined, // string
+	componentViewTooltip: undefined, // string
+	deploymentViewTooltip: undefined, // string
+	closeButtonTooltip: undefined, // string
+	plugContentHeight: 0, // int
+	connectionLine: sap.landvisz.ConnectionLine.Line, // sap.landvisz.ConnectionLine
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	optionEntities: [], // sap.landvisz.OptionEntity
+	systems: [], // sap.landvisz.LandscapeEntity
+	connectionEntities: [], // sap.landvisz.ConnectionEntity
+	connectors: [], // sap.landvisz.Connector
+	solutionOptions: [], // sap.landvisz.Option
+	plugContent: undefined, // sap.ui.core.Control
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	close: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	loadSolutionView: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<LandscapeViewer xmlns="sap.landvisz"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	type=""
+	currentEntity=""
+	defaultDependencyView="NETWORK_VIEW"
+	height=""
+	width=""
+	title=""
+	networkDependencyLabel="Network View"
+	boxDependencyLabel="Box View"
+	boxDependencyLevels=""
+	showDependencyNavigator="true"
+	visibleDependency="BOTH"
+	viewType=""
+	navigationPath=""
+	hasParent="true"
+	selectionViewPosition="CENTER"
+	showClose="true"
+	componentViewLabel="Component View"
+	deploymentViewLabel="Deployment View"
+	solutionOptionType=""
+	solutionType=""
+	showDeploymentTypeSection="false"
+	deploymentOptionsLabel="Deployment Options :"
+	deploymentOptionsTooltip=""
+	componentViewTooltip=""
+	deploymentViewTooltip=""
+	closeButtonTooltip=""
+	plugContentHeight="0"
+	connectionLine="Line"
+	validateFieldGroup=""
+	close=""
+	loadSolutionView="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+		<optionEntities></optionEntities> <!-- sap.landvisz.OptionEntity -->
+		<systems></systems> <!-- sap.landvisz.LandscapeEntity -->
+		<connectionEntities></connectionEntities> <!-- sap.landvisz.ConnectionEntity -->
+		<connectors></connectors> <!-- sap.landvisz.Connector -->
+		<solutionOptions></solutionOptions> <!-- sap.landvisz.Option -->
+		<plugContent></plugContent> <!-- sap.ui.core.Control -->
+</LandscapeViewer>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.landvisz.LongTextField" alias="LongTextField,Field">
+	<jsTemplate><![CDATA[new sap.landvisz.LongTextField({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	text: undefined, // string
+	renderingSize: undefined, // sap.landvisz.EntityCSSSize
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<LongTextField xmlns="sap.landvisz"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	text=""
+	renderingSize=""
+	validateFieldGroup="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+</LongTextField>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.landvisz.Option" alias="Option">
+	<jsTemplate><![CDATA[new sap.landvisz.Option({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	type: undefined, // string
+	currentEntity: undefined, // string
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	optionEntities: [], // sap.landvisz.OptionEntity
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<Option xmlns="sap.landvisz"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	type=""
+	currentEntity=""
+	validateFieldGroup="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+		<optionEntities></optionEntities> <!-- sap.landvisz.OptionEntity -->
+</Option>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.landvisz.OptionEntity" alias="OptionEntity,Entity">
+	<jsTemplate><![CDATA[new sap.landvisz.OptionEntity({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	source: undefined, // string
+	label: undefined, // string
+	selected: false, // boolean
+	enable: true, // boolean
+	optionTextTooltip: undefined, // string
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	optionSources: [], // sap.landvisz.OptionSource
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	selectOption: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<OptionEntity xmlns="sap.landvisz"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	source=""
+	label=""
+	selected="false"
+	enable="true"
+	optionTextTooltip=""
+	validateFieldGroup=""
+	selectOption="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+		<optionSources></optionSources> <!-- sap.landvisz.OptionSource -->
+</OptionEntity>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.landvisz.OptionSource" alias="OptionSource,Source">
+	<jsTemplate><![CDATA[new sap.landvisz.OptionSource({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	source: undefined, // string
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<OptionSource xmlns="sap.landvisz"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	source=""
+	validateFieldGroup="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+</OptionSource>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.landvisz.internal.ActionBar" alias="ActionBar,Bar">
+	<jsTemplate><![CDATA[new sap.landvisz.internal.ActionBar({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	actionLabel: undefined, // string
+	renderingSize: sap.landvisz.EntityCSSSize.Regular, // sap.landvisz.EntityCSSSize
+	iconSrc: undefined, // sap.ui.core.URI
+	actionType: sap.landvisz.ActionType.NORMAL, // sap.landvisz.ActionType
+	menuData: undefined, // object
+	actionTooltip: undefined, // string
+	enable: true, // boolean
+	changeView: false, // boolean
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	menu: [], // sap.ui.commons.Menu
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	select: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<internal/ActionBar xmlns="sap.landvisz"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	actionLabel=""
+	renderingSize="Regular"
+	iconSrc=""
+	actionType="NORMAL"
+	menuData=""
+	actionTooltip=""
+	enable="true"
+	changeView="false"
+	validateFieldGroup=""
+	select="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+		<menu></menu> <!-- sap.ui.commons.Menu -->
+</internal/ActionBar>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.landvisz.internal.DataContainer" alias="DataContainer,Container">
+	<jsTemplate><![CDATA[new sap.landvisz.internal.DataContainer({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	header: undefined, // string
+	selected: true, // boolean
+	renderingSize: sap.landvisz.EntityCSSSize.Regular, // sap.landvisz.EntityCSSSize
+	type: undefined, // sap.landvisz.LandscapeObject
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	properties: [], // sap.ui.core.Control
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	select: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<internal/DataContainer xmlns="sap.landvisz"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	header=""
+	selected="true"
+	renderingSize="Regular"
+	type=""
+	validateFieldGroup=""
+	select="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+		<properties></properties> <!-- sap.ui.core.Control -->
+</internal/DataContainer>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.landvisz.internal.DeploymentType" alias="DeploymentType,Type">
+	<jsTemplate><![CDATA[new sap.landvisz.internal.DeploymentType({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	type: undefined, // string
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<internal/DeploymentType xmlns="sap.landvisz"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	type=""
+	validateFieldGroup="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+</internal/DeploymentType>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.landvisz.internal.EntityAction" alias="EntityAction,Action">
+	<jsTemplate><![CDATA[new sap.landvisz.internal.EntityAction({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	actionTooltip: undefined, // string
+	iconSrc: undefined, // sap.ui.core.URI
+	renderingSize: undefined, // string
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	press: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<internal/EntityAction xmlns="sap.landvisz"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	actionTooltip=""
+	iconSrc=""
+	renderingSize=""
+	validateFieldGroup=""
+	press="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+</internal/EntityAction>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.landvisz.internal.EntityCustomAction" alias="EntityCustomAction,Action">
+	<jsTemplate><![CDATA[new sap.landvisz.internal.EntityCustomAction({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	customAction: undefined, // string
+	renderingSize: sap.landvisz.EntityCSSSize.Regular, // sap.landvisz.EntityCSSSize
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	select: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<internal/EntityCustomAction xmlns="sap.landvisz"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	customAction=""
+	renderingSize="Regular"
+	validateFieldGroup=""
+	select="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+</internal/EntityCustomAction>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.landvisz.internal.HeaderList" alias="HeaderList,List">
+	<jsTemplate><![CDATA[new sap.landvisz.internal.HeaderList({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	headerTooltip: undefined, // string
+	entitySize: undefined, // string
+	selected: false, // boolean
+	type: undefined, // sap.landvisz.LandscapeObject
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	press: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<internal/HeaderList xmlns="sap.landvisz"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	headerTooltip=""
+	entitySize=""
+	selected="false"
+	type=""
+	validateFieldGroup=""
+	press="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+</internal/HeaderList>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.landvisz.internal.IdentificationBar" alias="IdentificationBar,Bar">
+	<jsTemplate><![CDATA[new sap.landvisz.internal.IdentificationBar({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	text: undefined, // string
+	type: undefined, // string
+	qualifierText: undefined, // string
+	qualifierTooltip: undefined, // string
+	qualifierType: undefined, // string
+	renderingSize: sap.landvisz.EntityCSSSize.Regular, // sap.landvisz.EntityCSSSize
+	defaultState: undefined, // string
+	description: undefined, // string
+	componentType: undefined, // sap.landvisz.ComponentType
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	select: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<internal/IdentificationBar xmlns="sap.landvisz"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	text=""
+	type=""
+	qualifierText=""
+	qualifierTooltip=""
+	qualifierType=""
+	renderingSize="Regular"
+	defaultState=""
+	description=""
+	componentType=""
+	validateFieldGroup=""
+	select="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+</internal/IdentificationBar>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.landvisz.internal.LinearRowField" alias="LinearRowField,Field">
+	<jsTemplate><![CDATA[new sap.landvisz.internal.LinearRowField({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	label: undefined, // string
+	value: undefined, // string
+	renderingSize: sap.landvisz.EntityCSSSize.Regular, // sap.landvisz.EntityCSSSize
+	iconType: undefined, // string
+	iconTitle: undefined, // string
+	rightIconSrc: undefined, // string
+	linkSource: undefined, // string
+	rightIconTooltip: undefined, // string
+	invalidName: undefined, // boolean
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<internal/LinearRowField xmlns="sap.landvisz"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	label=""
+	value=""
+	renderingSize="Regular"
+	iconType=""
+	iconTitle=""
+	rightIconSrc=""
+	linkSource=""
+	rightIconTooltip=""
+	invalidName=""
+	validateFieldGroup="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+</internal/LinearRowField>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.landvisz.internal.ModelingStatus" alias="ModelingStatus,Status">
+	<jsTemplate><![CDATA[new sap.landvisz.internal.ModelingStatus({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	status: undefined, // string
+	statusTooltip: undefined, // string
+	stateIconSrc: undefined, // string
+	stateIconTooltip: undefined, // any
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<internal/ModelingStatus xmlns="sap.landvisz"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	status=""
+	statusTooltip=""
+	stateIconSrc=""
+	stateIconTooltip=""
+	validateFieldGroup="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+</internal/ModelingStatus>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.landvisz.internal.NestedRowField" alias="NestedRowField,Field">
+	<jsTemplate><![CDATA[new sap.landvisz.internal.NestedRowField({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	label: undefined, // string
+	values: undefined, // string[]
+	renderingSize: sap.landvisz.EntityCSSSize.Regular, // sap.landvisz.EntityCSSSize
+	iconTitle: undefined, // string
+	type: undefined, // string
+	valueType: undefined, // string
+	rightIconSrc: undefined, // string
+	linkSource: undefined, // string
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	linearRows: [], // sap.landvisz.internal.LinearRowField
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<internal/NestedRowField xmlns="sap.landvisz"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	label=""
+	values=""
+	renderingSize="Regular"
+	iconTitle=""
+	type=""
+	valueType=""
+	rightIconSrc=""
+	linkSource=""
+	validateFieldGroup="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+		<linearRows></linearRows> <!-- sap.landvisz.internal.LinearRowField -->
+</internal/NestedRowField>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.landvisz.internal.SingleDataContainer" alias="SingleDataContainer,Container">
+	<jsTemplate><![CDATA[new sap.landvisz.internal.SingleDataContainer({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	header: undefined, // string
+	renderingSize: undefined, // string
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	properties: [], // sap.ui.core.Control
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	closed: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<internal/SingleDataContainer xmlns="sap.landvisz"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	header=""
+	renderingSize=""
+	validateFieldGroup=""
+	closed="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+		<properties></properties> <!-- sap.ui.core.Control -->
+</internal/SingleDataContainer>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.landvisz.internal.TreeField" alias="TreeField,Field">
+	<jsTemplate><![CDATA[new sap.landvisz.internal.TreeField({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	treeModel: undefined, // object
+	bindingName: undefined, // string
+	renderingSize: undefined, // sap.landvisz.EntityCSSSize
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	treeNode: [], // sap.ui.commons.TreeNode
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<internal/TreeField xmlns="sap.landvisz"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	treeModel=""
+	bindingName=""
+	renderingSize=""
+	validateFieldGroup="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+		<treeNode></treeNode> <!-- sap.ui.commons.TreeNode -->
+</internal/TreeField>
+]]></xmlTemplate>
+</Template>
+</Library>

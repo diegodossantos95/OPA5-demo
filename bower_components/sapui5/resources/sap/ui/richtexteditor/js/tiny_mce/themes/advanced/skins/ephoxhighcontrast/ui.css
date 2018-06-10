@@ -1,0 +1,274 @@
+/* Reset */
+.ephoxhighcontrastSkin table, .ephoxhighcontrastSkin tbody, .ephoxhighcontrastSkin a, .ephoxhighcontrastSkin img, .ephoxhighcontrastSkin tr, .ephoxhighcontrastSkin div, .ephoxhighcontrastSkin td, .ephoxhighcontrastSkin iframe, .ephoxhighcontrastSkin span, .ephoxhighcontrastSkin *, .ephoxhighcontrastSkin .mceText {border:0; margin:0; padding:0; background:transparent; white-space:nowrap; text-decoration:none; font-weight:normal; cursor:default; color:#000; vertical-align:baseline; width:auto; border-collapse:separate; text-align:left}
+.ephoxhighcontrastSkin a:hover, .ephoxhighcontrastSkin a:link, .ephoxhighcontrastSkin a:visited, .ephoxhighcontrastSkin a:active {text-decoration:none; font-weight:normal; cursor:default; color:#000}
+.ephoxhighcontrastSkin table td {vertical-align:middle}
+
+/* Containers */
+.ephoxhighcontrastSkin table {background:#E5EFFD}
+.ephoxhighcontrastSkin iframe {display:block; background:#FFF}
+.ephoxhighcontrastSkin .mceToolbar {height:31px}
+
+/* External */
+.ephoxhighcontrastSkin .mceExternalToolbar {position:absolute; border:1px solid #ABC6DD; border-bottom:0; display:none}
+.ephoxhighcontrastSkin .mceExternalToolbar td.mceToolbar {padding-right:13px;}
+.ephoxhighcontrastSkin .mceExternalClose {position:absolute; top:3px; right:3px; width:7px; height:7px}
+
+/* Layout */
+.ephoxhighcontrastSkin table.mceLayout {border:0; border-left:1px solid #ABC6DD; border-right:1px solid #ABC6DD}
+.ephoxhighcontrastSkin table.mceLayout tr.mceFirst td {border-top:1px solid #ABC6DD}
+.ephoxhighcontrastSkin table.mceLayout tr.mceLast td {border-bottom:1px solid #ABC6DD}
+.ephoxhighcontrastSkin table.mceToolbar, .ephoxhighcontrastSkin tr.mceFirst .mceToolbar tr td, .ephoxhighcontrastSkin tr.mceLast .mceToolbar tr td {border:0; margin:0; padding:0}
+.ephoxhighcontrastSkin .mceIframeContainer {border:1px solid #838383}
+.ephoxhighcontrastSkin .mceStatusbar {display:block; font-family:'MS Sans Serif',sans-serif,Verdana,Arial; font-size:9pt; line-height:20px; overflow:visible; color:#000; height:21px}
+.ephoxhighcontrastSkin .mceStatusbar div {float:left}
+.ephoxhighcontrastSkin .mceStatusbar a.mceResize:before, .ephoxhighcontrastSkin .mceStatusbar a.mceResize img {margin-left: -800px;}
+.ephoxhighcontrastSkin .mceStatusbar a.mceResize {display:block; float:right; width:20px; height:20px; cursor:se-resize; outline:0; overflow: hidden}
+.ephoxhighcontrastSkin .mceStatusbar a:hover {text-decoration:underline}
+.ephoxhighcontrastSkin table.mceToolbar {margin-left:3px;}
+.ephoxhighcontrastSkin .mceToolbar td.mceFirst span {margin:0}
+.ephoxhighcontrastSkin .mceToolbar .mceToolbarEndListBox span, .ephoxhighcontrastSkin .mceToolbar .mceToolbarStartListBox span {display:none}
+.ephoxhighcontrastSkin span.mceIcon, .ephoxhighcontrastSkin img.mceIcon {display:block; width:20px; height:22px; overflow: hidden;}
+.ephoxhighcontrastSkin .mceIcon {overflow: hidden;}
+.ephoxhighcontrastSkin td.mceCenter {text-align:center;}
+.ephoxhighcontrastSkin td.mceCenter table {margin:0 auto; text-align:left;}
+.ephoxhighcontrastSkin td.mceRight table {margin:0 0 0 auto;}
+
+/* Button */
+.ephoxhighcontrastSkin .mceButton {display:block; width:26px; height:26px; border:1px solid gray; margin: 1px;}
+.ephoxhighcontrastSkin a.mceButton span, .ephoxhighcontrastSkin a.mceButton img {margin-left:3px}
+.ephoxhighcontrastSkin .mceOldBoxModel a.mceButton span, .ephoxhighcontrastSkin .mceOldBoxModel a.mceButton img {margin:0 0 0 1px}
+.ephoxhighcontrastSkin a.mceButtonEnabled:hover {background-color:#B2BBD0; background-position:0 -26px}
+.ephoxhighcontrastSkin .mceButtonDisabled .mceIcon {opacity:0.3; -ms-filter:'alpha(opacity=30)'; filter:alpha(opacity=30)}
+.ephoxhighcontrastSkin .mceButtonLabeled {width:auto}
+.ephoxhighcontrastSkin .mceButtonLabeled span.mceIcon {float:left}
+.ephoxhighcontrastSkin span.mceButtonLabel {display:block; font-size:10px; padding:6px 6px 0 24px; font-family:Tahoma,Verdana,Arial,Helvetica}
+.ephoxhighcontrastSkin .mceButtonDisabled .mceButtonLabel {color:#888}
+
+/* Separator */
+.ephoxhighcontrastSkin .mceSeparator {display:block; width:9px; height:26px;}
+
+/* ListBox */
+.ephoxhighcontrastSkin .mceListBox {margin-left:7px;}
+.ephoxhighcontrastSkin .mceListBox, .ephoxhighcontrastSkin .mceListBox a {display:block}
+.ephoxhighcontrastSkin .mceListBox .mceText {padding-left:4px; text-align:left; width:70px; border:1px solid #b3c7e1; border-right:0; background:#eaf2fb; font-family:Tahoma,Verdana,Arial,Helvetica; font-size:11px; height:24px; line-height:24px; overflow:hidden}
+.ephoxhighcontrastSkin .mceListBox .mceOpen:before, .ephoxhighcontrastSkin .mceListBox .mceOpen img {margin-left:-740px}
+.ephoxhighcontrastSkin .mceListBox .mceOpen {width:18px; height:24px; overflow: hidden; border:1px solid gray}
+.ephoxhighcontrastSkin .mceListBoxDisabled .mceText {color:gray}
+.ephoxhighcontrastSkin .mceListBoxMenu {overflow:auto; overflow-x:hidden}
+.ephoxhighcontrastSkin .mceOldBoxModel .mceListBox .mceText {height:26px}
+.ephoxhighcontrastSkin select.mceListBox {font-family:Tahoma,Verdana,Arial,Helvetica; font-size:12px; border:1px solid #b3c7e1; background:#FFF;}
+
+/* SplitButton */
+.ephoxhighcontrastSkin .mceSplitButton, .ephoxhighcontrastSkin .mceSplitButton a, .ephoxhighcontrastSkin .mceSplitButton span {display:block; height:26px}
+.ephoxhighcontrastSkin .mceSplitButton a.mceAction {width:24px; border:1px solid gray; margin-left: 1px}
+.ephoxhighcontrastSkin .mceSplitButton span.mceAction {width:20px; overflow: hidden;}
+.ephoxhighcontrastSkin .mceSplitButton a.mceOpen:before, .ephoxhighcontrastSkin .mceSplitButton a.mceOpen img {margin-left:-740px}
+.ephoxhighcontrastSkin .mceSplitButton a.mceOpen {width:14px; overflow: hidden; border:1px solid gray; margin-right: 1px}
+.ephoxhighcontrastSkin .mceSplitButtonDisabled .mceAction {opacity:0.3; -ms-filter:'alpha(opacity=30)'; filter:alpha(opacity=30)}
+.ephoxhighcontrastSkin .mceSplitButtonActive {background-position:0 -52px}
+
+/* ColorSplitButton */
+.ephoxhighcontrastSkin div.mceColorSplitMenu table {background:#FFF; border:1px solid gray}
+.ephoxhighcontrastSkin .mceColorSplitMenu td {padding:2px}
+.ephoxhighcontrastSkin .mceColorSplitMenu a {display:block; width:9px; height:9px; overflow:hidden; border:1px solid #808080}
+.ephoxhighcontrastSkin .mceColorSplitMenu td.mceMoreColors {padding:1px 3px 1px 1px}
+.ephoxhighcontrastSkin .mceColorSplitMenu a.mceMoreColors {width:100%; height:auto; text-align:center; font-family:Tahoma,Verdana,Arial,Helvetica; font-size:11px; line-height:20px; border:1px solid #FFF}
+.ephoxhighcontrastSkin .mceColorSplitMenu a.mceMoreColors:hover {border:1px solid #0A246A; background-color:#B6BDD2}
+.ephoxhighcontrastSkin a.mceMoreColors:hover {border:1px solid #0A246A}
+.ephoxhighcontrastSkin .mceColorPreview {margin-left:3px; width:20px; height:4px; overflow:hidden; background:#9a9b9a;overflow:hidden; margin-top:1px;}
+.ephoxhighcontrastSkin .mce_forecolor span.mceAction, .ephoxhighcontrastSkin .mce_backcolor span.mceAction {height:17px;overflow:hidden}
+
+/* Menu */
+.ephoxhighcontrastSkin .mceMenu {position:absolute; left:0; top:0; z-index:1000; border:1px solid #ABC6DD}
+.ephoxhighcontrastSkin .mceNoIcons span.mceIcon {width:0;}
+.ephoxhighcontrastSkin .mceNoIcons a .mceText {padding-left:10px}
+.ephoxhighcontrastSkin .mceMenu table {background:#FFF}
+.ephoxhighcontrastSkin .mceMenu a, .ephoxhighcontrastSkin .mceMenu span, .ephoxhighcontrastSkin .mceMenu {display:block}
+.ephoxhighcontrastSkin .mceMenu td {height:20px}
+.ephoxhighcontrastSkin .mceMenu a {position:relative;padding:3px 0 4px 0}
+.ephoxhighcontrastSkin .mceMenu .mceText {position:relative; display:block; font-family:Tahoma,Verdana,Arial,Helvetica; color:#000; cursor:default; margin:0; padding:0 25px 0 25px; display:block}
+.ephoxhighcontrastSkin .mceMenu span.mceText, .ephoxhighcontrastSkin .mceMenu .mcePreview {font-size:11px}
+.ephoxhighcontrastSkin .mceMenu pre.mceText {font-family:Monospace}
+.ephoxhighcontrastSkin .mceMenu .mceIcon {position:absolute; top:0; left:0; width:26px;}
+.ephoxhighcontrastSkin .mceMenu .mceMenuItemEnabled a:hover, .ephoxhighcontrastSkin .mceMenu .mceMenuItemActive {background-color:#dbecf3}
+.ephoxhighcontrastSkin td.mceMenuItemSeparator {background:#DDD; height:1px}
+.ephoxhighcontrastSkin .mceMenuItemTitle a {border:0; background:#E5EFFD; border-bottom:1px solid #ABC6DD}
+.ephoxhighcontrastSkin .mceMenuItemTitle span.mceText {color:#000; font-weight:bold; padding-left:4px}
+.ephoxhighcontrastSkin .mceNoIcons .mceMenuItemSelected span.mceText:before {content: "\2713\A0";}
+.ephoxhighcontrastSkin .mceMenuItemDisabled .mceText {color:#888}
+.ephoxhighcontrastSkin .mceMenu span.mceMenuLine {display:none}
+.ephoxhighcontrastSkin .mceMenuItemSub a .mceText:after {content: "\A0\25B8"}
+
+/* Progress,Resize */
+.ephoxhighcontrastSkin .mceBlocker {position:absolute; left:0; top:0; z-index:1000; opacity:0.5; -ms-filter:'alpha(opacity=30)'; filter:alpha(opacity=50); background:#FFF}
+.ephoxhighcontrastSkin .mceProgress {position:absolute; left:0; top:0; z-index:1001; background:url(img/progress.gif) no-repeat; width:32px; height:32px; margin:-16px 0 0 -16px}
+
+/* Formats */
+.ephoxhighcontrastSkin .mce_formatPreview a {font-size:10px}
+.ephoxhighcontrastSkin .mce_p span.mceText {}
+.ephoxhighcontrastSkin .mce_address span.mceText {font-style:italic}
+.ephoxhighcontrastSkin .mce_pre span.mceText {font-family:monospace}
+.ephoxhighcontrastSkin .mce_h1 span.mceText {font-weight:bolder; font-size: 2em}
+.ephoxhighcontrastSkin .mce_h2 span.mceText {font-weight:bolder; font-size: 1.5em}
+.ephoxhighcontrastSkin .mce_h3 span.mceText {font-weight:bolder; font-size: 1.17em}
+.ephoxhighcontrastSkin .mce_h4 span.mceText {font-weight:bolder; font-size: 1em}
+.ephoxhighcontrastSkin .mce_h5 span.mceText {font-weight:bolder; font-size: .83em}
+.ephoxhighcontrastSkin .mce_h6 span.mceText {font-weight:bolder; font-size: .75em}
+
+/*
+	background-image replacement for high contrast mode.
+	In IE we use an expression instead of content to insert the image as content is not supported.
+*/
+.ephoxhighcontrastSkin .mceButton .mceIcon:before, .ephoxhighcontrastSkin .mceStatusbar a.mceResize:before, .ephoxhighcontrastSkin .mceListBox .mceOpen:before, .ephoxhighcontrastSkin .mceSplitButton span.mceAction:before, .ephoxhighcontrastSkin .mceSplitButton a.mceOpen:before {
+	display: inline-block;
+	content: url(img/ephox-icons.gif);
+	overflow: hidden;
+}
+
+.ephoxhighcontrastSkin .mceButton span.mceIcon, .ephoxhighcontrastSkin .mceButton a.mceIcon, .ephoxhighcontrastSkin .mceStatusbar a.mceResize, .ephoxhighcontrastSkin .mceListBox .mceOpen, .ephoxhighcontrastSkin .mceSplitButton span.mceAction, .ephoxhighcontrastSkin .mceSplitButton a.mceOpen {
+    clear: expression(
+    this.base = tinymce.baseURL,
+    this.runtimeStyle.clear="none",
+    this.insertAdjacentHTML("afterBegin", '<img src="' + this.base + '/themes/advanced/skins/ephoxhighcontrast/img/ephox-icons.gif">')
+  );
+}
+
+/* Theme */
+.ephoxhighcontrastSkin span.mce_bold:before, .ephoxhighcontrastSkin span.mce_bold img {margin:0 0}
+.ephoxhighcontrastSkin span.mce_italic:before, .ephoxhighcontrastSkin span.mce_italic img {margin-left:-60px}
+.ephoxhighcontrastSkin span.mce_underline:before, .ephoxhighcontrastSkin span.mce_underline img {margin-left:-140px}
+.ephoxhighcontrastSkin span.mce_strikethrough:before, .ephoxhighcontrastSkin span.mce_strikethrough img {margin-left:-120px}
+.ephoxhighcontrastSkin span.mce_undo:before, .ephoxhighcontrastSkin span.mce_undo img {margin-left:-160px}
+.ephoxhighcontrastSkin span.mce_redo:before, .ephoxhighcontrastSkin span.mce_redo img {margin-left:-100px}
+.ephoxhighcontrastSkin span.mce_cleanup:before, .ephoxhighcontrastSkin span.mce_cleanup img {margin-left:-40px}
+.ephoxhighcontrastSkin span.mce_bullist:before, .ephoxhighcontrastSkin span.mce_bullist img {margin-left:-20px}
+.ephoxhighcontrastSkin span.mce_numlist:before, .ephoxhighcontrastSkin span.mce_numlist img {margin-left:-80px}
+.ephoxhighcontrastSkin span.mce_justifyleft:before, .ephoxhighcontrastSkin span.mce_justifyleft img {margin-left:-460px}
+.ephoxhighcontrastSkin span.mce_justifyright:before, .ephoxhighcontrastSkin span.mce_justifyright img {margin-left:-480px}
+.ephoxhighcontrastSkin span.mce_justifycenter:before, .ephoxhighcontrastSkin span.mce_justifycenter img {margin-left:-420px}
+.ephoxhighcontrastSkin span.mce_justifyfull:before, .ephoxhighcontrastSkin span.mce_justifyfull img {margin-left:-440px}
+.ephoxhighcontrastSkin span.mce_anchor:before, .ephoxhighcontrastSkin span.mce_anchor img {margin-left:-200px}
+.ephoxhighcontrastSkin span.mce_indent:before, .ephoxhighcontrastSkin span.mce_indent img {margin-left:-400px}
+.ephoxhighcontrastSkin span.mce_outdent:before, .ephoxhighcontrastSkin span.mce_outdent img {margin-left:-540px}
+.ephoxhighcontrastSkin span.mce_link:before, .ephoxhighcontrastSkin span.mce_link img {margin-left:-500px}
+.ephoxhighcontrastSkin span.mce_unlink:before, .ephoxhighcontrastSkin span.mce_unlink img {margin-left:-640px}
+.ephoxhighcontrastSkin span.mce_sub:before, .ephoxhighcontrastSkin span.mce_sub img {margin-left:-600px}
+.ephoxhighcontrastSkin span.mce_sup:before, .ephoxhighcontrastSkin span.mce_sup img {margin-left:-620px}
+.ephoxhighcontrastSkin span.mce_removeformat:before, .ephoxhighcontrastSkin span.mce_removeformat img {margin-left:-580px}
+.ephoxhighcontrastSkin span.mce_newdocument:before, .ephoxhighcontrastSkin span.mce_newdocument img {margin-left:-520px}
+.ephoxhighcontrastSkin span.mce_image:before, .ephoxhighcontrastSkin span.mce_image img  {margin-left:-380px}
+.ephoxhighcontrastSkin span.mce_help:before, .ephoxhighcontrastSkin span.mce_help img  {margin-left:-340px}
+.ephoxhighcontrastSkin span.mce_code:before, .ephoxhighcontrastSkin span.mce_code img  {margin-left:-260px}
+.ephoxhighcontrastSkin span.mce_hr:before, .ephoxhighcontrastSkin span.mce_hr img  {margin-left:-360px}
+.ephoxhighcontrastSkin span.mce_visualaid:before, .ephoxhighcontrastSkin span.mce_visualaid img  {margin-left:-660px}
+.ephoxhighcontrastSkin span.mce_charmap:before, .ephoxhighcontrastSkin span.mce_charmap img  {margin-left:-240px}
+.ephoxhighcontrastSkin span.mce_paste:before, .ephoxhighcontrastSkin span.mce_paste img  {margin-left:-560px}
+.ephoxhighcontrastSkin span.mce_copy:before, .ephoxhighcontrastSkin span.mce_copy img  {margin-left:-700px}
+.ephoxhighcontrastSkin span.mce_cut:before, .ephoxhighcontrastSkin span.mce_cut img  {margin-left:-680px}
+.ephoxhighcontrastSkin span.mce_blockquote:before, .ephoxhighcontrastSkin span.mce_blockquote img  {margin-left:-220px}
+.ephoxhighcontrastSkin .mce_forecolor span.mceAction:before, .ephoxhighcontrastSkin .mce_forecolor span.mceAction img {margin-left:-720px}
+.ephoxhighcontrastSkin .mce_backcolor span.mceAction:before, .ephoxhighcontrastSkin .mce_backcolor span.mceAction img {margin-left:-760px}
+.ephoxhighcontrastSkin span.mce_forecolorpicker:before, .ephoxhighcontrastSkin span.mce_forecolorpicker img  {margin-left:-720px}
+.ephoxhighcontrastSkin span.mce_backcolorpicker:before, .ephoxhighcontrastSkin span.mce_backcolorpicker img  {margin-left:-760px}
+
+/* Plugins */
+.ephoxhighcontrastSkin span.mce_advhr:before, .ephoxhighcontrastSkin span.mce_advhr img  {margin-left:0px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_ltr:before, .ephoxhighcontrastSkin span.mce_ltr img  {margin-left:-20px; margin-top: -20px}
+.ephoxhighcontrastSkin span.mce_rtl:before, .ephoxhighcontrastSkin span.mce_rtl img  {margin-left:-40px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_emotions:before, .ephoxhighcontrastSkin span.mce_emotions img  {margin-left:-60px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_fullpage:before, .ephoxhighcontrastSkin span.mce_fullpage img  {margin-left:-80px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_fullscreen:before, .ephoxhighcontrastSkin span.mce_fullscreen img  {margin-left:-100px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_iespell:before, .ephoxhighcontrastSkin span.mce_iespell img  {margin-left:-120px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_insertdate:before, .ephoxhighcontrastSkin span.mce_insertdate img  {margin-left:-140px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_inserttime:before, .ephoxhighcontrastSkin span.mce_inserttime img  {margin-left:-160px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_absolute:before, .ephoxhighcontrastSkin span.mce_absolute img  {margin-left:-180px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_backward:before, .ephoxhighcontrastSkin span.mce_backward img  {margin-left:-200px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_forward:before, .ephoxhighcontrastSkin span.mce_forward img  {margin-left:-220px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_insert_layer:before, .ephoxhighcontrastSkin span.mce_insert_layer img  {margin-left:-240px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_insertlayer:before, .ephoxhighcontrastSkin span.mce_insertlayer img  {margin-left:-260px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_movebackward:before, .ephoxhighcontrastSkin span.mce_movebackward img  {margin-left:-280px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_moveforward:before, .ephoxhighcontrastSkin span.mce_moveforward img  {margin-left:-300px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_media:before, .ephoxhighcontrastSkin span.mce_media img  {margin-left:-320px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_nonbreaking:before, .ephoxhighcontrastSkin span.mce_nonbreaking img  {margin-left:-340px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_pastetext:before, .ephoxhighcontrastSkin span.mce_pastetext img  {margin-left:-360px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_pasteword:before, .ephoxhighcontrastSkin span.mce_pasteword img  {margin-left:-380px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_selectall:before, .ephoxhighcontrastSkin span.mce_selectall img  {margin-left:-400px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_preview:before, .ephoxhighcontrastSkin span.mce_preview img  {margin-left:-420px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_print:before, .ephoxhighcontrastSkin span.mce_print img  {margin-left:-440px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_cancel:before, .ephoxhighcontrastSkin span.mce_cancel img  {margin-left:-460px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_save:before, .ephoxhighcontrastSkin span.mce_save img  {margin-left:-480px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_replace:before, .ephoxhighcontrastSkin span.mce_replace img  {margin-left:-500px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_search:before, .ephoxhighcontrastSkin span.mce_search img  {margin-left:-520px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_styleprops:before, .ephoxhighcontrastSkin span.mce_styleprops img  {margin-left:-560px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_table:before, .ephoxhighcontrastSkin span.mce_table img  {margin-left:-580px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_cell_props:before, .ephoxhighcontrastSkin span.mce_cell_props img  {margin-left:-600px; margin-top: -20px}
+.ephoxhighcontrastSkin span.mce_delete_table:before, .ephoxhighcontrastSkin span.mce_delete_table img  {margin-left:-620px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_delete_col:before, .ephoxhighcontrastSkin span.mce_delete_col img  {margin-left:-640; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_delete_row:before, .ephoxhighcontrastSkin span.mce_delete_row img  {margin-left:-660px; margin-top: -20px}
+.ephoxhighcontrastSkin span.mce_col_after:before, .ephoxhighcontrastSkin span.mce_col_after img  {margin-left:-680px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_col_before:before, .ephoxhighcontrastSkin span.mce_col_before img  {margin-left:-700px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_row_after:before, .ephoxhighcontrastSkin span.mce_row_after img  {margin-left:-720px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_row_before:before, .ephoxhighcontrastSkin span.mce_row_before img  {margin-left:-740px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_merge_cells:before, .ephoxhighcontrastSkin span.mce_merge_cells img  {margin-left:-760px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_table_props:before, .ephoxhighcontrastSkin span.mce_table_props img  {margin-left:-980px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_row_props:before, .ephoxhighcontrastSkin span.mce_row_props img  {margin-left:-780px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_split_cells:before, .ephoxhighcontrastSkin span.mce_split_cells img  {margin-left:-800px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_template:before, .ephoxhighcontrastSkin span.mce_template img  {margin-left:-820px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_visualchars:before, .ephoxhighcontrastSkin span.mce_visualchars img  {margin-left:-840px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_abbr:before, .ephoxhighcontrastSkin span.mce_abbr img  {margin-left:-860px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_acronym:before, .ephoxhighcontrastSkin span.mce_acronym img  {margin-left:-880px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_attribs:before, .ephoxhighcontrastSkin span.mce_attribs img  {margin-left:-900px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_cite:before, .ephoxhighcontrastSkin span.mce_cite img  {margin-left:-920px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_del:before, .ephoxhighcontrastSkin span.mce_del img  {margin-left:-940px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_ins:before, .ephoxhighcontrastSkin span.mce_ins img  {margin-left:-960px; margin-top:-20px}
+.ephoxhighcontrastSkin span.mce_pagebreak:before, .ephoxhighcontrastSkin span.mce_pagebreak img  {margin-left:0; margin-top:-40px}
+.ephoxhighcontrastSkin span.mce_restoredraft:before, .ephoxhighcontrastSkin span.mce_restoredraft img  {margin-left:-20px; margin-top:-40px}
+.ephoxhighcontrastSkin span.mce_spellchecker:before, .ephoxhighcontrastSkin span.mce_spellchecker img  {margin-left:-540px; margin-top:-20px}
+
+.ephoxhighcontrastSkin table, .ephoxhighcontrastSkin .mceMenuItemTitle a, .ephoxhighcontrastSkin .mceStatusbar div, .ephoxhighcontrastSkin .mceStatusbar span, .ephoxhighcontrastSkin .mceStatusbar a {
+	background:#d8d7d7; 
+	color:#000000
+}
+
+.mceIframeContainer iframe{
+	border: none;
+}
+
+.mceMenuItemTitle a .mceMenuItemTitle a:hover .mceMenuItemTitle .mceMenuItemEnabled tr:hover .mceMenuItemEnabled a:hover {
+	color:#ffffff
+}
+
+.ephoxhighcontrastSkin table.mceListBoxEnabled .mceText, .ephoxhighcontrastSkin .mceListBox .mceText {
+	background:#FFF; 
+	border:1px solid #838383; 
+	border-bottom-color:#989FA9; 
+	border-right:0
+}
+
+.ephoxhighcontrastSkin table.mceListBoxEnabled:hover .mceText, .ephoxhighcontrastSkin .mceListBoxHover .mceText, .ephoxhighcontrastSkin .mceListBoxSelected .mceText {
+	background:#FFF; 
+	border:1px solid #838383;
+	border-right:0;
+	color:black;
+}
+
+.ephoxhighcontrastSkin .mceExternalToolbar, .ephoxhighcontrastSkin .mceListBox .mceText, .ephoxhighcontrastSkin div.mceMenu, .ephoxhighcontrastSkin table.mceLayout, .ephoxhighcontrastSkin .mceMenuItemTitle a, .ephoxhighcontrastSkin table.mceLayout tr.mceFirst td, .ephoxhighcontrastSkin table.mceLayout, .ephoxhighcontrastSkin .mceMenuItemTitle a, .ephoxhighcontrastSkin table.mceLayout tr.mceLast td {
+	border:none;
+}
+
+.ephoxhighcontrastSkin .mceMenu  .mceMenuItemEnabled a:hover  , .ephoxhighcontrastSkin .mceMenu .mceMenuItemActive{
+	background-color:#3399ff;
+}
+
+.ephoxhighcontrastSkin .mceToolbar  table{
+	background-color:transparent;
+}
+
+.ephoxhighcontrastSkin .mceColorSplitMenu a.mceMoreColors:hover {
+	background-color:#e6edf6;
+	border:1px solid #aecff7;
+}
+
+.ephoxhighcontrastSkin table.mceLayout {
+	border-top:1px solid #a0a0a0;
+}

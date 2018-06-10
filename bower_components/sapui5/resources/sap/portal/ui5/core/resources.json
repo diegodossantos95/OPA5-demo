@@ -1,0 +1,96 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": "Collection-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "Collection.js"
+		},
+		{
+			"name": "Component-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "Component.js"
+		},
+		{
+			"name": "ComponentCollection-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "ComponentCollection.js"
+		},
+		{
+			"name": "ComponentManager-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "ComponentManager.js"
+		},
+		{
+			"name": "DynamicView-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "DynamicView.js"
+		},
+		{
+			"name": "LayoutData-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "LayoutData.js"
+		},
+		{
+			"name": "LayoutInterface-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "LayoutInterface.js"
+		},
+		{
+			"name": "Object-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "Object.js"
+		},
+		{
+			"name": "ObjectMetadata-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "ObjectMetadata.js"
+		},
+		{
+			"name": "ObservablePropertiesMixin-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "ObservablePropertiesMixin.js"
+		},
+		{
+			"name": "PropertyObserver-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "PropertyObserver.js"
+		},
+		{
+			"name": "UI5ControlView-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "UI5ControlView.js"
+		},
+		{
+			"name": "View-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "View.js"
+		}
+	]
+}

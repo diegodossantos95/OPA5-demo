@@ -1,0 +1,63 @@
+{
+  "_version": "1.2.0",
+  "sap.app": {
+    "_version": "1.2.0",
+    "id": "sap.apf",
+    "type": "library",
+    "embeds": [
+      "base",
+      "modeler"
+    ],
+    "i18n": "resources/i18n/apfUi.properties",
+    "applicationVersion": {
+      "version": "1.50.3"
+    },
+    "title": "Analysis Path Framework",
+    "description": "Analysis Path Framework",
+    "ach": "CA-EPT-ANL-APF",
+    "resources": "resources.json",
+    "offline": false
+  },
+  "sap.ui": {
+    "_version": "1.1.0",
+    "technology": "UI5",
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": false,
+      "phone": false
+    },
+    "supportedThemes": [
+      "sap_bluecrystal",
+      "sap_hcb"
+    ]
+  },
+  "sap.ui5": {
+    "_version": "1.1.0",
+    "dependencies": {
+      "minUI5Version": "1.50",
+      "libs": {
+        "sap.ui.core": {
+          "minVersion": "1.50.0"
+        },
+        "sap.suite.ui.commons": {
+          "minVersion": "1.50.0"
+        },
+        "sap.m": {
+          "minVersion": "1.50.0"
+        },
+        "sap.ui.layout": {
+          "minVersion": "1.50.0"
+        },
+        "sap.ushell": {
+          "minVersion": "1.50.0"
+        },
+        "sap.viz": {
+          "minVersion": "1.50.0"
+        },
+        "sap.ui.comp": {
+          "minVersion": "1.50.0"
+        }
+      }
+    }
+  }
+}

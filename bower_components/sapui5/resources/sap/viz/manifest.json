@@ -1,0 +1,59 @@
+{
+  "_version": "1.2.0",
+  "sap.app": {
+    "_version": "1.2.0",
+    "id": "sap.viz",
+    "type": "library",
+    "embeds": [],
+    "applicationVersion": {
+      "version": "1.50.6"
+    },
+    "title": "Chart controls based on the SAP BI CVOM charting library",
+    "description": "Chart controls based on the SAP BI CVOM charting library",
+    "ach": "BI-CVM-UI5",
+    "resources": "resources.json",
+    "offline": true,
+    "openSourceComponents": [
+      {
+        "name": "canvg",
+        "packagedWithMySelf": true,
+        "version": "0.0.0"
+      },
+      {
+        "name": "RaphaelJS",
+        "packagedWithMySelf": true,
+        "version": "0.0.0"
+      },
+      {
+        "name": "rgbcolor_static",
+        "packagedWithMySelf": true,
+        "version": "0.0.0"
+      }
+    ]
+  },
+  "sap.ui": {
+    "_version": "1.1.0",
+    "technology": "UI5",
+    "supportedThemes": [
+      "base",
+      "sap_belize",
+      "sap_belize_hcb",
+      "sap_belize_hcw",
+      "sap_belize_plus",
+      "sap_bluecrystal",
+      "sap_hcb",
+      "sap_platinum"
+    ]
+  },
+  "sap.ui5": {
+    "_version": "1.1.0",
+    "dependencies": {
+      "minUI5Version": "1.50",
+      "libs": {
+        "sap.ui.core": {
+          "minVersion": "1.50.6"
+        }
+      }
+    }
+  }
+}

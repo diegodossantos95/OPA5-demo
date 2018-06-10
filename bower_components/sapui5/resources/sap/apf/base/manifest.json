@@ -1,0 +1,69 @@
+{
+    "_version": "1.1.0",
+    "sap.app": {
+        "_version": "1.1.0",
+        "id": "sap.apf.base",
+        "type": "component",
+        "embeddedBy" : "../",
+        "i18n": "../resources/i18n/apfUi.properties",
+        "title": "{{AnalysisPathFramework}}",
+        "description": "{{AnalysisPathFrameworkDescription}}",        
+        "ach": "CA-EPT-ANL-APF",
+        "resources" : "resources.json",
+        "offline": false
+    },
+    "sap.ui": {
+        "_version": "1.1.0",
+        "technology": "UI5",
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": false
+        },
+        "supportedThemes": [
+            "sap_hcb",
+            "sap_bluecrystal"
+        ]
+    },
+    "sap.ui5": {
+        "_version": "1.1.0",
+        "dependencies": {
+            "libs": {
+                "sap.ui.core": {
+                    "minVersion": "1.30.0"
+                },
+                "sap.m": {
+                    "minVersion": "1.30.0"
+                },
+                "sap.ui.layout": {
+                    "minVersion": "1.30.0"
+                },
+                "sap.ushell": {
+                    "minVersion": "1.30.0"
+                },
+                "sap.viz": {
+                    "minVersion": "1.30.0"
+                },
+                "sap.ui.comp": {
+                	"minVersion": "1.30.0"
+                },
+                "sap.suite.ui.commons": {
+                	"minVersion": "1.30.0"
+                }
+            }
+        },
+         "contentDensities": {
+            "compact": false,
+            "cozy": false
+        },
+        "config": {
+            "fullWidth" : true
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "uri": "../resources/i18n/apfUi.properties"
+            }
+        }
+    }
+}

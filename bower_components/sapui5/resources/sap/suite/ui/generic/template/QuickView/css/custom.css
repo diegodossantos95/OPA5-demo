@@ -1,0 +1,97 @@
+.copilotQuickViewContainerBox .sapQuickViewLineItemTable .sapMTB.sapMListHdrTBar {
+    padding: 0;
+    height: 2rem;
+}
+
+.copilotQuickViewContainerBox .sapQuickViewLineItemTable .sapMIBar .sapMTitle {
+  font-family: @sapUiFontFamily;
+  font-size: @sapMFontMediumSize ;
+  font-weight: normal;
+  color: @sapUiContentLabelColor;
+}
+
+/*.copilotQuickViewContainerBox .sapQuickViewLineItemTable > div {
+    margin-right: 1rem !important;
+}*/
+
+
+.sapQuickViewSmartFieldLabel .sapMLabel {
+  font-family: @sapUiFontFamily;
+  font-size: @sapMFontMediumSize ;
+  font-weight: normal;
+  color: @sapUiContentLabelColor;
+}
+
+.sapQuickViewTextTitle .sapMText {
+  font-family: @sapUiFontFamily !important;
+  font-size: @sapMFontMediumSize !important;
+  font-weight: normal;
+  color: @sapUiGroupTitleTextColor !important;
+}
+
+.copilotQuickViewContainerBox .sapQuickViewSmartFieldBox > div {
+}
+
+.copilotQuickViewContainerBox .sapQuickViewLineItemTable .sapMListTblCell {
+    height: 1.5rem;
+}
+
+.copilotQuickViewContainerBox .sapQuickViewTitle {
+    margin-bottom: 1rem;
+}
+
+.copilotQuickViewContainerBox .sapQuickActionCenteredBusyIndicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999999;
+}
+
+.sapQuickViewBadgeTitle {
+    font-family: @sapUiFontFamily !important;
+    font-size: @sapMFontHeader5Size !important;
+    font-weight: normal;
+    color: @sapUiGroupTitleTextColor !important;
+}
+
+
+.sapQuickViewBadgeSubtitle {
+  font-family: @sapUiFontFamily !important;
+  font-size: @sapMFontMediumSize !important;
+  font-weight: normal;
+  color: @sapUiContentLabelColor !important;
+}
+
+.sapQuickViewBadgeTinyMarginTop {
+  margin-top: 0.2rem;
+}
+
+.sapQuickViewBadgeImageBorder {
+  border: 1px solid @sapUiContentForegroundBorderColor;
+  overflow: hidden !important;
+  width:3.0rem;
+  height:3.0rem;
+}
+
+.sapQuickViewBadgeIconBorder {
+  color: @sapUiContentNonInteractiveIconColor;
+  border: 1px solid @sapUiContentForegroundBorderColor;
+  padding: 0.2rem 0.2rem;
+}
+
+.sapQuickViewBadgeIcon {
+  color: @sapUiContentNonInteractiveIconColor;
+  border: 1px solid @sapUiContentForegroundBorderColor;
+  padding: 0.2rem 0.2rem;
+  width: 2.5rem;
+  font-size: 2.5rem;
+}
+
+.sapQuickViewBadgeIconPadding {
+  padding-top: 2px;
+}
+
+.sapQuickViewLabelPadding {
+  padding-top: 1px;
+}

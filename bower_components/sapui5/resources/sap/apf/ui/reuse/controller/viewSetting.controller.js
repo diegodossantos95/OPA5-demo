@@ -1,0 +1,6 @@
+/*!
+ * SAP APF Analysis Path Framework
+ * 
+ * (c) Copyright 2012-2014 SAP AG. All rights reserved
+ */
+(function(){'use strict';var s,v;function _(){var S={},i;if(s.orderby&&s.orderby.length&&s.orderby[0].descending!==undefined){i=s.orderby[0].descending;}else if(s.orderby&&s.orderby.length){i=!s.orderby[0].ascending;}if(s.orderby&&s.orderby.length>1){S=undefined;}else if(s.orderby&&s.orderby.length==1){S=s.orderby[0].property;}else{S=undefined;i=false;}v.setSortDescending(i);v.setSelectedSortItem(S);}function a(S){var p;if(S.getParameters().sortItem&&S.getParameters().sortItem.getKey()){p=S.getParameters().sortItem.getKey();}else{return false;}var c={property:p,descending:S.getParameters().sortDescending};var P={property:v._oPreviousState.sortItem?v._oPreviousState.sortItem.getKey():undefined,descending:v._oPreviousState.sortDescending};if(P.property===c.property&&P.descending===c.descending){return false;}return true;}sap.ui.controller("sap.apf.ui.reuse.controller.viewSetting",{onInit:function(){var c=this;v=c.getView().getContent()[0];s=c.getView().getViewData().oTableInstance;_();},handleConfirmForSort:function(S){if(!a(S)){return;}s.oApi.selectionChanged(true);},handleCancel:function(S){v.destroy();s.oViewSettingDialog=undefined;}});}());

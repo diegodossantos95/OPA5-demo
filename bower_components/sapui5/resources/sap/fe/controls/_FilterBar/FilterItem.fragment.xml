@@ -1,0 +1,39 @@
+<VBox id="template::FilterField::{filterItem>@@.FEFB.getStableIdPartFromFilterItem}"
+	  class="sapUiSmallMarginEnd"
+	  xmlns="sap.m"
+	  xmlns:mdc="sap.ui.mdc"
+	  xmlns:core="sap.ui.core"
+	  xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1">
+
+	<Label labelFor="template::FilterField::{filterItem>@@.FEFB.getStableIdPartFromFilterItem}-__filterField"
+		   text="{= ${filterItem>@com.sap.vocabularies.Common.v1.Label} ? ${filterItem>@com.sap.vocabularies.Common.v1.Label} : '[' + ${filterItem>} + ']' }:"></Label>
+
+	<mdc:FilterField
+			id="template::FilterField::{filterItem>@@.FEFB.getStableIdPartFromFilterItem}-__filterField"
+			fieldPath="{parts : [{path: 'entitySet>@sapui.name'}, {path: 'filterItem>'}], formatter: 'sap.fe.controls._FilterBar.FilterBarAnnotationHelper.getFieldPath'}"
+			dataType="{filterItem>$Type}"
+			dataTypeConstraints="{filterItem>@@.FE.typeConstraints}"
+			dataTypeFormatOptions="{filterItem>@@.FE.typeFormatOptions}"
+			showValueHelp="{= ${filterItem>@@sap.ui.model.odata.v4.AnnotationHelper.getValueListType} === 'None' ? 'false' : 'true' }"
+			valueHelpRequest="{= ${filterItem>@@sap.ui.model.odata.v4.AnnotationHelper.getValueListType} === 'Standard' ? 'handleValueHelpRequest' : 'null' }"
+			required="{filterItem>@@.FE.isRequiredInFilter}"
+			maxConditions="{= (${filterItem>$Type} === 'Edm.Date' || ${filterItem>$Type} === 'Edm.DateTimeOffset') ? 2 : undefined }"
+			conditions="{sap.fe.cm>/conditions}"
+			valueState="{parts : [{path: 'entitySet>@sapui.name'}, {path: 'filterItem>'}], formatter: 'sap.fe.controls._FilterBar.FilterBarAnnotationHelper.getValueStatePath'}"
+			valueStateText="{parts : [{path: 'entitySet>@sapui.name'}, {path: 'filterItem>'}], formatter: 'sap.fe.controls._FilterBar.FilterBarAnnotationHelper.getValueStateTextPath'}"
+			width="100%"
+	>
+
+		<mdc:customData>
+			<!-- using the custom data is only a workaround for the first version, we check in the next version together with the mdc library how to change the API to get rid of this -->
+			<core:CustomData key="valueListTitle"
+							 value="{= ${filterItem>@com.sap.vocabularies.Common.v1.Label} ? ${filterItem>@com.sap.vocabularies.Common.v1.Label} : '[' + ${filterItem>} + ']' }"/>
+			<core:CustomData key="suggest"
+							 value="{= ${filterItem>@@sap.ui.model.odata.v4.AnnotationHelper.getValueListType} === 'Standard' ? 'true' : 'false' }"/>
+			<core:CustomData key="fixedValues"
+							 value="{= ${filterItem>@@sap.ui.model.odata.v4.AnnotationHelper.getValueListType} === 'Fixed' ? 'true' : 'false' }"/>
+		</mdc:customData>
+
+	</mdc:FilterField>
+
+</VBox>

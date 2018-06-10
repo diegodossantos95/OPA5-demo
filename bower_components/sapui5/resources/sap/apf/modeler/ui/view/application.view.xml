@@ -1,0 +1,9 @@
+<mvc:View resourceBundleAlias="i18n" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" xmlns:f="sap.ui.layout.form">
+
+	<Button xmlns="sap.m" id="idButton">
+
+	</Button>
+
+</mvc:View>
+

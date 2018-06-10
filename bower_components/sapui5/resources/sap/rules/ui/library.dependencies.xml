@@ -1,0 +1,1713 @@
+<?xml version="1.0" ?>
+<library  version="2.0" name="sap.rules.ui">
+  <module name="sap/rules/ui/BindingSpy.js" size="1588" compressedSize="551">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2016 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/library.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/DecisionTable.js" size="56078" compressedSize="30488">
+    <description>Provides this._validatecontrol sap.rules.ui.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/BusyIndicator.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/m/DisplayListItem.js"/>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/Input.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/Link.js"/>
+      <module name="sap/m/Menu.js"/>
+      <module name="sap/m/MenuButton.js"/>
+      <module name="sap/m/MenuItem.js"/>
+      <module name="sap/m/MessageStrip.js"/>
+      <module name="sap/m/ObjectIdentifier.js"/>
+      <module name="sap/m/Popover.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/Toolbar.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/rules/ui/DecisionTableCell.js"/>
+      <module name="sap/rules/ui/DecisionTableSettingsOld.js"/>
+      <module name="sap/rules/ui/RuleBase.js"/>
+      <module name="sap/rules/ui/Utils.js"/>
+      <module name="sap/rules/ui/library.js"/>
+      <module name="sap/rules/ui/type/DecisionTableCell.js"/>
+      <module name="sap/ui/table/Column.js"/>
+      <module name="sap/ui/table/Table.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/DecisionTableCell.js" size="13089" compressedSize="4736">
+    <description>Provides control sap.rules.ui.DecisionTableCell.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Popover.js"/>
+      <module name="sap/rules/ui/DecisionTableCellExpressionAdvanced.js"/>
+      <module name="sap/rules/ui/DecisionTableCellExpressionBasic.js"/>
+      <module name="sap/rules/ui/library.js"/>
+      <module name="sap/rules/ui/type/DecisionTableCell.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/DecisionTableCellExpressionAdvanced.js" size="10283" compressedSize="4918">
+    <description>Provides control sap.rules.ui.ExpressionAdvanced.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/ExpressionAdvanced.js"/>
+      <module name="sap/rules/ui/Utils.js"/>
+      <module name="sap/rules/ui/library.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/DecisionTableCellExpressionAdvancedRenderer.js" size="1124" compressedSize="370">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2016 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/ExpressionAdvancedRenderer.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/DecisionTableCellExpressionBasic.js" size="10318" compressedSize="5080">
+    <description>Provides control sap.rules.ui.ExpressionBasic.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/ExpressionBasic.js"/>
+      <module name="sap/rules/ui/InstructionRenderer.js"/>
+      <module name="sap/rules/ui/library.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/DecisionTableCellExpressionBasicRenderer.js" size="1265" compressedSize="364">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2016 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/ExpressionBasicRenderer.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/DecisionTableCellRenderer.js" size="1159" compressedSize="435">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2016 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/DecisionTableConfiguration.js" size="3027" compressedSize="1046">
+    <description>Provides control sap.rules.ui.DecisionTableConfiguration</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/library.js"/>
+      <module name="sap/ui/core/Element.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/DecisionTableRenderer.js" size="1251" compressedSize="552">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2016 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/DecisionTableSettings.js" size="47388" compressedSize="23910">
+    <description>Provides control sap.rules.ui.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/CheckBox.js"/>
+      <module name="sap/m/Input.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/MessageBox.js"/>
+      <module name="sap/m/Select.js"/>
+      <module name="sap/m/Switch.js"/>
+      <module name="sap/m/Table.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/rules/ui/ExpressionAdvanced.js"/>
+      <module name="sap/rules/ui/library.js"/>
+      <module name="sap/rules/ui/type/Expression.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/layout/VerticalLayout.js"/>
+      <module name="sap/ui/layout/form/SimpleForm.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/DecisionTableSettingsOld.js" size="41283" compressedSize="14489">
+    <description>Provides control sap.rules.ui.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/CheckBox.js"/>
+      <module name="sap/m/Input.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/Select.js"/>
+      <module name="sap/m/Switch.js"/>
+      <module name="sap/m/Table.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/rules/ui/ExpressionAdvanced.js"/>
+      <module name="sap/rules/ui/library.js"/>
+      <module name="sap/rules/ui/type/Expression.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/layout/VerticalLayout.js"/>
+      <module name="sap/ui/layout/form/SimpleForm.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/DecisionTableSettingsOldRenderer.js" size="1068" compressedSize="412">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2016 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/DecisionTableSettingsRenderer.js" size="1059" compressedSize="412">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2016 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/ExpressionAdvanced.js" size="45170" compressedSize="20083">
+    <description>Provides the sap.rules.ui.ExpressionAdvanced control</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/MessageBox.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/TextArea.js"/>
+      <module name="sap/rules/ui/ExpressionBase.js"/>
+      <module name="sap/rules/ui/Utils.js"/>
+      <module name="sap/rules/ui/codemirror/addon/closeBrackets/closebrackets.js"/>
+      <module name="sap/rules/ui/codemirror/addon/display/placeholder.js"/>
+      <module name="sap/rules/ui/codemirror/addon/hint/hdf-hint.js"/>
+      <module name="sap/rules/ui/codemirror/addon/hint/show-hint.js"/>
+      <module name="sap/rules/ui/codemirror/addon/mh/mark-selection.js"/>
+      <module name="sap/rules/ui/codemirror/addon/search/search.js"/>
+      <module name="sap/rules/ui/codemirror/lib/codemirror.js"/>
+      <module name="sap/rules/ui/codemirror/mode/hdf/hdf.js"/>
+      <module name="sap/rules/ui/providers/ValueHelpProvider.js"/>
+      <module name="sap/ui/comp/odata/MetadataAnalyser.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Popup.js"/>
+      <module name="sap/ui/layout/HorizontalLayout.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/ExpressionAdvancedRenderer.js" size="1253" compressedSize="404">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2016 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/ExpressionBase.js" size="2863" compressedSize="709">
+    <description>Provides the sap.rules.ui.ExpressionBase control</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Control.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/ExpressionBasic.js" size="13612" compressedSize="5017">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2016 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/ExpressionBase.js"/>
+      <module name="sap/rules/ui/InstructionRenderer.js"/>
+      <module name="sap/rules/ui/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/ExpressionBasicRenderer.js" size="1175" compressedSize="370">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2016 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/InstructionRenderer.js" size="28519" compressedSize="11909">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/DatePicker.js"/>
+      <module name="sap/m/DateTimePicker.js"/>
+      <module name="sap/m/Input.js"/>
+      <module name="sap/m/Select.js"/>
+      <module name="sap/m/SelectDialog.js"/>
+      <module name="sap/m/StandardListItem.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/TimePicker.js"/>
+      <module name="sap/rules/ui/Utils.js"/>
+      <module name="sap/rules/ui/providers/ValueHelpProvider.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/HTML.js"/>
+      <module name="sap/ui/core/Item.js"/>
+      <module name="sap/ui/core/LocaleData.js"/>
+      <module name="sap/ui/core/ValueState.js"/>
+      <module name="sap/ui/model/Filter.js"/>
+      <module name="sap/ui/model/FilterOperator.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="sap/ui/model/type/Date.js"/>
+      <module name="sap/ui/model/type/DateTime.js"/>
+      <module name="sap/ui/model/type/Float.js"/>
+      <module name="sap/ui/model/type/Time.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/RuleBase.js" size="1795" compressedSize="618">
+    <description>Provides control sap.rules.ui.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/RuleBuilder.js" size="11406" compressedSize="5009">
+    <description>Provides control sap.rules.ui.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Select.js"/>
+      <module name="sap/rules/ui/DecisionTable.js"/>
+      <module name="sap/rules/ui/DecisionTableConfiguration.js"/>
+      <module name="sap/rules/ui/RuleFormat.js"/>
+      <module name="sap/rules/ui/RuleType.js"/>
+      <module name="sap/rules/ui/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Item.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/RuleBuilderRenderer.js" size="1019" compressedSize="443">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2016 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/Utils.js" size="3652" compressedSize="1704">
+    <description>Utility shared functions for sap.rules.ui. @return {object} Utils</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/codemirror/addon/closeBrackets/closebrackets.js" size="6295" compressedSize="3282" raw="true">
+  </module>
+  <module name="sap/rules/ui/codemirror/addon/display/placeholder.js" size="1562" compressedSize="1000" raw="true">
+  </module>
+  <module name="sap/rules/ui/codemirror/addon/hint/hdf-hint.js" size="6210" compressedSize="1866" raw="true">
+  </module>
+  <module name="sap/rules/ui/codemirror/addon/hint/show-hint.js" size="19916" compressedSize="10024" raw="true">
+  </module>
+  <module name="sap/rules/ui/codemirror/addon/mh/mark-selection.js" size="3781" compressedSize="1979" raw="true">
+  </module>
+  <module name="sap/rules/ui/codemirror/addon/search/search.js" size="6721" compressedSize="3453" raw="true">
+  </module>
+  <module name="sap/rules/ui/codemirror/addon/search/searchcursor.js" size="6856" compressedSize="3169" raw="true">
+  </module>
+  <module name="sap/rules/ui/codemirror/lib/codemirror.js" size="313849" compressedSize="140651" raw="true">
+  </module>
+  <module name="sap/rules/ui/codemirror/mode/hdf/hdf.js" size="13413" compressedSize="5349" raw="true">
+  </module>
+  <module name="sap/rules/ui/fragments/DecisionTableCellExpressionAdvanced.fragment.xml" size="388">
+    <requires>
+      <module name="sap/m/Popover.js"/>
+      <module name="sap/m/ScrollContainer.js"/>
+      <module name="sap/rules/ui/DecisionTableCellExpressionAdvanced.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/fragments/DecisionTableCellExpressionBasic.fragment.xml" size="385">
+    <requires>
+      <module name="sap/m/Popover.js"/>
+      <module name="sap/m/ScrollContainer.js"/>
+      <module name="sap/rules/ui/DecisionTableCellExpressionBasic.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle.properties" size="5451">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_ar.properties" size="9121">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_bg.properties" size="11140">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_ca.properties" size="5764">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_cs.properties" size="5997">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_da.properties" size="5499">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_de.properties" size="5817">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_el.properties" size="10962">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_en.properties" size="5329">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_en_US_sappsd.properties" size="12520">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_en_US_saptrc.properties" size="6548">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_es.properties" size="5789">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_et.properties" size="5508">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_fi.properties" size="5633">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_fr.properties" size="5928">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_hi.properties" size="10291">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_hr.properties" size="5462">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_hu.properties" size="6238">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_it.properties" size="5593">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_iw.properties" size="8364">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_ja.properties" size="7106">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_kk.properties" size="10258">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_ko.properties" size="6806">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_lt.properties" size="5918">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_lv.properties" size="6025">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_ms.properties" size="5380">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_nl.properties" size="5510">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_no.properties" size="5470">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_pl.properties" size="5917">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_pt.properties" size="5759">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_ro.properties" size="5809">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_ru.properties" size="10642">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_sh.properties" size="5511">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_sk.properties" size="5986">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_sl.properties" size="5578">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_sv.properties" size="5511">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_th.properties" size="10364">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_tr.properties" size="5928">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_uk.properties" size="10468">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_vi.properties" size="7627">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_zh_CN.properties" size="6099">
+  </module>
+  <module name="sap/rules/ui/i18n/messagebundle_zh_TW.properties" size="6285">
+  </module>
+  <module name="sap/rules/ui/library-preload.js" size="3260046">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/BusyIndicator.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/CheckBox.js"/>
+      <module name="sap/m/DatePicker.js"/>
+      <module name="sap/m/DateTimePicker.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/m/DisplayListItem.js"/>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/Input.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/Link.js"/>
+      <module name="sap/m/List.js"/>
+      <module name="sap/m/Menu.js"/>
+      <module name="sap/m/MenuButton.js"/>
+      <module name="sap/m/MenuItem.js"/>
+      <module name="sap/m/MessageBox.js"/>
+      <module name="sap/m/MessageStrip.js"/>
+      <module name="sap/m/ObjectIdentifier.js"/>
+      <module name="sap/m/PlacementType.js"/>
+      <module name="sap/m/Popover.js"/>
+      <module name="sap/m/ResponsivePopover.js"/>
+      <module name="sap/m/ScrollContainer.js"/>
+      <module name="sap/m/Select.js"/>
+      <module name="sap/m/SelectDialog.js"/>
+      <module name="sap/m/StandardListItem.js"/>
+      <module name="sap/m/Switch.js"/>
+      <module name="sap/m/Table.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/TextArea.js"/>
+      <module name="sap/m/TimePicker.js"/>
+      <module name="sap/m/Toolbar.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/rules/ui/RuleFormat.js"/>
+      <module name="sap/rules/ui/RuleType.js"/>
+      <module name="sap/rules/ui/parser/resources/dependencies/lib/dependenciesUtils.js" conditional="true"/>
+      <module name="sap/rules/ui/parser/resources/dependencies/lib/dependencyManager.js" conditional="true"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/rtsContextJSON.js" conditional="true"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/serverDBRTContext.js" conditional="true"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/serverJSONandDBRTcontext.js" conditional="true"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="sap/ui/comp/odata/MetadataAnalyser.js"/>
+      <module name="sap/ui/comp/providers/ValueHelpProvider.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="sap/ui/core/HTML.js"/>
+      <module name="sap/ui/core/Item.js"/>
+      <module name="sap/ui/core/Locale.js"/>
+      <module name="sap/ui/core/LocaleData.js"/>
+      <module name="sap/ui/core/Popup.js"/>
+      <module name="sap/ui/core/ValueState.js"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="sap/ui/layout/HorizontalLayout.js"/>
+      <module name="sap/ui/layout/VerticalLayout.js"/>
+      <module name="sap/ui/layout/form/SimpleForm.js"/>
+      <module name="sap/ui/model/Filter.js"/>
+      <module name="sap/ui/model/FilterOperator.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="sap/ui/model/resource/ResourceModel.js"/>
+      <module name="sap/ui/model/type/Date.js"/>
+      <module name="sap/ui/model/type/DateTime.js"/>
+      <module name="sap/ui/model/type/Float.js"/>
+      <module name="sap/ui/model/type/Time.js"/>
+      <module name="sap/ui/table/Column.js"/>
+      <module name="sap/ui/table/Table.js"/>
+    </requires>
+    <includes>
+      <module name="sap/rules/ui/BindingSpy.js"/>
+      <module name="sap/rules/ui/DecisionTable.js"/>
+      <module name="sap/rules/ui/DecisionTableCell.js"/>
+      <module name="sap/rules/ui/DecisionTableCellExpressionAdvanced.js"/>
+      <module name="sap/rules/ui/DecisionTableCellExpressionAdvancedRenderer.js"/>
+      <module name="sap/rules/ui/DecisionTableCellExpressionBasic.js"/>
+      <module name="sap/rules/ui/DecisionTableCellExpressionBasicRenderer.js"/>
+      <module name="sap/rules/ui/DecisionTableCellRenderer.js"/>
+      <module name="sap/rules/ui/DecisionTableConfiguration.js"/>
+      <module name="sap/rules/ui/DecisionTableRenderer.js"/>
+      <module name="sap/rules/ui/DecisionTableSettings.js"/>
+      <module name="sap/rules/ui/DecisionTableSettingsOld.js"/>
+      <module name="sap/rules/ui/DecisionTableSettingsOldRenderer.js"/>
+      <module name="sap/rules/ui/DecisionTableSettingsRenderer.js"/>
+      <module name="sap/rules/ui/ExpressionAdvanced.js"/>
+      <module name="sap/rules/ui/ExpressionAdvancedRenderer.js"/>
+      <module name="sap/rules/ui/ExpressionBase.js"/>
+      <module name="sap/rules/ui/ExpressionBasic.js"/>
+      <module name="sap/rules/ui/ExpressionBasicRenderer.js"/>
+      <module name="sap/rules/ui/InstructionRenderer.js"/>
+      <module name="sap/rules/ui/RuleBase.js"/>
+      <module name="sap/rules/ui/RuleBuilder.js"/>
+      <module name="sap/rules/ui/RuleBuilderRenderer.js"/>
+      <module name="sap/rules/ui/Utils.js"/>
+      <module name="sap/rules/ui/codemirror/addon/closeBrackets/closebrackets.js"/>
+      <module name="sap/rules/ui/codemirror/addon/display/placeholder.js"/>
+      <module name="sap/rules/ui/codemirror/addon/hint/hdf-hint.js"/>
+      <module name="sap/rules/ui/codemirror/addon/hint/show-hint.js"/>
+      <module name="sap/rules/ui/codemirror/addon/mh/mark-selection.js"/>
+      <module name="sap/rules/ui/codemirror/addon/search/search.js"/>
+      <module name="sap/rules/ui/codemirror/addon/search/searchcursor.js"/>
+      <module name="sap/rules/ui/codemirror/lib/codemirror.js"/>
+      <module name="sap/rules/ui/codemirror/mode/hdf/hdf.js"/>
+      <module name="sap/rules/ui/fragments/DecisionTableCellExpressionAdvanced.fragment.xml"/>
+      <module name="sap/rules/ui/fragments/DecisionTableCellExpressionBasic.fragment.xml"/>
+      <module name="sap/rules/ui/library.js"/>
+      <module name="sap/rules/ui/manifest.json"/>
+      <module name="sap/rules/ui/parser/AST/lib/bundleAst.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/ASTConvertor.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/IDPLexer.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/IDPParser.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/antlr3_all_min.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/autoCompleteUtils.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/constantsBase.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/conversionUtils.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/entityModel.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/entityModelConstractor.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/localeConversion.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/numberConversion.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/parseModel.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/parseUtils.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/parserTokens.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/parsingBackendMediator.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/termsUtils.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/utils.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/valueHelpValidator.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/vocabularyUtils.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/errorHandling/hrfException.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/locale/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/locale/lib/moment_JS_min.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/locale/lib/resourceBundle.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/locale/lib/resourceBundleContext.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/messageHandling/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/messageHandling/lib/message.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/messageHandling/lib/opMessages.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/messageHandling/lib/responseCollector.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/util/constants.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/util/utilsBase.js"/>
+      <module name="sap/rules/ui/parser/resources/common/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/resources/common/lib/oDataHandler.js"/>
+      <module name="sap/rules/ui/parser/resources/common/lib/resourcesConvertor.js"/>
+      <module name="sap/rules/ui/parser/resources/dependencies/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/resources/dependencies/lib/constantsBase.js"/>
+      <module name="sap/rules/ui/parser/resources/dependencies/lib/objects.js"/>
+      <module name="sap/rules/ui/parser/resources/rule/lib/constantsBase.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/JSONLoader.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/constantsBase.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/parameterRuntimeServices.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/rtsVoca.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/rtsVocaContextBase.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/rtsVocaContextFactory.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/rtsVocaCoreFactory.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/rtsVocaInitiator.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/runtimeServicesCore.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/runtimeServicesUtils.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/termGeneration.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/utils.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/utilsBase.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/validationUtils.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocaConversionUtils.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocaObjects.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProvider.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderBaseContext.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderContextFactory.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderFactory.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderInitiator.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderJSONContext.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/constantsBase.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/decisionTableCell.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/dependenciesHandler.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/ruleBody.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/ruleBodyConvertor.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/ruleBodyServices.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/ruleBodyValidator.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/ruleServices.js"/>
+      <module name="sap/rules/ui/providers/ValueHelpProvider.js"/>
+      <module name="sap/rules/ui/services/ExpressionLanguage.js"/>
+      <module name="sap/rules/ui/type/DecisionTableCell.js"/>
+      <module name="sap/rules/ui/type/DecisionTableHeader.js"/>
+      <module name="sap/rules/ui/type/Expression.js"/>
+      <module name="sap/rules/ui/type/ExpressionAbs.js"/>
+    </includes>
+  </module>
+  <module name="sap/rules/ui/library-preload.json" size="0">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/BusyIndicator.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/CheckBox.js"/>
+      <module name="sap/m/DatePicker.js"/>
+      <module name="sap/m/DateTimePicker.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/m/DisplayListItem.js"/>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/Input.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/Link.js"/>
+      <module name="sap/m/List.js"/>
+      <module name="sap/m/Menu.js"/>
+      <module name="sap/m/MenuButton.js"/>
+      <module name="sap/m/MenuItem.js"/>
+      <module name="sap/m/MessageBox.js"/>
+      <module name="sap/m/MessageStrip.js"/>
+      <module name="sap/m/ObjectIdentifier.js"/>
+      <module name="sap/m/PlacementType.js"/>
+      <module name="sap/m/Popover.js"/>
+      <module name="sap/m/ResponsivePopover.js"/>
+      <module name="sap/m/ScrollContainer.js"/>
+      <module name="sap/m/Select.js"/>
+      <module name="sap/m/SelectDialog.js"/>
+      <module name="sap/m/StandardListItem.js"/>
+      <module name="sap/m/Switch.js"/>
+      <module name="sap/m/Table.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/TextArea.js"/>
+      <module name="sap/m/TimePicker.js"/>
+      <module name="sap/m/Toolbar.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/m/library-preload.json"/>
+      <module name="sap/rules/ui/RuleFormat.js"/>
+      <module name="sap/rules/ui/RuleType.js"/>
+      <module name="sap/rules/ui/parser/resources/dependencies/lib/dependenciesUtils.js" conditional="true"/>
+      <module name="sap/rules/ui/parser/resources/dependencies/lib/dependencyManager.js" conditional="true"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/rtsContextJSON.js" conditional="true"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/serverDBRTContext.js" conditional="true"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/serverJSONandDBRTcontext.js" conditional="true"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="sap/ui/comp/odata/MetadataAnalyser.js"/>
+      <module name="sap/ui/comp/providers/ValueHelpProvider.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="sap/ui/core/HTML.js"/>
+      <module name="sap/ui/core/Item.js"/>
+      <module name="sap/ui/core/Locale.js"/>
+      <module name="sap/ui/core/LocaleData.js"/>
+      <module name="sap/ui/core/Popup.js"/>
+      <module name="sap/ui/core/ValueState.js"/>
+      <module name="sap/ui/core/library-preload.json"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="sap/ui/layout/HorizontalLayout.js"/>
+      <module name="sap/ui/layout/VerticalLayout.js"/>
+      <module name="sap/ui/layout/form/SimpleForm.js"/>
+      <module name="sap/ui/model/Filter.js"/>
+      <module name="sap/ui/model/FilterOperator.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="sap/ui/model/resource/ResourceModel.js"/>
+      <module name="sap/ui/model/type/Date.js"/>
+      <module name="sap/ui/model/type/DateTime.js"/>
+      <module name="sap/ui/model/type/Float.js"/>
+      <module name="sap/ui/model/type/Time.js"/>
+      <module name="sap/ui/table/Column.js"/>
+      <module name="sap/ui/table/Table.js"/>
+    </requires>
+    <includes>
+      <module name="sap/rules/ui/BindingSpy.js"/>
+      <module name="sap/rules/ui/DecisionTable.js"/>
+      <module name="sap/rules/ui/DecisionTableCell.js"/>
+      <module name="sap/rules/ui/DecisionTableCellExpressionAdvanced.js"/>
+      <module name="sap/rules/ui/DecisionTableCellExpressionAdvancedRenderer.js"/>
+      <module name="sap/rules/ui/DecisionTableCellExpressionBasic.js"/>
+      <module name="sap/rules/ui/DecisionTableCellExpressionBasicRenderer.js"/>
+      <module name="sap/rules/ui/DecisionTableCellRenderer.js"/>
+      <module name="sap/rules/ui/DecisionTableConfiguration.js"/>
+      <module name="sap/rules/ui/DecisionTableRenderer.js"/>
+      <module name="sap/rules/ui/DecisionTableSettings.js"/>
+      <module name="sap/rules/ui/DecisionTableSettingsOld.js"/>
+      <module name="sap/rules/ui/DecisionTableSettingsOldRenderer.js"/>
+      <module name="sap/rules/ui/DecisionTableSettingsRenderer.js"/>
+      <module name="sap/rules/ui/ExpressionAdvanced.js"/>
+      <module name="sap/rules/ui/ExpressionAdvancedRenderer.js"/>
+      <module name="sap/rules/ui/ExpressionBase.js"/>
+      <module name="sap/rules/ui/ExpressionBasic.js"/>
+      <module name="sap/rules/ui/ExpressionBasicRenderer.js"/>
+      <module name="sap/rules/ui/InstructionRenderer.js"/>
+      <module name="sap/rules/ui/RuleBase.js"/>
+      <module name="sap/rules/ui/RuleBuilder.js"/>
+      <module name="sap/rules/ui/RuleBuilderRenderer.js"/>
+      <module name="sap/rules/ui/Utils.js"/>
+      <module name="sap/rules/ui/codemirror/addon/closeBrackets/closebrackets.js"/>
+      <module name="sap/rules/ui/codemirror/addon/display/placeholder.js"/>
+      <module name="sap/rules/ui/codemirror/addon/hint/hdf-hint.js"/>
+      <module name="sap/rules/ui/codemirror/addon/hint/show-hint.js"/>
+      <module name="sap/rules/ui/codemirror/addon/mh/mark-selection.js"/>
+      <module name="sap/rules/ui/codemirror/addon/search/search.js"/>
+      <module name="sap/rules/ui/codemirror/addon/search/searchcursor.js"/>
+      <module name="sap/rules/ui/codemirror/lib/codemirror.js"/>
+      <module name="sap/rules/ui/codemirror/mode/hdf/hdf.js"/>
+      <module name="sap/rules/ui/fragments/DecisionTableCellExpressionAdvanced.fragment.xml"/>
+      <module name="sap/rules/ui/fragments/DecisionTableCellExpressionBasic.fragment.xml"/>
+      <module name="sap/rules/ui/library.js"/>
+      <module name="sap/rules/ui/manifest.json"/>
+      <module name="sap/rules/ui/parser/AST/lib/bundleAst.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/ASTConvertor.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/IDPLexer.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/IDPParser.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/antlr3_all_min.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/autoCompleteUtils.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/constantsBase.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/conversionUtils.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/entityModel.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/entityModelConstractor.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/localeConversion.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/numberConversion.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/parseModel.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/parseUtils.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/parserTokens.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/parsingBackendMediator.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/termsUtils.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/utils.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/valueHelpValidator.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/vocabularyUtils.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/errorHandling/hrfException.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/locale/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/locale/lib/moment_JS_min.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/locale/lib/resourceBundle.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/locale/lib/resourceBundleContext.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/messageHandling/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/messageHandling/lib/message.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/messageHandling/lib/opMessages.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/messageHandling/lib/responseCollector.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/util/constants.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/util/utilsBase.js"/>
+      <module name="sap/rules/ui/parser/resources/common/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/resources/common/lib/oDataHandler.js"/>
+      <module name="sap/rules/ui/parser/resources/common/lib/resourcesConvertor.js"/>
+      <module name="sap/rules/ui/parser/resources/dependencies/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/resources/dependencies/lib/constantsBase.js"/>
+      <module name="sap/rules/ui/parser/resources/dependencies/lib/objects.js"/>
+      <module name="sap/rules/ui/parser/resources/rule/lib/constantsBase.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/JSONLoader.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/constantsBase.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/parameterRuntimeServices.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/rtsVoca.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/rtsVocaContextBase.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/rtsVocaContextFactory.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/rtsVocaCoreFactory.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/rtsVocaInitiator.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/runtimeServicesCore.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/runtimeServicesUtils.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/termGeneration.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/utils.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/utilsBase.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/validationUtils.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocaConversionUtils.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocaObjects.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProvider.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderBaseContext.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderContextFactory.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderFactory.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderInitiator.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderJSONContext.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/constantsBase.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/decisionTableCell.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/dependenciesHandler.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/ruleBody.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/ruleBodyConvertor.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/ruleBodyServices.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/ruleBodyValidator.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/ruleServices.js"/>
+      <module name="sap/rules/ui/providers/ValueHelpProvider.js"/>
+      <module name="sap/rules/ui/services/ExpressionLanguage.js"/>
+      <module name="sap/rules/ui/type/DecisionTableCell.js"/>
+      <module name="sap/rules/ui/type/DecisionTableHeader.js"/>
+      <module name="sap/rules/ui/type/Expression.js"/>
+      <module name="sap/rules/ui/type/ExpressionAbs.js"/>
+    </includes>
+  </module>
+  <module name="sap/rules/ui/library.js" size="8696" compressedSize="2770">
+    <description>Initialization code and shared classes of library sap.rules.ui.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/library.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/manifest.json" size="811">
+  </module>
+  <module name="sap/rules/ui/parser/AST/lib/bundleAst.js" size="42620" compressedSize="18805" raw="true">
+  </module>
+  <module name="sap/rules/ui/parser/businessLanguage/lib/ASTConvertor.js" size="27333" compressedSize="10435">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/AST/lib/bundleAst.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/constants.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/businessLanguage/lib/IDPLexer.js" size="717535" compressedSize="392107">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/antlr3_all_min.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/localeConversion.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/numberConversion.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/parseModel.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/parseUtils.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/termsUtils.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/utils.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/vocabularyUtils.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/businessLanguage/lib/IDPParser.js" size="4155862" compressedSize="1926383">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/antlr3_all_min.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/entityModel.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/entityModelConstractor.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/numberConversion.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/parseModel.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/parseUtils.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/termsUtils.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/utils.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/vocabularyUtils.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/businessLanguage/lib/antlr3_all_min.js" size="95733" compressedSize="68260">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/businessLanguage/lib/autoCompleteUtils.js" size="71821" compressedSize="25318">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/antlr3_all_min.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/parseModel.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/parseUtils.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/parserTokens.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/utils.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/vocabularyUtils.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/errorHandling/hrfException.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/businessLanguage/lib/constants.js" size="9023" compressedSize="6683">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/constantsBase.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/businessLanguage/lib/constantsBase.js" size="4179" compressedSize="2626">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/businessLanguage/lib/conversionUtils.js" size="10212" compressedSize="5307">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/localeConversion.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/parseUtils.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/errorHandling/hrfException.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/constantsBase.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/businessLanguage/lib/entityModel.js" size="49879" compressedSize="18395">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/entityModelConstractor.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/parseModel.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/parseUtils.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/businessLanguage/lib/entityModelConstractor.js" size="16879" compressedSize="7244">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/parseUtils.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/businessLanguage/lib/localeConversion.js" size="23557" compressedSize="9974">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/numberConversion.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/parseUtils.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/errorHandling/hrfException.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/locale/lib/moment_JS_min.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/businessLanguage/lib/numberConversion.js" size="8970" compressedSize="4419">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/parseUtils.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/businessLanguage/lib/parseModel.js" size="24394" compressedSize="10422">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/entityModelConstractor.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/parseUtils.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/utils.js"/>
+      <module name="sap/rules/ui/parser/resources/dependencies/lib/constantsBase.js"/>
+      <module name="sap/rules/ui/parser/resources/dependencies/lib/objects.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/constantsBase.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/businessLanguage/lib/parseUtils.js" size="72683" compressedSize="38081">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/antlr3_all_min.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/parserTokens.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/utils.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/vocabularyUtils.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/errorHandling/hrfException.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/messageHandling/lib/responseCollector.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/businessLanguage/lib/parserTokens.js" size="4002" compressedSize="3992">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/businessLanguage/lib/parsingBackendMediator.js" size="22999" compressedSize="10951">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/IDPLexer.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/IDPParser.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/antlr3_all_min.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/autoCompleteUtils.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/conversionUtils.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/parseModel.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/parseUtils.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/parserTokens.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/valueHelpValidator.js"/>
+      <module name="sap/rules/ui/parser/resources/dependencies/lib/constantsBase.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/parameterRuntimeServices.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderFactory.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/businessLanguage/lib/termsUtils.js" size="8677" compressedSize="3862">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/parseModel.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/parseUtils.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/parserTokens.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/utils.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/vocabularyUtils.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/businessLanguage/lib/utils.js" size="3683" compressedSize="1540">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/businessLanguage/lib/valueHelpValidator.js" size="8551" compressedSize="3123">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/parseUtils.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/businessLanguage/lib/vocabularyUtils.js" size="39005" compressedSize="14342">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/constantsBase.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions.properties" size="31294">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_ar.properties" size="67774">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_bg.properties" size="80997">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_ca.properties" size="33915">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_cs.properties" size="35524">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_da.properties" size="31348">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_de.properties" size="33391">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_el.properties" size="83777">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_en.properties" size="30909">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_en_US.properties" size="28884">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_es.properties" size="33988">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_et.properties" size="31706">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_fi.properties" size="34292">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_fr.properties" size="36111">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_hi.properties" size="77544">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_hr.properties" size="32774">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_hu.properties" size="38279">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_it.properties" size="33042">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_iw.properties" size="61300">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_ja.properties" size="53590">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_kk.properties" size="77131">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_ko.properties" size="49249">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_lv.properties" size="35710">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_nl.properties" size="31654">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_no.properties" size="31246">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_pl.properties" size="35479">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_pt.properties" size="36041">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_ro.properties" size="34600">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_ru.properties" size="80747">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_sh.properties" size="33002">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_sk.properties" size="36154">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_sl.properties" size="31700">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_sv.properties" size="32306">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_th.properties" size="75840">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_tr.properties" size="34898">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_uk.properties" size="77875">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_vi.properties" size="50564">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_zh-CN.properties" size="37924">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_zh_CN.properties" size="37924">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/messages_descriptions_zh_TW.properties" size="37942">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions.properties" size="2539">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_bg.properties" size="5846">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_ca.properties" size="2667">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_cs.properties" size="3015">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_da.properties" size="2608">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_de.properties" size="2601">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_el.properties" size="5944">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_en.properties" size="2432">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_en_US.properties" size="1974">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_es.properties" size="2699">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_et.properties" size="2624">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_fi.properties" size="2746">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_fr.properties" size="2791">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_hi.properties" size="4770">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_hr.properties" size="2639">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_hu.properties" size="3209">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_it.properties" size="2594">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_iw.properties" size="4657">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_ja.properties" size="3280">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_kk.properties" size="6018">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_ko.properties" size="3068">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_lv.properties" size="2886">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_nl.properties" size="2469">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_no.properties" size="2582">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_pl.properties" size="2819">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_pt.properties" size="2841">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_ro.properties" size="2773">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_ru.properties" size="6056">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_sh.properties" size="2653">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_sk.properties" size="3050">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_sl.properties" size="2621">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_sv.properties" size="2752">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_th.properties" size="5818">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_tr.properties" size="2973">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_uk.properties" size="6132">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_vi.properties" size="3626">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_zh-CN.properties" size="2764">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_zh_CN.properties" size="2764">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/op_messages_descriptions_zh_TW.properties" size="2872">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions.properties" size="29310">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_ar.properties" size="62951">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_bg.properties" size="75526">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_ca.properties" size="31660">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_cs.properties" size="33099">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_da.properties" size="29309">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_de.properties" size="31251">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_el.properties" size="77991">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_en.properties" size="28882">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_es.properties" size="31673">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_et.properties" size="29641">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_fi.properties" size="32062">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_fr.properties" size="33722">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_hi.properties" size="72104">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_hr.properties" size="30647">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_hu.properties" size="35810">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_it.properties" size="30896">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_iw.properties" size="57085">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_ja.properties" size="49832">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_kk.properties" size="71724">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_ko.properties" size="45804">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_lv.properties" size="33478">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_nl.properties" size="29562">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_no.properties" size="29244">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_pl.properties" size="33157">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_pt.properties" size="33677">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_ro.properties" size="32313">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_ru.properties" size="75186">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_sh.properties" size="30891">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_sk.properties" size="33752">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_sl.properties" size="29614">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_sv.properties" size="30210">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_th.properties" size="70522">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_tr.properties" size="32654">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_uk.properties" size="72509">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_vi.properties" size="46902">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_zh-CN.properties" size="35257">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_zh_CN.properties" size="35257">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_zh_TW.properties" size="35308">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions.properties" size="2343">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_bg.properties" size="4528">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_ca.properties" size="2160">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_cs.properties" size="2355">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_da.properties" size="2133">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_de.properties" size="2108">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_el.properties" size="4624">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_en.properties" size="1974">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_es.properties" size="2178">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_et.properties" size="2127">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_fi.properties" size="2170">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_fr.properties" size="2256">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_hi.properties" size="3814">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_hr.properties" size="2158">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_hu.properties" size="2541">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_it.properties" size="2116">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_iw.properties" size="3641">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_ja.properties" size="2584">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_kk.properties" size="4656">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_ko.properties" size="2428">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_lv.properties" size="2326">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_nl.properties" size="2016">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_no.properties" size="2098">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_pl.properties" size="2301">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_pt.properties" size="2274">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_ro.properties" size="2235">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_ru.properties" size="4854">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_sh.properties" size="2149">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_sk.properties" size="2454">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_sl.properties" size="2113">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_sv.properties" size="2288">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_th.properties" size="4456">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_tr.properties" size="2404">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_uk.properties" size="4647">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_vi.properties" size="2893">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_zh-CN.properties" size="2236">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_zh_CN.properties" size="2236">
+  </module>
+  <module name="sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_zh_TW.properties" size="2344">
+  </module>
+  <module name="sap/rules/ui/parser/infrastructure/errorHandling/hrfException.js" size="3016" compressedSize="1704">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/infrastructure/locale/lib/constants.js" size="509" compressedSize="452">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/infrastructure/locale/lib/moment_JS_min.js" size="74371" compressedSize="48510">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/infrastructure/locale/lib/resourceBundle.js" size="910" compressedSize="634">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/locale/lib/resourceBundleContext.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/infrastructure/locale/lib/resourceBundleContext.js" size="1687" compressedSize="650">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/model/resource/ResourceModel.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/infrastructure/messageHandling/lib/constants.js" size="451" compressedSize="388">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/infrastructure/messageHandling/lib/message.js" size="18812" compressedSize="14138">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/infrastructure/messageHandling/lib/opMessages.js" size="2037" compressedSize="1304">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/infrastructure/messageHandling/lib/responseCollector.js" size="6287" compressedSize="3336">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/errorHandling/hrfException.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/locale/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/locale/lib/resourceBundle.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/messageHandling/lib/message.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/messageHandling/lib/opMessages.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/infrastructure/util/constants.js" size="1429" compressedSize="755">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/infrastructure/util/utilsBase.js" size="2384" compressedSize="1069">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/util/constants.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/resources/common/lib/constants.js" size="2048" compressedSize="1566">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/constants.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/resources/common/lib/oDataHandler.js" size="6587" compressedSize="3000">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/resources/common/lib/resourcesConvertor.js" size="25181" compressedSize="7829">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/util/utilsBase.js"/>
+      <module name="sap/rules/ui/parser/resources/common/lib/oDataHandler.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/validationUtils.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/resources/dependencies/lib/constants.js" size="3292" compressedSize="2735">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/resources/dependencies/lib/constantsBase.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/resources/dependencies/lib/constantsBase.js" size="422" compressedSize="364">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/resources/dependencies/lib/objects.js" size="1600" compressedSize="979">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/resources/dependencies/lib/constants.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/resources/rule/lib/constantsBase.js" size="1002" compressedSize="733">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/resources/vocabulary/lib/JSONLoader.js" size="57584" compressedSize="23115">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/parsingBackendMediator.js" conditional="true"/>
+      <module name="sap/rules/ui/parser/infrastructure/errorHandling/hrfException.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/messageHandling/lib/responseCollector.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/util/utilsBase.js"/>
+      <module name="sap/rules/ui/parser/resources/common/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/resources/dependencies/lib/constants.js" conditional="true"/>
+      <module name="sap/rules/ui/parser/resources/dependencies/lib/dependenciesUtils.js" conditional="true"/>
+      <module name="sap/rules/ui/parser/resources/dependencies/lib/dependencyManager.js" conditional="true"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/runtimeServicesUtils.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/termGeneration.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/utils.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/utilsBase.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocaObjects.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderFactory.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/ruleBodyValidator.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/resources/vocabulary/lib/constants.js" size="30664" compressedSize="18247">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/constantsBase.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/resources/vocabulary/lib/constantsBase.js" size="1920" compressedSize="936">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/resources/vocabulary/lib/parameterRuntimeServices.js" size="98" compressedSize="49" requiresTopLevelScope="true" exposedGlobals="doNothing" raw="true">
+  </module>
+  <module name="sap/rules/ui/parser/resources/vocabulary/lib/rtsVoca.js" size="78705" compressedSize="36589">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/resources/rule/lib/constantsBase.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/runtimeServicesUtils.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocaConversionUtils.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocaObjects.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/resources/vocabulary/lib/rtsVocaContextBase.js" size="425" compressedSize="350">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/resources/vocabulary/lib/rtsVocaContextFactory.js" size="2583" compressedSize="1499">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/rtsContextJSON.js" conditional="true"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/serverDBRTContext.js" conditional="true"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/serverJSONandDBRTcontext.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/resources/vocabulary/lib/rtsVocaCoreFactory.js" size="2045" compressedSize="1071">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/rtsVoca.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/rtsVocaContextBase.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/resources/vocabulary/lib/rtsVocaInitiator.js" size="1836" compressedSize="836">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/rtsVocaContextFactory.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/rtsVocaCoreFactory.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/resources/vocabulary/lib/runtimeServicesCore.js" size="89" compressedSize="88">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/resources/vocabulary/lib/runtimeServicesUtils.js" size="7213" compressedSize="2473">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/constantsBase.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/constants.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/resources/vocabulary/lib/termGeneration.js" size="49816" compressedSize="15761">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/util/utilsBase.js"/>
+      <module name="sap/rules/ui/parser/resources/dependencies/lib/constants.js" conditional="true"/>
+      <module name="sap/rules/ui/parser/resources/dependencies/lib/dependenciesUtils.js" conditional="true"/>
+      <module name="sap/rules/ui/parser/resources/dependencies/lib/dependencyManager.js" conditional="true"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocaObjects.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderFactory.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/resources/vocabulary/lib/utils.js" size="21635" compressedSize="8550">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/parsingBackendMediator.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/errorHandling/hrfException.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/messageHandling/lib/responseCollector.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/util/constants.js"/>
+      <module name="sap/rules/ui/parser/resources/common/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/utilsBase.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderFactory.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/constantsBase.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/ruleBodyValidator.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/resources/vocabulary/lib/utilsBase.js" size="3938" compressedSize="2202">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/errorHandling/hrfException.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/util/constants.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/constantsBase.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/resources/vocabulary/lib/validationUtils.js" size="4710" compressedSize="2176">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/parseUtils.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocaConversionUtils.js" size="856" compressedSize="375">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocaObjects.js" size="18457" compressedSize="6061">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/runtimeServicesUtils.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProvider.js" size="85451" compressedSize="40054">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/resources/rule/lib/constantsBase.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/runtimeServicesUtils.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocaConversionUtils.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocaObjects.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderBaseContext.js" size="512" compressedSize="419">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderContextFactory.js" size="2809" compressedSize="1635">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/serverDBRTContext.js" conditional="true"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/serverJSONandDBRTcontext.js" conditional="true"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderJSONContext.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderFactory.js" size="2224" compressedSize="1174">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProvider.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderBaseContext.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderInitiator.js" size="2025" compressedSize="972">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderContextFactory.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderFactory.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderJSONContext.js" size="13309" compressedSize="3098">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/resources/common/lib/resourcesConvertor.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/JSONLoader.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderBaseContext.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/ruleBody/lib/constants.js" size="6325" compressedSize="4412">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/constantsBase.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/ruleBody/lib/constantsBase.js" size="1805" compressedSize="1258">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/resources/dependencies/lib/constantsBase.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/ruleBody/lib/decisionTableCell.js" size="19436" compressedSize="9520">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/AST/lib/bundleAst.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/ASTConvertor.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/parsingBackendMediator.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/errorHandling/hrfException.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/messageHandling/lib/responseCollector.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/constants.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/ruleBody/lib/dependenciesHandler.js" size="769" compressedSize="525">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/ruleBody/lib/ruleBody.js" size="19480" compressedSize="9246">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/parsingBackendMediator.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/errorHandling/hrfException.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/messageHandling/lib/responseCollector.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/util/utilsBase.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/decisionTableCell.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/ruleBody/lib/ruleBodyConvertor.js" size="22539" compressedSize="11076">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/AST/lib/bundleAst.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/ASTConvertor.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/valueHelpValidator.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/util/utilsBase.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/decisionTableCell.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/ruleBodyValidator.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/ruleBody/lib/ruleBodyServices.js" size="4558" compressedSize="1854">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/ruleBodyConvertor.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/ruleBodyValidator.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/ruleBody/lib/ruleBodyValidator.js" size="61412" compressedSize="28902">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/messageHandling/lib/responseCollector.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/util/constants.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/util/utilsBase.js"/>
+      <module name="sap/rules/ui/parser/resources/dependencies/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/resources/dependencies/lib/objects.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/decisionTableCell.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/dependenciesHandler.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/ruleBody.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/parser/ruleBody/lib/ruleServices.js" size="21053" compressedSize="6768">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/messageHandling/lib/responseCollector.js"/>
+      <module name="sap/rules/ui/parser/resources/common/lib/oDataHandler.js"/>
+      <module name="sap/rules/ui/parser/resources/common/lib/resourcesConvertor.js"/>
+      <module name="sap/rules/ui/parser/resources/dependencies/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderInitiator.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/constants.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/decisionTableCell.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/ruleBodyServices.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/providers/ValueHelpProvider.js" size="5979" compressedSize="2594">
+    <description>-----------------------------------------------------------------------------</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/List.js"/>
+      <module name="sap/m/PlacementType.js"/>
+      <module name="sap/m/ResponsivePopover.js"/>
+      <module name="sap/m/StandardListItem.js"/>
+      <module name="sap/ui/comp/providers/ValueHelpProvider.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/services/ExpressionLanguage.js" size="65365" compressedSize="26417">
+    <description>Provides element sap.rules.ui.services.ExpressionLanguage</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/library.js"/>
+      <module name="sap/rules/ui/parser/businessLanguage/lib/parsingBackendMediator.js"/>
+      <module name="sap/rules/ui/parser/infrastructure/messageHandling/lib/responseCollector.js"/>
+      <module name="sap/rules/ui/parser/resources/common/lib/resourcesConvertor.js"/>
+      <module name="sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderInitiator.js"/>
+      <module name="sap/rules/ui/parser/ruleBody/lib/ruleServices.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/core/Locale.js"/>
+      <module name="sap/ui/core/LocaleData.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/type/DecisionTableCell.js" size="3500" compressedSize="925">
+    <description>Provides control sap.rules.ui.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/type/DecisionTableHeader.js" size="1314" compressedSize="556">
+    <description>Provides control sap.rules.ui.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/type/Expression.js" size="1680" compressedSize="825">
+    <description>Provides control sap.rules.ui.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/rules/ui/type/ExpressionAbs.js"/>
+    </requires>
+  </module>
+  <module name="sap/rules/ui/type/ExpressionAbs.js" size="1527" compressedSize="657">
+    <description>Provides control sap.rules.ui.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+</library>

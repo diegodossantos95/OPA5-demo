@@ -1,0 +1,2029 @@
+{
+  "modules" : [
+    {
+      "name" : "sap/rules/ui/BindingSpy.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2016 SAP SE. All rights reserved",
+      "size" : 1588,
+      "compressedSize" : 551,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/library.js", "sap/ui/base/ManagedObject.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/DecisionTable.js",
+      "description" : "Provides this._validatecontrol sap.rules.ui.",
+      "size" : 56078,
+      "compressedSize" : 30488,
+      "required" : ["jquery.sap.global.js", "sap/m/BusyIndicator.js", "sap/m/Button.js", "sap/m/Dialog.js", "sap/m/DisplayListItem.js", "sap/m/FlexBox.js", "sap/m/Input.js", "sap/m/Label.js", "sap/m/Link.js", "sap/m/Menu.js", "sap/m/MenuButton.js", "sap/m/MenuItem.js", "sap/m/MessageStrip.js", "sap/m/ObjectIdentifier.js", "sap/m/Popover.js", "sap/m/Text.js", "sap/m/Toolbar.js", "sap/m/ToolbarSpacer.js", "sap/rules/ui/DecisionTableCell.js", "sap/rules/ui/DecisionTableSettingsOld.js", "sap/rules/ui/RuleBase.js", "sap/rules/ui/Utils.js", "sap/rules/ui/library.js", "sap/rules/ui/type/DecisionTableCell.js", "sap/ui/table/Column.js", "sap/ui/table/Table.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/DecisionTableCell.js",
+      "description" : "Provides control sap.rules.ui.DecisionTableCell.",
+      "size" : 13089,
+      "compressedSize" : 4736,
+      "required" : ["jquery.sap.global.js", "sap/m/Popover.js", "sap/rules/ui/DecisionTableCellExpressionAdvanced.js", "sap/rules/ui/DecisionTableCellExpressionBasic.js", "sap/rules/ui/library.js", "sap/rules/ui/type/DecisionTableCell.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/DecisionTableCellExpressionAdvanced.js",
+      "description" : "Provides control sap.rules.ui.ExpressionAdvanced.",
+      "size" : 10283,
+      "compressedSize" : 4918,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/ExpressionAdvanced.js", "sap/rules/ui/Utils.js", "sap/rules/ui/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/DecisionTableCellExpressionAdvancedRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2016 SAP SE. All rights reserved",
+      "size" : 1124,
+      "compressedSize" : 370,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/ExpressionAdvancedRenderer.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/DecisionTableCellExpressionBasic.js",
+      "description" : "Provides control sap.rules.ui.ExpressionBasic.",
+      "size" : 10318,
+      "compressedSize" : 5080,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/ExpressionBasic.js", "sap/rules/ui/InstructionRenderer.js", "sap/rules/ui/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/DecisionTableCellExpressionBasicRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2016 SAP SE. All rights reserved",
+      "size" : 1265,
+      "compressedSize" : 364,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/ExpressionBasicRenderer.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/DecisionTableCellRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2016 SAP SE. All rights reserved",
+      "size" : 1159,
+      "compressedSize" : 435,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/DecisionTableConfiguration.js",
+      "description" : "Provides control sap.rules.ui.DecisionTableConfiguration",
+      "size" : 3027,
+      "compressedSize" : 1046,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/library.js", "sap/ui/core/Element.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/DecisionTableRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2016 SAP SE. All rights reserved",
+      "size" : 1251,
+      "compressedSize" : 552,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/DecisionTableSettings.js",
+      "description" : "Provides control sap.rules.ui.",
+      "size" : 47388,
+      "compressedSize" : 23910,
+      "required" : ["jquery.sap.global.js", "sap/m/Button.js", "sap/m/CheckBox.js", "sap/m/Input.js", "sap/m/Label.js", "sap/m/MessageBox.js", "sap/m/Select.js", "sap/m/Switch.js", "sap/m/Table.js", "sap/m/Text.js", "sap/rules/ui/ExpressionAdvanced.js", "sap/rules/ui/library.js", "sap/rules/ui/type/Expression.js", "sap/ui/core/Control.js", "sap/ui/layout/VerticalLayout.js", "sap/ui/layout/form/SimpleForm.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/DecisionTableSettingsOld.js",
+      "description" : "Provides control sap.rules.ui.",
+      "size" : 41283,
+      "compressedSize" : 14489,
+      "required" : ["jquery.sap.global.js", "sap/m/Button.js", "sap/m/CheckBox.js", "sap/m/Input.js", "sap/m/Label.js", "sap/m/Select.js", "sap/m/Switch.js", "sap/m/Table.js", "sap/m/Text.js", "sap/rules/ui/ExpressionAdvanced.js", "sap/rules/ui/library.js", "sap/rules/ui/type/Expression.js", "sap/ui/core/Control.js", "sap/ui/layout/VerticalLayout.js", "sap/ui/layout/form/SimpleForm.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/DecisionTableSettingsOldRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2016 SAP SE. All rights reserved",
+      "size" : 1068,
+      "compressedSize" : 412,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/DecisionTableSettingsRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2016 SAP SE. All rights reserved",
+      "size" : 1059,
+      "compressedSize" : 412,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/ExpressionAdvanced.js",
+      "description" : "Provides the sap.rules.ui.ExpressionAdvanced control",
+      "size" : 45170,
+      "compressedSize" : 20083,
+      "required" : ["jquery.sap.global.js", "sap/m/Button.js", "sap/m/MessageBox.js", "sap/m/Text.js", "sap/m/TextArea.js", "sap/rules/ui/ExpressionBase.js", "sap/rules/ui/Utils.js", "sap/rules/ui/codemirror/addon/closeBrackets/closebrackets.js", "sap/rules/ui/codemirror/addon/display/placeholder.js", "sap/rules/ui/codemirror/addon/hint/hdf-hint.js", "sap/rules/ui/codemirror/addon/hint/show-hint.js", "sap/rules/ui/codemirror/addon/mh/mark-selection.js", "sap/rules/ui/codemirror/addon/search/search.js", "sap/rules/ui/codemirror/lib/codemirror.js", "sap/rules/ui/codemirror/mode/hdf/hdf.js", "sap/rules/ui/providers/ValueHelpProvider.js", "sap/ui/comp/odata/MetadataAnalyser.js", "sap/ui/core/Control.js", "sap/ui/core/Popup.js", "sap/ui/layout/HorizontalLayout.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/ExpressionAdvancedRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2016 SAP SE. All rights reserved",
+      "size" : 1253,
+      "compressedSize" : 404,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/ExpressionBase.js",
+      "description" : "Provides the sap.rules.ui.ExpressionBase control",
+      "size" : 2863,
+      "compressedSize" : 709,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/ExpressionBasic.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2016 SAP SE. All rights reserved",
+      "size" : 13612,
+      "compressedSize" : 5017,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/ExpressionBase.js", "sap/rules/ui/InstructionRenderer.js", "sap/rules/ui/library.js", "sap/ui/core/Control.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/ExpressionBasicRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2016 SAP SE. All rights reserved",
+      "size" : 1175,
+      "compressedSize" : 370,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/InstructionRenderer.js",
+      "size" : 28519,
+      "compressedSize" : 11909,
+      "required" : ["jquery.sap.global.js", "sap/m/Button.js", "sap/m/DatePicker.js", "sap/m/DateTimePicker.js", "sap/m/Input.js", "sap/m/Select.js", "sap/m/SelectDialog.js", "sap/m/StandardListItem.js", "sap/m/Text.js", "sap/m/TimePicker.js", "sap/rules/ui/Utils.js", "sap/rules/ui/providers/ValueHelpProvider.js", "sap/ui/core/Control.js", "sap/ui/core/HTML.js", "sap/ui/core/Item.js", "sap/ui/core/LocaleData.js", "sap/ui/core/ValueState.js", "sap/ui/model/Filter.js", "sap/ui/model/FilterOperator.js", "sap/ui/model/json/JSONModel.js", "sap/ui/model/type/Date.js", "sap/ui/model/type/DateTime.js", "sap/ui/model/type/Float.js", "sap/ui/model/type/Time.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/RuleBase.js",
+      "description" : "Provides control sap.rules.ui.",
+      "size" : 1795,
+      "compressedSize" : 618,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/library.js", "sap/ui/core/Control.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/RuleBuilder.js",
+      "description" : "Provides control sap.rules.ui.",
+      "size" : 11406,
+      "compressedSize" : 5009,
+      "required" : ["jquery.sap.global.js", "sap/m/Select.js", "sap/rules/ui/DecisionTable.js", "sap/rules/ui/DecisionTableConfiguration.js", "sap/rules/ui/RuleFormat.js", "sap/rules/ui/RuleType.js", "sap/rules/ui/library.js", "sap/ui/core/Control.js", "sap/ui/core/Item.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/RuleBuilderRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2016 SAP SE. All rights reserved",
+      "size" : 1019,
+      "compressedSize" : 443,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/Utils.js",
+      "description" : "Utility shared functions for sap.rules.ui. @return {object} Utils",
+      "size" : 3652,
+      "compressedSize" : 1704,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/codemirror/addon/closeBrackets/closebrackets.js",
+      "size" : 6295,
+      "compressedSize" : 3282,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/codemirror/addon/display/placeholder.js",
+      "size" : 1562,
+      "compressedSize" : 1000,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/codemirror/addon/hint/hdf-hint.js",
+      "size" : 6210,
+      "compressedSize" : 1866,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/codemirror/addon/hint/show-hint.js",
+      "size" : 19916,
+      "compressedSize" : 10024,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/codemirror/addon/mh/mark-selection.js",
+      "size" : 3781,
+      "compressedSize" : 1979,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/codemirror/addon/search/search.js",
+      "size" : 6721,
+      "compressedSize" : 3453,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/codemirror/addon/search/searchcursor.js",
+      "size" : 6856,
+      "compressedSize" : 3169,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/codemirror/lib/codemirror.js",
+      "size" : 313849,
+      "compressedSize" : 140651,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/codemirror/mode/hdf/hdf.js",
+      "size" : 13413,
+      "compressedSize" : 5349,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/fragments/DecisionTableCellExpressionAdvanced.fragment.xml",
+      "size" : 388,
+      "required" : ["sap/m/Popover.js", "sap/m/ScrollContainer.js", "sap/rules/ui/DecisionTableCellExpressionAdvanced.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/fragments/DecisionTableCellExpressionBasic.fragment.xml",
+      "size" : 385,
+      "required" : ["sap/m/Popover.js", "sap/m/ScrollContainer.js", "sap/rules/ui/DecisionTableCellExpressionBasic.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle.properties",
+      "size" : 5451,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_ar.properties",
+      "size" : 9121,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_bg.properties",
+      "size" : 11140,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_ca.properties",
+      "size" : 5764,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_cs.properties",
+      "size" : 5997,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_da.properties",
+      "size" : 5499,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_de.properties",
+      "size" : 5817,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_el.properties",
+      "size" : 10962,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_en.properties",
+      "size" : 5329,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_en_US_sappsd.properties",
+      "size" : 12520,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_en_US_saptrc.properties",
+      "size" : 6548,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_es.properties",
+      "size" : 5789,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_et.properties",
+      "size" : 5508,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_fi.properties",
+      "size" : 5633,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_fr.properties",
+      "size" : 5928,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_hi.properties",
+      "size" : 10291,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_hr.properties",
+      "size" : 5462,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_hu.properties",
+      "size" : 6238,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_it.properties",
+      "size" : 5593,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_iw.properties",
+      "size" : 8364,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_ja.properties",
+      "size" : 7106,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_kk.properties",
+      "size" : 10258,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_ko.properties",
+      "size" : 6806,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_lt.properties",
+      "size" : 5918,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_lv.properties",
+      "size" : 6025,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_ms.properties",
+      "size" : 5380,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_nl.properties",
+      "size" : 5510,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_no.properties",
+      "size" : 5470,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_pl.properties",
+      "size" : 5917,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_pt.properties",
+      "size" : 5759,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_ro.properties",
+      "size" : 5809,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_ru.properties",
+      "size" : 10642,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_sh.properties",
+      "size" : 5511,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_sk.properties",
+      "size" : 5986,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_sl.properties",
+      "size" : 5578,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_sv.properties",
+      "size" : 5511,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_th.properties",
+      "size" : 10364,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_tr.properties",
+      "size" : 5928,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_uk.properties",
+      "size" : 10468,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_vi.properties",
+      "size" : 7627,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_zh_CN.properties",
+      "size" : 6099,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/i18n/messagebundle_zh_TW.properties",
+      "size" : 6285,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/library-preload.js",
+      "size" : 3260046,
+      "required" : ["jquery.sap.global.js", "sap/m/BusyIndicator.js", "sap/m/Button.js", "sap/m/CheckBox.js", "sap/m/DatePicker.js", "sap/m/DateTimePicker.js", "sap/m/Dialog.js", "sap/m/DisplayListItem.js", "sap/m/FlexBox.js", "sap/m/Input.js", "sap/m/Label.js", "sap/m/Link.js", "sap/m/List.js", "sap/m/Menu.js", "sap/m/MenuButton.js", "sap/m/MenuItem.js", "sap/m/MessageBox.js", "sap/m/MessageStrip.js", "sap/m/ObjectIdentifier.js", "sap/m/PlacementType.js", "sap/m/Popover.js", "sap/m/ResponsivePopover.js", "sap/m/ScrollContainer.js", "sap/m/Select.js", "sap/m/SelectDialog.js", "sap/m/StandardListItem.js", "sap/m/Switch.js", "sap/m/Table.js", "sap/m/Text.js", "sap/m/TextArea.js", "sap/m/TimePicker.js", "sap/m/Toolbar.js", "sap/m/ToolbarSpacer.js", "sap/rules/ui/RuleFormat.js", "sap/rules/ui/RuleType.js", "sap/rules/ui/parser/resources/dependencies/lib/dependenciesUtils.js", "sap/rules/ui/parser/resources/dependencies/lib/dependencyManager.js", "sap/rules/ui/parser/resources/vocabulary/lib/rtsContextJSON.js", "sap/rules/ui/parser/resources/vocabulary/lib/serverDBRTContext.js", "sap/rules/ui/parser/resources/vocabulary/lib/serverJSONandDBRTcontext.js", "sap/ui/base/ManagedObject.js", "sap/ui/comp/odata/MetadataAnalyser.js", "sap/ui/comp/providers/ValueHelpProvider.js", "sap/ui/core/Control.js", "sap/ui/core/Element.js", "sap/ui/core/Fragment.js", "sap/ui/core/HTML.js", "sap/ui/core/Item.js", "sap/ui/core/Locale.js", "sap/ui/core/LocaleData.js", "sap/ui/core/Popup.js", "sap/ui/core/ValueState.js", "sap/ui/core/library.js", "sap/ui/layout/HorizontalLayout.js", "sap/ui/layout/VerticalLayout.js", "sap/ui/layout/form/SimpleForm.js", "sap/ui/model/Filter.js", "sap/ui/model/FilterOperator.js", "sap/ui/model/json/JSONModel.js", "sap/ui/model/resource/ResourceModel.js", "sap/ui/model/type/Date.js", "sap/ui/model/type/DateTime.js", "sap/ui/model/type/Float.js", "sap/ui/model/type/Time.js", "sap/ui/table/Column.js", "sap/ui/table/Table.js"],
+      "includes" : ["sap/rules/ui/BindingSpy.js", "sap/rules/ui/DecisionTable.js", "sap/rules/ui/DecisionTableCell.js", "sap/rules/ui/DecisionTableCellExpressionAdvanced.js", "sap/rules/ui/DecisionTableCellExpressionAdvancedRenderer.js", "sap/rules/ui/DecisionTableCellExpressionBasic.js", "sap/rules/ui/DecisionTableCellExpressionBasicRenderer.js", "sap/rules/ui/DecisionTableCellRenderer.js", "sap/rules/ui/DecisionTableConfiguration.js", "sap/rules/ui/DecisionTableRenderer.js", "sap/rules/ui/DecisionTableSettings.js", "sap/rules/ui/DecisionTableSettingsOld.js", "sap/rules/ui/DecisionTableSettingsOldRenderer.js", "sap/rules/ui/DecisionTableSettingsRenderer.js", "sap/rules/ui/ExpressionAdvanced.js", "sap/rules/ui/ExpressionAdvancedRenderer.js", "sap/rules/ui/ExpressionBase.js", "sap/rules/ui/ExpressionBasic.js", "sap/rules/ui/ExpressionBasicRenderer.js", "sap/rules/ui/InstructionRenderer.js", "sap/rules/ui/RuleBase.js", "sap/rules/ui/RuleBuilder.js", "sap/rules/ui/RuleBuilderRenderer.js", "sap/rules/ui/Utils.js", "sap/rules/ui/codemirror/addon/closeBrackets/closebrackets.js", "sap/rules/ui/codemirror/addon/display/placeholder.js", "sap/rules/ui/codemirror/addon/hint/hdf-hint.js", "sap/rules/ui/codemirror/addon/hint/show-hint.js", "sap/rules/ui/codemirror/addon/mh/mark-selection.js", "sap/rules/ui/codemirror/addon/search/search.js", "sap/rules/ui/codemirror/addon/search/searchcursor.js", "sap/rules/ui/codemirror/lib/codemirror.js", "sap/rules/ui/codemirror/mode/hdf/hdf.js", "sap/rules/ui/fragments/DecisionTableCellExpressionAdvanced.fragment.xml", "sap/rules/ui/fragments/DecisionTableCellExpressionBasic.fragment.xml", "sap/rules/ui/library.js", "sap/rules/ui/manifest.json", "sap/rules/ui/parser/AST/lib/bundleAst.js", "sap/rules/ui/parser/businessLanguage/lib/ASTConvertor.js", "sap/rules/ui/parser/businessLanguage/lib/IDPLexer.js", "sap/rules/ui/parser/businessLanguage/lib/IDPParser.js", "sap/rules/ui/parser/businessLanguage/lib/antlr3_all_min.js", "sap/rules/ui/parser/businessLanguage/lib/autoCompleteUtils.js", "sap/rules/ui/parser/businessLanguage/lib/constants.js", "sap/rules/ui/parser/businessLanguage/lib/constantsBase.js", "sap/rules/ui/parser/businessLanguage/lib/conversionUtils.js", "sap/rules/ui/parser/businessLanguage/lib/entityModel.js", "sap/rules/ui/parser/businessLanguage/lib/entityModelConstractor.js", "sap/rules/ui/parser/businessLanguage/lib/localeConversion.js", "sap/rules/ui/parser/businessLanguage/lib/numberConversion.js", "sap/rules/ui/parser/businessLanguage/lib/parseModel.js", "sap/rules/ui/parser/businessLanguage/lib/parseUtils.js", "sap/rules/ui/parser/businessLanguage/lib/parserTokens.js", "sap/rules/ui/parser/businessLanguage/lib/parsingBackendMediator.js", "sap/rules/ui/parser/businessLanguage/lib/termsUtils.js", "sap/rules/ui/parser/businessLanguage/lib/utils.js", "sap/rules/ui/parser/businessLanguage/lib/valueHelpValidator.js", "sap/rules/ui/parser/businessLanguage/lib/vocabularyUtils.js", "sap/rules/ui/parser/infrastructure/errorHandling/hrfException.js", "sap/rules/ui/parser/infrastructure/locale/lib/constants.js", "sap/rules/ui/parser/infrastructure/locale/lib/moment_JS_min.js", "sap/rules/ui/parser/infrastructure/locale/lib/resourceBundle.js", "sap/rules/ui/parser/infrastructure/locale/lib/resourceBundleContext.js", "sap/rules/ui/parser/infrastructure/messageHandling/lib/constants.js", "sap/rules/ui/parser/infrastructure/messageHandling/lib/message.js", "sap/rules/ui/parser/infrastructure/messageHandling/lib/opMessages.js", "sap/rules/ui/parser/infrastructure/messageHandling/lib/responseCollector.js", "sap/rules/ui/parser/infrastructure/util/constants.js", "sap/rules/ui/parser/infrastructure/util/utilsBase.js", "sap/rules/ui/parser/resources/common/lib/constants.js", "sap/rules/ui/parser/resources/common/lib/oDataHandler.js", "sap/rules/ui/parser/resources/common/lib/resourcesConvertor.js", "sap/rules/ui/parser/resources/dependencies/lib/constants.js", "sap/rules/ui/parser/resources/dependencies/lib/constantsBase.js", "sap/rules/ui/parser/resources/dependencies/lib/objects.js", "sap/rules/ui/parser/resources/rule/lib/constantsBase.js", "sap/rules/ui/parser/resources/vocabulary/lib/JSONLoader.js", "sap/rules/ui/parser/resources/vocabulary/lib/constants.js", "sap/rules/ui/parser/resources/vocabulary/lib/constantsBase.js", "sap/rules/ui/parser/resources/vocabulary/lib/parameterRuntimeServices.js", "sap/rules/ui/parser/resources/vocabulary/lib/rtsVoca.js", "sap/rules/ui/parser/resources/vocabulary/lib/rtsVocaContextBase.js", "sap/rules/ui/parser/resources/vocabulary/lib/rtsVocaContextFactory.js", "sap/rules/ui/parser/resources/vocabulary/lib/rtsVocaCoreFactory.js", "sap/rules/ui/parser/resources/vocabulary/lib/rtsVocaInitiator.js", "sap/rules/ui/parser/resources/vocabulary/lib/runtimeServicesCore.js", "sap/rules/ui/parser/resources/vocabulary/lib/runtimeServicesUtils.js", "sap/rules/ui/parser/resources/vocabulary/lib/termGeneration.js", "sap/rules/ui/parser/resources/vocabulary/lib/utils.js", "sap/rules/ui/parser/resources/vocabulary/lib/utilsBase.js", "sap/rules/ui/parser/resources/vocabulary/lib/validationUtils.js", "sap/rules/ui/parser/resources/vocabulary/lib/vocaConversionUtils.js", "sap/rules/ui/parser/resources/vocabulary/lib/vocaObjects.js", "sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProvider.js", "sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderBaseContext.js", "sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderContextFactory.js", "sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderFactory.js", "sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderInitiator.js", "sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderJSONContext.js", "sap/rules/ui/parser/ruleBody/lib/constants.js", "sap/rules/ui/parser/ruleBody/lib/constantsBase.js", "sap/rules/ui/parser/ruleBody/lib/decisionTableCell.js", "sap/rules/ui/parser/ruleBody/lib/dependenciesHandler.js", "sap/rules/ui/parser/ruleBody/lib/ruleBody.js", "sap/rules/ui/parser/ruleBody/lib/ruleBodyConvertor.js", "sap/rules/ui/parser/ruleBody/lib/ruleBodyServices.js", "sap/rules/ui/parser/ruleBody/lib/ruleBodyValidator.js", "sap/rules/ui/parser/ruleBody/lib/ruleServices.js", "sap/rules/ui/providers/ValueHelpProvider.js", "sap/rules/ui/services/ExpressionLanguage.js", "sap/rules/ui/type/DecisionTableCell.js", "sap/rules/ui/type/DecisionTableHeader.js", "sap/rules/ui/type/Expression.js", "sap/rules/ui/type/ExpressionAbs.js"]
+    },
+    {
+      "name" : "sap/rules/ui/library-preload.json",
+      "size" : 0,
+      "required" : ["jquery.sap.global.js", "sap/m/BusyIndicator.js", "sap/m/Button.js", "sap/m/CheckBox.js", "sap/m/DatePicker.js", "sap/m/DateTimePicker.js", "sap/m/Dialog.js", "sap/m/DisplayListItem.js", "sap/m/FlexBox.js", "sap/m/Input.js", "sap/m/Label.js", "sap/m/Link.js", "sap/m/List.js", "sap/m/Menu.js", "sap/m/MenuButton.js", "sap/m/MenuItem.js", "sap/m/MessageBox.js", "sap/m/MessageStrip.js", "sap/m/ObjectIdentifier.js", "sap/m/PlacementType.js", "sap/m/Popover.js", "sap/m/ResponsivePopover.js", "sap/m/ScrollContainer.js", "sap/m/Select.js", "sap/m/SelectDialog.js", "sap/m/StandardListItem.js", "sap/m/Switch.js", "sap/m/Table.js", "sap/m/Text.js", "sap/m/TextArea.js", "sap/m/TimePicker.js", "sap/m/Toolbar.js", "sap/m/ToolbarSpacer.js", "sap/m/library-preload.json", "sap/rules/ui/RuleFormat.js", "sap/rules/ui/RuleType.js", "sap/rules/ui/parser/resources/dependencies/lib/dependenciesUtils.js", "sap/rules/ui/parser/resources/dependencies/lib/dependencyManager.js", "sap/rules/ui/parser/resources/vocabulary/lib/rtsContextJSON.js", "sap/rules/ui/parser/resources/vocabulary/lib/serverDBRTContext.js", "sap/rules/ui/parser/resources/vocabulary/lib/serverJSONandDBRTcontext.js", "sap/ui/base/ManagedObject.js", "sap/ui/comp/odata/MetadataAnalyser.js", "sap/ui/comp/providers/ValueHelpProvider.js", "sap/ui/core/Control.js", "sap/ui/core/Element.js", "sap/ui/core/Fragment.js", "sap/ui/core/HTML.js", "sap/ui/core/Item.js", "sap/ui/core/Locale.js", "sap/ui/core/LocaleData.js", "sap/ui/core/Popup.js", "sap/ui/core/ValueState.js", "sap/ui/core/library-preload.json", "sap/ui/core/library.js", "sap/ui/layout/HorizontalLayout.js", "sap/ui/layout/VerticalLayout.js", "sap/ui/layout/form/SimpleForm.js", "sap/ui/model/Filter.js", "sap/ui/model/FilterOperator.js", "sap/ui/model/json/JSONModel.js", "sap/ui/model/resource/ResourceModel.js", "sap/ui/model/type/Date.js", "sap/ui/model/type/DateTime.js", "sap/ui/model/type/Float.js", "sap/ui/model/type/Time.js", "sap/ui/table/Column.js", "sap/ui/table/Table.js"],
+      "includes" : ["sap/rules/ui/BindingSpy.js", "sap/rules/ui/DecisionTable.js", "sap/rules/ui/DecisionTableCell.js", "sap/rules/ui/DecisionTableCellExpressionAdvanced.js", "sap/rules/ui/DecisionTableCellExpressionAdvancedRenderer.js", "sap/rules/ui/DecisionTableCellExpressionBasic.js", "sap/rules/ui/DecisionTableCellExpressionBasicRenderer.js", "sap/rules/ui/DecisionTableCellRenderer.js", "sap/rules/ui/DecisionTableConfiguration.js", "sap/rules/ui/DecisionTableRenderer.js", "sap/rules/ui/DecisionTableSettings.js", "sap/rules/ui/DecisionTableSettingsOld.js", "sap/rules/ui/DecisionTableSettingsOldRenderer.js", "sap/rules/ui/DecisionTableSettingsRenderer.js", "sap/rules/ui/ExpressionAdvanced.js", "sap/rules/ui/ExpressionAdvancedRenderer.js", "sap/rules/ui/ExpressionBase.js", "sap/rules/ui/ExpressionBasic.js", "sap/rules/ui/ExpressionBasicRenderer.js", "sap/rules/ui/InstructionRenderer.js", "sap/rules/ui/RuleBase.js", "sap/rules/ui/RuleBuilder.js", "sap/rules/ui/RuleBuilderRenderer.js", "sap/rules/ui/Utils.js", "sap/rules/ui/codemirror/addon/closeBrackets/closebrackets.js", "sap/rules/ui/codemirror/addon/display/placeholder.js", "sap/rules/ui/codemirror/addon/hint/hdf-hint.js", "sap/rules/ui/codemirror/addon/hint/show-hint.js", "sap/rules/ui/codemirror/addon/mh/mark-selection.js", "sap/rules/ui/codemirror/addon/search/search.js", "sap/rules/ui/codemirror/addon/search/searchcursor.js", "sap/rules/ui/codemirror/lib/codemirror.js", "sap/rules/ui/codemirror/mode/hdf/hdf.js", "sap/rules/ui/fragments/DecisionTableCellExpressionAdvanced.fragment.xml", "sap/rules/ui/fragments/DecisionTableCellExpressionBasic.fragment.xml", "sap/rules/ui/library.js", "sap/rules/ui/manifest.json", "sap/rules/ui/parser/AST/lib/bundleAst.js", "sap/rules/ui/parser/businessLanguage/lib/ASTConvertor.js", "sap/rules/ui/parser/businessLanguage/lib/IDPLexer.js", "sap/rules/ui/parser/businessLanguage/lib/IDPParser.js", "sap/rules/ui/parser/businessLanguage/lib/antlr3_all_min.js", "sap/rules/ui/parser/businessLanguage/lib/autoCompleteUtils.js", "sap/rules/ui/parser/businessLanguage/lib/constants.js", "sap/rules/ui/parser/businessLanguage/lib/constantsBase.js", "sap/rules/ui/parser/businessLanguage/lib/conversionUtils.js", "sap/rules/ui/parser/businessLanguage/lib/entityModel.js", "sap/rules/ui/parser/businessLanguage/lib/entityModelConstractor.js", "sap/rules/ui/parser/businessLanguage/lib/localeConversion.js", "sap/rules/ui/parser/businessLanguage/lib/numberConversion.js", "sap/rules/ui/parser/businessLanguage/lib/parseModel.js", "sap/rules/ui/parser/businessLanguage/lib/parseUtils.js", "sap/rules/ui/parser/businessLanguage/lib/parserTokens.js", "sap/rules/ui/parser/businessLanguage/lib/parsingBackendMediator.js", "sap/rules/ui/parser/businessLanguage/lib/termsUtils.js", "sap/rules/ui/parser/businessLanguage/lib/utils.js", "sap/rules/ui/parser/businessLanguage/lib/valueHelpValidator.js", "sap/rules/ui/parser/businessLanguage/lib/vocabularyUtils.js", "sap/rules/ui/parser/infrastructure/errorHandling/hrfException.js", "sap/rules/ui/parser/infrastructure/locale/lib/constants.js", "sap/rules/ui/parser/infrastructure/locale/lib/moment_JS_min.js", "sap/rules/ui/parser/infrastructure/locale/lib/resourceBundle.js", "sap/rules/ui/parser/infrastructure/locale/lib/resourceBundleContext.js", "sap/rules/ui/parser/infrastructure/messageHandling/lib/constants.js", "sap/rules/ui/parser/infrastructure/messageHandling/lib/message.js", "sap/rules/ui/parser/infrastructure/messageHandling/lib/opMessages.js", "sap/rules/ui/parser/infrastructure/messageHandling/lib/responseCollector.js", "sap/rules/ui/parser/infrastructure/util/constants.js", "sap/rules/ui/parser/infrastructure/util/utilsBase.js", "sap/rules/ui/parser/resources/common/lib/constants.js", "sap/rules/ui/parser/resources/common/lib/oDataHandler.js", "sap/rules/ui/parser/resources/common/lib/resourcesConvertor.js", "sap/rules/ui/parser/resources/dependencies/lib/constants.js", "sap/rules/ui/parser/resources/dependencies/lib/constantsBase.js", "sap/rules/ui/parser/resources/dependencies/lib/objects.js", "sap/rules/ui/parser/resources/rule/lib/constantsBase.js", "sap/rules/ui/parser/resources/vocabulary/lib/JSONLoader.js", "sap/rules/ui/parser/resources/vocabulary/lib/constants.js", "sap/rules/ui/parser/resources/vocabulary/lib/constantsBase.js", "sap/rules/ui/parser/resources/vocabulary/lib/parameterRuntimeServices.js", "sap/rules/ui/parser/resources/vocabulary/lib/rtsVoca.js", "sap/rules/ui/parser/resources/vocabulary/lib/rtsVocaContextBase.js", "sap/rules/ui/parser/resources/vocabulary/lib/rtsVocaContextFactory.js", "sap/rules/ui/parser/resources/vocabulary/lib/rtsVocaCoreFactory.js", "sap/rules/ui/parser/resources/vocabulary/lib/rtsVocaInitiator.js", "sap/rules/ui/parser/resources/vocabulary/lib/runtimeServicesCore.js", "sap/rules/ui/parser/resources/vocabulary/lib/runtimeServicesUtils.js", "sap/rules/ui/parser/resources/vocabulary/lib/termGeneration.js", "sap/rules/ui/parser/resources/vocabulary/lib/utils.js", "sap/rules/ui/parser/resources/vocabulary/lib/utilsBase.js", "sap/rules/ui/parser/resources/vocabulary/lib/validationUtils.js", "sap/rules/ui/parser/resources/vocabulary/lib/vocaConversionUtils.js", "sap/rules/ui/parser/resources/vocabulary/lib/vocaObjects.js", "sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProvider.js", "sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderBaseContext.js", "sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderContextFactory.js", "sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderFactory.js", "sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderInitiator.js", "sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderJSONContext.js", "sap/rules/ui/parser/ruleBody/lib/constants.js", "sap/rules/ui/parser/ruleBody/lib/constantsBase.js", "sap/rules/ui/parser/ruleBody/lib/decisionTableCell.js", "sap/rules/ui/parser/ruleBody/lib/dependenciesHandler.js", "sap/rules/ui/parser/ruleBody/lib/ruleBody.js", "sap/rules/ui/parser/ruleBody/lib/ruleBodyConvertor.js", "sap/rules/ui/parser/ruleBody/lib/ruleBodyServices.js", "sap/rules/ui/parser/ruleBody/lib/ruleBodyValidator.js", "sap/rules/ui/parser/ruleBody/lib/ruleServices.js", "sap/rules/ui/providers/ValueHelpProvider.js", "sap/rules/ui/services/ExpressionLanguage.js", "sap/rules/ui/type/DecisionTableCell.js", "sap/rules/ui/type/DecisionTableHeader.js", "sap/rules/ui/type/Expression.js", "sap/rules/ui/type/ExpressionAbs.js"]
+    },
+    {
+      "name" : "sap/rules/ui/library.js",
+      "description" : "Initialization code and shared classes of library sap.rules.ui.",
+      "size" : 8696,
+      "compressedSize" : 2770,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/manifest.json",
+      "size" : 811,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/AST/lib/bundleAst.js",
+      "size" : 42620,
+      "compressedSize" : 18805,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/businessLanguage/lib/ASTConvertor.js",
+      "size" : 27333,
+      "compressedSize" : 10435,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/AST/lib/bundleAst.js", "sap/rules/ui/parser/businessLanguage/lib/constants.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/businessLanguage/lib/IDPLexer.js",
+      "size" : 717535,
+      "compressedSize" : 392107,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/businessLanguage/lib/antlr3_all_min.js", "sap/rules/ui/parser/businessLanguage/lib/constants.js", "sap/rules/ui/parser/businessLanguage/lib/localeConversion.js", "sap/rules/ui/parser/businessLanguage/lib/numberConversion.js", "sap/rules/ui/parser/businessLanguage/lib/parseModel.js", "sap/rules/ui/parser/businessLanguage/lib/parseUtils.js", "sap/rules/ui/parser/businessLanguage/lib/termsUtils.js", "sap/rules/ui/parser/businessLanguage/lib/utils.js", "sap/rules/ui/parser/businessLanguage/lib/vocabularyUtils.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/businessLanguage/lib/IDPParser.js",
+      "size" : 4155862,
+      "compressedSize" : 1926383,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/businessLanguage/lib/antlr3_all_min.js", "sap/rules/ui/parser/businessLanguage/lib/constants.js", "sap/rules/ui/parser/businessLanguage/lib/entityModel.js", "sap/rules/ui/parser/businessLanguage/lib/entityModelConstractor.js", "sap/rules/ui/parser/businessLanguage/lib/numberConversion.js", "sap/rules/ui/parser/businessLanguage/lib/parseModel.js", "sap/rules/ui/parser/businessLanguage/lib/parseUtils.js", "sap/rules/ui/parser/businessLanguage/lib/termsUtils.js", "sap/rules/ui/parser/businessLanguage/lib/utils.js", "sap/rules/ui/parser/businessLanguage/lib/vocabularyUtils.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/businessLanguage/lib/antlr3_all_min.js",
+      "size" : 95733,
+      "compressedSize" : 68260,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/businessLanguage/lib/autoCompleteUtils.js",
+      "size" : 71821,
+      "compressedSize" : 25318,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/businessLanguage/lib/antlr3_all_min.js", "sap/rules/ui/parser/businessLanguage/lib/constants.js", "sap/rules/ui/parser/businessLanguage/lib/parseModel.js", "sap/rules/ui/parser/businessLanguage/lib/parseUtils.js", "sap/rules/ui/parser/businessLanguage/lib/parserTokens.js", "sap/rules/ui/parser/businessLanguage/lib/utils.js", "sap/rules/ui/parser/businessLanguage/lib/vocabularyUtils.js", "sap/rules/ui/parser/infrastructure/errorHandling/hrfException.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/businessLanguage/lib/constants.js",
+      "size" : 9023,
+      "compressedSize" : 6683,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/businessLanguage/lib/constantsBase.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/businessLanguage/lib/constantsBase.js",
+      "size" : 4179,
+      "compressedSize" : 2626,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/businessLanguage/lib/conversionUtils.js",
+      "size" : 10212,
+      "compressedSize" : 5307,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/businessLanguage/lib/constants.js", "sap/rules/ui/parser/businessLanguage/lib/localeConversion.js", "sap/rules/ui/parser/businessLanguage/lib/parseUtils.js", "sap/rules/ui/parser/infrastructure/errorHandling/hrfException.js", "sap/rules/ui/parser/resources/vocabulary/lib/constantsBase.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/businessLanguage/lib/entityModel.js",
+      "size" : 49879,
+      "compressedSize" : 18395,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/businessLanguage/lib/constants.js", "sap/rules/ui/parser/businessLanguage/lib/entityModelConstractor.js", "sap/rules/ui/parser/businessLanguage/lib/parseModel.js", "sap/rules/ui/parser/businessLanguage/lib/parseUtils.js", "sap/rules/ui/parser/businessLanguage/lib/utils.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/businessLanguage/lib/entityModelConstractor.js",
+      "size" : 16879,
+      "compressedSize" : 7244,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/businessLanguage/lib/constants.js", "sap/rules/ui/parser/businessLanguage/lib/parseUtils.js", "sap/rules/ui/parser/businessLanguage/lib/utils.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/businessLanguage/lib/localeConversion.js",
+      "size" : 23557,
+      "compressedSize" : 9974,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/businessLanguage/lib/constants.js", "sap/rules/ui/parser/businessLanguage/lib/numberConversion.js", "sap/rules/ui/parser/businessLanguage/lib/parseUtils.js", "sap/rules/ui/parser/infrastructure/errorHandling/hrfException.js", "sap/rules/ui/parser/infrastructure/locale/lib/moment_JS_min.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/businessLanguage/lib/numberConversion.js",
+      "size" : 8970,
+      "compressedSize" : 4419,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/businessLanguage/lib/constants.js", "sap/rules/ui/parser/businessLanguage/lib/parseUtils.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/businessLanguage/lib/parseModel.js",
+      "size" : 24394,
+      "compressedSize" : 10422,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/businessLanguage/lib/constants.js", "sap/rules/ui/parser/businessLanguage/lib/entityModelConstractor.js", "sap/rules/ui/parser/businessLanguage/lib/parseUtils.js", "sap/rules/ui/parser/businessLanguage/lib/utils.js", "sap/rules/ui/parser/resources/dependencies/lib/constantsBase.js", "sap/rules/ui/parser/resources/dependencies/lib/objects.js", "sap/rules/ui/parser/resources/vocabulary/lib/constantsBase.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/businessLanguage/lib/parseUtils.js",
+      "size" : 72683,
+      "compressedSize" : 38081,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/businessLanguage/lib/antlr3_all_min.js", "sap/rules/ui/parser/businessLanguage/lib/constants.js", "sap/rules/ui/parser/businessLanguage/lib/parserTokens.js", "sap/rules/ui/parser/businessLanguage/lib/utils.js", "sap/rules/ui/parser/businessLanguage/lib/vocabularyUtils.js", "sap/rules/ui/parser/infrastructure/errorHandling/hrfException.js", "sap/rules/ui/parser/infrastructure/messageHandling/lib/responseCollector.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/businessLanguage/lib/parserTokens.js",
+      "size" : 4002,
+      "compressedSize" : 3992,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/businessLanguage/lib/parsingBackendMediator.js",
+      "size" : 22999,
+      "compressedSize" : 10951,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/businessLanguage/lib/IDPLexer.js", "sap/rules/ui/parser/businessLanguage/lib/IDPParser.js", "sap/rules/ui/parser/businessLanguage/lib/antlr3_all_min.js", "sap/rules/ui/parser/businessLanguage/lib/autoCompleteUtils.js", "sap/rules/ui/parser/businessLanguage/lib/constants.js", "sap/rules/ui/parser/businessLanguage/lib/conversionUtils.js", "sap/rules/ui/parser/businessLanguage/lib/parseModel.js", "sap/rules/ui/parser/businessLanguage/lib/parseUtils.js", "sap/rules/ui/parser/businessLanguage/lib/parserTokens.js", "sap/rules/ui/parser/businessLanguage/lib/valueHelpValidator.js", "sap/rules/ui/parser/resources/dependencies/lib/constantsBase.js", "sap/rules/ui/parser/resources/vocabulary/lib/parameterRuntimeServices.js", "sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderFactory.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/businessLanguage/lib/termsUtils.js",
+      "size" : 8677,
+      "compressedSize" : 3862,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/businessLanguage/lib/constants.js", "sap/rules/ui/parser/businessLanguage/lib/parseModel.js", "sap/rules/ui/parser/businessLanguage/lib/parseUtils.js", "sap/rules/ui/parser/businessLanguage/lib/parserTokens.js", "sap/rules/ui/parser/businessLanguage/lib/utils.js", "sap/rules/ui/parser/businessLanguage/lib/vocabularyUtils.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/businessLanguage/lib/utils.js",
+      "size" : 3683,
+      "compressedSize" : 1540,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/businessLanguage/lib/valueHelpValidator.js",
+      "size" : 8551,
+      "compressedSize" : 3123,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/businessLanguage/lib/constants.js", "sap/rules/ui/parser/businessLanguage/lib/parseUtils.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/businessLanguage/lib/vocabularyUtils.js",
+      "size" : 39005,
+      "compressedSize" : 14342,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/businessLanguage/lib/constants.js", "sap/rules/ui/parser/resources/vocabulary/lib/constantsBase.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions.properties",
+      "size" : 31294,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_ar.properties",
+      "size" : 67774,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_bg.properties",
+      "size" : 80997,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_ca.properties",
+      "size" : 33915,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_cs.properties",
+      "size" : 35524,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_da.properties",
+      "size" : 31348,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_de.properties",
+      "size" : 33391,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_el.properties",
+      "size" : 83777,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_en.properties",
+      "size" : 30909,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_en_US.properties",
+      "size" : 28884,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_es.properties",
+      "size" : 33988,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_et.properties",
+      "size" : 31706,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_fi.properties",
+      "size" : 34292,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_fr.properties",
+      "size" : 36111,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_hi.properties",
+      "size" : 77544,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_hr.properties",
+      "size" : 32774,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_hu.properties",
+      "size" : 38279,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_it.properties",
+      "size" : 33042,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_iw.properties",
+      "size" : 61300,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_ja.properties",
+      "size" : 53590,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_kk.properties",
+      "size" : 77131,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_ko.properties",
+      "size" : 49249,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_lv.properties",
+      "size" : 35710,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_nl.properties",
+      "size" : 31654,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_no.properties",
+      "size" : 31246,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_pl.properties",
+      "size" : 35479,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_pt.properties",
+      "size" : 36041,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_ro.properties",
+      "size" : 34600,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_ru.properties",
+      "size" : 80747,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_sh.properties",
+      "size" : 33002,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_sk.properties",
+      "size" : 36154,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_sl.properties",
+      "size" : 31700,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_sv.properties",
+      "size" : 32306,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_th.properties",
+      "size" : 75840,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_tr.properties",
+      "size" : 34898,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_uk.properties",
+      "size" : 77875,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_vi.properties",
+      "size" : 50564,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_zh-CN.properties",
+      "size" : 37924,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_zh_CN.properties",
+      "size" : 37924,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/messages_descriptions_zh_TW.properties",
+      "size" : 37942,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions.properties",
+      "size" : 2539,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_bg.properties",
+      "size" : 5846,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_ca.properties",
+      "size" : 2667,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_cs.properties",
+      "size" : 3015,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_da.properties",
+      "size" : 2608,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_de.properties",
+      "size" : 2601,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_el.properties",
+      "size" : 5944,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_en.properties",
+      "size" : 2432,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_en_US.properties",
+      "size" : 1974,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_es.properties",
+      "size" : 2699,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_et.properties",
+      "size" : 2624,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_fi.properties",
+      "size" : 2746,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_fr.properties",
+      "size" : 2791,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_hi.properties",
+      "size" : 4770,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_hr.properties",
+      "size" : 2639,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_hu.properties",
+      "size" : 3209,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_it.properties",
+      "size" : 2594,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_iw.properties",
+      "size" : 4657,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_ja.properties",
+      "size" : 3280,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_kk.properties",
+      "size" : 6018,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_ko.properties",
+      "size" : 3068,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_lv.properties",
+      "size" : 2886,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_nl.properties",
+      "size" : 2469,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_no.properties",
+      "size" : 2582,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_pl.properties",
+      "size" : 2819,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_pt.properties",
+      "size" : 2841,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_ro.properties",
+      "size" : 2773,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_ru.properties",
+      "size" : 6056,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_sh.properties",
+      "size" : 2653,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_sk.properties",
+      "size" : 3050,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_sl.properties",
+      "size" : 2621,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_sv.properties",
+      "size" : 2752,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_th.properties",
+      "size" : 5818,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_tr.properties",
+      "size" : 2973,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_uk.properties",
+      "size" : 6132,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_vi.properties",
+      "size" : 3626,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_zh-CN.properties",
+      "size" : 2764,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_zh_CN.properties",
+      "size" : 2764,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/op_messages_descriptions_zh_TW.properties",
+      "size" : 2872,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions.properties",
+      "size" : 29310,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_ar.properties",
+      "size" : 62951,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_bg.properties",
+      "size" : 75526,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_ca.properties",
+      "size" : 31660,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_cs.properties",
+      "size" : 33099,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_da.properties",
+      "size" : 29309,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_de.properties",
+      "size" : 31251,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_el.properties",
+      "size" : 77991,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_en.properties",
+      "size" : 28882,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_es.properties",
+      "size" : 31673,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_et.properties",
+      "size" : 29641,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_fi.properties",
+      "size" : 32062,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_fr.properties",
+      "size" : 33722,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_hi.properties",
+      "size" : 72104,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_hr.properties",
+      "size" : 30647,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_hu.properties",
+      "size" : 35810,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_it.properties",
+      "size" : 30896,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_iw.properties",
+      "size" : 57085,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_ja.properties",
+      "size" : 49832,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_kk.properties",
+      "size" : 71724,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_ko.properties",
+      "size" : 45804,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_lv.properties",
+      "size" : 33478,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_nl.properties",
+      "size" : 29562,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_no.properties",
+      "size" : 29244,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_pl.properties",
+      "size" : 33157,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_pt.properties",
+      "size" : 33677,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_ro.properties",
+      "size" : 32313,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_ru.properties",
+      "size" : 75186,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_sh.properties",
+      "size" : 30891,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_sk.properties",
+      "size" : 33752,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_sl.properties",
+      "size" : 29614,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_sv.properties",
+      "size" : 30210,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_th.properties",
+      "size" : 70522,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_tr.properties",
+      "size" : 32654,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_uk.properties",
+      "size" : 72509,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_vi.properties",
+      "size" : 46902,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_zh-CN.properties",
+      "size" : 35257,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_zh_CN.properties",
+      "size" : 35257,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/messages_descriptions_zh_TW.properties",
+      "size" : 35308,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions.properties",
+      "size" : 2343,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_bg.properties",
+      "size" : 4528,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_ca.properties",
+      "size" : 2160,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_cs.properties",
+      "size" : 2355,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_da.properties",
+      "size" : 2133,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_de.properties",
+      "size" : 2108,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_el.properties",
+      "size" : 4624,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_en.properties",
+      "size" : 1974,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_es.properties",
+      "size" : 2178,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_et.properties",
+      "size" : 2127,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_fi.properties",
+      "size" : 2170,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_fr.properties",
+      "size" : 2256,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_hi.properties",
+      "size" : 3814,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_hr.properties",
+      "size" : 2158,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_hu.properties",
+      "size" : 2541,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_it.properties",
+      "size" : 2116,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_iw.properties",
+      "size" : 3641,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_ja.properties",
+      "size" : 2584,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_kk.properties",
+      "size" : 4656,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_ko.properties",
+      "size" : 2428,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_lv.properties",
+      "size" : 2326,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_nl.properties",
+      "size" : 2016,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_no.properties",
+      "size" : 2098,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_pl.properties",
+      "size" : 2301,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_pt.properties",
+      "size" : 2274,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_ro.properties",
+      "size" : 2235,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_ru.properties",
+      "size" : 4854,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_sh.properties",
+      "size" : 2149,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_sk.properties",
+      "size" : 2454,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_sl.properties",
+      "size" : 2113,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_sv.properties",
+      "size" : 2288,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_th.properties",
+      "size" : 4456,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_tr.properties",
+      "size" : 2404,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_uk.properties",
+      "size" : 4647,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_vi.properties",
+      "size" : 2893,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_zh-CN.properties",
+      "size" : 2236,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_zh_CN.properties",
+      "size" : 2236,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/i18n/src/sap/hrf/res/properties/op_messages_descriptions_zh_TW.properties",
+      "size" : 2344,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/infrastructure/errorHandling/hrfException.js",
+      "size" : 3016,
+      "compressedSize" : 1704,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/infrastructure/locale/lib/constants.js",
+      "size" : 509,
+      "compressedSize" : 452,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/infrastructure/locale/lib/moment_JS_min.js",
+      "size" : 74371,
+      "compressedSize" : 48510,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/infrastructure/locale/lib/resourceBundle.js",
+      "size" : 910,
+      "compressedSize" : 634,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/infrastructure/locale/lib/resourceBundleContext.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/infrastructure/locale/lib/resourceBundleContext.js",
+      "size" : 1687,
+      "compressedSize" : 650,
+      "required" : ["jquery.sap.global.js", "sap/ui/model/resource/ResourceModel.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/infrastructure/messageHandling/lib/constants.js",
+      "size" : 451,
+      "compressedSize" : 388,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/infrastructure/messageHandling/lib/message.js",
+      "size" : 18812,
+      "compressedSize" : 14138,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/infrastructure/messageHandling/lib/opMessages.js",
+      "size" : 2037,
+      "compressedSize" : 1304,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/infrastructure/messageHandling/lib/responseCollector.js",
+      "size" : 6287,
+      "compressedSize" : 3336,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/infrastructure/errorHandling/hrfException.js", "sap/rules/ui/parser/infrastructure/locale/lib/constants.js", "sap/rules/ui/parser/infrastructure/locale/lib/resourceBundle.js", "sap/rules/ui/parser/infrastructure/messageHandling/lib/message.js", "sap/rules/ui/parser/infrastructure/messageHandling/lib/opMessages.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/infrastructure/util/constants.js",
+      "size" : 1429,
+      "compressedSize" : 755,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/infrastructure/util/utilsBase.js",
+      "size" : 2384,
+      "compressedSize" : 1069,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/infrastructure/util/constants.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/resources/common/lib/constants.js",
+      "size" : 2048,
+      "compressedSize" : 1566,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/businessLanguage/lib/constants.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/resources/common/lib/oDataHandler.js",
+      "size" : 6587,
+      "compressedSize" : 3000,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/resources/common/lib/resourcesConvertor.js",
+      "size" : 25181,
+      "compressedSize" : 7829,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/infrastructure/util/utilsBase.js", "sap/rules/ui/parser/resources/common/lib/oDataHandler.js", "sap/rules/ui/parser/resources/vocabulary/lib/validationUtils.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/resources/dependencies/lib/constants.js",
+      "size" : 3292,
+      "compressedSize" : 2735,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/resources/dependencies/lib/constantsBase.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/resources/dependencies/lib/constantsBase.js",
+      "size" : 422,
+      "compressedSize" : 364,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/resources/dependencies/lib/objects.js",
+      "size" : 1600,
+      "compressedSize" : 979,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/resources/dependencies/lib/constants.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/resources/rule/lib/constantsBase.js",
+      "size" : 1002,
+      "compressedSize" : 733,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/resources/vocabulary/lib/JSONLoader.js",
+      "size" : 57584,
+      "compressedSize" : 23115,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/businessLanguage/lib/constants.js", "sap/rules/ui/parser/businessLanguage/lib/parsingBackendMediator.js", "sap/rules/ui/parser/infrastructure/errorHandling/hrfException.js", "sap/rules/ui/parser/infrastructure/messageHandling/lib/responseCollector.js", "sap/rules/ui/parser/infrastructure/util/utilsBase.js", "sap/rules/ui/parser/resources/common/lib/constants.js", "sap/rules/ui/parser/resources/dependencies/lib/constants.js", "sap/rules/ui/parser/resources/dependencies/lib/dependenciesUtils.js", "sap/rules/ui/parser/resources/dependencies/lib/dependencyManager.js", "sap/rules/ui/parser/resources/vocabulary/lib/constants.js", "sap/rules/ui/parser/resources/vocabulary/lib/runtimeServicesUtils.js", "sap/rules/ui/parser/resources/vocabulary/lib/termGeneration.js", "sap/rules/ui/parser/resources/vocabulary/lib/utils.js", "sap/rules/ui/parser/resources/vocabulary/lib/utilsBase.js", "sap/rules/ui/parser/resources/vocabulary/lib/vocaObjects.js", "sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderFactory.js", "sap/rules/ui/parser/ruleBody/lib/ruleBodyValidator.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/resources/vocabulary/lib/constants.js",
+      "size" : 30664,
+      "compressedSize" : 18247,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/resources/vocabulary/lib/constantsBase.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/resources/vocabulary/lib/constantsBase.js",
+      "size" : 1920,
+      "compressedSize" : 936,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/resources/vocabulary/lib/parameterRuntimeServices.js",
+      "size" : 98,
+      "compressedSize" : 49,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/resources/vocabulary/lib/rtsVoca.js",
+      "size" : 78705,
+      "compressedSize" : 36589,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/businessLanguage/lib/constants.js", "sap/rules/ui/parser/resources/rule/lib/constantsBase.js", "sap/rules/ui/parser/resources/vocabulary/lib/constants.js", "sap/rules/ui/parser/resources/vocabulary/lib/runtimeServicesUtils.js", "sap/rules/ui/parser/resources/vocabulary/lib/vocaConversionUtils.js", "sap/rules/ui/parser/resources/vocabulary/lib/vocaObjects.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/resources/vocabulary/lib/rtsVocaContextBase.js",
+      "size" : 425,
+      "compressedSize" : 350,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/resources/vocabulary/lib/rtsVocaContextFactory.js",
+      "size" : 2583,
+      "compressedSize" : 1499,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/resources/vocabulary/lib/constants.js", "sap/rules/ui/parser/resources/vocabulary/lib/rtsContextJSON.js", "sap/rules/ui/parser/resources/vocabulary/lib/serverDBRTContext.js", "sap/rules/ui/parser/resources/vocabulary/lib/serverJSONandDBRTcontext.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/resources/vocabulary/lib/rtsVocaCoreFactory.js",
+      "size" : 2045,
+      "compressedSize" : 1071,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/resources/vocabulary/lib/rtsVoca.js", "sap/rules/ui/parser/resources/vocabulary/lib/rtsVocaContextBase.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/resources/vocabulary/lib/rtsVocaInitiator.js",
+      "size" : 1836,
+      "compressedSize" : 836,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/resources/vocabulary/lib/rtsVocaContextFactory.js", "sap/rules/ui/parser/resources/vocabulary/lib/rtsVocaCoreFactory.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/resources/vocabulary/lib/runtimeServicesCore.js",
+      "size" : 89,
+      "compressedSize" : 88,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/resources/vocabulary/lib/runtimeServicesUtils.js",
+      "size" : 7213,
+      "compressedSize" : 2473,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/businessLanguage/lib/constantsBase.js", "sap/rules/ui/parser/resources/vocabulary/lib/constants.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/resources/vocabulary/lib/termGeneration.js",
+      "size" : 49816,
+      "compressedSize" : 15761,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/infrastructure/util/utilsBase.js", "sap/rules/ui/parser/resources/dependencies/lib/constants.js", "sap/rules/ui/parser/resources/dependencies/lib/dependenciesUtils.js", "sap/rules/ui/parser/resources/dependencies/lib/dependencyManager.js", "sap/rules/ui/parser/resources/vocabulary/lib/constants.js", "sap/rules/ui/parser/resources/vocabulary/lib/vocaObjects.js", "sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderFactory.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/resources/vocabulary/lib/utils.js",
+      "size" : 21635,
+      "compressedSize" : 8550,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/businessLanguage/lib/constants.js", "sap/rules/ui/parser/businessLanguage/lib/parsingBackendMediator.js", "sap/rules/ui/parser/infrastructure/errorHandling/hrfException.js", "sap/rules/ui/parser/infrastructure/messageHandling/lib/responseCollector.js", "sap/rules/ui/parser/infrastructure/util/constants.js", "sap/rules/ui/parser/resources/common/lib/constants.js", "sap/rules/ui/parser/resources/vocabulary/lib/constants.js", "sap/rules/ui/parser/resources/vocabulary/lib/utilsBase.js", "sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderFactory.js", "sap/rules/ui/parser/ruleBody/lib/constantsBase.js", "sap/rules/ui/parser/ruleBody/lib/ruleBodyValidator.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/resources/vocabulary/lib/utilsBase.js",
+      "size" : 3938,
+      "compressedSize" : 2202,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/infrastructure/errorHandling/hrfException.js", "sap/rules/ui/parser/infrastructure/util/constants.js", "sap/rules/ui/parser/resources/vocabulary/lib/constantsBase.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/resources/vocabulary/lib/validationUtils.js",
+      "size" : 4710,
+      "compressedSize" : 2176,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/businessLanguage/lib/parseUtils.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/resources/vocabulary/lib/vocaConversionUtils.js",
+      "size" : 856,
+      "compressedSize" : 375,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/resources/vocabulary/lib/vocaObjects.js",
+      "size" : 18457,
+      "compressedSize" : 6061,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/resources/vocabulary/lib/constants.js", "sap/rules/ui/parser/resources/vocabulary/lib/runtimeServicesUtils.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProvider.js",
+      "size" : 85451,
+      "compressedSize" : 40054,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/businessLanguage/lib/constants.js", "sap/rules/ui/parser/resources/rule/lib/constantsBase.js", "sap/rules/ui/parser/resources/vocabulary/lib/constants.js", "sap/rules/ui/parser/resources/vocabulary/lib/runtimeServicesUtils.js", "sap/rules/ui/parser/resources/vocabulary/lib/vocaConversionUtils.js", "sap/rules/ui/parser/resources/vocabulary/lib/vocaObjects.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderBaseContext.js",
+      "size" : 512,
+      "compressedSize" : 419,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderContextFactory.js",
+      "size" : 2809,
+      "compressedSize" : 1635,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/resources/vocabulary/lib/constants.js", "sap/rules/ui/parser/resources/vocabulary/lib/serverDBRTContext.js", "sap/rules/ui/parser/resources/vocabulary/lib/serverJSONandDBRTcontext.js", "sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderJSONContext.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderFactory.js",
+      "size" : 2224,
+      "compressedSize" : 1174,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProvider.js", "sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderBaseContext.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderInitiator.js",
+      "size" : 2025,
+      "compressedSize" : 972,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderContextFactory.js", "sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderFactory.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderJSONContext.js",
+      "size" : 13309,
+      "compressedSize" : 3098,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/resources/common/lib/resourcesConvertor.js", "sap/rules/ui/parser/resources/vocabulary/lib/JSONLoader.js", "sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderBaseContext.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/ruleBody/lib/constants.js",
+      "size" : 6325,
+      "compressedSize" : 4412,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/ruleBody/lib/constantsBase.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/ruleBody/lib/constantsBase.js",
+      "size" : 1805,
+      "compressedSize" : 1258,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/businessLanguage/lib/constants.js", "sap/rules/ui/parser/resources/dependencies/lib/constantsBase.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/ruleBody/lib/decisionTableCell.js",
+      "size" : 19436,
+      "compressedSize" : 9520,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/AST/lib/bundleAst.js", "sap/rules/ui/parser/businessLanguage/lib/ASTConvertor.js", "sap/rules/ui/parser/businessLanguage/lib/constants.js", "sap/rules/ui/parser/businessLanguage/lib/parsingBackendMediator.js", "sap/rules/ui/parser/infrastructure/errorHandling/hrfException.js", "sap/rules/ui/parser/infrastructure/messageHandling/lib/responseCollector.js", "sap/rules/ui/parser/resources/vocabulary/lib/constants.js", "sap/rules/ui/parser/ruleBody/lib/constants.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/ruleBody/lib/dependenciesHandler.js",
+      "size" : 769,
+      "compressedSize" : 525,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/ruleBody/lib/ruleBody.js",
+      "size" : 19480,
+      "compressedSize" : 9246,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/businessLanguage/lib/parsingBackendMediator.js", "sap/rules/ui/parser/infrastructure/errorHandling/hrfException.js", "sap/rules/ui/parser/infrastructure/messageHandling/lib/responseCollector.js", "sap/rules/ui/parser/infrastructure/util/utilsBase.js", "sap/rules/ui/parser/ruleBody/lib/constants.js", "sap/rules/ui/parser/ruleBody/lib/decisionTableCell.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/ruleBody/lib/ruleBodyConvertor.js",
+      "size" : 22539,
+      "compressedSize" : 11076,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/AST/lib/bundleAst.js", "sap/rules/ui/parser/businessLanguage/lib/ASTConvertor.js", "sap/rules/ui/parser/businessLanguage/lib/constants.js", "sap/rules/ui/parser/businessLanguage/lib/valueHelpValidator.js", "sap/rules/ui/parser/infrastructure/util/utilsBase.js", "sap/rules/ui/parser/ruleBody/lib/constants.js", "sap/rules/ui/parser/ruleBody/lib/decisionTableCell.js", "sap/rules/ui/parser/ruleBody/lib/ruleBodyValidator.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/ruleBody/lib/ruleBodyServices.js",
+      "size" : 4558,
+      "compressedSize" : 1854,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/ruleBody/lib/constants.js", "sap/rules/ui/parser/ruleBody/lib/ruleBodyConvertor.js", "sap/rules/ui/parser/ruleBody/lib/ruleBodyValidator.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/ruleBody/lib/ruleBodyValidator.js",
+      "size" : 61412,
+      "compressedSize" : 28902,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/businessLanguage/lib/constants.js", "sap/rules/ui/parser/infrastructure/messageHandling/lib/responseCollector.js", "sap/rules/ui/parser/infrastructure/util/constants.js", "sap/rules/ui/parser/infrastructure/util/utilsBase.js", "sap/rules/ui/parser/resources/dependencies/lib/constants.js", "sap/rules/ui/parser/resources/dependencies/lib/objects.js", "sap/rules/ui/parser/resources/vocabulary/lib/constants.js", "sap/rules/ui/parser/ruleBody/lib/constants.js", "sap/rules/ui/parser/ruleBody/lib/decisionTableCell.js", "sap/rules/ui/parser/ruleBody/lib/dependenciesHandler.js", "sap/rules/ui/parser/ruleBody/lib/ruleBody.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/parser/ruleBody/lib/ruleServices.js",
+      "size" : 21053,
+      "compressedSize" : 6768,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/parser/businessLanguage/lib/constants.js", "sap/rules/ui/parser/infrastructure/messageHandling/lib/responseCollector.js", "sap/rules/ui/parser/resources/common/lib/oDataHandler.js", "sap/rules/ui/parser/resources/common/lib/resourcesConvertor.js", "sap/rules/ui/parser/resources/dependencies/lib/constants.js", "sap/rules/ui/parser/resources/vocabulary/lib/constants.js", "sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderInitiator.js", "sap/rules/ui/parser/ruleBody/lib/constants.js", "sap/rules/ui/parser/ruleBody/lib/decisionTableCell.js", "sap/rules/ui/parser/ruleBody/lib/ruleBodyServices.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/providers/ValueHelpProvider.js",
+      "description" : "-----------------------------------------------------------------------------",
+      "size" : 5979,
+      "compressedSize" : 2594,
+      "required" : ["jquery.sap.global.js", "sap/m/List.js", "sap/m/PlacementType.js", "sap/m/ResponsivePopover.js", "sap/m/StandardListItem.js", "sap/ui/comp/providers/ValueHelpProvider.js", "sap/ui/model/json/JSONModel.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/services/ExpressionLanguage.js",
+      "description" : "Provides element sap.rules.ui.services.ExpressionLanguage",
+      "size" : 65365,
+      "compressedSize" : 26417,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/library.js", "sap/rules/ui/parser/businessLanguage/lib/parsingBackendMediator.js", "sap/rules/ui/parser/infrastructure/messageHandling/lib/responseCollector.js", "sap/rules/ui/parser/resources/common/lib/resourcesConvertor.js", "sap/rules/ui/parser/resources/vocabulary/lib/vocabularyDataProviderInitiator.js", "sap/rules/ui/parser/ruleBody/lib/ruleServices.js", "sap/ui/core/Element.js", "sap/ui/core/Locale.js", "sap/ui/core/LocaleData.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/type/DecisionTableCell.js",
+      "description" : "Provides control sap.rules.ui.",
+      "size" : 3500,
+      "compressedSize" : 925,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/type/DecisionTableHeader.js",
+      "description" : "Provides control sap.rules.ui.",
+      "size" : 1314,
+      "compressedSize" : 556,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/type/Expression.js",
+      "description" : "Provides control sap.rules.ui.",
+      "size" : 1680,
+      "compressedSize" : 825,
+      "required" : ["jquery.sap.global.js", "sap/rules/ui/type/ExpressionAbs.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/rules/ui/type/ExpressionAbs.js",
+      "description" : "Provides control sap.rules.ui.",
+      "size" : 1527,
+      "compressedSize" : 657,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+sap.ui.define(['sap/ushell/renderers/fiori2/search/SearchHelper'],function(S){"use strict";return sap.m.Text.extend('sap.ushell.renderers.fiori2.search.controls.SearchText',{renderer:'sap.m.TextRenderer',onAfterRendering:function(){var d=this.getDomRef();S.boldTagUnescaperByText(d);}});});

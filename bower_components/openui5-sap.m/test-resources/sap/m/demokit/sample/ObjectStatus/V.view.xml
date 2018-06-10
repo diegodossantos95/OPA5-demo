@@ -1,0 +1,32 @@
+<mvc:View
+	xmlns:l="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
+	<l:VerticalLayout
+		class="sapUiContentPadding"
+		width="100%">
+		<l:content>
+			<ObjectStatus
+				class="sapUiSmallMarginBottom"
+				text="Unknown"
+				state="None" />
+			<ObjectStatus
+				class="sapUiSmallMarginBottom"
+				text="Product Shipped"
+				state="Success" />
+			<ObjectStatus
+				class="sapUiSmallMarginBottom"
+				text="Product Missing"
+				state="Warning" />
+			<ObjectStatus
+				class="sapUiSmallMarginBottom"
+				text="Product Damaged"
+				state="Error" />
+			<ObjectStatus
+				class="sapUiSmallMarginBottom"
+				text="Product Damaged"
+				state="Error"
+				icon="sap-icon://alert" />
+		</l:content>
+	</l:VerticalLayout>
+</mvc:View>

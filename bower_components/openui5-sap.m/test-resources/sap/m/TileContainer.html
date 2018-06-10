@@ -1,0 +1,213 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<title>TileContainer - sap.m</title>
+
+		<script src="shared-config.js"></script>
+		<script src="../../../resources/sap-ui-core.js"
+			id="sap-ui-bootstrap"
+			data-sap-ui-libs="sap.m">
+		</script>
+
+		<style>
+			.darkView {
+				background-color: white;
+			}
+		</style>
+
+		<script>
+		function handlePress(oEvent) {
+		    alert('tile ' + oEvent.oSource.getTitle() + ' pressed');
+		}
+		function getTiles(n){
+			var tiles = new Array();
+			sap.ui.controller("my.own.controller", {
+
+				// implement an event handler in the Controller
+				doSomething: function() {
+					alert("Hello World!");
+				}
+			});
+
+			sap.ui.jsview("my.own.view", {
+
+				// define the (default) controller type for this View
+				getControllerName: function() {
+					return "my.own.controller";
+				},
+
+				// defines the UI of this View
+				createContent: function(oController) {
+					if(i === 9) {
+						//new
+						return [
+									new sap.m.Button({text: 'acb'}),
+									new sap.m.Button({text: 'def'}),
+									new sap.m.Button({text: 'ghi'})
+								];
+
+						//end new
+					}
+					else
+					// button text is bound to Model, "press" action is bound to Controller's event handler
+					return new sap.m.StandardTile("tile" + i, {
+		                icon : "images/action.png",
+		                number : 1 + i,
+		                numberUnit : "EUR",
+		                title : "Coming from a view " + i,
+		                info : "1 day ago",
+		                press : handlePress,
+		                removable : i % 2 == 1
+		            })
+				}
+			});
+
+			for (var i=0; i<n; i++){
+				var vw = sap.ui.view({type:sap.ui.core.mvc.ViewType.JS, viewName:"my.own.view", height: '100%'});
+				if(i === 9)
+					vw.addStyleClass('darkView');
+				var oTile = new sap.m.CustomTile({
+						content: vw
+
+				});
+				tiles.push(oTile);
+			}
+			return tiles;
+		}
+
+		var tc = new sap.m.TileContainer("tc",{
+			tiles:[
+				new sap.m.StandardTile("tileAdded345", {
+	   			    icon : "images/action.png",
+	   	            info : "Added 345",
+	   	            infoUnit : "Unit",
+	   	            title : "Click to add another tile",
+	   	            description : "1 day ago",
+	   	            press : function() {
+	   	            	tc.deleteTile(tc.getTiles()[5]);
+	   	            }
+   	        	})
+			],
+			height: '70%'
+		});
+
+		tc.addTile(new sap.m.StandardTile("tileEdit", {
+            icon : "images/action.png",
+            number : "Switch To Edit Mode",
+            numberUnit : "Unit",
+            title : "Click to add another tile",
+            info : "1 day ago",
+            press : toggleEdit,
+            removable:false
+        }));
+
+		tc.addTile(new sap.m.StandardTile("tileAdd1", {
+            icon : "images/action.png",
+            number : "Busy state test1",
+            numberUnit : "Unit",
+            title : "Click to add another tile",
+            info : "10 day ago",
+            press : addTile,
+            busy: true
+        }));
+
+		tc.addTile(new sap.m.StandardTile("tileAdd2", {
+            icon : "images/action.png",
+            number : "Add",
+            numberUnit : "Unit",
+            title : "Click to add another tile",
+            info : "1 day ago",
+            press : addTile
+        }));
+
+		tc.addTile(new sap.m.StandardTile("tileAdd3", {
+            icon : "images/action.png",
+            number : "Busy state test2",
+            numberUnit : "Unit",
+            title : "Click to add another tile",
+            info : "10 day ago",
+            press : addTile,
+            busy: true
+        }));
+
+		var aTiles = getTiles(20);
+		for (var i=0;i<aTiles.length;i++) {
+			if (i<10) {
+				tc.insertTile(aTiles[i],3);
+			} else {
+				tc.addTile(aTiles[i]);
+			}
+		}
+		tc.addTile(new sap.m.StandardTile("tileAdd4", {
+            icon : "images/action.png",
+            number : "Add",
+            numberUnit : "Unit",
+            title : "Click to add another tile",
+            info : "1 day ago",
+            press : addTile
+        }));
+		var editable = false;
+		function toggleEdit() {
+			var oTile = sap.ui.getCore().byId("tileEdit");
+			oTile.setNumber("Turn off Edit Mode");
+			editable=!editable;
+			tc.setEditable(editable);
+		}
+
+		var iAdded = 0;
+        function addTile() {
+        	tc.getTiles()[tc.getTiles().length-1].setNumber("Changed");
+
+        	iAdded++;
+       		tc.addTile(
+       		    new sap.m.CustomTile("tileAdded"+ iAdded, {
+						content: new sap.m.Button({text: "hhasfdh"})
+				})
+       		);
+
+		};
+        var app = new sap.m.App();
+		var page = new sap.m.Page({setShowHeader: true});
+		app.setInitialPage(page.getId());
+		page.setEnableScrolling(false);
+		page.setShowHeader(false);
+		app.addPage(page);
+		page.addContent(new sap.m.Button({text: 'acb'}));
+		page.addContent(new sap.m.Button({text: 'acb'}));
+		page.addContent(new sap.m.Button({text: 'acb'}));
+		page.addContent(new sap.m.Button({text: 'acb'}));
+		page.addContent(tc);
+		page.addContent(new sap.m.Button({text: 'acb'}));
+		page.addContent(new sap.m.Button({text: 'acb'}));
+		page.addContent(new sap.m.Button({text: 'acb'}));
+		page.addContent(new sap.m.Button({text: 'acb'}));
+		app.placeAt('body');
+
+		tc.attachTileDelete(function(oEvent) {
+			tc.deleteTile(oEvent.getParameter("tile"));
+		});
+		tc.attachTileMove(
+				function (oEvent) {
+					var busyDialog = new sap.m.BusyDialog({
+							showCancelButton : false,
+							close : function() {
+							}
+						}
+						);
+					busyDialog.setTitle("Tile Moved"),
+					busyDialog.open();
+
+					// close busy dialog after 1 sec
+						setTimeout(function () {busyDialog.close()}, 500);
+					}
+				);
+
+
+		</script>
+
+	</head>
+	<body id="body" class="sapUiBody">
+	</body>
+</html>

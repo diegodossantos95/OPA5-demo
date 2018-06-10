@@ -1,0 +1,389 @@
+{
+  "modules" : [
+    {
+      "name" : "sap/zen/crosstab/BaseArea.js",
+      "size" : 33019,
+      "compressedSize" : 23316,
+      "required" : ["jquery.sap.global.js", "sap/zen/crosstab/rendering/DataModel.js", "sap/zen/crosstab/rendering/RenderEngine.js", "sap/zen/crosstab/rendering/RenderingConstants.js", "sap/zen/crosstab/utils/Utils.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/CellStyleHandler.js",
+      "size" : 5424,
+      "compressedSize" : 4076,
+      "required" : ["jquery.sap.global.js", "sap/zen/crosstab/rendering/RenderingConstants.js", "sap/zen/crosstab/utils/Utils.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/ColResizer.js",
+      "size" : 7084,
+      "compressedSize" : 3329,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/ColumnHeaderArea.js",
+      "size" : 2016,
+      "compressedSize" : 1339,
+      "required" : ["jquery.sap.global.js", "sap/zen/crosstab/BaseArea.js", "sap/zen/crosstab/rendering/RenderingConstants.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/Crosstab.js",
+      "description" : "Provides control sap.zen.crosstab.Crosstab.",
+      "size" : 55957,
+      "compressedSize" : 34747,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/zen/crosstab/CellStyleHandler.js", "sap/zen/crosstab/ColumnHeaderArea.js", "sap/zen/crosstab/CrosstabCellApi.js", "sap/zen/crosstab/CrosstabContextMenu.js", "sap/zen/crosstab/CrosstabHeaderInfo.js", "sap/zen/crosstab/CrosstabTestProxy.js", "sap/zen/crosstab/DataArea.js", "sap/zen/crosstab/DimensionHeaderArea.js", "sap/zen/crosstab/EventHandler.js", "sap/zen/crosstab/PropertyBag.js", "sap/zen/crosstab/RowHeaderArea.js", "sap/zen/crosstab/SelectionHandler.js", "sap/zen/crosstab/dragdrop/DragDropHandler.js", "sap/zen/crosstab/library.js", "sap/zen/crosstab/paging/PageManager.js", "sap/zen/crosstab/rendering/RenderEngine.js", "sap/zen/crosstab/utils/Utils.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/CrosstabCellApi.js",
+      "size" : 5028,
+      "compressedSize" : 1872,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/CrosstabContextMenu.js",
+      "size" : 3576,
+      "compressedSize" : 1931,
+      "required" : ["jquery.sap.global.js", "sap/zen/crosstab/rendering/RenderingConstants.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/CrosstabHeaderInfo.js",
+      "size" : 19710,
+      "compressedSize" : 8958,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/CrosstabRenderer.js",
+      "size" : 8915,
+      "compressedSize" : 5399,
+      "required" : ["jquery.sap.global.js", "sap/zen/crosstab/rendering/RenderingConstants.js", "sap/zen/crosstab/utils/Utils.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/CrosstabTestProxy.js",
+      "size" : 1668,
+      "compressedSize" : 953,
+      "required" : ["jquery.sap.global.js", "sap/zen/crosstab/ColResizer.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/DataArea.js",
+      "size" : 2736,
+      "compressedSize" : 1818,
+      "required" : ["jquery.sap.global.js", "sap/zen/crosstab/BaseArea.js", "sap/zen/crosstab/rendering/RenderingConstants.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/DataCell.js",
+      "description" : "Provides control sap.zen.crosstab.DataCell.",
+      "size" : 11164,
+      "compressedSize" : 3775,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/zen/crosstab/CellStyleHandler.js", "sap/zen/crosstab/library.js", "sap/zen/crosstab/rendering/RenderingConstants.js", "sap/zen/crosstab/utils/Utils.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/DataCellRenderer.js",
+      "size" : 2248,
+      "compressedSize" : 1127,
+      "required" : ["jquery.sap.global.js", "sap/zen/crosstab/IDataCell.js", "sap/zen/crosstab/rendering/RenderingConstants.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/DimensionHeaderArea.js",
+      "size" : 1082,
+      "compressedSize" : 825,
+      "required" : ["jquery.sap.global.js", "sap/zen/crosstab/BaseArea.js", "sap/zen/crosstab/rendering/RenderingConstants.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/EventHandler.js",
+      "size" : 22654,
+      "compressedSize" : 10306,
+      "required" : ["jquery.sap.global.js", "sap/zen/crosstab/ColResizer.js", "sap/zen/crosstab/HeaderResizer.js", "sap/zen/crosstab/SelectionHandler.js", "sap/zen/crosstab/TouchHandler.js", "sap/zen/crosstab/keyboard/CrosstabKeyboardNavHandler.js", "sap/zen/crosstab/rendering/CrossRequestManager.js", "sap/zen/crosstab/rendering/RenderingConstants.js", "sap/zen/crosstab/utils/Utils.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/HeaderCell.js",
+      "description" : "Provides control sap.zen.crosstab.HeaderCell.",
+      "size" : 25984,
+      "compressedSize" : 6168,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/zen/crosstab/CellStyleHandler.js", "sap/zen/crosstab/library.js", "sap/zen/crosstab/rendering/RenderingConstants.js", "sap/zen/crosstab/utils/Utils.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/HeaderCellRenderer.js",
+      "size" : 11464,
+      "compressedSize" : 6633,
+      "required" : ["jquery.sap.global.js", "sap/zen/crosstab/IHeaderCell.js", "sap/zen/crosstab/TextConstants.js", "sap/zen/crosstab/rendering/RenderingConstants.js", "sap/zen/crosstab/utils/Utils.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/HeaderResizer.js",
+      "size" : 3861,
+      "compressedSize" : 1868,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/IDataCell.js",
+      "size" : 422,
+      "compressedSize" : 279,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/IHeaderCell.js",
+      "size" : 438,
+      "compressedSize" : 283,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/PropertyBag.js",
+      "size" : 5205,
+      "compressedSize" : 2726,
+      "required" : ["jquery.sap.global.js", "sap/zen/crosstab/rendering/RenderingConstants.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/RowHeaderArea.js",
+      "size" : 2559,
+      "compressedSize" : 1692,
+      "required" : ["jquery.sap.global.js", "sap/zen/crosstab/BaseArea.js", "sap/zen/crosstab/rendering/RenderingConstants.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/SelectionHandler.js",
+      "size" : 28482,
+      "compressedSize" : 14037,
+      "required" : ["jquery.sap.global.js", "sap/zen/crosstab/TouchHandler.js", "sap/zen/crosstab/keyboard/CrosstabKeyboardNavHandler.js", "sap/zen/crosstab/rendering/CrossRequestManager.js", "sap/zen/crosstab/rendering/RenderingConstants.js", "sap/zen/crosstab/utils/Utils.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/TextConstants.js",
+      "size" : 527,
+      "compressedSize" : 499,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/TouchHandler.js",
+      "size" : 13892,
+      "compressedSize" : 6567,
+      "required" : ["jquery.sap.global.js", "sap/ui/unified/Menu.js", "sap/zen/crosstab/utils/Utils.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/datahandler/JsonDataHandler.js",
+      "size" : 29613,
+      "compressedSize" : 13278,
+      "required" : ["jquery.sap.global.js", "sap/zen/crosstab/CrosstabCellApi.js", "sap/zen/crosstab/TextConstants.js", "sap/zen/crosstab/rendering/RenderingConstants.js", "sap/zen/crosstab/utils/Utils.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/dragdrop/DragDropAreaRenderer.js",
+      "size" : 14810,
+      "compressedSize" : 7127,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/dragdrop/DragDropHandler.js",
+      "size" : 24795,
+      "compressedSize" : 12560,
+      "required" : ["jquery.sap.global.js", "sap/zen/crosstab/TextConstants.js", "sap/zen/crosstab/dragdrop/DragDropAreaRenderer.js", "sap/zen/crosstab/dragdrop/DragDropHoverManager.js", "sap/zen/crosstab/dragdrop/DragDropUtils.js", "sap/zen/crosstab/dragdrop/MemberDragDropHandler.js", "sap/zen/crosstab/utils/Utils.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/dragdrop/DragDropHoverManager.js",
+      "size" : 14267,
+      "compressedSize" : 7807,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/dragdrop/DragDropUtils.js",
+      "size" : 19469,
+      "compressedSize" : 10336,
+      "required" : ["jquery.sap.global.js", "sap/zen/crosstab/utils/Utils.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/dragdrop/MemberDragDropHandler.js",
+      "size" : 43079,
+      "compressedSize" : 20075,
+      "required" : ["jquery.sap.global.js", "sap/zen/crosstab/TextConstants.js", "sap/zen/crosstab/dragdrop/DragDropAreaRenderer.js", "sap/zen/crosstab/dragdrop/DragDropHoverManager.js", "sap/zen/crosstab/dragdrop/DragDropUtils.js", "sap/zen/crosstab/utils/Utils.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/keyboard/CrosstabKeyboardNavHandler.js",
+      "size" : 22312,
+      "compressedSize" : 8908,
+      "required" : ["jquery.sap.global.js", "sap/zen/crosstab/rendering/RenderingConstants.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/library-preload.js",
+      "size" : 334999,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/ui/core/Core.js", "sap/ui/core/OpenState.js", "sap/ui/core/Popup.js", "sap/ui/core/library.js", "sap/ui/unified/Menu.js"],
+      "includes" : ["sap/zen/crosstab/BaseArea.js", "sap/zen/crosstab/CellStyleHandler.js", "sap/zen/crosstab/ColResizer.js", "sap/zen/crosstab/ColumnHeaderArea.js", "sap/zen/crosstab/Crosstab.js", "sap/zen/crosstab/CrosstabCellApi.js", "sap/zen/crosstab/CrosstabContextMenu.js", "sap/zen/crosstab/CrosstabHeaderInfo.js", "sap/zen/crosstab/CrosstabRenderer.js", "sap/zen/crosstab/CrosstabTestProxy.js", "sap/zen/crosstab/DataArea.js", "sap/zen/crosstab/DataCell.js", "sap/zen/crosstab/DataCellRenderer.js", "sap/zen/crosstab/DimensionHeaderArea.js", "sap/zen/crosstab/EventHandler.js", "sap/zen/crosstab/HeaderCell.js", "sap/zen/crosstab/HeaderCellRenderer.js", "sap/zen/crosstab/HeaderResizer.js", "sap/zen/crosstab/IDataCell.js", "sap/zen/crosstab/IHeaderCell.js", "sap/zen/crosstab/PropertyBag.js", "sap/zen/crosstab/RowHeaderArea.js", "sap/zen/crosstab/SelectionHandler.js", "sap/zen/crosstab/TextConstants.js", "sap/zen/crosstab/TouchHandler.js", "sap/zen/crosstab/datahandler/JsonDataHandler.js", "sap/zen/crosstab/dragdrop/DragDropAreaRenderer.js", "sap/zen/crosstab/dragdrop/DragDropHandler.js", "sap/zen/crosstab/dragdrop/DragDropHoverManager.js", "sap/zen/crosstab/dragdrop/DragDropUtils.js", "sap/zen/crosstab/dragdrop/MemberDragDropHandler.js", "sap/zen/crosstab/keyboard/CrosstabKeyboardNavHandler.js", "sap/zen/crosstab/library.js", "sap/zen/crosstab/manifest.json", "sap/zen/crosstab/nonphx/logic.js", "sap/zen/crosstab/paging/CellMerger.js", "sap/zen/crosstab/paging/Page.js", "sap/zen/crosstab/paging/PageManager.js", "sap/zen/crosstab/paging/PagingConstants.js", "sap/zen/crosstab/paging/RequestHandler.js", "sap/zen/crosstab/paging/RequestStack.js", "sap/zen/crosstab/rendering/CrossRequestManager.js", "sap/zen/crosstab/rendering/DataModel.js", "sap/zen/crosstab/rendering/DomElementProvider.js", "sap/zen/crosstab/rendering/HeaderScrollManager.js", "sap/zen/crosstab/rendering/PixelScrollManager.js", "sap/zen/crosstab/rendering/RenderEngine.js", "sap/zen/crosstab/rendering/RenderingConstants.js", "sap/zen/crosstab/rendering/ScrollManager.js", "sap/zen/crosstab/rendering/ScrollbarRenderer.js", "sap/zen/crosstab/utils/Measuring.js", "sap/zen/crosstab/utils/Utils.js"]
+    },
+    {
+      "name" : "sap/zen/crosstab/library-preload.json",
+      "size" : 0,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/ui/core/Core.js", "sap/ui/core/OpenState.js", "sap/ui/core/Popup.js", "sap/ui/core/library-preload.json", "sap/ui/core/library.js", "sap/ui/unified/Menu.js"],
+      "includes" : ["sap/zen/crosstab/BaseArea.js", "sap/zen/crosstab/CellStyleHandler.js", "sap/zen/crosstab/ColResizer.js", "sap/zen/crosstab/ColumnHeaderArea.js", "sap/zen/crosstab/Crosstab.js", "sap/zen/crosstab/CrosstabCellApi.js", "sap/zen/crosstab/CrosstabContextMenu.js", "sap/zen/crosstab/CrosstabHeaderInfo.js", "sap/zen/crosstab/CrosstabRenderer.js", "sap/zen/crosstab/CrosstabTestProxy.js", "sap/zen/crosstab/DataArea.js", "sap/zen/crosstab/DataCell.js", "sap/zen/crosstab/DataCellRenderer.js", "sap/zen/crosstab/DimensionHeaderArea.js", "sap/zen/crosstab/EventHandler.js", "sap/zen/crosstab/HeaderCell.js", "sap/zen/crosstab/HeaderCellRenderer.js", "sap/zen/crosstab/HeaderResizer.js", "sap/zen/crosstab/IDataCell.js", "sap/zen/crosstab/IHeaderCell.js", "sap/zen/crosstab/PropertyBag.js", "sap/zen/crosstab/RowHeaderArea.js", "sap/zen/crosstab/SelectionHandler.js", "sap/zen/crosstab/TextConstants.js", "sap/zen/crosstab/TouchHandler.js", "sap/zen/crosstab/datahandler/JsonDataHandler.js", "sap/zen/crosstab/dragdrop/DragDropAreaRenderer.js", "sap/zen/crosstab/dragdrop/DragDropHandler.js", "sap/zen/crosstab/dragdrop/DragDropHoverManager.js", "sap/zen/crosstab/dragdrop/DragDropUtils.js", "sap/zen/crosstab/dragdrop/MemberDragDropHandler.js", "sap/zen/crosstab/keyboard/CrosstabKeyboardNavHandler.js", "sap/zen/crosstab/library.js", "sap/zen/crosstab/manifest.json", "sap/zen/crosstab/nonphx/logic.js", "sap/zen/crosstab/paging/CellMerger.js", "sap/zen/crosstab/paging/Page.js", "sap/zen/crosstab/paging/PageManager.js", "sap/zen/crosstab/paging/PagingConstants.js", "sap/zen/crosstab/paging/RequestHandler.js", "sap/zen/crosstab/paging/RequestStack.js", "sap/zen/crosstab/rendering/CrossRequestManager.js", "sap/zen/crosstab/rendering/DataModel.js", "sap/zen/crosstab/rendering/DomElementProvider.js", "sap/zen/crosstab/rendering/HeaderScrollManager.js", "sap/zen/crosstab/rendering/PixelScrollManager.js", "sap/zen/crosstab/rendering/RenderEngine.js", "sap/zen/crosstab/rendering/RenderingConstants.js", "sap/zen/crosstab/rendering/ScrollManager.js", "sap/zen/crosstab/rendering/ScrollbarRenderer.js", "sap/zen/crosstab/utils/Measuring.js", "sap/zen/crosstab/utils/Utils.js"]
+    },
+    {
+      "name" : "sap/zen/crosstab/library.js",
+      "description" : "Initialization Code and shared classes of library sap.zen.crosstab (1.50.6)",
+      "size" : 1173,
+      "compressedSize" : 438,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Core.js", "sap/ui/core/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/library.properties",
+      "size" : 275,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/manifest.json",
+      "size" : 865,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/nonphx/logic.js",
+      "size" : 205,
+      "compressedSize" : 171,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/paging/CellMerger.js",
+      "size" : 9887,
+      "compressedSize" : 3522,
+      "required" : ["jquery.sap.global.js", "sap/zen/crosstab/paging/PagingConstants.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/paging/Page.js",
+      "size" : 12451,
+      "compressedSize" : 5785,
+      "required" : ["jquery.sap.global.js", "sap/zen/crosstab/paging/PagingConstants.js", "sap/zen/crosstab/rendering/RenderingConstants.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/paging/PageManager.js",
+      "size" : 12958,
+      "compressedSize" : 5519,
+      "required" : ["jquery.sap.global.js", "sap/zen/crosstab/datahandler/JsonDataHandler.js", "sap/zen/crosstab/paging/CellMerger.js", "sap/zen/crosstab/paging/Page.js", "sap/zen/crosstab/paging/PagingConstants.js", "sap/zen/crosstab/paging/RequestHandler.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/paging/PagingConstants.js",
+      "size" : 355,
+      "compressedSize" : 333,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/paging/RequestHandler.js",
+      "size" : 3144,
+      "compressedSize" : 1217,
+      "required" : ["jquery.sap.global.js", "sap/zen/crosstab/paging/RequestStack.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/paging/RequestStack.js",
+      "size" : 2581,
+      "compressedSize" : 1073,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/rendering/CrossRequestManager.js",
+      "size" : 14792,
+      "compressedSize" : 5912,
+      "required" : ["jquery.sap.global.js", "sap/zen/crosstab/rendering/HeaderScrollManager.js", "sap/zen/crosstab/rendering/PixelScrollManager.js", "sap/zen/crosstab/rendering/RenderingConstants.js", "sap/zen/crosstab/rendering/ScrollManager.js", "sap/zen/crosstab/utils/Utils.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/rendering/DataModel.js",
+      "size" : 6011,
+      "compressedSize" : 2944,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/rendering/DomElementProvider.js",
+      "size" : 328,
+      "compressedSize" : 221,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/rendering/HeaderScrollManager.js",
+      "size" : 2747,
+      "compressedSize" : 1437,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/rendering/PixelScrollManager.js",
+      "size" : 5130,
+      "compressedSize" : 2454,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/rendering/RenderEngine.js",
+      "size" : 95086,
+      "compressedSize" : 41338,
+      "required" : ["jquery.sap.global.js", "sap/zen/crosstab/rendering/CrossRequestManager.js", "sap/zen/crosstab/rendering/DomElementProvider.js", "sap/zen/crosstab/rendering/RenderingConstants.js", "sap/zen/crosstab/rendering/ScrollManager.js", "sap/zen/crosstab/rendering/ScrollbarRenderer.js", "sap/zen/crosstab/utils/Measuring.js", "sap/zen/crosstab/utils/Utils.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/rendering/RenderingConstants.js",
+      "size" : 3601,
+      "compressedSize" : 3401,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/rendering/ScrollManager.js",
+      "size" : 21765,
+      "compressedSize" : 9200,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/OpenState.js", "sap/ui/core/Popup.js", "sap/zen/crosstab/TextConstants.js", "sap/zen/crosstab/utils/Measuring.js", "sap/zen/crosstab/utils/Utils.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/rendering/ScrollbarRenderer.js",
+      "size" : 20203,
+      "compressedSize" : 9687,
+      "required" : ["jquery.sap.global.js", "sap/zen/crosstab/utils/Measuring.js", "sap/zen/crosstab/utils/Utils.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/utils/Measuring.js",
+      "size" : 8392,
+      "compressedSize" : 4327,
+      "required" : ["jquery.sap.global.js", "sap/zen/crosstab/rendering/RenderingConstants.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/crosstab/utils/Utils.js",
+      "size" : 15395,
+      "compressedSize" : 8143,
+      "required" : ["jquery.sap.global.js", "sap/zen/crosstab/rendering/RenderingConstants.js"],
+      "includes" : []
+    }
+  ]
+}

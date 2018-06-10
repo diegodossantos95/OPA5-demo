@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>MockServer</title>
+
+    <!-- Bootstrap the UI5 core library -->
+    <script id="sap-ui-bootstrap" 
+            src="/resources/sap-ui-core.js" 
+            data-sap-ui-libs="sap.m" 
+            data-sap-ui-theme="sap_belize" 
+            data-sap-ui-compatVersion="edge" 
+            data-sap-ui-resourceroots='{
+				"com.sap.CloudSCAME.OPA5Demo": "../"
+			}' 
+            data-sap-ui-frameOptions='allow'>// NON-SECURE setting for testing environment
+    </script>
+
+    <script>
+        sap.ui.getCore().attachInit(function() {
+            sap.ui.require([
+                "com/sap/CloudSCAME/OPA5Demo/test/localService/mockserver",
+                "sap/m/Shell"
+            ], function(mockserver, Shell) {
+                // set up test service for local testing
+                mockserver.init();
+
+                // initialize the shell
+                new Shell({
+                    app: new sap.ui.core.ComponentContainer({
+                        name: "com.sap.CloudSCAME.OPA5Demo"
+                    })
+                }).placeAt("content");
+            });
+        });
+    </script>
+
+</head>
+
+<!-- UI Content -->
+
+<body class="sapUiBody" id="content">
+</body>
+
+</html>

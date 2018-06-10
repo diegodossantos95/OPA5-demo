@@ -1,0 +1,726 @@
+{
+  "modules" : [
+    {
+      "name" : "sap/uiext/inbox/Inbox.js",
+      "description" : "Provides control sap.uiext.inbox.Inbox.",
+      "size" : 395655,
+      "compressedSize" : 186955,
+      "required" : ["jquery.sap.global.js", "sap/ui/commons/Button.js", "sap/ui/commons/Dialog.js", "sap/ui/commons/DropdownBox.js", "sap/ui/commons/Image.js", "sap/ui/commons/Label.js", "sap/ui/commons/Link.js", "sap/ui/commons/RadioButtonGroup.js", "sap/ui/commons/SearchField.js", "sap/ui/commons/TextField.js", "sap/ui/commons/TextView.js", "sap/ui/commons/ToggleButton.js", "sap/ui/commons/Toolbar.js", "sap/ui/commons/ToolbarSeparator.js", "sap/ui/commons/layout/BorderLayout.js", "sap/ui/commons/layout/HorizontalLayout.js", "sap/ui/commons/layout/MatrixLayout.js", "sap/ui/commons/layout/VerticalLayout.js", "sap/ui/core/Control.js", "sap/ui/core/HTML.js", "sap/ui/core/Icon.js", "sap/ui/core/IconPool.js", "sap/ui/core/ListItem.js", "sap/ui/core/Locale.js", "sap/ui/core/format/DateFormat.js", "sap/ui/model/Filter.js", "sap/ui/model/Sorter.js", "sap/ui/table/Table.js", "sap/ui/ux3/FacetFilter.js", "sap/ui/ux3/FacetFilterList.js", "sap/ui/ux3/OverlayContainer.js", "sap/uiext/inbox/InboxConstants.js", "sap/uiext/inbox/InboxDataManager.js", "sap/uiext/inbox/InboxFilters.js", "sap/uiext/inbox/InboxFormattedTextView.js", "sap/uiext/inbox/InboxLink.js", "sap/uiext/inbox/InboxTaskCategoryFilterList.js", "sap/uiext/inbox/InboxToggleTextView.js", "sap/uiext/inbox/InboxUtils.js", "sap/uiext/inbox/SubstitutionRulesManager.js", "sap/uiext/inbox/TCMMetadata.js", "sap/uiext/inbox/TaskInitialFilters.js", "sap/uiext/inbox/controller/InboxControllerFactory.js", "sap/uiext/inbox/library.js", "sap/uiext/inbox/tcm/TCMModel.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/InboxConfiguration.js",
+      "description" : "Provides a filter for list bindings",
+      "size" : 1373,
+      "compressedSize" : 571,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/InboxConstants.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 17359,
+      "compressedSize" : 15381,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/IconPool.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/InboxDataManager.js",
+      "description" : "Data Manager to support different oData model versions in Inbox",
+      "size" : 5066,
+      "compressedSize" : 3072,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/InboxFilters.js",
+      "description" : "Provides a filter for list bindings",
+      "size" : 2641,
+      "compressedSize" : 1105,
+      "required" : ["jquery.sap.global.js", "sap/uiext/inbox/InboxPrimaryFilters.js", "sap/uiext/inbox/InboxSecondaryFilters.js", "sap/uiext/inbox/InboxUtils.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/InboxFormattedTextView.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 8672,
+      "compressedSize" : 5379,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/InboxLaunchPad.js",
+      "description" : "Provides control sap.uiext.inbox.InboxLaunchPad.",
+      "size" : 16162,
+      "compressedSize" : 3393,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/ui/core/IconPool.js", "sap/uiext/inbox/InboxTile.js", "sap/uiext/inbox/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/InboxLaunchPadRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 1357,
+      "compressedSize" : 702,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/InboxLink.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 3362,
+      "compressedSize" : 2217,
+      "required" : ["jquery.sap.global.js", "sap/uiext/inbox/InboxConstants.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/InboxPrimaryFilterEnum.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 915,
+      "compressedSize" : 414,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/InboxPrimaryFilters.js",
+      "description" : "Provides a filter for list bindings",
+      "size" : 1561,
+      "compressedSize" : 830,
+      "required" : ["jquery.sap.global.js", "sap/uiext/inbox/InboxPrimaryFilterEnum.js", "sap/uiext/inbox/InboxUtils.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/InboxRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 940,
+      "compressedSize" : 394,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/InboxSecondaryFilterPathEnum.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 1686,
+      "compressedSize" : 1024,
+      "required" : ["jquery.sap.global.js", "sap/uiext/inbox/InboxSecondaryFilterValuesEnum.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/InboxSecondaryFilterValuesEnum.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 7865,
+      "compressedSize" : 1717,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/InboxSecondaryFilters.js",
+      "description" : "Provides a filter for list bindings",
+      "size" : 5548,
+      "compressedSize" : 2948,
+      "required" : ["jquery.sap.global.js", "sap/uiext/inbox/InboxSecondaryFilterPathEnum.js", "sap/uiext/inbox/InboxSecondaryFilterValuesEnum.js", "sap/uiext/inbox/InboxUtils.js", "sap/uiext/inbox/TaskInitialFilters.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/InboxSplitApp.js",
+      "description" : "Provides control sap.uiext.inbox.InboxSplitApp.",
+      "size" : 16828,
+      "compressedSize" : 5450,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/uiext/inbox/library.js", "sap/uiext/inbox/splitapp/DetailViewPage.js", "sap/uiext/inbox/splitapp/MasterPage.js", "sap/uiext/inbox/splitapp/TaskExecutionUIPage.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/InboxSplitAppRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 1000,
+      "compressedSize" : 452,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/InboxTaskCategoryFilterList.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 1719,
+      "compressedSize" : 1371,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/InboxTaskDescription.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 7997,
+      "compressedSize" : 5025,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : ["sap/uiext/inbox/InboxTaskDetails.js", "sap/uiext/inbox/Inbox.js"]
+    },
+    {
+      "name" : "sap/uiext/inbox/InboxTile.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 549,
+      "compressedSize" : 447,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/InboxToggleTextView.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 3439,
+      "compressedSize" : 2111,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/InboxUtils.js",
+      "description" : "declare unusual global vars for JSLint/SAPUI5 validation",
+      "size" : 13957,
+      "compressedSize" : 7851,
+      "required" : ["jquery.sap.global.js", "sap/ui/model/odata/Filter.js", "sap/uiext/inbox/InboxConstants.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/SubstitutionRulesManager.js",
+      "description" : "Provides control sap.uiext.inbox.SubstitutionRulesManager.",
+      "size" : 91057,
+      "compressedSize" : 48150,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/ui/core/IconPool.js", "sap/uiext/inbox/InboxConstants.js", "sap/uiext/inbox/InboxUtils.js", "sap/uiext/inbox/SubstitutionRulesManagerConstants.js", "sap/uiext/inbox/SubstitutionRulesManagerUtils.js", "sap/uiext/inbox/TCMMetadata.js", "sap/uiext/inbox/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/SubstitutionRulesManagerConstants.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 1234,
+      "compressedSize" : 1134,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/SubstitutionRulesManagerRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 1107,
+      "compressedSize" : 484,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/SubstitutionRulesManagerUtils.js",
+      "description" : "Utility functions for Substitution Rules Manager",
+      "size" : 6709,
+      "compressedSize" : 4155,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/TCMMetadata.js",
+      "size" : 3602,
+      "compressedSize" : 2288,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/TaskInitialFilters.js",
+      "description" : "Provides a filter for list bindings",
+      "size" : 8216,
+      "compressedSize" : 4448,
+      "required" : ["jquery.sap.global.js", "sap/uiext/inbox/InboxUtils.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/composite/InboxAddAttachmentTile.js",
+      "description" : "Provides control sap.uiext.inbox.composite.InboxAddAttachmentTile.",
+      "size" : 3175,
+      "compressedSize" : 571,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/uiext/inbox/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/composite/InboxAddAttachmentTileRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 1769,
+      "compressedSize" : 1077,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/composite/InboxAttachmentFileUploader.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 1762,
+      "compressedSize" : 1225,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/composite/InboxAttachmentTile.js",
+      "description" : "Provides control sap.uiext.inbox.composite.InboxAttachmentTile.",
+      "size" : 13345,
+      "compressedSize" : 1335,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/uiext/inbox/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/composite/InboxAttachmentTileRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 4563,
+      "compressedSize" : 2688,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/composite/InboxAttachmentsTileContainer.js",
+      "description" : "Provides control sap.uiext.inbox.composite.InboxAttachmentsTileContainer.",
+      "size" : 26341,
+      "compressedSize" : 4800,
+      "required" : ["jquery.sap.global.js", "sap/ui/commons/MessageBox.js", "sap/ui/core/Control.js", "sap/uiext/inbox/InboxUtils.js", "sap/uiext/inbox/composite/InboxAttachmentFileUploader.js", "sap/uiext/inbox/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/composite/InboxAttachmentsTileContainerRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 1298,
+      "compressedSize" : 722,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/composite/InboxBusyIndicator.js",
+      "description" : "Provides control sap.uiext.inbox.composite.InboxBusyIndicator.",
+      "size" : 3128,
+      "compressedSize" : 386,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/uiext/inbox/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/composite/InboxBusyIndicatorRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 922,
+      "compressedSize" : 448,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/composite/InboxComment.js",
+      "description" : "Provides control sap.uiext.inbox.composite.InboxComment.",
+      "size" : 8306,
+      "compressedSize" : 882,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/uiext/inbox/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/composite/InboxCommentRenderer.js",
+      "size" : 4003,
+      "compressedSize" : 2263,
+      "required" : ["jquery.sap.global.js", "sap/uiext/inbox/InboxUtils.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/composite/InboxTaskComments.js",
+      "description" : "Provides control sap.uiext.inbox.composite.InboxTaskComments.",
+      "size" : 18793,
+      "compressedSize" : 4588,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/ui/core/theming/Parameters.js", "sap/ui/ux3/Feeder.js", "sap/uiext/inbox/composite/InboxBusyIndicator.js", "sap/uiext/inbox/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/composite/InboxTaskCommentsRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 2722,
+      "compressedSize" : 1428,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/composite/InboxTaskTitleControl.js",
+      "description" : "Provides control sap.uiext.inbox.composite.InboxTaskTitleControl.",
+      "size" : 8539,
+      "compressedSize" : 1224,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/ui/core/IconPool.js", "sap/uiext/inbox/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/composite/InboxTaskTitleControlRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 3177,
+      "compressedSize" : 1684,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/composite/InboxUploadAttachmentTile.js",
+      "description" : "Provides control sap.uiext.inbox.composite.InboxUploadAttachmentTile.",
+      "size" : 9202,
+      "compressedSize" : 1572,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/uiext/inbox/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/composite/InboxUploadAttachmentTileRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 2876,
+      "compressedSize" : 1493,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/controller/InboxController.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 9747,
+      "compressedSize" : 3961,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/controller/InboxControllerAsync.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 20771,
+      "compressedSize" : 11048,
+      "required" : ["jquery.sap.global.js", "sap/ui/model/json/JSONModel.js", "sap/uiext/inbox/controller/InboxController.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/controller/InboxControllerFactory.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 1153,
+      "compressedSize" : 1001,
+      "required" : ["jquery.sap.global.js", "sap/uiext/inbox/controller/InboxController.js", "sap/uiext/inbox/controller/InboxControllerAsync.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/library-preload.js",
+      "size" : 396744,
+      "required" : ["jquery.sap.global.js", "sap/m/MessageToast.js", "sap/m/SelectDialog.js", "sap/ui/commons/Button.js", "sap/ui/commons/Dialog.js", "sap/ui/commons/DropdownBox.js", "sap/ui/commons/Image.js", "sap/ui/commons/Label.js", "sap/ui/commons/Link.js", "sap/ui/commons/MessageBox.js", "sap/ui/commons/RadioButtonGroup.js", "sap/ui/commons/SearchField.js", "sap/ui/commons/TextField.js", "sap/ui/commons/TextView.js", "sap/ui/commons/ToggleButton.js", "sap/ui/commons/Toolbar.js", "sap/ui/commons/ToolbarSeparator.js", "sap/ui/commons/layout/BorderLayout.js", "sap/ui/commons/layout/HorizontalLayout.js", "sap/ui/commons/layout/MatrixLayout.js", "sap/ui/commons/layout/VerticalLayout.js", "sap/ui/commons/library.js", "sap/ui/core/Control.js", "sap/ui/core/Core.js", "sap/ui/core/HTML.js", "sap/ui/core/Icon.js", "sap/ui/core/IconPool.js", "sap/ui/core/ListItem.js", "sap/ui/core/Locale.js", "sap/ui/core/format/DateFormat.js", "sap/ui/core/library.js", "sap/ui/core/theming/Parameters.js", "sap/ui/model/Filter.js", "sap/ui/model/Sorter.js", "sap/ui/model/json/JSONModel.js", "sap/ui/model/odata/Filter.js", "sap/ui/table/Table.js", "sap/ui/ux3/FacetFilter.js", "sap/ui/ux3/FacetFilterList.js", "sap/ui/ux3/Feeder.js", "sap/ui/ux3/OverlayContainer.js", "sap/ui/ux3/library.js"],
+      "includes" : ["sap/uiext/inbox/Inbox.js", "sap/uiext/inbox/InboxConfiguration.js", "sap/uiext/inbox/InboxConstants.js", "sap/uiext/inbox/InboxDataManager.js", "sap/uiext/inbox/InboxFilters.js", "sap/uiext/inbox/InboxFormattedTextView.js", "sap/uiext/inbox/InboxLaunchPad.js", "sap/uiext/inbox/InboxLaunchPadRenderer.js", "sap/uiext/inbox/InboxLink.js", "sap/uiext/inbox/InboxPrimaryFilterEnum.js", "sap/uiext/inbox/InboxPrimaryFilters.js", "sap/uiext/inbox/InboxRenderer.js", "sap/uiext/inbox/InboxSecondaryFilterPathEnum.js", "sap/uiext/inbox/InboxSecondaryFilterValuesEnum.js", "sap/uiext/inbox/InboxSecondaryFilters.js", "sap/uiext/inbox/InboxSplitApp.js", "sap/uiext/inbox/InboxSplitAppRenderer.js", "sap/uiext/inbox/InboxTaskCategoryFilterList.js", "sap/uiext/inbox/InboxTile.js", "sap/uiext/inbox/InboxToggleTextView.js", "sap/uiext/inbox/InboxUtils.js", "sap/uiext/inbox/SubstitutionRulesManager.js", "sap/uiext/inbox/SubstitutionRulesManagerConstants.js", "sap/uiext/inbox/SubstitutionRulesManagerRenderer.js", "sap/uiext/inbox/SubstitutionRulesManagerUtils.js", "sap/uiext/inbox/TCMMetadata.js", "sap/uiext/inbox/TaskInitialFilters.js", "sap/uiext/inbox/composite/InboxAddAttachmentTile.js", "sap/uiext/inbox/composite/InboxAddAttachmentTileRenderer.js", "sap/uiext/inbox/composite/InboxAttachmentFileUploader.js", "sap/uiext/inbox/composite/InboxAttachmentTile.js", "sap/uiext/inbox/composite/InboxAttachmentTileRenderer.js", "sap/uiext/inbox/composite/InboxAttachmentsTileContainer.js", "sap/uiext/inbox/composite/InboxAttachmentsTileContainerRenderer.js", "sap/uiext/inbox/composite/InboxBusyIndicator.js", "sap/uiext/inbox/composite/InboxBusyIndicatorRenderer.js", "sap/uiext/inbox/composite/InboxComment.js", "sap/uiext/inbox/composite/InboxCommentRenderer.js", "sap/uiext/inbox/composite/InboxTaskComments.js", "sap/uiext/inbox/composite/InboxTaskCommentsRenderer.js", "sap/uiext/inbox/composite/InboxTaskTitleControl.js", "sap/uiext/inbox/composite/InboxTaskTitleControlRenderer.js", "sap/uiext/inbox/composite/InboxUploadAttachmentTile.js", "sap/uiext/inbox/composite/InboxUploadAttachmentTileRenderer.js", "sap/uiext/inbox/controller/InboxController.js", "sap/uiext/inbox/controller/InboxControllerAsync.js", "sap/uiext/inbox/controller/InboxControllerFactory.js", "sap/uiext/inbox/library.js", "sap/uiext/inbox/manifest.json", "sap/uiext/inbox/splitapp/DetailViewPage.js", "sap/uiext/inbox/splitapp/MasterPage.js", "sap/uiext/inbox/splitapp/MasterPageController.js", "sap/uiext/inbox/splitapp/TaskExecutionUIPage.js", "sap/uiext/inbox/tcm/TCMModel.js", "sap/uiext/inbox/tcm/fI/TCMFunctionImport.js", "sap/uiext/inbox/tcm/fI/TCMFunctionImportMetaData.js"]
+    },
+    {
+      "name" : "sap/uiext/inbox/library-preload.json",
+      "size" : 0,
+      "required" : ["jquery.sap.global.js", "sap/m/MessageToast.js", "sap/m/SelectDialog.js", "sap/ui/commons/Button.js", "sap/ui/commons/Dialog.js", "sap/ui/commons/DropdownBox.js", "sap/ui/commons/Image.js", "sap/ui/commons/Label.js", "sap/ui/commons/Link.js", "sap/ui/commons/MessageBox.js", "sap/ui/commons/RadioButtonGroup.js", "sap/ui/commons/SearchField.js", "sap/ui/commons/TextField.js", "sap/ui/commons/TextView.js", "sap/ui/commons/ToggleButton.js", "sap/ui/commons/Toolbar.js", "sap/ui/commons/ToolbarSeparator.js", "sap/ui/commons/layout/BorderLayout.js", "sap/ui/commons/layout/HorizontalLayout.js", "sap/ui/commons/layout/MatrixLayout.js", "sap/ui/commons/layout/VerticalLayout.js", "sap/ui/commons/library-preload.json", "sap/ui/commons/library.js", "sap/ui/core/Control.js", "sap/ui/core/Core.js", "sap/ui/core/HTML.js", "sap/ui/core/Icon.js", "sap/ui/core/IconPool.js", "sap/ui/core/ListItem.js", "sap/ui/core/Locale.js", "sap/ui/core/format/DateFormat.js", "sap/ui/core/library-preload.json", "sap/ui/core/library.js", "sap/ui/core/theming/Parameters.js", "sap/ui/model/Filter.js", "sap/ui/model/Sorter.js", "sap/ui/model/json/JSONModel.js", "sap/ui/model/odata/Filter.js", "sap/ui/table/Table.js", "sap/ui/ux3/FacetFilter.js", "sap/ui/ux3/FacetFilterList.js", "sap/ui/ux3/Feeder.js", "sap/ui/ux3/OverlayContainer.js", "sap/ui/ux3/library-preload.json", "sap/ui/ux3/library.js"],
+      "includes" : ["sap/uiext/inbox/Inbox.js", "sap/uiext/inbox/InboxConfiguration.js", "sap/uiext/inbox/InboxConstants.js", "sap/uiext/inbox/InboxDataManager.js", "sap/uiext/inbox/InboxFilters.js", "sap/uiext/inbox/InboxFormattedTextView.js", "sap/uiext/inbox/InboxLaunchPad.js", "sap/uiext/inbox/InboxLaunchPadRenderer.js", "sap/uiext/inbox/InboxLink.js", "sap/uiext/inbox/InboxPrimaryFilterEnum.js", "sap/uiext/inbox/InboxPrimaryFilters.js", "sap/uiext/inbox/InboxRenderer.js", "sap/uiext/inbox/InboxSecondaryFilterPathEnum.js", "sap/uiext/inbox/InboxSecondaryFilterValuesEnum.js", "sap/uiext/inbox/InboxSecondaryFilters.js", "sap/uiext/inbox/InboxSplitApp.js", "sap/uiext/inbox/InboxSplitAppRenderer.js", "sap/uiext/inbox/InboxTaskCategoryFilterList.js", "sap/uiext/inbox/InboxTile.js", "sap/uiext/inbox/InboxToggleTextView.js", "sap/uiext/inbox/InboxUtils.js", "sap/uiext/inbox/SubstitutionRulesManager.js", "sap/uiext/inbox/SubstitutionRulesManagerConstants.js", "sap/uiext/inbox/SubstitutionRulesManagerRenderer.js", "sap/uiext/inbox/SubstitutionRulesManagerUtils.js", "sap/uiext/inbox/TCMMetadata.js", "sap/uiext/inbox/TaskInitialFilters.js", "sap/uiext/inbox/composite/InboxAddAttachmentTile.js", "sap/uiext/inbox/composite/InboxAddAttachmentTileRenderer.js", "sap/uiext/inbox/composite/InboxAttachmentFileUploader.js", "sap/uiext/inbox/composite/InboxAttachmentTile.js", "sap/uiext/inbox/composite/InboxAttachmentTileRenderer.js", "sap/uiext/inbox/composite/InboxAttachmentsTileContainer.js", "sap/uiext/inbox/composite/InboxAttachmentsTileContainerRenderer.js", "sap/uiext/inbox/composite/InboxBusyIndicator.js", "sap/uiext/inbox/composite/InboxBusyIndicatorRenderer.js", "sap/uiext/inbox/composite/InboxComment.js", "sap/uiext/inbox/composite/InboxCommentRenderer.js", "sap/uiext/inbox/composite/InboxTaskComments.js", "sap/uiext/inbox/composite/InboxTaskCommentsRenderer.js", "sap/uiext/inbox/composite/InboxTaskTitleControl.js", "sap/uiext/inbox/composite/InboxTaskTitleControlRenderer.js", "sap/uiext/inbox/composite/InboxUploadAttachmentTile.js", "sap/uiext/inbox/composite/InboxUploadAttachmentTileRenderer.js", "sap/uiext/inbox/controller/InboxController.js", "sap/uiext/inbox/controller/InboxControllerAsync.js", "sap/uiext/inbox/controller/InboxControllerFactory.js", "sap/uiext/inbox/library.js", "sap/uiext/inbox/manifest.json", "sap/uiext/inbox/splitapp/DetailViewPage.js", "sap/uiext/inbox/splitapp/MasterPage.js", "sap/uiext/inbox/splitapp/MasterPageController.js", "sap/uiext/inbox/splitapp/TaskExecutionUIPage.js", "sap/uiext/inbox/tcm/TCMModel.js", "sap/uiext/inbox/tcm/fI/TCMFunctionImport.js", "sap/uiext/inbox/tcm/fI/TCMFunctionImportMetaData.js"]
+    },
+    {
+      "name" : "sap/uiext/inbox/library.js",
+      "description" : "Initialization Code and shared classes of library sap.uiext.inbox (1.50.6)",
+      "size" : 1717,
+      "compressedSize" : 1034,
+      "required" : ["jquery.sap.global.js", "sap/ui/commons/library.js", "sap/ui/core/Core.js", "sap/ui/core/library.js", "sap/ui/ux3/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/library.properties",
+      "size" : 1230,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/manifest.json",
+      "size" : 862,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle.properties",
+      "size" : 38067,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_ar.properties",
+      "size" : 62355,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_bg.properties",
+      "size" : 74163,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_ca.properties",
+      "size" : 40423,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_cs.properties",
+      "size" : 42817,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_da.properties",
+      "size" : 38990,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_de.properties",
+      "size" : 39983,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_el.properties",
+      "size" : 75108,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_en.properties",
+      "size" : 37945,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_en_US_sappsd.properties",
+      "size" : 82786,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_en_US_saptrc.properties",
+      "size" : 45144,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_es.properties",
+      "size" : 40405,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_et.properties",
+      "size" : 39653,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_fi.properties",
+      "size" : 42833,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_fr.properties",
+      "size" : 41437,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_hi.properties",
+      "size" : 68453,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_hr.properties",
+      "size" : 39598,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_hu.properties",
+      "size" : 43901,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_it.properties",
+      "size" : 39621,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_iw.properties",
+      "size" : 58515,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_ja.properties",
+      "size" : 50560,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_kk.properties",
+      "size" : 71766,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_ko.properties",
+      "size" : 48169,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_lt.properties",
+      "size" : 41549,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_lv.properties",
+      "size" : 42167,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_ms.properties",
+      "size" : 38723,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_nl.properties",
+      "size" : 38915,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_no.properties",
+      "size" : 38719,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_pl.properties",
+      "size" : 42747,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_pt.properties",
+      "size" : 40855,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_ro.properties",
+      "size" : 41343,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_ru.properties",
+      "size" : 71820,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_sh.properties",
+      "size" : 39353,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_sk.properties",
+      "size" : 42115,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_sl.properties",
+      "size" : 39778,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_sv.properties",
+      "size" : 40869,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_th.properties",
+      "size" : 66294,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_tr.properties",
+      "size" : 42572,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_uk.properties",
+      "size" : 72006,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_vi.properties",
+      "size" : 50337,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_zh_CN.properties",
+      "size" : 42824,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/messagebundle_zh_TW.properties",
+      "size" : 43561,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/splitapp/DetailViewPage.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 55893,
+      "compressedSize" : 28864,
+      "required" : ["jquery.sap.global.js", "sap/m/MessageToast.js", "sap/m/SelectDialog.js", "sap/uiext/inbox/InboxConstants.js", "sap/uiext/inbox/InboxUtils.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/splitapp/MasterPage.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 18670,
+      "compressedSize" : 8291,
+      "required" : ["jquery.sap.global.js", "sap/uiext/inbox/InboxUtils.js", "sap/uiext/inbox/SubstitutionRulesManager.js", "sap/uiext/inbox/tcm/TCMModel.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/splitapp/MasterPageController.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 7146,
+      "compressedSize" : 3884,
+      "required" : ["jquery.sap.global.js", "sap/uiext/inbox/SubstitutionRulesManager.js", "sap/uiext/inbox/splitapp/TaskExecutionUIPage.js", "sap/uiext/inbox/tcm/TCMModel.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/splitapp/TaskExecutionUIPage.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 4838,
+      "compressedSize" : 2605,
+      "required" : ["jquery.sap.global.js", "sap/m/MessageToast.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/tcm/TCMModel.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 867,
+      "compressedSize" : 579,
+      "required" : ["jquery.sap.global.js", "sap/uiext/inbox/tcm/fI/TCMFunctionImport.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/tcm/fI/TCMFunctionImport.js",
+      "description" : "Utility functions for TCMFunctionImport calls",
+      "size" : 5090,
+      "compressedSize" : 2762,
+      "required" : ["jquery.sap.global.js", "sap/uiext/inbox/tcm/fI/TCMFunctionImportMetaData.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/uiext/inbox/tcm/fI/TCMFunctionImportMetaData.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 1067,
+      "compressedSize" : 473,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    }
+  ]
+}

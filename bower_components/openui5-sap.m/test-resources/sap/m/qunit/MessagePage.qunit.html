@@ -1,0 +1,418 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>QUnit Page for sap.m.MessagePage in Responsive mode</title>
+
+	<link rel="stylesheet" href="../../../../resources/sap/ui/thirdparty/qunit.css" type="text/css" media="screen">
+
+	<!-- UI5 Bootstrap -->
+	<script src="../shared-config.js"></script>
+	<script id="sap-ui-bootstrap"
+			src="../../../../resources/sap-ui-core.js"
+			data-sap-ui-noConflict="true"
+			data-sap-ui-libs="sap.m">
+	</script>
+
+	<!-- QUnit libraries -->
+	<script src="../../../../resources/sap/ui/thirdparty/qunit.js"></script>
+	<script src="../../../../resources/sap/ui/qunit/qunit-junit.js"></script>
+	<script src="../../../../resources/sap/ui/qunit/QUnitUtils.js"></script>
+	<script src="../../../../resources/sap/ui/thirdparty/sinon.js"></script>
+	<script src="../../../../resources/sap/ui/thirdparty/sinon-qunit.js"></script>
+
+	<!-- use the sinon faketimers for this test -->
+	<script>
+		sinon.config.useFakeTimers = true;
+	</script>
+
+	<script>
+		jQuery.sap.require("sap.ui.core.IconPool");
+		var messagePageId = "testMessagePage";
+
+		function createMessagePage(){
+			return new sap.m.MessagePage(messagePageId,{
+				title: "messagePage Title",
+				text: "One Line Text",
+				showHeader: true,
+				description: "Description",
+				icon: sap.ui.core.IconPool.getIconURI("documents")
+			});
+		}
+
+		QUnit.module("Basic rendering");
+
+		QUnit.test("The control should be rendered", function(assert) {
+			// Arrange`
+			var oMessagePage = createMessagePage(),
+				$oMessagePage;
+
+			// System under test
+			oMessagePage.placeAt("content");
+			sap.ui.getCore().applyChanges();
+
+			// Assert
+			$oMessagePage = jQuery(".sapMMessagePage").length;
+
+			assert.ok($oMessagePage, "messagePage is rendered.");
+
+			// Clean up
+			oMessagePage.destroy();
+		});
+
+		QUnit.test("The control inner page should be rendered", function(assert) {
+			// Arrange
+			var oMessagePage = createMessagePage(),
+				$oMessagePageInnerPage ;
+
+			// System under test
+			oMessagePage.placeAt("content");
+			sap.ui.getCore().applyChanges();
+
+			// Assert
+			$oMessagePageInnerPage = jQuery(".sapMMessagePage").children(0).length;
+
+			assert.ok($oMessagePageInnerPage, "Inner page is rendered.");
+
+			// Clean up
+			oMessagePage.destroy();
+		});
+
+		QUnit.test("The control inner text should be rendered", function(assert) {
+			// Arrange
+			var oMessagePage = createMessagePage(),
+				$oMessagePageInnerPageText;
+
+			// System under test
+			oMessagePage.placeAt("content");
+			sap.ui.getCore().applyChanges();
+
+			// Assert
+			$oMessagePageInnerPageText = jQuery(".sapMMessagePageDescription").length;
+			assert.ok($oMessagePageInnerPageText, "Inner text is rendered.");
+
+			// Clean up
+			oMessagePage.destroy();
+		});
+
+		QUnit.test("The description control should be rendered", function(assert) {
+			// Arrange
+			var oMessagePage = createMessagePage(),
+					$oMessagePageInnerDescription;
+
+			// System under test
+			oMessagePage.placeAt("content");
+			sap.ui.getCore().applyChanges();
+
+			// Assert
+			$oMessagePageInnerDescription = jQuery(".sapMMessagePageDescription").length;
+
+			assert.ok($oMessagePageInnerDescription, "Inner Description is rendered.");
+
+			// Clean up
+			oMessagePage.destroy();
+		});
+
+		QUnit.test("The control inner icon should be rendered", function(assert) {
+			// Arrange
+			var oMessagePage = createMessagePage(),
+					$oMessagePageInnerIcon;
+
+			// System under test
+			oMessagePage.placeAt("content");
+			sap.ui.getCore().applyChanges();
+
+			// Assert
+			$oMessagePageInnerIcon = jQuery("#" + oMessagePage.getId() + "-pageIcon.sapUiIcon").length;
+
+			assert.ok($oMessagePageInnerIcon, "Inner icon is rendered.");
+
+			// Clean up
+			oMessagePage.destroy();
+		});
+
+		QUnit.test("The control inner png icon should be rendered", function(assert) {
+			// Arrange
+			var oMessagePage = new sap.m.MessagePage(messagePageId,{
+				text: "One Line Text",
+				description: "Description",
+				icon: "documents"
+			}), $oMessagePageInnerIcon;
+
+			// System under test
+			oMessagePage.placeAt("content");
+			sap.ui.getCore().applyChanges();
+
+			// Assert
+			$oMessagePageInnerIcon = jQuery("#" + oMessagePage.getId() + "-pageIcon.sapMImg").length;
+
+			assert.ok($oMessagePageInnerIcon, "Inner png icon is rendered.");
+
+			// Clean up
+			oMessagePage.destroy();
+		});
+
+		QUnit.test("The control inner nav button should be rendered", function(assert) {
+			// Arrange
+			var oMessagePage = new sap.m.MessagePage(messagePageId,{
+				text: "One Line Text",
+				description: "Filter text",
+				icon: "documents",
+				showNavButton: true
+			}), $oMessagePageInnerButton;
+
+			// System under test
+			oMessagePage.placeAt("content");
+			sap.ui.getCore().applyChanges();
+
+			// Assert
+			$oMessagePageInnerButton = jQuery(".sapMMessagePage .sapMBarLeft .sapMBtn").length;
+
+			assert.ok($oMessagePageInnerButton, "Inner nav button is rendered");
+
+			// Clean up
+			oMessagePage.destroy();
+		});
+
+		QUnit.module("Api tests");
+
+		QUnit.test("The control setTitle should render the correct value", function(assert) {
+			// Arrange
+			var oMessagePage = createMessagePage(),
+				sExpectedValue = "Not default title",
+				sActualValue;
+
+			// System under test
+			oMessagePage.placeAt("content");
+			sap.ui.getCore().applyChanges();
+
+			// System under test
+			oMessagePage.setTitle(sExpectedValue);
+
+			// Assert
+			this.clock.tick(500);
+			sActualValue =  jQuery("#" + messagePageId + " .sapMBarChild").text();
+			assert.equal(sActualValue, sExpectedValue, "The title is correct");
+
+			// Clean up
+			oMessagePage.destroy();
+		});
+
+		QUnit.test("The control getIcon should return default value", function(assert) {
+			// Arrange
+			var oMessagePage = createMessagePage(),
+					sExpectedValue;
+
+			// System under test
+			oMessagePage.placeAt("content");
+			sap.ui.getCore().applyChanges();
+
+			// Assert
+			sExpectedValue = sap.ui.core.IconPool.getIconURI("documents");
+
+			assert.equal(oMessagePage.getIcon(), sExpectedValue, "The icon is correct");
+
+			// Clean up
+			oMessagePage.destroy();
+		});
+
+		QUnit.test("The control getText should return default value", function(assert) {
+			// Arrange
+			var oMessagePage = createMessagePage(),
+				sExpectedValue;
+
+			// System under test
+			oMessagePage.placeAt("content");
+			sap.ui.getCore().applyChanges();
+
+			// Assert
+			sExpectedValue = "One Line Text";
+
+			assert.equal(oMessagePage.getText(), sExpectedValue, "The text is correct");
+
+			// Clean up
+			oMessagePage.destroy();
+		});
+
+		QUnit.test("The control setText should set new value", function(assert) {
+			// Arrange
+			var oMessagePage = createMessagePage(),
+				sExpectedValue = "Not default text",
+				sActualValue;
+
+			// System under test
+			oMessagePage.placeAt("content");
+			sap.ui.getCore().applyChanges();
+
+			// System under test
+			oMessagePage.setText(sExpectedValue);
+
+			// Assert
+
+			sActualValue =  jQuery(".sapMMessagePageMainText").text();
+			assert.equal(sActualValue, sExpectedValue, "The text is correct");
+
+			// Clean up
+			oMessagePage.destroy();
+		});
+
+		QUnit.test("The control getDescription should return default value", function(assert) {
+			// Arrange
+			var oMessagePage = createMessagePage(),
+				sExpectedValue;
+
+			// System under test
+			oMessagePage.placeAt("content");
+			sap.ui.getCore().applyChanges();
+
+			// Assert
+			sExpectedValue = "Description";
+
+			assert.equal(oMessagePage.getDescription(), sExpectedValue, "The text is correct");
+
+			// Clean up
+			oMessagePage.destroy();
+		});
+
+		QUnit.test("The control setDescription should return new value", function(assert) {
+			// Arrange
+			var oMessagePage = createMessagePage(),
+				sExpectedValue = "Not default text",
+				sActualValue;
+
+			// System under test
+			oMessagePage.placeAt("content");
+			sap.ui.getCore().applyChanges();
+
+			// System under test
+			oMessagePage.setDescription(sExpectedValue);
+
+
+			// Assert
+
+			sActualValue =  jQuery(".sapMMessagePageDescription").text();
+
+			assert.equal(sActualValue, sExpectedValue, "The text is correct");
+
+			// Clean up
+			oMessagePage.destroy();
+		});
+
+		QUnit.test("The control setHeader should be without header", function(assert) {
+			// Arrange
+			var oMessagePage = createMessagePage(),
+				iActualResult;
+
+			// System under test
+			oMessagePage.placeAt("content");
+			sap.ui.getCore().applyChanges();
+
+			// System under test
+			oMessagePage.setShowHeader(false);
+
+			this.clock.tick(500);
+			iActualResult = jQuery("#" + messagePageId + " .sapMPageHeader").length;
+			assert.ok(!iActualResult, "The header is not rendered");
+
+			// Clean up
+			oMessagePage.destroy();
+		});
+
+		QUnit.module("Destroying");
+
+		QUnit.test("The control destroy should destroy the control and all the inner containers", function(assert) {
+			// Arrange
+			var oMessagePage = createMessagePage(),
+					iActualResult;
+
+			// System under test
+			oMessagePage.placeAt("content");
+			sap.ui.getCore().applyChanges();
+
+			// System under test
+			oMessagePage.destroy();
+
+			iActualResult = jQuery(".sapMEmptyPagCustomIcon").length;
+			assert.ok(!iActualResult, "The icon is destroyed");
+			assert.equal(oMessagePage._oPageIcon, null, "The custom icon should be null");
+
+			iActualResult = jQuery(".sapMMessagePageMainText").length;
+			assert.ok(!iActualResult, "The text is destroyed");
+			assert.equal(oMessagePage._oText, null, "The main text should be null");
+
+			iActualResult = jQuery(".sapMMessagePageDescription").length;
+			assert.ok(!iActualResult, "The description  is destroyed");
+			assert.equal(oMessagePage._oDescription, null, "The description should be null");
+
+			iActualResult = jQuery(".sapMMessagePage").children(0).length;
+			assert.ok(!iActualResult, "The inner page is destroyed");
+			assert.equal(oMessagePage._oPage, null, "The inner page should be null");
+
+			iActualResult = jQuery("#" + messagePageId).length;
+			assert.ok(!iActualResult, "The messagePage is destroyed");
+		});
+
+		QUnit.module("Custom aggregation");
+
+		QUnit.test("The control is set with customText", function(assert) {
+			// Arrange
+			var oMessagePage = new sap.m.MessagePage(messagePageId,{
+				title: "Title",
+				text: "One Line Text",
+				showHeader: true,
+				description: "Description",
+				icon: "documents",
+				customText: new sap.m.Link({text: "Custom description", href: "/testsuite/test-resources/sap/m/qunit/MessagePage.qunit.html"})
+			});
+
+			// System under test
+			oMessagePage.placeAt("content");
+			sap.ui.getCore().applyChanges();
+
+			var iCustomText = jQuery('.sapMMessagePage .sapMLnk.sapMMessagePageMainText').length;
+			assert.ok(iCustomText, "customText is rendered");
+
+			// Clean up
+			oMessagePage.destroy();
+		});
+
+		QUnit.test("The control is set with customDescription", function(assert) {
+			// Arrange
+			var oMessagePage = new sap.m.MessagePage(messagePageId,{
+				title: "messagePage Title",
+				text: "One Line Text",
+				showHeader: true,
+				description: "Description",
+				icon: "documents",
+				customDescription: new sap.m.Link({text: "Custom Description", href: "/testsuite/test-resources/sap/m/qunit/MessagePage.qunit.html"})
+			});
+
+			// System under test
+			oMessagePage.placeAt("content");
+			sap.ui.getCore().applyChanges();
+
+			var iCustomDescription = jQuery('.sapMMessagePage .sapMLnk.sapMMessagePageDescription').length;
+			assert.ok(iCustomDescription, "customDescription is rendered");
+
+			// Clean up
+			oMessagePage.destroy();
+		});
+	</script>
+
+</head>
+
+<body class="sapUiBody">
+
+<h1 id="qunit-header">QUnit Page for sap.m.MessagePage</h1>
+
+<h2 id="qunit-banner"></h2>
+
+<h2 id="qunit-userAgent"></h2>
+
+<div id="qunit-testrunner-toolbar"></div>
+<ol id="qunit-tests"></ol>
+<div id="content" style="height: 100%;"></div>
+<div id="qunit-fixture"></div>
+</body>
+</html>

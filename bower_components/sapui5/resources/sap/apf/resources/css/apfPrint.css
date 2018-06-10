@@ -1,0 +1,211 @@
+/************ Page ***************/
+@page rotated {
+	size: landscape;
+}
+
+.sapUiLbl {
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.sapUiTv {
+	font-size: 10px;
+}
+
+.sapUiLblNowrap {
+	white-space: normal;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-break: break-word;
+}
+
+.sapMListTblHeaderCell .sapMText {
+	white-space: normal;
+	overflow: hidden;
+	word-break: break-word;
+}
+
+.sapUiInverted-CTX {
+	display: none;
+}
+
+/************ Page Specific Styling ****************/
+#apfPrintArea {
+	display: block;
+	margin-left: 0px;
+}
+
+.page-break {
+	display: block;
+	page-break-after: always;
+}
+
+.representationContent {
+	page: rotated;
+	width: 1000px;
+}
+
+.filterLayout {
+	page: rotated;
+	padding-bottom: 900px;
+}
+
+.a4PageSize {
+	min-height: 31.7cm;
+	padding: 1cm;
+	margin: 1cm auto;
+}
+
+.clear {
+	clear: both;
+}
+
+.subHeaderPrintWrapper .printHeaderTitle {
+	float: left;
+	font-weight: bold;
+	font-size: 20px;
+	margin: 2px;
+	padding: 0px;
+}
+
+.subHeaderPrintWrapper .printHeaderDate {
+	float: right;
+	font-weight: bold;
+	font-size: 10px;
+	margin: 2px;
+	padding: 0px;
+}
+
+.printChipName p {
+	font-size: 18px;
+	margin: 2px;
+	padding: 0px;
+}
+
+.apfPrintDateTime {
+	position: relative;
+	top: 4px;
+	left: 70%;
+	font-size: 12px;
+	font-family: Arial, Helvetica !important;
+	font-weight: bold;
+	color: #919191;
+}
+
+.analysisSettingLabel {
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	fill: #333333;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.apfPrintChartLayout {
+	width: 800px;
+}
+
+.companyCodeLabel {
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	fill: #333333;
+	position: relative;
+	text-align: center;
+}
+
+.analysisSetting {
+	padding-top: 30px;
+	padding-bottom: 40px;
+}
+
+.timeframeThumbnailDivider {
+	margin-left: 6px;
+}
+
+.dropDownLabelTimeframe {
+	margin-left: 30px;
+}
+
+.dropDownLabelTimeframe,.fromDateTimeframe,.toDateTimeframe,.initialStepThumbnail
+	{
+	font-family: Arial, Helvetica !important;
+	font-size: 14px !important;
+	font-wieght: bold;
+	color: #919191;
+	text-transform: uppercase;
+}
+
+.columnHeader {
+	width: 116px;
+	height: 28px;
+	position: relative;
+}
+
+/* Print Facet Filter Styling */
+.printFilterName {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 2px;
+	padding: 2px;
+}
+
+.printFilterValue {
+	font-size: 14px;
+	margin-bottom: 40px;
+}
+
+/* Header Text Wrap */
+#apfPrintArea .sapMLabel {
+	white-space: normal;
+}
+
+table.printtable {
+	font-size: 0.875rem;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: normal;
+	border-width: 1px;
+	border-top: none;
+	border-collapse: collapse;
+	width: 900px;
+}
+
+table.printtable th {
+	padding: 5px;
+	border-style: solid;
+	border-color: #d0d0d0;
+	background-color: #ffffff;
+}
+
+table.printtable tr {
+	width: 100%;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #d0d0d0;
+}
+
+table.printtable td {
+	border-width: 1px;
+	width: 25%;
+	padding: 5px;
+	border-style: solid;
+	border-color: #d0d0d0;
+	background-color: #ffffff;
+}
+
+.tableheaderdiv {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #333333;
+}
+
+.rotationDiv {
+	-ms-transform: rotate(90deg); /* IE 9 */
+	-webkit-transform: rotate(90deg); /* Safari */
+	transform: rotate(90deg); /* Standard syntax */
+	margin-top: 400px;
+	margin-right: 100px;
+	width: 1400px;
+	height: 600px;
+}

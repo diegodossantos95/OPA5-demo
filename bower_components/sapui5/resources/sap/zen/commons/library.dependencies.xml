@@ -1,0 +1,120 @@
+<?xml version="1.0" ?>
+<library  version="2.0" name="sap.zen.commons">
+  <module name="sap/zen/commons/layout/AbsoluteLayout.js" size="16623" compressedSize="5647">
+    <description>Provides control sap.zen.commons.layout.AbsoluteLayout.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/zen/commons/layout/PositionContainer.js"/>
+      <module name="sap/zen/commons/library.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/commons/layout/AbsoluteLayoutRenderer.js" size="5638" compressedSize="2470">
+    <description>Provides default renderer for control sap.zen.commons.layout.AbsoluteLayout</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/commons/layout/MatrixLayout.js" size="6288" compressedSize="1577">
+    <description>Provides control sap.zen.commons.layout.MatrixLayout.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/EnabledPropagator.js"/>
+      <module name="sap/zen/commons/layout/MatrixLayoutCell.js"/>
+      <module name="sap/zen/commons/layout/MatrixLayoutRow.js"/>
+      <module name="sap/zen/commons/library.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/commons/layout/MatrixLayoutCell.js" size="6299" compressedSize="1087">
+    <description>Provides control sap.zen.commons.layout.MatrixLayoutCell.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/CustomStyleClassSupport.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/zen/commons/library.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/commons/layout/MatrixLayoutRenderer.js" size="20424" compressedSize="7945">
+    <description>Provides default renderer for control sap.zen.commons.layout.MatrixLayout</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/commons/layout/MatrixLayoutRow.js" size="4541" compressedSize="727">
+    <description>Provides control sap.zen.commons.layout.MatrixLayoutRow.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/CustomStyleClassSupport.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/zen/commons/library.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/commons/layout/PositionContainer.js" size="12814" compressedSize="5194">
+    <description>Provides control sap.zen.commons.layout.PositionContainer.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/zen/commons/library.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/commons/library-preload.js" size="26527">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/DataType.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/CustomStyleClassSupport.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/core/EnabledPropagator.js"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="sap/ui/layout/library.js"/>
+    </requires>
+    <includes>
+      <module name="sap/zen/commons/layout/AbsoluteLayout.js"/>
+      <module name="sap/zen/commons/layout/AbsoluteLayoutRenderer.js"/>
+      <module name="sap/zen/commons/layout/MatrixLayout.js"/>
+      <module name="sap/zen/commons/layout/MatrixLayoutCell.js"/>
+      <module name="sap/zen/commons/layout/MatrixLayoutRenderer.js"/>
+      <module name="sap/zen/commons/layout/MatrixLayoutRow.js"/>
+      <module name="sap/zen/commons/layout/PositionContainer.js"/>
+      <module name="sap/zen/commons/library.js"/>
+      <module name="sap/zen/commons/manifest.json"/>
+    </includes>
+  </module>
+  <module name="sap/zen/commons/library-preload.json" size="0">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/DataType.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/CustomStyleClassSupport.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/core/EnabledPropagator.js"/>
+      <module name="sap/ui/core/library-preload.json"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="sap/ui/layout/library-preload.json"/>
+      <module name="sap/ui/layout/library.js"/>
+    </requires>
+    <includes>
+      <module name="sap/zen/commons/layout/AbsoluteLayout.js"/>
+      <module name="sap/zen/commons/layout/AbsoluteLayoutRenderer.js"/>
+      <module name="sap/zen/commons/layout/MatrixLayout.js"/>
+      <module name="sap/zen/commons/layout/MatrixLayoutCell.js"/>
+      <module name="sap/zen/commons/layout/MatrixLayoutRenderer.js"/>
+      <module name="sap/zen/commons/layout/MatrixLayoutRow.js"/>
+      <module name="sap/zen/commons/layout/PositionContainer.js"/>
+      <module name="sap/zen/commons/library.js"/>
+      <module name="sap/zen/commons/manifest.json"/>
+    </includes>
+  </module>
+  <module name="sap/zen/commons/library.js" size="6806" compressedSize="1436">
+    <description>Initialization Code and shared classes of library sap.zen.commons.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/DataType.js"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="sap/ui/layout/library.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/commons/manifest.json" size="953">
+  </module>
+</library>

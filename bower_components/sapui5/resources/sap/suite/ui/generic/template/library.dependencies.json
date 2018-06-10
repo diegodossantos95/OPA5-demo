@@ -1,0 +1,3175 @@
+{
+  "modules" : [
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/Component.js",
+      "size" : 9344,
+      "compressedSize" : 2329,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/generic/template/AnalyticalListPage/controller/ControllerImplementation.js", "sap/suite/ui/generic/template/lib/TemplateAssembler.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/control/KpiTag.js",
+      "size" : 13444,
+      "compressedSize" : 8049,
+      "required" : ["jquery.sap.global.js", "sap/m/Label.js", "sap/m/NumericContent.js", "sap/suite/ui/generic/template/AnalyticalListPage/controller/KpiTagController.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/CriticalityUtil.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/FilterUtil.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/KpiAnnotationHelper.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/KpiUtil.js", "sap/ui/core/Control.js", "sap/ui/model/json/JSONModel.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/control/SmartFilterBarExt.js",
+      "size" : 2023,
+      "compressedSize" : 754,
+      "required" : ["jquery.sap.global.js", "sap/m/SegmentedButton.js", "sap/m/SegmentedButtonItem.js", "sap/ui/comp/smartfilterbar/SmartFilterBar.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/control/visualfilterbar/FilterItem.js",
+      "size" : 2259,
+      "compressedSize" : 1808,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/ui/model/Filter.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/control/visualfilterbar/FilterItemMicroBar.js",
+      "size" : 5670,
+      "compressedSize" : 3310,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/generic/template/AnalyticalListPage/control/visualfilterbar/FilterItemMicroChart.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/CriticalityUtil.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/FilterUtil.js", "sap/suite/ui/microchart/InteractiveBarChart.js", "sap/suite/ui/microchart/InteractiveBarChartBar.js", "sap/ui/model/json/JSONModel.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/control/visualfilterbar/FilterItemMicroChart.js",
+      "size" : 27074,
+      "compressedSize" : 12029,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/generic/template/AnalyticalListPage/control/visualfilterbar/FilterItem.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/FilterUtil.js", "sap/ui/model/Sorter.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/control/visualfilterbar/FilterItemMicroDonut.js",
+      "size" : 12727,
+      "compressedSize" : 5140,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/generic/template/AnalyticalListPage/control/visualfilterbar/FilterItemMicroChart.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/CriticalityUtil.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/FilterUtil.js", "sap/suite/ui/microchart/InteractiveDonutChart.js", "sap/suite/ui/microchart/InteractiveDonutChartSegment.js", "sap/ui/model/json/JSONModel.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/control/visualfilterbar/FilterItemMicroLine.js",
+      "size" : 5792,
+      "compressedSize" : 3398,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/generic/template/AnalyticalListPage/control/visualfilterbar/FilterItemMicroChart.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/CriticalityUtil.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/FilterUtil.js", "sap/suite/ui/microchart/InteractiveLineChart.js", "sap/suite/ui/microchart/InteractiveLineChartPoint.js", "sap/ui/model/json/JSONModel.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/control/visualfilterbar/SmartVisualFilterBar.designtime.js",
+      "description" : "Provides the Design Time Metadata for the SmartVisualFilterBar",
+      "size" : 547,
+      "compressedSize" : 358,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/control/visualfilterbar/SmartVisualFilterBar.js",
+      "size" : 37877,
+      "compressedSize" : 18720,
+      "required" : ["jquery.sap.global.js", "sap/m/Button.js", "sap/m/HeaderContainer.js", "sap/m/Label.js", "sap/m/OverflowToolbar.js", "sap/m/ToolbarSpacer.js", "sap/m/VBox.js", "sap/suite/ui/generic/template/AnalyticalListPage/control/visualfilterbar/VisualFilterProvider.js", "sap/suite/ui/generic/template/AnalyticalListPage/controller/VisualFilterDialogController.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/FilterUtil.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/V4Terms.js", "sap/ui/comp/odata/MetadataAnalyser.js", "sap/ui/comp/odata/ODataModelUtil.js", "sap/ui/comp/smartfilterbar/FilterProvider.js", "sap/ui/comp/smartvariants/PersonalizableInfo.js", "sap/ui/comp/smartvariants/SmartVariantManagement.js", "sap/ui/model/Filter.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/control/visualfilterbar/VisualFilterProvider.js",
+      "description" : "-----------------------------------------------------------------------------",
+      "size" : 36230,
+      "compressedSize" : 12592,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/FilterUtil.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/V4Terms.js", "sap/ui/comp/odata/MetadataAnalyser.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/controller/ContentAreaController.js",
+      "size" : 2326,
+      "compressedSize" : 1396,
+      "required" : ["jquery.sap.global.js", "sap/m/FlexItemData.js", "sap/m/OverflowToolbar.js", "sap/m/ToolbarDesign.js", "sap/m/ToolbarSpacer.js", "sap/suite/ui/generic/template/AnalyticalListPage/controller/DetailController.js", "sap/suite/ui/generic/template/AnalyticalListPage/controller/SmartChartController.js", "sap/ui/core/mvc/Controller.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/controller/ControllerImplementation.js",
+      "description" : "global hasher sap",
+      "size" : 52835,
+      "compressedSize" : 22362,
+      "required" : ["jquery.sap.global.js", "sap/m/MessageBox.js", "sap/m/ObjectIdentifier.js", "sap/m/Table.js", "sap/m/Text.js", "sap/suite/ui/generic/template/AnalyticalListPage/controller/ContentAreaController.js", "sap/suite/ui/generic/template/AnalyticalListPage/controller/FilterBarController.js", "sap/suite/ui/generic/template/AnalyticalListPage/controller/KpiTagController.js", "sap/suite/ui/generic/template/AnalyticalListPage/controller/ToolbarController.js", "sap/suite/ui/generic/template/AnalyticalListPage/controller/VisualFilterBarController.js", "sap/suite/ui/generic/template/AnalyticalListPage/controller/VisualFilterDialogController.js", "sap/suite/ui/generic/template/AnalyticalListPage/extensionAPI/ExtensionAPI.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/FilterUtil.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/ModelUtil.js", "sap/suite/ui/generic/template/lib/MessageUtils.js", "sap/ui/base/EventProvider.js", "sap/ui/base/Object.js", "sap/ui/comp/smartfield/SmartField.js", "sap/ui/core/ResizeHandler.js", "sap/ui/generic/app/navigation/service/SelectionVariant.js", "sap/ui/model/analytics/odata4analytics.js", "sap/ui/model/json/JSONModel.js", "sap/ui/model/odata/AnnotationHelper.js", "sap/ui/table/AnalyticalTable.js", "sap/ui/table/Table.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/controller/DetailController.js",
+      "description" : "global $",
+      "size" : 24588,
+      "compressedSize" : 10668,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/FilterUtil.js", "sap/ui/base/EventProvider.js", "sap/ui/comp/personalization/Util.js", "sap/ui/core/mvc/Controller.js", "sap/ui/model/FilterType.js", "sap/ui/table/AnalyticalTable.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/controller/FilterBarController.js",
+      "size" : 7943,
+      "compressedSize" : 3927,
+      "required" : ["jquery.sap.global.js", "sap/m/Button.js", "sap/m/ButtonType.js", "sap/m/Dialog.js", "sap/m/SegmentedButton.js", "sap/m/SegmentedButtonItem.js", "sap/m/Text.js", "sap/suite/ui/generic/template/AnalyticalListPage/controller/VisualFilterDialogController.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/FilterUtil.js", "sap/ui/core/mvc/Controller.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/controller/KpiCardController.js",
+      "size" : 4106,
+      "compressedSize" : 2244,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/KpiAnnotationFormatter.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/KpiUtil.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/V4Terms.js", "sap/ui/core/Fragment.js", "sap/ui/core/mvc/Controller.js", "sap/ui/model/json/JSONModel.js", "sap/ui/thirdparty/d3.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/controller/KpiTagController.js",
+      "size" : 7128,
+      "compressedSize" : 3898,
+      "required" : ["jquery.sap.global.js", "sap/m/Popover.js", "sap/suite/ui/generic/template/AnalyticalListPage/controller/KpiCardController.js", "sap/ui/core/mvc/ViewType.js", "sap/ui/model/json/JSONModel.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/controller/SmartChartController.js",
+      "size" : 12307,
+      "compressedSize" : 6072,
+      "required" : ["jquery.sap.global.js", "sap/m/FlexItemData.js", "sap/m/OverflowToolbar.js", "sap/m/ToolbarDesign.js", "sap/m/ToolbarSpacer.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/FilterUtil.js", "sap/ui/core/mvc/Controller.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/controller/ToolbarController.js",
+      "size" : 3664,
+      "compressedSize" : 2298,
+      "required" : ["jquery.sap.global.js", "sap/m/Button.js", "sap/m/ButtonType.js", "sap/m/SegmentedButton.js", "sap/m/SegmentedButtonItem.js", "sap/ui/base/EventProvider.js", "sap/ui/core/mvc/Controller.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/controller/VisualFilterBarController.js",
+      "size" : 502,
+      "compressedSize" : 367,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/mvc/Controller.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/controller/VisualFilterDialogController.js",
+      "size" : 52546,
+      "compressedSize" : 29366,
+      "required" : ["jquery.sap.global.js", "sap/m/Bar.js", "sap/m/Button.js", "sap/m/ButtonType.js", "sap/m/CheckBox.js", "sap/m/Dialog.js", "sap/m/HBox.js", "sap/m/Label.js", "sap/m/Link.js", "sap/m/List.js", "sap/m/ListSeparators.js", "sap/m/Popover.js", "sap/m/SearchField.js", "sap/m/SegmentedButton.js", "sap/m/SegmentedButtonItem.js", "sap/m/StandardListItem.js", "sap/m/Text.js", "sap/m/TextArea.js", "sap/m/Title.js", "sap/m/Toolbar.js", "sap/m/ToolbarSpacer.js", "sap/m/VBox.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/FilterUtil.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/V4Terms.js", "sap/ui/core/mvc/Controller.js", "sap/ui/layout/GridData.js", "sap/ui/layout/form/SimpleForm.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/extensionAPI/ExtensionAPI.js",
+      "size" : 7046,
+      "compressedSize" : 1702,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/generic/template/extensionAPI/NavigationController.js", "sap/ui/base/Object.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n.properties",
+      "size" : 10325,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_ar.properties",
+      "size" : 16811,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_bg.properties",
+      "size" : 19127,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_ca.properties",
+      "size" : 10750,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_cs.properties",
+      "size" : 11181,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_da.properties",
+      "size" : 10400,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_de.properties",
+      "size" : 10700,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_el.properties",
+      "size" : 19450,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_en.properties",
+      "size" : 10219,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_en_US_sappsd.properties",
+      "size" : 20434,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_en_US_saptrc.properties",
+      "size" : 12454,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_es.properties",
+      "size" : 10784,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_et.properties",
+      "size" : 10569,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_fi.properties",
+      "size" : 10936,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_fr.properties",
+      "size" : 11051,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_hi.properties",
+      "size" : 18162,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_hr.properties",
+      "size" : 10579,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_hu.properties",
+      "size" : 11761,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_it.properties",
+      "size" : 10606,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_iw.properties",
+      "size" : 15659,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_ja.properties",
+      "size" : 13306,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_kk.properties",
+      "size" : 18458,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_ko.properties",
+      "size" : 12599,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_lt.properties",
+      "size" : 11056,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_lv.properties",
+      "size" : 11344,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_ms.properties",
+      "size" : 10463,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_nl.properties",
+      "size" : 10325,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_no.properties",
+      "size" : 10432,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_pl.properties",
+      "size" : 11024,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_pt.properties",
+      "size" : 11023,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_ro.properties",
+      "size" : 11075,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_ru.properties",
+      "size" : 19126,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_sh.properties",
+      "size" : 10610,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_sk.properties",
+      "size" : 11274,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_sl.properties",
+      "size" : 10611,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_sv.properties",
+      "size" : 10503,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_th.properties",
+      "size" : 18398,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_tr.properties",
+      "size" : 11429,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_uk.properties",
+      "size" : 18604,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_vi.properties",
+      "size" : 13662,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_zh_CN.properties",
+      "size" : 11684,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/i18n/i18n_zh_TW.properties",
+      "size" : 11529,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/manifest.json",
+      "size" : 1855,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/util/AnnotationHelper.js",
+      "size" : 9324,
+      "compressedSize" : 3855,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/generic/template/extensionAPI/UIMode.js", "sap/ui/comp/smartfield/SmartField.js", "sap/ui/model/Context.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/util/CriticalityUtil.js",
+      "size" : 10376,
+      "compressedSize" : 4780,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/FilterUtil.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/OperationCode.js", "sap/ui/base/Object.js", "sap/ui/model/Context.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/util/FilterUtil.js",
+      "size" : 11061,
+      "compressedSize" : 3558,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/OperationCode.js", "sap/ui/base/Object.js", "sap/ui/model/Context.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/util/KpiAnnotationFormatter.js",
+      "description" : "@fileOverview This file contains miscellaneous utility functions.",
+      "size" : 30859,
+      "compressedSize" : 12681,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/KpiAnnotationHelper.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/KpiUtil.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/V4Terms.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/util/KpiAnnotationHelper.js",
+      "size" : 3756,
+      "compressedSize" : 1970,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/Object.js", "sap/ui/model/Context.js", "sap/ui/model/analytics/odata4analytics.js", "sap/ui/model/odata/AnnotationHelper.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/util/KpiUtil.js",
+      "size" : 6710,
+      "compressedSize" : 2307,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/Object.js", "sap/ui/model/Context.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/util/KpiVizAnnotationHelper.js",
+      "size" : 26215,
+      "compressedSize" : 9055,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/V4Terms.js", "sap/ui/base/Object.js", "sap/ui/core/format/NumberFormat.js", "sap/ui/model/Context.js", "sap/ui/model/odata/AnnotationHelper.js", "sap/viz/ui5/api/env/Format.js", "sap/viz/ui5/format/ChartFormatter.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/util/ModelUtil.js",
+      "size" : 821,
+      "compressedSize" : 386,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/Object.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/util/OperationCode.js",
+      "description" : "File for mapping operation code to operator",
+      "size" : 870,
+      "compressedSize" : 538,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/util/V4Terms.js",
+      "description" : "File for keeping V4 Annotation Constants New Constants should be added in the below dictionary and then be used",
+      "size" : 1470,
+      "compressedSize" : 1267,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/view/AnalyticalListPage.view.xml",
+      "size" : 9502,
+      "required" : ["sap/f/DynamicPage.js", "sap/f/DynamicPageHeader.js", "sap/f/DynamicPageTitle.js", "sap/m/HBox.js", "sap/m/OverflowToolbar.js", "sap/m/OverflowToolbarLayoutData.js", "sap/m/SegmentedButton.js", "sap/m/SegmentedButtonItem.js", "sap/m/Text.js", "sap/m/ToolbarSpacer.js", "sap/m/VBox.js", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/ActionsFragment.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/AnnotatedDeterminingButton.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/ContentContainer.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/FilterContainer.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/KPITagList.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/ManifestDeterminingActions.fragment.xml", "sap/suite/ui/generic/template/lib/FlexEnabler.js", "sap/ui/comp/smartvariants/SmartVariantManagement.js", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js", "sap/ui/core/mvc/XMLView.js", "sap/ui/layout/HorizontalLayout.js", "sap/ui/layout/VerticalLayout.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/view/KpiCardSizeM.view.xml",
+      "size" : 499,
+      "required" : ["sap/suite/ui/generic/template/AnalyticalListPage/controller/KpiCardController.controller.js", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/KpiCard.fragment.xml", "sap/ui/core/Fragment.js", "sap/ui/core/mvc/XMLView.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/ActionsFragment.fragment.xml",
+      "size" : 1815,
+      "required" : ["sap/m/Button.js", "sap/m/OverflowToolbarButton.js", "sap/m/OverflowToolbarLayoutData.js", "sap/suite/ui/generic/template/fragments/GlobalActions.fragment.xml", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/AnalyticalTableColumns.fragment.xml",
+      "size" : 1702,
+      "required" : ["sap/suite/ui/generic/template/fragments/InlineButton.fragment.xml", "sap/ui/core/Fragment.js", "sap/ui/core/InvisibleText.js", "sap/ui/table/AnalyticalColumn.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/AnnotatedDeterminingButton.fragment.xml",
+      "size" : 2032,
+      "required" : ["sap/m/Button.js", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/ChartActions.fragment.xml",
+      "size" : 1082,
+      "required" : ["sap/m/Button.js", "sap/m/OverflowToolbarLayoutData.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/ContentAreaExtension.fragment.xml",
+      "size" : 1303,
+      "required" : ["sap/m/OverflowToolbar.js", "sap/m/OverflowToolbarLayoutData.js", "sap/m/SegmentedButton.js", "sap/m/SegmentedButtonItem.js", "sap/m/ToolbarSpacer.js", "sap/ui/core/ExtensionPoint.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/ContentContainer.fragment.xml",
+      "size" : 2454,
+      "required" : ["sap/m/VBox.js", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/ContentAreaExtension.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/DetailSmartTable.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/MasterExtension.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/SmartChart.fragment.xml", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/DetailSmartTable.fragment.xml",
+      "size" : 9770,
+      "required" : ["sap/m/FlexItemData.js", "sap/m/Table.js", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/AnalyticalTableColumns.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/GridTableColumns.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/SmartTableToolbar.fragment.xml", "sap/suite/ui/generic/template/fragments/RowActions.fragment.xml", "sap/suite/ui/generic/template/fragments/TableColumns.fragment.xml", "sap/ui/comp/navpopover/SemanticObjectController.js", "sap/ui/comp/smarttable/SmartTable.js", "sap/ui/core/CustomData.js", "sap/ui/core/ExtensionPoint.js", "sap/ui/core/Fragment.js", "sap/ui/table/AnalyticalTable.js", "sap/ui/table/Table.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/DraftInfoBox.fragment.xml",
+      "size" : 580,
+      "required" : ["sap/m/ObjectMarker.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/FilterContainer.fragment.xml",
+      "size" : 1981,
+      "required" : ["sap/m/Button.js", "sap/m/FlexBox.js", "sap/m/VBox.js", "sap/suite/ui/generic/template/AnalyticalListPage/control/visualfilterbar/SmartVisualFilterBar.js", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/SmartFilterBar.fragment.xml", "sap/ui/core/Fragment.js", "sap/ui/layout/VerticalLayout.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/GridTableColumns.fragment.xml",
+      "size" : 1905,
+      "required" : ["sap/suite/ui/generic/template/fragments/InlineButton.fragment.xml", "sap/ui/core/Fragment.js", "sap/ui/core/InvisibleText.js", "sap/ui/table/Column.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/KPITagList.fragment.xml",
+      "size" : 634,
+      "required" : ["sap/suite/ui/generic/template/AnalyticalListPage/control/KpiTag.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/KpiCard.fragment.xml",
+      "size" : 886,
+      "required" : ["sap/ui/core/ComponentContainer.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/ManifestDeterminingActions.fragment.xml",
+      "size" : 720,
+      "required" : ["sap/m/Button.js", "sap/m/OverflowToolbarLayoutData.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/MasterExtension.fragment.xml",
+      "size" : 1499,
+      "required" : ["sap/m/OverflowToolbar.js", "sap/m/OverflowToolbarLayoutData.js", "sap/m/SegmentedButton.js", "sap/m/SegmentedButtonItem.js", "sap/m/ToolbarSpacer.js", "sap/ui/core/ExtensionPoint.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/SmartChart.fragment.xml",
+      "size" : 3469,
+      "required" : ["sap/m/FlexItemData.js", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/SmartChartToolbar.fragment.xml", "sap/ui/comp/navpopover/SemanticObjectController.js", "sap/ui/comp/smartchart/SmartChart.js", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js", "sap/ui/core/Item.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/SmartChartToolbar.fragment.xml",
+      "size" : 1057,
+      "required" : ["sap/m/OverflowToolbar.js", "sap/m/ToolbarSpacer.js", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/ChartActions.fragment.xml", "sap/suite/ui/generic/template/fragments/AnnotatedActionButtons.fragment.xml", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/SmartFilterBar.fragment.xml",
+      "size" : 4535,
+      "required" : ["sap/m/FlexItemData.js", "sap/suite/ui/generic/template/AnalyticalListPage/control/SmartFilterBarExt.js", "sap/ui/comp/smartfilterbar/ControlConfiguration.js", "sap/ui/core/CustomData.js", "sap/ui/core/ExtensionPoint.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/SmartTableToolbar.fragment.xml",
+      "size" : 1532,
+      "required" : ["sap/m/OverflowToolbar.js", "sap/m/OverflowToolbarLayoutData.js", "sap/m/SegmentedButton.js", "sap/m/SegmentedButtonItem.js", "sap/m/ToolbarSpacer.js", "sap/suite/ui/generic/template/fragments/AnnotatedActionButtons.fragment.xml", "sap/suite/ui/generic/template/fragments/BreakoutActions.fragment.xml", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/Canvas/Component.js",
+      "size" : 1258,
+      "compressedSize" : 775,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/generic/template/Canvas/controller/ControllerImplementation.js", "sap/suite/ui/generic/template/detailTemplates/detailUtils.js", "sap/suite/ui/generic/template/lib/TemplateAssembler.js", "sap/suite/ui/generic/template/lib/TemplateComponent.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/Canvas/controller/ControllerImplementation.js",
+      "size" : 1008,
+      "compressedSize" : 496,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/generic/template/Canvas/extensionAPI/ExtensionAPI.js", "sap/suite/ui/generic/template/detailTemplates/detailUtils.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/Canvas/extensionAPI/ExtensionAPI.js",
+      "size" : 7839,
+      "compressedSize" : 1493,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/generic/template/extensionAPI/NavigationController.js", "sap/ui/base/Object.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/Canvas/i18n/i18n.properties",
+      "size" : 90,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/Canvas/i18n/i18n_en_US_sappsd.properties",
+      "size" : 0,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/Canvas/i18n/i18n_en_US_saptrc.properties",
+      "size" : 0,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/Canvas/manifest.json",
+      "size" : 1842,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/Canvas/view/Canvas.view.xml",
+      "size" : 1634,
+      "required" : ["sap/suite/ui/generic/template/ObjectPage/view/fragments/Footer.fragment.xml", "sap/suite/ui/generic/template/detailTemplates/fragments/PaginatorButtons.fragment.xml", "sap/ui/core/ComponentContainer.js", "sap/ui/core/Fragment.js", "sap/ui/core/mvc/XMLView.js", "{parameter>/settings/routeConfig/implementingComponent/componentName}/Component.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/AnnotationHelper.js",
+      "size" : 7544,
+      "compressedSize" : 3414,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/Component.js",
+      "size" : 3036,
+      "compressedSize" : 1580,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/generic/template/ListReport/controller/ControllerImplementation.js", "sap/suite/ui/generic/template/lib/TemplateAssembler.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/controller/ControllerImplementation.js",
+      "description" : "global hasher",
+      "size" : 38249,
+      "compressedSize" : 19045,
+      "required" : ["jquery.sap.global.js", "sap/m/MessageBox.js", "sap/m/ObjectIdentifier.js", "sap/m/Table.js", "sap/m/Text.js", "sap/suite/ui/generic/template/ListReport/controller/IappStateHandler.js", "sap/suite/ui/generic/template/ListReport/controller/MultipleViewsSingleTableModeHelper.js", "sap/suite/ui/generic/template/ListReport/controller/SmartChartController.js", "sap/suite/ui/generic/template/ListReport/extensionAPI/ExtensionAPI.js", "sap/suite/ui/generic/template/js/AnnotationHelper.js", "sap/suite/ui/generic/template/lib/MessageUtils.js", "sap/ui/comp/navpopover/LinkData.js", "sap/ui/comp/smartfield/SmartField.js", "sap/ui/generic/app/navigation/service/SelectionVariant.js", "sap/ui/model/Filter.js", "sap/ui/model/json/JSONModel.js", "sap/ui/table/AnalyticalTable.js", "sap/ui/table/Table.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/controller/IappStateHandler.js",
+      "size" : 25883,
+      "compressedSize" : 7432,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/Object.js", "sap/ui/generic/app/navigation/service/NavError.js", "sap/ui/generic/app/navigation/service/SelectionVariant.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/controller/MultipleViewsSingleTableModeHelper.js",
+      "size" : 9392,
+      "compressedSize" : 3463,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/Object.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/controller/SmartChartController.js",
+      "size" : 5921,
+      "compressedSize" : 2840,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/Object.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/extensionAPI/ExtensionAPI.js",
+      "size" : 7655,
+      "compressedSize" : 1954,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/generic/template/ListReport/extensionAPI/NonDraftTransactionController.js", "sap/suite/ui/generic/template/extensionAPI/NavigationController.js", "sap/ui/base/Object.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/extensionAPI/NonDraftTransactionController.js",
+      "size" : 3046,
+      "compressedSize" : 1068,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/Object.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n.properties",
+      "size" : 5372,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_ar.properties",
+      "size" : 8516,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_bg.properties",
+      "size" : 9491,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_ca.properties",
+      "size" : 5550,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_cs.properties",
+      "size" : 5726,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_da.properties",
+      "size" : 5346,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_de.properties",
+      "size" : 5564,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_el.properties",
+      "size" : 10165,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_en.properties",
+      "size" : 5280,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_en_US_sappsd.properties",
+      "size" : 10578,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_en_US_saptrc.properties",
+      "size" : 6561,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_es.properties",
+      "size" : 5576,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_et.properties",
+      "size" : 5390,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_fi.properties",
+      "size" : 5598,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_fr.properties",
+      "size" : 5732,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_hi.properties",
+      "size" : 9524,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_hr.properties",
+      "size" : 5474,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_hu.properties",
+      "size" : 5862,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_it.properties",
+      "size" : 5408,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_iw.properties",
+      "size" : 8027,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_ja.properties",
+      "size" : 6982,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_kk.properties",
+      "size" : 9323,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_ko.properties",
+      "size" : 6652,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_lt.properties",
+      "size" : 5700,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_lv.properties",
+      "size" : 5808,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_ms.properties",
+      "size" : 5408,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_nl.properties",
+      "size" : 5306,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_no.properties",
+      "size" : 5357,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_pl.properties",
+      "size" : 5602,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_pt.properties",
+      "size" : 5602,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_ro.properties",
+      "size" : 5659,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_ru.properties",
+      "size" : 9605,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_sh.properties",
+      "size" : 5484,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_sk.properties",
+      "size" : 5738,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_sl.properties",
+      "size" : 5481,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_sv.properties",
+      "size" : 5423,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_th.properties",
+      "size" : 9723,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_tr.properties",
+      "size" : 5772,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_uk.properties",
+      "size" : 9232,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_vi.properties",
+      "size" : 7223,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_zh_CN.properties",
+      "size" : 6019,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/i18n/i18n_zh_TW.properties",
+      "size" : 6018,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/manifest.json",
+      "size" : 1684,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/view/ListReport.view.xml",
+      "size" : 400,
+      "required" : ["sap/suite/ui/generic/template/ListReport/view/fragments/FullscreenPage.fragment.xml", "sap/ui/core/Fragment.js", "sap/ui/core/mvc/XMLView.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/view/fragments/BreakoutActions.fragment.xml",
+      "size" : 1301,
+      "required" : ["sap/m/Button.js", "sap/m/OverflowToolbarLayoutData.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/view/fragments/DefaultVariant.fragment.xml",
+      "size" : 2881,
+      "required" : ["sap/f/DynamicPageTitle.js", "sap/m/Button.js", "sap/m/OverflowToolbarButton.js", "sap/m/Text.js", "sap/m/ToolbarSpacer.js", "sap/suite/ui/generic/template/fragments/GlobalActions.fragment.xml", "sap/ui/comp/smartvariants/SmartVariantManagement.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/view/fragments/DeleteConfirmation.fragment.xml",
+      "size" : 1275,
+      "required" : ["sap/m/Button.js", "sap/m/CheckBox.js", "sap/m/Dialog.js", "sap/m/Text.js", "sap/m/VBox.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/view/fragments/DraftInfoBox.fragment.xml",
+      "size" : 1056,
+      "required" : ["sap/m/ObjectMarker.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/view/fragments/DraftInfoBox_ForTableTabs.fragment.xml",
+      "size" : 919,
+      "required" : ["sap/m/ObjectMarker.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/view/fragments/FullscreenPage.fragment.xml",
+      "size" : 5291,
+      "required" : ["sap/f/DynamicPage.js", "sap/f/DynamicPageHeader.js", "sap/m/Button.js", "sap/m/OverflowToolbar.js", "sap/m/OverflowToolbarLayoutData.js", "sap/m/ToolbarSpacer.js", "sap/suite/ui/generic/template/ListReport/view/fragments/DefaultVariant.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/IconTabBarWithSmartTable.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/SmartChartWithSmartTable_PoC.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/SmartFilterBar.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/SmartTable.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/TitleVariant.fragment.xml", "sap/suite/ui/generic/template/fragments/DeterminingButton.fragment.xml", "sap/suite/ui/generic/template/lib/FlexEnabler.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/view/fragments/IconTabBarWithSmartTable.fragment.xml",
+      "size" : 1193,
+      "required" : ["sap/m/IconTabBar.js", "sap/m/IconTabFilter.js", "sap/suite/ui/generic/template/ListReport/view/fragments/SmartTable.fragment.xml", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/view/fragments/MultipleViewsSingleTableMode.fragment.xml",
+      "size" : 2911,
+      "required" : ["sap/m/SegmentedButton.js", "sap/m/SegmentedButtonItem.js", "sap/m/Select.js", "sap/suite/ui/generic/template/ListReport/view/fragments/MultipleViewsSingleTableModeItemCustomData.fragment.xml", "sap/ui/core/Fragment.js", "sap/ui/core/Item.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/view/fragments/MultipleViewsSingleTableModeItemCustomData.fragment.xml",
+      "size" : 1798,
+      "required" : ["sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/view/fragments/SearchField.fragment.xml",
+      "size" : 630,
+      "required" : ["sap/m/OverflowToolbarLayoutData.js", "sap/m/SearchField.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/view/fragments/SmartChartToolbar_PoC.fragment.xml",
+      "size" : 1199,
+      "required" : ["sap/m/OverflowToolbar.js", "sap/m/ToolbarSpacer.js", "sap/suite/ui/generic/template/ListReport/view/fragments/BreakoutActions.fragment.xml", "sap/suite/ui/generic/template/fragments/AnnotatedActionButtons.fragment.xml", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/view/fragments/SmartChartWithSmartTable_PoC.fragment.xml",
+      "size" : 2045,
+      "required" : ["sap/m/IconTabBar.js", "sap/m/IconTabFilter.js", "sap/suite/ui/generic/template/ListReport/view/fragments/SmartChart_PoC.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/SmartTable.fragment.xml", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/view/fragments/SmartChart_PoC.fragment.xml",
+      "size" : 3103,
+      "required" : ["sap/suite/ui/generic/template/ListReport/view/fragments/SmartChartToolbar_PoC.fragment.xml", "sap/ui/comp/smartchart/SmartChart.js", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js", "sap/ui/core/Item.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/view/fragments/SmartFilterBar.fragment.xml",
+      "size" : 3803,
+      "required" : ["sap/m/FlexItemData.js", "sap/m/Select.js", "sap/ui/comp/smartfilterbar/ControlConfiguration.js", "sap/ui/comp/smartfilterbar/SmartFilterBar.js", "sap/ui/core/CustomData.js", "sap/ui/core/ExtensionPoint.js", "sap/ui/core/Fragment.js", "sap/ui/core/Item.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/view/fragments/SmartTable.fragment.xml",
+      "size" : 14037,
+      "required" : ["sap/m/FlexItemData.js", "sap/m/Table.js", "sap/suite/ui/generic/template/ListReport/view/fragments/SmartTableToolbar.fragment.xml", "sap/suite/ui/generic/template/fragments/AnalyticalTableColumns.fragment.xml", "sap/suite/ui/generic/template/fragments/GridTableColumns.fragment.xml", "sap/suite/ui/generic/template/fragments/RowActions.fragment.xml", "sap/suite/ui/generic/template/fragments/TableColumns.fragment.xml", "sap/suite/ui/generic/template/fragments/TreeTableColumns.fragment.xml", "sap/ui/comp/navpopover/SemanticObjectController.js", "sap/ui/comp/smarttable/SmartTable.js", "sap/ui/core/CustomData.js", "sap/ui/core/ExtensionPoint.js", "sap/ui/core/Fragment.js", "sap/ui/table/AnalyticalTable.js", "sap/ui/table/Table.js", "sap/ui/table/TreeTable.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/view/fragments/SmartTableToolbar.fragment.xml",
+      "size" : 2748,
+      "required" : ["sap/m/OverflowToolbar.js", "sap/m/OverflowToolbarButton.js", "sap/m/ToolbarSpacer.js", "sap/suite/ui/generic/template/ListReport/view/fragments/BreakoutActions.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/MultipleViewsSingleTableMode.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/SearchField.fragment.xml", "sap/suite/ui/generic/template/fragments/AnnotatedActionButtons.fragment.xml", "sap/suite/ui/generic/template/fragments/CRUDActionButtons.fragment.xml", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/view/fragments/SmartTableToolbar_ForTableTabs.fragment.xml",
+      "size" : 1355,
+      "required" : ["sap/m/OverflowToolbar.js", "sap/m/ToolbarSpacer.js", "sap/suite/ui/generic/template/ListReport/view/fragments/BreakoutActions.fragment.xml", "sap/suite/ui/generic/template/fragments/AnnotatedActionButtons.fragment.xml", "sap/suite/ui/generic/template/fragments/CRUDActionButtons.fragment.xml", "sap/suite/ui/generic/template/fragments/TableActionButtons.fragment.xml", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/view/fragments/SmartTable_ForTableTabs.fragment.xml",
+      "size" : 11678,
+      "required" : ["sap/m/FlexItemData.js", "sap/m/Table.js", "sap/suite/ui/generic/template/ListReport/view/fragments/DraftInfoBox.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/SmartTableToolbar.fragment.xml", "sap/suite/ui/generic/template/fragments/AnalyticalTableColumns.fragment.xml", "sap/suite/ui/generic/template/fragments/GridTableColumns.fragment.xml", "sap/suite/ui/generic/template/fragments/RowActions.fragment.xml", "sap/suite/ui/generic/template/fragments/TableColumns.fragment.xml", "sap/suite/ui/generic/template/fragments/TreeTableColumns.fragment.xml", "sap/ui/comp/navpopover/SemanticObjectController.js", "sap/ui/comp/smarttable/SmartTable.js", "sap/ui/core/CustomData.js", "sap/ui/core/ExtensionPoint.js", "sap/ui/core/Fragment.js", "sap/ui/table/AnalyticalTable.js", "sap/ui/table/Table.js", "sap/ui/table/TreeTable.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ListReport/view/fragments/TitleVariant.fragment.xml",
+      "size" : 2533,
+      "required" : ["sap/f/DynamicPageTitle.js", "sap/m/Button.js", "sap/m/OverflowToolbarButton.js", "sap/m/Text.js", "sap/m/Title.js", "sap/m/ToolbarSpacer.js", "sap/suite/ui/generic/template/fragments/GlobalActions.fragment.xml", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/Component.js",
+      "size" : 3662,
+      "compressedSize" : 1862,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/generic/template/ObjectPage/controller/ControllerImplementation.js", "sap/suite/ui/generic/template/detailTemplates/detailUtils.js", "sap/suite/ui/generic/template/lib/TemplateAssembler.js", "sap/suite/ui/generic/template/lib/TemplateComponent.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/controller/ControllerImplementation.js",
+      "size" : 48121,
+      "compressedSize" : 21018,
+      "required" : ["jquery.sap.global.js", "sap/m/MessageBox.js", "sap/m/MessageToast.js", "sap/m/Table.js", "sap/suite/ui/generic/template/ObjectPage/extensionAPI/ExtensionAPI.js", "sap/suite/ui/generic/template/detailTemplates/detailUtils.js", "sap/suite/ui/generic/template/js/AnnotationHelper.js", "sap/suite/ui/generic/template/lib/testableHelper.js", "sap/ui/comp/smarttable/SmartTable.js", "sap/ui/core/format/DateFormat.js", "sap/ui/core/mvc/ViewType.js", "sap/ui/generic/app/navigation/service/SelectionVariant.js", "sap/ui/model/Filter.js", "sap/ui/model/Sorter.js", "sap/ui/model/json/JSONModel.js", "sap/ui/table/AnalyticalTable.js", "sap/ui/table/Table.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/extensionAPI/DraftTransactionController.js",
+      "size" : 4559,
+      "compressedSize" : 1082,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/Object.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/extensionAPI/ExtensionAPI.js",
+      "size" : 9333,
+      "compressedSize" : 1960,
+      "required" : ["jquery.sap.global.js", "sap/m/ListBase.js", "sap/suite/ui/generic/template/ObjectPage/extensionAPI/DraftTransactionController.js", "sap/suite/ui/generic/template/ObjectPage/extensionAPI/NonDraftTransactionController.js", "sap/suite/ui/generic/template/extensionAPI/NavigationController.js", "sap/ui/base/Object.js", "sap/ui/comp/smarttable/SmartTable.js", "sap/ui/table/Table.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/extensionAPI/NonDraftTransactionController.js",
+      "size" : 3150,
+      "compressedSize" : 806,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/Object.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n.properties",
+      "size" : 6824,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_ar.properties",
+      "size" : 11116,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_bg.properties",
+      "size" : 12412,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_ca.properties",
+      "size" : 7168,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_cs.properties",
+      "size" : 7402,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_da.properties",
+      "size" : 6856,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_de.properties",
+      "size" : 7152,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_el.properties",
+      "size" : 13134,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_en.properties",
+      "size" : 6728,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_en_US_sappsd.properties",
+      "size" : 13161,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_en_US_saptrc.properties",
+      "size" : 8170,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_es.properties",
+      "size" : 7166,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_et.properties",
+      "size" : 6957,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_fi.properties",
+      "size" : 7298,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_fr.properties",
+      "size" : 7424,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_hi.properties",
+      "size" : 12334,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_hr.properties",
+      "size" : 6932,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_hu.properties",
+      "size" : 7535,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_it.properties",
+      "size" : 6965,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_iw.properties",
+      "size" : 10469,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_ja.properties",
+      "size" : 9045,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_kk.properties",
+      "size" : 11799,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_ko.properties",
+      "size" : 8712,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_lt.properties",
+      "size" : 7458,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_lv.properties",
+      "size" : 7459,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_ms.properties",
+      "size" : 6893,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_nl.properties",
+      "size" : 6937,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_no.properties",
+      "size" : 6857,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_pl.properties",
+      "size" : 7137,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_pt.properties",
+      "size" : 7219,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_ro.properties",
+      "size" : 7413,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_ru.properties",
+      "size" : 12531,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_sh.properties",
+      "size" : 6990,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_sk.properties",
+      "size" : 7385,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_sl.properties",
+      "size" : 6988,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_sv.properties",
+      "size" : 7017,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_th.properties",
+      "size" : 12369,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_tr.properties",
+      "size" : 7483,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_uk.properties",
+      "size" : 11905,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_vi.properties",
+      "size" : 9049,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_zh_CN.properties",
+      "size" : 7760,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/i18n/i18n_zh_TW.properties",
+      "size" : 7761,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/manifest.json",
+      "size" : 1814,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/view/Details.view.xml",
+      "size" : 3685,
+      "required" : ["sap/suite/ui/generic/template/ObjectPage/view/fragments/Actions.fragment.xml", "sap/suite/ui/generic/template/ObjectPage/view/fragments/Breadcrumbs.fragment.xml", "sap/suite/ui/generic/template/ObjectPage/view/fragments/Footer.fragment.xml", "sap/suite/ui/generic/template/ObjectPage/view/fragments/HeaderContent.fragment.xml", "sap/suite/ui/generic/template/ObjectPage/view/fragments/NavigationBar.fragment.xml", "sap/suite/ui/generic/template/ObjectPage/view/fragments/Sections.fragment.xml", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js", "sap/ui/core/mvc/XMLView.js", "sap/uxap/ObjectPageHeader.js", "sap/uxap/ObjectPageLayout.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/view/fragments/Actions.fragment.xml",
+      "size" : 9345,
+      "required" : ["sap/suite/ui/generic/template/detailTemplates/fragments/PaginatorButtons.fragment.xml", "sap/suite/ui/generic/template/fragments/FCLActions.fragment.xml", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js", "sap/uxap/ObjectPageHeaderActionButton.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/view/fragments/Breadcrumbs.fragment.xml",
+      "size" : 1383,
+      "required" : ["sap/m/Link.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/view/fragments/ComponentSections.fragment.xml",
+      "size" : 1814,
+      "required" : ["sap/ui/core/ComponentContainer.js", "sap/ui/core/Fragment.js", "sap/uxap/ObjectPageLazyLoader.js", "sap/uxap/ObjectPageSection.js", "sap/uxap/ObjectPageSubSection.js", "{component>componentName}/Component.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/view/fragments/DraftResumeDialog.fragment.xml",
+      "size" : 524,
+      "required" : ["sap/m/Button.js", "sap/m/Dialog.js", "sap/m/Text.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/view/fragments/DummyBlock.js",
+      "size" : 527,
+      "compressedSize" : 392,
+      "required" : ["jquery.sap.global.js", "sap/uxap/BlockBase.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/view/fragments/DummyBlock.view.xml",
+      "size" : 183,
+      "required" : ["sap/ui/core/mvc/XMLView.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/view/fragments/Footer.fragment.xml",
+      "size" : 4538,
+      "required" : ["sap/m/Button.js", "sap/m/DraftIndicator.js", "sap/m/OverflowToolbar.js", "sap/m/OverflowToolbarLayoutData.js", "sap/m/ToolbarSpacer.js", "sap/suite/ui/generic/template/fragments/DeterminingButton.fragment.xml", "sap/ui/core/Fragment.js", "sap/ui/core/InvisibleText.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/view/fragments/FormActions.fragment.xml",
+      "size" : 2583,
+      "required" : ["sap/m/Button.js", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/view/fragments/FormBreakoutActions.fragment.xml",
+      "size" : 1202,
+      "required" : ["sap/m/Button.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/view/fragments/HeaderContent.fragment.xml",
+      "size" : 9461,
+      "required" : ["sap/m/HBox.js", "sap/m/Image.js", "sap/m/Label.js", "sap/m/VBox.js", "sap/suite/ui/generic/template/fragments/HeaderDataPointContent.fragment.xml", "sap/suite/ui/generic/template/fragments/HeaderFacet.fragment.xml", "sap/suite/ui/generic/template/fragments/HeaderFormDataField.fragment.xml", "sap/ui/comp/navpopover/SemanticObjectController.js", "sap/ui/comp/smartfield/ControlProposal.js", "sap/ui/comp/smartfield/ObjectStatus.js", "sap/ui/comp/smartfield/SmartField.js", "sap/ui/core/Fragment.js", "sap/ui/layout/VerticalLayout.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/view/fragments/ImageDialog.fragment.xml",
+      "size" : 397,
+      "required" : ["sap/m/Button.js", "sap/m/Dialog.js", "sap/m/Image.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/view/fragments/NavigationBar.fragment.xml",
+      "size" : 986,
+      "required" : ["sap/m/Bar.js", "sap/m/Button.js", "sap/m/Title.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/view/fragments/RelatedAppsSheet.fragment.xml",
+      "size" : 353,
+      "required" : ["sap/m/ActionSheet.js", "sap/m/Button.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/view/fragments/Sections.fragment.xml",
+      "size" : 22666,
+      "required" : ["sap/suite/ui/generic/template/ObjectPage/view/fragments/ComponentSections.fragment.xml", "sap/suite/ui/generic/template/ObjectPage/view/fragments/DummyBlock.js", "sap/suite/ui/generic/template/ObjectPage/view/fragments/FormActions.fragment.xml", "sap/suite/ui/generic/template/ObjectPage/view/fragments/FormBreakoutActions.fragment.xml", "sap/suite/ui/generic/template/fragments/EditableHeaderFacet.fragment.xml", "sap/suite/ui/generic/template/fragments/Facet.fragment.xml", "sap/ui/comp/smartfield/SmartField.js", "sap/ui/comp/smartform/Group.js", "sap/ui/comp/smartform/GroupElement.js", "sap/ui/comp/smartform/Layout.js", "sap/ui/comp/smartform/SmartForm.js", "sap/ui/core/CustomData.js", "sap/ui/core/ExtensionPoint.js", "sap/ui/core/Fragment.js", "sap/ui/layout/Grid.js", "sap/uxap/ObjectPageLazyLoader.js", "sap/uxap/ObjectPageSection.js", "sap/uxap/ObjectPageSubSection.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/ObjectPage/view/fragments/UnsavedChangesDialog.fragment.xml",
+      "size" : 526,
+      "required" : ["sap/m/Button.js", "sap/m/Dialog.js", "sap/m/Text.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/Component.js",
+      "size" : 1001,
+      "compressedSize" : 607,
+      "required" : ["jquery.sap.global.js", "sap/ca/ui/utils/Lessifier.js", "sap/suite/ui/generic/template/js/AnnotationHelper.js", "sap/suite/ui/generic/template/js/QuickTemplates/AnnotationHelper.js", "sap/suite/ui/generic/template/js/QuickTemplates/QuickTemplateComponentFactory.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n.properties",
+      "size" : 1387,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_ar.properties",
+      "size" : 1763,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_bg.properties",
+      "size" : 2219,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_ca.properties",
+      "size" : 1109,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_cs.properties",
+      "size" : 1133,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_da.properties",
+      "size" : 1048,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_de.properties",
+      "size" : 1130,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_el.properties",
+      "size" : 2262,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_en.properties",
+      "size" : 1052,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_en_US_sappsd.properties",
+      "size" : 3037,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_en_US_saptrc.properties",
+      "size" : 1620,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_es.properties",
+      "size" : 1095,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_et.properties",
+      "size" : 1056,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_fi.properties",
+      "size" : 1086,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_fr.properties",
+      "size" : 1176,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_hi.properties",
+      "size" : 2098,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_hr.properties",
+      "size" : 1092,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_hu.properties",
+      "size" : 1194,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_it.properties",
+      "size" : 1108,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_iw.properties",
+      "size" : 1729,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_ja.properties",
+      "size" : 1563,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_kk.properties",
+      "size" : 1942,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_ko.properties",
+      "size" : 1389,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_lt.properties",
+      "size" : 1118,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_lv.properties",
+      "size" : 1155,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_ms.properties",
+      "size" : 1062,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_nl.properties",
+      "size" : 1076,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_no.properties",
+      "size" : 1043,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_pl.properties",
+      "size" : 1161,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_pt.properties",
+      "size" : 1120,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_ro.properties",
+      "size" : 1162,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_ru.properties",
+      "size" : 2066,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_sh.properties",
+      "size" : 1077,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_sk.properties",
+      "size" : 1158,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_sl.properties",
+      "size" : 1086,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_sv.properties",
+      "size" : 1077,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_th.properties",
+      "size" : 2062,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_tr.properties",
+      "size" : 1142,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_uk.properties",
+      "size" : 2020,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_vi.properties",
+      "size" : 1595,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_zh_CN.properties",
+      "size" : 1240,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/i18n/i18n_zh_TW.properties",
+      "size" : 1257,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/manifest.json",
+      "size" : 1375,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/view/QuickCreate.controller.js",
+      "description" : "global sap,Promise",
+      "size" : 21447,
+      "compressedSize" : 10564,
+      "required" : ["jquery.sap.global.js", "sap/m/MessageToast.js", "sap/suite/ui/generic/template/js/QuickTemplates/AnnotationHelper.js", "sap/suite/ui/generic/template/js/QuickTemplates/ODataModelHelper.js", "sap/suite/ui/generic/template/js/QuickTemplates/QuickActionBaseController.js", "sap/suite/ui/generic/template/js/QuickTemplates/QuickCreateAPI.js", "sap/ui/model/Context.js", "sap/ui/model/json/JSONModel.js", "sap/ui/model/odata/AnnotationHelper.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickCreate/view/QuickCreate.view.xml",
+      "size" : 7192,
+      "required" : ["sap/m/BusyIndicator.js", "sap/m/Button.js", "sap/m/Column.js", "sap/m/ColumnListItem.js", "sap/m/FlexBox.js", "sap/m/HBox.js", "sap/m/Table.js", "sap/m/Text.js", "sap/m/Title.js", "sap/m/Toolbar.js", "sap/m/ToolbarSpacer.js", "sap/m/VBox.js", "sap/suite/ui/generic/template/QuickCreate/view/QuickCreate.controller.js", "sap/ui/comp/smartfield/SmartField.js", "sap/ui/comp/smartfield/SmartLabel.js", "sap/ui/core/Icon.js", "sap/ui/core/mvc/XMLView.js", "sap/ui/layout/form/SimpleForm.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/Component.js",
+      "size" : 993,
+      "compressedSize" : 599,
+      "required" : ["jquery.sap.global.js", "sap/ca/ui/utils/Lessifier.js", "sap/suite/ui/generic/template/js/AnnotationHelper.js", "sap/suite/ui/generic/template/js/QuickTemplates/AnnotationHelper.js", "sap/suite/ui/generic/template/js/QuickTemplates/QuickTemplateComponentFactory.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n.properties",
+      "size" : 243,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_ar.properties",
+      "size" : 231,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_bg.properties",
+      "size" : 308,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_ca.properties",
+      "size" : 168,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_cs.properties",
+      "size" : 173,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_da.properties",
+      "size" : 154,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_de.properties",
+      "size" : 173,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_el.properties",
+      "size" : 308,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_en.properties",
+      "size" : 156,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_en_US_sappsd.properties",
+      "size" : 399,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_en_US_saptrc.properties",
+      "size" : 202,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_es.properties",
+      "size" : 167,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_et.properties",
+      "size" : 162,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_fi.properties",
+      "size" : 156,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_fr.properties",
+      "size" : 165,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_hi.properties",
+      "size" : 310,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_hr.properties",
+      "size" : 170,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_hu.properties",
+      "size" : 163,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_it.properties",
+      "size" : 174,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_iw.properties",
+      "size" : 261,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_ja.properties",
+      "size" : 222,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_kk.properties",
+      "size" : 273,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_ko.properties",
+      "size" : 221,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_lt.properties",
+      "size" : 163,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_lv.properties",
+      "size" : 181,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_ms.properties",
+      "size" : 166,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_nl.properties",
+      "size" : 155,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_no.properties",
+      "size" : 162,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_pl.properties",
+      "size" : 182,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_pt.properties",
+      "size" : 158,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_ro.properties",
+      "size" : 171,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_ru.properties",
+      "size" : 320,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_sh.properties",
+      "size" : 158,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_sk.properties",
+      "size" : 161,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_sl.properties",
+      "size" : 164,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_sv.properties",
+      "size" : 165,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_th.properties",
+      "size" : 378,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_tr.properties",
+      "size" : 173,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_uk.properties",
+      "size" : 302,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_vi.properties",
+      "size" : 201,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_zh_CN.properties",
+      "size" : 174,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/i18n/i18n_zh_TW.properties",
+      "size" : 174,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/manifest.json",
+      "size" : 1310,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/view/QuickView.controller.js",
+      "size" : 4598,
+      "compressedSize" : 2975,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/generic/template/js/QuickTemplates/AnnotationHelper.js", "sap/suite/ui/generic/template/js/QuickTemplates/ODataModelHelper.js", "sap/suite/ui/generic/template/js/QuickTemplates/QuickActionBaseController.js", "sap/ui/model/Context.js", "sap/ui/model/json/JSONModel.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/QuickView/view/QuickView.view.xml",
+      "size" : 9226,
+      "required" : ["sap/m/Column.js", "sap/m/ColumnListItem.js", "sap/m/FlexBox.js", "sap/m/HBox.js", "sap/m/Image.js", "sap/m/Label.js", "sap/m/Table.js", "sap/m/Text.js", "sap/m/Title.js", "sap/m/Toolbar.js", "sap/m/VBox.js", "sap/suite/ui/generic/template/QuickView/view/QuickView.controller.js", "sap/ui/comp/smartfield/SmartField.js", "sap/ui/comp/smartfield/SmartLabel.js", "sap/ui/core/Icon.js", "sap/ui/core/mvc/XMLView.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/app/blankAnalyticalListPage/Component.js",
+      "size" : 298,
+      "compressedSize" : 284,
+      "required" : ["jquery.sap.global.js", "sap/ui/generic/app/AppComponent.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/app/blankAnalyticalListPage/manifest.json",
+      "size" : 1906,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/PaginatorButtonsHelper.js",
+      "size" : 5114,
+      "compressedSize" : 2270,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/generic/template/lib/testableHelper.js", "sap/ui/base/Object.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/detailUtils.js",
+      "size" : 15223,
+      "compressedSize" : 6042,
+      "required" : ["jquery.sap.global.js", "sap/m/DraftIndicator.js", "sap/suite/ui/generic/template/ObjectPage/extensionAPI/DraftTransactionController.js", "sap/suite/ui/generic/template/ObjectPage/extensionAPI/NonDraftTransactionController.js", "sap/suite/ui/generic/template/detailTemplates/PaginatorButtonsHelper.js", "sap/suite/ui/generic/template/extensionAPI/NavigationController.js", "sap/suite/ui/generic/template/lib/MessageButtonHelper.js", "sap/suite/ui/generic/template/lib/testableHelper.js", "sap/ui/core/routing/HashChanger.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/fragments/PaginatorButtons.fragment.xml",
+      "size" : 1499,
+      "required" : ["sap/m/HBox.js", "sap/ui/core/Fragment.js", "sap/uxap/ObjectPageHeaderActionButton.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n.properties",
+      "size" : 436,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_ar.properties",
+      "size" : 488,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_bg.properties",
+      "size" : 518,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_ca.properties",
+      "size" : 335,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_cs.properties",
+      "size" : 386,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_da.properties",
+      "size" : 340,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_de.properties",
+      "size" : 342,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_el.properties",
+      "size" : 482,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_en.properties",
+      "size" : 330,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_en_US_sappsd.properties",
+      "size" : 614,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_en_US_saptrc.properties",
+      "size" : 422,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_es.properties",
+      "size" : 332,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_et.properties",
+      "size" : 326,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_fi.properties",
+      "size" : 347,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_fr.properties",
+      "size" : 334,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_hi.properties",
+      "size" : 441,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_hr.properties",
+      "size" : 329,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_hu.properties",
+      "size" : 354,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_it.properties",
+      "size" : 333,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_iw.properties",
+      "size" : 422,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_ja.properties",
+      "size" : 404,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_kk.properties",
+      "size" : 476,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_ko.properties",
+      "size" : 398,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_lt.properties",
+      "size" : 354,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_lv.properties",
+      "size" : 347,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_ms.properties",
+      "size" : 321,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_nl.properties",
+      "size" : 336,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_no.properties",
+      "size" : 339,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_pl.properties",
+      "size" : 360,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_pt.properties",
+      "size" : 338,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_ro.properties",
+      "size" : 327,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_ru.properties",
+      "size" : 495,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_sh.properties",
+      "size" : 327,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_sk.properties",
+      "size" : 350,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_sl.properties",
+      "size" : 335,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_sv.properties",
+      "size" : 345,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_th.properties",
+      "size" : 470,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_tr.properties",
+      "size" : 331,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_uk.properties",
+      "size" : 585,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_vi.properties",
+      "size" : 381,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_zh_CN.properties",
+      "size" : 362,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/detailTemplates/i18n/i18n_zh_TW.properties",
+      "size" : 362,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/extensionAPI/NavigationController.js",
+      "size" : 2639,
+      "compressedSize" : 732,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/Object.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/extensionAPI/ReuseComponentSupport.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n        (c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 7101,
+      "compressedSize" : 1855,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/generic/template/extensionAPI/extensionAPI.js", "sap/ui/core/UIComponent.js", "sap/ui/model/json/JSONModel.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/extensionAPI/UIMode.js",
+      "description" : "Provides inactive support for controls",
+      "size" : 714,
+      "compressedSize" : 231,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/extensionAPI/extensionAPI.js",
+      "size" : 1996,
+      "compressedSize" : 237,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/generic/template/lib/TemplateAssembler.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/AnalyticalTableColumns.fragment.xml",
+      "size" : 10668,
+      "required" : ["sap/m/Link.js", "sap/m/ProgressIndicator.js", "sap/m/RatingIndicator.js", "sap/m/Text.js", "sap/m/VBox.js", "sap/suite/ui/generic/template/fragments/ContactDetails.fragment.xml", "sap/suite/ui/generic/template/fragments/InlineButton.fragment.xml", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js", "sap/ui/core/InvisibleText.js", "sap/ui/table/AnalyticalColumn.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/AnnotatedActionButtons.fragment.xml",
+      "size" : 872,
+      "required" : ["sap/suite/ui/generic/template/fragments/ToolbarButton.fragment.xml", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/BreakoutActions.fragment.xml",
+      "size" : 1189,
+      "required" : ["sap/m/Button.js", "sap/m/OverflowToolbarLayoutData.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/CRUDActionButtons.fragment.xml",
+      "size" : 4454,
+      "required" : ["sap/m/Button.js", "sap/m/OverflowToolbarButton.js", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/CRUDActionButtons_ForTableTabs.fragment.xml",
+      "size" : 3857,
+      "required" : ["sap/m/Button.js", "sap/m/OverflowToolbarButton.js", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/ContactDetails.fragment.xml",
+      "size" : 327,
+      "required" : ["sap/m/QuickView.js", "sap/suite/ui/generic/template/fragments/ContactDetailsQuickViewGroup.fragment.xml", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/ContactDetailsQuickViewGroup.fragment.xml",
+      "size" : 3229,
+      "required" : ["sap/m/QuickViewGroup.js", "sap/m/QuickViewGroupElement.js", "sap/m/QuickViewPage.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/ContactDetailsQuickViewGroupReplica.fragment.xml",
+      "size" : 9029,
+      "required" : ["sap/m/FormattedText.js", "sap/m/Label.js", "sap/m/Link.js", "sap/m/Text.js", "sap/m/VBox.js", "sap/ui/core/Fragment.js", "sap/ui/core/Icon.js", "sap/ui/layout/HorizontalLayout.js", "sap/ui/layout/VerticalLayout.js", "sap/ui/layout/form/Form.js", "sap/ui/layout/form/FormContainer.js", "sap/ui/layout/form/FormElement.js", "sap/ui/layout/form/ResponsiveGridLayout.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/Contacts.fragment.xml",
+      "size" : 2816,
+      "required" : ["sap/m/CustomListItem.js", "sap/m/HBox.js", "sap/m/Image.js", "sap/m/Link.js", "sap/m/List.js", "sap/m/Text.js", "sap/m/VBox.js", "sap/suite/ui/generic/template/fragments/ContactDetails.fragment.xml", "sap/ui/core/Fragment.js", "sap/ui/core/Icon.js", "sap/ui/layout/GridData.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/DataLoss.fragment.xml",
+      "size" : 553,
+      "required" : ["sap/m/Button.js", "sap/m/Dialog.js", "sap/m/Text.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/DataLossTechnicalError.fragment.xml",
+      "size" : 671,
+      "required" : ["sap/m/Button.js", "sap/m/Dialog.js", "sap/m/Text.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/DeterminingActions.fragment.xml",
+      "size" : 1058,
+      "required" : ["sap/m/Button.js", "sap/m/OverflowToolbarLayoutData.js", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/DeterminingButton.fragment.xml",
+      "size" : 2086,
+      "required" : ["sap/m/Button.js", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/DiscardDraftPopover.fragment.xml",
+      "size" : 511,
+      "required" : ["sap/m/Button.js", "sap/m/Popover.js", "sap/m/Text.js", "sap/m/VBox.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/DraftAdminDataPopover.fragment.xml",
+      "size" : 2055,
+      "required" : ["sap/m/Button.js", "sap/m/Popover.js", "sap/m/Text.js", "sap/m/VBox.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/EditableHeaderFacet.fragment.xml",
+      "size" : 2132,
+      "required" : ["sap/suite/ui/generic/template/fragments/Contacts.fragment.xml", "sap/suite/ui/generic/template/fragments/RatingIndicatorFacet.fragment.xml", "sap/suite/ui/generic/template/fragments/SmartForm.fragment.xml", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/FCLActions.fragment.xml",
+      "size" : 2053,
+      "required" : ["sap/ui/core/Fragment.js", "sap/uxap/ObjectPageHeaderActionButton.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/Facet.fragment.xml",
+      "size" : 2561,
+      "required" : ["sap/suite/ui/generic/template/fragments/Contacts.fragment.xml", "sap/suite/ui/generic/template/fragments/SmartChart.fragment.xml", "sap/suite/ui/generic/template/fragments/SmartForm.fragment.xml", "sap/suite/ui/generic/template/fragments/SmartTable.fragment.xml", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/GlobalActions.fragment.xml",
+      "size" : 943,
+      "required" : ["sap/m/Button.js", "sap/m/OverflowToolbarLayoutData.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/GridTableColumns.fragment.xml",
+      "size" : 10866,
+      "required" : ["sap/m/Link.js", "sap/m/ProgressIndicator.js", "sap/m/RatingIndicator.js", "sap/m/Text.js", "sap/m/VBox.js", "sap/suite/ui/generic/template/fragments/ContactDetails.fragment.xml", "sap/suite/ui/generic/template/fragments/InlineButton.fragment.xml", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js", "sap/ui/core/InvisibleText.js", "sap/ui/table/Column.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/HeaderAddress.fragment.xml",
+      "size" : 1511,
+      "required" : ["sap/m/Label.js", "sap/m/Text.js", "sap/m/VBox.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/HeaderContactWithDetailsPopover.fragment.xml",
+      "size" : 8889,
+      "required" : ["sap/m/HBox.js", "sap/m/Label.js", "sap/m/Link.js", "sap/m/Text.js", "sap/m/VBox.js", "sap/suite/ui/generic/template/fragments/ContactDetails.fragment.xml", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js", "sap/ui/core/Icon.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/HeaderDataPoint.fragment.xml",
+      "size" : 1570,
+      "required" : ["sap/m/VBox.js", "sap/suite/ui/generic/template/fragments/HeaderDataPointContent.fragment.xml", "sap/suite/ui/generic/template/fragments/HeaderRatingIndicator.fragment.xml", "sap/suite/ui/generic/template/fragments/ProgressIndicator.fragment.xml", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/HeaderDataPointContent.fragment.xml",
+      "size" : 3777,
+      "required" : ["sap/m/Label.js", "sap/ui/comp/navpopover/SemanticObjectController.js", "sap/ui/comp/smartfield/Configuration.js", "sap/ui/comp/smartfield/ControlProposal.js", "sap/ui/comp/smartfield/ObjectStatus.js", "sap/ui/comp/smartfield/SmartField.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/HeaderFacet.fragment.xml",
+      "size" : 3066,
+      "required" : ["sap/suite/ui/generic/template/fragments/HeaderAddress.fragment.xml", "sap/suite/ui/generic/template/fragments/HeaderContactWithDetailsPopover.fragment.xml", "sap/suite/ui/generic/template/fragments/HeaderDataPoint.fragment.xml", "sap/suite/ui/generic/template/fragments/HeaderForm.fragment.xml", "sap/suite/ui/generic/template/fragments/HeaderPlainText.fragment.xml", "sap/suite/ui/generic/template/fragments/SmartMicroChart.fragment.xml", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/HeaderForm.fragment.xml",
+      "size" : 1559,
+      "required" : ["sap/m/Text.js", "sap/m/VBox.js", "sap/suite/ui/generic/template/fragments/HeaderFormDataField.fragment.xml", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/HeaderFormDataField.fragment.xml",
+      "size" : 7947,
+      "required" : ["sap/m/HBox.js", "sap/m/Label.js", "sap/m/Link.js", "sap/suite/ui/generic/template/fragments/ContactDetails.fragment.xml", "sap/ui/comp/navpopover/SemanticObjectController.js", "sap/ui/comp/smartfield/Configuration.js", "sap/ui/comp/smartfield/ControlProposal.js", "sap/ui/comp/smartfield/ObjectStatus.js", "sap/ui/comp/smartfield/SmartField.js", "sap/ui/comp/smartfield/SmartLabel.js", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/HeaderPlainText.fragment.xml",
+      "size" : 1953,
+      "required" : ["sap/m/Text.js", "sap/m/VBox.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/HeaderRatingIndicator.fragment.xml",
+      "size" : 3251,
+      "required" : ["sap/m/Label.js", "sap/m/RatingIndicator.js", "sap/m/Title.js", "sap/m/VBox.js", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/InlineButton.fragment.xml",
+      "size" : 4671,
+      "required" : ["sap/m/Button.js", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/InlineButton_ForTableTabs.fragment.xml",
+      "size" : 4433,
+      "required" : ["sap/m/Button.js", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/MessagePage.controller.js",
+      "size" : 278,
+      "compressedSize" : 197,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/mvc/Controller.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/MessagePage.view.xml",
+      "size" : 441,
+      "required" : ["sap/m/MessagePage.js", "sap/suite/ui/generic/template/fragments/MessagePage.controller.js", "sap/ui/core/mvc/XMLView.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/MessagePopover.fragment.xml",
+      "size" : 319,
+      "required" : ["sap/m/MessagePopover.js", "sap/m/MessagePopoverItem.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/ProgressIndicator.fragment.xml",
+      "size" : 2537,
+      "required" : ["sap/m/Label.js", "sap/m/ProgressIndicator.js", "sap/m/Title.js", "sap/m/VBox.js", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/QuickViewSmartForm.fragment.xml",
+      "size" : 7729,
+      "required" : ["sap/m/Link.js", "sap/m/Text.js", "sap/m/VBox.js", "sap/suite/ui/generic/template/fragments/ContactDetailsQuickViewGroupReplica.fragment.xml", "sap/suite/ui/generic/template/fragments/SmartFormDataField.fragment.xml", "sap/ui/comp/smartform/Group.js", "sap/ui/comp/smartform/Layout.js", "sap/ui/comp/smartform/SmartForm.js", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js", "sap/ui/core/Icon.js", "sap/ui/layout/HorizontalLayout.js", "sap/ui/layout/VerticalLayout.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/QuickViewSmartForm.view.xml",
+      "size" : 334,
+      "required" : ["sap/suite/ui/generic/template/fragments/QuickViewSmartForm.fragment.xml", "sap/ui/core/Fragment.js", "sap/ui/core/mvc/XMLView.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/RatingIndicatorFacet.fragment.xml",
+      "size" : 2292,
+      "required" : ["sap/m/HBox.js", "sap/m/Label.js", "sap/m/RatingIndicator.js", "sap/m/Text.js", "sap/m/VBox.js", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/RowActions.fragment.xml",
+      "size" : 2850,
+      "required" : ["sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js", "sap/ui/table/RowAction.js", "sap/ui/table/RowActionItem.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/RowActions_ForTableTabs.fragment.xml",
+      "size" : 2583,
+      "required" : ["sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js", "sap/ui/table/RowAction.js", "sap/ui/table/RowActionItem.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/SearchField.fragment.xml",
+      "size" : 562,
+      "required" : ["sap/m/OverflowToolbarLayoutData.js", "sap/m/SearchField.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/ShareSheet.fragment.xml",
+      "size" : 769,
+      "required" : ["sap/m/ActionSheet.js", "sap/m/Button.js", "sap/m/Popover.js", "sap/ui/core/Fragment.js", "sap/ushell/ui/footerbar/AddBookmarkButton.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/SmartChart.fragment.xml",
+      "size" : 4089,
+      "required" : ["sap/m/Button.js", "sap/m/OverflowToolbar.js", "sap/m/OverflowToolbarLayoutData.js", "sap/m/ToolbarSpacer.js", "sap/suite/ui/generic/template/fragments/AnnotatedActionButtons.fragment.xml", "sap/ui/comp/smartchart/SmartChart.js", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js", "sap/ui/layout/GridData.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/SmartForm.fragment.xml",
+      "size" : 7968,
+      "required" : ["sap/suite/ui/generic/template/fragments/SmartFormDataField.fragment.xml", "sap/ui/comp/navpopover/SemanticObjectController.js", "sap/ui/comp/smartform/Group.js", "sap/ui/comp/smartform/Layout.js", "sap/ui/comp/smartform/SmartForm.js", "sap/ui/core/CustomData.js", "sap/ui/core/ExtensionPoint.js", "sap/ui/core/Fragment.js", "sap/ui/layout/GridData.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/SmartFormDataField.fragment.xml",
+      "size" : 6116,
+      "required" : ["sap/m/Link.js", "sap/suite/ui/generic/template/fragments/ContactDetails.fragment.xml", "sap/ui/comp/navpopover/SemanticObjectController.js", "sap/ui/comp/smartfield/ControlProposal.js", "sap/ui/comp/smartfield/ObjectStatus.js", "sap/ui/comp/smartfield/SmartField.js", "sap/ui/comp/smartform/GroupElement.js", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/SmartMicroChart.fragment.xml",
+      "size" : 2479,
+      "required" : ["sap/m/Label.js", "sap/m/VBox.js", "sap/ui/comp/smartmicrochart/SmartMicroChart.js", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/SmartTable.fragment.xml",
+      "size" : 15225,
+      "required" : ["sap/m/Button.js", "sap/m/OverflowToolbar.js", "sap/m/OverflowToolbarLayoutData.js", "sap/m/Table.js", "sap/m/ToolbarSpacer.js", "sap/suite/ui/generic/template/fragments/AnalyticalTableColumns.fragment.xml", "sap/suite/ui/generic/template/fragments/AnnotatedActionButtons.fragment.xml", "sap/suite/ui/generic/template/fragments/CRUDActionButtons.fragment.xml", "sap/suite/ui/generic/template/fragments/GridTableColumns.fragment.xml", "sap/suite/ui/generic/template/fragments/RowActions.fragment.xml", "sap/suite/ui/generic/template/fragments/SearchField.fragment.xml", "sap/suite/ui/generic/template/fragments/TableColumns.fragment.xml", "sap/suite/ui/generic/template/fragments/TreeTableColumns.fragment.xml", "sap/ui/comp/navpopover/SemanticObjectController.js", "sap/ui/comp/smarttable/SmartTable.js", "sap/ui/core/CustomData.js", "sap/ui/core/ExtensionPoint.js", "sap/ui/core/Fragment.js", "sap/ui/layout/GridData.js", "sap/ui/table/AnalyticalTable.js", "sap/ui/table/RowSettings.js", "sap/ui/table/Table.js", "sap/ui/table/TreeTable.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/TableActionButtons.fragment.xml",
+      "size" : 2895,
+      "required" : ["sap/m/Button.js", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/TableActionButtons_ForTableTabs.fragment.xml",
+      "size" : 2682,
+      "required" : ["sap/m/Button.js", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/TableColumns.fragment.xml",
+      "size" : 26223,
+      "required" : ["sap/m/Column.js", "sap/m/ColumnListItem.js", "sap/m/Image.js", "sap/m/Link.js", "sap/m/ProgressIndicator.js", "sap/m/RatingIndicator.js", "sap/m/Text.js", "sap/m/VBox.js", "sap/suite/ui/generic/template/ListReport/view/fragments/DraftInfoBox.fragment.xml", "sap/suite/ui/generic/template/fragments/ContactDetails.fragment.xml", "sap/suite/ui/generic/template/fragments/InlineButton.fragment.xml", "sap/ui/comp/navpopover/SmartLink.js", "sap/ui/comp/smartmicrochart/SmartMicroChart.js", "sap/ui/core/CustomData.js", "sap/ui/core/ExtensionPoint.js", "sap/ui/core/Fragment.js", "sap/ui/core/InvisibleText.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/ToolbarButton.fragment.xml",
+      "size" : 5285,
+      "required" : ["sap/m/Button.js", "sap/m/OverflowToolbarLayoutData.js", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/ToolbarButton_ForTableTabs.fragment.xml",
+      "size" : 4809,
+      "required" : ["sap/m/Button.js", "sap/m/OverflowToolbarLayoutData.js", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/TreeTableColumns.fragment.xml",
+      "size" : 10325,
+      "required" : ["sap/m/Link.js", "sap/m/ProgressIndicator.js", "sap/m/RatingIndicator.js", "sap/m/Text.js", "sap/m/VBox.js", "sap/suite/ui/generic/template/fragments/ContactDetails.fragment.xml", "sap/suite/ui/generic/template/fragments/InlineButton.fragment.xml", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js", "sap/ui/core/InvisibleText.js", "sap/ui/table/Column.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/fragments/lists/ShareSheet.fragment.xml",
+      "size" : 968,
+      "required" : ["sap/m/ActionSheet.js", "sap/m/Button.js", "sap/m/Popover.js", "sap/ui/core/Fragment.js", "sap/ushell/ui/footerbar/AddBookmarkButton.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/js/AnnotationHelper.js",
+      "size" : 128862,
+      "compressedSize" : 61557,
+      "required" : ["jquery.sap.global.js", "sap/ui/comp/smartfield/SmartField.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/js/AnnotationHelperMultipleViews.js",
+      "size" : 1323,
+      "compressedSize" : 678,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/generic/template/js/AnnotationHelper.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/js/AnnotationHelperReuseComponents.js",
+      "size" : 3323,
+      "compressedSize" : 1712,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/generic/template/extensionAPI/UIMode.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/js/QuickTemplates/AnnotationHelper.js",
+      "size" : 17010,
+      "compressedSize" : 8019,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/Object.js", "sap/ui/model/Context.js", "sap/ui/model/json/JSONModel.js", "sap/ui/model/odata/AnnotationHelper.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/js/QuickTemplates/ODataModelHelper.js",
+      "size" : 12389,
+      "compressedSize" : 5744,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/generic/template/js/QuickTemplates/AnnotationHelper.js", "sap/ui/base/Object.js", "sap/ui/model/Context.js", "sap/ui/model/odata/AnnotationHelper.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/js/QuickTemplates/QuickActionBaseController.js",
+      "size" : 7850,
+      "compressedSize" : 3694,
+      "required" : ["jquery.sap.global.js", "sap/m/MessageBox.js", "sap/suite/ui/generic/template/js/QuickTemplates/AnnotationHelper.js", "sap/ui/core/mvc/Controller.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/js/QuickTemplates/QuickCreateAPI.js",
+      "description" : "global sap,Promise",
+      "size" : 17980,
+      "compressedSize" : 8129,
+      "required" : ["jquery.sap.global.js", "sap/m/MessageToast.js", "sap/ui/base/ManagedObject.js", "sap/ui/generic/app/transaction/DraftContext.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/js/QuickTemplates/QuickTemplateComponentFactory.js",
+      "description" : "global Promise",
+      "size" : 6522,
+      "compressedSize" : 3567,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/Object.js", "sap/ui/core/UIComponent.js", "sap/ui/core/mvc/ViewType.js", "sap/ui/generic/app/ApplicationController.js", "sap/ui/model/json/JSONModel.js", "sap/ui/model/resource/ResourceModel.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/AppComponent.js",
+      "description" : "-----------------------------------------------------------------------------------------------------------------------------------------------------------------",
+      "size" : 22015,
+      "compressedSize" : 7119,
+      "required" : ["jquery.sap.global.js", "sap/f/FlexibleColumnLayout.js", "sap/m/NavContainer.js", "sap/suite/ui/generic/template/lib/Application.js", "sap/suite/ui/generic/template/lib/BusyHelper.js", "sap/suite/ui/generic/template/lib/CRUDHelper.js", "sap/suite/ui/generic/template/lib/NavigationController.js", "sap/suite/ui/generic/template/lib/ProcessObserver.js", "sap/suite/ui/generic/template/lib/TemplateAssembler.js", "sap/suite/ui/generic/template/lib/ViewDependencyHelper.js", "sap/suite/ui/generic/template/lib/testableHelper.js", "sap/suite/ui/generic/template/library.js", "sap/ui/core/UIComponent.js", "sap/ui/generic/app/ApplicationController.js", "sap/ui/model/Filter.js", "sap/ui/model/FilterOperator.js", "sap/ui/model/json/JSONModel.js", "sap/ui/model/resource/ResourceModel.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/Application.js",
+      "size" : 18874,
+      "compressedSize" : 7821,
+      "required" : ["jquery.sap.global.js", "sap/m/ActionSheet.js", "sap/m/Dialog.js", "sap/m/MessageToast.js", "sap/m/Popover.js", "sap/suite/ui/generic/template/lib/ContextBookkeeping.js", "sap/suite/ui/generic/template/lib/routingHelper.js", "sap/suite/ui/generic/template/lib/testableHelper.js", "sap/ui/Device.js", "sap/ui/base/Object.js", "sap/ui/core/routing/History.js", "sap/ui/core/routing/HistoryDirection.js", "sap/ui/model/json/JSONModel.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/BusyHelper.js",
+      "size" : 8467,
+      "compressedSize" : 1367,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/generic/template/lib/MessageUtils.js", "sap/suite/ui/generic/template/lib/testableHelper.js", "sap/ui/base/Object.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/CRUDHelper.js",
+      "size" : 12241,
+      "compressedSize" : 4529,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/generic/template/lib/MessageUtils.js", "sap/ui/base/Object.js", "sap/ui/model/Context.js", "sap/ui/model/Filter.js", "sap/ui/model/FilterOperator.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/CRUDManager.js",
+      "size" : 25743,
+      "compressedSize" : 7466,
+      "required" : ["jquery.sap.global.js", "sap/m/MessageBox.js", "sap/m/MessageToast.js", "sap/suite/ui/generic/template/lib/CRUDHelper.js", "sap/suite/ui/generic/template/lib/MessageUtils.js", "sap/suite/ui/generic/template/lib/testableHelper.js", "sap/ui/base/Object.js", "sap/ui/generic/app/util/ActionUtil.js", "sap/ui/generic/app/util/ModelUtil.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/CommonEventHandlers.js",
+      "size" : 106888,
+      "compressedSize" : 40108,
+      "required" : ["jquery.sap.global.js", "sap/m/MessageBox.js", "sap/m/MessageToast.js", "sap/m/Select.js", "sap/m/Table.js", "sap/suite/ui/generic/template/lib/testableHelper.js", "sap/ui/base/Object.js", "sap/ui/comp/smartfilterbar/SmartFilterBar.js", "sap/ui/core/format/DateFormat.js", "sap/ui/core/mvc/ViewType.js", "sap/ui/model/Filter.js", "sap/ui/model/Sorter.js", "sap/ui/model/json/JSONModel.js", "sap/ui/model/odata/type/Time.js", "sap/ui/table/AnalyticalTable.js", "sap/ui/table/Table.js", "sap/ui/table/TreeTable.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/CommonUtils.js",
+      "size" : 47303,
+      "compressedSize" : 17689,
+      "required" : ["jquery.sap.global.js", "sap/m/ListBase.js", "sap/m/MessageBox.js", "sap/m/Table.js", "sap/suite/ui/generic/template/lib/testableHelper.js", "sap/ui/Device.js", "sap/ui/base/Object.js", "sap/ui/comp/smarttable/SmartTable.js", "sap/ui/generic/app/navigation/service/NavError.js", "sap/ui/generic/app/navigation/service/NavigationHandler.js", "sap/ui/model/Context.js", "sap/ui/model/json/JSONModel.js", "sap/ui/table/Table.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/ComponentUtils.js",
+      "size" : 15508,
+      "compressedSize" : 5750,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/Object.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/ContextBookkeeping.js",
+      "size" : 14314,
+      "compressedSize" : 2419,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/Object.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/FlexEnabler.js",
+      "size" : 503,
+      "compressedSize" : 269,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/FlexibleColumnLayoutHandler.js",
+      "size" : 33772,
+      "compressedSize" : 12831,
+      "required" : ["jquery.sap.global.js", "sap/f/FlexibleColumnLayoutSemanticHelper.js", "sap/f/LayoutType.js", "sap/suite/ui/generic/template/lib/routingHelper.js", "sap/ui/base/Object.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/MessageButtonHelper.js",
+      "size" : 9672,
+      "compressedSize" : 2720,
+      "required" : ["jquery.sap.global.js", "sap/m/MessagePopover.js", "sap/m/MessagePopoverItem.js", "sap/suite/ui/generic/template/lib/testableHelper.js", "sap/ui/base/Object.js", "sap/ui/model/Filter.js", "sap/ui/model/FilterOperator.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/MessageUtils.js",
+      "description" : "Class containing static methods for message handling.",
+      "size" : 7704,
+      "compressedSize" : 3042,
+      "required" : ["jquery.sap.global.js", "sap/m/MessageBox.js", "sap/ui/generic/app/util/MessageUtil.js", "sap/ui/generic/app/util/ModelUtil.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/NavigationController.js",
+      "description" : "------------------------------------------------------------------------------------------------------------",
+      "size" : 53938,
+      "compressedSize" : 15517,
+      "required" : ["jquery.sap.global.js", "sap/m/Link.js", "sap/m/MessageBox.js", "sap/m/MessagePage.js", "sap/suite/ui/generic/template/lib/ProcessObserver.js", "sap/suite/ui/generic/template/lib/TemplateComponent.js", "sap/suite/ui/generic/template/lib/routingHelper.js", "sap/suite/ui/generic/template/lib/testableHelper.js", "sap/ui/base/Object.js", "sap/ui/core/ComponentContainer.js", "sap/ui/core/routing/HashChanger.js", "sap/ui/core/routing/History.js", "sap/ui/core/routing/HistoryDirection.js", "sap/ui/model/Filter.js", "sap/ui/model/FilterOperator.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/ProcessObserver.js",
+      "description" : "It is considered to be running when at least one of the contained processes is running.",
+      "size" : 5858,
+      "compressedSize" : 916,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/Object.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/TemplateAssembler.js",
+      "description" : "- getExtensionAPIPromise provides access to the instance of the extensionAPI suitable for a certain control",
+      "size" : 24010,
+      "compressedSize" : 7121,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/generic/template/lib/Application.js", "sap/suite/ui/generic/template/lib/CRUDManager.js", "sap/suite/ui/generic/template/lib/CommonEventHandlers.js", "sap/suite/ui/generic/template/lib/CommonUtils.js", "sap/suite/ui/generic/template/lib/ComponentUtils.js", "sap/suite/ui/generic/template/lib/TemplateComponent.js", "sap/suite/ui/generic/template/lib/TemplateViewController.js", "sap/suite/ui/generic/template/lib/ViewDependencyHelper.js", "sap/suite/ui/generic/template/lib/routingHelper.js", "sap/suite/ui/generic/template/lib/testableHelper.js", "sap/ui/core/mvc/View.js", "sap/ui/model/json/JSONModel.js", "sap/ui/model/resource/ResourceModel.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/TemplateComponent.js",
+      "size" : 18167,
+      "compressedSize" : 6983,
+      "required" : ["jquery.sap.global.js", "sap/ui/Device.js", "sap/ui/core/Component.js", "sap/ui/core/CustomizingConfiguration.js", "sap/ui/core/UIComponent.js", "sap/ui/core/mvc/ViewType.js", "sap/ui/model/json/JSONModel.js", "sap/ui/model/odata/AnnotationHelper.js", "sap/ui/model/resource/ResourceModel.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/TemplateViewController.js",
+      "size" : 270,
+      "compressedSize" : 208,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/mvc/Controller.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/ViewDependencyHelper.js",
+      "size" : 5755,
+      "compressedSize" : 1994,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/generic/template/js/AnnotationHelper.js", "sap/suite/ui/generic/template/lib/testableHelper.js", "sap/ui/base/Object.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n.properties",
+      "size" : 14406,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_ar.properties",
+      "size" : 23915,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_bg.properties",
+      "size" : 27219,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_ca.properties",
+      "size" : 15013,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_cs.properties",
+      "size" : 15251,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_da.properties",
+      "size" : 14461,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_de.properties",
+      "size" : 15534,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_el.properties",
+      "size" : 28681,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_en.properties",
+      "size" : 14309,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_en_US_sappsd.properties",
+      "size" : 29823,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_en_US_saptrc.properties",
+      "size" : 16195,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_es.properties",
+      "size" : 14902,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_et.properties",
+      "size" : 14558,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_fi.properties",
+      "size" : 15221,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_fr.properties",
+      "size" : 15738,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_hi.properties",
+      "size" : 27209,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_hr.properties",
+      "size" : 14659,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_hu.properties",
+      "size" : 15979,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_it.properties",
+      "size" : 14964,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_iw.properties",
+      "size" : 23090,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_ja.properties",
+      "size" : 20062,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_kk.properties",
+      "size" : 26689,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_ko.properties",
+      "size" : 19219,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_lt.properties",
+      "size" : 15391,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_lv.properties",
+      "size" : 15424,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_ms.properties",
+      "size" : 14408,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_nl.properties",
+      "size" : 14822,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_no.properties",
+      "size" : 14584,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_pl.properties",
+      "size" : 15408,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_pt.properties",
+      "size" : 15582,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_ro.properties",
+      "size" : 15386,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_ru.properties",
+      "size" : 26614,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_sh.properties",
+      "size" : 14776,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_sk.properties",
+      "size" : 15559,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_sl.properties",
+      "size" : 14638,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_sv.properties",
+      "size" : 14668,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_th.properties",
+      "size" : 26296,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_tr.properties",
+      "size" : 15186,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_uk.properties",
+      "size" : 25964,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_vi.properties",
+      "size" : 19796,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_zh_CN.properties",
+      "size" : 16396,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/i18n/i18n_zh_TW.properties",
+      "size" : 16367,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/routingHelper.js",
+      "description" : "Static helper class of NavigationController used to initialize the routing of the app during startup More precisely the following tasks are performed: - Create routes from the pages-section of the manifest - Process startup parameters - Finally, initialize router Note that all methods of this class use a parameter oNavigationControllerProxy. This is a copy of the public NavigationController enhanced by attributes oAppComponent, oRouter, oTemplateContract, and oHashChanger and a method fnInitializationResolve (which is to be called, when everything is done).",
+      "size" : 48461,
+      "compressedSize" : 17131,
+      "required" : ["jquery.sap.global.js", "sap/f/FlexibleColumnLayout.js", "sap/m/MessageBox.js", "sap/m/routing/Targets.js", "sap/suite/ui/generic/template/js/AnnotationHelperReuseComponents.js", "sap/suite/ui/generic/template/lib/CRUDHelper.js", "sap/suite/ui/generic/template/lib/FlexibleColumnLayoutHandler.js", "sap/suite/ui/generic/template/lib/testableHelper.js", "sap/ui/generic/app/util/ModelUtil.js", "sap/ui/model/Filter.js", "sap/ui/model/FilterOperator.js", "sap/ui/model/json/JSONModel.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/lib/testableHelper.js",
+      "size" : 11080,
+      "compressedSize" : 1746,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/library-preload.js",
+      "size" : 1029957,
+      "required" : ["jquery.sap.global.js", "sap/ca/ui/utils/Lessifier.js", "sap/f/DynamicPage.js", "sap/f/DynamicPageHeader.js", "sap/f/DynamicPageTitle.js", "sap/f/FlexibleColumnLayout.js", "sap/f/FlexibleColumnLayoutSemanticHelper.js", "sap/f/LayoutType.js", "sap/m/ActionSheet.js", "sap/m/Bar.js", "sap/m/BusyIndicator.js", "sap/m/Button.js", "sap/m/ButtonType.js", "sap/m/CheckBox.js", "sap/m/Column.js", "sap/m/ColumnListItem.js", "sap/m/CustomListItem.js", "sap/m/Dialog.js", "sap/m/DraftIndicator.js", "sap/m/FlexBox.js", "sap/m/FlexItemData.js", "sap/m/FormattedText.js", "sap/m/HBox.js", "sap/m/HeaderContainer.js", "sap/m/IconTabBar.js", "sap/m/IconTabFilter.js", "sap/m/Image.js", "sap/m/Label.js", "sap/m/Link.js", "sap/m/List.js", "sap/m/ListBase.js", "sap/m/ListSeparators.js", "sap/m/MessageBox.js", "sap/m/MessagePage.js", "sap/m/MessagePopover.js", "sap/m/MessagePopoverItem.js", "sap/m/MessageToast.js", "sap/m/NavContainer.js", "sap/m/NumericContent.js", "sap/m/ObjectIdentifier.js", "sap/m/ObjectMarker.js", "sap/m/OverflowToolbar.js", "sap/m/OverflowToolbarButton.js", "sap/m/OverflowToolbarLayoutData.js", "sap/m/Popover.js", "sap/m/ProgressIndicator.js", "sap/m/QuickView.js", "sap/m/QuickViewGroup.js", "sap/m/QuickViewGroupElement.js", "sap/m/QuickViewPage.js", "sap/m/RatingIndicator.js", "sap/m/SearchField.js", "sap/m/SegmentedButton.js", "sap/m/SegmentedButtonItem.js", "sap/m/Select.js", "sap/m/StandardListItem.js", "sap/m/Table.js", "sap/m/Text.js", "sap/m/TextArea.js", "sap/m/Title.js", "sap/m/Toolbar.js", "sap/m/ToolbarDesign.js", "sap/m/ToolbarSpacer.js", "sap/m/VBox.js", "sap/m/routing/Targets.js", "sap/suite/ui/generic/template/AnalyticalListPage/controller/KpiCardController.controller.js", "sap/suite/ui/microchart/InteractiveBarChart.js", "sap/suite/ui/microchart/InteractiveBarChartBar.js", "sap/suite/ui/microchart/InteractiveDonutChart.js", "sap/suite/ui/microchart/InteractiveDonutChartSegment.js", "sap/suite/ui/microchart/InteractiveLineChart.js", "sap/suite/ui/microchart/InteractiveLineChartPoint.js", "sap/ui/Device.js", "sap/ui/base/EventProvider.js", "sap/ui/base/ManagedObject.js", "sap/ui/base/Object.js", "sap/ui/comp/navpopover/LinkData.js", "sap/ui/comp/navpopover/SemanticObjectController.js", "sap/ui/comp/navpopover/SmartLink.js", "sap/ui/comp/odata/MetadataAnalyser.js", "sap/ui/comp/odata/ODataModelUtil.js", "sap/ui/comp/personalization/Util.js", "sap/ui/comp/smartchart/SmartChart.js", "sap/ui/comp/smartfield/Configuration.js", "sap/ui/comp/smartfield/ControlProposal.js", "sap/ui/comp/smartfield/ObjectStatus.js", "sap/ui/comp/smartfield/SmartField.js", "sap/ui/comp/smartfield/SmartLabel.js", "sap/ui/comp/smartfilterbar/ControlConfiguration.js", "sap/ui/comp/smartfilterbar/FilterProvider.js", "sap/ui/comp/smartfilterbar/SmartFilterBar.js", "sap/ui/comp/smartform/Group.js", "sap/ui/comp/smartform/GroupElement.js", "sap/ui/comp/smartform/Layout.js", "sap/ui/comp/smartform/SmartForm.js", "sap/ui/comp/smartmicrochart/SmartMicroChart.js", "sap/ui/comp/smarttable/SmartTable.js", "sap/ui/comp/smartvariants/PersonalizableInfo.js", "sap/ui/comp/smartvariants/SmartVariantManagement.js", "sap/ui/core/Component.js", "sap/ui/core/ComponentContainer.js", "sap/ui/core/Control.js", "sap/ui/core/CustomData.js", "sap/ui/core/CustomizingConfiguration.js", "sap/ui/core/ExtensionPoint.js", "sap/ui/core/Fragment.js", "sap/ui/core/Icon.js", "sap/ui/core/InvisibleText.js", "sap/ui/core/Item.js", "sap/ui/core/ResizeHandler.js", "sap/ui/core/UIComponent.js", "sap/ui/core/format/DateFormat.js", "sap/ui/core/format/NumberFormat.js", "sap/ui/core/library.js", "sap/ui/core/mvc/Controller.js", "sap/ui/core/mvc/View.js", "sap/ui/core/mvc/ViewType.js", "sap/ui/core/mvc/XMLView.js", "sap/ui/core/routing/HashChanger.js", "sap/ui/core/routing/History.js", "sap/ui/core/routing/HistoryDirection.js", "sap/ui/generic/app/AppComponent.js", "sap/ui/generic/app/ApplicationController.js", "sap/ui/generic/app/navigation/service/NavError.js", "sap/ui/generic/app/navigation/service/NavigationHandler.js", "sap/ui/generic/app/navigation/service/SelectionVariant.js", "sap/ui/generic/app/transaction/DraftContext.js", "sap/ui/generic/app/util/ActionUtil.js", "sap/ui/generic/app/util/MessageUtil.js", "sap/ui/generic/app/util/ModelUtil.js", "sap/ui/layout/Grid.js", "sap/ui/layout/GridData.js", "sap/ui/layout/HorizontalLayout.js", "sap/ui/layout/VerticalLayout.js", "sap/ui/layout/form/Form.js", "sap/ui/layout/form/FormContainer.js", "sap/ui/layout/form/FormElement.js", "sap/ui/layout/form/ResponsiveGridLayout.js", "sap/ui/layout/form/SimpleForm.js", "sap/ui/model/Context.js", "sap/ui/model/Filter.js", "sap/ui/model/FilterOperator.js", "sap/ui/model/FilterType.js", "sap/ui/model/Sorter.js", "sap/ui/model/analytics/odata4analytics.js", "sap/ui/model/json/JSONModel.js", "sap/ui/model/odata/AnnotationHelper.js", "sap/ui/model/odata/type/Time.js", "sap/ui/model/resource/ResourceModel.js", "sap/ui/table/AnalyticalColumn.js", "sap/ui/table/AnalyticalTable.js", "sap/ui/table/Column.js", "sap/ui/table/RowAction.js", "sap/ui/table/RowActionItem.js", "sap/ui/table/RowSettings.js", "sap/ui/table/Table.js", "sap/ui/table/TreeTable.js", "sap/ui/thirdparty/d3.js", "sap/ushell/ui/footerbar/AddBookmarkButton.js", "sap/uxap/BlockBase.js", "sap/uxap/ObjectPageHeader.js", "sap/uxap/ObjectPageHeaderActionButton.js", "sap/uxap/ObjectPageLayout.js", "sap/uxap/ObjectPageLazyLoader.js", "sap/uxap/ObjectPageSection.js", "sap/uxap/ObjectPageSubSection.js", "sap/viz/ui5/api/env/Format.js", "sap/viz/ui5/format/ChartFormatter.js", "{component>componentName}/Component.js", "{parameter>/settings/routeConfig/implementingComponent/componentName}/Component.js"],
+      "includes" : ["sap/suite/ui/generic/template/AnalyticalListPage/Component.js", "sap/suite/ui/generic/template/AnalyticalListPage/control/KpiTag.js", "sap/suite/ui/generic/template/AnalyticalListPage/control/SmartFilterBarExt.js", "sap/suite/ui/generic/template/AnalyticalListPage/control/visualfilterbar/FilterItem.js", "sap/suite/ui/generic/template/AnalyticalListPage/control/visualfilterbar/FilterItemMicroBar.js", "sap/suite/ui/generic/template/AnalyticalListPage/control/visualfilterbar/FilterItemMicroChart.js", "sap/suite/ui/generic/template/AnalyticalListPage/control/visualfilterbar/FilterItemMicroDonut.js", "sap/suite/ui/generic/template/AnalyticalListPage/control/visualfilterbar/FilterItemMicroLine.js", "sap/suite/ui/generic/template/AnalyticalListPage/control/visualfilterbar/SmartVisualFilterBar.designtime.js", "sap/suite/ui/generic/template/AnalyticalListPage/control/visualfilterbar/SmartVisualFilterBar.js", "sap/suite/ui/generic/template/AnalyticalListPage/control/visualfilterbar/VisualFilterProvider.js", "sap/suite/ui/generic/template/AnalyticalListPage/controller/ContentAreaController.js", "sap/suite/ui/generic/template/AnalyticalListPage/controller/ControllerImplementation.js", "sap/suite/ui/generic/template/AnalyticalListPage/controller/DetailController.js", "sap/suite/ui/generic/template/AnalyticalListPage/controller/FilterBarController.js", "sap/suite/ui/generic/template/AnalyticalListPage/controller/KpiCardController.js", "sap/suite/ui/generic/template/AnalyticalListPage/controller/KpiTagController.js", "sap/suite/ui/generic/template/AnalyticalListPage/controller/SmartChartController.js", "sap/suite/ui/generic/template/AnalyticalListPage/controller/ToolbarController.js", "sap/suite/ui/generic/template/AnalyticalListPage/controller/VisualFilterBarController.js", "sap/suite/ui/generic/template/AnalyticalListPage/controller/VisualFilterDialogController.js", "sap/suite/ui/generic/template/AnalyticalListPage/extensionAPI/ExtensionAPI.js", "sap/suite/ui/generic/template/AnalyticalListPage/manifest.json", "sap/suite/ui/generic/template/AnalyticalListPage/util/AnnotationHelper.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/CriticalityUtil.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/FilterUtil.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/KpiAnnotationFormatter.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/KpiAnnotationHelper.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/KpiUtil.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/KpiVizAnnotationHelper.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/ModelUtil.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/OperationCode.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/V4Terms.js", "sap/suite/ui/generic/template/AnalyticalListPage/view/AnalyticalListPage.view.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/KpiCardSizeM.view.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/ActionsFragment.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/AnalyticalTableColumns.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/AnnotatedDeterminingButton.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/ChartActions.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/ContentAreaExtension.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/ContentContainer.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/DetailSmartTable.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/DraftInfoBox.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/FilterContainer.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/GridTableColumns.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/KPITagList.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/KpiCard.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/ManifestDeterminingActions.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/MasterExtension.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/SmartChart.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/SmartChartToolbar.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/SmartFilterBar.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/SmartTableToolbar.fragment.xml", "sap/suite/ui/generic/template/Canvas/Component.js", "sap/suite/ui/generic/template/Canvas/controller/ControllerImplementation.js", "sap/suite/ui/generic/template/Canvas/extensionAPI/ExtensionAPI.js", "sap/suite/ui/generic/template/Canvas/manifest.json", "sap/suite/ui/generic/template/Canvas/view/Canvas.view.xml", "sap/suite/ui/generic/template/ListReport/AnnotationHelper.js", "sap/suite/ui/generic/template/ListReport/Component.js", "sap/suite/ui/generic/template/ListReport/controller/ControllerImplementation.js", "sap/suite/ui/generic/template/ListReport/controller/IappStateHandler.js", "sap/suite/ui/generic/template/ListReport/controller/MultipleViewsSingleTableModeHelper.js", "sap/suite/ui/generic/template/ListReport/controller/SmartChartController.js", "sap/suite/ui/generic/template/ListReport/extensionAPI/ExtensionAPI.js", "sap/suite/ui/generic/template/ListReport/extensionAPI/NonDraftTransactionController.js", "sap/suite/ui/generic/template/ListReport/manifest.json", "sap/suite/ui/generic/template/ListReport/view/ListReport.view.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/BreakoutActions.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/DefaultVariant.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/DeleteConfirmation.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/DraftInfoBox.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/DraftInfoBox_ForTableTabs.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/FullscreenPage.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/IconTabBarWithSmartTable.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/MultipleViewsSingleTableMode.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/MultipleViewsSingleTableModeItemCustomData.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/SearchField.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/SmartChartToolbar_PoC.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/SmartChartWithSmartTable_PoC.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/SmartChart_PoC.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/SmartFilterBar.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/SmartTable.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/SmartTableToolbar.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/SmartTableToolbar_ForTableTabs.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/SmartTable_ForTableTabs.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/TitleVariant.fragment.xml", "sap/suite/ui/generic/template/ObjectPage/Component.js", "sap/suite/ui/generic/template/ObjectPage/controller/ControllerImplementation.js", "sap/suite/ui/generic/template/ObjectPage/extensionAPI/DraftTransactionController.js", "sap/suite/ui/generic/template/ObjectPage/extensionAPI/ExtensionAPI.js", "sap/suite/ui/generic/template/ObjectPage/extensionAPI/NonDraftTransactionController.js", "sap/suite/ui/generic/template/ObjectPage/manifest.json", "sap/suite/ui/generic/template/ObjectPage/view/Details.view.xml", "sap/suite/ui/generic/template/ObjectPage/view/fragments/Actions.fragment.xml", "sap/suite/ui/generic/template/ObjectPage/view/fragments/Breadcrumbs.fragment.xml", "sap/suite/ui/generic/template/ObjectPage/view/fragments/ComponentSections.fragment.xml", "sap/suite/ui/generic/template/ObjectPage/view/fragments/DraftResumeDialog.fragment.xml", "sap/suite/ui/generic/template/ObjectPage/view/fragments/DummyBlock.js", "sap/suite/ui/generic/template/ObjectPage/view/fragments/DummyBlock.view.xml", "sap/suite/ui/generic/template/ObjectPage/view/fragments/Footer.fragment.xml", "sap/suite/ui/generic/template/ObjectPage/view/fragments/FormActions.fragment.xml", "sap/suite/ui/generic/template/ObjectPage/view/fragments/FormBreakoutActions.fragment.xml", "sap/suite/ui/generic/template/ObjectPage/view/fragments/HeaderContent.fragment.xml", "sap/suite/ui/generic/template/ObjectPage/view/fragments/ImageDialog.fragment.xml", "sap/suite/ui/generic/template/ObjectPage/view/fragments/NavigationBar.fragment.xml", "sap/suite/ui/generic/template/ObjectPage/view/fragments/RelatedAppsSheet.fragment.xml", "sap/suite/ui/generic/template/ObjectPage/view/fragments/Sections.fragment.xml", "sap/suite/ui/generic/template/ObjectPage/view/fragments/UnsavedChangesDialog.fragment.xml", "sap/suite/ui/generic/template/QuickCreate/Component.js", "sap/suite/ui/generic/template/QuickCreate/manifest.json", "sap/suite/ui/generic/template/QuickCreate/view/QuickCreate.controller.js", "sap/suite/ui/generic/template/QuickCreate/view/QuickCreate.view.xml", "sap/suite/ui/generic/template/QuickView/Component.js", "sap/suite/ui/generic/template/QuickView/manifest.json", "sap/suite/ui/generic/template/QuickView/view/QuickView.controller.js", "sap/suite/ui/generic/template/QuickView/view/QuickView.view.xml", "sap/suite/ui/generic/template/app/blankAnalyticalListPage/Component.js", "sap/suite/ui/generic/template/app/blankAnalyticalListPage/manifest.json", "sap/suite/ui/generic/template/detailTemplates/PaginatorButtonsHelper.js", "sap/suite/ui/generic/template/detailTemplates/detailUtils.js", "sap/suite/ui/generic/template/detailTemplates/fragments/PaginatorButtons.fragment.xml", "sap/suite/ui/generic/template/extensionAPI/NavigationController.js", "sap/suite/ui/generic/template/extensionAPI/ReuseComponentSupport.js", "sap/suite/ui/generic/template/extensionAPI/UIMode.js", "sap/suite/ui/generic/template/extensionAPI/extensionAPI.js", "sap/suite/ui/generic/template/fragments/AnalyticalTableColumns.fragment.xml", "sap/suite/ui/generic/template/fragments/AnnotatedActionButtons.fragment.xml", "sap/suite/ui/generic/template/fragments/BreakoutActions.fragment.xml", "sap/suite/ui/generic/template/fragments/CRUDActionButtons.fragment.xml", "sap/suite/ui/generic/template/fragments/CRUDActionButtons_ForTableTabs.fragment.xml", "sap/suite/ui/generic/template/fragments/ContactDetails.fragment.xml", "sap/suite/ui/generic/template/fragments/ContactDetailsQuickViewGroup.fragment.xml", "sap/suite/ui/generic/template/fragments/ContactDetailsQuickViewGroupReplica.fragment.xml", "sap/suite/ui/generic/template/fragments/Contacts.fragment.xml", "sap/suite/ui/generic/template/fragments/DataLoss.fragment.xml", "sap/suite/ui/generic/template/fragments/DataLossTechnicalError.fragment.xml", "sap/suite/ui/generic/template/fragments/DeterminingActions.fragment.xml", "sap/suite/ui/generic/template/fragments/DeterminingButton.fragment.xml", "sap/suite/ui/generic/template/fragments/DiscardDraftPopover.fragment.xml", "sap/suite/ui/generic/template/fragments/DraftAdminDataPopover.fragment.xml", "sap/suite/ui/generic/template/fragments/EditableHeaderFacet.fragment.xml", "sap/suite/ui/generic/template/fragments/FCLActions.fragment.xml", "sap/suite/ui/generic/template/fragments/Facet.fragment.xml", "sap/suite/ui/generic/template/fragments/GlobalActions.fragment.xml", "sap/suite/ui/generic/template/fragments/GridTableColumns.fragment.xml", "sap/suite/ui/generic/template/fragments/HeaderAddress.fragment.xml", "sap/suite/ui/generic/template/fragments/HeaderContactWithDetailsPopover.fragment.xml", "sap/suite/ui/generic/template/fragments/HeaderDataPoint.fragment.xml", "sap/suite/ui/generic/template/fragments/HeaderDataPointContent.fragment.xml", "sap/suite/ui/generic/template/fragments/HeaderFacet.fragment.xml", "sap/suite/ui/generic/template/fragments/HeaderForm.fragment.xml", "sap/suite/ui/generic/template/fragments/HeaderFormDataField.fragment.xml", "sap/suite/ui/generic/template/fragments/HeaderPlainText.fragment.xml", "sap/suite/ui/generic/template/fragments/HeaderRatingIndicator.fragment.xml", "sap/suite/ui/generic/template/fragments/InlineButton.fragment.xml", "sap/suite/ui/generic/template/fragments/InlineButton_ForTableTabs.fragment.xml", "sap/suite/ui/generic/template/fragments/MessagePage.controller.js", "sap/suite/ui/generic/template/fragments/MessagePage.view.xml", "sap/suite/ui/generic/template/fragments/MessagePopover.fragment.xml", "sap/suite/ui/generic/template/fragments/ProgressIndicator.fragment.xml", "sap/suite/ui/generic/template/fragments/QuickViewSmartForm.fragment.xml", "sap/suite/ui/generic/template/fragments/QuickViewSmartForm.view.xml", "sap/suite/ui/generic/template/fragments/RatingIndicatorFacet.fragment.xml", "sap/suite/ui/generic/template/fragments/RowActions.fragment.xml", "sap/suite/ui/generic/template/fragments/RowActions_ForTableTabs.fragment.xml", "sap/suite/ui/generic/template/fragments/SearchField.fragment.xml", "sap/suite/ui/generic/template/fragments/ShareSheet.fragment.xml", "sap/suite/ui/generic/template/fragments/SmartChart.fragment.xml", "sap/suite/ui/generic/template/fragments/SmartForm.fragment.xml", "sap/suite/ui/generic/template/fragments/SmartFormDataField.fragment.xml", "sap/suite/ui/generic/template/fragments/SmartMicroChart.fragment.xml", "sap/suite/ui/generic/template/fragments/SmartTable.fragment.xml", "sap/suite/ui/generic/template/fragments/TableActionButtons.fragment.xml", "sap/suite/ui/generic/template/fragments/TableActionButtons_ForTableTabs.fragment.xml", "sap/suite/ui/generic/template/fragments/TableColumns.fragment.xml", "sap/suite/ui/generic/template/fragments/ToolbarButton.fragment.xml", "sap/suite/ui/generic/template/fragments/ToolbarButton_ForTableTabs.fragment.xml", "sap/suite/ui/generic/template/fragments/TreeTableColumns.fragment.xml", "sap/suite/ui/generic/template/fragments/lists/ShareSheet.fragment.xml", "sap/suite/ui/generic/template/js/AnnotationHelper.js", "sap/suite/ui/generic/template/js/AnnotationHelperMultipleViews.js", "sap/suite/ui/generic/template/js/AnnotationHelperReuseComponents.js", "sap/suite/ui/generic/template/js/QuickTemplates/AnnotationHelper.js", "sap/suite/ui/generic/template/js/QuickTemplates/ODataModelHelper.js", "sap/suite/ui/generic/template/js/QuickTemplates/QuickActionBaseController.js", "sap/suite/ui/generic/template/js/QuickTemplates/QuickCreateAPI.js", "sap/suite/ui/generic/template/js/QuickTemplates/QuickTemplateComponentFactory.js", "sap/suite/ui/generic/template/lib/AppComponent.js", "sap/suite/ui/generic/template/lib/Application.js", "sap/suite/ui/generic/template/lib/BusyHelper.js", "sap/suite/ui/generic/template/lib/CRUDHelper.js", "sap/suite/ui/generic/template/lib/CRUDManager.js", "sap/suite/ui/generic/template/lib/CommonEventHandlers.js", "sap/suite/ui/generic/template/lib/CommonUtils.js", "sap/suite/ui/generic/template/lib/ComponentUtils.js", "sap/suite/ui/generic/template/lib/ContextBookkeeping.js", "sap/suite/ui/generic/template/lib/FlexEnabler.js", "sap/suite/ui/generic/template/lib/FlexibleColumnLayoutHandler.js", "sap/suite/ui/generic/template/lib/MessageButtonHelper.js", "sap/suite/ui/generic/template/lib/MessageUtils.js", "sap/suite/ui/generic/template/lib/NavigationController.js", "sap/suite/ui/generic/template/lib/ProcessObserver.js", "sap/suite/ui/generic/template/lib/TemplateAssembler.js", "sap/suite/ui/generic/template/lib/TemplateComponent.js", "sap/suite/ui/generic/template/lib/TemplateViewController.js", "sap/suite/ui/generic/template/lib/ViewDependencyHelper.js", "sap/suite/ui/generic/template/lib/routingHelper.js", "sap/suite/ui/generic/template/lib/testableHelper.js", "sap/suite/ui/generic/template/library.js", "sap/suite/ui/generic/template/manifest.json"]
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/library-preload.json",
+      "size" : 0,
+      "required" : ["jquery.sap.global.js", "sap/ca/ui/utils/Lessifier.js", "sap/f/DynamicPage.js", "sap/f/DynamicPageHeader.js", "sap/f/DynamicPageTitle.js", "sap/f/FlexibleColumnLayout.js", "sap/f/FlexibleColumnLayoutSemanticHelper.js", "sap/f/LayoutType.js", "sap/f/library-preload.json", "sap/m/ActionSheet.js", "sap/m/Bar.js", "sap/m/BusyIndicator.js", "sap/m/Button.js", "sap/m/ButtonType.js", "sap/m/CheckBox.js", "sap/m/Column.js", "sap/m/ColumnListItem.js", "sap/m/CustomListItem.js", "sap/m/Dialog.js", "sap/m/DraftIndicator.js", "sap/m/FlexBox.js", "sap/m/FlexItemData.js", "sap/m/FormattedText.js", "sap/m/HBox.js", "sap/m/HeaderContainer.js", "sap/m/IconTabBar.js", "sap/m/IconTabFilter.js", "sap/m/Image.js", "sap/m/Label.js", "sap/m/Link.js", "sap/m/List.js", "sap/m/ListBase.js", "sap/m/ListSeparators.js", "sap/m/MessageBox.js", "sap/m/MessagePage.js", "sap/m/MessagePopover.js", "sap/m/MessagePopoverItem.js", "sap/m/MessageToast.js", "sap/m/NavContainer.js", "sap/m/NumericContent.js", "sap/m/ObjectIdentifier.js", "sap/m/ObjectMarker.js", "sap/m/OverflowToolbar.js", "sap/m/OverflowToolbarButton.js", "sap/m/OverflowToolbarLayoutData.js", "sap/m/Popover.js", "sap/m/ProgressIndicator.js", "sap/m/QuickView.js", "sap/m/QuickViewGroup.js", "sap/m/QuickViewGroupElement.js", "sap/m/QuickViewPage.js", "sap/m/RatingIndicator.js", "sap/m/SearchField.js", "sap/m/SegmentedButton.js", "sap/m/SegmentedButtonItem.js", "sap/m/Select.js", "sap/m/StandardListItem.js", "sap/m/Table.js", "sap/m/Text.js", "sap/m/TextArea.js", "sap/m/Title.js", "sap/m/Toolbar.js", "sap/m/ToolbarDesign.js", "sap/m/ToolbarSpacer.js", "sap/m/VBox.js", "sap/m/library-preload.json", "sap/m/routing/Targets.js", "sap/suite/ui/generic/template/AnalyticalListPage/controller/KpiCardController.controller.js", "sap/suite/ui/microchart/InteractiveBarChart.js", "sap/suite/ui/microchart/InteractiveBarChartBar.js", "sap/suite/ui/microchart/InteractiveDonutChart.js", "sap/suite/ui/microchart/InteractiveDonutChartSegment.js", "sap/suite/ui/microchart/InteractiveLineChart.js", "sap/suite/ui/microchart/InteractiveLineChartPoint.js", "sap/ui/Device.js", "sap/ui/base/EventProvider.js", "sap/ui/base/ManagedObject.js", "sap/ui/base/Object.js", "sap/ui/comp/navpopover/LinkData.js", "sap/ui/comp/navpopover/SemanticObjectController.js", "sap/ui/comp/navpopover/SmartLink.js", "sap/ui/comp/odata/MetadataAnalyser.js", "sap/ui/comp/odata/ODataModelUtil.js", "sap/ui/comp/personalization/Util.js", "sap/ui/comp/smartchart/SmartChart.js", "sap/ui/comp/smartfield/Configuration.js", "sap/ui/comp/smartfield/ControlProposal.js", "sap/ui/comp/smartfield/ObjectStatus.js", "sap/ui/comp/smartfield/SmartField.js", "sap/ui/comp/smartfield/SmartLabel.js", "sap/ui/comp/smartfilterbar/ControlConfiguration.js", "sap/ui/comp/smartfilterbar/FilterProvider.js", "sap/ui/comp/smartfilterbar/SmartFilterBar.js", "sap/ui/comp/smartform/Group.js", "sap/ui/comp/smartform/GroupElement.js", "sap/ui/comp/smartform/Layout.js", "sap/ui/comp/smartform/SmartForm.js", "sap/ui/comp/smartmicrochart/SmartMicroChart.js", "sap/ui/comp/smarttable/SmartTable.js", "sap/ui/comp/smartvariants/PersonalizableInfo.js", "sap/ui/comp/smartvariants/SmartVariantManagement.js", "sap/ui/core/Component.js", "sap/ui/core/ComponentContainer.js", "sap/ui/core/Control.js", "sap/ui/core/CustomData.js", "sap/ui/core/CustomizingConfiguration.js", "sap/ui/core/ExtensionPoint.js", "sap/ui/core/Fragment.js", "sap/ui/core/Icon.js", "sap/ui/core/InvisibleText.js", "sap/ui/core/Item.js", "sap/ui/core/ResizeHandler.js", "sap/ui/core/UIComponent.js", "sap/ui/core/format/DateFormat.js", "sap/ui/core/format/NumberFormat.js", "sap/ui/core/library-preload.json", "sap/ui/core/library.js", "sap/ui/core/mvc/Controller.js", "sap/ui/core/mvc/View.js", "sap/ui/core/mvc/ViewType.js", "sap/ui/core/mvc/XMLView.js", "sap/ui/core/routing/HashChanger.js", "sap/ui/core/routing/History.js", "sap/ui/core/routing/HistoryDirection.js", "sap/ui/generic/app/AppComponent.js", "sap/ui/generic/app/ApplicationController.js", "sap/ui/generic/app/library-preload.json", "sap/ui/generic/app/navigation/service/NavError.js", "sap/ui/generic/app/navigation/service/NavigationHandler.js", "sap/ui/generic/app/navigation/service/SelectionVariant.js", "sap/ui/generic/app/transaction/DraftContext.js", "sap/ui/generic/app/util/ActionUtil.js", "sap/ui/generic/app/util/MessageUtil.js", "sap/ui/generic/app/util/ModelUtil.js", "sap/ui/layout/Grid.js", "sap/ui/layout/GridData.js", "sap/ui/layout/HorizontalLayout.js", "sap/ui/layout/VerticalLayout.js", "sap/ui/layout/form/Form.js", "sap/ui/layout/form/FormContainer.js", "sap/ui/layout/form/FormElement.js", "sap/ui/layout/form/ResponsiveGridLayout.js", "sap/ui/layout/form/SimpleForm.js", "sap/ui/model/Context.js", "sap/ui/model/Filter.js", "sap/ui/model/FilterOperator.js", "sap/ui/model/FilterType.js", "sap/ui/model/Sorter.js", "sap/ui/model/analytics/odata4analytics.js", "sap/ui/model/json/JSONModel.js", "sap/ui/model/odata/AnnotationHelper.js", "sap/ui/model/odata/type/Time.js", "sap/ui/model/resource/ResourceModel.js", "sap/ui/table/AnalyticalColumn.js", "sap/ui/table/AnalyticalTable.js", "sap/ui/table/Column.js", "sap/ui/table/RowAction.js", "sap/ui/table/RowActionItem.js", "sap/ui/table/RowSettings.js", "sap/ui/table/Table.js", "sap/ui/table/TreeTable.js", "sap/ui/thirdparty/d3.js", "sap/ushell/library-preload.json", "sap/ushell/ui/footerbar/AddBookmarkButton.js", "sap/uxap/BlockBase.js", "sap/uxap/ObjectPageHeader.js", "sap/uxap/ObjectPageHeaderActionButton.js", "sap/uxap/ObjectPageLayout.js", "sap/uxap/ObjectPageLazyLoader.js", "sap/uxap/ObjectPageSection.js", "sap/uxap/ObjectPageSubSection.js", "sap/viz/ui5/api/env/Format.js", "sap/viz/ui5/format/ChartFormatter.js", "{component>componentName}/Component.js", "{parameter>/settings/routeConfig/implementingComponent/componentName}/Component.js"],
+      "includes" : ["sap/suite/ui/generic/template/AnalyticalListPage/Component.js", "sap/suite/ui/generic/template/AnalyticalListPage/control/KpiTag.js", "sap/suite/ui/generic/template/AnalyticalListPage/control/SmartFilterBarExt.js", "sap/suite/ui/generic/template/AnalyticalListPage/control/visualfilterbar/FilterItem.js", "sap/suite/ui/generic/template/AnalyticalListPage/control/visualfilterbar/FilterItemMicroBar.js", "sap/suite/ui/generic/template/AnalyticalListPage/control/visualfilterbar/FilterItemMicroChart.js", "sap/suite/ui/generic/template/AnalyticalListPage/control/visualfilterbar/FilterItemMicroDonut.js", "sap/suite/ui/generic/template/AnalyticalListPage/control/visualfilterbar/FilterItemMicroLine.js", "sap/suite/ui/generic/template/AnalyticalListPage/control/visualfilterbar/SmartVisualFilterBar.designtime.js", "sap/suite/ui/generic/template/AnalyticalListPage/control/visualfilterbar/SmartVisualFilterBar.js", "sap/suite/ui/generic/template/AnalyticalListPage/control/visualfilterbar/VisualFilterProvider.js", "sap/suite/ui/generic/template/AnalyticalListPage/controller/ContentAreaController.js", "sap/suite/ui/generic/template/AnalyticalListPage/controller/ControllerImplementation.js", "sap/suite/ui/generic/template/AnalyticalListPage/controller/DetailController.js", "sap/suite/ui/generic/template/AnalyticalListPage/controller/FilterBarController.js", "sap/suite/ui/generic/template/AnalyticalListPage/controller/KpiCardController.js", "sap/suite/ui/generic/template/AnalyticalListPage/controller/KpiTagController.js", "sap/suite/ui/generic/template/AnalyticalListPage/controller/SmartChartController.js", "sap/suite/ui/generic/template/AnalyticalListPage/controller/ToolbarController.js", "sap/suite/ui/generic/template/AnalyticalListPage/controller/VisualFilterBarController.js", "sap/suite/ui/generic/template/AnalyticalListPage/controller/VisualFilterDialogController.js", "sap/suite/ui/generic/template/AnalyticalListPage/extensionAPI/ExtensionAPI.js", "sap/suite/ui/generic/template/AnalyticalListPage/manifest.json", "sap/suite/ui/generic/template/AnalyticalListPage/util/AnnotationHelper.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/CriticalityUtil.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/FilterUtil.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/KpiAnnotationFormatter.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/KpiAnnotationHelper.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/KpiUtil.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/KpiVizAnnotationHelper.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/ModelUtil.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/OperationCode.js", "sap/suite/ui/generic/template/AnalyticalListPage/util/V4Terms.js", "sap/suite/ui/generic/template/AnalyticalListPage/view/AnalyticalListPage.view.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/KpiCardSizeM.view.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/ActionsFragment.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/AnalyticalTableColumns.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/AnnotatedDeterminingButton.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/ChartActions.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/ContentAreaExtension.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/ContentContainer.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/DetailSmartTable.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/DraftInfoBox.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/FilterContainer.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/GridTableColumns.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/KPITagList.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/KpiCard.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/ManifestDeterminingActions.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/MasterExtension.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/SmartChart.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/SmartChartToolbar.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/SmartFilterBar.fragment.xml", "sap/suite/ui/generic/template/AnalyticalListPage/view/fragments/SmartTableToolbar.fragment.xml", "sap/suite/ui/generic/template/Canvas/Component.js", "sap/suite/ui/generic/template/Canvas/controller/ControllerImplementation.js", "sap/suite/ui/generic/template/Canvas/extensionAPI/ExtensionAPI.js", "sap/suite/ui/generic/template/Canvas/manifest.json", "sap/suite/ui/generic/template/Canvas/view/Canvas.view.xml", "sap/suite/ui/generic/template/ListReport/AnnotationHelper.js", "sap/suite/ui/generic/template/ListReport/Component.js", "sap/suite/ui/generic/template/ListReport/controller/ControllerImplementation.js", "sap/suite/ui/generic/template/ListReport/controller/IappStateHandler.js", "sap/suite/ui/generic/template/ListReport/controller/MultipleViewsSingleTableModeHelper.js", "sap/suite/ui/generic/template/ListReport/controller/SmartChartController.js", "sap/suite/ui/generic/template/ListReport/extensionAPI/ExtensionAPI.js", "sap/suite/ui/generic/template/ListReport/extensionAPI/NonDraftTransactionController.js", "sap/suite/ui/generic/template/ListReport/manifest.json", "sap/suite/ui/generic/template/ListReport/view/ListReport.view.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/BreakoutActions.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/DefaultVariant.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/DeleteConfirmation.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/DraftInfoBox.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/DraftInfoBox_ForTableTabs.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/FullscreenPage.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/IconTabBarWithSmartTable.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/MultipleViewsSingleTableMode.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/MultipleViewsSingleTableModeItemCustomData.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/SearchField.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/SmartChartToolbar_PoC.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/SmartChartWithSmartTable_PoC.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/SmartChart_PoC.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/SmartFilterBar.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/SmartTable.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/SmartTableToolbar.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/SmartTableToolbar_ForTableTabs.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/SmartTable_ForTableTabs.fragment.xml", "sap/suite/ui/generic/template/ListReport/view/fragments/TitleVariant.fragment.xml", "sap/suite/ui/generic/template/ObjectPage/Component.js", "sap/suite/ui/generic/template/ObjectPage/controller/ControllerImplementation.js", "sap/suite/ui/generic/template/ObjectPage/extensionAPI/DraftTransactionController.js", "sap/suite/ui/generic/template/ObjectPage/extensionAPI/ExtensionAPI.js", "sap/suite/ui/generic/template/ObjectPage/extensionAPI/NonDraftTransactionController.js", "sap/suite/ui/generic/template/ObjectPage/manifest.json", "sap/suite/ui/generic/template/ObjectPage/view/Details.view.xml", "sap/suite/ui/generic/template/ObjectPage/view/fragments/Actions.fragment.xml", "sap/suite/ui/generic/template/ObjectPage/view/fragments/Breadcrumbs.fragment.xml", "sap/suite/ui/generic/template/ObjectPage/view/fragments/ComponentSections.fragment.xml", "sap/suite/ui/generic/template/ObjectPage/view/fragments/DraftResumeDialog.fragment.xml", "sap/suite/ui/generic/template/ObjectPage/view/fragments/DummyBlock.js", "sap/suite/ui/generic/template/ObjectPage/view/fragments/DummyBlock.view.xml", "sap/suite/ui/generic/template/ObjectPage/view/fragments/Footer.fragment.xml", "sap/suite/ui/generic/template/ObjectPage/view/fragments/FormActions.fragment.xml", "sap/suite/ui/generic/template/ObjectPage/view/fragments/FormBreakoutActions.fragment.xml", "sap/suite/ui/generic/template/ObjectPage/view/fragments/HeaderContent.fragment.xml", "sap/suite/ui/generic/template/ObjectPage/view/fragments/ImageDialog.fragment.xml", "sap/suite/ui/generic/template/ObjectPage/view/fragments/NavigationBar.fragment.xml", "sap/suite/ui/generic/template/ObjectPage/view/fragments/RelatedAppsSheet.fragment.xml", "sap/suite/ui/generic/template/ObjectPage/view/fragments/Sections.fragment.xml", "sap/suite/ui/generic/template/ObjectPage/view/fragments/UnsavedChangesDialog.fragment.xml", "sap/suite/ui/generic/template/QuickCreate/Component.js", "sap/suite/ui/generic/template/QuickCreate/manifest.json", "sap/suite/ui/generic/template/QuickCreate/view/QuickCreate.controller.js", "sap/suite/ui/generic/template/QuickCreate/view/QuickCreate.view.xml", "sap/suite/ui/generic/template/QuickView/Component.js", "sap/suite/ui/generic/template/QuickView/manifest.json", "sap/suite/ui/generic/template/QuickView/view/QuickView.controller.js", "sap/suite/ui/generic/template/QuickView/view/QuickView.view.xml", "sap/suite/ui/generic/template/app/blankAnalyticalListPage/Component.js", "sap/suite/ui/generic/template/app/blankAnalyticalListPage/manifest.json", "sap/suite/ui/generic/template/detailTemplates/PaginatorButtonsHelper.js", "sap/suite/ui/generic/template/detailTemplates/detailUtils.js", "sap/suite/ui/generic/template/detailTemplates/fragments/PaginatorButtons.fragment.xml", "sap/suite/ui/generic/template/extensionAPI/NavigationController.js", "sap/suite/ui/generic/template/extensionAPI/ReuseComponentSupport.js", "sap/suite/ui/generic/template/extensionAPI/UIMode.js", "sap/suite/ui/generic/template/extensionAPI/extensionAPI.js", "sap/suite/ui/generic/template/fragments/AnalyticalTableColumns.fragment.xml", "sap/suite/ui/generic/template/fragments/AnnotatedActionButtons.fragment.xml", "sap/suite/ui/generic/template/fragments/BreakoutActions.fragment.xml", "sap/suite/ui/generic/template/fragments/CRUDActionButtons.fragment.xml", "sap/suite/ui/generic/template/fragments/CRUDActionButtons_ForTableTabs.fragment.xml", "sap/suite/ui/generic/template/fragments/ContactDetails.fragment.xml", "sap/suite/ui/generic/template/fragments/ContactDetailsQuickViewGroup.fragment.xml", "sap/suite/ui/generic/template/fragments/ContactDetailsQuickViewGroupReplica.fragment.xml", "sap/suite/ui/generic/template/fragments/Contacts.fragment.xml", "sap/suite/ui/generic/template/fragments/DataLoss.fragment.xml", "sap/suite/ui/generic/template/fragments/DataLossTechnicalError.fragment.xml", "sap/suite/ui/generic/template/fragments/DeterminingActions.fragment.xml", "sap/suite/ui/generic/template/fragments/DeterminingButton.fragment.xml", "sap/suite/ui/generic/template/fragments/DiscardDraftPopover.fragment.xml", "sap/suite/ui/generic/template/fragments/DraftAdminDataPopover.fragment.xml", "sap/suite/ui/generic/template/fragments/EditableHeaderFacet.fragment.xml", "sap/suite/ui/generic/template/fragments/FCLActions.fragment.xml", "sap/suite/ui/generic/template/fragments/Facet.fragment.xml", "sap/suite/ui/generic/template/fragments/GlobalActions.fragment.xml", "sap/suite/ui/generic/template/fragments/GridTableColumns.fragment.xml", "sap/suite/ui/generic/template/fragments/HeaderAddress.fragment.xml", "sap/suite/ui/generic/template/fragments/HeaderContactWithDetailsPopover.fragment.xml", "sap/suite/ui/generic/template/fragments/HeaderDataPoint.fragment.xml", "sap/suite/ui/generic/template/fragments/HeaderDataPointContent.fragment.xml", "sap/suite/ui/generic/template/fragments/HeaderFacet.fragment.xml", "sap/suite/ui/generic/template/fragments/HeaderForm.fragment.xml", "sap/suite/ui/generic/template/fragments/HeaderFormDataField.fragment.xml", "sap/suite/ui/generic/template/fragments/HeaderPlainText.fragment.xml", "sap/suite/ui/generic/template/fragments/HeaderRatingIndicator.fragment.xml", "sap/suite/ui/generic/template/fragments/InlineButton.fragment.xml", "sap/suite/ui/generic/template/fragments/InlineButton_ForTableTabs.fragment.xml", "sap/suite/ui/generic/template/fragments/MessagePage.controller.js", "sap/suite/ui/generic/template/fragments/MessagePage.view.xml", "sap/suite/ui/generic/template/fragments/MessagePopover.fragment.xml", "sap/suite/ui/generic/template/fragments/ProgressIndicator.fragment.xml", "sap/suite/ui/generic/template/fragments/QuickViewSmartForm.fragment.xml", "sap/suite/ui/generic/template/fragments/QuickViewSmartForm.view.xml", "sap/suite/ui/generic/template/fragments/RatingIndicatorFacet.fragment.xml", "sap/suite/ui/generic/template/fragments/RowActions.fragment.xml", "sap/suite/ui/generic/template/fragments/RowActions_ForTableTabs.fragment.xml", "sap/suite/ui/generic/template/fragments/SearchField.fragment.xml", "sap/suite/ui/generic/template/fragments/ShareSheet.fragment.xml", "sap/suite/ui/generic/template/fragments/SmartChart.fragment.xml", "sap/suite/ui/generic/template/fragments/SmartForm.fragment.xml", "sap/suite/ui/generic/template/fragments/SmartFormDataField.fragment.xml", "sap/suite/ui/generic/template/fragments/SmartMicroChart.fragment.xml", "sap/suite/ui/generic/template/fragments/SmartTable.fragment.xml", "sap/suite/ui/generic/template/fragments/TableActionButtons.fragment.xml", "sap/suite/ui/generic/template/fragments/TableActionButtons_ForTableTabs.fragment.xml", "sap/suite/ui/generic/template/fragments/TableColumns.fragment.xml", "sap/suite/ui/generic/template/fragments/ToolbarButton.fragment.xml", "sap/suite/ui/generic/template/fragments/ToolbarButton_ForTableTabs.fragment.xml", "sap/suite/ui/generic/template/fragments/TreeTableColumns.fragment.xml", "sap/suite/ui/generic/template/fragments/lists/ShareSheet.fragment.xml", "sap/suite/ui/generic/template/js/AnnotationHelper.js", "sap/suite/ui/generic/template/js/AnnotationHelperMultipleViews.js", "sap/suite/ui/generic/template/js/AnnotationHelperReuseComponents.js", "sap/suite/ui/generic/template/js/QuickTemplates/AnnotationHelper.js", "sap/suite/ui/generic/template/js/QuickTemplates/ODataModelHelper.js", "sap/suite/ui/generic/template/js/QuickTemplates/QuickActionBaseController.js", "sap/suite/ui/generic/template/js/QuickTemplates/QuickCreateAPI.js", "sap/suite/ui/generic/template/js/QuickTemplates/QuickTemplateComponentFactory.js", "sap/suite/ui/generic/template/lib/AppComponent.js", "sap/suite/ui/generic/template/lib/Application.js", "sap/suite/ui/generic/template/lib/BusyHelper.js", "sap/suite/ui/generic/template/lib/CRUDHelper.js", "sap/suite/ui/generic/template/lib/CRUDManager.js", "sap/suite/ui/generic/template/lib/CommonEventHandlers.js", "sap/suite/ui/generic/template/lib/CommonUtils.js", "sap/suite/ui/generic/template/lib/ComponentUtils.js", "sap/suite/ui/generic/template/lib/ContextBookkeeping.js", "sap/suite/ui/generic/template/lib/FlexEnabler.js", "sap/suite/ui/generic/template/lib/FlexibleColumnLayoutHandler.js", "sap/suite/ui/generic/template/lib/MessageButtonHelper.js", "sap/suite/ui/generic/template/lib/MessageUtils.js", "sap/suite/ui/generic/template/lib/NavigationController.js", "sap/suite/ui/generic/template/lib/ProcessObserver.js", "sap/suite/ui/generic/template/lib/TemplateAssembler.js", "sap/suite/ui/generic/template/lib/TemplateComponent.js", "sap/suite/ui/generic/template/lib/TemplateViewController.js", "sap/suite/ui/generic/template/lib/ViewDependencyHelper.js", "sap/suite/ui/generic/template/lib/routingHelper.js", "sap/suite/ui/generic/template/lib/testableHelper.js", "sap/suite/ui/generic/template/library.js", "sap/suite/ui/generic/template/manifest.json"]
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/library.js",
+      "description" : "Initialization Code and shared classes of library sap.suite.ui.generic.template.",
+      "size" : 908,
+      "compressedSize" : 418,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/generic/template/manifest.json",
+      "size" : 1811,
+      "required" : [],
+      "includes" : []
+    }
+  ]
+}

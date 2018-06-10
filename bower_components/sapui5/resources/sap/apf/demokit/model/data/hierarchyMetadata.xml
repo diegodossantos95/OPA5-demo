@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="2.0">
+        <Schema Namespace="tmp.demokit.demokit" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityType Name="RevenueHryQueryResultsType" sap:semantics="aggregate">
+                <Key>
+                    <PropertyRef Name="GenID" />
+                </Key>
+                <Property Name="GenID" Type="Edm.String" Nullable="false" MaxLength="2147483647" sap:filterable="false" />
+                <Property Name="Customer" Type="Edm.String" MaxLength="4" sap:label="Customer" sap:aggregation-role="dimension" sap:text="CustomerName" />
+                <Property Name="CustomerName" Type="Edm.String" MaxLength="30" sap:label="CustomerName" />
+                <Property Name="Customer_NodeID" sap:hierarchy-node-for="Customer" Type="Edm.String" MaxLength="4" sap:label="Customer_NodeID" sap:aggregation-role="dimension" sap:text="Customer_NodeText"/>
+                <Property Name="Customer_NodeIDExt" sap:hierarchy-node-external-key-for="Customer_NodeID" Type="Edm.String" MaxLength="4" sap:label="Customer_NodeIDExtKey" sap:aggregation-role="dimension"/>
+                <Property Name="Customer_NodeText" Type="Edm.String" MaxLength="30" sap:label="Customer_NodeText" sap:aggregation-role="dimension" />
+                <Property Name="Customer_ParentID" sap:hierarchy-parent-node-for="Customer_NodeID" Type="Edm.String" MaxLength="4" sap:label="Customer_ParentID" sap:aggregation-role="dimension" />
+                <Property Name="Customer_Level" sap:hierarchy-level-for="Customer_NodeID" Type="Edm.Int32" sap:label="Customer_Level" sap:aggregation-role="dimension" />
+                <Property Name="Customer_Drillstate" sap:hierarchy-drill-state-for="Customer_NodeID" Type="Edm.String" MaxLength="9" sap:label="Customer_Drillstate" sap:aggregation-role="dimension" />
+                <Property Name="Country" Type="Edm.String" MaxLength="2" sap:label="Country" sap:aggregation-role="dimension" sap:text="CountryName" />
+                <Property Name="CountryName" Type="Edm.String" MaxLength="20" sap:label="CountryName" />
+                <Property Name="Currency" Type="Edm.String" MaxLength="3" sap:semantics="currency-code" sap:label="Currency" sap:aggregation-role="dimension" sap:text="CurrencyName" />
+                <Property Name="Revenue" Type="Edm.Decimal" Precision="13" Scale="3" sap:filterable="false" sap:label="Revenue" sap:aggregation-role="measure" sap:unit="Currency" />
+            </EntityType>
+            <EntityType Name="RevenueHryQueryType" sap:semantics="parameters">
+                <Key>
+                    <PropertyRef Name="P_Currency" />
+                </Key>
+                <Property Name="P_Currency" Type="Edm.String" Nullable="false" DefaultValue="USD" MaxLength="3" sap:label="Currency" sap:parameter="mandatory" />
+                <NavigationProperty Name="Results" Relationship="tmp.demokit.demokit.RevenueHryQuery_RevenueHryQueryResultsType" FromRole="RevenueHryQueryPrincipal" ToRole="RevenueHryQueryResultsDependent" />
+            </EntityType>
+
+            <Association Name="RevenueHryQuery_RevenueHryQueryResultsType">
+                <End Type="tmp.demokit.demokit.RevenueHryQueryType" Role="RevenueHryQueryPrincipal" Multiplicity="*" />
+                <End Type="tmp.demokit.demokit.RevenueHryQueryResultsType" Role="RevenueHryQueryResultsDependent" Multiplicity="*" />
+                 <ReferentialConstraint>
+					<Principal Role="RevenueHryQueryPrincipal">
+						<PropertyRef Name="P_Currency" />
+					</Principal>
+					<Dependent Role="RevenueHryQueryResultsDependent">
+						<PropertyRef Name="Currency" />
+					</Dependent>
+				</ReferentialConstraint>
+            </Association>
+            <EntityContainer Name="demokit" m:IsDefaultEntityContainer="true">
+                <EntitySet Name="RevenueHryQueryResults" EntityType="tmp.demokit.demokit.RevenueHryQueryResultsType" sap:addressable="false" />
+                <EntitySet Name="RevenueHryQuery" EntityType="tmp.demokit.demokit.RevenueHryQueryType" sap:addressable="false" />
+                <AssociationSet Name="RevenueHryQuery_RevenueHryQueryResults" Association="tmp.demokit.demokit.RevenueHryQuery_RevenueHryQueryResultsType">
+                    <End Role="RevenueHryQueryPrincipal" EntitySet="RevenueHryQuery" />
+                    <End Role="RevenueHryQueryResultsDependent" EntitySet="RevenueHryQueryResults" />
+                </AssociationSet>
+            </EntityContainer>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

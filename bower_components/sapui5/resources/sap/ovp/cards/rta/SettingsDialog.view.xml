@@ -1,0 +1,215 @@
+<core:View xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form"
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	controllerName="sap.ovp.cards.rta.SettingsDialog">
+	<HBox id="dialogContainer">
+		<VBox id="dialogCardVBox" width="30%"
+			class="sapUiLargeMarginBegin sapUiMediumMarginTop dialogCardVBox dialogCardOverlay">
+			<core:ComponentContainer id="dialogCard" busyIndicatorDelay="0" busy="true" />
+		</VBox>
+		<VBox id="sapOvpSettingsForm" width="70%">
+			<f:Form editable="true">
+				<f:layout>
+					<f:ResponsiveGridLayout labelSpanXL="3"
+						labelSpanL="3" labelSpanM="3" labelSpanS="3" adjustLabelSpan="false"
+						emptySpanXL="1" emptySpanL="1" emptySpanM="1" emptySpanS="1"
+						columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false" />
+				</f:layout>
+				<f:formContainers>
+					<f:FormContainer id="sapOvpSettingsFormContainer">
+						<f:formElements>
+							<!-- Title -->
+							<f:FormElement label="{ovplibResourceBundle>OVP_KEYUSER_TITLE}" visible="{visibility>/title}">
+								<f:fields>
+									<Input id="sapOvpSettingsTitle" value="{/title}" change="validateInputField"
+                                           placeholder="{ovplibResourceBundle>OVP_KEYUSER_INPUT_PLACEHOLDER}"
+										class="sapOvpSettingsDialogPadding" />
+								</f:fields>
+							</f:FormElement>
+							<!-- Sub Title -->
+							<f:FormElement label="{ovplibResourceBundle>OVP_KEYUSER_SUBTITLE}" visible="{visibility>/subTitle}">
+								<f:fields>
+									<Input id="sapOvpSettingsSubTitle" value="{/subTitle}" change="updateCard"
+										class="sapOvpSettingsDialogPadding" />
+								</f:fields>
+							</f:FormElement>
+							<!-- KPIHeader Switch -->
+							<f:FormElement label="{ovplibResourceBundle>OVP_KEYUSER_KPI_HEADER}" visible="{visibility>/kpiHeader}">
+                                <f:fields>
+                                    <Switch id="sapOvpSettingsKPIHeaderSwitch"
+                                        state="{= !!${ovpCardProperties>/dataPointAnnotationPath}}"
+                                        type="AcceptReject" class="sapOvpSettingsDialogPadding" change="updateCard"/>
+                                </f:fields>
+                            </f:FormElement>
+							<!-- Value Selection Info -->
+							<f:FormElement label="{ovplibResourceBundle>OVP_KEYUSER_KPI_DESCRIPTION}" visible="{visibility>/valueSelectionInfo}">
+                                <f:fields>
+                                    <Input id="sapOvpSettingsValueSelectionInfo" value="{/valueSelectionInfo}" change="updateCard"
+                                        class="sapOvpSettingsDialogPadding" />
+                                </f:fields>
+                            </f:FormElement>
+                            <!-- DataPoint -->
+                            <f:FormElement label="{ovplibResourceBundle>OVP_KEYUSER_KPI_Value}" visible="{visibility>/dataPoint}">
+                                <f:fields>
+                                    <Select id="sapOvpSettingsDataPoint" width="100%"
+                                            items="{
+												path: '/dataPoint',
+												sorter: { path: 'name' }
+											}"
+                                            selectedKey="{ovpCardProperties>/dataPointAnnotationPath}"
+                                            class="sapOvpSettingsDialogPadding" change="updateCard">
+                                        <core:Item key="{value}" text="{name}"/>
+                                    </Select>
+                                </f:fields>
+                            </f:FormElement>
+							<!-- List Type -->
+							<f:FormElement label="{ovplibResourceBundle>OVP_KEYUSER_LIST_TYPE}" visible="{visibility>/listType}">
+                                <f:fields>
+                                    <Switch id="sapOvpSettingsListType"
+                                        state="{= ${ovpCardProperties>/listType} === 'extended'}" change="updateCard"
+                                        type="Default" class="sapOvpSettingsDialogPadding" />
+                                </f:fields>
+                            </f:FormElement>
+							<!-- List Flavor -->
+							<f:FormElement label="{ovpCardProperties>/listFlavorName}" visible="{visibility>/listFlavor}">
+                                <f:fields>
+                                    <Switch id="sapOvpSettingsListFlavor"
+                                        state="{= !!${ovpCardProperties>/listFlavor} &amp;&amp; ${ovpCardProperties>/listFlavor} !== 'standard'}" class="sapOvpSettingsDialogPadding" change="updateCard" />
+                                </f:fields>
+                            </f:FormElement>
+							<!-- Sort Order -->
+							<f:FormElement label="{ovplibResourceBundle>OVP_KEYUSER_SORTORDER}" visible="{visibility>/sortOrder}">
+                                <f:fields>
+                                    <SegmentedButton id="sapOvpSettingsSortOrder" select="updateCard"
+                                        selectedKey="{= ${ovpCardProperties>/sortOrder} === 'ascending' ? 'ascending' : 'descending'}"
+                                        class="sapOvpSettingsDialogPadding">
+                                        <items>
+                                            <SegmentedButtonItem id="sapOvpSettingsSortOrderAscending"
+                                                text="{ovplibResourceBundle>OVP_KEYUSER_ORDER_ASC}" key="ascending" />
+                                            <SegmentedButtonItem id="sapOvpSettingsSortOrderDescending"
+                                                text="{ovplibResourceBundle>OVP_KEYUSER_ORDER_DESC}" key="descending" />
+                                        </items>
+                                    </SegmentedButton>
+                                </f:fields>
+                            </f:FormElement>
+							<!-- Sort By -->
+							<f:FormElement label="{ovplibResourceBundle>OVP_KEYUSER_SORTBY}" visible="{visibility>/sortBy}">
+                                <f:fields>
+                                    <Select id="sapOvpSettingsSortBy" width="100%"
+                                        items="{
+                                                path: '/entityType/property',
+                                                sorter: { path: 'name' }
+                                            }"
+                                        selectedKey="{/sortBy}" class="sapOvpSettingsDialogPadding" change="updateCard">
+                                        <core:Item key="{name}" text="{name}"/>
+                                    </Select>
+                                </f:fields>
+                            </f:FormElement>
+							<!-- Selection Variant - Filter By -->
+							<f:FormElement label="{ovplibResourceBundle>OVP_KEYUSER_SELECTION_VAR}" visible="{visibility>/selectionVariant}">
+								<f:fields>
+									<Select id="sapOvpSettingsFilterBy" width="100%"
+										items="{
+												path: '/selectionVariant',
+												sorter: { path: 'name' }
+											}"
+                                        selectedKey= "{ovpCardProperties>/selectionAnnotationPath}"
+										class="sapOvpSettingsDialogPadding" change="updateCard">
+										<core:Item key="{value}" text="{name}"/>
+									</Select>
+								</f:fields>
+							</f:FormElement>
+							<!-- Presentation Variant - Presented By -->
+							<f:FormElement label="{ovplibResourceBundle>OVP_KEYUSER_PRESENTATION_VAR}" visible="{visibility>/presentationVariant}">
+								<f:fields>
+									<Select id="sapOvpSettingsPresentedBy" width="100%"
+										items="{
+												path: '/presentationVariant',
+												sorter: { path: 'name' }
+											}"
+                                        selectedKey= "{ovpCardProperties>/presentationAnnotationPath}"
+										class="sapOvpSettingsDialogPadding" change="updateCard">
+										<core:Item key="{value}" text="{name}"/>
+									</Select>
+								</f:fields>
+							</f:FormElement>
+                            <!-- Line Item -->
+                            <f:FormElement label="{ovplibResourceBundle>OVP_KEYUSER_LINEITEM_ANNO}" visible="{visibility>/lineItem}">
+                                <f:fields>
+                                    <Input id="sapOvpSettingsLineItem" class="sapOvpSettingsDialogPadding"
+                                           value="{
+                                                path: '/lineItemQualifier'
+                                            }"
+                                           showValueHelp="true" editable="true" enabled="true" valueHelpOnly="true"
+                                           valueHelpRequest="openLineItemValueHelpDialog"/>
+                                </f:fields>
+                            </f:FormElement>
+							<!-- Identification -->
+							<f:FormElement label="{ovplibResourceBundle>OVP_KEYUSER_IDENTIFICATION_ANNO}" visible="{visibility>/identification}">
+								<f:fields>
+									<Select id="sapOvpSettingsIdentification" width="100%"
+										items="{
+												path: '/identification',
+												sorter: { path: 'name' }
+											}"
+                                        selectedKey= "{ovpCardProperties>/identificationAnnotationPath}"
+										class="sapOvpSettingsDialogPadding" change="updateCard">
+										<core:Item key="{value}" text="{name}"/>
+									</Select>
+								</f:fields>
+							</f:FormElement>
+
+							<!-- Chart -->
+							<f:FormElement label="{ovplibResourceBundle>OVP_KEYUSER_TYPE_OF_CHART}" visible="{visibility>/chart}">
+								<f:fields>
+									<Select id="sapOvpSettingsChart" width="100%"
+										items="{
+												path: '/chart',
+												sorter: { path: 'name' }
+											}"
+                                        selectedKey= "{ovpCardProperties>/chartAnnotationPath}"
+										class="sapOvpSettingsDialogPadding" change="updateCard">
+										<core:Item key="{value}" text="{name}"/>
+									</Select>
+								</f:fields>
+							</f:FormElement>
+                            <!-- Static Link List Line Item Title -->
+                            <f:FormElement label="{ovplibResourceBundle>OVP_KEYUSER_TITLE_FOR_LINK}" visible="{visibility>/lineItemTitle}">
+                                <f:fields>
+                                    <Input id="sapOvpSettingsLineItemTitle" value="{/staticContent/0/title}" change="updateCard"
+                                           class="sapOvpSettingsDialogPadding" />
+                                </f:fields>
+                            </f:FormElement>
+                            <!-- Static Link List Line Item Sub Title -->
+                            <f:FormElement label="{ovplibResourceBundle>OVP_KEYUSER_SUBTITLE_FOR_LINK}" visible="{visibility>/lineItemSubTitle}">
+                                <f:fields>
+                                    <Input id="sapOvpSettingsLineItemSubTitle" value="{/staticContent/0/subTitle}" change="updateCard"
+                                           class="sapOvpSettingsDialogPadding" />
+                                </f:fields>
+                            </f:FormElement>
+                            <!-- Static Link List Line Item Links -->
+                            <f:FormElement label="{ovplibResourceBundle>OVP_KEYUSER_LINKS}" visible="{visibility>/staticLink}">
+                                <f:fields>
+                                    <Input id="sapOvpSettingsStaticLink" value="{/staticContent/0/targetUri}" change="updateCard"
+                                           class="sapOvpSettingsDialogPadding" />
+                                </f:fields>
+                            </f:FormElement>
+                            <!-- Static Link List Line Item Links -->
+                            <f:FormElement label="{ovplibResourceBundle>OVP_KEYUSER_LINKS}" visible="{visibility>/links}">
+                                <f:fields>
+                                    <Select id="sapOvpSettingsLinks" width="100%"
+                                            items="{
+												path: '/links',
+												sorter: { path: 'name' }
+											}"
+                                            class="sapOvpSettingsDialogPadding" change="updateCard">
+                                        <core:Item key="{value}" text="{name}"/>
+                                    </Select>
+                                </f:fields>
+                            </f:FormElement>
+						</f:formElements>
+					</f:FormContainer>
+				</f:formContainers>
+			</f:Form>
+		</VBox>
+	</HBox>
+</core:View>	

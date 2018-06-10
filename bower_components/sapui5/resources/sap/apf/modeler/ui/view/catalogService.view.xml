@@ -1,0 +1,13 @@
+<mvc:View controllerName="sap.apf.modeler.ui.controller.catalogService"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" class="sapUiSizeCompact">
+	<SelectDialog id="idGatewayCatalogListDialog"
+		contentHeight="60%" class="dialogPadding" search="handleSearch"
+		confirm="handleConfirm" cancel="handleCancel" multiSelect="false"
+		items="{
+			path: '/ServiceCollection',
+			sorter: { path: 'ServiceUrl', descending: false}
+		}">
+		<StandardListItem
+			title="{ path: 'ServiceUrl', formatter: '.handleFormatting'}" />
+	</SelectDialog>
+</mvc:View>

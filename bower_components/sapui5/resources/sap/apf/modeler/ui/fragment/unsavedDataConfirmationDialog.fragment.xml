@@ -1,0 +1,14 @@
+<core:FragmentDefinition xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<Dialog xmlns="sap.m" id="idMessageDialog" showHeader="true"
+		class="sapUiSizeCompact dialogContentPadding" type="Standard" state="Warning" initialFocus="idMessageDialog">
+		<buttons>
+			<Button xmlns="sap.m" id="idYesButton" press="handleNavigationWithSave">
+			</Button>
+			<Button xmlns="sap.m" id="idNoButton" press="handleNavigationWithoutSave">
+			</Button>
+			<Button xmlns="sap.m" id="idCancelButton" press="handlePreventNavigation">
+			</Button>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

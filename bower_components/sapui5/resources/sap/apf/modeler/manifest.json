@@ -1,0 +1,127 @@
+{
+	"_version": "1.1.0",
+	"sap.app": {
+		"_version": "1.1.0",
+		"id": "sap.apf.modeler",
+		"type": "component",
+		"embeddedBy" : "../",
+		"i18n": "./resources/i18n/texts.properties",
+		"title": "{{configModelerTitle}}",		
+		"description": "{{configModelerDescription}}",
+		"ach": "CA-EPT-ANL-APF",
+		"resources" : "resources.json",
+		"offline": false,
+		"dataSources" : {
+			"GatewayCatalogService" : {
+				"uri" : "/sap/opu/odata/iwfnd/catalogservice;v=2"
+			}
+		},
+		"crossNavigation" : {
+			"outbounds" : {
+				"navigateToGenericRuntime" : {
+					"semanticObject" : "FioriApplication",
+					"action" : "executeAPFConfiguration"
+				}
+			}
+		}
+	},
+	"sap.ui": {
+		"_version": "1.1.0",
+		"technology": "UI5",
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": false,
+			"phone": false
+		},
+		"supportedThemes": ["sap_hcb", "sap_bluecrystal"]
+	},
+	"sap.ui5": {
+		"_version": "1.1.0",
+		"dependencies": {
+			"libs": {
+				"sap.ui.core": {
+					"minVersion": "1.30.0"
+				},
+				"sap.m": {
+					"minVersion": "1.30.0"
+				},
+				"sap.ui.layout": {
+					"minVersion": "1.30.0"
+				},
+                "sap.ui.table": {
+                      "minVersion": "1.30.0"
+                }
+			}
+		},
+		"routing" : {
+				"config" : {
+					"viewType" : "XML",
+					"viewPath" : "sap.apf.modeler.ui.view",
+					"clearTarget" : "false"
+				},
+				"routes" : {
+					"applicationList" : {
+						"pattern" : "",
+						"view" : "applicationList",
+						"targetAggregation" : "pages",
+						"targetControl" : "applicationList",
+						"subroutes" : [ {
+							"pattern" : "app/{appId}",
+							"view" : "configurationList",
+							"name" : "configurationList",
+							"targetAggregation" : "pages"
+						}, {
+							"pattern" : "app/{appId}/config/{configId}",
+							"view" : "configurationList",
+							"name" : "configuration",
+							"targetAggregation" : "pages"
+						}, {
+							"pattern" : "app/{appId}/config/{configId}/category/{categoryId}",
+							"view" : "configurationList",
+							"name" : "category",
+							"targetAggregation" : "pages"
+						}, {
+							"pattern" : "app/{appId}/config/{configId}/facetFilter/{facetFilterId}",
+							"view" : "configurationList",
+							"name" : "facetFilter",
+							"targetAggregation" : "pages"
+						}, {
+							"pattern" : "app/{appId}/config/{configId}/smartFilter/{smartFilterId}",
+							"view" : "configurationList",
+							"name" : "smartFilterBar",
+							"targetAggregation" : "pages"
+						}, {
+							"pattern" : "app/{appId}/config/{configId}/category/{categoryId}/step/{stepId}",
+							"view" : "configurationList",
+							"name" : "step",
+							"targetAggregation" : "pages"
+						}, {
+							"pattern" : "app/{appId}/config/{configId}/category/{categoryId}/step/{stepId}/repn/{representationId}",
+							"view" : "configurationList",
+							"name" : "representation",
+							"targetAggregation" : "pages"
+						} , {
+							"pattern" : "app/{appId}/config/{configId}/navigationTarget/{navTargetId}",
+							"view" : "configurationList",
+							"name" : "navigationTarget",
+							"targetAggregation" : "pages"
+						}]
+					}
+				}
+			},
+		 "contentDensities": {
+            "compact": true,
+            "cozy": false
+        },
+        "config": {
+            "fullWidth" : true
+        },
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"uri": "./resources/i18n/texts.properties"
+			}
+		},
+		"rootView" : "sap.apf.modeler.ui.view.applicationList"
+	}
+}

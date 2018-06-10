@@ -1,0 +1,43 @@
+<core:FragmentDefinition xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+						 xmlns="sap.m"
+						 xmlns:mdc="sap.ui.mdc"
+						 xmlns:u="sap.ui.unified"
+						 xmlns:l="sap.ui.layout"
+						 xmlns:core="sap.ui.core">
+
+	<VBox id="FilterBarContent" width="100%">
+		<items>
+			<HBox width="100%" justifyContent="End">
+				<core:Icon id="template::CloseAdvancedFilter" src="sap-icon://decline" press="handleFilter" class="sapUiSmallMarginTopBottom"/>
+			</HBox>
+			<template:repeat list="{entitySet>$Type}" var="filterItem">
+				<template:if test="{= (${filterItem>$kind} === 'Property') &amp;&amp; ${path: 'filterItem>', formatter: 'sap.fe.core.AnnotationHelper.isPropertyFilterable'} }">
+						<Label text="{= ${filterItem>@com.sap.vocabularies.Common.v1.Label} ? ${filterItem>@com.sap.vocabularies.Common.v1.Label} : '[' + ${filterItem>@sapui.name} + ']' }:" class="sapUiTinyMarginTop"></Label>
+						<mdc:FilterField
+								fieldPath="{parts : [{path: 'entitySet>@sapui.name'}, {path: 'filterItem>@sapui.name'}], formatter: 'sap.fe.controls._FilterBar.FilterBarAnnotationHelper.getFieldPath'}"
+								showValueHelp="false"
+								dataType="{filterItem>$Type}"
+								maxConditions="{= (${filterItem>$Type} === 'Edm.Date' || ${filterItem>$Type} === 'Edm.DateTimeOffset') ? 2 : undefined }"
+								width="100%"
+								conditions="{vltcm>/conditions}"
+								valueState="{parts : [{path: 'entitySet>@sapui.name'}, {path: 'filterItem>@sapui.name'}], formatter: 'sap.fe.controls._FilterBar.FilterBarAnnotationHelper.getValueStatePath'}"
+								valueStateText="{parts : [{path: 'entitySet>@sapui.name'}, {path: 'filterItem>@sapui.name'}], formatter: 'sap.fe.controls._FilterBar.FilterBarAnnotationHelper.getValueStateTextPath'}"
+								class="sapUiTinyMarginBottom"
+								>
+
+							<mdc:customData>
+								<!-- using the custom data is only a workaround for the first version, we check in the next version together with the mdc library how to change the API to get rid of this -->
+								<core:CustomData key="valueListTitle"
+												 value="{= ${filterItem>@com.sap.vocabularies.Common.v1.Label} ? ${filterItem>@com.sap.vocabularies.Common.v1.Label} : '[' + ${filterItem>@sapui.name} + ']' }"/>
+								<core:CustomData key="suggest"
+												 value="{= ${filterItem>@@sap.ui.model.odata.v4.AnnotationHelper.getValueListType} === 'Standard' ? 'true' : 'false' }"/>
+								<core:CustomData key="fixedValues"
+												 value="{= ${filterItem>@@sap.ui.model.odata.v4.AnnotationHelper.getValueListType} === 'Fixed' ? 'true' : 'false' }"/>
+							</mdc:customData>
+
+						</mdc:FilterField>
+				</template:if>
+			</template:repeat>
+		</items>
+	</VBox>
+</core:FragmentDefinition>

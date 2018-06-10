@@ -1,0 +1,15 @@
+<mvc:View controllerName="sap.apf.modeler.ui.controller.titleBreadCrumb"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout">
+	<VBox xmlns="sap.m" id="idFormTitleLayout" visible="true" height=""
+		width="" displayInline="false" direction="Column" fitContainer="false"
+		renderType="Div" justifyContent="Start" alignItems="Stretch">
+		<items>
+			<Text xmlns="sap.m" id="IdFormTitle" textDirection="Inherit"
+				visible="true" wrapping="true" textAlign="Begin" width="" class="formTitle">
+			</Text>
+			<l:HorizontalLayout xmlns="sap.m" id="IdBreadCrumb"
+				visible="true" class="breadCrumb">
+			</l:HorizontalLayout>
+		</items>
+	</VBox>
+</mvc:View>

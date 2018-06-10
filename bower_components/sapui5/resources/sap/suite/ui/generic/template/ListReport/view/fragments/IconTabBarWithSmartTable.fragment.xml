@@ -1,0 +1,22 @@
+<core:FragmentDefinition
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:build="sap.build">
+
+	<IconTabBar id="template::IconTabBar" expandable="false" stretchContentHeight="true" headerMode="Inline" select="._templateEventHandlers.onIconTabBarSelect">
+		<items>
+			<template:repeat list="{parameter>/settings/quickVariantSelectionX/variants}" var="tabItem">
+				<IconTabFilter id="template::IconTabFilter-{path: 'tabItem>', formatter: 'sap.suite.ui.generic.template.js.AnnotationHelper.getIconTabFilterKey'}"
+							   key="{path: 'tabItem>', formatter: 'sap.suite.ui.generic.template.js.AnnotationHelper.getIconTabFilterKey'}"
+							   text="{path: 'tabItem>', formatter: 'sap.suite.ui.generic.template.js.AnnotationHelper.getIconTabFilterText'}">
+				</IconTabFilter>
+			</template:repeat>
+		</items>
+		<content>
+			<template:repeat list="{parameter>/settings/quickVariantSelectionX/variants}" var="tabItem">
+				<core:Fragment
+					fragmentName="sap.suite.ui.generic.template.ListReport.view.fragments.SmartTable"
+					type="XML" />
+			</template:repeat>
+		</content>
+	</IconTabBar>
+</core:FragmentDefinition>

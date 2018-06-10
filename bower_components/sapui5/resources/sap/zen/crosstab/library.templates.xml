@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Library name="sap.zen.crosstab" xmlns="http://www.sap.com/ui5/ide/templates/xmlview">
+<Template name="sap.zen.crosstab.Crosstab" alias="Crosstab">
+	<jsTemplate><![CDATA[new sap.zen.crosstab.Crosstab({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	width: undefined, // sap.ui.core.CSSSize
+	height: undefined, // sap.ui.core.CSSSize
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<Crosstab xmlns="sap.zen.crosstab"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	width=""
+	height=""
+	validateFieldGroup="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+</Crosstab>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.zen.crosstab.DataCell" alias="DataCell,Cell">
+	<jsTemplate><![CDATA[new sap.zen.crosstab.DataCell({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	text: undefined, // string
+	area: undefined, // object
+	row: undefined, // int
+	col: undefined, // int
+	tableRow: undefined, // int
+	tableCol: undefined, // int
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<DataCell xmlns="sap.zen.crosstab"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	text=""
+	area=""
+	row=""
+	col=""
+	tableRow=""
+	tableCol=""
+	validateFieldGroup="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+</DataCell>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.zen.crosstab.HeaderCell" alias="HeaderCell,Cell">
+	<jsTemplate><![CDATA[new sap.zen.crosstab.HeaderCell({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	rowSpan: undefined, // int
+	colSpan: undefined, // int
+	text: undefined, // string
+	formatter: undefined, // object
+	mergeKey: undefined, // string
+	sort: undefined, // string
+	sortAction: undefined, // string
+	area: undefined, // object
+	effectiveColSpan: undefined, // int
+	effectiveRowSpan: undefined, // int
+	row: undefined, // int
+	col: undefined, // int
+	level: undefined, // int
+	drillState: undefined, // string
+	hierarchyAction: undefined, // string
+	hierarchyTooltip: undefined, // string
+	htmlIE8RowSpan: 1, // int
+	sortTextIndex: undefined, // int
+	tableRow: undefined, // int
+	tableCol: undefined, // int
+	alignment: undefined, // string
+	memberId: undefined, // string
+	parentMemberId: undefined, // string
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<HeaderCell xmlns="sap.zen.crosstab"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	rowSpan=""
+	colSpan=""
+	text=""
+	formatter=""
+	mergeKey=""
+	sort=""
+	sortAction=""
+	area=""
+	effectiveColSpan=""
+	effectiveRowSpan=""
+	row=""
+	col=""
+	level=""
+	drillState=""
+	hierarchyAction=""
+	hierarchyTooltip=""
+	htmlIE8RowSpan="1"
+	sortTextIndex=""
+	tableRow=""
+	tableCol=""
+	alignment=""
+	memberId=""
+	parentMemberId=""
+	validateFieldGroup="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+</HeaderCell>
+]]></xmlTemplate>
+</Template>
+</Library>

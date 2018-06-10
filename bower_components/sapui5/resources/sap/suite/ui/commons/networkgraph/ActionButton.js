@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/core/Element"],function(E){var A=E.extend("sap.suite.ui.commons.networkgraph.ActionButton",{metadata:{library:"sap.suite.ui.commons",properties:{icon:{type:"string",group:"Appearance",defaultValue:null},title:{type:"string",group:"Appearance",defaultValue:null}},events:{press:{parameters:{buttonElement:{type:"object"}}}}}});return A;});

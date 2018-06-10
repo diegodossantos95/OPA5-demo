@@ -1,0 +1,2385 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Library name="sap.ca.ui" xmlns="http://www.sap.com/ui5/ide/templates/xmlview">
+<Template name="sap.ca.ui.AddPicture" alias="AddPicture,Picture">
+	<jsTemplate><![CDATA[new sap.ca.ui.AddPicture({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	buttonPageType: "Tab", // string
+	editable: true, // boolean
+	maxPictureNumber: 10, // int
+	uploadUrl: undefined, // string
+	width: "100%", // sap.ui.core.CSSSize
+	text: undefined, // string
+	pictureAlign: sap.ui.core.TextAlign.Left, // sap.ui.core.TextAlign
+	itemSize: 64, // int
+	compression: "low", // string
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	pictures: [], // sap.ca.ui.PictureItem
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	show: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	pictureAdded: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	maxPictureLimitReached: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	imageUploadFailed: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	fileNotSupported: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<AddPicture xmlns="sap.ca.ui"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	buttonPageType="Tab"
+	editable="true"
+	maxPictureNumber="10"
+	uploadUrl=""
+	width="100%"
+	text=""
+	pictureAlign="Left"
+	itemSize="64"
+	compression="low"
+	validateFieldGroup=""
+	show=""
+	pictureAdded=""
+	maxPictureLimitReached=""
+	imageUploadFailed=""
+	fileNotSupported="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+		<pictures></pictures> <!-- sap.ca.ui.PictureItem -->
+</AddPicture>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.ca.ui.CustomerContext" alias="CustomerContext,Context">
+	<jsTemplate><![CDATA[new sap.ca.ui.CustomerContext({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	personalizationPageName: "AppCustomerContext", // string
+	showSalesArea: false, // boolean
+	path: "/Customers", // string
+	customerIDProperty: "CustomerID", // string
+	customerNameProperty: "CustomerName", // string
+	salesOrganizationNameProperty: "SalesOrganizationName", // string
+	distributionChannelNameProperty: "DistributionChannelName", // string
+	divisionNameProperty: "DivisionName", // string
+	dialogTitle: undefined, // string
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	customerSelected: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<CustomerContext xmlns="sap.ca.ui"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	personalizationPageName="AppCustomerContext"
+	showSalesArea="false"
+	path="/Customers"
+	customerIDProperty="CustomerID"
+	customerNameProperty="CustomerName"
+	salesOrganizationNameProperty="SalesOrganizationName"
+	distributionChannelNameProperty="DistributionChannelName"
+	divisionNameProperty="DivisionName"
+	dialogTitle=""
+	validateFieldGroup=""
+	customerSelected="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+</CustomerContext>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.ca.ui.CustomerControlListItem" alias="CustomerControlListItem,Item">
+	<jsTemplate><![CDATA[new sap.ca.ui.CustomerControlListItem({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	type: sap.m.ListType.Inactive, // sap.m.ListType
+	visible: true, // boolean
+	unread: false, // boolean
+	selected: false, // boolean
+	counter: undefined, // int
+	highlight: sap.ui.core.MessageType.None, // sap.ui.core.MessageType, since 1.44.0
+	showSalesArea: false, // boolean
+	customerID: "CustomerID", // string
+	customerName: "CustomerName", // string
+	salesOrganizationName: "SalesOrganizationName", // string
+	distributionChannelName: "DistributionChannelName", // string
+	divisionName: "DivisionName", // string
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	content: [], // sap.ui.core.Control
+	ariaLabelledBy: [], // sap.ui.core.Control, since 1.28.0
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	tap: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	detailTap: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	press: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	detailPress: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<CustomerControlListItem xmlns="sap.ca.ui"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	type="Inactive"
+	visible="true"
+	unread="false"
+	selected="false"
+	counter=""
+	highlight="None"
+	showSalesArea="false"
+	customerID="CustomerID"
+	customerName="CustomerName"
+	salesOrganizationName="SalesOrganizationName"
+	distributionChannelName="DistributionChannelName"
+	divisionName="DivisionName"
+	ariaLabelledBy=""
+	validateFieldGroup=""
+	tap=""
+	detailTap=""
+	press=""
+	detailPress="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+		<content></content> <!-- sap.ui.core.Control -->
+</CustomerControlListItem>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.ca.ui.DatePicker" alias="DatePicker,Picker">
+	<jsTemplate><![CDATA[new sap.ca.ui.DatePicker({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	value: undefined, // string
+	width: undefined, // sap.ui.core.CSSSize
+	enabled: true, // boolean
+	valueState: sap.ui.core.ValueState.None, // sap.ui.core.ValueState
+	name: undefined, // string
+	placeholder: undefined, // string
+	editable: true, // boolean, since 1.12.0
+	valueStateText: undefined, // string, since 1.26.0
+	showValueStateMessage: true, // boolean, since 1.26.0
+	textAlign: sap.ui.core.TextAlign.Initial, // sap.ui.core.TextAlign, since 1.26.0
+	textDirection: sap.ui.core.TextDirection.Inherit, // sap.ui.core.TextDirection, since 1.28.0
+	required: false, // boolean, since 1.38.4
+	firstDayOffset: 0, // int
+	dateValue: undefined, // string
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	ariaLabelledBy: [], // sap.ui.core.Control, since 1.27.0
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	change: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<DatePicker xmlns="sap.ca.ui"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	value=""
+	width=""
+	enabled="true"
+	valueState="None"
+	name=""
+	placeholder=""
+	editable="true"
+	valueStateText=""
+	showValueStateMessage="true"
+	textAlign="Initial"
+	textDirection="Inherit"
+	required="false"
+	firstDayOffset="0"
+	dateValue=""
+	ariaLabelledBy=""
+	validateFieldGroup=""
+	change="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+</DatePicker>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.ca.ui.ExpansibleFeedListItem" alias="ExpansibleFeedListItem,Item">
+	<jsTemplate><![CDATA[new sap.ca.ui.ExpansibleFeedListItem({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	type: sap.m.ListType.Inactive, // sap.m.ListType
+	visible: true, // boolean
+	unread: false, // boolean
+	selected: false, // boolean
+	counter: undefined, // int
+	highlight: sap.ui.core.MessageType.None, // sap.ui.core.MessageType, since 1.44.0
+	icon: undefined, // sap.ui.core.URI
+	activeIcon: undefined, // sap.ui.core.URI
+	sender: undefined, // string
+	text: undefined, // string
+	info: undefined, // string
+	timestamp: undefined, // string
+	senderActive: true, // boolean
+	iconActive: true, // boolean
+	iconDensityAware: true, // boolean
+	showIcon: true, // boolean
+	convertLinksToAnchorTags: sap.m.LinkConversion.None, // sap.m.LinkConversion, since 1.46.1
+	convertedLinksDefaultTarget: "_blank", // string, since 1.46.1
+	maxCharacters: undefined, // int
+	maxLines: 5, // int
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	ariaLabelledBy: [], // sap.ui.core.Control, since 1.28.0
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	tap: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	detailTap: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	press: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	detailPress: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	senderPress: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	iconPress: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<ExpansibleFeedListItem xmlns="sap.ca.ui"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	type="Inactive"
+	visible="true"
+	unread="false"
+	selected="false"
+	counter=""
+	highlight="None"
+	icon=""
+	activeIcon=""
+	sender=""
+	text=""
+	info=""
+	timestamp=""
+	senderActive="true"
+	iconActive="true"
+	iconDensityAware="true"
+	showIcon="true"
+	convertLinksToAnchorTags="None"
+	convertedLinksDefaultTarget="_blank"
+	maxCharacters=""
+	maxLines="5"
+	ariaLabelledBy=""
+	validateFieldGroup=""
+	tap=""
+	detailTap=""
+	press=""
+	detailPress=""
+	senderPress=""
+	iconPress="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+</ExpansibleFeedListItem>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.ca.ui.FileUpload" alias="FileUpload,Upload">
+	<jsTemplate><![CDATA[new sap.ca.ui.FileUpload({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	uploadUrl: undefined, // string
+	fileName: undefined, // string
+	size: undefined, // string
+	url: undefined, // string
+	uploadedDate: undefined, // string
+	contributor: undefined, // string
+	fileExtension: undefined, // string
+	mimeType: undefined, // string
+	items: undefined, // string
+	uploadEnabled: undefined, // boolean
+	fileId: undefined, // string
+	xsrfToken: undefined, // string
+	useMultipart: false, // boolean
+	acceptRequestHeader: "application/json", // string
+	encodeUrl: undefined, // string
+	renameEnabled: undefined, // boolean
+	deleteEnabled: undefined, // boolean
+	multipleSelectionEnabled: true, // boolean
+	showNoData: false, // boolean
+	sequentialUploadsEnabled: false, // boolean
+	showAttachmentsLabel: true, // boolean
+	useEditControls: false, // boolean
+	showAttachmentsLabelInEditMode: true, // boolean
+	editMode: false, // boolean
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	uploadProgressLabel: undefined, // sap.m.Label
+	attachmentNumberLabel: undefined, // sap.m.Label
+	toolBar: undefined, // sap.m.Toolbar
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	deleteFile: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	renameFile: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	uploadFile: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	fileUploadFailed: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	beforeUploadFile: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	saveClicked: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	cancelClicked: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<FileUpload xmlns="sap.ca.ui"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	uploadUrl=""
+	fileName=""
+	size=""
+	url=""
+	uploadedDate=""
+	contributor=""
+	fileExtension=""
+	mimeType=""
+	items=""
+	uploadEnabled=""
+	fileId=""
+	xsrfToken=""
+	useMultipart="false"
+	acceptRequestHeader="application/json"
+	encodeUrl=""
+	renameEnabled=""
+	deleteEnabled=""
+	multipleSelectionEnabled="true"
+	showNoData="false"
+	sequentialUploadsEnabled="false"
+	showAttachmentsLabel="true"
+	useEditControls="false"
+	showAttachmentsLabelInEditMode="true"
+	editMode="false"
+	validateFieldGroup=""
+	deleteFile=""
+	renameFile=""
+	uploadFile=""
+	fileUploadFailed=""
+	beforeUploadFile=""
+	saveClicked=""
+	cancelClicked="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+		<uploadProgressLabel></uploadProgressLabel> <!-- sap.m.Label -->
+		<attachmentNumberLabel></attachmentNumberLabel> <!-- sap.m.Label -->
+		<toolBar></toolBar> <!-- sap.m.Toolbar -->
+</FileUpload>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.ca.ui.GrowingTileContainer" alias="GrowingTileContainer,Container">
+	<jsTemplate><![CDATA[new sap.ca.ui.GrowingTileContainer({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	width: "auto", // sap.ui.core.CSSSize
+	height: "auto", // sap.ui.core.CSSSize
+	horizontal: true, // boolean
+	vertical: false, // boolean
+	focusable: false, // boolean
+	growing: false, // boolean
+	growingThreshold: 20, // int
+	growingScrollToLoad: false, // boolean
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	content: [], // sap.ui.core.Control
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<GrowingTileContainer xmlns="sap.ca.ui"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	width="auto"
+	height="auto"
+	horizontal="true"
+	vertical="false"
+	focusable="false"
+	growing="false"
+	growingThreshold="20"
+	growingScrollToLoad="false"
+	validateFieldGroup="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+		<content></content> <!-- sap.ui.core.Control -->
+</GrowingTileContainer>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.ca.ui.HierarchicalSelectDialog" alias="HierarchicalSelectDialog,Dialog">
+	<jsTemplate><![CDATA[new sap.ca.ui.HierarchicalSelectDialog({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	icon: undefined, // sap.ui.core.URI
+	title: undefined, // string
+	showHeader: true, // boolean, since 1.15.1
+	type: sap.m.DialogType.Standard, // sap.m.DialogType
+	state: sap.ui.core.ValueState.None, // sap.ui.core.ValueState, since 1.11.2
+	stretchOnPhone: false, // boolean, since 1.11.2
+	stretch: false, // boolean, since 1.13.1
+	contentWidth: undefined, // sap.ui.core.CSSSize, since 1.12.1
+	contentHeight: undefined, // sap.ui.core.CSSSize, since 1.12.1
+	horizontalScrolling: true, // boolean, since 1.15.1
+	verticalScrolling: true, // boolean, since 1.15.1
+	resizable: false, // boolean, since 1.30
+	draggable: false, // boolean, since 1.30
+	escapeHandler: undefined, // any, since 1.44
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	content: [], // sap.ui.core.Control
+	subHeader: undefined, // sap.m.IBar, since 1.12.2
+	customHeader: undefined, // sap.m.IBar, since 1.15.1
+	beginButton: undefined, // sap.m.Button, since 1.15.1
+	endButton: undefined, // sap.m.Button, since 1.15.1
+	buttons: [], // sap.m.Button, since 1.21.1
+	items: [], // sap.ca.ui.HierarchicalSelectDialogItem
+	leftButton: undefined, // sap.m.Button
+	rightButton: undefined, // sap.m.Button
+	initialFocus: undefined, // sap.ui.core.Control, since 1.15.0
+	ariaDescribedBy: [], // sap.ui.core.Control
+	ariaLabelledBy: [], // sap.ui.core.Control
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	beforeOpen: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	afterOpen: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	beforeClose: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	afterClose: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	select: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	cancel: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<HierarchicalSelectDialog xmlns="sap.ca.ui"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	icon=""
+	title=""
+	showHeader="true"
+	type="Standard"
+	state="None"
+	stretchOnPhone="false"
+	stretch="false"
+	contentWidth=""
+	contentHeight=""
+	horizontalScrolling="true"
+	verticalScrolling="true"
+	resizable="false"
+	draggable="false"
+	escapeHandler=""
+	leftButton=""
+	rightButton=""
+	initialFocus=""
+	ariaDescribedBy=""
+	ariaLabelledBy=""
+	validateFieldGroup=""
+	beforeOpen=""
+	afterOpen=""
+	beforeClose=""
+	afterClose=""
+	select=""
+	cancel="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+		<content></content> <!-- sap.ui.core.Control -->
+		<subHeader></subHeader> <!-- sap.m.IBar, since 1.12.2 -->
+		<customHeader></customHeader> <!-- sap.m.IBar, since 1.15.1 -->
+		<beginButton></beginButton> <!-- sap.m.Button, since 1.15.1 -->
+		<endButton></endButton> <!-- sap.m.Button, since 1.15.1 -->
+		<buttons></buttons> <!-- sap.m.Button, since 1.21.1 -->
+		<items></items> <!-- sap.ca.ui.HierarchicalSelectDialogItem -->
+</HierarchicalSelectDialog>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.ca.ui.HierarchicalSelectDialogItem" alias="HierarchicalSelectDialogItem,Item">
+	<jsTemplate><![CDATA[new sap.ca.ui.HierarchicalSelectDialogItem({
+	id: "${id}", // sap.ui.core.ID
+	text: "", // string
+	enabled: true, // boolean
+	textDirection: sap.ui.core.TextDirection.Inherit, // sap.ui.core.TextDirection
+	key: undefined, // string
+	title: undefined, // string
+	entityName: undefined, // string
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	listItemTemplate: undefined // sap.m.ListItemBase
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<HierarchicalSelectDialogItem xmlns="sap.ca.ui"
+	id="${id}"
+	text=""
+	enabled="true"
+	textDirection="Inherit"
+	key=""
+	title=""
+	entityName="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+		<listItemTemplate></listItemTemplate> <!-- sap.m.ListItemBase -->
+</HierarchicalSelectDialogItem>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.ca.ui.Hierarchy" alias="Hierarchy">
+	<jsTemplate><![CDATA[new sap.ca.ui.Hierarchy({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	hideOptionalLevels: true, // boolean
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	items: [], // sap.ca.ui.HierarchyItem
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<Hierarchy xmlns="sap.ca.ui"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	hideOptionalLevels="true"
+	validateFieldGroup="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+		<items></items> <!-- sap.ca.ui.HierarchyItem -->
+</Hierarchy>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.ca.ui.HierarchyItem" alias="HierarchyItem,Item">
+	<jsTemplate><![CDATA[new sap.ca.ui.HierarchyItem({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	icon: undefined, // sap.ui.core.URI
+	levelType: undefined, // string
+	title: undefined, // string
+	identifier: undefined, // string
+	link: undefined, // string
+	emphasized: false, // boolean
+	optional: false, // boolean
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	linkPress: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<HierarchyItem xmlns="sap.ca.ui"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	icon=""
+	levelType=""
+	title=""
+	identifier=""
+	link=""
+	emphasized="false"
+	optional="false"
+	validateFieldGroup=""
+	linkPress="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+</HierarchyItem>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.ca.ui.InPlaceEdit" alias="InPlaceEdit,Edit">
+	<jsTemplate><![CDATA[new sap.ca.ui.InPlaceEdit({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	valueState: sap.ui.core.ValueState.None, // sap.ui.core.ValueState
+	undoEnabled: false, // boolean
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	content: undefined, // sap.ui.core.Control
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	change: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<InPlaceEdit xmlns="sap.ca.ui"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	valueState="None"
+	undoEnabled="false"
+	validateFieldGroup=""
+	change="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+		<content></content> <!-- sap.ui.core.Control -->
+</InPlaceEdit>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.ca.ui.Notes" alias="Notes">
+	<jsTemplate><![CDATA[new sap.ca.ui.Notes({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	inset: false, // boolean
+	headerText: undefined, // string
+	headerDesign: sap.m.ListHeaderDesign.Standard, // sap.m.ListHeaderDesign, since 1.14
+	footerText: undefined, // string
+	mode: sap.m.ListMode.None, // sap.m.ListMode
+	width: "100%", // sap.ui.core.CSSSize
+	includeItemInSelection: false, // boolean
+	showUnread: false, // boolean
+	noDataText: undefined, // string
+	showNoData: true, // boolean
+	enableBusyIndicator: true, // boolean, since 1.20.2
+	modeAnimationOn: true, // boolean
+	showSeparators: sap.m.ListSeparators.All, // sap.m.ListSeparators
+	swipeDirection: sap.m.SwipeDirection.Both, // sap.m.SwipeDirection
+	growing: false, // boolean, since 1.16.0
+	growingThreshold: 20, // int, since 1.16.0
+	growingTriggerText: undefined, // string, since 1.16.0
+	growingScrollToLoad: false, // boolean, since 1.16.0
+	growingDirection: sap.m.ListGrowingDirection.Downwards, // sap.m.ListGrowingDirection, since 1.40.0
+	rememberSelections: true, // boolean, since 1.16.6
+	keyboardMode: sap.m.ListKeyboardMode.Navigation, // sap.m.ListKeyboardMode, since 1.38.0
+	backgroundDesign: sap.m.BackgroundDesign.Solid, // sap.m.BackgroundDesign, since 1.14
+	showNoteInput: true, // boolean
+	textMaxLength: 1000, // int
+	placeholder: undefined, // string
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	items: [], // sap.m.ListItemBase
+	swipeContent: undefined, // sap.ui.core.Control
+	headerToolbar: undefined, // sap.m.Toolbar, since 1.16
+	infoToolbar: undefined, // sap.m.Toolbar, since 1.16
+	columns: [], // sap.m.Column
+	ariaLabelledBy: [], // sap.ui.core.Control, since 1.28.0
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	select: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	selectionChange: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this], // since 1.16
+	"delete": [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	swipe: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	growingStarted: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this], // since 1.16
+	growingFinished: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this], // since 1.16
+	updateStarted: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this], // since 1.16.3
+	updateFinished: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this], // since 1.16.3
+	itemPress: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this], // since 1.20
+	addNote: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<Notes xmlns="sap.ca.ui"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	inset="false"
+	headerText=""
+	headerDesign="Standard"
+	footerText=""
+	mode="None"
+	width="100%"
+	includeItemInSelection="false"
+	showUnread="false"
+	noDataText=""
+	showNoData="true"
+	enableBusyIndicator="true"
+	modeAnimationOn="true"
+	showSeparators="All"
+	swipeDirection="Both"
+	growing="false"
+	growingThreshold="20"
+	growingTriggerText=""
+	growingScrollToLoad="false"
+	growingDirection="Downwards"
+	rememberSelections="true"
+	keyboardMode="Navigation"
+	backgroundDesign="Solid"
+	showNoteInput="true"
+	textMaxLength="1000"
+	placeholder=""
+	ariaLabelledBy=""
+	validateFieldGroup=""
+	select=""
+	selectionChange=""
+	"delete"=""
+	swipe=""
+	growingStarted=""
+	growingFinished=""
+	updateStarted=""
+	updateFinished=""
+	itemPress=""
+	addNote="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+		<items></items> <!-- sap.m.ListItemBase -->
+		<swipeContent></swipeContent> <!-- sap.ui.core.Control -->
+		<headerToolbar></headerToolbar> <!-- sap.m.Toolbar, since 1.16 -->
+		<infoToolbar></infoToolbar> <!-- sap.m.Toolbar, since 1.16 -->
+		<columns></columns> <!-- sap.m.Column -->
+</Notes>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.ca.ui.OverflowContainer" alias="OverflowContainer,Container">
+	<jsTemplate><![CDATA[new sap.ca.ui.OverflowContainer({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	overflowHeight: "200px", // sap.ui.core.CSSSize
+	expanded: false, // boolean
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	content: [], // sap.ui.core.Control
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<OverflowContainer xmlns="sap.ca.ui"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	overflowHeight="200px"
+	expanded="false"
+	validateFieldGroup="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+		<content></content> <!-- sap.ui.core.Control -->
+</OverflowContainer>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.ca.ui.OverviewTile" alias="OverviewTile,Tile">
+	<jsTemplate><![CDATA[new sap.ca.ui.OverviewTile({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	removable: true, // boolean
+	title: "null", // string
+	icon: "null", // sap.ui.core.URI
+	contact: "null", // string
+	address: "null", // string
+	opportunities: "null", // string
+	rating: "null", // string
+	lastContact: "null", // string
+	nextContact: "null", // string
+	revenue: "null", // string
+	visible: true, // boolean
+	width: undefined, // sap.ui.core.CSSSize
+	contactActive: false, // boolean
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	press: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	contactPress: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<OverviewTile xmlns="sap.ca.ui"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	removable="true"
+	title="null"
+	icon="null"
+	contact="null"
+	address="null"
+	opportunities="null"
+	rating="null"
+	lastContact="null"
+	nextContact="null"
+	revenue="null"
+	visible="true"
+	width=""
+	contactActive="false"
+	validateFieldGroup=""
+	press=""
+	contactPress="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+</OverviewTile>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.ca.ui.PictureItem" alias="PictureItem,Item">
+	<jsTemplate><![CDATA[new sap.ca.ui.PictureItem({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	status: undefined, // string
+	source: undefined, // string
+	name: undefined, // string
+	width: "62px", // sap.ui.core.CSSSize
+	height: "62px", // sap.ui.core.CSSSize
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	loaded: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<PictureItem xmlns="sap.ca.ui"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	status=""
+	source=""
+	name=""
+	width="62px"
+	height="62px"
+	validateFieldGroup=""
+	loaded="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+</PictureItem>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.ca.ui.PictureTile" alias="PictureTile,Tile">
+	<jsTemplate><![CDATA[new sap.ca.ui.PictureTile({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	removable: true, // boolean
+	height: "32px", // sap.ui.core.CSSSize
+	width: "32px", // sap.ui.core.CSSSize
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	content: undefined, // sap.ui.core.Control
+	tileContent: undefined, // sap.ca.ui.PictureViewerItem
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	press: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	pictureDelete: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<PictureTile xmlns="sap.ca.ui"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	removable="true"
+	height="32px"
+	width="32px"
+	tileContent=""
+	validateFieldGroup=""
+	press=""
+	pictureDelete="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+		<content></content> <!-- sap.ui.core.Control -->
+</PictureTile>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.ca.ui.PictureTileContainer" alias="PictureTileContainer,Container">
+	<jsTemplate><![CDATA[new sap.ca.ui.PictureTileContainer({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	width: "100%", // sap.ui.core.CSSSize
+	height: "100%", // sap.ui.core.CSSSize
+	editable: undefined, // boolean
+	allowAdd: undefined, // boolean
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	tiles: [], // sap.ui.core.Control
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	tileMove: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	tileDelete: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	tileAdd: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<PictureTileContainer xmlns="sap.ca.ui"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	width="100%"
+	height="100%"
+	editable=""
+	allowAdd=""
+	validateFieldGroup=""
+	tileMove=""
+	tileDelete=""
+	tileAdd="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+		<tiles></tiles> <!-- sap.ui.core.Control -->
+</PictureTileContainer>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.ca.ui.PictureViewer" alias="PictureViewer,Viewer">
+	<jsTemplate><![CDATA[new sap.ca.ui.PictureViewer({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	width: "100%", // sap.ui.core.CSSSize
+	height: "100%", // sap.ui.core.CSSSize
+	editable: undefined, // boolean
+	allowAdd: undefined, // boolean
+	tileScaling: 0.95, // float
+	removable: false, // boolean
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	tiles: [], // sap.m.Tile
+	items: [], // sap.ca.ui.PictureViewerItem
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	tileMove: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	tileDelete: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	tileAdd: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	pictureDeleted: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<PictureViewer xmlns="sap.ca.ui"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	width="100%"
+	height="100%"
+	editable=""
+	allowAdd=""
+	tileScaling="0.95"
+	removable="false"
+	validateFieldGroup=""
+	tileMove=""
+	tileDelete=""
+	tileAdd=""
+	pictureDeleted="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+		<tiles></tiles> <!-- sap.m.Tile -->
+		<items></items> <!-- sap.ca.ui.PictureViewerItem -->
+</PictureViewer>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.ca.ui.PictureViewerItem" alias="PictureViewerItem,Item">
+	<jsTemplate><![CDATA[new sap.ca.ui.PictureViewerItem({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	src: undefined, // string
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	image: undefined, // sap.m.Image
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<PictureViewerItem xmlns="sap.ca.ui"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	src=""
+	validateFieldGroup="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+		<image></image> <!-- sap.m.Image -->
+</PictureViewerItem>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.ca.ui.ZoomableScrollContainer" alias="ZoomableScrollContainer,Container">
+	<jsTemplate><![CDATA[new sap.ca.ui.ZoomableScrollContainer({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	width: "auto", // sap.ui.core.CSSSize
+	height: "auto", // sap.ui.core.CSSSize
+	horizontal: true, // boolean
+	vertical: false, // boolean
+	focusable: false, // boolean
+	zoomable: true, // boolean
+	initialScale: 1, // float
+	minScale: 1, // float
+	maxScale: 4, // float
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	content: [], // sap.ui.core.Control
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<ZoomableScrollContainer xmlns="sap.ca.ui"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	width="auto"
+	height="auto"
+	horizontal="true"
+	vertical="false"
+	focusable="false"
+	zoomable="true"
+	initialScale="1"
+	minScale="1"
+	maxScale="4"
+	validateFieldGroup="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+		<content></content> <!-- sap.ui.core.Control -->
+</ZoomableScrollContainer>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.ca.ui.charts.BarListItem" alias="BarListItem,Item">
+	<jsTemplate><![CDATA[new sap.ca.ui.charts.BarListItem({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	type: sap.m.ListType.Inactive, // sap.m.ListType
+	visible: true, // boolean
+	unread: false, // boolean
+	selected: false, // boolean
+	counter: undefined, // int
+	highlight: sap.ui.core.MessageType.None, // sap.ui.core.MessageType, since 1.44.0
+	axis: undefined, // string
+	group: undefined, // string
+	value: undefined, // string
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	ariaLabelledBy: [], // sap.ui.core.Control, since 1.28.0
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	tap: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	detailTap: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	press: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	detailPress: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<charts/BarListItem xmlns="sap.ca.ui"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	type="Inactive"
+	visible="true"
+	unread="false"
+	selected="false"
+	counter=""
+	highlight="None"
+	axis=""
+	group=""
+	value=""
+	ariaLabelledBy=""
+	validateFieldGroup=""
+	tap=""
+	detailTap=""
+	press=""
+	detailPress="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+</charts/BarListItem>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.ca.ui.charts.BubbleChart" alias="BubbleChart,Chart">
+	<jsTemplate><![CDATA[new sap.ca.ui.charts.BubbleChart({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	width: "100%", // sap.ui.core.CSSSize
+	height: "100%", // sap.ui.core.CSSSize
+	dataset: undefined, // object
+	chartType: "Bar", // string
+	minShapeSize: "48px", // sap.ui.core.CSSSize
+	label: "", // string
+	title: "", // string
+	icon: "", // string
+	secondAxisVisible: true, // boolean
+	showLegend: true, // boolean
+	selectionMode: sap.ca.ui.charts.ChartSelectionMode.Multiple, // sap.ca.ui.charts.ChartSelectionMode
+	showHoverBackground: false, // boolean
+	showTooltip: false, // boolean
+	showPopover: true, // boolean
+	showDataLabel: true, // boolean
+	yAxisLabelFormatter: undefined, // string
+	yAxis2LabelFormatter: undefined, // string
+	xAxisLabelFormatter: undefined, // string
+	xAxis2LabelFormatter: undefined, // string
+	plotAreaAxisTooltipFormatter: undefined, // object
+	tooltipFormatter: undefined, // object
+	dataLabelFormatter: undefined, // object
+	popoverFormatter: undefined, // object
+	popoverGroupFormatter: undefined, // string
+	chartSemanticColorFormatter: undefined, // object
+	internalVizChart: undefined, // sap.ui.core.Control
+	chartPopOver: undefined, // sap.ui.core.Control
+	popoverSubHeader: undefined, // sap.ui.core.Control
+	popoverFooter: undefined, // sap.ui.core.Control
+	advancedChartSettings: undefined, // object
+	stackedChartWidthEnhancer: false, // boolean
+	noData: undefined, // sap.ui.core.Control
+	dataLabelFormat: undefined, // any
+	showTitle: false, // boolean
+	showXAxisLabel: true, // boolean
+	xAxisFixedRange: false, // boolean
+	xAxisMinValue: 0, // float
+	xAxisMaxValue: 0, // float
+	showYAxisLabel: true, // boolean
+	yAxisFixedRange: false, // boolean
+	yAxisMinValue: 0, // float
+	yAxisMaxValue: 0, // float
+	minimumLabelSize: 60, // int
+	showSizeLegend: false, // boolean
+	xAxisTitle: undefined, // string
+	yAxisTitle: undefined, // string
+	showCustomLabels: false, // boolean
+	labelProperty: undefined, // object
+	xAxisFormatFunction: undefined, // object
+	xAxisFormatString: undefined, // string
+	yAxisFormatFunction: undefined, // object
+	yAxisFormatString: undefined, // string
+	axisTooltipFormatString: undefined, // any
+	axisFormatFunction: undefined, // object
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	content: [], // sap.ui.core.Control
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	selectDataPoint: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	popoverBeforeOpen: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	popoverAfterOpen: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<charts/BubbleChart xmlns="sap.ca.ui"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	width="100%"
+	height="100%"
+	dataset=""
+	chartType="Bar"
+	minShapeSize="48px"
+	label=""
+	title=""
+	icon=""
+	secondAxisVisible="true"
+	showLegend="true"
+	selectionMode="Multiple"
+	showHoverBackground="false"
+	showTooltip="false"
+	showPopover="true"
+	showDataLabel="true"
+	yAxisLabelFormatter=""
+	yAxis2LabelFormatter=""
+	xAxisLabelFormatter=""
+	xAxis2LabelFormatter=""
+	plotAreaAxisTooltipFormatter=""
+	tooltipFormatter=""
+	dataLabelFormatter=""
+	popoverFormatter=""
+	popoverGroupFormatter=""
+	chartSemanticColorFormatter=""
+	internalVizChart=""
+	chartPopOver=""
+	popoverSubHeader=""
+	popoverFooter=""
+	advancedChartSettings=""
+	stackedChartWidthEnhancer="false"
+	noData=""
+	dataLabelFormat=""
+	showTitle="false"
+	showXAxisLabel="true"
+	xAxisFixedRange="false"
+	xAxisMinValue="0"
+	xAxisMaxValue="0"
+	showYAxisLabel="true"
+	yAxisFixedRange="false"
+	yAxisMinValue="0"
+	yAxisMaxValue="0"
+	minimumLabelSize="60"
+	showSizeLegend="false"
+	xAxisTitle=""
+	yAxisTitle=""
+	showCustomLabels="false"
+	labelProperty=""
+	xAxisFormatFunction=""
+	xAxisFormatString=""
+	yAxisFormatFunction=""
+	yAxisFormatString=""
+	axisTooltipFormatString=""
+	axisFormatFunction=""
+	validateFieldGroup=""
+	selectDataPoint=""
+	popoverBeforeOpen=""
+	popoverAfterOpen="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+		<content></content> <!-- sap.ui.core.Control -->
+</charts/BubbleChart>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.ca.ui.charts.Chart" alias="Chart">
+	<jsTemplate><![CDATA[new sap.ca.ui.charts.Chart({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	width: "100%", // sap.ui.core.CSSSize
+	height: "100%", // sap.ui.core.CSSSize
+	dataset: undefined, // object
+	chartType: "Bar", // string
+	minShapeSize: "48px", // sap.ui.core.CSSSize
+	label: "", // string
+	title: "", // string
+	icon: "", // string
+	secondAxisVisible: true, // boolean
+	showLegend: true, // boolean
+	selectionMode: sap.ca.ui.charts.ChartSelectionMode.Multiple, // sap.ca.ui.charts.ChartSelectionMode
+	showHoverBackground: false, // boolean
+	showTooltip: false, // boolean
+	showPopover: true, // boolean
+	showDataLabel: true, // boolean
+	yAxisLabelFormatter: undefined, // string
+	yAxis2LabelFormatter: undefined, // string
+	xAxisLabelFormatter: undefined, // string
+	xAxis2LabelFormatter: undefined, // string
+	plotAreaAxisTooltipFormatter: undefined, // object
+	tooltipFormatter: undefined, // object
+	dataLabelFormatter: undefined, // object
+	popoverFormatter: undefined, // object
+	popoverGroupFormatter: undefined, // string
+	chartSemanticColorFormatter: undefined, // object
+	internalVizChart: undefined, // sap.ui.core.Control
+	chartPopOver: undefined, // sap.ui.core.Control
+	popoverSubHeader: undefined, // sap.ui.core.Control
+	popoverFooter: undefined, // sap.ui.core.Control
+	advancedChartSettings: undefined, // object
+	stackedChartWidthEnhancer: false, // boolean
+	noData: undefined, // sap.ui.core.Control
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	selectDataPoint: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	popoverBeforeOpen: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	popoverAfterOpen: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<charts/Chart xmlns="sap.ca.ui"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	width="100%"
+	height="100%"
+	dataset=""
+	chartType="Bar"
+	minShapeSize="48px"
+	label=""
+	title=""
+	icon=""
+	secondAxisVisible="true"
+	showLegend="true"
+	selectionMode="Multiple"
+	showHoverBackground="false"
+	showTooltip="false"
+	showPopover="true"
+	showDataLabel="true"
+	yAxisLabelFormatter=""
+	yAxis2LabelFormatter=""
+	xAxisLabelFormatter=""
+	xAxis2LabelFormatter=""
+	plotAreaAxisTooltipFormatter=""
+	tooltipFormatter=""
+	dataLabelFormatter=""
+	popoverFormatter=""
+	popoverGroupFormatter=""
+	chartSemanticColorFormatter=""
+	internalVizChart=""
+	chartPopOver=""
+	popoverSubHeader=""
+	popoverFooter=""
+	advancedChartSettings=""
+	stackedChartWidthEnhancer="false"
+	noData=""
+	validateFieldGroup=""
+	selectDataPoint=""
+	popoverBeforeOpen=""
+	popoverAfterOpen="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+</charts/Chart>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.ca.ui.charts.ChartToolBar" alias="ChartToolBar,Bar">
+	<jsTemplate><![CDATA[new sap.ca.ui.charts.ChartToolBar({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	showPersonalization: false, // boolean
+	showFullScreen: false, // boolean
+	fullScreen: false, // boolean
+	showLegend: true, // boolean
+	chartTitle: "", // string
+	firstDimensionPath: "", // string
+	firstDimensionKeyPath: "", // string
+	firstDimensionTextPath: "", // string
+	secondDimensionPath: "", // string
+	secondDimensionKeyPath: "", // string
+	secondDimensionTextPath: "", // string
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	charts: [], // sap.ui.core.Control
+	toolBar: undefined, // sap.m.Bar
+	selectedChart: undefined, // sap.ui.core.Control
+	firstDimensionSelect: undefined, // sap.m.Select
+	secondDimensionSelect: undefined, // sap.m.Select
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	personalizationPressed: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	firstDimensionKeySelected: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	secondDimensionKeySelected: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<charts/ChartToolBar xmlns="sap.ca.ui"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	showPersonalization="false"
+	showFullScreen="false"
+	fullScreen="false"
+	showLegend="true"
+	chartTitle=""
+	firstDimensionPath=""
+	firstDimensionKeyPath=""
+	firstDimensionTextPath=""
+	secondDimensionPath=""
+	secondDimensionKeyPath=""
+	secondDimensionTextPath=""
+	selectedChart=""
+	firstDimensionSelect=""
+	secondDimensionSelect=""
+	validateFieldGroup=""
+	personalizationPressed=""
+	firstDimensionKeySelected=""
+	secondDimensionKeySelected="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+		<charts></charts> <!-- sap.ui.core.Control -->
+		<toolBar></toolBar> <!-- sap.m.Bar -->
+</charts/ChartToolBar>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.ca.ui.charts.ClusterListItem" alias="ClusterListItem,Item">
+	<jsTemplate><![CDATA[new sap.ca.ui.charts.ClusterListItem({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	type: sap.m.ListType.Inactive, // sap.m.ListType
+	visible: true, // boolean
+	unread: false, // boolean
+	selected: false, // boolean
+	counter: undefined, // int
+	highlight: sap.ui.core.MessageType.None, // sap.ui.core.MessageType, since 1.44.0
+	title: undefined, // string
+	items: undefined, // object
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	ariaLabelledBy: [], // sap.ui.core.Control, since 1.28.0
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	tap: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	detailTap: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	press: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	detailPress: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<charts/ClusterListItem xmlns="sap.ca.ui"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	type="Inactive"
+	visible="true"
+	unread="false"
+	selected="false"
+	counter=""
+	highlight="None"
+	title=""
+	items=""
+	ariaLabelledBy=""
+	validateFieldGroup=""
+	tap=""
+	detailTap=""
+	press=""
+	detailPress="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+</charts/ClusterListItem>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.ca.ui.charts.CombinedChart" alias="CombinedChart,Chart">
+	<jsTemplate><![CDATA[new sap.ca.ui.charts.CombinedChart({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	width: "100%", // sap.ui.core.CSSSize
+	height: "100%", // sap.ui.core.CSSSize
+	dataset: undefined, // object
+	chartType: "Bar", // string
+	minShapeSize: "48px", // sap.ui.core.CSSSize
+	label: "", // string
+	title: "", // string
+	icon: "", // string
+	secondAxisVisible: true, // boolean
+	showLegend: true, // boolean
+	selectionMode: sap.ca.ui.charts.ChartSelectionMode.Multiple, // sap.ca.ui.charts.ChartSelectionMode
+	showHoverBackground: false, // boolean
+	showTooltip: false, // boolean
+	showPopover: true, // boolean
+	showDataLabel: true, // boolean
+	yAxisLabelFormatter: undefined, // string
+	yAxis2LabelFormatter: undefined, // string
+	xAxisLabelFormatter: undefined, // string
+	xAxis2LabelFormatter: undefined, // string
+	plotAreaAxisTooltipFormatter: undefined, // object
+	tooltipFormatter: undefined, // object
+	dataLabelFormatter: undefined, // object
+	popoverFormatter: undefined, // object
+	popoverGroupFormatter: undefined, // string
+	chartSemanticColorFormatter: undefined, // object
+	internalVizChart: undefined, // sap.ui.core.Control
+	chartPopOver: undefined, // sap.ui.core.Control
+	popoverSubHeader: undefined, // sap.ui.core.Control
+	popoverFooter: undefined, // sap.ui.core.Control
+	advancedChartSettings: undefined, // object
+	stackedChartWidthEnhancer: false, // boolean
+	noData: undefined, // sap.ui.core.Control
+	data: undefined, // any
+	primaryAxis: undefined, // any
+	secondAxis: undefined, // any
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	scrollArea: undefined, // sap.m.ScrollContainer
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	selectDataPoint: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	popoverBeforeOpen: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	popoverAfterOpen: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<charts/CombinedChart xmlns="sap.ca.ui"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	width="100%"
+	height="100%"
+	dataset=""
+	chartType="Bar"
+	minShapeSize="48px"
+	label=""
+	title=""
+	icon=""
+	secondAxisVisible="true"
+	showLegend="true"
+	selectionMode="Multiple"
+	showHoverBackground="false"
+	showTooltip="false"
+	showPopover="true"
+	showDataLabel="true"
+	yAxisLabelFormatter=""
+	yAxis2LabelFormatter=""
+	xAxisLabelFormatter=""
+	xAxis2LabelFormatter=""
+	plotAreaAxisTooltipFormatter=""
+	tooltipFormatter=""
+	dataLabelFormatter=""
+	popoverFormatter=""
+	popoverGroupFormatter=""
+	chartSemanticColorFormatter=""
+	internalVizChart=""
+	chartPopOver=""
+	popoverSubHeader=""
+	popoverFooter=""
+	advancedChartSettings=""
+	stackedChartWidthEnhancer="false"
+	noData=""
+	data=""
+	primaryAxis=""
+	secondAxis=""
+	validateFieldGroup=""
+	selectDataPoint=""
+	popoverBeforeOpen=""
+	popoverAfterOpen="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+		<scrollArea></scrollArea> <!-- sap.m.ScrollContainer -->
+</charts/CombinedChart>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.ca.ui.charts.HorizontalBarChart" alias="HorizontalBarChart,Chart">
+	<jsTemplate><![CDATA[new sap.ca.ui.charts.HorizontalBarChart({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	width: "100%", // sap.ui.core.CSSSize
+	height: "100%", // sap.ui.core.CSSSize
+	dataset: undefined, // object
+	chartType: "Bar", // string
+	minShapeSize: "48px", // sap.ui.core.CSSSize
+	label: "", // string
+	title: "", // string
+	icon: "", // string
+	secondAxisVisible: true, // boolean
+	showLegend: true, // boolean
+	selectionMode: sap.ca.ui.charts.ChartSelectionMode.Multiple, // sap.ca.ui.charts.ChartSelectionMode
+	showHoverBackground: false, // boolean
+	showTooltip: false, // boolean
+	showPopover: true, // boolean
+	showDataLabel: true, // boolean
+	yAxisLabelFormatter: undefined, // string
+	yAxis2LabelFormatter: undefined, // string
+	xAxisLabelFormatter: undefined, // string
+	xAxis2LabelFormatter: undefined, // string
+	plotAreaAxisTooltipFormatter: undefined, // object
+	tooltipFormatter: undefined, // object
+	dataLabelFormatter: undefined, // object
+	popoverFormatter: undefined, // object
+	popoverGroupFormatter: undefined, // string
+	chartSemanticColorFormatter: undefined, // object
+	internalVizChart: undefined, // sap.ui.core.Control
+	chartPopOver: undefined, // sap.ui.core.Control
+	popoverSubHeader: undefined, // sap.ui.core.Control
+	popoverFooter: undefined, // sap.ui.core.Control
+	advancedChartSettings: undefined, // object
+	stackedChartWidthEnhancer: false, // boolean
+	noData: undefined, // sap.ui.core.Control
+	data: undefined, // object
+	container: "chart", // string
+	barHeight: 48, // int
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	scroll: undefined, // sap.m.ScrollContainer
+	horizontalBarChart: undefined, // sap.viz.ui5.Bar
+	verticalArea: undefined, // sap.m.VBox
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	selectDataPoint: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	popoverBeforeOpen: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	popoverAfterOpen: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<charts/HorizontalBarChart xmlns="sap.ca.ui"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	width="100%"
+	height="100%"
+	dataset=""
+	chartType="Bar"
+	minShapeSize="48px"
+	label=""
+	title=""
+	icon=""
+	secondAxisVisible="true"
+	showLegend="true"
+	selectionMode="Multiple"
+	showHoverBackground="false"
+	showTooltip="false"
+	showPopover="true"
+	showDataLabel="true"
+	yAxisLabelFormatter=""
+	yAxis2LabelFormatter=""
+	xAxisLabelFormatter=""
+	xAxis2LabelFormatter=""
+	plotAreaAxisTooltipFormatter=""
+	tooltipFormatter=""
+	dataLabelFormatter=""
+	popoverFormatter=""
+	popoverGroupFormatter=""
+	chartSemanticColorFormatter=""
+	internalVizChart=""
+	chartPopOver=""
+	popoverSubHeader=""
+	popoverFooter=""
+	advancedChartSettings=""
+	stackedChartWidthEnhancer="false"
+	noData=""
+	data=""
+	container="chart"
+	barHeight="48"
+	validateFieldGroup=""
+	selectDataPoint=""
+	popoverBeforeOpen=""
+	popoverAfterOpen="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+		<scroll></scroll> <!-- sap.m.ScrollContainer -->
+		<horizontalBarChart></horizontalBarChart> <!-- sap.viz.ui5.Bar -->
+		<verticalArea></verticalArea> <!-- sap.m.VBox -->
+</charts/HorizontalBarChart>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.ca.ui.charts.LineChart" alias="LineChart,Chart">
+	<jsTemplate><![CDATA[new sap.ca.ui.charts.LineChart({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	width: "100%", // sap.ui.core.CSSSize
+	height: "100%", // sap.ui.core.CSSSize
+	dataset: undefined, // object
+	chartType: "Bar", // string
+	minShapeSize: "48px", // sap.ui.core.CSSSize
+	label: "", // string
+	title: "", // string
+	icon: "", // string
+	secondAxisVisible: true, // boolean
+	showLegend: true, // boolean
+	selectionMode: sap.ca.ui.charts.ChartSelectionMode.Multiple, // sap.ca.ui.charts.ChartSelectionMode
+	showHoverBackground: false, // boolean
+	showTooltip: false, // boolean
+	showPopover: true, // boolean
+	showDataLabel: true, // boolean
+	yAxisLabelFormatter: undefined, // string
+	yAxis2LabelFormatter: undefined, // string
+	xAxisLabelFormatter: undefined, // string
+	xAxis2LabelFormatter: undefined, // string
+	plotAreaAxisTooltipFormatter: undefined, // object
+	tooltipFormatter: undefined, // object
+	dataLabelFormatter: undefined, // object
+	popoverFormatter: undefined, // object
+	popoverGroupFormatter: undefined, // string
+	chartSemanticColorFormatter: undefined, // object
+	internalVizChart: undefined, // sap.ui.core.Control
+	chartPopOver: undefined, // sap.ui.core.Control
+	popoverSubHeader: undefined, // sap.ui.core.Control
+	popoverFooter: undefined, // sap.ui.core.Control
+	advancedChartSettings: undefined, // object
+	stackedChartWidthEnhancer: false, // boolean
+	noData: undefined, // sap.ui.core.Control
+	chartTitle: "Line Chart", // string
+	dataLabelFormat: '#0', // any
+	minTouchSize: "48px", // string
+	minTouchWidth: "48px", // string
+	showLabel: true, // boolean
+	showScrollContext: false, // boolean
+	chartDataset: undefined, // any
+	datasetSettings: undefined, // any
+	chartDatasetSettings: undefined, // any
+	dataPath: undefined, // string
+	data: undefined, // any
+	chartBusinessData: undefined, // any
+	useDelayedResize: false, // boolean
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	vertical: undefined, // sap.m.VBox
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	selectDataPoint: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	popoverBeforeOpen: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	popoverAfterOpen: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	onDetailsSelected: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<charts/LineChart xmlns="sap.ca.ui"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	width="100%"
+	height="100%"
+	dataset=""
+	chartType="Bar"
+	minShapeSize="48px"
+	label=""
+	title=""
+	icon=""
+	secondAxisVisible="true"
+	showLegend="true"
+	selectionMode="Multiple"
+	showHoverBackground="false"
+	showTooltip="false"
+	showPopover="true"
+	showDataLabel="true"
+	yAxisLabelFormatter=""
+	yAxis2LabelFormatter=""
+	xAxisLabelFormatter=""
+	xAxis2LabelFormatter=""
+	plotAreaAxisTooltipFormatter=""
+	tooltipFormatter=""
+	dataLabelFormatter=""
+	popoverFormatter=""
+	popoverGroupFormatter=""
+	chartSemanticColorFormatter=""
+	internalVizChart=""
+	chartPopOver=""
+	popoverSubHeader=""
+	popoverFooter=""
+	advancedChartSettings=""
+	stackedChartWidthEnhancer="false"
+	noData=""
+	chartTitle="Line Chart"
+	dataLabelFormat="'#0'"
+	minTouchSize="48px"
+	minTouchWidth="48px"
+	showLabel="true"
+	showScrollContext="false"
+	chartDataset=""
+	datasetSettings=""
+	chartDatasetSettings=""
+	dataPath=""
+	data=""
+	chartBusinessData=""
+	useDelayedResize="false"
+	validateFieldGroup=""
+	selectDataPoint=""
+	popoverBeforeOpen=""
+	popoverAfterOpen=""
+	onDetailsSelected="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+		<vertical></vertical> <!-- sap.m.VBox -->
+</charts/LineChart>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.ca.ui.charts.StackedHorizontalBarChart" alias="StackedHorizontalBarChart,Chart">
+	<jsTemplate><![CDATA[new sap.ca.ui.charts.StackedHorizontalBarChart({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	width: "100%", // sap.ui.core.CSSSize
+	height: "100%", // sap.ui.core.CSSSize
+	dataset: undefined, // object
+	chartType: "Bar", // string
+	minShapeSize: "48px", // sap.ui.core.CSSSize
+	label: "", // string
+	title: "", // string
+	icon: "", // string
+	secondAxisVisible: true, // boolean
+	showLegend: true, // boolean
+	selectionMode: sap.ca.ui.charts.ChartSelectionMode.Multiple, // sap.ca.ui.charts.ChartSelectionMode
+	showHoverBackground: false, // boolean
+	showTooltip: false, // boolean
+	showPopover: true, // boolean
+	showDataLabel: true, // boolean
+	yAxisLabelFormatter: undefined, // string
+	yAxis2LabelFormatter: undefined, // string
+	xAxisLabelFormatter: undefined, // string
+	xAxis2LabelFormatter: undefined, // string
+	plotAreaAxisTooltipFormatter: undefined, // object
+	tooltipFormatter: undefined, // object
+	dataLabelFormatter: undefined, // object
+	popoverFormatter: undefined, // object
+	popoverGroupFormatter: undefined, // string
+	chartSemanticColorFormatter: undefined, // object
+	internalVizChart: undefined, // sap.ui.core.Control
+	chartPopOver: undefined, // sap.ui.core.Control
+	popoverSubHeader: undefined, // sap.ui.core.Control
+	popoverFooter: undefined, // sap.ui.core.Control
+	advancedChartSettings: undefined, // object
+	stackedChartWidthEnhancer: false, // boolean
+	noData: undefined, // sap.ui.core.Control
+	type: "StackedBar", // string
+	minTouchSize: "48px", // sap.ui.core.CSSSize
+	dataLabelFormat: [["##"]], // any
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	content: [], // sap.ui.core.Control
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	selectDataPoint: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	popoverBeforeOpen: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	popoverAfterOpen: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<charts/StackedHorizontalBarChart xmlns="sap.ca.ui"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	width="100%"
+	height="100%"
+	dataset=""
+	chartType="Bar"
+	minShapeSize="48px"
+	label=""
+	title=""
+	icon=""
+	secondAxisVisible="true"
+	showLegend="true"
+	selectionMode="Multiple"
+	showHoverBackground="false"
+	showTooltip="false"
+	showPopover="true"
+	showDataLabel="true"
+	yAxisLabelFormatter=""
+	yAxis2LabelFormatter=""
+	xAxisLabelFormatter=""
+	xAxis2LabelFormatter=""
+	plotAreaAxisTooltipFormatter=""
+	tooltipFormatter=""
+	dataLabelFormatter=""
+	popoverFormatter=""
+	popoverGroupFormatter=""
+	chartSemanticColorFormatter=""
+	internalVizChart=""
+	chartPopOver=""
+	popoverSubHeader=""
+	popoverFooter=""
+	advancedChartSettings=""
+	stackedChartWidthEnhancer="false"
+	noData=""
+	type="StackedBar"
+	minTouchSize="48px"
+	dataLabelFormat="[["##"]]"
+	validateFieldGroup=""
+	selectDataPoint=""
+	popoverBeforeOpen=""
+	popoverAfterOpen="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+		<content></content> <!-- sap.ui.core.Control -->
+</charts/StackedHorizontalBarChart>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.ca.ui.charts.StackedVerticalColumnChart" alias="StackedVerticalColumnChart,Chart">
+	<jsTemplate><![CDATA[new sap.ca.ui.charts.StackedVerticalColumnChart({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	width: "100%", // sap.ui.core.CSSSize
+	height: "100%", // sap.ui.core.CSSSize
+	dataset: undefined, // object
+	chartType: "Bar", // string
+	minShapeSize: "48px", // sap.ui.core.CSSSize
+	label: "", // string
+	title: "", // string
+	icon: "", // string
+	secondAxisVisible: true, // boolean
+	showLegend: true, // boolean
+	selectionMode: sap.ca.ui.charts.ChartSelectionMode.Multiple, // sap.ca.ui.charts.ChartSelectionMode
+	showHoverBackground: false, // boolean
+	showTooltip: false, // boolean
+	showPopover: true, // boolean
+	showDataLabel: true, // boolean
+	yAxisLabelFormatter: undefined, // string
+	yAxis2LabelFormatter: undefined, // string
+	xAxisLabelFormatter: undefined, // string
+	xAxis2LabelFormatter: undefined, // string
+	plotAreaAxisTooltipFormatter: undefined, // object
+	tooltipFormatter: undefined, // object
+	dataLabelFormatter: undefined, // object
+	popoverFormatter: undefined, // object
+	popoverGroupFormatter: undefined, // string
+	chartSemanticColorFormatter: undefined, // object
+	internalVizChart: undefined, // sap.ui.core.Control
+	chartPopOver: undefined, // sap.ui.core.Control
+	popoverSubHeader: undefined, // sap.ui.core.Control
+	popoverFooter: undefined, // sap.ui.core.Control
+	advancedChartSettings: undefined, // object
+	stackedChartWidthEnhancer: false, // boolean
+	noData: undefined, // sap.ui.core.Control
+	type: "StackedColumn", // string
+	minTouchSize: '48px', // sap.ui.core.CSSSize
+	dataLabelFormat: [["##"]], // any
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	content: [], // sap.ui.core.Control
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	selectDataPoint: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	popoverBeforeOpen: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	popoverAfterOpen: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<charts/StackedVerticalColumnChart xmlns="sap.ca.ui"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	width="100%"
+	height="100%"
+	dataset=""
+	chartType="Bar"
+	minShapeSize="48px"
+	label=""
+	title=""
+	icon=""
+	secondAxisVisible="true"
+	showLegend="true"
+	selectionMode="Multiple"
+	showHoverBackground="false"
+	showTooltip="false"
+	showPopover="true"
+	showDataLabel="true"
+	yAxisLabelFormatter=""
+	yAxis2LabelFormatter=""
+	xAxisLabelFormatter=""
+	xAxis2LabelFormatter=""
+	plotAreaAxisTooltipFormatter=""
+	tooltipFormatter=""
+	dataLabelFormatter=""
+	popoverFormatter=""
+	popoverGroupFormatter=""
+	chartSemanticColorFormatter=""
+	internalVizChart=""
+	chartPopOver=""
+	popoverSubHeader=""
+	popoverFooter=""
+	advancedChartSettings=""
+	stackedChartWidthEnhancer="false"
+	noData=""
+	type="StackedColumn"
+	minTouchSize="48px"
+	dataLabelFormat="[["##"]]"
+	validateFieldGroup=""
+	selectDataPoint=""
+	popoverBeforeOpen=""
+	popoverAfterOpen="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+		<content></content> <!-- sap.ui.core.Control -->
+</charts/StackedVerticalColumnChart>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.ca.ui.charts.VerticalBarChart" alias="VerticalBarChart,Chart">
+	<jsTemplate><![CDATA[new sap.ca.ui.charts.VerticalBarChart({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	width: "100%", // sap.ui.core.CSSSize
+	height: "100%", // sap.ui.core.CSSSize
+	dataset: undefined, // object
+	chartType: "Bar", // string
+	minShapeSize: "48px", // sap.ui.core.CSSSize
+	label: "", // string
+	title: "", // string
+	icon: "", // string
+	secondAxisVisible: true, // boolean
+	showLegend: true, // boolean
+	selectionMode: sap.ca.ui.charts.ChartSelectionMode.Multiple, // sap.ca.ui.charts.ChartSelectionMode
+	showHoverBackground: false, // boolean
+	showTooltip: false, // boolean
+	showPopover: true, // boolean
+	showDataLabel: true, // boolean
+	yAxisLabelFormatter: undefined, // string
+	yAxis2LabelFormatter: undefined, // string
+	xAxisLabelFormatter: undefined, // string
+	xAxis2LabelFormatter: undefined, // string
+	plotAreaAxisTooltipFormatter: undefined, // object
+	tooltipFormatter: undefined, // object
+	dataLabelFormatter: undefined, // object
+	popoverFormatter: undefined, // object
+	popoverGroupFormatter: undefined, // string
+	chartSemanticColorFormatter: undefined, // object
+	internalVizChart: undefined, // sap.ui.core.Control
+	chartPopOver: undefined, // sap.ui.core.Control
+	popoverSubHeader: undefined, // sap.ui.core.Control
+	popoverFooter: undefined, // sap.ui.core.Control
+	advancedChartSettings: undefined, // object
+	stackedChartWidthEnhancer: false, // boolean
+	noData: undefined, // sap.ui.core.Control
+	data: undefined, // object
+	container: "chart", // string
+	barWidth: 48, // int
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	content: [], // sap.ui.core.Control
+	scroll: undefined, // sap.m.ScrollContainer
+	verticalBarChart: undefined, // sap.viz.ui5.Column
+	verticalArea: undefined, // sap.m.VBox
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	selectDataPoint: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	popoverBeforeOpen: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	popoverAfterOpen: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<charts/VerticalBarChart xmlns="sap.ca.ui"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	width="100%"
+	height="100%"
+	dataset=""
+	chartType="Bar"
+	minShapeSize="48px"
+	label=""
+	title=""
+	icon=""
+	secondAxisVisible="true"
+	showLegend="true"
+	selectionMode="Multiple"
+	showHoverBackground="false"
+	showTooltip="false"
+	showPopover="true"
+	showDataLabel="true"
+	yAxisLabelFormatter=""
+	yAxis2LabelFormatter=""
+	xAxisLabelFormatter=""
+	xAxis2LabelFormatter=""
+	plotAreaAxisTooltipFormatter=""
+	tooltipFormatter=""
+	dataLabelFormatter=""
+	popoverFormatter=""
+	popoverGroupFormatter=""
+	chartSemanticColorFormatter=""
+	internalVizChart=""
+	chartPopOver=""
+	popoverSubHeader=""
+	popoverFooter=""
+	advancedChartSettings=""
+	stackedChartWidthEnhancer="false"
+	noData=""
+	data=""
+	container="chart"
+	barWidth="48"
+	validateFieldGroup=""
+	selectDataPoint=""
+	popoverBeforeOpen=""
+	popoverAfterOpen="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+		<content></content> <!-- sap.ui.core.Control -->
+		<scroll></scroll> <!-- sap.m.ScrollContainer -->
+		<verticalBarChart></verticalBarChart> <!-- sap.viz.ui5.Column -->
+		<verticalArea></verticalArea> <!-- sap.m.VBox -->
+</charts/VerticalBarChart>
+]]></xmlTemplate>
+</Template>
+</Library>

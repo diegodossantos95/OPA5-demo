@@ -1,0 +1,35 @@
+Version 2.2.3 (2017-04-26)
+  [BUG] Fixed bug with pasting images would upload the image multiple times. #TINY-989
+  [BUG] Fixed bug where inline styles wasn't maintained for list elements. #EL-5946
+Version 2.2.2 (2017-03-30)
+  [BUG] Fixed bug where it wasn't possible to paste word content in the latest Edge 15. #TBIO-4887
+  [BUG] Fixed so anchors are retained when copy/pasting contents from word. #TINY-831
+  [BUG] Fixed bug where some contents would be incorrect when pasting images on webkit. #TINY-968
+Version 2.2.1 (2017-03-07)
+  [BUG] Changed tinymce version detection from 4.0.0 to 4.0.28. #TINY-914
+Version 2.2.0 (2017-03-01)
+  [FEATURE] Cut/copy now excludes internal html artifacts when pasting into external applications. #TINY-893.
+  [FEATURE] Internal/external paste is now passed in as a internal flag to PrePasteProcess and PostPasteProcess events. #TINY-916
+  [BUG] Fixed bug where cut/copy of contentEditable=false elements wasn't working properly. #TINY-716
+  [BUG] Paste of text like foo:bar was automatically converted to links. It's now more specific in that pattern matching. #TBIO-4867, #TINY-887
+  [BUG] Pasting from word with links was removing the closing anchor. #EL-5941
+Version 2.1.10 (2017-01-11)
+  [BUG] Fixed drag/drop support of html from out side of the editor. #TINY-821
+Version 2.1.9 (2016-12-13)
+  [BUG] Font color wasn't properly retained when pasting on IE 11. #TINY-741
+  [BUG] Paste pasteallow_local_images set to false would show notification even if there where no images. #TINY-705
+  [BUG] Removed the visual paste bin from IE and Firefox by moving it offscreen. #TBIO-4562
+  [FEATURE] Updated the dialog when pasting using flash to be more clear what the user needs to do. #TINY-700
+Version 2.1.8 (2016-10-27)
+  [FEATURE] Added version detection logic that check if this plugin is used with a compatible tinymce version. #TINY-639
+  [BUG] Fixed bug where drag/drop of image files didn't work correctly in Google chrome. #TINY-698
+  [BUG] Fixed bug where pasteallow_local_images set to false didn't work properly on IE 11. #TINY-622
+Version 2.1.7 (2016-09-22)
+  [BUG] Paste for with allow_images disabled would remove editor contents in FF. #TINY-602
+  [BUG] Some inline styles where stripped when pasting word content that contains conflicting document level styles. #TBIO-4206
+  [BUG] Non-organised lists with '-' characters where being imported as organised lists from word. #EL-5902
+  [BUG] Bullet nesting was not preserved when copying and pasting from Word on some browsers. #EL-5898
+  [BUG] Some Word anchors where not properly removed from lists. #EL-5911
+  [BUG] Significantly reduced flash movie size used for image import on some browsers. #TINY-609
+  [BUG] Fixed XSS issue with flash movie used for image import on some browsers. #TINY-592
+  [BUG] Fixed issue where anchors where removed when pasting from a non Word source. #TINY-606

@@ -1,0 +1,35 @@
+<core:FragmentDefinition xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<Dialog xmlns="sap.m" id="idOverwriteConfirmationDialog"
+		showHeader="true" type="Standard" class="sapUiSizeCompact dialogContentPadding"
+		initialFocus="idOverwriteConfirmationDialog">
+		<VBox xmlns="sap.m">
+			<items>
+				<Label xmlns="sap.m" id="idConfirmationMessage" />
+				<RadioButtonGroup xmlns="sap.m"
+					id="idOverwriteConfigRadioGroup" select="handleChangeForOverwriteConfigOptions"
+					ariaLabelledBy="idConfirmationMessage">
+					<buttons>
+						<RadioButton id="idOverwriteConfig" />
+						<RadioButton id="idDoNotOverwriteConfig" />
+					</buttons>
+				</RadioButtonGroup>
+				<HBox id="idNewConfigTitleLayout" class="newConfigTitleLabel"
+					visible="false">
+					<items>
+						<Label xmlns="sap.m" id="idNewConfigTitleLabel" width="65px" />
+						<Input xmlns="sap.m" id="idNewConfigTitleInput" editable="true"
+							width="290px" ariaLabelledBy="idNewConfigTitleLabel">
+						</Input>
+					</items>
+				</HBox>
+			</items>
+		</VBox>
+		<beginButton>
+			<Button xmlns="sap.m" id="idOkButton" press="handleOkButtonPress" />
+		</beginButton>
+		<endButton>
+			<Button xmlns="sap.m" id="idCancelButton" press="handleCancelOfOverwriteDialog" />
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

@@ -1,0 +1,97 @@
+/* Reset */
+.ephoxhighcontrast, .ephoxhighcontrast div, .ephoxhighcontrast span, .ephoxhighcontrast a {vertical-align:baseline; text-align:left; position:absolute; border:0; padding:0; margin:0; background:transparent; font-family:Arial,Verdana; font-size:11px; color:#000; text-decoration:none; font-weight:normal; width:auto; height:auto; overflow:hidden; display:block}
+
+/* General */
+.ephoxhighcontrast {position:absolute; direction:ltr}
+.ephoxhighcontrast .mceWrapper {position:static}
+.mceEventBlocker {position:fixed; left:0; top:0; width:100%; height:100%}
+.ephoxhighcontrast .mcePlaceHolder {border:1px solid #000; background:#888; top:0; left:0; opacity:0.5; -ms-filter:'alpha(opacity=50)'; filter:alpha(opacity=50)}
+.ephoxhighcontrast_modalBlocker {position:fixed; left:0; top:0; width:100%; height:100%; background:#FFF; opacity:0.6; -ms-filter:'alpha(opacity=60)'; filter:alpha(opacity=60); display:none}
+
+/* Top */
+.ephoxhighcontrast .mceTop, .ephoxhighcontrast .mceTop div {top:0; width:100%; height:23px}
+.ephoxhighcontrast .mceTop .mceLeft {width:6px}
+.ephoxhighcontrast .mceTop .mceCenter {right:6px; width:100%; height:23px; clip:rect(auto auto auto 12px)}
+.ephoxhighcontrast .mceTop .mceRight {right:0; width:6px; height:23px}
+.ephoxhighcontrast .mceTop span {width:100%; text-align:center; vertical-align:middle; line-height:23px; font-weight:bold}
+
+/* Middle */
+.ephoxhighcontrast .mceMiddle, .ephoxhighcontrast .mceMiddle div {top:0}
+.ephoxhighcontrast .mceMiddle {width:100%; height:100%; clip:rect(23px auto auto auto)}
+.ephoxhighcontrast .mceMiddle .mceLeft {left:0; width:5px; height:100%}
+.ephoxhighcontrast .mceMiddle span {top:23px; left:5px; width:100%; height:100%; background:#FFF}
+.ephoxhighcontrast .mceMiddle .mceRight {right:0; width:5px; height:100%}
+
+/* Bottom */
+.ephoxhighcontrast .mceBottom, .ephoxhighcontrast .mceBottom div {height:6px}
+.ephoxhighcontrast .mceBottom {left:0; bottom:0; width:100%}
+.ephoxhighcontrast .mceBottom div {top:0}
+.ephoxhighcontrast .mceBottom .mceLeft {left:0; width:5px}
+.ephoxhighcontrast .mceBottom .mceCenter {left:5px; width:100%}
+.ephoxhighcontrast .mceBottom .mceRight {right:0; width:5px}
+.ephoxhighcontrast .mceBottom span {display:none}
+.ephoxhighcontrast .mceStatusbar .mceBottom, .ephoxhighcontrast .mceStatusbar .mceBottom div {height:23px}
+.ephoxhighcontrast .mceStatusbar .mceBottom span {display:block; left:7px; font-family:Arial, Verdana; font-size:11px; line-height:23px}
+
+/* Actions button images */
+.ephoxhighcontrast .mceClose:before,
+.ephoxhighcontrast .mceMin:before,
+.ephoxhighcontrast .mceMed:before,
+.ephoxhighcontrast .mceMax:before {
+    display: inline-block;
+    content: url(img/buttons.gif);
+    overflow: hidden;
+}
+
+.ephoxhighcontrast .mceClose,
+.ephoxhighcontrast .mceMin,
+.ephoxhighcontrast .mceMed,
+.ephoxhighcontrast .mceMax {
+    background-image: expression(this.runtimeStyle.backgroundImage="none",
+     this.insertAdjacentHTML("afterBegin", '<img src="tinymce/jscripts/tiny_mce/plugins/inlinepopups/skins/ephoxhighcontrast/img/ephox-icons.gif">'));
+}
+
+/* Actions */
+
+.ephoxhighcontrast a {width:29px; height:16px; top:3px;}
+.ephoxhighcontrast .mceClose:before, .ephoxhighcontrast .mceClose img {margin-left:-87px}
+.ephoxhighcontrast .mceClose {right:6px}
+.ephoxhighcontrast .mceMin:before, .ephoxhighcontrast .mceMin img {margin-left:0}
+.ephoxhighcontrast .mceMin {display:none; right:68px;}
+.ephoxhighcontrast .mceMed:before, .ephoxhighcontrast .mceMed img {margin-left:-29px}
+.ephoxhighcontrast .mceMed {display:none; right:37px;}
+.ephoxhighcontrast .mceMax:before, .ephoxhighcontrast .mceMax img {margin-left:-58px}
+.ephoxhighcontrast .mceMax {display:none; right:37px}
+.ephoxhighcontrast .mceMove {display:none;opacity:0;width:100%;cursor:move}
+.ephoxhighcontrast .mceMovable .mceMove {display:block}
+
+/* Resize */
+.ephoxhighcontrast .mceResize {top:auto; left:auto; display:none; width:5px; height:5px}
+.ephoxhighcontrast .mceResizable .mceResize {display:block}
+.ephoxhighcontrast .mceResizable .mceMin, .ephoxhighcontrast .mceMax {display:none}
+.ephoxhighcontrast .mceMinimizable .mceMin {display:block}
+.ephoxhighcontrast .mceMaximizable .mceMax {display:block}
+.ephoxhighcontrast .mceMaximized .mceMed {display:block}
+.ephoxhighcontrast .mceMaximized .mceMax {display:none}
+.ephoxhighcontrast a.mceResizeN {top:0; left:0; width:100%; cursor:n-resize}
+.ephoxhighcontrast a.mceResizeNW {top:0; left:0; cursor:nw-resize}
+.ephoxhighcontrast a.mceResizeNE {top:0; right:0; cursor:ne-resize}
+.ephoxhighcontrast a.mceResizeW {top:0; left:0; height:100%; cursor:w-resize;}
+.ephoxhighcontrast a.mceResizeE {top:0; right:0; height:100%; cursor:e-resize}
+.ephoxhighcontrast a.mceResizeS {bottom:0; left:0; width:100%; cursor:s-resize}
+.ephoxhighcontrast a.mceResizeSW {bottom:0; left:0; cursor:sw-resize}
+.ephoxhighcontrast a.mceResizeSE {bottom:0; right:0; cursor:se-resize}
+
+/* Alert/Confirm */
+.ephoxhighcontrast .mceButton {font-weight:bold; bottom:10px; width:80px; height:30px; line-height:30px; vertical-align:middle; text-align:center; outline:0}
+.ephoxhighcontrast .mceMiddle .mceIcon {left:15px; top:35px; width:32px; height:32px}
+.ephoxhighcontrast .mceAlert .mceMiddle span, .ephoxhighcontrast .mceConfirm .mceMiddle span {background:transparent;left:60px; top:35px; width:320px; height:50px; font-weight:bold; overflow:auto; white-space:normal}
+.ephoxhighcontrast a:hover {font-weight:bold;}
+.ephoxhighcontrast .mceAlert .mceMiddle, .ephoxhighcontrast .mceConfirm .mceMiddle {background:#D6D7D5}
+.ephoxhighcontrast .mceAlert .mceOk {left:50%; top:auto; margin-left: -40px}
+.ephoxhighcontrast .mceAlert .mceIcon:before {display: inline-block; content: url(img/alert.gif); overflow: hidden;}
+.ephoxhighcontrast .mceAlert .mceIcon {background-image: expression(this.runtimeStyle.backgroundImage="none", this.insertAdjacentHTML("afterBegin", '<img src="tinymce/jscripts/tiny_mce/plugins/inlinepopups/skins/ephoxhighcontrast/img/alert.gif">'));}
+.ephoxhighcontrast .mceConfirm .mceOk {left:50%; top:auto; margin-left: -90px}
+.ephoxhighcontrast .mceConfirm .mceCancel {left:50%; top:auto}
+.ephoxhighcontrast .mceConfirm .mceIcon:before {display: inline-block; content: url(img/confirm.gif); overflow: hidden;}
+.ephoxhighcontrast .mceConfirm .mceIcon {background-image: expression(this.runtimeStyle.backgroundImage="none", this.insertAdjacentHTML("afterBegin", '<img src="tinymce/jscripts/tiny_mce/plugins/inlinepopups/skins/ephoxhighcontrast/img/confirm.gif">'));}

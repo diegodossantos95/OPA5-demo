@@ -1,0 +1,6 @@
+/*
+* ! SAP UI development toolkit for HTML5 (SAPUI5)
+ * 
+ * (c) Copyright 2009-2017 SAP SE. All rights reserved
+*/
+sap.ui.define(['jquery.sap.global','sap/ui/core/Control','sap/collaboration/components/controls/TimelineEntryEmbedded','sap/collaboration/components/controls/FeedEntryEmbedded'],function(q,C,T,F){"use strict";var a=C.extend("sap.collaboration.components.socialtimeline.controls.TimelineItemEmbedded",{metadata:{interfaces:[],library:"sap.m",properties:{"timelineItem":{type:"object",group:"data"}},events:{atMentionClick:{parameters:{link:{type:"object"},}},expandCollapseClick:{}},aggregations:{}}});a.prototype.init=function(){this._oEmbeddedControl;};a.prototype.onBeforeRendering=function(){var t=this.getTimelineItem();if(t._feedEntryData!==undefined){this._oEmbeddedControl=new F({"feedEntry":t._feedEntryData,"atMentionClick":[this.onAtMentionClicked,this],"expandCollapseClick":[this.onExpandCollapseClick,this]});}else{this._oEmbeddedControl=new T({"timelineEntry":t.timelineItemData,});}};a.prototype.exit=function(){};a.prototype.getEmbeddedControl=function(){return this._oEmbeddedControl;};a.prototype.onExpandCollapseClick=function(){this.fireExpandCollapseClick();};a.prototype.onAtMentionClicked=function(c){this.fireAtMentionClick(c.getParameters());};return a;},true);

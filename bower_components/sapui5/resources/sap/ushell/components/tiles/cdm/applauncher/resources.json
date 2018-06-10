@@ -1,0 +1,32 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": "Component-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "Component.js"
+		},
+		{
+			"name": "StaticTile-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "StaticTile-dbg.view.js",
+			"isDebug": true
+		},
+		{
+			"name": "StaticTile.controller.js"
+		},
+		{
+			"name": "StaticTile.view.js"
+		},
+		{
+			"name": "i18n/i18n.properties"
+		},
+		{
+			"name": "manifest.json"
+		}
+	]
+}

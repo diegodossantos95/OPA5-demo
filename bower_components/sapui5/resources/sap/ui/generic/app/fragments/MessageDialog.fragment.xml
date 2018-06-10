@@ -1,0 +1,13 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:layout="sap.ui.layout">
+	<Dialog class="sapUiNoContentPadding" state="{settings>/state}" type="Message" initialFocus="Close" title="{settings>/title}"
+		 showHeader="true" horizontalScrolling="false" draggable="true">
+		<content>
+			<List items="{ path: 'message>/', sorter: { path: 'target', group: '.grouper' }, groupHeaderFactory: '.getGroupHeader' }" updateFinished="onUpdate">
+				<StandardListItem title="{message>message}" icon="{= (${message>type} === 'Error') ? 'sap-icon://message-error' : (${message>type} === 'Warning') ? 'sap-icon://message-warning' : (${message>type} === 'Success') ? 'sap-icon://message-success' : 'sap-icon://message-information'}" infoState="{= (${message>type} === 'Error') ? 'Error' : (${message>type} === 'Warning') ? 'Warning' : (${message>type} === 'Success') ? 'Success' : 'None'}" />
+			</List>
+		</content>
+		<buttons>
+			<Button text="{settings>/closeButtonText}" id="Close" press="onMessageDialogClose"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

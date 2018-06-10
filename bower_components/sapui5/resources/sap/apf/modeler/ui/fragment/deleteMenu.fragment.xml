@@ -1,0 +1,7 @@
+<core:FragmentDefinition xmlns="sap.m"
+	xmlns:core="sap.ui.core" xmlns:u="sap.ui.unified">
+	<u:Menu id="idDeleteMenu">
+		<u:MenuItem id="idAssignmentDelete" enabled="true" select="handleDeleteMenuItemPress"/>
+		<u:MenuItem id="idStepDelete" enabled="true" select="handleDeleteMenuItemPress"/>
+	</u:Menu>
+</core:FragmentDefinition>

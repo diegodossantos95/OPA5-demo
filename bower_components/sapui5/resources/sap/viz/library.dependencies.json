@@ -1,0 +1,3013 @@
+{
+  "modules" : [
+    {
+      "name" : "sap/viz/library-preload.js",
+      "size" : 401631,
+      "required" : ["jquery.sap.global.js", "sap/m/Bar.js", "sap/m/Button.js", "sap/m/Label.js", "sap/m/ObjectNumber.js", "sap/m/Text.js", "sap/ui/Device.js", "sap/ui/core/Control.js", "sap/ui/core/Core.js", "sap/ui/core/Element.js", "sap/ui/core/ElementMetadata.js", "sap/ui/core/IconPool.js", "sap/ui/core/Popup.js", "sap/ui/core/TextAlign.js", "sap/ui/core/format/DateFormat.js", "sap/ui/core/format/FileSizeFormat.js", "sap/ui/core/format/NumberFormat.js", "sap/ui/core/library.js", "sap/ui/core/theming/Parameters.js", "sap/ui/layout/Grid.js", "sap/ui/layout/HorizontalLayout.js", "sap/ui/layout/VerticalLayout.js", "sap/ui/layout/form/SimpleForm.js", "sap/ui/model/ChangeReason.js", "sap/ui/thirdparty/d3.js", "sap/ui/thirdparty/jqueryui/jquery-ui-core.js", "sap/ui/thirdparty/jqueryui/jquery-ui-draggable.js", "sap/ui/thirdparty/jqueryui/jquery-ui-droppable.js", "sap/ui/thirdparty/jqueryui/jquery-ui-mouse.js", "sap/ui/thirdparty/jqueryui/jquery-ui-widget.js", "sap/ui/thirdparty/require.js", "sap/viz/libs/sap-viz-info-charts.js", "sap/viz/libs/sap-viz-info-framework.js", "sap/viz/libs/sap-viz.js", "sap/viz/resources/chart/templates/standard_fiori/template.js", "sap/viz/ui5/container/libs/sap-viz-controls-vizcontainer.js", "sap/viz/ui5/controls/libs/sap-viz-vizframe/sap-viz-vizframe.js", "sap/viz/ui5/controls/libs/sap-viz-vizservices/sap-viz-vizservices.js"],
+      "includes" : ["sap/viz/library.js", "sap/viz/libs/canvg.js", "sap/viz/libs/rgbcolor.js", "sap/viz/manifest.json", "sap/viz/ui5/Area.js", "sap/viz/ui5/Area100.js", "sap/viz/ui5/Bar.js", "sap/viz/ui5/Bubble.js", "sap/viz/ui5/Bullet.js", "sap/viz/ui5/Column.js", "sap/viz/ui5/Combination.js", "sap/viz/ui5/Donut.js", "sap/viz/ui5/DualBar.js", "sap/viz/ui5/DualColumn.js", "sap/viz/ui5/DualCombination.js", "sap/viz/ui5/DualLine.js", "sap/viz/ui5/DualStackedColumn.js", "sap/viz/ui5/DualStackedColumn100.js", "sap/viz/ui5/Heatmap.js", "sap/viz/ui5/HorizontalArea.js", "sap/viz/ui5/HorizontalArea100.js", "sap/viz/ui5/Line.js", "sap/viz/ui5/Pie.js", "sap/viz/ui5/Scatter.js", "sap/viz/ui5/StackedColumn.js", "sap/viz/ui5/StackedColumn100.js", "sap/viz/ui5/TimeBubble.js", "sap/viz/ui5/Treemap.js", "sap/viz/ui5/VizContainer.js", "sap/viz/ui5/VizContainerRenderer.js", "sap/viz/ui5/api/env/Format.js", "sap/viz/ui5/container/VizControlsHelper.js", "sap/viz/ui5/container/libs/common/libs/rgbcolor/rgbcolor_static.js", "sap/viz/ui5/controls/Popover.js", "sap/viz/ui5/controls/PopoverRenderer.js", "sap/viz/ui5/controls/ResponsiveLegend.js", "sap/viz/ui5/controls/VizFrame.js", "sap/viz/ui5/controls/VizFrameRenderer.js", "sap/viz/ui5/controls/VizTooltip.js", "sap/viz/ui5/controls/chartpopover/ChartPopover.js", "sap/viz/ui5/controls/chartpopover/ContentPanel.js", "sap/viz/ui5/controls/chartpopover/HeaderBar.js", "sap/viz/ui5/controls/chartpopover/ShapeMarker.js", "sap/viz/ui5/controls/chartpopover/SubActionItemsPage.js", "sap/viz/ui5/controls/charttooltip/ContentPanel.js", "sap/viz/ui5/controls/charttooltip/TooltipContainer.js", "sap/viz/ui5/controls/common/BaseControl.js", "sap/viz/ui5/controls/common/BaseControlRenderer.js", "sap/viz/ui5/controls/common/feeds/AnalysisObject.js", "sap/viz/ui5/controls/common/feeds/FeedHelper.js", "sap/viz/ui5/controls/common/feeds/FeedItem.js", "sap/viz/ui5/controls/common/helpers/DefaultPropertiesHelper.js", "sap/viz/ui5/controls/common/helpers/RuntimeOptionsHelper.js", "sap/viz/ui5/controls/common/utils/Constants.js", "sap/viz/ui5/controls/common/utils/FormatDataUtil.js", "sap/viz/ui5/controls/common/utils/SelectionDetailUtil.js", "sap/viz/ui5/controls/libs/resources/locale/language_de.js", "sap/viz/ui5/controls/libs/resources/locale/language_en.js", "sap/viz/ui5/controls/libs/resources/locale/language_es.js", "sap/viz/ui5/controls/libs/resources/locale/language_fr.js", "sap/viz/ui5/controls/libs/resources/locale/language_hu.js", "sap/viz/ui5/controls/libs/resources/locale/language_ja.js", "sap/viz/ui5/controls/libs/resources/locale/language_ko.js", "sap/viz/ui5/controls/libs/resources/locale/language_pl.js", "sap/viz/ui5/controls/libs/resources/locale/language_pt.js", "sap/viz/ui5/controls/libs/resources/locale/language_ru.js", "sap/viz/ui5/controls/libs/resources/locale/language_zh_CN.js", "sap/viz/ui5/controls/libs/resources/locale/language_zh_TW.js", "sap/viz/ui5/core/BaseChart.js", "sap/viz/ui5/core/BaseChartMetadata.js", "sap/viz/ui5/core/BaseChartRenderer.js", "sap/viz/ui5/core/BaseStructuredType.js", "sap/viz/ui5/data/CVOMDatasetAdaptor.js", "sap/viz/ui5/data/CustomDataset.js", "sap/viz/ui5/data/Dataset.js", "sap/viz/ui5/data/DimensionDefinition.js", "sap/viz/ui5/data/FlattenedDataset.js", "sap/viz/ui5/data/MeasureDefinition.js", "sap/viz/ui5/format/ChartFormatter.js", "sap/viz/ui5/theming/Util.js", "sap/viz/ui5/types/Area.js", "sap/viz/ui5/types/Area_animation.js", "sap/viz/ui5/types/Area_hoverline.js", "sap/viz/ui5/types/Area_marker.js", "sap/viz/ui5/types/Area_tooltip.js", "sap/viz/ui5/types/Axis.js", "sap/viz/ui5/types/Axis_axisTick.js", "sap/viz/ui5/types/Axis_axisline.js", "sap/viz/ui5/types/Axis_gridline.js", "sap/viz/ui5/types/Axis_indicator.js", "sap/viz/ui5/types/Axis_label.js", "sap/viz/ui5/types/Axis_layoutInfo.js", "sap/viz/ui5/types/Axis_scale.js", "sap/viz/ui5/types/Axis_title.js", "sap/viz/ui5/types/Background.js", "sap/viz/ui5/types/Background_border.js", "sap/viz/ui5/types/Background_border_bottom.js", "sap/viz/ui5/types/Background_border_left.js", "sap/viz/ui5/types/Background_border_right.js", "sap/viz/ui5/types/Background_border_top.js", "sap/viz/ui5/types/Bar.js", "sap/viz/ui5/types/Bar_animation.js", "sap/viz/ui5/types/Bar_tooltip.js", "sap/viz/ui5/types/Bubble.js", "sap/viz/ui5/types/Bubble_animation.js", "sap/viz/ui5/types/Bubble_axisTooltip.js", "sap/viz/ui5/types/Bubble_hoverline.js", "sap/viz/ui5/types/Bullet.js", "sap/viz/ui5/types/Bullet_tooltip.js", "sap/viz/ui5/types/Combination.js", "sap/viz/ui5/types/Combination_animation.js", "sap/viz/ui5/types/Combination_bar.js", "sap/viz/ui5/types/Combination_dataShape.js", "sap/viz/ui5/types/Combination_line.js", "sap/viz/ui5/types/Combination_line_marker.js", "sap/viz/ui5/types/Combination_tooltip.js", "sap/viz/ui5/types/Datalabel.js", "sap/viz/ui5/types/Datatransform.js", "sap/viz/ui5/types/Datatransform_autoBinning.js", "sap/viz/ui5/types/Datatransform_dataSampling.js", "sap/viz/ui5/types/Datatransform_dataSampling_grid.js", "sap/viz/ui5/types/Heatmap.js", "sap/viz/ui5/types/Heatmap_animation.js", "sap/viz/ui5/types/Heatmap_border.js", "sap/viz/ui5/types/Heatmap_tooltip.js", "sap/viz/ui5/types/Legend.js", "sap/viz/ui5/types/Legend_layout.js", "sap/viz/ui5/types/Line.js", "sap/viz/ui5/types/Line_animation.js", "sap/viz/ui5/types/Line_hoverline.js", "sap/viz/ui5/types/Line_marker.js", "sap/viz/ui5/types/Line_tooltip.js", "sap/viz/ui5/types/Pie.js", "sap/viz/ui5/types/Pie_animation.js", "sap/viz/ui5/types/Pie_tooltip.js", "sap/viz/ui5/types/RootContainer.js", "sap/viz/ui5/types/RootContainer_layout.js", "sap/viz/ui5/types/Scatter.js", "sap/viz/ui5/types/Scatter_animation.js", "sap/viz/ui5/types/Scatter_axisTooltip.js", "sap/viz/ui5/types/Scatter_hoverline.js", "sap/viz/ui5/types/StackedVerticalBar.js", "sap/viz/ui5/types/StackedVerticalBar_animation.js", "sap/viz/ui5/types/StackedVerticalBar_tooltip.js", "sap/viz/ui5/types/Title.js", "sap/viz/ui5/types/Title_layout.js", "sap/viz/ui5/types/Tooltip.js", "sap/viz/ui5/types/Tooltip_background.js", "sap/viz/ui5/types/Tooltip_bodyDimensionLabel.js", "sap/viz/ui5/types/Tooltip_bodyDimensionValue.js", "sap/viz/ui5/types/Tooltip_bodyMeasureLabel.js", "sap/viz/ui5/types/Tooltip_bodyMeasureValue.js", "sap/viz/ui5/types/Tooltip_closeButton.js", "sap/viz/ui5/types/Tooltip_footerLabel.js", "sap/viz/ui5/types/Tooltip_separationLine.js", "sap/viz/ui5/types/Treemap.js", "sap/viz/ui5/types/Treemap_animation.js", "sap/viz/ui5/types/Treemap_border.js", "sap/viz/ui5/types/Treemap_tooltip.js", "sap/viz/ui5/types/VerticalBar.js", "sap/viz/ui5/types/VerticalBar_animation.js", "sap/viz/ui5/types/VerticalBar_tooltip.js", "sap/viz/ui5/types/XYContainer.js", "sap/viz/ui5/types/controller/Interaction.js", "sap/viz/ui5/types/controller/Interaction_pan.js", "sap/viz/ui5/types/controller/Interaction_selectability.js", "sap/viz/ui5/types/layout/Dock.js", "sap/viz/ui5/types/layout/Stack.js", "sap/viz/ui5/types/legend/Common.js", "sap/viz/ui5/types/legend/Common_title.js", "sap/viz/ui5/utils/CommonUtil.js"]
+    },
+    {
+      "name" : "sap/viz/library-preload.json",
+      "size" : 0,
+      "required" : ["jquery.sap.global.js", "sap/m/Bar.js", "sap/m/Button.js", "sap/m/Label.js", "sap/m/ObjectNumber.js", "sap/m/Text.js", "sap/ui/Device.js", "sap/ui/core/Control.js", "sap/ui/core/Core.js", "sap/ui/core/Element.js", "sap/ui/core/ElementMetadata.js", "sap/ui/core/IconPool.js", "sap/ui/core/Popup.js", "sap/ui/core/TextAlign.js", "sap/ui/core/format/DateFormat.js", "sap/ui/core/format/FileSizeFormat.js", "sap/ui/core/format/NumberFormat.js", "sap/ui/core/library-preload.json", "sap/ui/core/library.js", "sap/ui/core/theming/Parameters.js", "sap/ui/layout/Grid.js", "sap/ui/layout/HorizontalLayout.js", "sap/ui/layout/VerticalLayout.js", "sap/ui/layout/form/SimpleForm.js", "sap/ui/model/ChangeReason.js", "sap/ui/thirdparty/d3.js", "sap/ui/thirdparty/jqueryui/jquery-ui-core.js", "sap/ui/thirdparty/jqueryui/jquery-ui-draggable.js", "sap/ui/thirdparty/jqueryui/jquery-ui-droppable.js", "sap/ui/thirdparty/jqueryui/jquery-ui-mouse.js", "sap/ui/thirdparty/jqueryui/jquery-ui-widget.js", "sap/ui/thirdparty/require.js", "sap/viz/libs/sap-viz-info-charts.js", "sap/viz/libs/sap-viz-info-framework.js", "sap/viz/libs/sap-viz.js", "sap/viz/resources/chart/templates/standard_fiori/template.js", "sap/viz/ui5/container/libs/sap-viz-controls-vizcontainer.js", "sap/viz/ui5/controls/libs/sap-viz-vizframe/sap-viz-vizframe.js", "sap/viz/ui5/controls/libs/sap-viz-vizservices/sap-viz-vizservices.js"],
+      "includes" : ["sap/viz/library.js", "sap/viz/libs/canvg.js", "sap/viz/libs/rgbcolor.js", "sap/viz/manifest.json", "sap/viz/ui5/Area.js", "sap/viz/ui5/Area100.js", "sap/viz/ui5/Bar.js", "sap/viz/ui5/Bubble.js", "sap/viz/ui5/Bullet.js", "sap/viz/ui5/Column.js", "sap/viz/ui5/Combination.js", "sap/viz/ui5/Donut.js", "sap/viz/ui5/DualBar.js", "sap/viz/ui5/DualColumn.js", "sap/viz/ui5/DualCombination.js", "sap/viz/ui5/DualLine.js", "sap/viz/ui5/DualStackedColumn.js", "sap/viz/ui5/DualStackedColumn100.js", "sap/viz/ui5/Heatmap.js", "sap/viz/ui5/HorizontalArea.js", "sap/viz/ui5/HorizontalArea100.js", "sap/viz/ui5/Line.js", "sap/viz/ui5/Pie.js", "sap/viz/ui5/Scatter.js", "sap/viz/ui5/StackedColumn.js", "sap/viz/ui5/StackedColumn100.js", "sap/viz/ui5/TimeBubble.js", "sap/viz/ui5/Treemap.js", "sap/viz/ui5/VizContainer.js", "sap/viz/ui5/VizContainerRenderer.js", "sap/viz/ui5/api/env/Format.js", "sap/viz/ui5/container/VizControlsHelper.js", "sap/viz/ui5/container/libs/common/libs/rgbcolor/rgbcolor_static.js", "sap/viz/ui5/controls/Popover.js", "sap/viz/ui5/controls/PopoverRenderer.js", "sap/viz/ui5/controls/ResponsiveLegend.js", "sap/viz/ui5/controls/VizFrame.js", "sap/viz/ui5/controls/VizFrameRenderer.js", "sap/viz/ui5/controls/VizTooltip.js", "sap/viz/ui5/controls/chartpopover/ChartPopover.js", "sap/viz/ui5/controls/chartpopover/ContentPanel.js", "sap/viz/ui5/controls/chartpopover/HeaderBar.js", "sap/viz/ui5/controls/chartpopover/ShapeMarker.js", "sap/viz/ui5/controls/chartpopover/SubActionItemsPage.js", "sap/viz/ui5/controls/charttooltip/ContentPanel.js", "sap/viz/ui5/controls/charttooltip/TooltipContainer.js", "sap/viz/ui5/controls/common/BaseControl.js", "sap/viz/ui5/controls/common/BaseControlRenderer.js", "sap/viz/ui5/controls/common/feeds/AnalysisObject.js", "sap/viz/ui5/controls/common/feeds/FeedHelper.js", "sap/viz/ui5/controls/common/feeds/FeedItem.js", "sap/viz/ui5/controls/common/helpers/DefaultPropertiesHelper.js", "sap/viz/ui5/controls/common/helpers/RuntimeOptionsHelper.js", "sap/viz/ui5/controls/common/utils/Constants.js", "sap/viz/ui5/controls/common/utils/FormatDataUtil.js", "sap/viz/ui5/controls/common/utils/SelectionDetailUtil.js", "sap/viz/ui5/controls/libs/resources/locale/language_de.js", "sap/viz/ui5/controls/libs/resources/locale/language_en.js", "sap/viz/ui5/controls/libs/resources/locale/language_es.js", "sap/viz/ui5/controls/libs/resources/locale/language_fr.js", "sap/viz/ui5/controls/libs/resources/locale/language_hu.js", "sap/viz/ui5/controls/libs/resources/locale/language_ja.js", "sap/viz/ui5/controls/libs/resources/locale/language_ko.js", "sap/viz/ui5/controls/libs/resources/locale/language_pl.js", "sap/viz/ui5/controls/libs/resources/locale/language_pt.js", "sap/viz/ui5/controls/libs/resources/locale/language_ru.js", "sap/viz/ui5/controls/libs/resources/locale/language_zh_CN.js", "sap/viz/ui5/controls/libs/resources/locale/language_zh_TW.js", "sap/viz/ui5/core/BaseChart.js", "sap/viz/ui5/core/BaseChartMetadata.js", "sap/viz/ui5/core/BaseChartRenderer.js", "sap/viz/ui5/core/BaseStructuredType.js", "sap/viz/ui5/data/CVOMDatasetAdaptor.js", "sap/viz/ui5/data/CustomDataset.js", "sap/viz/ui5/data/Dataset.js", "sap/viz/ui5/data/DimensionDefinition.js", "sap/viz/ui5/data/FlattenedDataset.js", "sap/viz/ui5/data/MeasureDefinition.js", "sap/viz/ui5/format/ChartFormatter.js", "sap/viz/ui5/theming/Util.js", "sap/viz/ui5/types/Area.js", "sap/viz/ui5/types/Area_animation.js", "sap/viz/ui5/types/Area_hoverline.js", "sap/viz/ui5/types/Area_marker.js", "sap/viz/ui5/types/Area_tooltip.js", "sap/viz/ui5/types/Axis.js", "sap/viz/ui5/types/Axis_axisTick.js", "sap/viz/ui5/types/Axis_axisline.js", "sap/viz/ui5/types/Axis_gridline.js", "sap/viz/ui5/types/Axis_indicator.js", "sap/viz/ui5/types/Axis_label.js", "sap/viz/ui5/types/Axis_layoutInfo.js", "sap/viz/ui5/types/Axis_scale.js", "sap/viz/ui5/types/Axis_title.js", "sap/viz/ui5/types/Background.js", "sap/viz/ui5/types/Background_border.js", "sap/viz/ui5/types/Background_border_bottom.js", "sap/viz/ui5/types/Background_border_left.js", "sap/viz/ui5/types/Background_border_right.js", "sap/viz/ui5/types/Background_border_top.js", "sap/viz/ui5/types/Bar.js", "sap/viz/ui5/types/Bar_animation.js", "sap/viz/ui5/types/Bar_tooltip.js", "sap/viz/ui5/types/Bubble.js", "sap/viz/ui5/types/Bubble_animation.js", "sap/viz/ui5/types/Bubble_axisTooltip.js", "sap/viz/ui5/types/Bubble_hoverline.js", "sap/viz/ui5/types/Bullet.js", "sap/viz/ui5/types/Bullet_tooltip.js", "sap/viz/ui5/types/Combination.js", "sap/viz/ui5/types/Combination_animation.js", "sap/viz/ui5/types/Combination_bar.js", "sap/viz/ui5/types/Combination_dataShape.js", "sap/viz/ui5/types/Combination_line.js", "sap/viz/ui5/types/Combination_line_marker.js", "sap/viz/ui5/types/Combination_tooltip.js", "sap/viz/ui5/types/Datalabel.js", "sap/viz/ui5/types/Datatransform.js", "sap/viz/ui5/types/Datatransform_autoBinning.js", "sap/viz/ui5/types/Datatransform_dataSampling.js", "sap/viz/ui5/types/Datatransform_dataSampling_grid.js", "sap/viz/ui5/types/Heatmap.js", "sap/viz/ui5/types/Heatmap_animation.js", "sap/viz/ui5/types/Heatmap_border.js", "sap/viz/ui5/types/Heatmap_tooltip.js", "sap/viz/ui5/types/Legend.js", "sap/viz/ui5/types/Legend_layout.js", "sap/viz/ui5/types/Line.js", "sap/viz/ui5/types/Line_animation.js", "sap/viz/ui5/types/Line_hoverline.js", "sap/viz/ui5/types/Line_marker.js", "sap/viz/ui5/types/Line_tooltip.js", "sap/viz/ui5/types/Pie.js", "sap/viz/ui5/types/Pie_animation.js", "sap/viz/ui5/types/Pie_tooltip.js", "sap/viz/ui5/types/RootContainer.js", "sap/viz/ui5/types/RootContainer_layout.js", "sap/viz/ui5/types/Scatter.js", "sap/viz/ui5/types/Scatter_animation.js", "sap/viz/ui5/types/Scatter_axisTooltip.js", "sap/viz/ui5/types/Scatter_hoverline.js", "sap/viz/ui5/types/StackedVerticalBar.js", "sap/viz/ui5/types/StackedVerticalBar_animation.js", "sap/viz/ui5/types/StackedVerticalBar_tooltip.js", "sap/viz/ui5/types/Title.js", "sap/viz/ui5/types/Title_layout.js", "sap/viz/ui5/types/Tooltip.js", "sap/viz/ui5/types/Tooltip_background.js", "sap/viz/ui5/types/Tooltip_bodyDimensionLabel.js", "sap/viz/ui5/types/Tooltip_bodyDimensionValue.js", "sap/viz/ui5/types/Tooltip_bodyMeasureLabel.js", "sap/viz/ui5/types/Tooltip_bodyMeasureValue.js", "sap/viz/ui5/types/Tooltip_closeButton.js", "sap/viz/ui5/types/Tooltip_footerLabel.js", "sap/viz/ui5/types/Tooltip_separationLine.js", "sap/viz/ui5/types/Treemap.js", "sap/viz/ui5/types/Treemap_animation.js", "sap/viz/ui5/types/Treemap_border.js", "sap/viz/ui5/types/Treemap_tooltip.js", "sap/viz/ui5/types/VerticalBar.js", "sap/viz/ui5/types/VerticalBar_animation.js", "sap/viz/ui5/types/VerticalBar_tooltip.js", "sap/viz/ui5/types/XYContainer.js", "sap/viz/ui5/types/controller/Interaction.js", "sap/viz/ui5/types/controller/Interaction_pan.js", "sap/viz/ui5/types/controller/Interaction_selectability.js", "sap/viz/ui5/types/layout/Dock.js", "sap/viz/ui5/types/layout/Stack.js", "sap/viz/ui5/types/legend/Common.js", "sap/viz/ui5/types/legend/Common_title.js", "sap/viz/ui5/utils/CommonUtil.js"]
+    },
+    {
+      "name" : "sap/viz/library.js",
+      "description" : "Initialization Code and shared classes of library sap.viz.",
+      "size" : 74687,
+      "compressedSize" : 18560,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Core.js", "sap/ui/core/library.js", "sap/ui/core/theming/Parameters.js", "sap/ui/thirdparty/d3.js", "sap/ui/thirdparty/jqueryui/jquery-ui-core.js", "sap/ui/thirdparty/jqueryui/jquery-ui-draggable.js", "sap/ui/thirdparty/jqueryui/jquery-ui-droppable.js", "sap/ui/thirdparty/jqueryui/jquery-ui-mouse.js", "sap/ui/thirdparty/jqueryui/jquery-ui-widget.js", "sap/ui/thirdparty/require.js", "sap/viz/libs/canvg.js", "sap/viz/libs/rgbcolor.js", "sap/viz/libs/sap-viz-info-charts.js", "sap/viz/libs/sap-viz-info-framework.js", "sap/viz/resources/chart/templates/standard_fiori/template.js", "sap/viz/ui5/api/env/Format.js", "sap/viz/ui5/controls/libs/sap-viz-vizframe/sap-viz-vizframe.js", "sap/viz/ui5/controls/libs/sap-viz-vizservices/sap-viz-vizservices.js", "sap/viz/ui5/format/ChartFormatter.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/libs/canvg.js",
+      "size" : 88784,
+      "compressedSize" : 55767,
+      "required" : ["sap/viz/libs/rgbcolor.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/libs/rgbcolor.js",
+      "size" : 8754,
+      "compressedSize" : 4815,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/chart/layout/BaseLayout.js",
+      "size" : 3319637,
+      "compressedSize" : 1482116,
+      "required" : ["exports.js", "jquery.js", "require.js", "sap/viz/api/env/Locale.js", "sap/viz/chart/layout/BaseLayout.js", "sap/viz/framework/binding/BindingManager.js", "sap/viz/framework/binding/bindingValidationUtil.js", "sap/viz/framework/chartmodel/ContextBuilder.js", "sap/viz/framework/chartmodel/DataSelector.js", "sap/viz/framework/common/effect/EffectManager.js", "sap/viz/framework/common/format/FormatManager.js", "sap/viz/framework/common/format/UnitFormat.js", "sap/viz/framework/common/lang/LangManager.js", "sap/viz/framework/common/log/Logger.js", "sap/viz/framework/common/util/ArrayUtils.js", "sap/viz/framework/common/util/BulletUtils.js", "sap/viz/framework/common/util/ColorUtils.js", "sap/viz/framework/common/util/Constants.js", "sap/viz/framework/common/util/DOM.js", "sap/viz/framework/common/util/DataGraphics.js", "sap/viz/framework/common/util/DataUtils.js", "sap/viz/framework/common/util/EventDispatch.js", "sap/viz/framework/common/util/FeedingZoneUtil.js", "sap/viz/framework/common/util/FiscalUtil.js", "sap/viz/framework/common/util/FunctionUtils.js", "sap/viz/framework/common/util/GeometryUtils.js", "sap/viz/framework/common/util/NameColorUtils.js", "sap/viz/framework/common/util/NumberUtils.js", "sap/viz/framework/common/util/ObjectUtils.js", "sap/viz/framework/common/util/PositionUtil.js", "sap/viz/framework/common/util/PropertyZoneUtil.js", "sap/viz/framework/common/util/RuleUtil.js", "sap/viz/framework/common/util/SVG.js", "sap/viz/framework/common/util/StatusConstants.js", "sap/viz/framework/common/util/TimeUtil.js", "sap/viz/framework/common/util/TypeUtils.js", "sap/viz/framework/common/util/UADetector.js", "sap/viz/framework/common/util/oo.js", "sap/viz/framework/core/ChartPropertyRegistry.js", "sap/viz/framework/core/ChartViewRegistry.js", "sap/viz/framework/core/Runtime.js", "sap/viz/framework/core/config.js", "sap/viz/framework/extension/Constants.js", "sap/viz/framework/extension/DataModelToCSVUtil.js", "sap/viz/framework/interaction/BehaviorFactory.js", "sap/viz/framework/interaction/BehaviorManager.js", "sap/viz/framework/interaction/Constants.js", "sap/viz/framework/interaction/InteractionUtils.js", "sap/viz/framework/interaction/utils/PlotZoomUtils.js", "sap/viz/framework/property/PropertyManager.js", "sap/viz/framework/scale/ColorShapeScaleMerger.js", "sap/viz/framework/scale/DynamicScaleRepository.js", "sap/viz/framework/scale/ScaleDataParseFactory.js", "sap/viz/framework/scale/ScaleOptionFactory.js", "sap/viz/framework/scale/ScaleRepository.js", "sap/viz/framework/scale/ScaleRoleTypeMapFactory.js", "sap/viz/framework/scale/ScaleUtil.js", "ui5loader.js"],
+      "includes" : ["sap/viz/chart/layout/DockLayout.js", "sap/viz/chart/layout/GridLayout.js", "sap/viz/chart/components/UIComponent.js", "sap/viz/chart/components/util/BoundUtil.js", "sap/viz/chart/components/util/StyleUtils.js", "sap/viz/chart/components/util/TextUtils.js", "sap/viz/chart/components/title/Title.js", "sap/viz/chart/components/Background.js", "sap/viz/chart/components/scrollbar/Scrollbar.js", "sap/viz/chart/components/scrollbar/PaginationScrollbar.js", "sap/viz/chart/components/legend/BaseLegend.js", "sap/viz/chart/components/util/DrawUtil.js", "sap/viz/chart/components/util/ColorUtil.js", "sap/viz/chart/components/legend/ColorLegend.js", "sap/viz/chart/components/container/UIContainer.js", "sap/viz/chart/layout/LegendLayout.js", "sap/viz/chart/components/legend/LegendGroup.js", "propertyDefs.js", "sap/viz/chart/metadata/properties/PropertyLoader.js", "sap/viz/chart/components/util/ScrollbarUtil.js", "sap/viz/chart/components/plots/PlotGeometryKeeper.js", "sap/viz/chart/behavior/config/PlotScrollBehaviorConfig.js", "sap/viz/chart/behavior/config/TrellisPanBehaviorConfig.js", "sap/viz/chart/behavior/BuiltInBehavior.js", "sap/viz/chart/components/util/DataPointUtils.js", "sap/viz/chart/behavior/config/SelectionUtil.js", "sap/viz/chart/behavior/config/handler/AxisBehaviorHandler.js", "sap/viz/chart/behavior/config/AxisBehaviorConfig.js", "sap/viz/chart/behavior/config/HighlightHelper.js", "sap/viz/chart/behavior/config/ContextualDataUtil.js", "sap/viz/chart/behavior/config/ContextualDataConfig.js", "sap/viz/chart/behavior/config/AxisBehaviorConfigForTreeMap.js", "sap/viz/chart/components/plots/PlotHelper.js", "sap/viz/chart/components/util/ChartConstants.js", "sap/viz/chart/components/util/ChartTypeUtils.js", "sap/viz/chart/behavior/config/AxisBehaviorConfigForRadar.js", "sap/viz/chart/behavior/config/AlignToUtil.js", "sap/viz/chart/behavior/config/handler/LegendBehaviorHandler.js", "sap/viz/chart/behavior/config/LegendBehaviorConfig.js", "sap/viz/chart/behavior/config/handler/MBCLegendBehaviorHandler.js", "sap/viz/chart/behavior/config/MBCLegendBehaviorConfig.js", "sap/viz/chart/behavior/config/LassoDecoration.js", "sap/viz/chart/components/util/BoundingBoxUtils.js", "sap/viz/chart/scales/BaseScale.js", "sap/viz/chart/scales/ValueScale.js", "sap/viz/chart/scales/ScalesFactory.js", "sap/viz/chart/scales/ScaleUtil.js", "sap/viz/chart/scales/ScaleConstant.js", "sap/viz/chart/scales/ValueScaleUtil.js", "sap/viz/chart/components/util/ValueAxisUtils.js", "sap/viz/chart/behavior/config/handler/LassoBehaviorHandler.js", "sap/viz/chart/behavior/config/LassoBehaviorConfig.js", "sap/viz/chart/behavior/config/DataPointBehaviorConfigForArea.js", "sap/viz/chart/components/renderers/LineRenderer.js", "sap/viz/chart/components/renderers/AreaRenderer.js", "sap/viz/chart/components/renderers/RadarRenderer.js", "sap/viz/chart/components/util/SeriesUtil.js", "sap/viz/chart/behavior/config/handler/DataPointBehaviorHandler.js", "sap/viz/chart/behavior/config/DataPointBehaviorConfigForLine.js", "sap/viz/chart/behavior/config/DataPointBehaviorConfig.js", "sap/viz/chart/behavior/config/AreaBehaviorConfig.js", "sap/viz/chart/behavior/config/ComboExBehaviorConfig.js", "sap/viz/chart/behavior/config/DataPointBehaviorConfigForRadar.js", "sap/viz/chart/behavior/config/DataPointBehaviorConfigForBar.js", "sap/viz/chart/behavior/config/DataPointBehaviorConfigForBullet.js", "sap/viz/chart/behavior/config/PieBehaviorHelper.js", "sap/viz/chart/behavior/config/DataPointBehaviorConfigForPie.js", "sap/viz/chart/behavior/config/DataPointBehaviorConfigForScatter.js", "sap/viz/chart/behavior/config/DataPointBehaviorConfigForTreeMap.js", "sap/viz/chart/behavior/config/DataPointBehaviorConfigForTagCloud.js", "sap/viz/chart/behavior/config/tooltip/TooltipUtils.js", "sap/viz/chart/behavior/config/tooltip/Tooltip.js", "sap/viz/chart/behavior/config/tooltip/AreaChartTooltip.js", "sap/viz/chart/behavior/config/tooltip/ComboExTooltip.js", "sap/viz/chart/behavior/config/handler/TooltipTimerHandler.js", "sap/viz/chart/behavior/config/handler/TooltipBehaviorHandler.js", "sap/viz/chart/behavior/config/handler/RuntimeSelectionHelperHandler.js", "sap/viz/chart/behavior/config/RuntimeSelectionHelperConfig.js", "sap/viz/chart/behavior/config/SelectionTreeUtil.js", "sap/viz/chart/behavior/config/handler/SelectionAPIHandler.js", "sap/viz/chart/behavior/config/SelectionAPIConfig.js", "sap/viz/chart/behavior/config/PinchBehaviorConfig.js", "sap/viz/chart/behavior/config/TooltipBehaviorConfig.js", "sap/viz/chart/behavior/config/ZoomBehaviorConfig.js", "sap/viz/chart/components/accessibility/ChartComponentNavigator.js", "sap/viz/chart/components/accessibility/BaseDataPointNavigator.js", "sap/viz/chart/components/accessibility/ColumnDataPointNavigator.js", "sap/viz/chart/components/accessibility/StackedColumnDataPointNavigator.js", "sap/viz/chart/components/accessibility/BulletDataPointNavigator.js", "sap/viz/chart/components/accessibility/LineDataPointNavigator.js", "sap/viz/chart/components/accessibility/CombinationDataPointNavigator.js", "sap/viz/chart/components/accessibility/StackedCombinationDataPointNavigator.js", "sap/viz/chart/components/accessibility/ScatterDataPointNavigator.js", "sap/viz/chart/components/accessibility/PieDataPointNavigator.js", "sap/viz/chart/components/accessibility/CategoryAxisNavigator.js", "sap/viz/chart/components/accessibility/ColorLegendNavigator.js", "sap/viz/chart/components/accessibility/MBCLegendNavigator.js", "sap/viz/chart/components/accessibility/HeatMapDataPointNavigator.js", "sap/viz/chart/components/accessibility/TimeAxisNavigator.js", "sap/viz/chart/components/accessibility/ChartComponentNavigatorFactory.js", "sap/viz/chart/behavior/config/handler/KeyboardBehaviorHandler.js", "sap/viz/chart/behavior/config/KeyboardBehaviorConfig.js", "sap/viz/chart/behavior/DefaultBehavior.js", "sap/viz/chart/behavior/SFinBehavior.js", "sap/viz/chart/behavior/AllBehaviors.js", "sap/viz/chart/scales/ColorScale.js", "sap/viz/chart/util/PropertyUtils.js", "sap/viz/chart/scales/ColorScaleProcessor.js", "sap/viz/chart/scales/PercentageValueScale.js", "sap/viz/chart/scales/ScaleTypeHandler.js", "sap/viz/chart/scales/ValueScaleProcessor.js", "sap/viz/chart/scales/CategoryScale.js", "sap/viz/chart/scales/CategoryScaleProcessor.js", "sap/viz/chart/scales/ScaleOptionsProcessor.js", "sap/viz/chart/dynamicScales/BaseDyScaleProcessor.js", "sap/viz/chart/dynamicScales/BaseColumnDyScaleProcessor.js", "sap/viz/chart/views/ChartView.js", "sap/viz/chart/components/callout/CalloutContainer.js", "sap/viz/chart/layout/XYLayout.js", "sap/viz/chart/components/container/utils/xyTransformUtils.js", "sap/viz/chart/components/container/XYContainer.js", "sap/viz/chart/components/axis/sub/AxisComponent.js", "sap/viz/migrate/PropertyUtil.js", "sap/viz/chart/components/axis/sub/AxisTitle.js", "sap/viz/chart/components/axis/renderer/DefaultCategoryLabelRenderer.js", "sap/viz/chart/components/util/BuildLayerUtil.js", "sap/viz/chart/layout/AxisLayout.js", "sap/viz/chart/components/util/AxisBodyUtil.js", "sap/viz/chart/components/axis/AxisContainer.js", "sap/viz/chart/components/axis/renderer/ValueBodyRenderer.js", "sap/viz/chart/components/util/ClippathUtil.js", "sap/viz/chart/components/axis/sub/ValueAxisBody.js", "sap/viz/chart/components/axis/ValueAxis.js", "sap/viz/chart/components/axis/renderer/OrdinalCommonBodyRenderer.js", "sap/viz/chart/components/axis/sub/OrdinalCommonAxisBody.js", "sap/viz/chart/components/axis/renderer/CategoryBodyRenderer.js", "sap/viz/chart/components/axis/sub/CategoryAxisBody.js", "sap/viz/chart/components/axis/CategoryAxis.js", "sap/viz/chart/components/plots/DataHandler.js", "sap/viz/chart/components/plots/SeriesIterator.js", "sap/viz/chart/components/plots/model/DataPointInfo.js", "sap/viz/chart/components/plots/model/Series.js", "sap/viz/chart/components/datalabels/DataLabels.js", "sap/viz/chart/components/renderers/ReferenceLineRenderer.js", "sap/viz/chart/components/util/ZoomUtil.js", "sap/viz/chart/components/plots/BasePlot.js", "sap/viz/chart/components/plots/BarWidthUtils.js", "sap/viz/chart/components/plots/ItemScaleHandler.js", "sap/viz/chart/components/plots/ScaleHandler.js", "sap/viz/chart/components/renderers/BarRenderer.js", "sap/viz/chart/components/renderers/GridlineRenderer.js", "sap/viz/chart/components/plots/BaseColumnPlot.js", "sap/viz/chart/components/renderers/SmoothLineRenderer.js", "sap/viz/chart/components/util/LineRendererUtil.js", "sap/viz/chart/components/plots/BaseLinePlot.js", "sap/viz/chart/components/renderers/SeriesRenderer.js", "sap/viz/chart/components/renderers/PathRenderer.js", "sap/viz/chart/components/datalabels/LineDataLabels.js", "sap/viz/chart/components/plots/LinePlot.js", "sap/viz/chart/components/datalabels/ColumnDataLabels.js", "sap/viz/chart/components/datalabels/BarDataLabels.js", "sap/viz/chart/components/decorator/Decorator.js", "sap/viz/chart/components/util/HitTestUtils.js", "sap/viz/chart/components/decorator/BaseHitTestDecorator.js", "sap/viz/chart/components/decorator/HitTestRectDecorator.js", "sap/viz/chart/components/plots/ColumnPlot.js", "sap/viz/chart/components/util/CombinationDataLabelUtil.js", "sap/viz/chart/components/datalabels/CombinationDataLabels.js", "sap/viz/chart/components/datalabels/HCombinationDataLabels.js", "sap/viz/chart/components/plots/CombinationPlot.js", "sap/viz/chart/components/datalabels/StackedDataLabels.js", "sap/viz/chart/components/renderers/StackedBarRenderer.js", "sap/viz/chart/components/plots/StackedColumnPlot.js", "sap/viz/chart/components/util/PercentageDataLabelUtil.js", "sap/viz/chart/components/datalabels/PercentageDataLabels.js", "sap/viz/chart/components/plots/PercentagePlot.js", "sap/viz/chart/components/datalabels/StackedCombinationDataLabels.js", "sap/viz/chart/components/plots/StackedCombinationPlot.js", "sap/viz/chart/components/renderers/AreaSeriesRenderer.js", "sap/viz/chart/components/renderers/AreaRefLineRenderer.js", "sap/viz/chart/components/datalabels/AreaDataLabels.js", "sap/viz/chart/components/plots/AreaPlot.js", "sap/viz/chart/components/datalabels/AreaPercentageDataLabels.js", "sap/viz/chart/components/plots/PercentageAreaPlot.js", "sap/viz/chart/components/plots/ComboExDataHandler.js", "sap/viz/chart/components/renderers/ComboExSeriesRenderer.js", "sap/viz/chart/components/datalabels/ComboExDataLabels.js", "sap/viz/chart/components/plots/ComboExPlot.js", "sap/viz/chart/components/plots/XYPlotFactory.js", "sap/viz/chart/components/zoom/ZoomLimit.js", "sap/viz/chart/components/zoom/XYZoomer.js", "sap/viz/chart/components/plotareas/XYPlotArea.js", "sap/viz/chart/components/legend/LineLegend.js", "sap/viz/chart/components/legend/CombinationLegend.js", "sap/viz/chart/chains/RawDataParserFactory.js", "sap/viz/chart/chains/ChainUtils.js", "sap/viz/chart/chains/BaseChains.js", "sap/viz/chart/chains/XYChains.js", "sap/viz/chart/scales/FrameScale.js", "sap/viz/chart/scales/FrameScaleProcessor.js", "sap/viz/chart/dynamicScales/StackedDyScaleProcessor.js", "sap/viz/chart/views/XYChartView.js", "sap/viz/chart/metadata/bindings/XYBindings.js", "sap/viz/chart/metadata/bindings/CombinationBindings.js", "sap/viz/chart/components/legend/SizeLegend.js", "sap/viz/chart/scales/TimeScale.js", "sap/viz/chart/components/renderers/ValueBasedColorRenderer.js", "sap/viz/chart/components/axis/renderer/TimeBodyRenderer.js", "sap/viz/chart/components/axis/sub/TimeAxisCommon.js", "sap/viz/chart/components/axis/sub/TimeAxisBodyTransformer.js", "sap/viz/chart/components/axis/sub/TimeAxisBodyHelper.js", "sap/viz/chart/components/axis/sub/TimeAxisBody.js", "sap/viz/chart/components/axis/sub/FiscalAxisBody.js", "sap/viz/chart/components/axis/TimeAxis.js", "sap/viz/chart/components/datalabels/ScatterDataLabels.js", "sap/viz/chart/components/renderers/ScatterRenderer.js", "sap/viz/chart/components/plots/ProjectionHelper.js", "sap/viz/chart/components/decorator/HitTestDecorator.js", "sap/viz/chart/components/plots/ScatterPlot.js", "sap/viz/chart/components/datalabels/BubbleDataLabels.js", "sap/viz/chart/scales/SizeScaleUtil.js", "sap/viz/chart/components/plots/BubblePlot.js", "sap/viz/chart/components/plots/YYPlotFactory.js", "sap/viz/chart/components/axis/sub/TimeValueAxisBody.js", "sap/viz/chart/components/axis/TimeValueAxis.js", "sap/viz/chart/components/zoom/YYZoomer.js", "sap/viz/chart/components/zoom/TimeYZoomer.js", "sap/viz/chart/components/plotareas/YYPlotArea.js", "sap/viz/chart/chains/YYChains.js", "sap/viz/chart/scales/ShapeScale.js", "sap/viz/chart/scales/ShapeScaleProcessor.js", "sap/viz/chart/views/YYChartView.js", "sap/viz/chart/metadata/bindings/YYBindings.js", "sap/viz/chart/components/plotareas/XYYPlotArea.js", "sap/viz/chart/chains/XYYChains.js", "sap/viz/chart/views/XYYChartView.js", "sap/viz/chart/metadata/bindings/XYYBindings.js", "sap/viz/chart/scales/RGBA.js", "sap/viz/chart/components/util/FillPatternUtils.js", "sap/viz/chart/scales/BulletColorScale.js", "sap/viz/chart/components/legend/BulletLegend.js", "sap/viz/chart/components/plots/BulletPlot.js", "sap/viz/chart/components/plotareas/BulletPlotArea.js", "sap/viz/chart/chains/BulletChains.js", "sap/viz/chart/dynamicScales/BulletDyScaleProcessor.js", "sap/viz/chart/views/BulletChartView.js", "sap/viz/chart/metadata/bindings/BulletBindings.js", "sap/viz/chart/components/datalabels/PieDataLabels.js", "sap/viz/chart/components/renderers/PieRenderer.js", "sap/viz/chart/components/util/ContextUtil.js", "sap/viz/chart/components/plots/PiePlot.js", "sap/viz/chart/chains/PieChains.js", "sap/viz/chart/dynamicScales/PieDyScaleProcessor.js", "sap/viz/chart/views/PieChartView.js", "sap/viz/chart/metadata/bindings/PieBindings.js", "sap/viz/chart/components/axis/ReversedCategoryAxis.js", "sap/viz/chart/components/datalabels/HeatMapDataLabels.js", "sap/viz/chart/components/plots/HeatMapPlot.js", "sap/viz/chart/components/plotareas/XXPlotArea.js", "sap/viz/chart/components/legend/MBCLegend.js", "sap/viz/chart/scales/QuantizeScaleUtil.js", "sap/viz/chart/scales/QuantizeScale.js", "sap/viz/chart/scales/QuantizeScaleProcessor.js", "sap/viz/chart/chains/XXChains.js", "sap/viz/chart/views/XXChartView.js", "sap/viz/chart/metadata/bindings/XXBindings.js", "sap/viz/chart/metadata/bindings/XYYCombinationBindings.js", "sap/viz/chart/components/plots/TimeLinePlot.js", "sap/viz/chart/components/plots/TimeColumnPlot.js", "sap/viz/chart/components/decorator/HitTestCombDecorator.js", "sap/viz/chart/components/plots/TimeStackedColumnPlot.js", "sap/viz/chart/components/plots/TimeCombinationPlot.js", "sap/viz/chart/components/decorator/HitTestBulletDecorator.js", "sap/viz/chart/components/plots/TimeBulletPlot.js", "sap/viz/chart/components/plots/TimeStackedPercentagePlot.js", "sap/viz/chart/components/datalabels/WaterfallDataLabels.js", "sap/viz/chart/util/WaterfallUtils.js", "sap/viz/chart/components/plots/WaterFallPlot.js", "sap/viz/chart/components/plots/TimeWaterFallPlot.js", "sap/viz/chart/components/plots/TYPlotFactory.js", "sap/viz/chart/components/plotareas/TimeYPlotArea.js", "sap/viz/chart/scales/TimeScaleUtil.js", "sap/viz/chart/scales/TimeScaleProcessor.js", "sap/viz/chart/chains/SeriesIterator.js", "sap/viz/chart/chains/TYChains.js", "sap/viz/chart/views/TimeYChartView.js", "sap/viz/chart/metadata/bindings/TimeYBindings.js", "sap/viz/chart/components/plotareas/TimeBulletPlotArea.js", "sap/viz/chart/chains/TBulletChains.js", "sap/viz/chart/views/TimeBulletChartView.js", "sap/viz/chart/metadata/bindings/TimeBulletBindings.js", "sap/viz/chart/metadata/bindings/TimeYCombinationBindings.js", "sap/viz/chart/components/plotareas/TimeYYPlotArea.js", "sap/viz/chart/views/TimeYYChartView.js", "sap/viz/chart/metadata/bindings/TimeYYBindings.js", "sap/viz/chart/metadata/bindings/YYTimeBindings.js", "sap/viz/chart/components/datalabels/StackedWaterfallDataLabels.js", "sap/viz/chart/components/plots/StackedWaterFallPlot.js", "sap/viz/chart/components/plots/WaterFallPlotFactory.js", "sap/viz/chart/components/axis/renderer/WaterfallCategoryBodyRenderer.js", "sap/viz/chart/components/axis/sub/WaterfallCategoryAxisBody.js", "sap/viz/chart/components/axis/WaterfallCategoryAxis.js", "sap/viz/chart/components/plotareas/WaterfallPlotArea.js", "sap/viz/chart/components/legend/WaterFallLegend.js", "sap/viz/chart/scales/WaterFallTypeScale.js", "sap/viz/chart/scales/WaterScaleProcessor.js", "sap/viz/chart/chains/WaterFallChains.js", "sap/viz/chart/views/WaterFallChartView.js", "sap/viz/chart/views/TimeWaterFallChartView.js", "sap/viz/chart/metadata/bindings/TimeYColumnBindings.js", "sap/viz/chart/metadata/bindings/WaterFallBindings.js", "sap/viz/chart/metadata/bindings/MekkoBindings.js", "sap/viz/chart/metadata/bindings/TrellisPieBindings.js", "sap/viz/chart/metadata/bindings/TreeBindings.js", "sap/viz/chart/metadata/bindings/TagCloudBindings.js", "sap/viz/chart/metadata/bindings/NumericBindings.js", "sap/viz/chart/metadata/bindings/StackedWaterFallBindings.js", "sap/viz/chart/metadata/bindings/ComboExBindings.js", "sap/viz/chart/metadata/bindingDef.js", "sap/viz/chart/metadata/properties/chartTypes.js", "sap/viz/chart/metadata/properties/metadata.js", "scaleDefs.js", "sap/viz/chart/metadata/properties/ScaleLoader.js", "sap/viz/chart/metadata/metadata.js", "sap/viz/api/metadata/Viz.js", "sap/viz/chart/components/legend/ExtensionColorLegend.js", "sap/viz/chart/components/extension/componentWrapper/BaseWrapper.js", "sap/viz/chart/components/extension/componentWrapper/TitleWrapper.js", "sap/viz/chart/components/extension/componentWrapper/LegendWrapper.js", "sap/viz/chart/components/extension/BuiltInComponentWrapper.js", "sap/viz/chart/components/plots/ExtensionPlot.js", "sap/viz/chart/behavior/ExtensionBehavior.js", "sap/viz/chart/views/ExtensionChartView.js"]
+    },
+    {
+      "name" : "sap/viz/framework/common/util/TypeUtils.js",
+      "size" : 1794857,
+      "compressedSize" : 780883,
+      "required" : ["exports.js", "require.js", "sap/viz/framework/common/util/TypeUtils.js", "ui5loader.js"],
+      "includes" : ["sap/viz/framework/common/log/Logger.js", "sap/viz/framework/common/util/FunctionUtils.js", "sap/viz/framework/common/util/ObjectUtils.js", "sap/viz/framework/common/lang/LangMessageUtil.js", "sap/viz/framework/common/util/DOM.js", "jquery.js", "sap/viz/framework/common/util/ResourceLoader.js", "sap/viz/framework/common/lang/LangManager.js", "sap/viz/framework/core/ChartPropertyRegistry.js", "sap/viz/framework/common/util/oo.js", "sap/viz/framework/property/PropertyManager.js", "sap/viz/framework/extension/BaseChart.js", "sap/viz/framework/extension/ChartFactory.js", "sap/viz/framework/extension/Constants.js", "sap/viz/framework/common/util/VersionComparator.js", "sap/viz/framework/extension/ExtensionUtils.js", "sap/viz/framework/common/util/Constants.js", "sap/viz/framework/core/ChartViewRegistry.js", "sap/viz/framework/common/log/Analyzer.js", "sap/viz/framework/common/format/XCFormat.js", "sap/viz/framework/common/format/FormatManager.js", "sap/viz/framework/common/locale/Locale.js", "sap/viz/framework/core/env.js", "sap/viz/framework/core/config.js", "sap/viz/framework/common/util/UADetector.js", "sap/viz/framework/common/util/UrlUtils.js", "sap/viz/framework/common/template/TemplateManager.js", "sap/viz/framework/scale/ScaleRepository.js", "sap/viz/framework/scale/ScaleMapping.js", "sap/viz/framework/binding/bindingValidationUtil.js", "sap/viz/framework/common/util/ArrayUtils.js", "sap/viz/framework/scale/ScaleOptionFactory.js", "sap/viz/framework/scale/ScaleDataParseFactory.js", "sap/viz/framework/scale/ScaleRoleTypeMapFactory.js", "sap/viz/framework/scale/ScalePostFactory.js", "sap/viz/framework/scale/ScaleManager.js", "sap/viz/framework/binding/crosstableChains/BaseChains.js", "sap/viz/framework/binding/crosstableChains/XYChains.js", "sap/viz/framework/binding/crosstableChains/YYChains.js", "sap/viz/framework/binding/crosstableChains/XYYChains.js", "sap/viz/framework/binding/crosstableChains/XXChains.js", "sap/viz/framework/binding/crosstableChains/TreeChains.js", "sap/viz/framework/binding/crosstableChains/PieChains.js", "sap/viz/framework/binding/CrosstableChains.js", "sap/viz/framework/binding/defaultChains.js", "sap/viz/framework/common/util/IdProducer.js", "sap/viz/framework/common/util/DataUtils.js", "sap/viz/framework/chartmodel/DataPoint.js", "sap/viz/framework/common/util/NumberUtils.js", "sap/viz/framework/chartmodel/ContextBuilder.js", "sap/viz/framework/common/util/BulletUtils.js", "sap/viz/framework/chartmodel/DataModel.js", "sap/viz/framework/binding/BindingManager.js", "sap/viz/framework/interaction/Constants.js", "sap/viz/framework/interaction/BaseMonitor.js", "sap/viz/framework/interaction/DesktopMonitor.js", "sap/viz/framework/interaction/gesture/GestureDetector.js", "sap/viz/framework/interaction/gesture/PanGestureDetector.js", "sap/viz/framework/interaction/gesture/PinchGestureDetector.js", "sap/viz/framework/interaction/gesture/TouchChangeGestureDetector.js", "sap/viz/framework/interaction/MobileMonitor.js", "sap/viz/framework/common/util/EventDispatch.js", "sap/viz/framework/interaction/ActionItem.js", "sap/viz/framework/interaction/ActionItemAdapter.js", "sap/viz/framework/interaction/ActionItemUtil.js", "sap/viz/framework/interaction/Behavior.js", "sap/viz/framework/interaction/BehaviorManager.js", "sap/viz/framework/common/util/SVG.js", "sap/viz/framework/common/util/DataGraphics.js", "sap/viz/framework/interaction/ActionLayer.js", "sap/viz/framework/common/util/FiscalUtil.js", "sap/viz/framework/interaction/InteractionService.js", "sap/viz/framework/common/effect/DefaultEffects.js", "sap/viz/framework/common/effect/DefaultPattern.js", "sap/viz/framework/common/effect/EffectManager.js", "sap/viz/framework/env/EnvManager.js", "sap/viz/framework/common/util/TimeUtil.js", "sap/viz/framework/chartmodel/DataSelector.js", "sap/viz/framework/common/util/RuleUtil.js", "sap/viz/framework/common/semantic/SemanticManager.js", "sap/viz/framework/common/mark/MarkManager.js", "sap/viz/framework/event/EventDispatcher.js", "sap/viz/framework/common/util/GeometryUtils.js", "sap/viz/framework/common/util/GraphicModelUtil.js", "sap/viz/framework/chartmodel/GraphicModel.js", "sap/viz/framework/core/Runtime.js", "sap/viz/framework/interaction/InteractionUtils.js", "sap/viz/framework/interaction/Interaction.js", "sap/viz/framework/common/util/FeedingZoneUtil.js", "sap/viz/framework/common/util/ComboExShapeUtil.js", "sap/viz/framework/core/BaseApp.js", "sap/viz/framework/scale/ScaleUtil.js", "sap/viz/framework/chartmodel/DataModelManager.js", "sap/viz/migrate/scaleMigrator.js", "sap/viz/framework/customization/BaseCustomRenderer.js", "sap/viz/framework/customization/CustomGraphicInfo.js", "sap/viz/framework/customization/CustomRendererGenerator.js", "sap/viz/framework/customization/CustomRendererUtils.js", "sap/viz/framework/interaction/BehaviorFactory.js", "sap/viz/framework/customization/CustomInteractionConstant.js", "sap/viz/framework/customization/CustomInteractionTargetsUtils.js", "sap/viz/framework/customization/CustomInteractionGenerator.js", "sap/viz/framework/customization/constants/CustomInteractionEvents.js", "sap/viz/framework/customization/constants/CustomInteractionTargets.js", "sap/viz/framework/customization/CustomInteractionUtils.js", "sap/viz/framework/customization/BaseCustomInteraction.js", "sap/viz/framework/customization/CustomInteractionFactory.js", "sap/viz/framework/customization/CustomRendererFactory.js", "sap/viz/framework/customization/BaseCustomOverlay.js", "sap/viz/framework/customization/CustomOverlayFactory.js", "sap/viz/framework/customization/BaseCustomization.js", "sap/viz/framework/customization/CustomizationFactory.js", "sap/viz/framework/customization/CustomizationManager.js", "sap/viz/framework/customization/CustomizationUtils.js", "sap/viz/framework/customization/VizInstanceInfo.js", "sap/viz/framework/scale/ColorShapeScaleMerger.js", "sap/viz/framework/customization/VizModelInfo.js", "sap/viz/framework/customization/VizRenderInfo.js", "sap/viz/framework/common/util/StatusConstants.js", "sap/viz/framework/interaction/utils/PlotZoomUtils.js", "sap/viz/framework/scale/DynamicScaleRepository.js", "sap/viz/framework/scale/DynamicScaleUtil.js", "sap/viz/framework/core/ChartApp.js", "sap/viz/migrate/migrator/versionMigrator.js", "sap/viz/migrate/PropertyUtil.js", "sap/viz/migrate/bindingMigrator.js", "sap/viz/migrate/BaseMigrator.js", "sap/viz/migrate/migrator/Migrator10to12.js", "sap/viz/migrate/migrator/Migrator12to16.js", "sap/viz/migrate/migrator/Migrator16to18Model/Properties.js", "sap/viz/migrate/migrator/Migrator16to18Model/CSS.js", "sap/viz/migrate/CSSMigrator.js", "sap/viz/migrate/migrator/Migrator16to18.js", "sap/viz/migrate/migrator/Migrator18to510.js", "sap/viz/migrate/migrator/Migrator510to5110Model/Properties.js", "sap/viz/migrate/migrator/Migrator510to5110Model/CSS.js", "sap/viz/migrate/migrator/Migrator510to5110.js", "sap/viz/migrate/migrator/Migrator5110to5160Model/Properties.js", "sap/viz/migrate/migrator/Migrator5110to5160Model/CSS.js", "sap/viz/migrate/migrator/Migrator5110to5160.js", "sap/viz/migrate/migrator/Migrator5290to5300Model/Properties.js", "sap/viz/migrate/migrator/Migrator5290to5300.js", "sap/viz/migrate/migrator/Migrator5300to6000Model/Properties.js", "sap/viz/migrate/migrator/Migrator5300to6000Model/CSS.js", "sap/viz/migrate/migrator/Migrator5300to6000.js", "sap/viz/migrate/migrator/Migrator6000to6100Model/Properties.js", "sap/viz/migrate/migrator/Migrator6000to6100.js", "sap/viz/migrate/MigrationTool.js", "sap/viz/api/core/VizInstance.js", "sap/viz/framework/chartmodel/feed/feed.js", "sap/viz/framework/chartmodel/description/DataContainer.js", "sap/viz/framework/chartmodel/description/DimensionLabels.js", "sap/viz/framework/chartmodel/feed/feeder.js", "sap/viz/framework/chartmodel/description/AnalysisAxis.js", "sap/viz/framework/chartmodel/description/MeasureValues.js", "sap/viz/framework/chartmodel/description/MeasureValuesGroup.js", "sap/viz/framework/chartmodel/info/Handler.js", "sap/viz/framework/chartmodel/info/CrosstableHandler.js", "sap/viz/framework/chartmodel/CrosstableDataset.js", "sap/viz/api/data/CrosstableDataset.js", "sap/viz/framework/chartmodel/info/FlatTableInfoHandler.js", "sap/viz/framework/chartmodel/FlatTableDataset.js", "sap/viz/api/data/FlatTableDataset.js", "sap/viz/api/core.js", "sap/viz/framework/common/util/NameColorUtils.js", "sap/viz/framework/common/format/UnitFormat.js", "sap/viz/api/env.js", "sap/viz/api/env/Format.js", "sap/viz/api/env/Language.js", "sap/viz/api/env/Locale.js", "sap/viz/api/env/Resource.js", "sap/viz/api/env/Template.js", "sap/viz/api/interaction/Behavior.js", "sap/viz/api/interaction.js", "sap/viz/api/log/Appender.js", "sap/viz/api/log/Layout.js", "sap/viz/api/log/Logger.js", "sap/viz/api/serialization.js", "sap/viz/framework/flow/FlowConstant.js", "sap/viz/framework/flow/Flow.js", "sap/viz/framework/common/util/RequireUtil.js", "sap/viz/framework/flow/Element.js", "sap/viz/framework/flow/flowModule/DataFilter.js", "sap/viz/framework/chartmodel/MultiAxesDataAdapterDecorator.js", "sap/viz/framework/flow/ChartViewFactory.js", "sap/viz/framework/flow/FlowManager.js", "sap/viz/extapi/Flow.js", "sap/viz/extapi/core.js", "sap/viz/framework/customization/constants/CustomRendererTypes.js", "sap/viz/extapi/customization.js", "sap/viz/extapi/component/ColorLegend.js", "sap/viz/extapi/component/Title.js", "sap/viz/framework/common/util/ContextUtils.js", "sap/viz/extapi/utils/Data.js", "sap/viz/extapi/env/Language.js", "sap/viz/extapi/env/Locale.js", "sap/viz/extapi/env/Resource.js", "sap/viz/extapi/env/Template.js", "sap/viz/framework/binding/supportBindingUtil.js", "sap/viz/framework/common/util/Math.js", "sap/viz/framework/common/util/ColorUtils.js", "sap/viz/framework/common/util/PositionUtil.js", "sap/viz/framework/common/util/PropertyZoneUtil.js", "sap/viz/framework/extension/DataModelToCSVUtil.js", "sap/bi/framework/BundleLoader/ServicePlugin.js", "sap/bi/framework/BundleLoader/ServiceMetadataPlugin.js", "sap/bi/framework/BundleLoader/ImportPlugin.js", "sap/bi/framework/BundleLoader/CssPlugin.js", "sap/bi/framework/BundleLoader/XHRInterceptor.js", "sap/bi/framework/BundleLoader/BundleLoader.js", "sap/bi/framework/kernel/DIKernel.js", "export.bi.js", "sap.viz.core-bundle.js", "sap.viz.core-bundleloader.js"]
+    },
+    {
+      "name" : "sap/viz/base/utils/TypeUtils.js",
+      "size" : 4284721,
+      "compressedSize" : 1996418,
+      "required" : ["exports.js", "require.js", "sap/viz/base/utils/TypeUtils.js", "ui5loader.js"],
+      "includes" : ["sap/viz/base/Logger.js", "sap/viz/base/utils/FunctionUtils.js", "sap/viz/base/Class.js", "sap/viz/data/description/DataContainer.js", "sap/viz/base/utils/ObjectUtils.js", "sap/viz/data/description/MeasureValues.js", "sap/viz/lang/LangMessageUtil.js", "sap/viz/base/utils/ResouceBundleUtils.js", "sap/viz/base/utils/loadScript.js", "sap/viz/base/utils/loadResource.js", "sap/viz/lang/langManager.js", "sap/viz/data/description/MeasureValuesGroup.js", "sap/viz/data/description/DimensionLabels.js", "sap/viz/data/description/AnalysisAxis.js", "sap/viz/data/feed/feed.js", "sap/viz/data/feed/feeder.js", "sap/viz/data/info/Handler.js", "sap/viz/data/info/CrosstableHandler.js", "sap/viz/data/CrosstableDataset.js", "sap/viz/data/info/FlatTableInfoHandler.js", "sap/viz/data/FlatTableDataset.js", "sap/viz/manifest.js", "sap/viz/TemplateManager.js", "sap/viz/base/utils/Objects.js", "sap/viz/format/XCFormat.js", "sap/viz/format/FormatManager.js", "sap/viz/Locale.js", "sap/viz/base/utils/log/Analyzer.js", "sap/viz/env.js", "sap/viz/config.js", "sap/viz/data/utils/CTB2TBConvertUtil.js", "sap/viz/data/MultiAxesDataAdapter.js", "sap/viz/data/handler/MeasureDataHandler.js", "sap/viz/data/handler/SingleChartDataHandler.js", "jquery.js", "sap/viz/util/Objects.js", "sap/viz/base/Observable.js", "sap/viz/mvc/ThemeManager.js", "sap/viz/mvc/ImageManager.js", "sap/viz/base/utils/DomUtils.js", "sap/viz/base/UADetector.js", "sap/viz/base/utils/LinkedHashSet.js", "sap/viz/mvc/GestureDetector.js", "sap/viz/mvc/UIComponent.js", "sap/viz/base/utils/LinkedHashMap.js", "sap/viz/base/utils/DomWatcher.js", "sap/viz/mvc/Event.js", "sap/viz/mvc/MouseEvent.js", "sap/viz/mvc/TouchEvent.js", "sap/viz/base/Math.js", "sap/viz/mvc/VizFrame.js", "sap/viz/mvc/UIController.js", "sap/viz/mvc/VizApplication.js", "sap/viz/style/Element.js", "sap/viz/style/Manager.js", "sap/viz/util/fn/createContext.js", "sap/viz/modules/manifests/Module.js", "sap/viz/modules/GlobalConstants.js", "sap/viz/util/makeInterfaceCompatible.js", "sap/viz/util/ignite.js", "sap/viz/style/Selector.js", "sap/viz/style/Sheet.js", "sap/viz/util/append.js", "sap/viz/util/elementutil.js", "sap/viz/util/fn/dombuilder.js", "sap/viz/util/fn/domposition.js", "sap/viz/modules/event/Manager.js", "sap/viz/util/UtilsRegister.js", "sap/viz/util/TextUtils.js", "sap/viz/base/utils/oo.js", "sap/viz/modules/Base.js", "sap/viz/modules/dispatch.js", "sap/viz/behaviors/MouseMonitor.js", "sap/viz/mvc/TapGestureDetector.js", "sap/viz/mvc/PanGestureDetector.js", "sap/viz/mvc/PinchGestureDetector.js", "sap/viz/behaviors/TouchMonitor.js", "sap/viz/behaviors/BehaviorManager.js", "sap/viz/mvc/ChartComponent.js", "sap/viz/mvc/ChartController.js", "sap/viz/load-core.js", "sap/viz/data/handler/BaseDataHandler.js", "sap/viz/api/data/FlatTableDataset.js", "sap/viz/feeds/Manifest.js", "sap/viz/data/feed/Constants.js", "sap/viz/manifests/Viz.js", "sap/viz/manifests/util/ManifestRegister.js", "sap/viz/api/manifest/Viz.js", "sap/viz/api/data/CrosstableDataset.js", "sap/viz/data/utils/DatasetUtils.js", "sap/viz/mvc/ChartApplication.js", "sap/viz/core.js", "sap/viz/ccl.js", "sap/viz/modules/Constants.js", "sap/viz/util/Constants.js", "sap/viz/util/fn/modulebuilder.js", "sap/viz/modules/BaseComposition.js", "sap/viz/base/EventDispatch.js", "sap/viz/elements/common/Base.js", "sap/viz/elements/common/BaseGraphic.js", "sap/viz/modules/util/BoundUtil.js", "sap/viz/modules/background.js", "sap/viz/modules/util/BackgroundUtil.js", "sap/viz/util/functional.js", "sap/viz/modules/layout/dock.js", "sap/viz/elements/common/SVG.js", "sap/viz/util/FeedingZoneUtil.js", "sap/viz/util/PropertyZoneUtil.js", "sap/viz/modules/BaseContainer.js", "sap/viz/util/EffectManager.js", "sap/viz/modules/DivContainer.js", "sap/viz/modules/manifests/BaseContainer.js", "sap/viz/modules/manifests/DivContainer.js", "sap/viz/base/utils/log/LogUtil.js", "sap/viz/modules/rootContainer.js", "sap/viz/modules/manifests/RootContainer.js", "sap/viz/modules/manifests/layout/Base.js", "sap/viz/modules/manifests/layout/Dock.js", "sap/viz/modules/layout/stack.js", "sap/viz/modules/legend.js", "sap/viz/modules/manifests/Legend.js", "sap/viz/util/DrawUtil.js", "sap/viz/util/ScrollBar.js", "sap/viz/modules/legend/colorLegendArea.js", "sap/viz/modules/legend/sizeLegendArea.js", "sap/viz/modules/legend/mbcLegendArea.js", "sap/viz/modules/legend/common.js", "sap/viz/modules/manifests/legend/Common.js", "sap/viz/modules/manifests/Background.js", "sap/viz/modules/title.js", "sap/viz/modules/manifests/Title.js", "sap/viz/modules/manifests/layout/Stack.js", "sap/viz/modules/layout.js", "sap/viz/modules/xycontainer.js", "sap/viz/modules/manifests/XYContainer.js", "sap/viz/chart/elements/behaviors/BaseBehavior.js", "sap/viz/modules/util/flattenModules.js", "sap/viz/chart/elements/utils/LassoDecoration.js", "sap/viz/util/BoundingBox.js", "sap/viz/chart/elements/utils/runtimeSelectionDataHandler.js", "sap/viz/chart/elements/behaviors/InteractionHelper.js", "sap/viz/chart/elements/behaviors/Interaction.js", "sap/viz/modules/manifests/controller/Base.js", "sap/viz/chart/elements/manifests/controller/Interaction.js", "sap/viz/impls/Common.js", "sap/viz/modules/util/defaultSelectionUtil.js", "sap/viz/modules/util/GestureUtil.js", "sap/viz/modules/BaseGesture.js", "sap/viz/modules/util/dataUtil.js", "sap/viz/modules/util/MNDHandler.js", "sap/viz/util/NumberUtils.js", "sap/viz/util/Scaler.js", "sap/viz/util/ColorSeriesGenerator.js", "sap/viz/modules/util/tooltipDataHandler.js", "sap/viz/modules/util/ClippathUtil.js", "sap/viz/data/handler/RuntimeSelectionDataHandler.js", "sap/viz/modules/util/selectionUtil.js", "sap/viz/modules/area.js", "sap/viz/feeds/XY.js", "sap/viz/modules/manifests/xy/Base.js", "sap/viz/modules/manifests/xy/Area.js", "sap/viz/chart/elements/Tooltip.js", "sap/viz/chart/elements/manifests/Tooltip.js", "sap/viz/modules/threeD/Vector.js", "sap/viz/modules/threeD/Vector4D.js", "sap/viz/modules/threeD/Point.js", "sap/viz/modules/threeD/matrix.js", "sap/viz/format/UnitFormat.js", "sap/viz/modules/axis/valueAxisCore.js", "sap/viz/modules/axis/categoryAxisCore.js", "sap/viz/modules/axis/timeValueAxisCore.js", "sap/viz/modules/util/IndicatorUtil.js", "sap/viz/modules/axis/regularAxis.js", "sap/viz/modules/manifests/Axis.js", "sap/viz/modules/datalabel.js", "sap/viz/modules/manifests/DataLabel.js", "sap/viz/manifests/xy/BaseVerticalChart.js", "sap/viz/modules/controller/pinch.js", "sap/viz/modules/manifests/controller/Pinch.js", "sap/viz/modules/controller/pan.js", "sap/viz/modules/manifests/controller/Pan.js", "sap/viz/manifests/xy/AreaChart.js", "sap/viz/impls/AreaChart.js", "sap/viz/modules/threeD/Vector3D.js", "sap/viz/modules/xyzcontainer.js", "sap/viz/modules/manifests/XYZContainer.js", "sap/viz/modules/threeD/cube.js", "sap/viz/modules/bar3d.js", "sap/viz/modules/manifests/xy/BaseBar.js", "sap/viz/modules/manifests/xyz/Bar3D.js", "sap/viz/chart/elements/utils/RotateHandler.js", "sap/viz/manifests/xyz/Base3DChart.js", "sap/viz/manifests/xyz/Bar3DChart.js", "sap/viz/impls/Bar3DChart.js", "sap/viz/manifests/xy/BaseHorizontalChart.js", "sap/viz/modules/BaseHorizontalBar.js", "sap/viz/modules/util/imageUtil.js", "sap/viz/modules/util/VizBarSizeUtil.js", "sap/viz/modules/bar.js", "sap/viz/modules/manifests/xy/Bar.js", "sap/viz/manifests/xy/BarChart.js", "sap/viz/impls/BarChart.js", "sap/viz/manifests/BaseChart.js", "sap/viz/manifests/BaseSingleChart.js", "sap/viz/manifests/scatter/BaseBubbleChart.js", "sap/viz/util/ShapeSeriesGenerator.js", "sap/viz/modules/bubble.js", "sap/viz/feeds/Scatter.js", "sap/viz/modules/manifests/Bubble.js", "sap/viz/manifests/scatter/BubbleChart.js", "sap/viz/impls/BubbleChart.js", "sap/viz/manifests/xyz/Column3DChart.js", "sap/viz/impls/Column3DChart.js", "sap/viz/modules/combination.js", "sap/viz/modules/manifests/xy/Combination.js", "sap/viz/modules/BaseLine.js", "sap/viz/modules/line.js", "sap/viz/modules/manifests/xy/Line.js", "sap/viz/modules/BaseVerticalBar.js", "sap/viz/modules/verticalbar.js", "sap/viz/modules/manifests/xy/VerticalBar.js", "sap/viz/manifests/xy/CombinationChart.js", "sap/viz/impls/CombinationChart.js", "sap/viz/modules/pie/sector.js", "sap/viz/modules/pie/selection.js", "sap/viz/modules/pie.js", "sap/viz/feeds/Pie.js", "sap/viz/modules/manifests/Pie.js", "sap/viz/modules/datatransform.js", "sap/viz/modules/manifests/DataTransform.js", "sap/viz/manifests/pie/PieChart.js", "sap/viz/manifests/pie/DonutChart.js", "sap/viz/impls/DonutChart.js", "sap/viz/modules/piewithdepth.js", "sap/viz/modules/manifests/PieWithDepth.js", "sap/viz/manifests/pie/PieWithDepthChart.js", "sap/viz/manifests/pie/DonutWithDepthChart.js", "sap/viz/impls/DonutWithDepthChart.js", "sap/viz/manifests/xy/DualBarChart.js", "sap/viz/impls/DualBarChart.js", "sap/viz/manifests/xy/DualCombinationChart.js", "sap/viz/impls/DualCombinationChart.js", "sap/viz/modules/manifests/xy/HorizontalCombination.js", "sap/viz/modules/manifests/xy/HorizontalLine.js", "sap/viz/manifests/xy/HorizontalCombinationChart.js", "sap/viz/manifests/xy/DualHorizontalCombinationChart.js", "sap/viz/impls/DualHorizontalCombinationChart.js", "sap/viz/manifests/xy/HorizontalLineChart.js", "sap/viz/manifests/xy/DualHorizontalLineChart.js", "sap/viz/impls/DualHorizontalLineChart.js", "sap/viz/manifests/xy/LineChart.js", "sap/viz/manifests/xy/DualLineChart.js", "sap/viz/impls/DualLineChart.js", "sap/viz/modules/stackedbar.js", "sap/viz/modules/manifests/xy/StackedBar.js", "sap/viz/manifests/xy/DualStackedBarChart.js", "sap/viz/manifests/xy/DualPercentageStackedBarChart.js", "sap/viz/impls/DualPercentageStackedBarChart.js", "sap/viz/modules/stackedverticalbar.js", "sap/viz/modules/manifests/xy/StackedVerticalBar.js", "sap/viz/manifests/xy/VerticalBarChart.js", "sap/viz/manifests/xy/StackedVerticalBarChart.js", "sap/viz/manifests/xy/DualVerticalBarChart.js", "sap/viz/manifests/xy/DualStackedVerticalBarChart.js", "sap/viz/manifests/xy/DualPercentageStackedVerticalBarChart.js", "sap/viz/impls/DualPercentageStackedVerticalBarChart.js", "sap/viz/impls/DualStackedBarChart.js", "sap/viz/impls/DualStackedVerticalBarChart.js", "sap/viz/impls/DualVerticalBarChart.js", "sap/viz/util/RGBA.js", "sap/viz/util/MeasureBasedColoring.js", "sap/viz/modules/heatmap.js", "sap/viz/feeds/HeatMap.js", "sap/viz/modules/manifests/HeatMap.js", "sap/viz/manifests/HeatMapChart.js", "sap/viz/impls/HeatMapChart.js", "sap/viz/manifests/xy/HorizontalAreaChart.js", "sap/viz/impls/HorizontalAreaChart.js", "sap/viz/modules/BaseBoxplot.js", "sap/viz/modules/horizontalboxplot.js", "sap/viz/modules/manifests/xy/HorizontalBoxplot.js", "sap/viz/manifests/xy/HorizontalBoxplotChart.js", "sap/viz/impls/HorizontalBoxplotChart.js", "sap/viz/impls/HorizontalCombinationChart.js", "sap/viz/impls/HorizontalLineChart.js", "sap/viz/modules/mekko.js", "sap/viz/modules/manifests/xy/Mekko.js", "sap/viz/manifests/xy/HorizontalMekkoChart.js", "sap/viz/impls/HorizontalMekkoChart.js", "sap/viz/modules/stackedwaterfall.js", "sap/viz/modules/manifests/xy/StackedWaterfall.js", "sap/viz/manifests/xy/StackedWaterfallChart.js", "sap/viz/manifests/xy/HorizontalStackedWaterfallChart.js", "sap/viz/impls/HorizontalStackedWaterfallChart.js", "sap/viz/manifests/xy/HorizontalWaterfallChart.js", "sap/viz/impls/HorizontalWaterfallChart.js", "sap/viz/impls/LineChart.js", "sap/viz/manifests/xy/MekkoChart.js", "sap/viz/impls/MekkoChart.js", "sap/viz/modules/util/DimensionalInfoHandler.js", "sap/viz/data/handler/MultiChartDataHandler.js", "sap/viz/modules/tablecontainer.js", "sap/viz/modules/manifests/TableContainer.js", "sap/viz/manifests/BaseMultipleChart.js", "sap/viz/manifests/BaseMultipleXYChart.js", "sap/viz/manifests/MultiAreaChart.js", "sap/viz/impls/MultiAreaChart.js", "sap/viz/manifests/MultiBarChart.js", "sap/viz/impls/MultiBarChart.js", "sap/viz/modules/manifests/Scatter.js", "sap/viz/manifests/MultiScatterChart.js", "sap/viz/manifests/MultiBubbleChart.js", "sap/viz/impls/MultiBubbleChart.js", "sap/viz/manifests/MultiPieChart.js", "sap/viz/manifests/MultiDonutChart.js", "sap/viz/impls/MultiDonutChart.js", "sap/viz/manifests/MultiPieWithDepthChart.js", "sap/viz/manifests/MultiDonutWithDepthChart.js", "sap/viz/impls/MultiDonutWithDepthChart.js", "sap/viz/manifests/MultiDualBarChart.js", "sap/viz/impls/MultiDualBarChart.js", "sap/viz/manifests/MultiLineChart.js", "sap/viz/manifests/MultiHorizontalLineChart.js", "sap/viz/manifests/MultiDualHorizontalLineChart.js", "sap/viz/impls/MultiDualHorizontalLineChart.js", "sap/viz/manifests/MultiDualLineChart.js", "sap/viz/impls/MultiDualLineChart.js", "sap/viz/manifests/MultiDualStackedBarChart.js", "sap/viz/manifests/MultiDualPercentageStackedBarChart.js", "sap/viz/impls/MultiDualPercentageStackedBarChart.js", "sap/viz/manifests/MultiVerticalBarChart.js", "sap/viz/manifests/MultiDualVerticalBarChart.js", "sap/viz/manifests/MultiDualStackedVerticalBarChart.js", "sap/viz/manifests/MultiDualPercentageStackedVerticalBarChart.js", "sap/viz/impls/MultiDualPercentageStackedVerticalBarChart.js", "sap/viz/impls/MultiDualStackedBarChart.js", "sap/viz/impls/MultiDualStackedVerticalBarChart.js", "sap/viz/impls/MultiDualVerticalBarChart.js", "sap/viz/manifests/MultiHorizontalAreaChart.js", "sap/viz/impls/MultiHorizontalAreaChart.js", "sap/viz/impls/MultiHorizontalLineChart.js", "sap/viz/impls/MultiLineChart.js", "sap/viz/manifests/MultiPercentageAreaChart.js", "sap/viz/impls/MultiPercentageAreaChart.js", "sap/viz/manifests/MultiPercentageHorizontalAreaChart.js", "sap/viz/impls/MultiPercentageHorizontalAreaChart.js", "sap/viz/manifests/MultiStackedBarChart.js", "sap/viz/manifests/MultiPercentageStackedBarChart.js", "sap/viz/impls/MultiPercentageStackedBarChart.js", "sap/viz/manifests/MultiStackedVerticalBarChart.js", "sap/viz/manifests/MultiPercentageStackedVerticalBarChart.js", "sap/viz/impls/MultiPercentageStackedVerticalBarChart.js", "sap/viz/impls/MultiPieChart.js", "sap/viz/impls/MultiPieWithDepthChart.js", "sap/viz/modules/axis.js", "sap/viz/modules/radar.js", "sap/viz/feeds/Radar.js", "sap/viz/modules/manifests/Radar.js", "sap/viz/manifests/MultiRadarChart.js", "sap/viz/impls/MultiRadarChart.js", "sap/viz/impls/MultiScatterChart.js", "sap/viz/impls/MultiStackedBarChart.js", "sap/viz/impls/MultiStackedVerticalBarChart.js", "sap/viz/impls/MultiVerticalBarChart.js", "sap/viz/modules/network/graph.js", "sap/viz/modules/network/basicLayout.js", "sap/viz/modules/network.js", "sap/viz/feeds/Network.js", "sap/viz/modules/manifests/Network.js", "sap/viz/manifests/NetworkChart.js", "sap/viz/impls/NetworkChart.js", "sap/viz/manifests/xy/PercentageAreaChart.js", "sap/viz/impls/PercentageAreaChart.js", "sap/viz/manifests/xy/PercentageHorizontalAreaChart.js", "sap/viz/impls/PercentageHorizontalAreaChart.js", "sap/viz/manifests/xy/PercentageHorizontalMekkoChart.js", "sap/viz/impls/PercentageHorizontalMekkoChart.js", "sap/viz/manifests/xy/PercentageMekkoChart.js", "sap/viz/impls/PercentageMekkoChart.js", "sap/viz/manifests/xy/StackedBarChart.js", "sap/viz/manifests/xy/PercentageStackedBarChart.js", "sap/viz/impls/PercentageStackedBarChart.js", "sap/viz/manifests/xy/PercentageStackedVerticalBarChart.js", "sap/viz/impls/PercentageStackedVerticalBarChart.js", "sap/viz/impls/PieChart.js", "sap/viz/impls/PieWithDepthChart.js", "sap/viz/manifests/RadarChart.js", "sap/viz/impls/RadarChart.js", "sap/viz/manifests/scatter/ScatterChart.js", "sap/viz/impls/ScatterChart.js", "sap/viz/modules/scattermatrixcontainer.js", "sap/viz/feeds/ScatterMatrix.js", "sap/viz/modules/manifests/ScatterMatrixContainer.js", "sap/viz/modules/manifests/ScatterInMatrix.js", "sap/viz/manifests/ScatterMatrixChart.js", "sap/viz/impls/ScatterMatrixChart.js", "sap/viz/manifests/SimpleChart.js", "sap/viz/impls/SimpleChart.js", "sap/viz/impls/StackedBarChart.js", "sap/viz/impls/StackedVerticalBarChart.js", "sap/viz/impls/StackedWaterfallChart.js", "sap/viz/modules/tagcloud/rowLayout.js", "sap/viz/modules/tagcloud/columnLayout.js", "sap/viz/modules/tagcloud/wordleLayout.js", "sap/viz/modules/tagcloud.js", "sap/viz/feeds/TagCloud.js", "sap/viz/modules/manifests/TagCloud.js", "sap/viz/manifests/TagCloudChart.js", "sap/viz/impls/TagCloudChart.js", "sap/viz/modules/tree/treeData.js", "sap/viz/modules/tree/treeLayout.js", "sap/viz/modules/tree/treeRender.js", "sap/viz/modules/tree.js", "sap/viz/feeds/Tree.js", "sap/viz/modules/manifests/Tree.js", "sap/viz/manifests/TreeChart.js", "sap/viz/impls/TreeChart.js", "sap/viz/modules/treemap.js", "sap/viz/feeds/TreeMap.js", "sap/viz/modules/manifests/TreeMap.js", "sap/viz/manifests/TreeMapChart.js", "sap/viz/impls/TreeMapChart.js", "sap/viz/impls/VerticalBarChart.js", "sap/viz/modules/verticalboxplot.js", "sap/viz/modules/manifests/xy/VerticalBoxplot.js", "sap/viz/manifests/xy/VerticalBoxplotChart.js", "sap/viz/impls/VerticalBoxplotChart.js", "sap/viz/manifests/xy/WaterfallChart.js", "sap/viz/impls/WaterfallChart.js", "sap/viz/modules/bullet.js", "sap/viz/feeds/Bullet.js", "sap/viz/modules/manifests/xy/Bullet.js", "sap/viz/manifests/xy/BulletChart.js", "sap/viz/impls/BulletChart.js", "sap/viz/manifests/scatter/TimeValueBubbleChart.js", "sap/viz/impls/TimeValueBubbleChart.js", "sap/viz/modules/number.js", "sap/viz/feeds/Number.js", "sap/viz/modules/manifests/Number.js", "sap/viz/manifests/NumberChart.js", "sap/viz/impls/NumberChart.js", "sap/viz/load.js", "sap/viz/extapi/core.js", "sap/viz/data/utils/TF2CTFConvertUtil.js", "sap/viz/data/utils/TB2CTBConvertUtil.js", "sap/viz/api/core/VizInstance.js", "sap/viz/migrate/BaseMigrator.js", "sap/viz/migrate/migrator/Migrator10to12.js", "sap/viz/migrate/migrator/Migrator12to13.js", "sap/viz/migrate/MigrationTool.js", "sap/viz/api/core.js", "sap/viz/api/serialization.js", "sap/viz/base/utils/NamedColorUtils.js", "sap/viz/api/env.js", "sap/viz/api/env/Language.js", "sap/viz/api/env/Locale.js", "sap/viz/api/env/Resource.js", "sap/viz/api/env/Format.js", "sap/viz/api/log/Appender.js", "sap/viz/api/log/Layout.js", "sap/viz/api/log/Logger.js", "sap/viz/api/env/Template.js", "sap/viz/behaviors/plugin/ActionItem.js", "sap/viz/behaviors/plugin/Behavior.js", "sap/viz/api/interaction/Behavior.js", "sap/viz/behaviors/plugin/BehaviorManager.js", "sap/viz/api/interaction.js", "sap/viz/api/manifest/Feed.js", "sap/viz/api/manifest/Module.js", "sap/viz/flow/FlowConstant.js", "sap/viz/flow/ElementMapping.js", "sap/viz/flow/flowTemplate/DivTemplate.js", "sap/viz/flow/flowTemplate/SVGTemplate.js", "sap/viz/flow/flowTemplate/FlowTemplateManager.js", "sap/viz/flow/elementTemplate/ElementTemplate.js", "sap/viz/flow/elementTemplate/LegendTemplate.js", "sap/viz/flow/flowModule/DataFilter.js", "sap/viz/flow/elementTemplate/DataFilterTemplate.js", "sap/viz/flow/Flow.js", "sap/viz/elements/common/ExtensionGraphic.js", "sap/viz/flow/Element.js", "sap/viz/flow/FlowManager.js", "sap/viz/extapi/Flow.js", "sap/viz/util/ContextUtils.js", "sap/viz/extapi/utils/Data.js", "sap/viz/extapi/env/Language.js", "sap/viz/extapi/env/Locale.js", "sap/viz/extapi/env/Resource.js", "sap/viz/extapi/env/Template.js", "sap/viz/extapi/manifest/Feed.js", "sap/viz/extapi/manifest/Module.js", "sap/viz/extapi/manifest/Viz.js", "sap/bi/framework/BundleLoader/ServicePlugin.js", "sap/bi/framework/BundleLoader/ServiceMetadataPlugin.js", "sap/bi/framework/BundleLoader/ImportPlugin.js", "sap/bi/framework/BundleLoader/CssPlugin.js", "sap/bi/framework/BundleLoader/XHRInterceptor.js", "sap/bi/framework/BundleLoader/BundleLoader.js", "sap/bi/framework/kernel/DIKernel.js", "sap.viz.aio.js", "sap.viz.aio-bundle.js", "sap.viz.aio-bundleloader.js"]
+    },
+    {
+      "name" : "sap/viz/manifest.json",
+      "size" : 1256,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_ar.js",
+      "size" : 14861,
+      "compressedSize" : 11110,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_bg.js",
+      "size" : 17613,
+      "compressedSize" : 12562,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_ca.js",
+      "size" : 12525,
+      "compressedSize" : 12293,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_cs.js",
+      "size" : 12039,
+      "compressedSize" : 11528,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_da.js",
+      "size" : 11521,
+      "compressedSize" : 11401,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_de.js",
+      "size" : 11884,
+      "compressedSize" : 11814,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_el.js",
+      "size" : 16524,
+      "compressedSize" : 12087,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_en.js",
+      "size" : 11142,
+      "compressedSize" : 11141,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_es.js",
+      "size" : 12932,
+      "compressedSize" : 12671,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_et.js",
+      "size" : 11315,
+      "compressedSize" : 11236,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_fi.js",
+      "size" : 11576,
+      "compressedSize" : 11480,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_fr.js",
+      "size" : 13203,
+      "compressedSize" : 12990,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_hi.js",
+      "size" : 18994,
+      "compressedSize" : 11187,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_hr.js",
+      "size" : 12552,
+      "compressedSize" : 12398,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_hu.js",
+      "size" : 12435,
+      "compressedSize" : 11930,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_it.js",
+      "size" : 12078,
+      "compressedSize" : 12067,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_iw.js",
+      "size" : 13716,
+      "compressedSize" : 10588,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_ja.js",
+      "size" : 12874,
+      "compressedSize" : 8711,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_kk.js",
+      "size" : 17780,
+      "compressedSize" : 12535,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_ko.js",
+      "size" : 11925,
+      "compressedSize" : 8880,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_lt.js",
+      "size" : 12956,
+      "compressedSize" : 12525,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_lv.js",
+      "size" : 12764,
+      "compressedSize" : 12266,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_nl.js",
+      "size" : 11754,
+      "compressedSize" : 11753,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_no.js",
+      "size" : 11902,
+      "compressedSize" : 11854,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_pl.js",
+      "size" : 12523,
+      "compressedSize" : 12369,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_pt.js",
+      "size" : 12593,
+      "compressedSize" : 12367,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_ro.js",
+      "size" : 12498,
+      "compressedSize" : 12170,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_ru.js",
+      "size" : 19826,
+      "compressedSize" : 13585,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_sh.js",
+      "size" : 12668,
+      "compressedSize" : 12544,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_sk.js",
+      "size" : 11958,
+      "compressedSize" : 11445,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_sl.js",
+      "size" : 12394,
+      "compressedSize" : 12197,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_sv.js",
+      "size" : 11513,
+      "compressedSize" : 11435,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_th.js",
+      "size" : 20941,
+      "compressedSize" : 11666,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_tr.js",
+      "size" : 11714,
+      "compressedSize" : 11226,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_uk.js",
+      "size" : 17919,
+      "compressedSize" : 12677,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_vi.js",
+      "size" : 14251,
+      "compressedSize" : 12395,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_zh_CN.js",
+      "size" : 10226,
+      "compressedSize" : 7979,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/langs/language_zh_TW.js",
+      "size" : 10720,
+      "compressedSize" : 8251,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/chart/templates/standard_fiori/template.js",
+      "size" : 30139,
+      "compressedSize" : 11294,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_ar.js",
+      "size" : 7432,
+      "compressedSize" : 5419,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_bg.js",
+      "size" : 8927,
+      "compressedSize" : 6218,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_ca.js",
+      "size" : 6413,
+      "compressedSize" : 6324,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_cs.js",
+      "size" : 5971,
+      "compressedSize" : 5713,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_da.js",
+      "size" : 5980,
+      "compressedSize" : 5934,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_de.js",
+      "size" : 6178,
+      "compressedSize" : 6135,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_el.js",
+      "size" : 9028,
+      "compressedSize" : 6233,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_en.js",
+      "size" : 5797,
+      "compressedSize" : 5796,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_es.js",
+      "size" : 6584,
+      "compressedSize" : 6500,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_et.js",
+      "size" : 5728,
+      "compressedSize" : 5613,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_fi.js",
+      "size" : 6189,
+      "compressedSize" : 6004,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_fr.js",
+      "size" : 6709,
+      "compressedSize" : 6600,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_hi.js",
+      "size" : 10319,
+      "compressedSize" : 5770,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_hr.js",
+      "size" : 5957,
+      "compressedSize" : 5869,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_hu.js",
+      "size" : 6507,
+      "compressedSize" : 6188,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_it.js",
+      "size" : 6320,
+      "compressedSize" : 6293,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_iw.js",
+      "size" : 7079,
+      "compressedSize" : 5253,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_ja.js",
+      "size" : 7627,
+      "compressedSize" : 4574,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_kk.js",
+      "size" : 8435,
+      "compressedSize" : 5906,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_ko.js",
+      "size" : 6860,
+      "compressedSize" : 4561,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_lt.js",
+      "size" : 6098,
+      "compressedSize" : 5937,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_lv.js",
+      "size" : 5980,
+      "compressedSize" : 5778,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_nl.js",
+      "size" : 5996,
+      "compressedSize" : 5994,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_no.js",
+      "size" : 5863,
+      "compressedSize" : 5831,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_pl.js",
+      "size" : 6420,
+      "compressedSize" : 6181,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_pt.js",
+      "size" : 6409,
+      "compressedSize" : 6226,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_ro.js",
+      "size" : 6215,
+      "compressedSize" : 6070,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_ru.js",
+      "size" : 8891,
+      "compressedSize" : 6142,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_sh.js",
+      "size" : 5877,
+      "compressedSize" : 5788,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_sk.js",
+      "size" : 6160,
+      "compressedSize" : 5881,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_sl.js",
+      "size" : 5942,
+      "compressedSize" : 5880,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_sv.js",
+      "size" : 5913,
+      "compressedSize" : 5814,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_th.js",
+      "size" : 10702,
+      "compressedSize" : 5609,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_tr.js",
+      "size" : 5852,
+      "compressedSize" : 5594,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_uk.js",
+      "size" : 8468,
+      "compressedSize" : 5942,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_vi.js",
+      "size" : 7332,
+      "compressedSize" : 6379,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_zh_CN.js",
+      "size" : 5372,
+      "compressedSize" : 3799,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/resources/framework/langs/language_zh_TW.js",
+      "size" : 5332,
+      "compressedSize" : 3811,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/Area.js",
+      "description" : "Provides control sap.viz.ui5.Area.",
+      "size" : 6337,
+      "compressedSize" : 1153,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseChart.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/Area100.js",
+      "description" : "Provides control sap.viz.ui5.Area100.",
+      "size" : 6365,
+      "compressedSize" : 1160,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseChart.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/Area100Renderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved @deprecated Since 1.30.1. Do not require this private module. All chart wrappers share the BaseChartRenderer.",
+      "size" : 379,
+      "compressedSize" : 321,
+      "required" : ["jquery.sap.global.js", "sap/viz/ui5/Area100.js", "sap/viz/ui5/core/BaseChartRenderer.js"],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/AreaRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved @deprecated Since 1.30.1. Do not require this private module. All chart wrappers share the BaseChartRenderer.",
+      "size" : 376,
+      "compressedSize" : 318,
+      "required" : ["jquery.sap.global.js", "sap/viz/ui5/Area.js", "sap/viz/ui5/core/BaseChartRenderer.js"],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/Bar.js",
+      "description" : "Provides control sap.viz.ui5.Bar.",
+      "size" : 6791,
+      "compressedSize" : 1150,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseChart.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/BarRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved @deprecated Since 1.30.1. Do not require this private module. All chart wrappers share the BaseChartRenderer.",
+      "size" : 375,
+      "compressedSize" : 317,
+      "required" : ["jquery.sap.global.js", "sap/viz/ui5/Bar.js", "sap/viz/ui5/core/BaseChartRenderer.js"],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/Bubble.js",
+      "description" : "Provides control sap.viz.ui5.Bubble.",
+      "size" : 6963,
+      "compressedSize" : 1226,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseChart.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/BubbleRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved @deprecated Since 1.30.1. Do not require this private module. All chart wrappers share the BaseChartRenderer.",
+      "size" : 378,
+      "compressedSize" : 320,
+      "required" : ["jquery.sap.global.js", "sap/viz/ui5/Bubble.js", "sap/viz/ui5/core/BaseChartRenderer.js"],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/Bullet.js",
+      "description" : "Provides control sap.viz.ui5.Bullet.",
+      "size" : 6569,
+      "compressedSize" : 1028,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseChart.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/BulletRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved @deprecated Since 1.30.1. Do not require this private module. All chart wrappers share the BaseChartRenderer.",
+      "size" : 378,
+      "compressedSize" : 320,
+      "required" : ["jquery.sap.global.js", "sap/viz/ui5/Bullet.js", "sap/viz/ui5/core/BaseChartRenderer.js"],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/Column.js",
+      "description" : "Provides control sap.viz.ui5.Column.",
+      "size" : 6837,
+      "compressedSize" : 1164,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseChart.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/ColumnRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved @deprecated Since 1.30.1. Do not require this private module. All chart wrappers share the BaseChartRenderer.",
+      "size" : 378,
+      "compressedSize" : 320,
+      "required" : ["jquery.sap.global.js", "sap/viz/ui5/Column.js", "sap/viz/ui5/core/BaseChartRenderer.js"],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/Combination.js",
+      "description" : "Provides control sap.viz.ui5.Combination.",
+      "size" : 6887,
+      "compressedSize" : 1174,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseChart.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/CombinationRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved @deprecated Since 1.30.1. Do not require this private module. All chart wrappers share the BaseChartRenderer.",
+      "size" : 383,
+      "compressedSize" : 325,
+      "required" : ["jquery.sap.global.js", "sap/viz/ui5/Combination.js", "sap/viz/ui5/core/BaseChartRenderer.js"],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/Donut.js",
+      "description" : "Provides control sap.viz.ui5.Donut.",
+      "size" : 6594,
+      "compressedSize" : 1054,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseChart.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/DonutRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved @deprecated Since 1.30.1. Do not require this private module. All chart wrappers share the BaseChartRenderer.",
+      "size" : 377,
+      "compressedSize" : 319,
+      "required" : ["jquery.sap.global.js", "sap/viz/ui5/Donut.js", "sap/viz/ui5/core/BaseChartRenderer.js"],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/DualBar.js",
+      "description" : "Provides control sap.viz.ui5.DualBar.",
+      "size" : 6947,
+      "compressedSize" : 1213,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseChart.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/DualBarRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved @deprecated Since 1.30.1. Do not require this private module. All chart wrappers share the BaseChartRenderer.",
+      "size" : 379,
+      "compressedSize" : 321,
+      "required" : ["jquery.sap.global.js", "sap/viz/ui5/DualBar.js", "sap/viz/ui5/core/BaseChartRenderer.js"],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/DualColumn.js",
+      "description" : "Provides control sap.viz.ui5.DualColumn.",
+      "size" : 6993,
+      "compressedSize" : 1227,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseChart.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/DualColumnRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved @deprecated Since 1.30.1. Do not require this private module. All chart wrappers share the BaseChartRenderer.",
+      "size" : 382,
+      "compressedSize" : 324,
+      "required" : ["jquery.sap.global.js", "sap/viz/ui5/DualColumn.js", "sap/viz/ui5/core/BaseChartRenderer.js"],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/DualCombination.js",
+      "description" : "Provides control sap.viz.ui5.DualCombination.",
+      "size" : 6565,
+      "compressedSize" : 1237,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseChart.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/DualCombinationRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved @deprecated Since 1.30.1. Do not require this private module. All chart wrappers share the BaseChartRenderer.",
+      "size" : 387,
+      "compressedSize" : 329,
+      "required" : ["jquery.sap.global.js", "sap/viz/ui5/DualCombination.js", "sap/viz/ui5/core/BaseChartRenderer.js"],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/DualLine.js",
+      "description" : "Provides control sap.viz.ui5.DualLine.",
+      "size" : 6959,
+      "compressedSize" : 1216,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseChart.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/DualLineRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved @deprecated Since 1.30.1. Do not require this private module. All chart wrappers share the BaseChartRenderer.",
+      "size" : 380,
+      "compressedSize" : 322,
+      "required" : ["jquery.sap.global.js", "sap/viz/ui5/DualLine.js", "sap/viz/ui5/core/BaseChartRenderer.js"],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/DualStackedColumn.js",
+      "description" : "Provides control sap.viz.ui5.DualStackedColumn.",
+      "size" : 7079,
+      "compressedSize" : 1249,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseChart.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/DualStackedColumn100.js",
+      "description" : "Provides control sap.viz.ui5.DualStackedColumn100.",
+      "size" : 7111,
+      "compressedSize" : 1256,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseChart.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/DualStackedColumn100Renderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved @deprecated Since 1.30.1. Do not require this private module. All chart wrappers share the BaseChartRenderer.",
+      "size" : 392,
+      "compressedSize" : 334,
+      "required" : ["jquery.sap.global.js", "sap/viz/ui5/DualStackedColumn100.js", "sap/viz/ui5/core/BaseChartRenderer.js"],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/DualStackedColumnRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved @deprecated Since 1.30.1. Do not require this private module. All chart wrappers share the BaseChartRenderer.",
+      "size" : 389,
+      "compressedSize" : 331,
+      "required" : ["jquery.sap.global.js", "sap/viz/ui5/DualStackedColumn.js", "sap/viz/ui5/core/BaseChartRenderer.js"],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/Heatmap.js",
+      "description" : "Provides control sap.viz.ui5.Heatmap.",
+      "size" : 6709,
+      "compressedSize" : 1098,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseChart.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/HeatmapRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved @deprecated Since 1.30.1. Do not require this private module. All chart wrappers share the BaseChartRenderer.",
+      "size" : 379,
+      "compressedSize" : 321,
+      "required" : ["jquery.sap.global.js", "sap/viz/ui5/Heatmap.js", "sap/viz/ui5/core/BaseChartRenderer.js"],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/HorizontalArea.js",
+      "description" : "Provides control sap.viz.ui5.HorizontalArea.",
+      "size" : 6428,
+      "compressedSize" : 1174,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseChart.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/HorizontalArea100.js",
+      "description" : "Provides control sap.viz.ui5.HorizontalArea100.",
+      "size" : 6456,
+      "compressedSize" : 1181,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseChart.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/HorizontalArea100Renderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved @deprecated Since 1.30.1. Do not require this private module. All chart wrappers share the BaseChartRenderer.",
+      "size" : 389,
+      "compressedSize" : 331,
+      "required" : ["jquery.sap.global.js", "sap/viz/ui5/HorizontalArea100.js", "sap/viz/ui5/core/BaseChartRenderer.js"],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/HorizontalAreaRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved @deprecated Since 1.30.1. Do not require this private module. All chart wrappers share the BaseChartRenderer.",
+      "size" : 386,
+      "compressedSize" : 328,
+      "required" : ["jquery.sap.global.js", "sap/viz/ui5/HorizontalArea.js", "sap/viz/ui5/core/BaseChartRenderer.js"],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/Line.js",
+      "description" : "Provides control sap.viz.ui5.Line.",
+      "size" : 6803,
+      "compressedSize" : 1153,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseChart.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/LineRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved @deprecated Since 1.30.1. Do not require this private module. All chart wrappers share the BaseChartRenderer.",
+      "size" : 376,
+      "compressedSize" : 318,
+      "required" : ["jquery.sap.global.js", "sap/viz/ui5/Line.js", "sap/viz/ui5/core/BaseChartRenderer.js"],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/Pie.js",
+      "description" : "Provides control sap.viz.ui5.Pie.",
+      "size" : 6574,
+      "compressedSize" : 1050,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseChart.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/PieRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved @deprecated Since 1.30.1. Do not require this private module. All chart wrappers share the BaseChartRenderer.",
+      "size" : 375,
+      "compressedSize" : 317,
+      "required" : ["jquery.sap.global.js", "sap/viz/ui5/Pie.js", "sap/viz/ui5/core/BaseChartRenderer.js"],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/Scatter.js",
+      "description" : "Provides control sap.viz.ui5.Scatter.",
+      "size" : 6978,
+      "compressedSize" : 1232,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseChart.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/ScatterRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved @deprecated Since 1.30.1. Do not require this private module. All chart wrappers share the BaseChartRenderer.",
+      "size" : 379,
+      "compressedSize" : 321,
+      "required" : ["jquery.sap.global.js", "sap/viz/ui5/Scatter.js", "sap/viz/ui5/core/BaseChartRenderer.js"],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/StackedColumn.js",
+      "description" : "Provides control sap.viz.ui5.StackedColumn.",
+      "size" : 6923,
+      "compressedSize" : 1186,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseChart.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/StackedColumn100.js",
+      "description" : "Provides control sap.viz.ui5.StackedColumn100.",
+      "size" : 6955,
+      "compressedSize" : 1193,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseChart.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/StackedColumn100Renderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved @deprecated Since 1.30.1. Do not require this private module. All chart wrappers share the BaseChartRenderer.",
+      "size" : 388,
+      "compressedSize" : 330,
+      "required" : ["jquery.sap.global.js", "sap/viz/ui5/StackedColumn100.js", "sap/viz/ui5/core/BaseChartRenderer.js"],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/StackedColumnRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved @deprecated Since 1.30.1. Do not require this private module. All chart wrappers share the BaseChartRenderer.",
+      "size" : 385,
+      "compressedSize" : 327,
+      "required" : ["jquery.sap.global.js", "sap/viz/ui5/StackedColumn.js", "sap/viz/ui5/core/BaseChartRenderer.js"],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/TimeBubble.js",
+      "description" : "Provides control sap.viz.ui5.TimeBubble.",
+      "size" : 7005,
+      "compressedSize" : 1235,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseChart.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/TimeBubbleRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved @deprecated Since 1.30.1. Do not require this private module. All chart wrappers share the BaseChartRenderer.",
+      "size" : 382,
+      "compressedSize" : 324,
+      "required" : ["jquery.sap.global.js", "sap/viz/ui5/TimeBubble.js", "sap/viz/ui5/core/BaseChartRenderer.js"],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/Treemap.js",
+      "description" : "Provides control sap.viz.ui5.Treemap.",
+      "size" : 6014,
+      "compressedSize" : 992,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseChart.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/TreemapRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved @deprecated Since 1.30.1. Do not require this private module. All chart wrappers share the BaseChartRenderer.",
+      "size" : 379,
+      "compressedSize" : 321,
+      "required" : ["jquery.sap.global.js", "sap/viz/ui5/Treemap.js", "sap/viz/ui5/core/BaseChartRenderer.js"],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/VizContainer.js",
+      "description" : "Provides control sap.viz.ui5.VizContainer.",
+      "size" : 23658,
+      "compressedSize" : 9037,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/libs/sap-viz.js", "sap/viz/ui5/container/VizControlsHelper.js", "sap/viz/ui5/container/libs/common/libs/rgbcolor/rgbcolor_static.js", "sap/viz/ui5/container/libs/sap-viz-controls-vizcontainer.js", "sap/viz/ui5/controls/common/BaseControl.js", "sap/viz/ui5/controls/common/feeds/AnalysisObject.js", "sap/viz/ui5/controls/common/feeds/FeedItem.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/VizContainerRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 1301,
+      "compressedSize" : 504,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/api/env/Format.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 1136,
+      "compressedSize" : 277,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/container/VizControlsHelper.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 4734,
+      "compressedSize" : 2204,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/container/libs/common/libs/rgbcolor/rgbcolor_static.js",
+      "size" : 7517,
+      "compressedSize" : 3945,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/container/libs/locale/language_ar.js",
+      "size" : 17213,
+      "compressedSize" : 17201,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/container/libs/locale/language_cs.js",
+      "size" : 17213,
+      "compressedSize" : 17201,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/container/libs/locale/language_da.js",
+      "size" : 17213,
+      "compressedSize" : 17201,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/container/libs/locale/language_de.js",
+      "size" : 18841,
+      "compressedSize" : 18829,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/container/libs/locale/language_en.js",
+      "size" : 17213,
+      "compressedSize" : 17201,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/container/libs/locale/language_es.js",
+      "size" : 19704,
+      "compressedSize" : 19692,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/container/libs/locale/language_fi.js",
+      "size" : 17213,
+      "compressedSize" : 17201,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/container/libs/locale/language_fr.js",
+      "size" : 20391,
+      "compressedSize" : 20379,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/container/libs/locale/language_he.js",
+      "size" : 17213,
+      "compressedSize" : 17201,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/container/libs/locale/language_hu.js",
+      "size" : 22496,
+      "compressedSize" : 22484,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/container/libs/locale/language_is.js",
+      "size" : 30078,
+      "compressedSize" : 30066,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/container/libs/locale/language_it.js",
+      "size" : 17213,
+      "compressedSize" : 17201,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/container/libs/locale/language_ja.js",
+      "size" : 26768,
+      "compressedSize" : 26756,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/container/libs/locale/language_ko.js",
+      "size" : 17213,
+      "compressedSize" : 17201,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/container/libs/locale/language_nb.js",
+      "size" : 17213,
+      "compressedSize" : 17201,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/container/libs/locale/language_nl.js",
+      "size" : 17213,
+      "compressedSize" : 17201,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/container/libs/locale/language_pl.js",
+      "size" : 19954,
+      "compressedSize" : 19942,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/container/libs/locale/language_pt.js",
+      "size" : 19514,
+      "compressedSize" : 19502,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/container/libs/locale/language_ro.js",
+      "size" : 17213,
+      "compressedSize" : 17201,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/container/libs/locale/language_ru.js",
+      "size" : 48582,
+      "compressedSize" : 48570,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/container/libs/locale/language_sk.js",
+      "size" : 17213,
+      "compressedSize" : 17201,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/container/libs/locale/language_sl.js",
+      "size" : 17213,
+      "compressedSize" : 17201,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/container/libs/locale/language_sv.js",
+      "size" : 17213,
+      "compressedSize" : 17201,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/container/libs/locale/language_th.js",
+      "size" : 17213,
+      "compressedSize" : 17201,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/container/libs/locale/language_tr.js",
+      "size" : 17213,
+      "compressedSize" : 17201,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/container/libs/locale/language_zh_CN.js",
+      "size" : 21877,
+      "compressedSize" : 21865,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/container/libs/locale/language_zh_TW.js",
+      "size" : 17249,
+      "compressedSize" : 17237,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "jquery.js",
+      "size" : 2039885,
+      "compressedSize" : 887579,
+      "required" : ["jquery.js", "require.js", "sap/m/ActionListItem.js", "sap/m/Bar.js", "sap/m/Button.js", "sap/m/DisplayListItem.js", "sap/m/Label.js", "sap/m/List.js", "sap/m/Page.js", "sap/m/Panel.js", "sap/m/ResponsivePopover.js", "sap/m/StandardListItem.js", "sap/ui/commons/Button.js", "sap/ui/commons/CheckBox.js", "sap/ui/commons/ColorPicker.js", "sap/ui/commons/ComboBox.js", "sap/ui/commons/DropdownBox.js", "sap/ui/commons/Label.js", "sap/ui/commons/RadioButton.js", "sap/ui/commons/Slider.js", "sap/ui/commons/TextField.js", "sap/ui/commons/ToggleButton.js", "sap/ui/commons/TriStateCheckBox.js", "ui5loader.js"],
+      "includes" : ["sap/viz/controls/Version.js", "sap/viz/controls/common/config/GlobalConfig.js", "sap/viz/controls/common/constants/ChartConst.js", "sap/viz/controls/common/constants/CSSConst.js", "sap/viz/controls/common/utils/Utils.js", "sap/viz/controls/common/managers/LangManager.js", "sap/viz/controls/common/feeds/AnalyticalType.js", "sap/viz/controls/common/utils/JsonUtil.js", "sap/viz/controls/common/views/menu/MenuGroup.js", "sap/viz/controls/common/feeds/HierarchyLevelObject.js", "sap/viz/controls/common/feeds/AnalysisObject.js", "sap/viz/controls/common/feeds/FeedItem.js", "sap/viz/controls/common/feeds/FeedItemType.js", "sap/viz/controls/common/feeds/valueobjects/Shelf.js", "sap/viz/controls/common/feeds/valueobjects/ShelfType.js", "sap/viz/controls/common/constants/DatasetTypeConst.js", "sap/viz/controls/common/utils/PropertyFilterUtil.js", "sap/viz/controls/common/utils/VizUtils.js", "sap/viz/controls/common/utils/FakeDataUtils.js", "sap/viz/controls/common/utils/InfoChartUtil.js", "sap/viz/controls/common/utils/TrellisUtils.js", "sap/viz/controls/common/utils/ChartTypeUtil.js", "sap/viz/controls/common/feeds/FeedUtils.js", "sap/viz/controls/common/feeds/AutoFeedingUtils.js", "sap/viz/controls/common/filter/AbstractFilter.js", "sap/viz/controls/common/utils/OOUtil.js", "sap/viz/controls/common/filter/DateRangeFilter.js", "sap/viz/controls/common/filter/NumericRangeFilter.js", "sap/viz/controls/common/filter/ValueFilter.js", "sap/viz/controls/common/events/EventDispatcher.js", "sap/viz/controls/common/UIControl.js", "sap/viz/controls/common/views/drag/DropAction.js", "sap/viz/controls/common/views/drag/AnalysisToken.js", "sap/viz/controls/common/views/drag/DefaultAnalysisToken.js", "sap/viz/controls/common/managers/DragManager.js", "sap/viz/controls/common/utils/DatasetUtil.js", "sap/viz/controls/common/filter/FilterHelper.js", "sap/viz/controls/services/FakeDataService.js", "sap/viz/controls/common/utils/IncompleteGhost.js", "sap/viz/controls/common/utils/Serialization.js", "sap/viz/controls/common/views/menu/MenuItem.js", "sap/viz/controls/common/events/Event.js", "sap/viz/controls/common/events/FeedEvent.js", "sap/viz/controls/runtime/Runtime.js", "sap/viz/controls/runtime/RuntimeManager.js", "sap/viz/controls/common/services/BVRService.js", "sap/viz/controls/common/helpers/MapLayers.js", "sap/viz/controls/runtime/ModelHandler.js", "sap/viz/controls/runtime/InfoModelHandler.js", "sap/viz/controls/runtime/MapModelHandler.js", "sap/viz/controls/runtime/VizModelHandler.js", "sap/viz/controls/runtime/VizModel.js", "sap/viz/controls/common/ProxyBase.js", "sap/viz/controls/runtime/VizProxy.js", "sap/viz/controls/common/VizControlBase.js", "sap/viz/controls/common/VizControlHost.js", "sap/viz/controls/common/views/feed/FeedingShelfEvent.js", "sap/viz/controls/feeding/FeedingPanelConfig.js", "sap/viz/controls/mapbuilder/MapBuilderConfig.js", "sap/viz/controls/switchbar/SwitchBarConfig.js", "sap/viz/controls/builder/VizBuilderConfig.js", "sap/viz/controls/builder/VizBuilderEvent.js", "sap/viz/controls/mapbuilder/constants/Const.js", "sap/viz/controls/mapbuilder/components/PropertyTriangle.js", "sap/viz/controls/mapbuilder/events/GeoEvent.js", "sap/viz/controls/mapbuilder/sections/SectionBase.js", "sap/viz/controls/mapbuilder/widgets/WidgetBase.js", "sap/viz/controls/mapbuilder/widgets/WidgetTitle.js", "sap/viz/controls/mapbuilder/widgets/WidgetDataPoint.js", "sap/viz/controls/common/helpers/Rectangle.js", "sap/viz/controls/common/views/menu/PopUpMenuEvent.js", "sap/viz/controls/common/views/menu/DockStrategy.js", "sap/viz/controls/common/views/menu/PopUpMenu.js", "sap/viz/controls/common/feeds/SubtotalItemType.js", "sap/viz/controls/common/menu/MenuExtensionBuilder.js", "sap/viz/controls/common/views/feed/FeedingShelf.js", "sap/viz/controls/common/views/feed/FeedListEvent.js", "sap/viz/controls/common/constants/KeyboardEventConst.js", "sap/viz/controls/common/views/feed/FeedList.js", "sap/viz/controls/mapbuilder/widgets/WidgetFeeding.js", "sap/viz/controls/mapbuilder/widgets/WidgetProperties.js", "sap/viz/controls/mapbuilder/utils/UIHelper.js", "sap/viz/controls/mapbuilder/sections/GeoVizLayerSection.js", "sap/viz/controls/mapbuilder/models/Analysis.js", "sap/viz/controls/mapbuilder/models/VizLayer.js", "sap/viz/controls/mapbuilder/widgets/WidgetESRIMapStyle.js", "sap/viz/controls/mapbuilder/sections/GeoBasemapLayerSection.js", "sap/viz/controls/mapbuilder/widgets/WidgetContextMenu.js", "sap/viz/controls/mapbuilder/MapBuilder.js", "sap/viz/controls/switchbar/SwitchBarEvent.js", "sap/viz/controls/switchbar/views/SwitcherEvent.js", "sap/viz/controls/switchbar/views/DropDownListEvent.js", "sap/viz/controls/switchbar/views/DropDownList.js", "sap/viz/controls/switchbar/views/Switcher.js", "sap/viz/controls/switchbar/SwitchBar.js", "sap/viz/controls/common/views/feed/PlayerFieldShelfEvent.js", "sap/viz/controls/common/views/feed/PlayerFieldShelf.js", "sap/viz/controls/feeding/FeedingPanelEvent.js", "sap/viz/controls/feeding/FeedingPanel.js", "sap/viz/controls/builder/VizBuilder.js", "sap/viz/controls/common/constants/EventTypeConst.js", "sap/viz/controls/annotation/AnnotationConfig.js", "sap/viz/controls/annotation/AnnotationEvent.js", "sap/viz/controls/annotation/views/DialogEvent.js", "sap/viz/controls/annotation/views/ConfirmDialog.js", "sap/viz/controls/annotation/models/Comment.js", "sap/viz/controls/annotation/views/Comments.js", "sap/viz/controls/annotation/views/CommentEditorView.js", "sap/viz/controls/annotation/Annotation.js", "sap/viz/controls/annotationcontrol/AnnotationControlConfig.js", "sap/viz/controls/annotationcontrol/AnnotationControlEvent.js", "sap/viz/controls/annotationcontrol/AnnotationItem.js", "sap/viz/controls/annotationcontrol/Layouter.js", "sap/viz/controls/annotationcontrol/AnnotationControl.js", "sap/viz/controls/chart/ChartConfig.js", "sap/viz/controls/chart/ChartPreHandler.js", "sap/viz/controls/common/constants/MapProviderConst.js", "sap/viz/controls/chart/views/AxisSizeAdjustHelper.js", "sap/viz/controls/chart/views/AxisSplitter.js", "sap/viz/controls/chart/views/ChartEvent.js", "sap/viz/controls/chart/views/DataPointFinder.js", "sap/viz/controls/chart/views/DropZone.js", "sap/viz/controls/chart/views/EditAxisView.js", "sap/viz/controls/chart/morph/constant/MorphConst.js", "sap/viz/controls/chart/morph/utils/Utils.js", "sap/viz/controls/chart/morph/utils/SVGShapeMetadata.js", "sap/viz/controls/chart/morph/vo/VizShape.js", "sap/viz/controls/chart/morph/vo/VizShapesHolder.js", "sap/viz/controls/chart/morph/viz/MpShapesCapturer.js", "sap/viz/controls/chart/morph/utils/SVGShapeReplacer.js", "sap/viz/controls/chart/morph/viz/MpShapesMapper.js", "sap/viz/controls/chart/morph/utils/Cache.js", "sap/viz/controls/chart/morph/utils/ColorUtil.js", "sap/viz/controls/chart/morph/morphers/ColorMorpher.js", "sap/viz/controls/chart/morph/morphers/RectMorpher.js", "sap/viz/controls/chart/morph/morphers/LineMorpher.js", "sap/viz/controls/chart/morph/morphers/PathMorpher.js", "sap/viz/controls/chart/morph/utils/TransformParser.js", "sap/viz/controls/chart/morph/morphers/TransformMorpher.js", "sap/viz/controls/chart/morph/morphers/TextMorpher.js", "sap/viz/controls/chart/morph/VizMorpher.js", "sap/viz/controls/chart/views/PropertyZone.js", "sap/viz/controls/LanguageLoader.js", "sap/viz/controls/TemplateLoader.js", "sap/viz/controls/chart/views/WarningView.js", "sap/viz/controls/chart/views/View.js", "sap/viz/controls/common/property/VizPropertyZone.js", "sap/viz/controls/chart/views/ChartView.js", "sap/viz/controls/chart/adapters/InteractionAdapter.js", "sap/viz/controls/chart/adapters/renderer/RendererInfoBase.js", "sap/viz/controls/chart/adapters/renderer/DataLabelRendererInfo.js", "sap/viz/controls/chart/adapters/config/DataLabelPropConfig.js", "sap/viz/controls/chart/adapters/renderer/StackDecoratorInfo.js", "sap/viz/controls/chart/adapters/renderer/BarShapeRendererInfo.js", "sap/viz/controls/chart/adapters/renderer/PieDataPointRendererInfo.js", "sap/viz/controls/chart/adapters/renderer/LineDataPointRendererInfo.js", "sap/viz/controls/chart/adapters/config/DataPointPropConfig.js", "sap/viz/controls/chart/adapters/config/ValueAxisPropConfig.js", "sap/viz/controls/chart/adapters/config/ChartTitlePropConfig.js", "sap/viz/controls/chart/adapters/config/ChartAreaPropConfig.js", "sap/viz/controls/chart/adapters/config/PlotAreaPropConfig.js", "sap/viz/controls/chart/adapters/config/CategoryAxisTitlePropConfig.js", "sap/viz/controls/chart/adapters/config/ValueAxisTitlePropConfig.js", "sap/viz/controls/chart/adapters/config/LegendPropConfig.js", "sap/viz/controls/chart/adapters/renderer/CategoryAxisLabelRendererInfo.js", "sap/viz/controls/chart/adapters/config/CategoryAxisPropConfig.js", "sap/viz/controls/chart/adapters/renderer/LineRendererInfo.js", "sap/viz/controls/chart/adapters/config/LinePropConfig.js", "sap/viz/controls/chart/adapters/PropertyMap.js", "sap/viz/controls/chart/adapters/PropFnGenerator.js", "sap/viz/controls/chart/adapters/PropFnGeneratorRegistry.js", "sap/viz/controls/chart/adapters/PropertyAdapter.js", "sap/viz/controls/chart/views/InfoChartView.js", "sap/viz/controls/chart/views/ESRIServicePanel.js", "sap/viz/controls/chart/views/ESRIServiceColor.js", "sap/viz/controls/chart/views/ESRIServiceSelector.js", "sap/viz/controls/chart/views/EsriNoService.js", "sap/viz/controls/chart/views/MapView.js", "sap/viz/controls/chart/views/TableView.js", "sap/viz/controls/chart/ViewManager.js", "sap/viz/controls/chart/VizProxyHandler.js", "sap/viz/controls/chart/Chart.js", "sap/viz/controls/plugins/infochart/getPropertiesByCtx.js", "sap/viz/controls/plugins/infochart/SVG.js", "sap/viz/controls/plugins/infochart/Icon.js", "sap/viz/controls/plugins/infochart/StackDecoratorGenerator.js", "sap/viz/controls/plugins/infochart/BarShapeRendererGenerator.js", "sap/viz/controls/plugins/infochart/CategoryAxisLabelRendererGenerator.js", "sap/viz/controls/plugins/infochart/PieSliceRendererGenerator.js", "sap/viz/controls/plugins/infochart/DataLabelRendererGenerator.js", "sap/viz/controls/plugins/infochart/LineMarkerRendererGenerator.js", "sap/viz/controls/plugins/infochart/LineRendererGenerator.js", "sap/viz/controls/plugins/infochart/setup.js", "sap/viz/controls/common/utils/OSUtil.js", "sap/viz/controls/contextmenu/constants/MenuItemConst.js", "sap/viz/controls/contextmenu/ContextMenuConfig.js", "sap/viz/controls/contextmenu/ContextMenuEvent.js", "sap/viz/controls/contextmenu/models/MenuItem.js", "sap/viz/controls/contextmenu/models/DataLabelMenuItem.js", "sap/viz/controls/contextmenu/models/DirectionMenuItem.js", "sap/viz/controls/contextmenu/models/LegendMenuItem.js", "sap/viz/controls/contextmenu/models/StackingMenuItem.js", "sap/viz/controls/contextmenu/models/MBCLegendMenuItem.js", "sap/viz/controls/contextmenu/models/MNDMenuItem.js", "sap/viz/controls/contextmenu/models/SetAxisScaleMenuItem.js", "sap/viz/controls/contextmenu/models/ChartEditorMenuItem.js", "sap/viz/controls/contextmenu/models/ShowHideTitleMenuItem.js", "sap/viz/controls/contextmenu/models/ShowHideNegativeMenuItem.js", "sap/viz/controls/contextmenu/views/MenuItem.js", "sap/viz/controls/contextmenu/views/CheckedMenuItem.js", "sap/viz/controls/contextmenu/views/BlankMenuItem.js", "sap/viz/controls/contextmenu/views/MenuSeparator.js", "sap/viz/controls/contextmenu/views/Menu.js", "sap/viz/controls/contextmenu/ContextMenu.js", "sap/viz/controls/custombutton/CustomButtonConfig.js", "sap/viz/controls/custombutton/CustomButtonEvent.js", "sap/viz/controls/custombutton/CustomButton.js", "sap/viz/controls/filterbar0/FilterBarConfig.js", "sap/viz/controls/frame/VizFrameConfig.js", "sap/viz/controls/frame/VizFrameEvent.js", "sap/viz/controls/frame/chartEditor/ChartEditorEvent.js", "sap/viz/controls/frame/chartEditor/ChartEditor.js", "sap/viz/controls/frame/chartEditor/ChartEditorPlugin.js", "sap/viz/controls/frame/menu/CommentMenuItem.js", "sap/viz/controls/filterbar0/Tooltip.js", "sap/viz/controls/filterbar0/FilterBarEvent.js", "sap/viz/controls/filterbar0/FilterBar.js", "sap/viz/controls/frame/views/FilterMenuEvent.js", "sap/viz/controls/frame/views/FilterMenu.js", "sap/viz/controls/chart/views/TitleContextMenu.js", "sap/viz/controls/chart/views/TitleEditor.js", "sap/viz/controls/playcontrol/PlayControlEvent.js", "sap/viz/controls/playcontrol/PlayControl.js", "sap/viz/controls/frame/VizFrame.js", "sap/viz/controls/filterbar/FilterBarConfig.js", "sap/viz/controls/filterbar/FilterBarEvent.js", "sap/viz/controls/filterbar/FilterItem.js", "sap/viz/controls/filterbar/FilterRenderer.js", "sap/viz/controls/filterbar/FilterBar.js", "sap/viz/controls/propertyeditor/PropertyEditorConfig.js", "sap/viz/controls/propertyeditor/helpers/CSSHelper.js", "sap/viz/controls/propertyeditor/helpers/VizPropertiesHelper.js", "sap/viz/controls/propertyeditor/sections/PropertyViewFactory.js", "sap/viz/controls/propertyeditor/pickers/PickerEvent.js", "sap/viz/controls/propertyeditor/pickers/PickerBase.js", "sap/viz/controls/propertyeditor/pickers/SectionPicker.js", "sap/viz/controls/propertyeditor/events/PropertyEditorEvent.js", "sap/viz/controls/propertyeditor/pickers/ColorButton.js", "sap/viz/controls/propertyeditor/pickers/ColorPicker.js", "sap/viz/controls/propertyeditor/pickers/AlignmentPicker.js", "sap/viz/controls/propertyeditor/pickers/FontPicker.js", "sap/viz/controls/propertyeditor/pickers/SwitchPicker.js", "sap/viz/controls/propertyeditor/sections/PropertyViewBase.js", "sap/viz/controls/propertyeditor/spin/SpinEvent.js", "sap/viz/controls/propertyeditor/spin/Spin.js", "sap/viz/controls/propertyeditor/pickers/PSfixPicker.js", "sap/viz/controls/propertyeditor/pickers/FormatPicker.js", "sap/viz/controls/propertyeditor/pickers/ListPicker.js", "sap/viz/controls/propertyeditor/sections/views/VizChartView.js", "sap/viz/controls/propertyeditor/VizPropertyEditor.js", "sap/viz/controls/propertyeditor/sections/Section.js", "sap/viz/controls/propertyeditor/sections/helpers/ViewHelperBase.js", "sap/viz/controls/propertyeditor/sections/helpers/TextViewHelper.js", "sap/viz/controls/propertyeditor/sections/views/CategoryAxisTitleView.js", "sap/viz/controls/propertyeditor/sections/views/ValueAxisTitleView.js", "sap/viz/controls/propertyeditor/utils/PropertyUtil.js", "sap/viz/controls/propertyeditor/helpers/SVGHelper.js", "sap/viz/controls/propertyeditor/helpers/ObjectHelper.js", "sap/viz/controls/propertyeditor/pickers/IconPicker.js", "sap/viz/controls/propertyeditor/sections/views/CategoryAxisView.js", "sap/viz/controls/propertyeditor/sections/helpers/ChartAreaViewHelper.js", "sap/viz/controls/propertyeditor/sections/views/ChartAreaView.js", "sap/viz/controls/propertyeditor/sections/views/ChartTitleView.js", "sap/viz/controls/propertyeditor/pickers/ThicknessPicker.js", "sap/viz/controls/propertyeditor/sections/views/PlotAreaView.js", "sap/viz/controls/propertyeditor/sections/views/DonutPlotAreaView.js", "sap/viz/controls/propertyeditor/sections/views/LegendView.js", "sap/viz/controls/propertyeditor/sections/views/ValueAxisView.js", "sap/viz/controls/propertyeditor/sections/helpers/DataLabelViewHelper.js", "sap/viz/controls/propertyeditor/sections/views/ColumnDataLabelView.js", "sap/viz/controls/propertyeditor/pickers/ShapePicker.js", "sap/viz/controls/propertyeditor/sections/views/ColumnDataPointView.js", "sap/viz/controls/propertyeditor/sections/views/ColumnSeriesView.js", "sap/viz/controls/propertyeditor/sections/views/DonutDataLabelView.js", "sap/viz/controls/propertyeditor/sections/views/DonutGetPropertiesByCtx.js", "sap/viz/controls/propertyeditor/sections/views/DonutDataPointView.js", "sap/viz/controls/propertyeditor/sections/views/DonutChartAreaView.js", "sap/viz/controls/propertyeditor/sections/views/LineDataPointView.js", "sap/viz/controls/propertyeditor/sections/views/LineDataLabelView.js", "sap/viz/controls/propertyeditor/pickers/LineStylePicker.js", "sap/viz/controls/propertyeditor/sections/views/LineView.js", "sap/viz/controls/propertyeditor/sections/views/StackedColumnDataLabelView.js", "sap/viz/controls/propertyeditor/sections/VizPropertyZoneMap.js", "sap/viz/controls/propertyeditor/InfoPropertyEditor.js", "sap/viz/controls/propertyeditor/PropertyEditor.js", "sap/viz/controls/popover/chartpopover/ShapeMarker.js", "sap/viz/controls/popover/chartpopover/ContentPanel.js", "sap/viz/controls/popover/chartpopover/HeaderBar.js", "sap/viz/controls/popover/chartpopover/SubActionItemsPage.js", "sap/viz/controls/popover/chartpopover/ChartPopover.js", "sap/viz/controls/popover/PopOver.js", "sap/viz/controls/dedicatedlegend/DedicatedLegend.js"]
+    },
+    {
+      "name" : "sap/viz/ui5/controls/Popover.js",
+      "description" : "Provides control sap.viz.ui5.controls.Popover.",
+      "size" : 6934,
+      "compressedSize" : 2979,
+      "required" : ["jquery.sap.global.js", "sap/ui/layout/Grid.js", "sap/ui/layout/form/SimpleForm.js", "sap/viz/library.js", "sap/viz/ui5/controls/chartpopover/ChartPopover.js", "sap/viz/ui5/controls/common/BaseControl.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/controls/PopoverRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 887,
+      "compressedSize" : 299,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/controls/ResponsiveLegend.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 1049,
+      "compressedSize" : 430,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/controls/VizFrame.js",
+      "description" : "Provides control sap.viz.ui5.controls.VizFrame.",
+      "size" : 57927,
+      "compressedSize" : 21339,
+      "required" : ["jquery.sap.global.js", "sap/ui/Device.js", "sap/ui/core/theming/Parameters.js", "sap/viz/library.js", "sap/viz/ui5/controls/ResponsiveLegend.js", "sap/viz/ui5/controls/common/BaseControl.js", "sap/viz/ui5/controls/common/feeds/AnalysisObject.js", "sap/viz/ui5/controls/common/feeds/FeedHelper.js", "sap/viz/ui5/controls/common/feeds/FeedItem.js", "sap/viz/ui5/controls/common/helpers/DefaultPropertiesHelper.js", "sap/viz/ui5/controls/common/helpers/RuntimeOptionsHelper.js", "sap/viz/ui5/controls/common/utils/Constants.js", "sap/viz/ui5/controls/common/utils/SelectionDetailUtil.js", "sap/viz/ui5/theming/Util.js", "sap/viz/ui5/utils/CommonUtil.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/controls/VizFrameRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 999,
+      "compressedSize" : 396,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/controls/VizTooltip.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 6945,
+      "compressedSize" : 2705,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Popup.js", "sap/viz/ui5/controls/charttooltip/TooltipContainer.js", "sap/viz/ui5/controls/common/BaseControl.js", "sap/viz/ui5/controls/common/utils/FormatDataUtil.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/controls/chartpopover/ChartPopover.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 19952,
+      "compressedSize" : 10712,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/viz/ui5/controls/chartpopover/ContentPanel.js", "sap/viz/ui5/controls/chartpopover/HeaderBar.js", "sap/viz/ui5/controls/chartpopover/SubActionItemsPage.js", "sap/viz/ui5/controls/common/utils/FormatDataUtil.js", "sap/viz/ui5/format/ChartFormatter.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/controls/chartpopover/ContentPanel.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 14025,
+      "compressedSize" : 6261,
+      "required" : ["jquery.sap.global.js", "sap/m/Label.js", "sap/m/ObjectNumber.js", "sap/m/Text.js", "sap/ui/core/Control.js", "sap/ui/core/TextAlign.js", "sap/ui/layout/Grid.js", "sap/ui/layout/form/SimpleForm.js", "sap/viz/ui5/controls/chartpopover/ShapeMarker.js", "sap/viz/ui5/controls/common/utils/SelectionDetailUtil.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/controls/chartpopover/HeaderBar.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 3032,
+      "compressedSize" : 1893,
+      "required" : ["jquery.sap.global.js", "sap/m/Bar.js", "sap/m/Button.js", "sap/m/Label.js", "sap/ui/core/IconPool.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/controls/chartpopover/ShapeMarker.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 5164,
+      "compressedSize" : 2110,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/ui/core/theming/Parameters.js", "sap/viz/ui5/controls/common/utils/SelectionDetailUtil.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/controls/chartpopover/SubActionItemsPage.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 1863,
+      "compressedSize" : 1026,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/controls/charttooltip/ContentPanel.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 6194,
+      "compressedSize" : 2405,
+      "required" : ["jquery.sap.global.js", "sap/m/Label.js", "sap/m/ObjectNumber.js", "sap/m/Text.js", "sap/ui/core/Control.js", "sap/ui/layout/HorizontalLayout.js", "sap/ui/layout/VerticalLayout.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/controls/charttooltip/TooltipContainer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 1248,
+      "compressedSize" : 711,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/viz/ui5/controls/charttooltip/ContentPanel.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/controls/common/BaseControl.js",
+      "description" : "Provides control sap.viz.ui5.controls.common.BaseControl.",
+      "size" : 4276,
+      "compressedSize" : 2464,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/viz/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/controls/common/BaseControlRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 696,
+      "compressedSize" : 200,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/controls/common/feeds/AnalysisObject.js",
+      "description" : "Provides control sap.viz.ui5.controls.common.feeds.AnalysisObject.",
+      "size" : 4431,
+      "compressedSize" : 1894,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Element.js", "sap/viz/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/controls/common/feeds/FeedHelper.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 1629,
+      "compressedSize" : 736,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/controls/common/feeds/FeedItem.js",
+      "description" : "Provides control sap.viz.ui5.controls.common.feeds.FeedItem.",
+      "size" : 4018,
+      "compressedSize" : 1876,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Element.js", "sap/viz/library.js", "sap/viz/ui5/controls/common/feeds/AnalysisObject.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/controls/common/helpers/DefaultPropertiesHelper.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 8739,
+      "compressedSize" : 3764,
+      "required" : ["jquery.sap.global.js", "sap/ui/Device.js", "sap/viz/ui5/format/ChartFormatter.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/controls/common/helpers/RuntimeOptionsHelper.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved set specific properties to align the Fiori UX standard at runtime according to chart type and feeding",
+      "size" : 15547,
+      "compressedSize" : 6269,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/controls/common/utils/Constants.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 2445,
+      "compressedSize" : 1544,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/controls/common/utils/FormatDataUtil.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 4561,
+      "compressedSize" : 1527,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/controls/common/utils/SelectionDetailUtil.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 7692,
+      "compressedSize" : 3285,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/theming/Parameters.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/resources/locale/language_de.js",
+      "size" : 10193,
+      "compressedSize" : 10138,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/resources/locale/language_en.js",
+      "size" : 9296,
+      "compressedSize" : 9293,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/resources/locale/language_es.js",
+      "size" : 10485,
+      "compressedSize" : 10361,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/resources/locale/language_fr.js",
+      "size" : 10869,
+      "compressedSize" : 10736,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/resources/locale/language_hu.js",
+      "size" : 10873,
+      "compressedSize" : 10424,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/resources/locale/language_ja.js",
+      "size" : 11025,
+      "compressedSize" : 7806,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/resources/locale/language_ko.js",
+      "size" : 10239,
+      "compressedSize" : 7734,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/resources/locale/language_pl.js",
+      "size" : 10159,
+      "compressedSize" : 9932,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/resources/locale/language_pt.js",
+      "size" : 10234,
+      "compressedSize" : 10084,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/resources/locale/language_ru.js",
+      "size" : 14144,
+      "compressedSize" : 10322,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/resources/locale/language_zh_CN.js",
+      "size" : 9215,
+      "compressedSize" : 7180,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/resources/locale/language_zh_TW.js",
+      "size" : 8069,
+      "compressedSize" : 8066,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_ar.js",
+      "size" : 249,
+      "compressedSize" : 207,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_bg.js",
+      "size" : 309,
+      "compressedSize" : 237,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_ca.js",
+      "size" : 254,
+      "compressedSize" : 249,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_cs.js",
+      "size" : 241,
+      "compressedSize" : 234,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_da.js",
+      "size" : 255,
+      "compressedSize" : 252,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_de.js",
+      "size" : 241,
+      "compressedSize" : 238,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_el.js",
+      "size" : 300,
+      "compressedSize" : 232,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_en.js",
+      "size" : 231,
+      "compressedSize" : 230,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_es.js",
+      "size" : 244,
+      "compressedSize" : 242,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_et.js",
+      "size" : 233,
+      "compressedSize" : 231,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_fi.js",
+      "size" : 233,
+      "compressedSize" : 231,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_fr.js",
+      "size" : 250,
+      "compressedSize" : 245,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_hi.js",
+      "size" : 391,
+      "compressedSize" : 236,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_hr.js",
+      "size" : 240,
+      "compressedSize" : 235,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_hu.js",
+      "size" : 256,
+      "compressedSize" : 243,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_it.js",
+      "size" : 250,
+      "compressedSize" : 248,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_iw.js",
+      "size" : 246,
+      "compressedSize" : 205,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_ja.js",
+      "size" : 314,
+      "compressedSize" : 209,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_kk.js",
+      "size" : 284,
+      "compressedSize" : 223,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_ko.js",
+      "size" : 284,
+      "compressedSize" : 205,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_lt.js",
+      "size" : 257,
+      "compressedSize" : 246,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_lv.js",
+      "size" : 241,
+      "compressedSize" : 233,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_nl.js",
+      "size" : 232,
+      "compressedSize" : 231,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_no.js",
+      "size" : 224,
+      "compressedSize" : 223,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_pl.js",
+      "size" : 254,
+      "compressedSize" : 249,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_pt.js",
+      "size" : 243,
+      "compressedSize" : 238,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_ro.js",
+      "size" : 250,
+      "compressedSize" : 239,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_ru.js",
+      "size" : 316,
+      "compressedSize" : 240,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_sh.js",
+      "size" : 242,
+      "compressedSize" : 237,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_sk.js",
+      "size" : 245,
+      "compressedSize" : 236,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_sl.js",
+      "size" : 240,
+      "compressedSize" : 238,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_sv.js",
+      "size" : 232,
+      "compressedSize" : 228,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_th.js",
+      "size" : 355,
+      "compressedSize" : 224,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_tr.js",
+      "size" : 242,
+      "compressedSize" : 232,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_uk.js",
+      "size" : 306,
+      "compressedSize" : 236,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_vi.js",
+      "size" : 275,
+      "compressedSize" : 246,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_zh_CN.js",
+      "size" : 221,
+      "compressedSize" : 180,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/ui5/controls/libs/sap-viz-vizframe/resources/locale/language_zh_TW.js",
+      "size" : 231,
+      "compressedSize" : 184,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/viz/vizframe/common/Version.js",
+      "size" : 51753,
+      "compressedSize" : 18434,
+      "required" : ["exports.js", "require.js", "sap/viz/vizframe/common/Version.js", "ui5loader.js"],
+      "includes" : ["sap/viz/vizframe/api/Version.js", "sap/viz/vizframe/api/APIUtil.js", "jquery.js", "sap/viz/vizframe/common/LanguageLoader.js", "sap/viz/vizframe/common/utils/OOUtil.js", "sap/viz/vizframe/common/utils/utils.js", "sap/viz/vizframe/common/events/Event.js", "sap/viz/vizframe/common/events/EventDispatcher.js", "sap/viz/vizframe/common/UIControl.js", "sap/viz/vizframe/frame/viz/VizUtil.js", "sap/viz/vizframe/frame/viz/VizCache.js", "sap/viz/vizframe/frame/viz/Viz.js", "sap/viz/vizframe/frame/VizFrameEvent.js", "sap/viz/vizframe/frame/VizFrameConfig.js", "sap/viz/vizframe/frame/VizFrameProxy.js", "sap/viz/vizframe/frame/ControlFactory.js", "sap/viz/vizframe/frame/VizFrame.js", "sap/viz/vizframe/api/VizFrame.js"]
+    },
+    {
+      "name" : "sap/viz/vizservices/common/feed/FeedConst.js",
+      "size" : 164496,
+      "compressedSize" : 64340,
+      "required" : ["exports.js", "require.js", "sap/viz/vizservices/common/feed/FeedConst.js", "ui5loader.js"],
+      "includes" : ["sap/viz/vizservices/common/utils/OOUtil.js", "sap/viz/vizservices/common/data/DatasetTypeConst.js", "sap/viz/vizservices/common/metadata/MetadataBase.js", "sap/viz/vizservices/common/metadata/bindingdef/BindingDefConst.js", "sap/viz/vizservices/common/metadata/bindingdef/BindingDef.js", "sap/viz/vizservices/common/metadata/bindingdef/InfoBindingDefAdaptor.js", "sap/viz/vizservices/common/metadata/InfoMetadata.js", "sap/viz/vizservices/common/metadata/bindingdef/VizFeedingDefAdaptor.js", "sap/viz/vizservices/common/metadata/VizMetadata.js", "sap/viz/vizservices/common/metadata/MetadataFactory.js", "sap/viz/vizservices/common/metadata/bindingdef/BindingDefUtils.js", "sap/viz/vizservices/common/utils/Utils.js", "sap/viz/vizservices/common/feed/FeedUtil.js", "sap/viz/vizservices/service/bvr/feeders/MNDFeeder.js", "sap/viz/vizservices/common/viz/ChartConst.js", "sap/viz/vizservices/service/bvr/feeders/TimeFeeder.js", "jquery.js", "sap/viz/vizservices/service/feed/validators/AAValidator.js", "sap/viz/vizservices/service/feed/validators/DuplicateValidator.js", "sap/viz/vizservices/service/feed/validators/TypeValidator.js", "sap/viz/vizservices/service/feed/validators/MaxValidator.js", "sap/viz/vizservices/service/feed/validators/MinValidator.js", "sap/viz/vizservices/service/feed/validators/MNDValidator.js", "sap/viz/vizservices/service/feed/validators/MissingMNDValidator.js", "sap/viz/vizservices/service/feed/FeedService.js", "sap/viz/vizservices/service/bvr/feeders/CommonFeeder.js", "sap/viz/vizservices/service/bvr/switch/AliasMapping.js", "sap/viz/vizservices/service/bvr/switch/ChartCategories.js", "sap/viz/vizservices/service/bvr/switch/NameMapping.js", "sap/viz/vizservices/common/LanguageLoader.js", "sap/viz/vizservices/service/bvr/BVRService.js", "sap/viz/vizservices/api/BVRService.js", "sap/viz/vizservices/common/Version.js", "sap/viz/vizservices/api/Version.js", "sap/viz/vizservices/common/binding/generators/BindingGeneratorBase.js", "sap/viz/vizservices/common/binding/generators/FTBindingGenerator.js", "sap/viz/vizservices/common/binding/BindingConst.js", "sap/viz/vizservices/common/binding/generators/XTBindingGenerator.js", "sap/viz/vizservices/common/binding/BindingGeneratorFactory.js", "sap/viz/vizservices/service/binding/BindingService.js", "sap/viz/vizservices/common/viz/VizUtils.js", "sap/viz/vizservices/service/property/PropertyService.js", "sap/viz/vizservices/service/scale/ScaleService.js"]
+    },
+    {
+      "name" : "sap/viz/ui5/core/BaseChart.js",
+      "description" : "Provides control sap.viz.ui5.core.BaseChart.",
+      "size" : 12200,
+      "compressedSize" : 4501,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/ui/core/theming/Parameters.js", "sap/viz/library.js", "sap/viz/libs/sap-viz.js", "sap/viz/ui5/core/BaseChartMetadata.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/core/BaseChartMetadata.js",
+      "description" : "Provides class sap.ui.core.BaseChartMetadata",
+      "size" : 2374,
+      "compressedSize" : 1179,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/ElementMetadata.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/core/BaseChartRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 1809,
+      "compressedSize" : 938,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/core/BaseStructuredType.js",
+      "description" : "Provides control sap.viz.ui5.core.BaseStructuredType.",
+      "size" : 7290,
+      "compressedSize" : 2162,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Element.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseChartMetadata.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/data/CVOMDatasetAdaptor.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 16009,
+      "compressedSize" : 5508,
+      "required" : ["jquery.sap.global.js", "sap/viz/ui5/controls/common/utils/Constants.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/data/CustomDataset.js",
+      "description" : "Provides control sap.viz.ui5.data.CustomDataset.",
+      "size" : 1565,
+      "compressedSize" : 439,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/data/Dataset.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/data/Dataset.js",
+      "description" : "Provides control sap.viz.ui5.data.Dataset.",
+      "size" : 951,
+      "compressedSize" : 296,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Element.js", "sap/viz/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/data/DimensionDefinition.js",
+      "description" : "Provides control sap.viz.ui5.data.DimensionDefinition.",
+      "size" : 4791,
+      "compressedSize" : 1864,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Element.js", "sap/viz/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/data/FlattenedDataset.js",
+      "description" : "Provides control sap.viz.ui5.data.FlattenedDataset.",
+      "size" : 10894,
+      "compressedSize" : 3957,
+      "required" : ["jquery.sap.global.js", "sap/ui/model/ChangeReason.js", "sap/viz/library.js", "sap/viz/ui5/controls/common/utils/Constants.js", "sap/viz/ui5/data/CVOMDatasetAdaptor.js", "sap/viz/ui5/data/Dataset.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/data/MeasureDefinition.js",
+      "description" : "Provides control sap.viz.ui5.data.MeasureDefinition.",
+      "size" : 3910,
+      "compressedSize" : 1428,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Element.js", "sap/viz/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/format/ChartFormatter.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 16170,
+      "compressedSize" : 7507,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/format/DateFormat.js", "sap/ui/core/format/FileSizeFormat.js", "sap/ui/core/format/NumberFormat.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle.properties",
+      "size" : 333,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_ar.properties",
+      "size" : 330,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_bg.properties",
+      "size" : 328,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_ca.properties",
+      "size" : 227,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_cs.properties",
+      "size" : 236,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_da.properties",
+      "size" : 223,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_de.properties",
+      "size" : 235,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_el.properties",
+      "size" : 338,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_en.properties",
+      "size" : 217,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_en_US_sappsd.properties",
+      "size" : 391,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_en_US_saptrc.properties",
+      "size" : 263,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_es.properties",
+      "size" : 222,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_et.properties",
+      "size" : 221,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_fi.properties",
+      "size" : 218,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_fr.properties",
+      "size" : 231,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_hi.properties",
+      "size" : 354,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_hr.properties",
+      "size" : 230,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_hu.properties",
+      "size" : 235,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_it.properties",
+      "size" : 226,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_iw.properties",
+      "size" : 304,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_ja.properties",
+      "size" : 320,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_kk.properties",
+      "size" : 328,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_ko.properties",
+      "size" : 294,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_lt.properties",
+      "size" : 241,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_lv.properties",
+      "size" : 220,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_ms.properties",
+      "size" : 224,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_nl.properties",
+      "size" : 231,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_no.properties",
+      "size" : 230,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_pl.properties",
+      "size" : 228,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_pt.properties",
+      "size" : 220,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_ro.properties",
+      "size" : 240,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_ru.properties",
+      "size" : 328,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_sh.properties",
+      "size" : 230,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_sk.properties",
+      "size" : 240,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_sl.properties",
+      "size" : 221,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_sv.properties",
+      "size" : 233,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_th.properties",
+      "size" : 356,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_tr.properties",
+      "size" : 224,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_uk.properties",
+      "size" : 334,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_vi.properties",
+      "size" : 288,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_zh_CN.properties",
+      "size" : 237,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/messages/messagebundle_zh_TW.properties",
+      "size" : 236,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/theming/Util.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 22875,
+      "compressedSize" : 9480,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Area.js",
+      "description" : "Provides element sap.viz.ui5.types.Area.",
+      "size" : 6072,
+      "compressedSize" : 1740,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Area_animation.js",
+      "description" : "Provides element sap.viz.ui5.types.Area_animation.",
+      "size" : 2349,
+      "compressedSize" : 456,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Area_hoverline.js",
+      "description" : "Provides element sap.viz.ui5.types.Area_hoverline.",
+      "size" : 1338,
+      "compressedSize" : 360,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Area_marker.js",
+      "description" : "Provides element sap.viz.ui5.types.Area_marker.",
+      "size" : 2385,
+      "compressedSize" : 549,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Area_tooltip.js",
+      "description" : "Provides element sap.viz.ui5.types.Area_tooltip.",
+      "size" : 1319,
+      "compressedSize" : 358,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Axis.js",
+      "description" : "Provides element sap.viz.ui5.types.Axis.",
+      "size" : 7279,
+      "compressedSize" : 1761,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Axis_axisTick.js",
+      "description" : "Provides element sap.viz.ui5.types.Axis_axisTick.",
+      "size" : 1392,
+      "compressedSize" : 359,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Axis_axisline.js",
+      "description" : "Provides element sap.viz.ui5.types.Axis_axisline.",
+      "size" : 2057,
+      "compressedSize" : 359,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Axis_gridline.js",
+      "description" : "Provides element sap.viz.ui5.types.Axis_gridline.",
+      "size" : 3399,
+      "compressedSize" : 734,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Axis_indicator.js",
+      "description" : "Provides element sap.viz.ui5.types.Axis_indicator.",
+      "size" : 1529,
+      "compressedSize" : 376,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Axis_label.js",
+      "description" : "Provides element sap.viz.ui5.types.Axis_label.",
+      "size" : 3926,
+      "compressedSize" : 651,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Axis_layoutInfo.js",
+      "description" : "Provides element sap.viz.ui5.types.Axis_layoutInfo.",
+      "size" : 1858,
+      "compressedSize" : 423,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Axis_scale.js",
+      "description" : "Provides element sap.viz.ui5.types.Axis_scale.",
+      "size" : 2762,
+      "compressedSize" : 483,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Axis_title.js",
+      "description" : "Provides element sap.viz.ui5.types.Axis_title.",
+      "size" : 2467,
+      "compressedSize" : 467,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Background.js",
+      "description" : "Provides element sap.viz.ui5.types.Background.",
+      "size" : 3091,
+      "compressedSize" : 751,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Background_border.js",
+      "description" : "Provides element sap.viz.ui5.types.Background_border.",
+      "size" : 3109,
+      "compressedSize" : 737,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Background_border_bottom.js",
+      "description" : "Provides element sap.viz.ui5.types.Background_border_bottom.",
+      "size" : 2121,
+      "compressedSize" : 370,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Background_border_left.js",
+      "description" : "Provides element sap.viz.ui5.types.Background_border_left.",
+      "size" : 2105,
+      "compressedSize" : 368,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Background_border_right.js",
+      "description" : "Provides element sap.viz.ui5.types.Background_border_right.",
+      "size" : 2113,
+      "compressedSize" : 369,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Background_border_top.js",
+      "description" : "Provides element sap.viz.ui5.types.Background_border_top.",
+      "size" : 2097,
+      "compressedSize" : 367,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Bar.js",
+      "description" : "Provides element sap.viz.ui5.types.Bar.",
+      "size" : 6035,
+      "compressedSize" : 1711,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Bar_animation.js",
+      "description" : "Provides element sap.viz.ui5.types.Bar_animation.",
+      "size" : 2342,
+      "compressedSize" : 455,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Bar_tooltip.js",
+      "description" : "Provides element sap.viz.ui5.types.Bar_tooltip.",
+      "size" : 1327,
+      "compressedSize" : 357,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Bubble.js",
+      "description" : "Provides element sap.viz.ui5.types.Bubble.",
+      "size" : 7663,
+      "compressedSize" : 1877,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Bubble_animation.js",
+      "description" : "Provides element sap.viz.ui5.types.Bubble_animation.",
+      "size" : 2375,
+      "compressedSize" : 458,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Bubble_axisTooltip.js",
+      "description" : "Provides element sap.viz.ui5.types.Bubble_axisTooltip.",
+      "size" : 1626,
+      "compressedSize" : 413,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Bubble_hoverline.js",
+      "description" : "Provides element sap.viz.ui5.types.Bubble_hoverline.",
+      "size" : 1364,
+      "compressedSize" : 362,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Bullet.js",
+      "description" : "Provides element sap.viz.ui5.types.Bullet.",
+      "size" : 4737,
+      "compressedSize" : 1574,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Bullet_tooltip.js",
+      "description" : "Provides element sap.viz.ui5.types.Bullet_tooltip.",
+      "size" : 1348,
+      "compressedSize" : 360,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Combination.js",
+      "description" : "Provides element sap.viz.ui5.types.Combination.",
+      "size" : 5568,
+      "compressedSize" : 1719,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Combination_animation.js",
+      "description" : "Provides element sap.viz.ui5.types.Combination_animation.",
+      "size" : 2398,
+      "compressedSize" : 463,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Combination_bar.js",
+      "description" : "Provides element sap.viz.ui5.types.Combination_bar.",
+      "size" : 2268,
+      "compressedSize" : 384,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Combination_dataShape.js",
+      "description" : "Provides element sap.viz.ui5.types.Combination_dataShape.",
+      "size" : 2668,
+      "compressedSize" : 538,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Combination_line.js",
+      "description" : "Provides element sap.viz.ui5.types.Combination_line.",
+      "size" : 2335,
+      "compressedSize" : 441,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Combination_line_marker.js",
+      "description" : "Provides element sap.viz.ui5.types.Combination_line_marker.",
+      "size" : 2975,
+      "compressedSize" : 486,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Combination_tooltip.js",
+      "description" : "Provides element sap.viz.ui5.types.Combination_tooltip.",
+      "size" : 1368,
+      "compressedSize" : 365,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Datalabel.js",
+      "description" : "Provides element sap.viz.ui5.types.Datalabel.",
+      "size" : 8001,
+      "compressedSize" : 1727,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Datatransform.js",
+      "description" : "Provides element sap.viz.ui5.types.Datatransform.",
+      "size" : 2268,
+      "compressedSize" : 480,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Datatransform_autoBinning.js",
+      "description" : "Provides element sap.viz.ui5.types.Datatransform_autoBinning.",
+      "size" : 2251,
+      "compressedSize" : 410,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Datatransform_dataSampling.js",
+      "description" : "Provides element sap.viz.ui5.types.Datatransform_dataSampling.",
+      "size" : 2616,
+      "compressedSize" : 555,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Datatransform_dataSampling_grid.js",
+      "description" : "Provides element sap.viz.ui5.types.Datatransform_dataSampling_grid.",
+      "size" : 2317,
+      "compressedSize" : 401,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Heatmap.js",
+      "description" : "Provides element sap.viz.ui5.types.Heatmap.",
+      "size" : 4391,
+      "compressedSize" : 728,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Heatmap_animation.js",
+      "description" : "Provides element sap.viz.ui5.types.Heatmap_animation.",
+      "size" : 2370,
+      "compressedSize" : 459,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Heatmap_border.js",
+      "description" : "Provides element sap.viz.ui5.types.Heatmap_border.",
+      "size" : 2061,
+      "compressedSize" : 360,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Heatmap_tooltip.js",
+      "description" : "Provides element sap.viz.ui5.types.Heatmap_tooltip.",
+      "size" : 1336,
+      "compressedSize" : 361,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Legend.js",
+      "description" : "Provides element sap.viz.ui5.types.Legend.",
+      "size" : 2043,
+      "compressedSize" : 374,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Legend_layout.js",
+      "description" : "Provides element sap.viz.ui5.types.Legend_layout.",
+      "size" : 2454,
+      "compressedSize" : 488,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Line.js",
+      "description" : "Provides element sap.viz.ui5.types.Line.",
+      "size" : 6002,
+      "compressedSize" : 1716,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Line_animation.js",
+      "description" : "Provides element sap.viz.ui5.types.Line_animation.",
+      "size" : 2333,
+      "compressedSize" : 456,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Line_hoverline.js",
+      "description" : "Provides element sap.viz.ui5.types.Line_hoverline.",
+      "size" : 1338,
+      "compressedSize" : 360,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Line_marker.js",
+      "description" : "Provides element sap.viz.ui5.types.Line_marker.",
+      "size" : 2925,
+      "compressedSize" : 533,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Line_tooltip.js",
+      "description" : "Provides element sap.viz.ui5.types.Line_tooltip.",
+      "size" : 1319,
+      "compressedSize" : 358,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Pie.js",
+      "description" : "Provides element sap.viz.ui5.types.Pie.",
+      "size" : 4845,
+      "compressedSize" : 1244,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Pie_animation.js",
+      "description" : "Provides element sap.viz.ui5.types.Pie_animation.",
+      "size" : 2342,
+      "compressedSize" : 455,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Pie_tooltip.js",
+      "description" : "Provides element sap.viz.ui5.types.Pie_tooltip.",
+      "size" : 2226,
+      "compressedSize" : 535,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/RootContainer.js",
+      "description" : "Provides element sap.viz.ui5.types.RootContainer.",
+      "size" : 2109,
+      "compressedSize" : 388,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/RootContainer_layout.js",
+      "description" : "Provides element sap.viz.ui5.types.RootContainer_layout.",
+      "size" : 3780,
+      "compressedSize" : 675,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Scatter.js",
+      "description" : "Provides element sap.viz.ui5.types.Scatter.",
+      "size" : 6514,
+      "compressedSize" : 1650,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Scatter_animation.js",
+      "description" : "Provides element sap.viz.ui5.types.Scatter_animation.",
+      "size" : 2382,
+      "compressedSize" : 459,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Scatter_axisTooltip.js",
+      "description" : "Provides element sap.viz.ui5.types.Scatter_axisTooltip.",
+      "size" : 1633,
+      "compressedSize" : 414,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Scatter_hoverline.js",
+      "description" : "Provides element sap.viz.ui5.types.Scatter_hoverline.",
+      "size" : 1371,
+      "compressedSize" : 363,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/StackedVerticalBar.js",
+      "description" : "Provides element sap.viz.ui5.types.StackedVerticalBar.",
+      "size" : 5800,
+      "compressedSize" : 1756,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/StackedVerticalBar_animation.js",
+      "description" : "Provides element sap.viz.ui5.types.StackedVerticalBar_animation.",
+      "size" : 2447,
+      "compressedSize" : 470,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/StackedVerticalBar_tooltip.js",
+      "description" : "Provides element sap.viz.ui5.types.StackedVerticalBar_tooltip.",
+      "size" : 1432,
+      "compressedSize" : 372,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Title.js",
+      "description" : "Provides element sap.viz.ui5.types.Title.",
+      "size" : 2614,
+      "compressedSize" : 591,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Title_layout.js",
+      "description" : "Provides element sap.viz.ui5.types.Title_layout.",
+      "size" : 1620,
+      "compressedSize" : 414,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Tooltip.js",
+      "description" : "Provides element sap.viz.ui5.types.Tooltip.",
+      "size" : 6614,
+      "compressedSize" : 1438,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Tooltip_background.js",
+      "description" : "Provides element sap.viz.ui5.types.Tooltip_background.",
+      "size" : 2253,
+      "compressedSize" : 417,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Tooltip_bodyDimensionLabel.js",
+      "description" : "Provides element sap.viz.ui5.types.Tooltip_bodyDimensionLabel.",
+      "size" : 1434,
+      "compressedSize" : 374,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Tooltip_bodyDimensionValue.js",
+      "description" : "Provides element sap.viz.ui5.types.Tooltip_bodyDimensionValue.",
+      "size" : 1435,
+      "compressedSize" : 374,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Tooltip_bodyMeasureLabel.js",
+      "description" : "Provides element sap.viz.ui5.types.Tooltip_bodyMeasureLabel.",
+      "size" : 1418,
+      "compressedSize" : 372,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Tooltip_bodyMeasureValue.js",
+      "description" : "Provides element sap.viz.ui5.types.Tooltip_bodyMeasureValue.",
+      "size" : 1419,
+      "compressedSize" : 372,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Tooltip_closeButton.js",
+      "description" : "Provides element sap.viz.ui5.types.Tooltip_closeButton.",
+      "size" : 1513,
+      "compressedSize" : 428,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Tooltip_footerLabel.js",
+      "description" : "Provides element sap.viz.ui5.types.Tooltip_footerLabel.",
+      "size" : 1416,
+      "compressedSize" : 367,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Tooltip_separationLine.js",
+      "description" : "Provides element sap.viz.ui5.types.Tooltip_separationLine.",
+      "size" : 1432,
+      "compressedSize" : 382,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Treemap.js",
+      "description" : "Provides element sap.viz.ui5.types.Treemap.",
+      "size" : 4391,
+      "compressedSize" : 728,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Treemap_animation.js",
+      "description" : "Provides element sap.viz.ui5.types.Treemap_animation.",
+      "size" : 2370,
+      "compressedSize" : 459,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Treemap_border.js",
+      "description" : "Provides element sap.viz.ui5.types.Treemap_border.",
+      "size" : 2061,
+      "compressedSize" : 360,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/Treemap_tooltip.js",
+      "description" : "Provides element sap.viz.ui5.types.Treemap_tooltip.",
+      "size" : 1336,
+      "compressedSize" : 361,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/VerticalBar.js",
+      "description" : "Provides element sap.viz.ui5.types.VerticalBar.",
+      "size" : 5495,
+      "compressedSize" : 1585,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/VerticalBar_animation.js",
+      "description" : "Provides element sap.viz.ui5.types.VerticalBar_animation.",
+      "size" : 2398,
+      "compressedSize" : 463,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/VerticalBar_tooltip.js",
+      "description" : "Provides element sap.viz.ui5.types.VerticalBar_tooltip.",
+      "size" : 1383,
+      "compressedSize" : 365,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/XYContainer.js",
+      "description" : "Provides element sap.viz.ui5.types.XYContainer.",
+      "size" : 2275,
+      "compressedSize" : 367,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/controller/Interaction.js",
+      "description" : "Provides element sap.viz.ui5.types.controller.Interaction.",
+      "size" : 7194,
+      "compressedSize" : 1179,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/controller/Interaction_pan.js",
+      "description" : "Provides element sap.viz.ui5.types.controller.Interaction_pan.",
+      "size" : 1805,
+      "compressedSize" : 540,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/controller/Interaction_selectability.js",
+      "description" : "Provides element sap.viz.ui5.types.controller.Interaction_selectability.",
+      "size" : 3939,
+      "compressedSize" : 847,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/layout/Dock.js",
+      "description" : "Provides element sap.viz.ui5.types.layout.Dock.",
+      "size" : 1908,
+      "compressedSize" : 302,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/layout/Stack.js",
+      "description" : "Provides element sap.viz.ui5.types.layout.Stack.",
+      "size" : 1916,
+      "compressedSize" : 303,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/legend/Common.js",
+      "description" : "Provides element sap.viz.ui5.types.legend.Common.",
+      "size" : 4577,
+      "compressedSize" : 1142,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/types/legend/Common_title.js",
+      "description" : "Provides element sap.viz.ui5.types.legend.Common_title.",
+      "size" : 2196,
+      "compressedSize" : 405,
+      "required" : ["jquery.sap.global.js", "sap/viz/library.js", "sap/viz/ui5/core/BaseStructuredType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/viz/ui5/utils/CommonUtil.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 853,
+      "compressedSize" : 421,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    }
+  ]
+}

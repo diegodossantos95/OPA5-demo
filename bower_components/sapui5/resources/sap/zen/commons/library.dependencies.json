@@ -1,0 +1,86 @@
+{
+  "modules" : [
+    {
+      "name" : "sap/zen/commons/layout/AbsoluteLayout.js",
+      "description" : "Provides control sap.zen.commons.layout.AbsoluteLayout.",
+      "size" : 16623,
+      "compressedSize" : 5647,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/zen/commons/layout/PositionContainer.js", "sap/zen/commons/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/commons/layout/AbsoluteLayoutRenderer.js",
+      "description" : "Provides default renderer for control sap.zen.commons.layout.AbsoluteLayout",
+      "size" : 5638,
+      "compressedSize" : 2470,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/commons/layout/MatrixLayout.js",
+      "description" : "Provides control sap.zen.commons.layout.MatrixLayout.",
+      "size" : 6288,
+      "compressedSize" : 1577,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/ui/core/EnabledPropagator.js", "sap/zen/commons/layout/MatrixLayoutCell.js", "sap/zen/commons/layout/MatrixLayoutRow.js", "sap/zen/commons/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/commons/layout/MatrixLayoutCell.js",
+      "description" : "Provides control sap.zen.commons.layout.MatrixLayoutCell.",
+      "size" : 6299,
+      "compressedSize" : 1087,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/CustomStyleClassSupport.js", "sap/ui/core/Element.js", "sap/zen/commons/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/commons/layout/MatrixLayoutRenderer.js",
+      "description" : "Provides default renderer for control sap.zen.commons.layout.MatrixLayout",
+      "size" : 20424,
+      "compressedSize" : 7945,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/commons/layout/MatrixLayoutRow.js",
+      "description" : "Provides control sap.zen.commons.layout.MatrixLayoutRow.",
+      "size" : 4541,
+      "compressedSize" : 727,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/CustomStyleClassSupport.js", "sap/ui/core/Element.js", "sap/zen/commons/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/commons/layout/PositionContainer.js",
+      "description" : "Provides control sap.zen.commons.layout.PositionContainer.",
+      "size" : 12814,
+      "compressedSize" : 5194,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Element.js", "sap/zen/commons/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/commons/library-preload.js",
+      "size" : 26527,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/DataType.js", "sap/ui/core/Control.js", "sap/ui/core/CustomStyleClassSupport.js", "sap/ui/core/Element.js", "sap/ui/core/EnabledPropagator.js", "sap/ui/core/library.js", "sap/ui/layout/library.js"],
+      "includes" : ["sap/zen/commons/layout/AbsoluteLayout.js", "sap/zen/commons/layout/AbsoluteLayoutRenderer.js", "sap/zen/commons/layout/MatrixLayout.js", "sap/zen/commons/layout/MatrixLayoutCell.js", "sap/zen/commons/layout/MatrixLayoutRenderer.js", "sap/zen/commons/layout/MatrixLayoutRow.js", "sap/zen/commons/layout/PositionContainer.js", "sap/zen/commons/library.js", "sap/zen/commons/manifest.json"]
+    },
+    {
+      "name" : "sap/zen/commons/library-preload.json",
+      "size" : 0,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/DataType.js", "sap/ui/core/Control.js", "sap/ui/core/CustomStyleClassSupport.js", "sap/ui/core/Element.js", "sap/ui/core/EnabledPropagator.js", "sap/ui/core/library-preload.json", "sap/ui/core/library.js", "sap/ui/layout/library-preload.json", "sap/ui/layout/library.js"],
+      "includes" : ["sap/zen/commons/layout/AbsoluteLayout.js", "sap/zen/commons/layout/AbsoluteLayoutRenderer.js", "sap/zen/commons/layout/MatrixLayout.js", "sap/zen/commons/layout/MatrixLayoutCell.js", "sap/zen/commons/layout/MatrixLayoutRenderer.js", "sap/zen/commons/layout/MatrixLayoutRow.js", "sap/zen/commons/layout/PositionContainer.js", "sap/zen/commons/library.js", "sap/zen/commons/manifest.json"]
+    },
+    {
+      "name" : "sap/zen/commons/library.js",
+      "description" : "Initialization Code and shared classes of library sap.zen.commons.",
+      "size" : 6806,
+      "compressedSize" : 1436,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/DataType.js", "sap/ui/core/library.js", "sap/ui/layout/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/commons/manifest.json",
+      "size" : 953,
+      "required" : [],
+      "includes" : []
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+<core:FragmentDefinition xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+						 xmlns="sap.m"
+						 xmlns:u="sap.ui.unified"
+						 xmlns:l="sap.ui.layout"
+						 xmlns:core="sap.ui.core">
+
+		<Toolbar id="template::SelectFromListToolbar" width="100%">
+			<!-- <HBox>
+				<items>
+					<Label text="{valueList>/title}"></Label>
+					<Button icon="sap-icon://arrow-down" type="Transparent" class="sapMBtnTransparent"></Button>
+				</items>
+			</HBox> -->
+			<ToolbarSpacer/>
+			<template:if test="{= !(${entitySet>@Org.OData.Capabilities.V1.SearchRestrictions/Searchable/Bool} === 'false') }">
+				<SearchField id="template::ValueHelpTableSearchField" value="{filter>/$search}" width="30%" search="handleSearch" liveChange="handleSearchChange"/>
+			</template:if>
+			<Button id="template::AdvancedFilter" icon="sap-icon://filter" type="Transparent" press="handleFilter"
+					class="sapMBtnTransparent"></Button>
+
+			<!-- <SegmentedButton>
+				<buttons>
+					<Button id="template::TableView" icon="sap-icon://table-chart" press="handleToggleButton"></Button>
+					<Button id="template::ListView" icon="sap-icon://list" press="handleToggleButton"></Button>
+				</buttons>
+			</SegmentedButton> -->
+
+		</Toolbar>
+
+		<ScrollContainer vertical="true" height="26rem" width="100%" focusable="true">
+			<HBox width="100%">
+				<HBox id="template::FilterContent" width="30%" visible="{= ${FilterLayoutFlag>/visible}}" class="sapUiMediumMarginBeginEnd">
+						<core:Fragment fragmentName="sap.fe.controls._ValueList.Fragments.FilterBar" type="XML"/>
+				</HBox>
+				<HBox id="template::TableContent" width="100%">
+						<core:Fragment fragmentName="sap.fe.controls._ValueList.Fragments.SelectFromListTable" type="XML"/>
+				</HBox>
+			</HBox>
+		</ScrollContainer>
+
+
+
+</core:FragmentDefinition>

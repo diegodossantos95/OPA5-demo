@@ -1,0 +1,1 @@
+define('tinymce/inlite/file/Conversions',['global!tinymce.util.Promise'],function(P){var b=function(a){return new P(function(r){var c=new FileReader();c.onloadend=function(){r(c.result.split(',')[1]);};c.readAsDataURL(a);});};return{blobToBase64:b};});

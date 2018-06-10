@@ -1,0 +1,93 @@
+<mvc:View
+	id="productView"
+	controllerName="sap.ui.demo.cart.controller.Product"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Page
+		id="page"
+		title="{Name}"
+		showNavButton="{device>/system/phone}"
+		navButtonPress="onNavButtonPress" >
+		<headerContent>
+			<Button
+				icon="sap-icon://cart"
+				visible="{device>/system/phone}"
+				tooltip="{i18n>toCartButtonTooltip}"
+				press="onCartButtonPress" />
+			<ToolbarSpacer/>
+			<Button
+				icon="sap-icon://customer"
+				press="onAvatarButtonPress"
+				tooltip="{i18n>avatarButtonTooltip}"/>
+		</headerContent>
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Button
+					icon="sap-icon://cart-3"
+					tooltip="{i18n>productAddButtonTooltip}"
+					press="onAddButtonPress" />
+			</Toolbar>
+		</footer>
+		<content>
+			<ObjectHeader
+				title="{Name}"
+				number="{
+					path : 'Price',
+					formatter : '.formatter.price'
+				}"
+				numberUnit="EUR">
+				<attributes>
+					<ObjectAttribute
+						title="{i18n>productSupplierAttributeText}"
+						text="{SupplierName}" />
+					<ObjectAttribute
+						title="{i18n>productDescriptionAttributeText}"
+						text="{ShortDescription}" />
+					<ObjectAttribute
+						title="{i18n>productWeightAttributeText}"
+						text="{Weight} {WeightUnit}"/>
+					<ObjectAttribute
+						title="{i18n>productMeasuresAttributeText}"
+						text="{DimensionWidth} {Unit}, {DimensionDepth} {Unit}, {DimensionHeight} {Unit}"/>
+				</attributes>
+				<statuses>
+					<ObjectStatus
+						text="{
+							path : 'Status',
+							formatter : '.formatter.statusText'
+						}"
+						state="{
+							path : 'Status',
+							formatter : '.formatter.statusState'
+						}" />
+				</statuses>
+			</ObjectHeader>
+			<VBox
+				alignItems="Center"
+				renderType="Div">
+					<Image
+						id = "productImage"
+						src= "{
+							path : 'PictureUrl',
+							formatter : '.formatter.pictureUrl'
+						}"
+						decorative="true"
+						class="sapUiSmallMargin"
+						press="onPicturePress"
+						width="100%"
+					/>
+			</VBox>
+		</content>
+
+		<dependents>
+			<LightBox id="lightBox">
+				<imageContent>
+					<LightBoxItem
+						imageSrc="{PictureUrl}"
+						title="{Name}"/>
+				</imageContent>
+			</LightBox>
+		</dependents>
+	</Page>
+</mvc:View>

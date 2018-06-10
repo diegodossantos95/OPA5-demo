@@ -1,0 +1,1 @@
+sap.ui.define(["./cdm.constants","../common/common.configure.ui5","../common/common.configure.ushell","../common/common.load.core-min"],function(c,C,f,l){"use strict";C({platform:"cdm"});f({defaultUshellConfig:c.defaultConfig});l();});

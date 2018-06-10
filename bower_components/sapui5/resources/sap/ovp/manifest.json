@@ -1,0 +1,80 @@
+{
+  "_version": "1.2.0",
+  "sap.app": {
+    "_version": "1.2.0",
+    "id": "sap.ovp",
+    "type": "library",
+    "embeds": [
+      "cards/map",
+      "cards/map/Analytical",
+      "cards/charts/analytical",
+      "cards/charts/generic",
+      "cards/charts/line",
+      "cards/charts/donut",
+      "cards/charts/bubble",
+      "cards/list",
+      "cards/quickview",
+      "cards/linklist",
+      "cards/generic",
+      "cards/table",
+      "cards/image",
+      "cards/loading",
+      "cards/custom",
+      "cards/stack",
+      "app"
+    ],
+    "applicationVersion": {
+      "version": "1.50.4"
+    },
+    "title": "SAP library: sap.ovp",
+    "description": "SAP library: sap.ovp",
+    "resources": "resources.json",
+    "offline": true
+  },
+  "sap.ui": {
+    "_version": "1.1.0",
+    "technology": "UI5",
+    "supportedThemes": [
+      "base",
+      "sap_belize",
+      "sap_belize_hcb",
+      "sap_belize_hcw",
+      "sap_belize_plus",
+      "sap_bluecrystal"
+    ]
+  },
+  "sap.ui5": {
+    "_version": "1.1.0",
+    "dependencies": {
+      "minUI5Version": "1.50",
+      "libs": {
+        "sap.ui.core": {
+          "minVersion": "1.50.5"
+        },
+        "sap.ui.layout": {
+          "minVersion": "1.50.5"
+        },
+        "sap.ui.generic.app": {
+          "minVersion": "1.50.5"
+        },
+        "sap.m": {
+          "minVersion": "1.50.5"
+        },
+        "sap.f": {
+          "minVersion": "1.50.5"
+        },
+        "sap.ui.comp": {
+          "minVersion": "1.50.5"
+        },
+        "sap.viz": {
+          "minVersion": "1.50.5",
+          "lazy": true
+        },
+        "sap.suite.ui.microchart": {
+          "minVersion": "1.50.5",
+          "lazy": true
+        }
+      }
+    }
+  }
+}

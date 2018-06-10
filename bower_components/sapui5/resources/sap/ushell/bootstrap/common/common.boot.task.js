@@ -1,0 +1,1 @@
+sap.ui.define(["./common.constants","../common/common.configure.ui5language","../common/common.configure.ui5theme"],function(c,C,f){"use strict";return b;function b(u,a){var U=window[c.ushellConfigNamespace];window.jQuery.sap.require("sap.ushell.services.Container");C(U);f(U);window.sap.ushell.bootstrap(u).done(a);}});

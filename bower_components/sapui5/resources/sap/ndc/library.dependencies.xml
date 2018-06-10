@@ -1,0 +1,171 @@
+<?xml version="1.0" ?>
+<library  version="2.0" name="sap.ndc">
+  <module name="sap/ndc/BarcodeScanDialog.fragment.xml" size="549">
+    <requires>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/m/Input.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ndc/BarcodeScanner.js" size="9873" compressedSize="2816">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ndc/BarcodeScannerButton.js" size="4219" compressedSize="1582">
+    <description>Provides control sap.ndc.BarcodeScannerButton.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ndc/BarcodeScanner.js"/>
+      <module name="sap/ndc/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+    </requires>
+  </module>
+  <module name="sap/ndc/BarcodeScannerButtonRenderer.js" size="1239" compressedSize="419">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ndc/library-preload.js" size="6671">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/m/Input.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="sap/ui/core/library.js"/>
+    </requires>
+    <includes>
+      <module name="sap/ndc/BarcodeScanDialog.fragment.xml"/>
+      <module name="sap/ndc/BarcodeScanner.js"/>
+      <module name="sap/ndc/BarcodeScannerButton.js"/>
+      <module name="sap/ndc/BarcodeScannerButtonRenderer.js"/>
+      <module name="sap/ndc/library.js"/>
+      <module name="sap/ndc/manifest.json"/>
+    </includes>
+  </module>
+  <module name="sap/ndc/library-preload.json" size="0">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/m/Input.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/library-preload.json"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="sap/ui/core/library-preload.json"/>
+      <module name="sap/ui/core/library.js"/>
+    </requires>
+    <includes>
+      <module name="sap/ndc/BarcodeScanDialog.fragment.xml"/>
+      <module name="sap/ndc/BarcodeScanner.js"/>
+      <module name="sap/ndc/BarcodeScannerButton.js"/>
+      <module name="sap/ndc/BarcodeScannerButtonRenderer.js"/>
+      <module name="sap/ndc/library.js"/>
+      <module name="sap/ndc/manifest.json"/>
+    </includes>
+  </module>
+  <module name="sap/ndc/library.js" size="820" compressedSize="434">
+    <description>Initialization Code and shared classes of library sap.ndc.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/ui/core/library.js"/>
+    </requires>
+  </module>
+  <module name="sap/ndc/manifest.json" size="764">
+  </module>
+  <module name="sap/ndc/messagebundle.properties" size="555">
+  </module>
+  <module name="sap/ndc/messagebundle_ar.properties" size="733">
+  </module>
+  <module name="sap/ndc/messagebundle_bg.properties" size="723">
+  </module>
+  <module name="sap/ndc/messagebundle_ca.properties" size="491">
+  </module>
+  <module name="sap/ndc/messagebundle_cs.properties" size="512">
+  </module>
+  <module name="sap/ndc/messagebundle_da.properties" size="446">
+  </module>
+  <module name="sap/ndc/messagebundle_de.properties" size="448">
+  </module>
+  <module name="sap/ndc/messagebundle_el.properties" size="835">
+  </module>
+  <module name="sap/ndc/messagebundle_en.properties" size="439">
+  </module>
+  <module name="sap/ndc/messagebundle_en_US_sappsd.properties" size="884">
+  </module>
+  <module name="sap/ndc/messagebundle_en_US_saptrc.properties" size="554">
+  </module>
+  <module name="sap/ndc/messagebundle_es.properties" size="476">
+  </module>
+  <module name="sap/ndc/messagebundle_et.properties" size="466">
+  </module>
+  <module name="sap/ndc/messagebundle_fi.properties" size="477">
+  </module>
+  <module name="sap/ndc/messagebundle_fr.properties" size="460">
+  </module>
+  <module name="sap/ndc/messagebundle_hi.properties" size="723">
+  </module>
+  <module name="sap/ndc/messagebundle_hr.properties" size="447">
+  </module>
+  <module name="sap/ndc/messagebundle_hu.properties" size="486">
+  </module>
+  <module name="sap/ndc/messagebundle_it.properties" size="461">
+  </module>
+  <module name="sap/ndc/messagebundle_iw.properties" size="564">
+  </module>
+  <module name="sap/ndc/messagebundle_ja.properties" size="566">
+  </module>
+  <module name="sap/ndc/messagebundle_kk.properties" size="759">
+  </module>
+  <module name="sap/ndc/messagebundle_ko.properties" size="546">
+  </module>
+  <module name="sap/ndc/messagebundle_lt.properties" size="514">
+  </module>
+  <module name="sap/ndc/messagebundle_lv.properties" size="463">
+  </module>
+  <module name="sap/ndc/messagebundle_ms.properties" size="438">
+  </module>
+  <module name="sap/ndc/messagebundle_nl.properties" size="443">
+  </module>
+  <module name="sap/ndc/messagebundle_no.properties" size="441">
+  </module>
+  <module name="sap/ndc/messagebundle_pl.properties" size="474">
+  </module>
+  <module name="sap/ndc/messagebundle_pt.properties" size="479">
+  </module>
+  <module name="sap/ndc/messagebundle_ro.properties" size="457">
+  </module>
+  <module name="sap/ndc/messagebundle_ru.properties" size="735">
+  </module>
+  <module name="sap/ndc/messagebundle_sh.properties" size="437">
+  </module>
+  <module name="sap/ndc/messagebundle_sk.properties" size="501">
+  </module>
+  <module name="sap/ndc/messagebundle_sl.properties" size="474">
+  </module>
+  <module name="sap/ndc/messagebundle_sv.properties" size="451">
+  </module>
+  <module name="sap/ndc/messagebundle_th.properties" size="732">
+  </module>
+  <module name="sap/ndc/messagebundle_tr.properties" size="458">
+  </module>
+  <module name="sap/ndc/messagebundle_uk.properties" size="775">
+  </module>
+  <module name="sap/ndc/messagebundle_vi.properties" size="509">
+  </module>
+  <module name="sap/ndc/messagebundle_zh_CN.properties" size="498">
+  </module>
+  <module name="sap/ndc/messagebundle_zh_TW.properties" size="480">
+  </module>
+</library>

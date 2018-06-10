@@ -1,0 +1,2 @@
+// Copyright (c) 2009-2017 SAP SE, All Rights Reserved
+sap.ui.define(["sap/ushell/services/_AppState/Sequentializer"],function(S){"use strict";function a(u){this._oSequentializer=new S();this._oUnderlyingAdapter=u;};a.prototype.saveAppState=function(k,s,d,A,c){var f;f=this._oUnderlyingAdapter.saveAppState.bind(this._oUnderlyingAdapter,k,s,d,A,c);return this._oSequentializer.addToQueue(f);};a.prototype.loadAppState=function(k){return this._oUnderlyingAdapter.loadAppState(k);};return a;});

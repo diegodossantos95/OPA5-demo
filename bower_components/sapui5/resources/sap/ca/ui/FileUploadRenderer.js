@@ -1,0 +1,5 @@
+/*
+ * Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved
+ */
+jQuery.sap.declare("sap.ca.ui.FileUploadRenderer");jQuery.sap.require("sap.m.ListRenderer");jQuery.sap.require("sap.ca.ui.JS.jquery-ui-widget");jQuery.sap.require("sap.ca.ui.JS.jquery-iframe-transport");jQuery.sap.require("sap.ca.ui.JS.jquery-fileupload");sap.ca.ui.FileUploadRenderer={};
+sap.ca.ui.FileUploadRenderer.render=function(r,c){if(c._isDataBound){r.write("<div");r.writeControlData(c);r.addClass("sapCaUiFU");r.writeClasses();r.write(">");r.write("<div ");r.addClass("sapCaUiFUHeader");r.writeClasses();r.write(">");r.renderControl(c.getAggregation("toolBar"));if(c.getUploadEnabled()){r.renderControl(c.getUploadProgressLabel());r.write("<input type='file' name='files[]' tabindex='-1' ");r.writeAttributeEscaped("id",c.getId()+"-upload");if(jQuery.device.is.ipad||jQuery.device.is.iphone){r.write(" capture='camera' ");}else if(c.getMultipleSelectionEnabled()){r.write(" multiple ");}r.write("></input>");}r.write("</div>");r.renderControl(c.getAggregation("_fileList"));r.write("</div>");}};

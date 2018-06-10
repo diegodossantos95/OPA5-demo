@@ -1,0 +1,61 @@
+[{
+	"Customer" : "1001",
+	"CustomerName" : "Industry Customer 1",
+	"CustomerGroup" : "CG01",
+	"CustomerGroupName" : "Industry"
+},{
+	"Customer" : "1002",
+	"CustomerName" : "Industry Customer 2",
+	"CustomerGroup" : "CG01",
+	"CustomerGroupName" : "Industry"
+},{
+	"Customer" : "1003",
+	"CustomerName" : "Industry Customer 3",
+	"CustomerGroup" : "CG01",
+	"CustomerGroupName" : "Industry"
+},{
+	"Customer" : "1004",
+	"CustomerName" : "Industry Customer 4",
+	"CustomerGroup" : "CG01",
+	"CustomerGroupName" : "Industry"
+},{
+	"Customer" : "1005",
+	"CustomerName" : "Retail Customer 1",
+	"CustomerGroup" : "CG02",
+	"CustomerGroupName" : "Retail"
+},{
+	"Customer" : "1006",
+	"CustomerName" : "Retail Customer 2",
+	"CustomerGroup" : "CG02",
+	"CustomerGroupName" : "Retail"
+},{
+	"Customer" : "1007",
+	"CustomerName" : "Retail Customer 3",
+	"CustomerGroup" : "CG02",
+	"CustomerGroupName" : "Retail"
+},{
+	"Customer" : "1008",
+	"CustomerName" : "Retail Customer 4",
+	"CustomerGroup" : "CG02",
+	"CustomerGroupName" : "Retail"
+},{
+	"Customer" : "1009",
+	"CustomerName" : "Retail Customer 5",
+	"CustomerGroup" : "CG02",
+	"CustomerGroupName" : "Retail"
+},{
+	"Customer" : "1010",
+	"CustomerName" : "Retail Customer 6",
+	"CustomerGroup" : "CG02",
+	"CustomerGroupName" : "Retail"
+},{
+	"Customer" : "1011",
+	"CustomerName" : "Wholesales Customer 1",
+	"CustomerGroup" : "CG03",
+	"CustomerGroupName" : "Wholesales"
+},{
+	"Customer" : "1012",
+	"CustomerName" : "Wholesales Customer 2",
+	"CustomerGroup" : "CG03",
+	"CustomerGroupName" : "Wholesales"
+}]

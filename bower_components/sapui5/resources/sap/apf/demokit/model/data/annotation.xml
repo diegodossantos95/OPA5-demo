@@ -1,0 +1,189 @@
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:DataServices>
+        <Schema Namespace="Annotations" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+            <Annotations Target="tmp.demokit.demokit.RevenueQueryResultsType" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+            	<!--  Field Groups
+                <Annotation Term="com.sap.vocabularies.UI.v1.FieldGroup" Qualifier="FieldGroup1">
+                    <Record>
+                        <PropertyValue Property="Label" String="my Field Group 1" />
+                        <PropertyValue Property="Data">
+                            <Collection>
+                                <Record Type="com.sap.vocabularies.UI.v1.DataField">
+                                    <PropertyValue Property="Value" Path="Country" />
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                 Field Groups -->
+                <Annotation Term="com.sap.vocabularies.UI.v1.SelectionFields">
+                    <Collection>
+                        <PropertyPath>Date</PropertyPath>
+                        <PropertyPath>Country</PropertyPath>
+                        <PropertyPath>CustomerGroup</PropertyPath>
+                        <PropertyPath>Customer</PropertyPath>
+                    </Collection>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="tmp.demokit.demokit.RevenueQueryResultsType/Customer" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+              <Annotation Term="com.sap.vocabularies.Common.v1.ValueList">
+			     <Record>
+			       <PropertyValue Property="CollectionPath" String="Customer" />
+			       <PropertyValue Property="SearchSupported" Bool="false" />
+			       <PropertyValue Property="Parameters">
+			       <Collection>
+			         <Record Type="com.sap.vocabularies.Common.v1.ValueListParameterOut">
+			           <PropertyValue Property="LocalDataProperty" PropertyPath="Customer" />
+			           <PropertyValue Property="ValueListProperty" String="Customer" />
+			         </Record>
+			         <Record Type="com.sap.vocabularies.Common.v1.ValueListParameterDisplayOnly">
+          				 <PropertyValue Property="ValueListProperty" String="CustomerName" />
+        			 </Record>
+			         <Record Type="com.sap.vocabularies.Common.v1.ValueListParameterIn">
+			           <PropertyValue Property="LocalDataProperty" PropertyPath="CustomerGroup" />
+			           <PropertyValue Property="ValueListProperty" String="CustomerGroup" />
+			         </Record>
+			         <Record Type="com.sap.vocabularies.Common.v1.ValueListParameterDisplayOnly">
+          				 <PropertyValue Property="ValueListProperty" String="CustomerGroupName" />
+        			 </Record>
+			       </Collection>
+			     	</PropertyValue>
+			     </Record>
+			   </Annotation>
+		   </Annotations>
+            <Annotations Target="tmp.demokit.demokit.RevenueQueryResultsType/CustomerGroup" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+              <Annotation Term="com.sap.vocabularies.Common.v1.ValueList">
+			     <Record>
+			       <PropertyValue Property="CollectionPath" String="CustomerGroup" />
+			       <PropertyValue Property="SearchSupported" Bool="false" />
+			       <PropertyValue Property="Parameters">
+			       <Collection>
+			         <Record Type="com.sap.vocabularies.Common.v1.ValueListParameterOut">
+			           <PropertyValue Property="LocalDataProperty" PropertyPath="CustomerGroup" />
+			           <PropertyValue Property="ValueListProperty" String="CustomerGroup" />
+			         </Record>
+			         <Record Type="com.sap.vocabularies.Common.v1.ValueListParameterDisplayOnly">
+          				 <PropertyValue Property="ValueListProperty" String="CustomerGroupName" />
+        			 </Record>
+			       </Collection>
+			     	</PropertyValue>
+			     </Record>
+			   </Annotation>
+		   </Annotations>
+            <Annotations Target="tmp.demokit.demokit.RevenueQueryResultsType/Country" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+              <Annotation Term="com.sap.vocabularies.Common.v1.ValueList">
+			     <Record>
+			       <PropertyValue Property="CollectionPath" String="Country" />
+			       <PropertyValue Property="SearchSupported" Bool="false" />
+			       <PropertyValue Property="Parameters">
+			       <Collection>
+			         <Record Type="com.sap.vocabularies.Common.v1.ValueListParameterOut">
+			           <PropertyValue Property="LocalDataProperty" PropertyPath="Country" />
+			           <PropertyValue Property="ValueListProperty" String="Country" />
+			         </Record>
+			         <Record Type="com.sap.vocabularies.Common.v1.ValueListParameterDisplayOnly">
+          				 <PropertyValue Property="ValueListProperty" String="CountryName" />
+        			 </Record>
+			       </Collection>
+			     	</PropertyValue>
+			     </Record>
+			   </Annotation>
+		   </Annotations>
+            <Annotations Target="tmp.demokit.demokit.RevenueQueryResultsType/Product" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+              <Annotation Term="com.sap.vocabularies.Common.v1.ValueList">
+			     <Record>
+			       <PropertyValue Property="CollectionPath" String="Product" />
+			       <PropertyValue Property="SearchSupported" Bool="false" />
+			       <PropertyValue Property="Parameters">
+			       <Collection>
+			         <Record Type="com.sap.vocabularies.Common.v1.ValueListParameterOut">
+			           <PropertyValue Property="LocalDataProperty" PropertyPath="Product" />
+			           <PropertyValue Property="ValueListProperty" String="Product" />
+			         </Record>
+			         <Record Type="com.sap.vocabularies.Common.v1.ValueListParameterDisplayOnly">
+          				 <PropertyValue Property="ValueListProperty" String="ProductName" />
+        			 </Record>
+			       </Collection>
+			     	</PropertyValue>
+			     </Record>
+			   </Annotation>
+		   </Annotations>
+            <Annotations Target="tmp.demokit.demokit.RevenueQueryResultsType/CompanyCode" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+              <Annotation Term="com.sap.vocabularies.Common.v1.ValueList">
+			     <Record>
+			       <PropertyValue Property="CollectionPath" String="CompanyCode" />
+			       <PropertyValue Property="SearchSupported" Bool="false" />
+			       <PropertyValue Property="Parameters">
+			       <Collection>
+			         <Record Type="com.sap.vocabularies.Common.v1.ValueListParameterOut">
+			           <PropertyValue Property="LocalDataProperty" PropertyPath="CompanyCode" />
+			           <PropertyValue Property="ValueListProperty" String="CompanyCode" />
+			         </Record>
+			         <Record Type="com.sap.vocabularies.Common.v1.ValueListParameterDisplayOnly">
+          				 <PropertyValue Property="ValueListProperty" String="CompanyCodeName" />
+        			 </Record>
+			       </Collection>
+			     	</PropertyValue>
+			     </Record>
+			   </Annotation>
+		   </Annotations>
+            <Annotations Target="tmp.demokit.demokit.demokit/RevenueQueryResults" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Org.OData.Capabilities.V1.FilterRestrictions">
+                  <Record>
+ 	                <PropertyValue Property="NonFilterableProperties">
+				       <Collection>
+				         <PropertyPath>GenID</PropertyPath>
+				         <PropertyPath>CustomerName</PropertyPath>
+				         <PropertyPath>ProductName</PropertyPath>
+				         <PropertyPath>CountryName</PropertyPath>
+				         <PropertyPath>CustomerGroupName</PropertyPath>
+				         <PropertyPath>CompanyCodeName</PropertyPath>
+				         <PropertyPath>Currency</PropertyPath>
+				         <PropertyPath>CurrencyName</PropertyPath>
+				         <PropertyPath>Year</PropertyPath>
+				         <PropertyPath>Month</PropertyPath>
+				         <PropertyPath>YearMonth</PropertyPath>
+				         <PropertyPath>Revenue</PropertyPath>
+				         <PropertyPath>ShippingCosts</PropertyPath>
+				         <PropertyPath>Discount</PropertyPath>
+				         <PropertyPath>NumberOfOrders</PropertyPath>
+			       		</Collection>
+					 </PropertyValue>
+		        	</Record>
+                 <!-- Required Filter
+                    <Record>
+                        <PropertyValue Property="RequiresFilter" Bool="true" />
+                        <PropertyValue Property="RequiredProperties">
+                            <Collection>
+                                <PropertyPath>CompanyCode</PropertyPath>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                   Required Filter -->
+                </Annotation>
+                <Annotation Term="com.sap.vocabularies.Common.v1.FilterExpressionRestrictions">
+                    <Record>
+                        <Collection>
+                        	<Record>
+	                        	<AllowedExpressions EnumMember="com.sap.vocabularies.Common.v1.FilterExpressionType/MultiValue"/>
+	                            <Property PropertyPath="CustomerGroup"/>
+                        	</Record>
+                        	<Record>
+	                        	<AllowedExpressions EnumMember="com.sap.vocabularies.Common.v1.FilterExpressionType/MultiValue"/>
+	                            <Property PropertyPath="Country"/>
+                        	</Record>
+                        	<Record>
+	                        	<AllowedExpressions EnumMember="com.sap.vocabularies.Common.v1.FilterExpressionType/MultiValue"/>
+	                            <Property PropertyPath="CompanyCode"/>
+                        	</Record>
+                        	<Record>
+	                        	<AllowedExpressions EnumMember="com.sap.vocabularies.Common.v1.FilterExpressionType/SingleInterval"/>
+	                            <Property PropertyPath="Date"/>
+                        	</Record>
+                        </Collection>
+                    </Record>
+                </Annotation>
+            </Annotations>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

@@ -1,0 +1,511 @@
+<?xml version="1.0" ?>
+<library  version="2.0" name="sap.zen.crosstab">
+  <module name="sap/zen/crosstab/BaseArea.js" size="33019" compressedSize="23316">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/zen/crosstab/rendering/DataModel.js"/>
+      <module name="sap/zen/crosstab/rendering/RenderEngine.js"/>
+      <module name="sap/zen/crosstab/rendering/RenderingConstants.js"/>
+      <module name="sap/zen/crosstab/utils/Utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/CellStyleHandler.js" size="5424" compressedSize="4076">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/zen/crosstab/rendering/RenderingConstants.js"/>
+      <module name="sap/zen/crosstab/utils/Utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/ColResizer.js" size="7084" compressedSize="3329">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/ColumnHeaderArea.js" size="2016" compressedSize="1339">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/zen/crosstab/BaseArea.js"/>
+      <module name="sap/zen/crosstab/rendering/RenderingConstants.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/Crosstab.js" size="55957" compressedSize="34747">
+    <description>Provides control sap.zen.crosstab.Crosstab.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/zen/crosstab/CellStyleHandler.js"/>
+      <module name="sap/zen/crosstab/ColumnHeaderArea.js"/>
+      <module name="sap/zen/crosstab/CrosstabCellApi.js"/>
+      <module name="sap/zen/crosstab/CrosstabContextMenu.js"/>
+      <module name="sap/zen/crosstab/CrosstabHeaderInfo.js"/>
+      <module name="sap/zen/crosstab/CrosstabTestProxy.js"/>
+      <module name="sap/zen/crosstab/DataArea.js"/>
+      <module name="sap/zen/crosstab/DimensionHeaderArea.js"/>
+      <module name="sap/zen/crosstab/EventHandler.js"/>
+      <module name="sap/zen/crosstab/PropertyBag.js"/>
+      <module name="sap/zen/crosstab/RowHeaderArea.js"/>
+      <module name="sap/zen/crosstab/SelectionHandler.js"/>
+      <module name="sap/zen/crosstab/dragdrop/DragDropHandler.js"/>
+      <module name="sap/zen/crosstab/library.js"/>
+      <module name="sap/zen/crosstab/paging/PageManager.js"/>
+      <module name="sap/zen/crosstab/rendering/RenderEngine.js"/>
+      <module name="sap/zen/crosstab/utils/Utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/CrosstabCellApi.js" size="5028" compressedSize="1872">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/CrosstabContextMenu.js" size="3576" compressedSize="1931">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/zen/crosstab/rendering/RenderingConstants.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/CrosstabHeaderInfo.js" size="19710" compressedSize="8958">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/CrosstabRenderer.js" size="8915" compressedSize="5399">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/zen/crosstab/rendering/RenderingConstants.js"/>
+      <module name="sap/zen/crosstab/utils/Utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/CrosstabTestProxy.js" size="1668" compressedSize="953">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/zen/crosstab/ColResizer.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/DataArea.js" size="2736" compressedSize="1818">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/zen/crosstab/BaseArea.js"/>
+      <module name="sap/zen/crosstab/rendering/RenderingConstants.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/DataCell.js" size="11164" compressedSize="3775">
+    <description>Provides control sap.zen.crosstab.DataCell.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/zen/crosstab/CellStyleHandler.js"/>
+      <module name="sap/zen/crosstab/library.js"/>
+      <module name="sap/zen/crosstab/rendering/RenderingConstants.js"/>
+      <module name="sap/zen/crosstab/utils/Utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/DataCellRenderer.js" size="2248" compressedSize="1127">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/zen/crosstab/IDataCell.js"/>
+      <module name="sap/zen/crosstab/rendering/RenderingConstants.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/DimensionHeaderArea.js" size="1082" compressedSize="825">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/zen/crosstab/BaseArea.js"/>
+      <module name="sap/zen/crosstab/rendering/RenderingConstants.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/EventHandler.js" size="22654" compressedSize="10306">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/zen/crosstab/ColResizer.js"/>
+      <module name="sap/zen/crosstab/HeaderResizer.js"/>
+      <module name="sap/zen/crosstab/SelectionHandler.js"/>
+      <module name="sap/zen/crosstab/TouchHandler.js"/>
+      <module name="sap/zen/crosstab/keyboard/CrosstabKeyboardNavHandler.js"/>
+      <module name="sap/zen/crosstab/rendering/CrossRequestManager.js"/>
+      <module name="sap/zen/crosstab/rendering/RenderingConstants.js"/>
+      <module name="sap/zen/crosstab/utils/Utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/HeaderCell.js" size="25984" compressedSize="6168">
+    <description>Provides control sap.zen.crosstab.HeaderCell.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/zen/crosstab/CellStyleHandler.js"/>
+      <module name="sap/zen/crosstab/library.js"/>
+      <module name="sap/zen/crosstab/rendering/RenderingConstants.js"/>
+      <module name="sap/zen/crosstab/utils/Utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/HeaderCellRenderer.js" size="11464" compressedSize="6633">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/zen/crosstab/IHeaderCell.js"/>
+      <module name="sap/zen/crosstab/TextConstants.js"/>
+      <module name="sap/zen/crosstab/rendering/RenderingConstants.js"/>
+      <module name="sap/zen/crosstab/utils/Utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/HeaderResizer.js" size="3861" compressedSize="1868">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/IDataCell.js" size="422" compressedSize="279">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/IHeaderCell.js" size="438" compressedSize="283">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/PropertyBag.js" size="5205" compressedSize="2726">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/zen/crosstab/rendering/RenderingConstants.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/RowHeaderArea.js" size="2559" compressedSize="1692">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/zen/crosstab/BaseArea.js"/>
+      <module name="sap/zen/crosstab/rendering/RenderingConstants.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/SelectionHandler.js" size="28482" compressedSize="14037">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/zen/crosstab/TouchHandler.js"/>
+      <module name="sap/zen/crosstab/keyboard/CrosstabKeyboardNavHandler.js"/>
+      <module name="sap/zen/crosstab/rendering/CrossRequestManager.js"/>
+      <module name="sap/zen/crosstab/rendering/RenderingConstants.js"/>
+      <module name="sap/zen/crosstab/utils/Utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/TextConstants.js" size="527" compressedSize="499">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/TouchHandler.js" size="13892" compressedSize="6567">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/unified/Menu.js" conditional="true"/>
+      <module name="sap/zen/crosstab/utils/Utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/datahandler/JsonDataHandler.js" size="29613" compressedSize="13278">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/zen/crosstab/CrosstabCellApi.js"/>
+      <module name="sap/zen/crosstab/TextConstants.js"/>
+      <module name="sap/zen/crosstab/rendering/RenderingConstants.js"/>
+      <module name="sap/zen/crosstab/utils/Utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/dragdrop/DragDropAreaRenderer.js" size="14810" compressedSize="7127">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/dragdrop/DragDropHandler.js" size="24795" compressedSize="12560">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/zen/crosstab/TextConstants.js"/>
+      <module name="sap/zen/crosstab/dragdrop/DragDropAreaRenderer.js"/>
+      <module name="sap/zen/crosstab/dragdrop/DragDropHoverManager.js"/>
+      <module name="sap/zen/crosstab/dragdrop/DragDropUtils.js"/>
+      <module name="sap/zen/crosstab/dragdrop/MemberDragDropHandler.js"/>
+      <module name="sap/zen/crosstab/utils/Utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/dragdrop/DragDropHoverManager.js" size="14267" compressedSize="7807">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/dragdrop/DragDropUtils.js" size="19469" compressedSize="10336">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/zen/crosstab/utils/Utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/dragdrop/MemberDragDropHandler.js" size="43079" compressedSize="20075">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/zen/crosstab/TextConstants.js"/>
+      <module name="sap/zen/crosstab/dragdrop/DragDropAreaRenderer.js"/>
+      <module name="sap/zen/crosstab/dragdrop/DragDropHoverManager.js"/>
+      <module name="sap/zen/crosstab/dragdrop/DragDropUtils.js"/>
+      <module name="sap/zen/crosstab/utils/Utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/keyboard/CrosstabKeyboardNavHandler.js" size="22312" compressedSize="8908">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/zen/crosstab/rendering/RenderingConstants.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/library-preload.js" size="334999">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="sap/ui/core/OpenState.js"/>
+      <module name="sap/ui/core/Popup.js"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="sap/ui/unified/Menu.js" conditional="true"/>
+    </requires>
+    <includes>
+      <module name="sap/zen/crosstab/BaseArea.js"/>
+      <module name="sap/zen/crosstab/CellStyleHandler.js"/>
+      <module name="sap/zen/crosstab/ColResizer.js"/>
+      <module name="sap/zen/crosstab/ColumnHeaderArea.js"/>
+      <module name="sap/zen/crosstab/Crosstab.js"/>
+      <module name="sap/zen/crosstab/CrosstabCellApi.js"/>
+      <module name="sap/zen/crosstab/CrosstabContextMenu.js"/>
+      <module name="sap/zen/crosstab/CrosstabHeaderInfo.js"/>
+      <module name="sap/zen/crosstab/CrosstabRenderer.js"/>
+      <module name="sap/zen/crosstab/CrosstabTestProxy.js"/>
+      <module name="sap/zen/crosstab/DataArea.js"/>
+      <module name="sap/zen/crosstab/DataCell.js"/>
+      <module name="sap/zen/crosstab/DataCellRenderer.js"/>
+      <module name="sap/zen/crosstab/DimensionHeaderArea.js"/>
+      <module name="sap/zen/crosstab/EventHandler.js"/>
+      <module name="sap/zen/crosstab/HeaderCell.js"/>
+      <module name="sap/zen/crosstab/HeaderCellRenderer.js"/>
+      <module name="sap/zen/crosstab/HeaderResizer.js"/>
+      <module name="sap/zen/crosstab/IDataCell.js"/>
+      <module name="sap/zen/crosstab/IHeaderCell.js"/>
+      <module name="sap/zen/crosstab/PropertyBag.js"/>
+      <module name="sap/zen/crosstab/RowHeaderArea.js"/>
+      <module name="sap/zen/crosstab/SelectionHandler.js"/>
+      <module name="sap/zen/crosstab/TextConstants.js"/>
+      <module name="sap/zen/crosstab/TouchHandler.js"/>
+      <module name="sap/zen/crosstab/datahandler/JsonDataHandler.js"/>
+      <module name="sap/zen/crosstab/dragdrop/DragDropAreaRenderer.js"/>
+      <module name="sap/zen/crosstab/dragdrop/DragDropHandler.js"/>
+      <module name="sap/zen/crosstab/dragdrop/DragDropHoverManager.js"/>
+      <module name="sap/zen/crosstab/dragdrop/DragDropUtils.js"/>
+      <module name="sap/zen/crosstab/dragdrop/MemberDragDropHandler.js"/>
+      <module name="sap/zen/crosstab/keyboard/CrosstabKeyboardNavHandler.js"/>
+      <module name="sap/zen/crosstab/library.js"/>
+      <module name="sap/zen/crosstab/manifest.json"/>
+      <module name="sap/zen/crosstab/nonphx/logic.js"/>
+      <module name="sap/zen/crosstab/paging/CellMerger.js"/>
+      <module name="sap/zen/crosstab/paging/Page.js"/>
+      <module name="sap/zen/crosstab/paging/PageManager.js"/>
+      <module name="sap/zen/crosstab/paging/PagingConstants.js"/>
+      <module name="sap/zen/crosstab/paging/RequestHandler.js"/>
+      <module name="sap/zen/crosstab/paging/RequestStack.js"/>
+      <module name="sap/zen/crosstab/rendering/CrossRequestManager.js"/>
+      <module name="sap/zen/crosstab/rendering/DataModel.js"/>
+      <module name="sap/zen/crosstab/rendering/DomElementProvider.js"/>
+      <module name="sap/zen/crosstab/rendering/HeaderScrollManager.js"/>
+      <module name="sap/zen/crosstab/rendering/PixelScrollManager.js"/>
+      <module name="sap/zen/crosstab/rendering/RenderEngine.js"/>
+      <module name="sap/zen/crosstab/rendering/RenderingConstants.js"/>
+      <module name="sap/zen/crosstab/rendering/ScrollManager.js"/>
+      <module name="sap/zen/crosstab/rendering/ScrollbarRenderer.js"/>
+      <module name="sap/zen/crosstab/utils/Measuring.js"/>
+      <module name="sap/zen/crosstab/utils/Utils.js"/>
+    </includes>
+  </module>
+  <module name="sap/zen/crosstab/library-preload.json" size="0">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="sap/ui/core/OpenState.js"/>
+      <module name="sap/ui/core/Popup.js"/>
+      <module name="sap/ui/core/library-preload.json"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="sap/ui/unified/Menu.js" conditional="true"/>
+    </requires>
+    <includes>
+      <module name="sap/zen/crosstab/BaseArea.js"/>
+      <module name="sap/zen/crosstab/CellStyleHandler.js"/>
+      <module name="sap/zen/crosstab/ColResizer.js"/>
+      <module name="sap/zen/crosstab/ColumnHeaderArea.js"/>
+      <module name="sap/zen/crosstab/Crosstab.js"/>
+      <module name="sap/zen/crosstab/CrosstabCellApi.js"/>
+      <module name="sap/zen/crosstab/CrosstabContextMenu.js"/>
+      <module name="sap/zen/crosstab/CrosstabHeaderInfo.js"/>
+      <module name="sap/zen/crosstab/CrosstabRenderer.js"/>
+      <module name="sap/zen/crosstab/CrosstabTestProxy.js"/>
+      <module name="sap/zen/crosstab/DataArea.js"/>
+      <module name="sap/zen/crosstab/DataCell.js"/>
+      <module name="sap/zen/crosstab/DataCellRenderer.js"/>
+      <module name="sap/zen/crosstab/DimensionHeaderArea.js"/>
+      <module name="sap/zen/crosstab/EventHandler.js"/>
+      <module name="sap/zen/crosstab/HeaderCell.js"/>
+      <module name="sap/zen/crosstab/HeaderCellRenderer.js"/>
+      <module name="sap/zen/crosstab/HeaderResizer.js"/>
+      <module name="sap/zen/crosstab/IDataCell.js"/>
+      <module name="sap/zen/crosstab/IHeaderCell.js"/>
+      <module name="sap/zen/crosstab/PropertyBag.js"/>
+      <module name="sap/zen/crosstab/RowHeaderArea.js"/>
+      <module name="sap/zen/crosstab/SelectionHandler.js"/>
+      <module name="sap/zen/crosstab/TextConstants.js"/>
+      <module name="sap/zen/crosstab/TouchHandler.js"/>
+      <module name="sap/zen/crosstab/datahandler/JsonDataHandler.js"/>
+      <module name="sap/zen/crosstab/dragdrop/DragDropAreaRenderer.js"/>
+      <module name="sap/zen/crosstab/dragdrop/DragDropHandler.js"/>
+      <module name="sap/zen/crosstab/dragdrop/DragDropHoverManager.js"/>
+      <module name="sap/zen/crosstab/dragdrop/DragDropUtils.js"/>
+      <module name="sap/zen/crosstab/dragdrop/MemberDragDropHandler.js"/>
+      <module name="sap/zen/crosstab/keyboard/CrosstabKeyboardNavHandler.js"/>
+      <module name="sap/zen/crosstab/library.js"/>
+      <module name="sap/zen/crosstab/manifest.json"/>
+      <module name="sap/zen/crosstab/nonphx/logic.js"/>
+      <module name="sap/zen/crosstab/paging/CellMerger.js"/>
+      <module name="sap/zen/crosstab/paging/Page.js"/>
+      <module name="sap/zen/crosstab/paging/PageManager.js"/>
+      <module name="sap/zen/crosstab/paging/PagingConstants.js"/>
+      <module name="sap/zen/crosstab/paging/RequestHandler.js"/>
+      <module name="sap/zen/crosstab/paging/RequestStack.js"/>
+      <module name="sap/zen/crosstab/rendering/CrossRequestManager.js"/>
+      <module name="sap/zen/crosstab/rendering/DataModel.js"/>
+      <module name="sap/zen/crosstab/rendering/DomElementProvider.js"/>
+      <module name="sap/zen/crosstab/rendering/HeaderScrollManager.js"/>
+      <module name="sap/zen/crosstab/rendering/PixelScrollManager.js"/>
+      <module name="sap/zen/crosstab/rendering/RenderEngine.js"/>
+      <module name="sap/zen/crosstab/rendering/RenderingConstants.js"/>
+      <module name="sap/zen/crosstab/rendering/ScrollManager.js"/>
+      <module name="sap/zen/crosstab/rendering/ScrollbarRenderer.js"/>
+      <module name="sap/zen/crosstab/utils/Measuring.js"/>
+      <module name="sap/zen/crosstab/utils/Utils.js"/>
+    </includes>
+  </module>
+  <module name="sap/zen/crosstab/library.js" size="1173" compressedSize="438">
+    <description>Initialization Code and shared classes of library sap.zen.crosstab (1.50.6)</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="sap/ui/core/library.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/library.properties" size="275">
+  </module>
+  <module name="sap/zen/crosstab/manifest.json" size="865">
+  </module>
+  <module name="sap/zen/crosstab/nonphx/logic.js" size="205" compressedSize="171" requiresTopLevelScope="true" exposedGlobals="TestObject" raw="true">
+  </module>
+  <module name="sap/zen/crosstab/paging/CellMerger.js" size="9887" compressedSize="3522">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/zen/crosstab/paging/PagingConstants.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/paging/Page.js" size="12451" compressedSize="5785">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/zen/crosstab/paging/PagingConstants.js"/>
+      <module name="sap/zen/crosstab/rendering/RenderingConstants.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/paging/PageManager.js" size="12958" compressedSize="5519">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/zen/crosstab/datahandler/JsonDataHandler.js"/>
+      <module name="sap/zen/crosstab/paging/CellMerger.js"/>
+      <module name="sap/zen/crosstab/paging/Page.js"/>
+      <module name="sap/zen/crosstab/paging/PagingConstants.js"/>
+      <module name="sap/zen/crosstab/paging/RequestHandler.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/paging/PagingConstants.js" size="355" compressedSize="333">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/paging/RequestHandler.js" size="3144" compressedSize="1217">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/zen/crosstab/paging/RequestStack.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/paging/RequestStack.js" size="2581" compressedSize="1073">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/rendering/CrossRequestManager.js" size="14792" compressedSize="5912">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/zen/crosstab/rendering/HeaderScrollManager.js"/>
+      <module name="sap/zen/crosstab/rendering/PixelScrollManager.js"/>
+      <module name="sap/zen/crosstab/rendering/RenderingConstants.js"/>
+      <module name="sap/zen/crosstab/rendering/ScrollManager.js"/>
+      <module name="sap/zen/crosstab/utils/Utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/rendering/DataModel.js" size="6011" compressedSize="2944">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/rendering/DomElementProvider.js" size="328" compressedSize="221">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/rendering/HeaderScrollManager.js" size="2747" compressedSize="1437">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/rendering/PixelScrollManager.js" size="5130" compressedSize="2454">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/rendering/RenderEngine.js" size="95086" compressedSize="41338">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/zen/crosstab/rendering/CrossRequestManager.js"/>
+      <module name="sap/zen/crosstab/rendering/DomElementProvider.js"/>
+      <module name="sap/zen/crosstab/rendering/RenderingConstants.js"/>
+      <module name="sap/zen/crosstab/rendering/ScrollManager.js"/>
+      <module name="sap/zen/crosstab/rendering/ScrollbarRenderer.js"/>
+      <module name="sap/zen/crosstab/utils/Measuring.js"/>
+      <module name="sap/zen/crosstab/utils/Utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/rendering/RenderingConstants.js" size="3601" compressedSize="3401">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/rendering/ScrollManager.js" size="21765" compressedSize="9200">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/OpenState.js"/>
+      <module name="sap/ui/core/Popup.js"/>
+      <module name="sap/zen/crosstab/TextConstants.js"/>
+      <module name="sap/zen/crosstab/utils/Measuring.js"/>
+      <module name="sap/zen/crosstab/utils/Utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/rendering/ScrollbarRenderer.js" size="20203" compressedSize="9687">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/zen/crosstab/utils/Measuring.js"/>
+      <module name="sap/zen/crosstab/utils/Utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/utils/Measuring.js" size="8392" compressedSize="4327">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/zen/crosstab/rendering/RenderingConstants.js"/>
+    </requires>
+  </module>
+  <module name="sap/zen/crosstab/utils/Utils.js" size="15395" compressedSize="8143">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/zen/crosstab/rendering/RenderingConstants.js"/>
+    </requires>
+  </module>
+</library>

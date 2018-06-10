@@ -1,0 +1,22 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": "Component-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "Component.js"
+		},
+		{
+			"name": "DonutChart-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "DonutChart.controller.js"
+		},
+		{
+			"name": "DonutChart.fragment.xml"
+		}
+	]
+}

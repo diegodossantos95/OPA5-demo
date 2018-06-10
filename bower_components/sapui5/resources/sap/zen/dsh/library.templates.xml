@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Library name="sap.zen.dsh" xmlns="http://www.sap.com/ui5/ide/templates/xmlview">
+<Template name="sap.zen.dsh.AnalyticGrid" alias="AnalyticGrid,Grid">
+	<jsTemplate><![CDATA[new sap.zen.dsh.AnalyticGrid({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	width: undefined, // sap.ui.core.CSSSize
+	height: undefined, // sap.ui.core.CSSSize
+	selection: undefined, // object
+	queryName: undefined, // string
+	systemAlias: undefined, // string
+	state: undefined, // string
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	stateChange: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this],
+	selectionChange: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<AnalyticGrid xmlns="sap.zen.dsh"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	width=""
+	height=""
+	selection=""
+	queryName=""
+	systemAlias=""
+	state=""
+	validateFieldGroup=""
+	stateChange=""
+	selectionChange="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+</AnalyticGrid>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.zen.dsh.Dsh" alias="Dsh">
+	<jsTemplate><![CDATA[new sap.zen.dsh.Dsh({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	dshAppName: "0ANALYSIS", // string
+	repoPath: undefined, // string
+	width: undefined, // sap.ui.core.CSSSize
+	height: undefined, // sap.ui.core.CSSSize
+	deployment: "bw", // string
+	protocol: undefined, // string
+	client: undefined, // string
+	language: undefined, // string
+	semanticMappings: undefined, // object
+	appComponent: undefined, // object
+	deferCreation: false, // boolean
+	systemAlias: undefined, // string
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<Dsh xmlns="sap.zen.dsh"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	dshAppName="0ANALYSIS"
+	repoPath=""
+	width=""
+	height=""
+	deployment="bw"
+	protocol=""
+	client=""
+	language=""
+	semanticMappings=""
+	appComponent=""
+	deferCreation="false"
+	systemAlias=""
+	validateFieldGroup="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+</Dsh>
+]]></xmlTemplate>
+</Template>
+</Library>

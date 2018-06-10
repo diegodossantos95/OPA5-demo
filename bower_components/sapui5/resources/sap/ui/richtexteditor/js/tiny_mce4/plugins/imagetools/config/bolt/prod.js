@@ -1,0 +1,1 @@
+configure({sources:[source('amd','ephox/imagetools','../../../../../../node_modules/@ephox/imagetools/src/main/js',mapper.hierarchical),source('amd','tinymce/imagetoolsplugin','../../src/main/js',function(i){return i.replace(/^tinymce\/imagetoolsplugin\//,'');})]});

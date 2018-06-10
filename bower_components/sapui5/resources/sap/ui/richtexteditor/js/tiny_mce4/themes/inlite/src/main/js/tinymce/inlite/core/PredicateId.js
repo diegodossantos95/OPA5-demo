@@ -1,0 +1,1 @@
+define('tinymce/inlite/core/PredicateId',['global!tinymce.util.Tools'],function(T){var c=function(i,p){return{id:i,predicate:p};};var f=function(t){return T.map(t,function(a){return c(a.id,a.predicate);});};return{create:c,fromContextToolbars:f};});

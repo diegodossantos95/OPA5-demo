@@ -1,0 +1,17 @@
+<core:FragmentDefinition xmlns="sap.m"
+	xmlns:core="sap.ui.core" xmlns:u="sap.ui.unified">
+	<u:Menu id="idAddMenu">
+		<u:MenuItem id="idNewConfig" enabled="true" select="_handleAddMenuItemPress" />
+		<u:MenuItem id="idNewFacetFilter" enabled="true" select="_handleAddMenuItemPress"/>
+		<u:MenuItem id="idNewCategory" enabled="true" select="_handleAddMenuItemPress"/>
+		<u:MenuItem id="idNewNavigationTarget" enabled="false" select="_handleAddMenuItemPress"/>
+		<u:MenuItem id="idStep" enabled="false" select="_handleAddMenuItemPress">
+			<u:Menu>
+				<u:MenuItem id="idNewStep" select="_handleAddMenuItemPress"/>
+				<u:MenuItem id="idHierarchicalStep" select="_handleAddMenuItemPress"/>
+				<u:MenuItem id="idExistingStep" select="_handleAddMenuItemPress"/>		
+			</u:Menu>
+		</u:MenuItem>
+		<u:MenuItem id="idNewRepresentation" enabled="false" select="_handleAddMenuItemPress"/>	
+	</u:Menu>
+</core:FragmentDefinition>

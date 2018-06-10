@@ -1,0 +1,13 @@
+{
+  "name": "sapui5",
+  "_cacheHeaders": {
+    "ETag": "\"{SHA1{49eb684774d75be88705216e68bc03d7db947dd8}}\"",
+    "Last-Modified": "Thu, 16 Nov 2017 09:01:22 GMT",
+    "Content-Length": "188066659",
+    "Content-Type": "application/zip"
+  },
+  "_release": "e-tag:{SHA1{49e",
+  "_source": "http://nexus.wdf.sap.corp:8081/nexus/content/repositories/deploy.releases/com/sap/ui5/dist/sapui5-dist/1.50.6/sapui5-dist-1.50.6-static.zip",
+  "_target": "*",
+  "_originalSource": "http://nexus.wdf.sap.corp:8081/nexus/content/repositories/deploy.releases/com/sap/ui5/dist/sapui5-dist/1.50.6/sapui5-dist-1.50.6-static.zip"
+}

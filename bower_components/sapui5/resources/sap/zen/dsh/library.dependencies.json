@@ -1,0 +1,583 @@
+{
+  "modules" : [
+    {
+      "name" : "sap/zen/dsh/AnalyticGrid.js",
+      "description" : "Provides control sap.zen.dsh.AnalyticGrid.",
+      "size" : 21238,
+      "compressedSize" : 5763,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/ui/thirdparty/URI.js", "sap/zen/dsh/library.js", "sap/zen/dsh/rt/all.js", "sap/zen/dsh/rt/zen_rt_firefly/js/jszip.js", "sap/zen/dsh/rt/zen_rt_firefly/js/xlsx.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/AnalyticGridRenderer.js",
+      "size" : 166,
+      "compressedSize" : 160,
+      "required" : ["jquery.sap.global.js", "sap/zen/dsh/DshRenderer.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/Dsh.js",
+      "description" : "Provides control sap.zen.dsh.Dsh.",
+      "size" : 24710,
+      "compressedSize" : 7342,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/ui/thirdparty/URI.js", "sap/zen/dsh/library.js", "sap/zen/dsh/rt/all.js", "sap/zen/dsh/rt/zen_rt_firefly/js/jszip.js", "sap/zen/dsh/rt/zen_rt_firefly/js/xlsx.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/DshRenderer.js",
+      "size" : 1086,
+      "compressedSize" : 477,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization.properties",
+      "size" : 4208,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_ar.properties",
+      "size" : 7805,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_bg.properties",
+      "size" : 9670,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_ca.properties",
+      "size" : 4663,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_cs.properties",
+      "size" : 4844,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_da.properties",
+      "size" : 4408,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_de.properties",
+      "size" : 4515,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_el.properties",
+      "size" : 8745,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_en.properties",
+      "size" : 4152,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_en_US_sappsd.properties",
+      "size" : 10428,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_en_US_saptrc.properties",
+      "size" : 5782,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_es.properties",
+      "size" : 4660,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_et.properties",
+      "size" : 4436,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_fi.properties",
+      "size" : 4596,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_fr.properties",
+      "size" : 4578,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_hi.properties",
+      "size" : 7919,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_hr.properties",
+      "size" : 4470,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_hu.properties",
+      "size" : 5183,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_it.properties",
+      "size" : 4437,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_iw.properties",
+      "size" : 6918,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_ja.properties",
+      "size" : 5826,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_kk.properties",
+      "size" : 9114,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_ko.properties",
+      "size" : 5382,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_lt.properties",
+      "size" : 4900,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_lv.properties",
+      "size" : 4795,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_ms.properties",
+      "size" : 4292,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_nl.properties",
+      "size" : 4429,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_no.properties",
+      "size" : 4396,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_pl.properties",
+      "size" : 4806,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_pt.properties",
+      "size" : 4675,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_ro.properties",
+      "size" : 4717,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_ru.properties",
+      "size" : 9607,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_sh.properties",
+      "size" : 4657,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_sk.properties",
+      "size" : 4852,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_sl.properties",
+      "size" : 4603,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_sv.properties",
+      "size" : 4468,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_th.properties",
+      "size" : 8577,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_tr.properties",
+      "size" : 4811,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_uk.properties",
+      "size" : 9046,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_vi.properties",
+      "size" : 5891,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_zh_CN.properties",
+      "size" : 5049,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization_zh_TW.properties",
+      "size" : 5130,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization.properties",
+      "size" : 893,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_ar.properties",
+      "size" : 1122,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_bg.properties",
+      "size" : 1296,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_ca.properties",
+      "size" : 870,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_cs.properties",
+      "size" : 905,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_da.properties",
+      "size" : 846,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_de.properties",
+      "size" : 862,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_el.properties",
+      "size" : 1192,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_en.properties",
+      "size" : 834,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_en_US_sappsd.properties",
+      "size" : 1432,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_en_US_saptrc.properties",
+      "size" : 972,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_es.properties",
+      "size" : 874,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_et.properties",
+      "size" : 847,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_fi.properties",
+      "size" : 864,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_fr.properties",
+      "size" : 873,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_hi.properties",
+      "size" : 1194,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_hr.properties",
+      "size" : 851,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_hu.properties",
+      "size" : 939,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_it.properties",
+      "size" : 852,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_iw.properties",
+      "size" : 1006,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_ja.properties",
+      "size" : 1050,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_kk.properties",
+      "size" : 1138,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_ko.properties",
+      "size" : 950,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_lt.properties",
+      "size" : 875,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_lv.properties",
+      "size" : 887,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_ms.properties",
+      "size" : 850,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_nl.properties",
+      "size" : 852,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_no.properties",
+      "size" : 848,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_pl.properties",
+      "size" : 886,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_pt.properties",
+      "size" : 881,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_ro.properties",
+      "size" : 885,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_ru.properties",
+      "size" : 1204,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_sh.properties",
+      "size" : 853,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_sk.properties",
+      "size" : 899,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_sl.properties",
+      "size" : 875,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_sv.properties",
+      "size" : 853,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_th.properties",
+      "size" : 1176,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_tr.properties",
+      "size" : 880,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_uk.properties",
+      "size" : 1198,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_vi.properties",
+      "size" : 992,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_zh_CN.properties",
+      "size" : 888,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization_zh_TW.properties",
+      "size" : 912,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/fioriwrapper/Component.js",
+      "size" : 3233,
+      "compressedSize" : 1887,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/UIComponent.js", "sap/ui/generic/app/navigation/service/NavigationHandler.js", "sap/zen/dsh/Dsh.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/fioriwrapper/manifest.json",
+      "size" : 1362,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/library-preload.js",
+      "size" : 19935,
+      "required" : ["jquery.sap.global.js", "sap/m/library.js", "sap/ui/core/Control.js", "sap/ui/core/Core.js", "sap/ui/core/UIComponent.js", "sap/ui/core/library.js", "sap/ui/generic/app/navigation/service/NavigationHandler.js", "sap/ui/layout/library.js", "sap/ui/table/library.js", "sap/ui/thirdparty/URI.js", "sap/zen/commons/library.js", "sap/zen/crosstab/library.js", "sap/zen/dsh/rt/all.js", "sap/zen/dsh/rt/zen_rt_firefly/js/jszip.js", "sap/zen/dsh/rt/zen_rt_firefly/js/xlsx.js"],
+      "includes" : ["sap/zen/dsh/AnalyticGrid.js", "sap/zen/dsh/AnalyticGridRenderer.js", "sap/zen/dsh/Dsh.js", "sap/zen/dsh/DshRenderer.js", "sap/zen/dsh/fioriwrapper/Component.js", "sap/zen/dsh/fioriwrapper/manifest.json", "sap/zen/dsh/library.js", "sap/zen/dsh/manifest.json"]
+    },
+    {
+      "name" : "sap/zen/dsh/library-preload.json",
+      "size" : 0,
+      "required" : ["jquery.sap.global.js", "sap/m/library-preload.json", "sap/m/library.js", "sap/ui/core/Control.js", "sap/ui/core/Core.js", "sap/ui/core/UIComponent.js", "sap/ui/core/library-preload.json", "sap/ui/core/library.js", "sap/ui/generic/app/navigation/service/NavigationHandler.js", "sap/ui/layout/library-preload.json", "sap/ui/layout/library.js", "sap/ui/table/library-preload.json", "sap/ui/table/library.js", "sap/ui/thirdparty/URI.js", "sap/zen/commons/library-preload.json", "sap/zen/commons/library.js", "sap/zen/crosstab/library-preload.json", "sap/zen/crosstab/library.js", "sap/zen/dsh/rt/all.js", "sap/zen/dsh/rt/zen_rt_firefly/js/jszip.js", "sap/zen/dsh/rt/zen_rt_firefly/js/xlsx.js"],
+      "includes" : ["sap/zen/dsh/AnalyticGrid.js", "sap/zen/dsh/AnalyticGridRenderer.js", "sap/zen/dsh/Dsh.js", "sap/zen/dsh/DshRenderer.js", "sap/zen/dsh/fioriwrapper/Component.js", "sap/zen/dsh/fioriwrapper/manifest.json", "sap/zen/dsh/library.js", "sap/zen/dsh/manifest.json"]
+    },
+    {
+      "name" : "sap/zen/dsh/library.js",
+      "description" : "Initialization Code and shared classes of library sap.zen.dsh (1.50.6)",
+      "size" : 1457,
+      "compressedSize" : 697,
+      "required" : ["jquery.sap.global.js", "sap/m/library.js", "sap/ui/core/Core.js", "sap/ui/core/library.js", "sap/ui/layout/library.js", "sap/ui/table/library.js", "sap/zen/commons/library.js", "sap/zen/crosstab/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/library.properties",
+      "size" : 242,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/manifest.json",
+      "size" : 1552,
+      "required" : [],
+      "includes" : []
+    }
+  ]
+}

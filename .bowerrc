@@ -1,0 +1,6 @@
+{
+    "proxy": "",
+    "https-proxy": "",
+    "no-proxy": "github.wdf.sap.corp",
+    "strict-ssl": false 
+}

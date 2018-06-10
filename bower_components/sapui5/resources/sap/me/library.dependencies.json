@@ -1,0 +1,126 @@
+{
+  "modules" : [
+    {
+      "name" : "sap/me/Calendar.js",
+      "description" : "Provides control sap.me.Calendar.",
+      "size" : 27082,
+      "compressedSize" : 12679,
+      "required" : ["jquery.sap.global.js", "sap/me/CalendarDate.js", "sap/me/library.js", "sap/ui/core/Control.js", "sap/ui/core/IconPool.js", "sap/ui/core/LocaleData.js", "sap/ui/core/date/UniversalDate.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/me/CalendarDate.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n        (c) Copyright 2009-2016 SAP SE. All rights reserved",
+      "size" : 7941,
+      "compressedSize" : 2287,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/date/UniversalDate.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/me/CalendarLegend.js",
+      "description" : "Provides control sap.me.CalendarLegend.",
+      "size" : 7983,
+      "compressedSize" : 4639,
+      "required" : ["jquery.sap.global.js", "sap/me/library.js", "sap/ui/core/Control.js", "sap/ui/core/IconPool.js", "sap/ui/core/theming/Parameters.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/me/CalendarLegendRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n        (c) Copyright 2009-2016 SAP SE. All rights reserved",
+      "size" : 2916,
+      "compressedSize" : 1473,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/me/CalendarRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n        (c) Copyright 2009-2016 SAP SE. All rights reserved",
+      "size" : 8227,
+      "compressedSize" : 3375,
+      "required" : ["jquery.sap.global.js", "sap/me/CalendarDate.js", "sap/ui/core/LocaleData.js", "sap/ui/core/date/UniversalDate.js", "sap/ui/core/format/DateFormat.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/me/OverlapCalendar.js",
+      "description" : "Provides control sap.me.OverlapCalendar.",
+      "size" : 23724,
+      "compressedSize" : 10075,
+      "required" : ["jquery.sap.global.js", "sap/me/Calendar.js", "sap/me/CalendarDate.js", "sap/me/library.js", "sap/ui/core/Control.js", "sap/ui/core/date/UniversalDate.js", "sap/ui/core/theming/Parameters.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/me/OverlapCalendarEvent.js",
+      "description" : "Provides control sap.me.OverlapCalendarEvent.",
+      "size" : 2389,
+      "compressedSize" : 925,
+      "required" : ["jquery.sap.global.js", "sap/me/library.js", "sap/ui/core/Element.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/me/OverlapCalendarRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n        (c) Copyright 2009-2016 SAP SE. All rights reserved",
+      "size" : 4182,
+      "compressedSize" : 2240,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/me/ProgressIndicator.js",
+      "description" : "Provides control sap.me.ProgressIndicator.",
+      "size" : 7025,
+      "compressedSize" : 3096,
+      "required" : ["jquery.sap.global.js", "sap/me/library.js", "sap/ui/core/Control.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/me/ProgressIndicatorRenderer.js",
+      "description" : "Provides default renderer for control sap.ui.commons.ProgressIndicator",
+      "size" : 4144,
+      "compressedSize" : 2079,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/me/TabContainer.js",
+      "description" : "Provides control sap.me.TabContainer.",
+      "size" : 8822,
+      "compressedSize" : 5051,
+      "required" : ["jquery.sap.global.js", "sap/me/library.js", "sap/ui/core/Control.js", "sap/ui/core/IconPool.js", "sap/ui/core/theming/Parameters.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/me/TabContainerRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n        (c) Copyright 2009-2016 SAP SE. All rights reserved",
+      "size" : 3518,
+      "compressedSize" : 1885,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/me/library-preload.js",
+      "size" : 50822,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/ui/core/Core.js", "sap/ui/core/Element.js", "sap/ui/core/IconPool.js", "sap/ui/core/LocaleData.js", "sap/ui/core/date/UniversalDate.js", "sap/ui/core/format/DateFormat.js", "sap/ui/core/library.js", "sap/ui/core/theming/Parameters.js"],
+      "includes" : ["sap/me/Calendar.js", "sap/me/CalendarDate.js", "sap/me/CalendarLegend.js", "sap/me/CalendarLegendRenderer.js", "sap/me/CalendarRenderer.js", "sap/me/OverlapCalendar.js", "sap/me/OverlapCalendarEvent.js", "sap/me/OverlapCalendarRenderer.js", "sap/me/ProgressIndicator.js", "sap/me/ProgressIndicatorRenderer.js", "sap/me/TabContainer.js", "sap/me/TabContainerRenderer.js", "sap/me/library.js", "sap/me/manifest.json"]
+    },
+    {
+      "name" : "sap/me/library-preload.json",
+      "size" : 0,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/ui/core/Core.js", "sap/ui/core/Element.js", "sap/ui/core/IconPool.js", "sap/ui/core/LocaleData.js", "sap/ui/core/date/UniversalDate.js", "sap/ui/core/format/DateFormat.js", "sap/ui/core/library-preload.json", "sap/ui/core/library.js", "sap/ui/core/theming/Parameters.js"],
+      "includes" : ["sap/me/Calendar.js", "sap/me/CalendarDate.js", "sap/me/CalendarLegend.js", "sap/me/CalendarLegendRenderer.js", "sap/me/CalendarRenderer.js", "sap/me/OverlapCalendar.js", "sap/me/OverlapCalendarEvent.js", "sap/me/OverlapCalendarRenderer.js", "sap/me/ProgressIndicator.js", "sap/me/ProgressIndicatorRenderer.js", "sap/me/TabContainer.js", "sap/me/TabContainerRenderer.js", "sap/me/library.js", "sap/me/manifest.json"]
+    },
+    {
+      "name" : "sap/me/library.js",
+      "description" : "Initialization Code and shared classes of library sap.me.",
+      "size" : 2931,
+      "compressedSize" : 880,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Core.js", "sap/ui/core/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/me/manifest.json",
+      "size" : 856,
+      "required" : [],
+      "includes" : []
+    }
+  ]
+}

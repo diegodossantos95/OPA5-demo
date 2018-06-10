@@ -1,0 +1,33 @@
+<mvc:View controllerName="sap.apf.modeler.ui.controller.newApplication"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" class="sapUiSizeCompact">
+	<Dialog xmlns="sap.m" id="idNewAppDialog" showHeader="true"
+		class="sapUiSizeCompact dialogContentPadding" initialFocus="idNewAppDialog">
+		<VBox xmlns="sap.m">
+			<items>
+				<HBox xmlns="sap.m" class="newAppLayout">
+					<items>
+						<Label xmlns="sap.m" id="idDescriptionLabel" required="true"
+							width="110px" labelFor="idDescriptionInput" />
+						<Input xmlns="sap.m" id="idDescriptionInput" liveChange="handleAppDescriptionLiveChange"
+							ariaLabelledBy="idDescriptionLabel" />
+					</items>
+				</HBox>
+				<HBox xmlns="sap.m" class="newAppLayout">
+					<items>
+						<Label xmlns="sap.m" id="idSemanticObjectLabel" width="110px" />
+						<Input xmlns="sap.m" id="idSemanticObjectInput"
+							ariaLabelledBy="idSemanticObjectLabel" />
+					</items>
+				</HBox>
+			</items>
+		</VBox>
+		<beginButton>
+			<Button xmlns="sap.m" id="idSaveButton" enabled="false"
+				press="handleSavePress">
+			</Button>
+		</beginButton>
+		<endButton>
+			<Button xmlns="sap.m" id="idCancelButton" press="handleCancelPress" />
+		</endButton>
+	</Dialog>
+</mvc:View>

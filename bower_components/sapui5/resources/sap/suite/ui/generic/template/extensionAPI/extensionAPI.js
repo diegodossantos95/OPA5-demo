@@ -1,0 +1,1 @@
+sap.ui.define(["sap/suite/ui/generic/template/lib/TemplateAssembler"],function(T){"use strict";return{getExtensionAPI:function(c){return T.getExtensionAPI(c);},getExtensionAPIPromise:function(c){return T.getExtensionAPIPromise(c);}};});

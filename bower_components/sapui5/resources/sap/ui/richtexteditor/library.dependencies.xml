@@ -1,0 +1,144 @@
+<?xml version="1.0" ?>
+<library  version="2.0" name="sap.ui.richtexteditor">
+  <module name="sap/ui/richtexteditor/RichTextEditor.js" size="73291" compressedSize="32087">
+    <description>Provides control sap.ui.richtexteditor.RichTextEditor.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="sap/ui/richtexteditor/ToolbarWrapper.js"/>
+      <module name="sap/ui/richtexteditor/library.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/richtexteditor/RichTextEditorRenderer.js" size="2296" compressedSize="1032">
+    <description>Provides default renderer for control sap.ui.richtexteditor.RichTextEditor</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Renderer.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/richtexteditor/ToolbarWrapper.js" size="36331" compressedSize="16483">
+    <description>Provides control sap.ui.richtexteditor.ToolbarWrapper.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/IconPool.js"/>
+      <module name="sap/ui/core/Item.js"/>
+      <module name="sap/ui/richtexteditor/library.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/richtexteditor/ToolbarWrapperRenderer.js" size="1022" compressedSize="362">
+    <description>Provides default renderer for control sap.ui.richtexteditor.ToolbarWrapper</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Renderer.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/richtexteditor/library-preload.js" size="57700">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Button.js" conditional="true"/>
+      <module name="sap/m/CheckBox.js" conditional="true"/>
+      <module name="sap/m/Dialog.js" conditional="true"/>
+      <module name="sap/m/HBox.js" conditional="true"/>
+      <module name="sap/m/Input.js" conditional="true"/>
+      <module name="sap/m/Label.js" conditional="true"/>
+      <module name="sap/m/Menu.js" conditional="true"/>
+      <module name="sap/m/MenuButton.js" conditional="true"/>
+      <module name="sap/m/MenuItem.js" conditional="true"/>
+      <module name="sap/m/OverflowToolbar.js" conditional="true"/>
+      <module name="sap/m/OverflowToolbarLayoutData.js" conditional="true"/>
+      <module name="sap/m/Select.js" conditional="true"/>
+      <module name="sap/m/StepInput.js" conditional="true"/>
+      <module name="sap/m/Text.js" conditional="true"/>
+      <module name="sap/m/ToggleButton.js" conditional="true"/>
+      <module name="sap/m/ToolbarSeparator.js" conditional="true"/>
+      <module name="sap/m/VBox.js" conditional="true"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="sap/ui/core/IconPool.js"/>
+      <module name="sap/ui/core/Item.js"/>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="sap/ui/unified/ColorPicker.js" conditional="true"/>
+    </requires>
+    <includes>
+      <module name="sap/ui/richtexteditor/RichTextEditor.js"/>
+      <module name="sap/ui/richtexteditor/RichTextEditorRenderer.js"/>
+      <module name="sap/ui/richtexteditor/ToolbarWrapper.js"/>
+      <module name="sap/ui/richtexteditor/ToolbarWrapperRenderer.js"/>
+      <module name="sap/ui/richtexteditor/library.js"/>
+      <module name="sap/ui/richtexteditor/manifest.json"/>
+    </includes>
+  </module>
+  <module name="sap/ui/richtexteditor/library-preload.json" size="0">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Button.js" conditional="true"/>
+      <module name="sap/m/CheckBox.js" conditional="true"/>
+      <module name="sap/m/Dialog.js" conditional="true"/>
+      <module name="sap/m/HBox.js" conditional="true"/>
+      <module name="sap/m/Input.js" conditional="true"/>
+      <module name="sap/m/Label.js" conditional="true"/>
+      <module name="sap/m/Menu.js" conditional="true"/>
+      <module name="sap/m/MenuButton.js" conditional="true"/>
+      <module name="sap/m/MenuItem.js" conditional="true"/>
+      <module name="sap/m/OverflowToolbar.js" conditional="true"/>
+      <module name="sap/m/OverflowToolbarLayoutData.js" conditional="true"/>
+      <module name="sap/m/Select.js" conditional="true"/>
+      <module name="sap/m/StepInput.js" conditional="true"/>
+      <module name="sap/m/Text.js" conditional="true"/>
+      <module name="sap/m/ToggleButton.js" conditional="true"/>
+      <module name="sap/m/ToolbarSeparator.js" conditional="true"/>
+      <module name="sap/m/VBox.js" conditional="true"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="sap/ui/core/IconPool.js"/>
+      <module name="sap/ui/core/Item.js"/>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="sap/ui/core/library-preload.json"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="sap/ui/unified/ColorPicker.js" conditional="true"/>
+    </requires>
+    <includes>
+      <module name="sap/ui/richtexteditor/RichTextEditor.js"/>
+      <module name="sap/ui/richtexteditor/RichTextEditorRenderer.js"/>
+      <module name="sap/ui/richtexteditor/ToolbarWrapper.js"/>
+      <module name="sap/ui/richtexteditor/ToolbarWrapperRenderer.js"/>
+      <module name="sap/ui/richtexteditor/library.js"/>
+      <module name="sap/ui/richtexteditor/manifest.json"/>
+    </includes>
+  </module>
+  <module name="sap/ui/richtexteditor/library.js" size="12250" compressedSize="6730">
+    <description>Initialization Code and shared classes of library sap.ui.richtexteditor.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Button.js" conditional="true"/>
+      <module name="sap/m/CheckBox.js" conditional="true"/>
+      <module name="sap/m/Dialog.js" conditional="true"/>
+      <module name="sap/m/HBox.js" conditional="true"/>
+      <module name="sap/m/Input.js" conditional="true"/>
+      <module name="sap/m/Label.js" conditional="true"/>
+      <module name="sap/m/Menu.js" conditional="true"/>
+      <module name="sap/m/MenuButton.js" conditional="true"/>
+      <module name="sap/m/MenuItem.js" conditional="true"/>
+      <module name="sap/m/OverflowToolbar.js" conditional="true"/>
+      <module name="sap/m/OverflowToolbarLayoutData.js" conditional="true"/>
+      <module name="sap/m/Select.js" conditional="true"/>
+      <module name="sap/m/StepInput.js" conditional="true"/>
+      <module name="sap/m/Text.js" conditional="true"/>
+      <module name="sap/m/ToggleButton.js" conditional="true"/>
+      <module name="sap/m/ToolbarSeparator.js" conditional="true"/>
+      <module name="sap/m/VBox.js" conditional="true"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="sap/ui/unified/ColorPicker.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/ui/richtexteditor/manifest.json" size="870">
+  </module>
+  <module name="sap/ui/richtexteditor/messagebundle.properties" size="1536">
+  </module>
+</library>

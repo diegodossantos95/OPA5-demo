@@ -1,0 +1,6 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core"
+	visible="true" xmlns="sap.m"
+	controllerName="sap.apf.modeler.ui.controller.propertyTypeHandler"
+	class="sapUiSizeCompact">
+	<VBox xmlns="sap.m" id="idPropertyTypeVBox" />
+</mvc:View>

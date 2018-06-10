@@ -1,0 +1,23 @@
+<core:FragmentDefinition
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<template:alias name=".MODEL" value="sap.ui.model.odata.v4.AnnotationHelper">
+		<template:alias name=".FE" value="sap.fe.core.AnnotationHelper">
+			<template:with path="this>context" helper="sap.fe.core.AnnotationHelper.getMetaContext" var="lineItem">
+				<!-- we expect that the context refers to lineItems, in the future we can also support only an entitySet and add UI.LineItems as default -->
+				<!-- could we create entitySet also in plugin/initialTemplating-->
+				<template:with path="lineItem>" var="entitySet" helper="sap.fe.controls._Table.TableAnnotationHelper.getEntitySetFromContext">
+					<template:if test="{= ${this>type} === 'GridTable' }">
+						<template:then>
+							<core:Fragment fragmentName="sap.fe.controls._Table.GridTable.GridTable" type="XML"/>
+						</template:then>
+						<template:else>
+							<core:Fragment fragmentName="sap.fe.controls._Table.ResponsiveTable.ResponsiveTable" type="XML"/>
+						</template:else>
+					</template:if>
+				</template:with>
+			</template:with>
+		</template:alias>
+	</template:alias>
+</core:FragmentDefinition>

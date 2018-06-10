@@ -1,0 +1,6 @@
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5)
+        (c) Copyright 2009-2017 SAP SE. All rights reserved
+    
+ */
+(function(){"use strict";jQuery.sap.declare("sap.fe.controls._FilterBar.FilterBarAnnotationHelper");sap.fe.controls._FilterBar.FilterBarAnnotationHelper={getFieldPath:function(I,e,f){var m,s,p,t;if(f.indexOf('/')>-1){m=I.getInterface(0).getModel();s=f.split('/');for(var i=0;i<(s.length-1);i++){p=m.getObject("/"+e+"/"+s.slice(0,(i+1)).join('/'));if(p&&p["$kind"]==="NavigationProperty"&&p["$isCollection"]){s[i]=s[i]+'*';t=true;}}if(t){f=s.join('/');}}return f;},getValueStatePath:function(i,e,f){var _=sap.fe.controls._FilterBar.FilterBarAnnotationHelper.getFieldPath(i,e,f);return"{sap.fe.cm>/fieldPath/"+_+"/valueState}";},getValueStateTextPath:function(i,e,f){var _=sap.fe.controls._FilterBar.FilterBarAnnotationHelper.getFieldPath(i,e,f);return"{sap.fe.cm>/fieldPath/"+_+"/valueStateText}";},getStableIdPartFromFilterItem:function(f){return sap.fe.core.AnnotationHelper.replaceSpecialCharsInId(f);}};sap.fe.controls._FilterBar.FilterBarAnnotationHelper.getFieldPath.requiresIContext=true;sap.fe.controls._FilterBar.FilterBarAnnotationHelper.getValueStatePath.requiresIContext=true;sap.fe.controls._FilterBar.FilterBarAnnotationHelper.getValueStateTextPath.requiresIContext=true;})();

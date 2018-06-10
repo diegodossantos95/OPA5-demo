@@ -1,0 +1,873 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": "Component-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "Component.js"
+		},
+		{
+			"name": "core/applicationHandler-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "core/applicationHandler.js"
+		},
+		{
+			"name": "core/configurationEditor-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "core/configurationEditor.js"
+		},
+		{
+			"name": "core/configurationHandler-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "core/configurationHandler.js"
+		},
+		{
+			"name": "core/configurationObjects-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "core/configurationObjects.js"
+		},
+		{
+			"name": "core/elementContainer-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "core/elementContainer.js"
+		},
+		{
+			"name": "core/facetFilter-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "core/facetFilter.js"
+		},
+		{
+			"name": "core/hierarchicalStep-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "core/hierarchicalStep.js"
+		},
+		{
+			"name": "core/instance-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "core/instance.js"
+		},
+		{
+			"name": "core/lazyLoader-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "core/lazyLoader.js"
+		},
+		{
+			"name": "core/messageDefinition-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "core/messageDefinition.js"
+		},
+		{
+			"name": "core/navigationTarget-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "core/navigationTarget.js"
+		},
+		{
+			"name": "core/registryWrapper-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "core/registryWrapper.js"
+		},
+		{
+			"name": "core/representation-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "core/representation.js"
+		},
+		{
+			"name": "core/smartFilterBar-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "core/smartFilterBar.js"
+		},
+		{
+			"name": "core/step-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "core/step.js"
+		},
+		{
+			"name": "core/textHandler-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "core/textHandler.js"
+		},
+		{
+			"name": "core/textPool-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "core/textPool.js"
+		},
+		{
+			"name": "manifest.json"
+		},
+		{
+			"name": "resources/css/configModeler.css"
+		},
+		{
+			"name": "resources/i18n/texts.properties",
+			"locale": "",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_ar.properties",
+			"locale": "ar",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_bg.properties",
+			"locale": "bg",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_ca.properties",
+			"locale": "ca",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_cs.properties",
+			"locale": "cs",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_da.properties",
+			"locale": "da",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_de.properties",
+			"locale": "de",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_el.properties",
+			"locale": "el",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_en.properties",
+			"locale": "en",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_en_US_sappsd.properties",
+			"locale": "en_US_sappsd",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_en_US_saptrc.properties",
+			"locale": "en_US_saptrc",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_es.properties",
+			"locale": "es",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_et.properties",
+			"locale": "et",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_fi.properties",
+			"locale": "fi",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_fr.properties",
+			"locale": "fr",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_hi.properties",
+			"locale": "hi",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_hr.properties",
+			"locale": "hr",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_hu.properties",
+			"locale": "hu",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_it.properties",
+			"locale": "it",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_iw.properties",
+			"locale": "iw",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_ja.properties",
+			"locale": "ja",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_kk.properties",
+			"locale": "kk",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_ko.properties",
+			"locale": "ko",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_lt.properties",
+			"locale": "lt",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_lv.properties",
+			"locale": "lv",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_ms.properties",
+			"locale": "ms",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_nl.properties",
+			"locale": "nl",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_no.properties",
+			"locale": "no",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_pl.properties",
+			"locale": "pl",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_pt.properties",
+			"locale": "pt",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_ro.properties",
+			"locale": "ro",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_ru.properties",
+			"locale": "ru",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_sh.properties",
+			"locale": "sh",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_sk.properties",
+			"locale": "sk",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_sl.properties",
+			"locale": "sl",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_sv.properties",
+			"locale": "sv",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_th.properties",
+			"locale": "th",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_tr.properties",
+			"locale": "tr",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_uk.properties",
+			"locale": "uk",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_vi.properties",
+			"locale": "vi",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_zh_CN.properties",
+			"locale": "zh_CN",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "resources/i18n/texts_zh_TW.properties",
+			"locale": "zh_TW",
+			"raw": "resources/i18n/texts.properties"
+		},
+		{
+			"name": "ui/controller/applicationList-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/applicationList.controller.js"
+		},
+		{
+			"name": "ui/controller/catalogService-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/catalogService.controller.js"
+		},
+		{
+			"name": "ui/controller/category-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/category.controller.js"
+		},
+		{
+			"name": "ui/controller/configuration-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/configuration.controller.js"
+		},
+		{
+			"name": "ui/controller/configurationList-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/configurationList.controller.js"
+		},
+		{
+			"name": "ui/controller/cornerTexts-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/cornerTexts.js"
+		},
+		{
+			"name": "ui/controller/facetFilter-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/facetFilter.controller.js"
+		},
+		{
+			"name": "ui/controller/facetFilterFRR-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/facetFilterFRR.controller.js"
+		},
+		{
+			"name": "ui/controller/facetFilterVHR-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/facetFilterVHR.controller.js"
+		},
+		{
+			"name": "ui/controller/hierarchicalStepRequest-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/hierarchicalStepRequest.controller.js"
+		},
+		{
+			"name": "ui/controller/importDeliveredContent-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/importDeliveredContent.controller.js"
+		},
+		{
+			"name": "ui/controller/importFiles-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/importFiles.controller.js"
+		},
+		{
+			"name": "ui/controller/messageHandler-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/messageHandler.controller.js"
+		},
+		{
+			"name": "ui/controller/navTargetContextMapping-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/navTargetContextMapping.controller.js"
+		},
+		{
+			"name": "ui/controller/navigationTarget-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/navigationTarget.controller.js"
+		},
+		{
+			"name": "ui/controller/navigationTargetParameter-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/navigationTargetParameter.controller.js"
+		},
+		{
+			"name": "ui/controller/newApplication-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/newApplication.controller.js"
+		},
+		{
+			"name": "ui/controller/overwriteExistingConfiguration-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/overwriteExistingConfiguration.js"
+		},
+		{
+			"name": "ui/controller/previewContent-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/previewContent.controller.js"
+		},
+		{
+			"name": "ui/controller/propertyType-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/propertyType.js"
+		},
+		{
+			"name": "ui/controller/propertyTypeHandler-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/propertyTypeHandler.controller.js"
+		},
+		{
+			"name": "ui/controller/representation-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/representation.controller.js"
+		},
+		{
+			"name": "ui/controller/representationCornerTexts-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/representationCornerTexts.controller.js"
+		},
+		{
+			"name": "ui/controller/representationDimension-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/representationDimension.controller.js"
+		},
+		{
+			"name": "ui/controller/representationHierarchyProperty-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/representationHierarchyProperty.controller.js"
+		},
+		{
+			"name": "ui/controller/representationLegend-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/representationLegend.controller.js"
+		},
+		{
+			"name": "ui/controller/representationMeasure-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/representationMeasure.controller.js"
+		},
+		{
+			"name": "ui/controller/representationProperty-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/representationProperty.controller.js"
+		},
+		{
+			"name": "ui/controller/representationSortPropertyType-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/representationSortPropertyType.controller.js"
+		},
+		{
+			"name": "ui/controller/requestOptions-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/requestOptions.js"
+		},
+		{
+			"name": "ui/controller/smartFilterBar-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/smartFilterBar.controller.js"
+		},
+		{
+			"name": "ui/controller/smartFilterBarRequest-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/smartFilterBarRequest.controller.js"
+		},
+		{
+			"name": "ui/controller/sortPropertyType-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/sortPropertyType.js"
+		},
+		{
+			"name": "ui/controller/step-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/step.controller.js"
+		},
+		{
+			"name": "ui/controller/stepCornerTexts-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/stepCornerTexts.controller.js"
+		},
+		{
+			"name": "ui/controller/stepFilterMapping-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/stepFilterMapping.controller.js"
+		},
+		{
+			"name": "ui/controller/stepRequest-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/stepRequest.controller.js"
+		},
+		{
+			"name": "ui/controller/stepSortPropertyType-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/stepSortPropertyType.controller.js"
+		},
+		{
+			"name": "ui/controller/titleBreadCrumb-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/titleBreadCrumb.controller.js"
+		},
+		{
+			"name": "ui/controller/toolbar-dbg.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/controller/toolbar.controller.js"
+		},
+		{
+			"name": "ui/fragment/addMenu.fragment.xml"
+		},
+		{
+			"name": "ui/fragment/deleteConfirmationDialog.fragment.xml"
+		},
+		{
+			"name": "ui/fragment/deleteMenu.fragment.xml"
+		},
+		{
+			"name": "ui/fragment/dialogWithTwoButtons.fragment.xml"
+		},
+		{
+			"name": "ui/fragment/existingStepDialog.fragment.xml"
+		},
+		{
+			"name": "ui/fragment/exportConfiguration.fragment.xml"
+		},
+		{
+			"name": "ui/fragment/mandatoryDialog.fragment.xml"
+		},
+		{
+			"name": "ui/fragment/overwriteConfirmation.fragment.xml"
+		},
+		{
+			"name": "ui/fragment/unsavedDataConfirmationDialog.fragment.xml"
+		},
+		{
+			"name": "ui/utils/APFRouter-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/utils/APFRouter.js"
+		},
+		{
+			"name": "ui/utils/APFTree-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/utils/APFTree.js"
+		},
+		{
+			"name": "ui/utils/constants-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/utils/constants.js"
+		},
+		{
+			"name": "ui/utils/displayOptionsValueBuilder-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/utils/displayOptionsValueBuilder.js"
+		},
+		{
+			"name": "ui/utils/helper-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/utils/helper.js"
+		},
+		{
+			"name": "ui/utils/labelForRepresentationTypes-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/utils/labelForRepresentationTypes.js"
+		},
+		{
+			"name": "ui/utils/navigationHandler-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/utils/navigationHandler.js"
+		},
+		{
+			"name": "ui/utils/nullObjectChecker-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/utils/nullObjectChecker.js"
+		},
+		{
+			"name": "ui/utils/optionsValueModelBuilder-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/utils/optionsValueModelBuilder.js"
+		},
+		{
+			"name": "ui/utils/propertyTypeFactory-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/utils/propertyTypeFactory.js"
+		},
+		{
+			"name": "ui/utils/propertyTypeState-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/utils/propertyTypeState.js"
+		},
+		{
+			"name": "ui/utils/representationBasicDataHandler-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/utils/representationBasicDataHandler.js"
+		},
+		{
+			"name": "ui/utils/representationHandler-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/utils/representationHandler.js"
+		},
+		{
+			"name": "ui/utils/representationTypesHandler-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/utils/representationTypesHandler.js"
+		},
+		{
+			"name": "ui/utils/sortDataHandler-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/utils/sortDataHandler.js"
+		},
+		{
+			"name": "ui/utils/staticValuesBuilder-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/utils/staticValuesBuilder.js"
+		},
+		{
+			"name": "ui/utils/stepPropertyMetadataHandler-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/utils/stepPropertyMetadataHandler.js"
+		},
+		{
+			"name": "ui/utils/textManipulator-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/utils/textManipulator.js"
+		},
+		{
+			"name": "ui/utils/textPoolHelper-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/utils/textPoolHelper.js"
+		},
+		{
+			"name": "ui/utils/treeTableDisplayOptionsValueBuilder-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/utils/treeTableDisplayOptionsValueBuilder.js"
+		},
+		{
+			"name": "ui/utils/viewValidator-dbg.js",
+			"isDebug": true
+		},
+		{
+			"name": "ui/utils/viewValidator.js"
+		},
+		{
+			"name": "ui/view/application.view.xml"
+		},
+		{
+			"name": "ui/view/applicationList.view.xml"
+		},
+		{
+			"name": "ui/view/catalogService.view.xml"
+		},
+		{
+			"name": "ui/view/category.view.xml"
+		},
+		{
+			"name": "ui/view/configuration.view.xml"
+		},
+		{
+			"name": "ui/view/configurationList.view.xml"
+		},
+		{
+			"name": "ui/view/cornerTexts.view.xml"
+		},
+		{
+			"name": "ui/view/facetFilter.view.xml"
+		},
+		{
+			"name": "ui/view/importDeliveredContent.view.xml"
+		},
+		{
+			"name": "ui/view/importFiles.view.xml"
+		},
+		{
+			"name": "ui/view/messageHandler.view.xml"
+		},
+		{
+			"name": "ui/view/navigationTarget.view.xml"
+		},
+		{
+			"name": "ui/view/navigationTargetParameter.view.xml"
+		},
+		{
+			"name": "ui/view/newApplication.view.xml"
+		},
+		{
+			"name": "ui/view/previewContent.view.xml"
+		},
+		{
+			"name": "ui/view/propertyType.view.xml"
+		},
+		{
+			"name": "ui/view/propertyTypeHandler.view.xml"
+		},
+		{
+			"name": "ui/view/representation.view.xml"
+		},
+		{
+			"name": "ui/view/requestOptions.view.xml"
+		},
+		{
+			"name": "ui/view/smartFilterBar.view.xml"
+		},
+		{
+			"name": "ui/view/sortPropertyType.view.xml"
+		},
+		{
+			"name": "ui/view/step.view.xml"
+		},
+		{
+			"name": "ui/view/titleBreadCrumb.view.xml"
+		},
+		{
+			"name": "ui/view/toolbar.view.xml"
+		}
+	]
+}

@@ -1,0 +1,489 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".theming",
+			"theme": "base"
+		},
+		{
+			"name": "Inbox.css",
+			"theme": "base"
+		},
+		{
+			"name": "InboxAddAttachmentTile.css",
+			"theme": "base"
+		},
+		{
+			"name": "InboxAttachmentTile.css",
+			"theme": "base"
+		},
+		{
+			"name": "InboxAttachmentsTileContainer.css",
+			"theme": "base"
+		},
+		{
+			"name": "InboxBusyIndicator.css",
+			"theme": "base"
+		},
+		{
+			"name": "InboxComment.css",
+			"theme": "base"
+		},
+		{
+			"name": "InboxLaunchPad.css",
+			"theme": "base"
+		},
+		{
+			"name": "InboxSplitApp.css",
+			"theme": "base"
+		},
+		{
+			"name": "InboxTaskComments.css",
+			"theme": "base"
+		},
+		{
+			"name": "InboxTaskTitleControl.css",
+			"theme": "base"
+		},
+		{
+			"name": "InboxUploadAttachmentTile.css",
+			"theme": "base"
+		},
+		{
+			"name": "IndexLayout.css",
+			"theme": "base"
+		},
+		{
+			"name": "SubstitutionRulesManager.css",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/Info.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/alert.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/attachment.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/claim_action.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/close_button.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/close_hover.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/comments.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/comments/person_placeholder_48.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/comments/person_placeholder_grey_512.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/complete_action.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/completed_status.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/custom_attributes.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/delete.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/delete_blue.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/drilldown_filter_selected.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/drilldown_filter_unselected.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/error.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/forwardTask.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/high_priority.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/inprocess_status.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/loading_ani.gif",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/low_priority.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/medium_priority.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/next.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/notification.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/previous.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/ready_status.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/refresh.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/refresh_ani.gif",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/release_action.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/reserved_status.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/rr_view_alert.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/rr_view_notification.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/rr_view_selected.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/rr_view_todo.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/rr_view_unselected.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/sap_logo.gif",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/settings_button_hover.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/settings_button_regular.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/sort_asc.gif",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/sort_desc.gif",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/success.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/table_view_selected.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/table_view_unselected.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/task.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/taskInitiator_default.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/todo.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/very_high_priority.png",
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/warning.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/Info.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/alert.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/attachment.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/claim_action.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/close_button.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/close_hover.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/comments.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/comments/person_placeholder_48.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/comments/person_placeholder_grey_512.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/complete_action.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/completed_status.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/custom_attributes.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/delete.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/delete_blue.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/drilldown_filter_selected.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/drilldown_filter_unselected.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/error.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/forwardTask.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/high_priority.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/inprocess_status.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/loading_ani.gif",
+			"theme": "base"
+		},
+		{
+			"name": "img/low_priority.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/medium_priority.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/next.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/notification.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/previous.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/ready_status.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/refresh.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/refresh_ani.gif",
+			"theme": "base"
+		},
+		{
+			"name": "img/release_action.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/reserved_status.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/rr_view_alert.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/rr_view_notification.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/rr_view_selected.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/rr_view_todo.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/rr_view_unselected.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/sap_logo.gif",
+			"theme": "base"
+		},
+		{
+			"name": "img/settings_button_hover.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/settings_button_regular.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/sort_asc.gif",
+			"theme": "base"
+		},
+		{
+			"name": "img/sort_desc.gif",
+			"theme": "base"
+		},
+		{
+			"name": "img/success.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/table_view_selected.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/table_view_unselected.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/task.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/taskInitiator_default.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/todo.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/very_high_priority.png",
+			"theme": "base"
+		},
+		{
+			"name": "img/warning.png",
+			"theme": "base"
+		},
+		{
+			"name": "library-RTL-dbg.css",
+			"isDebug": true,
+			"theme": "base"
+		},
+		{
+			"name": "library-RTL.css",
+			"theme": "base"
+		},
+		{
+			"name": "library-dbg.css",
+			"isDebug": true,
+			"theme": "base"
+		},
+		{
+			"name": "library-parameters.json",
+			"theme": "base"
+		},
+		{
+			"name": "library.css",
+			"theme": "base"
+		},
+		{
+			"name": "library.less",
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "library.source.less",
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "shared.css",
+			"theme": "base"
+		}
+	]
+}

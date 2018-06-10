@@ -1,0 +1,37 @@
+{
+  "_version": "1.2.0",
+  "sap.app": {
+    "_version": "1.2.0",
+    "id": "sap.ui.export",
+    "type": "library",
+    "embeds": [],
+    "applicationVersion": {
+      "version": "1.50.6"
+    },
+    "title": "UI5 library: sap.ui.export",
+    "description": "UI5 library: sap.ui.export",
+    "resources": "resources.json",
+    "offline": true
+  },
+  "sap.ui": {
+    "_version": "1.1.0",
+    "technology": "UI5",
+    "supportedThemes": [
+      "base",
+      "sap_belize",
+      "sap_belize_plus",
+      "sap_hcb"
+    ]
+  },
+  "sap.ui5": {
+    "_version": "1.1.0",
+    "dependencies": {
+      "minUI5Version": "1.50",
+      "libs": {
+        "sap.ui.core": {
+          "minVersion": "1.50.6"
+        }
+      }
+    }
+  }
+}

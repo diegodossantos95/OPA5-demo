@@ -1,0 +1,50 @@
+<core:FragmentDefinition
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns="sap.m"
+	xmlns:build="sap.build"
+	xmlns:core="sap.ui.core"
+	xmlns:layout="sap.ui.layout"
+	xmlns:smartChart="sap.ui.comp.smartchart">
+	<template:with path="entityType>com.sap.vocabularies.UI.v1.HeaderInfo" var="header">
+		<smartChart:SmartChart
+			id="listReport{= (${parameter>/settings/quickVariantSelectionX} || ${parameter>/settings/_quickVariantSelectionX}) ? ${path: 'tabItem>', formatter: 'sap.suite.ui.generic.template.js.AnnotationHelper.getSuffixFromIconTabFilterKey'} : ''}" 
+			smartFilterId=""
+			persistencyKey="chartPersistencyKey"
+			header="{path: 'header>TypeNamePlural', formatter: 'sap.ui.model.odata.AnnotationHelper.format'}"
+			dataReceived="._templateEventHandlers.onSmartChartDataReceived"
+			afterVariantSave="._templateEventHandlers.onAfterChartVariantSave"
+			afterVariantApply="._templateEventHandlers.onAfterApplyChartVariant"
+			afterVariantInitialise="._templateEventHandlers.onAfterChartVariantInitialised"
+			useVariantManagement="{= !${parameter>/settings/hideTableVariantManagement} || ${parameter>/settings/smartVariantManagement}}"
+			smartVariant="{= ${parameter>/settings/smartVariantManagement} ? 'template::PageVariant' : null }"
+			enableAutoBinding="false"
+			showSemanticNavigationButton="false"
+			useTooltip="true"
+			showFullScreenButton="true"
+			showDrillBreadcrumbs="true"
+			showDetailsButton="true"
+			showDrillButtons="false"
+			entitySet="{parameter>/entitySet}"
+			initialise="._templateEventHandlers.onChartInitialise"
+			beforeRebindChart="._templateEventHandlers.onBeforeRebindChart">
+			<smartChart:customData>
+				<core:CustomData key="presentationVariantQualifier" value="{parts:[{path: 'workingContext>'}, {path: 'tabItem>'}],  formatter: 'sap.suite.ui.generic.template.ListReport.AnnotationHelper.getPresentationVariantQualifier'}"/>
+				<template:if test="{parts:[{path: 'workingContext>'}, {path: 'tabItem>'}],  formatter: 'sap.suite.ui.generic.template.ListReport.AnnotationHelper.checkIfChartQualifier'}">
+					<template:then>
+						<core:CustomData key="chartQualifier" value="{parts:[{path: 'workingContext>'}, {path: 'tabItem>'}],  formatter: 'sap.suite.ui.generic.template.ListReport.AnnotationHelper.getChartQualifier'}"/>
+					</template:then>
+				</template:if>
+				<core:CustomData key="variantAnnotationPath" value="{tabItem>annotationPath}"/>
+			</smartChart:customData>
+			<!-- Custom tool bar -->
+			<smartChart:toolbar>
+				<core:Fragment fragmentName="sap.suite.ui.generic.template.ListReport.view.fragments.SmartChartToolbar_PoC" type="XML"/>
+			</smartChart:toolbar>
+				<template:if test="{path: 'tabItem>'}, formatter: 'sap.suite.ui.generic.template.ListReport.AnnotationHelper.checkIfNavigationIsEnabled'}">
+					<smartChart:selectionDetailsItemActions>
+						<core:Item text="{i18n>NAVIGATE_TO_DETAIL}"></core:Item>
+					</smartChart:selectionDetailsItemActions>
+			</template:if>
+		</smartChart:SmartChart>
+	</template:with>
+</core:FragmentDefinition>

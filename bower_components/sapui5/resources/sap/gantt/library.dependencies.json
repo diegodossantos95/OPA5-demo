@@ -1,0 +1,1256 @@
+{
+  "modules" : [
+    {
+      "name" : "sap/gantt/AdhocLine.js",
+      "size" : 2372,
+      "compressedSize" : 383,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Element.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/GanttChart.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 109579,
+      "compressedSize" : 58745,
+      "required" : ["jquery.sap.global.js", "sap/gantt/GanttChartBase.js", "sap/gantt/axistime/AxisTimeStrategyBase.js", "sap/gantt/axistime/ProportionZoomStrategy.js", "sap/gantt/config/TimeAxis.js", "sap/gantt/config/TimeHorizon.js", "sap/gantt/drawer/AdhocLine.js", "sap/gantt/drawer/CalendarPattern.js", "sap/gantt/drawer/CursorLine.js", "sap/gantt/drawer/ExpandedBackground.js", "sap/gantt/drawer/NowLine.js", "sap/gantt/drawer/ShapeCrossRow.js", "sap/gantt/drawer/ShapeInRow.js", "sap/gantt/drawer/VerticalLine.js", "sap/gantt/eventHandler/AutoScrollHandler.js", "sap/gantt/eventHandler/MouseWheelHandler.js", "sap/gantt/eventHandler/ShapeResizeHandler.js", "sap/gantt/eventHandler/TimePeriodZoomHandler.js", "sap/gantt/misc/AxisOrdinal.js", "sap/gantt/misc/AxisTime.js", "sap/gantt/misc/Format.js", "sap/gantt/misc/ShapeManager.js", "sap/gantt/misc/ShapeSelectionModel.js", "sap/gantt/misc/Utility.js", "sap/gantt/shape/Group.js", "sap/gantt/shape/SelectedShape.js", "sap/gantt/shape/ext/rls/SelectedRelationship.js", "sap/ui/Device.js", "sap/ui/core/Core.js", "sap/ui/core/theming/Parameters.js", "sap/ui/table/Row.js", "sap/ui/table/TreeTable.js", "sap/ui/thirdparty/d3.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/GanttChartBase.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 38026,
+      "compressedSize" : 6714,
+      "required" : ["jquery.sap.global.js", "sap/gantt/config/TimeHorizon.js", "sap/gantt/library.js", "sap/gantt/misc/Utility.js", "sap/ui/core/Control.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/GanttChartContainer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 51961,
+      "compressedSize" : 21926,
+      "required" : ["jquery.sap.global.js", "sap/gantt/config/TimeHorizon.js", "sap/gantt/control/AssociateContainer.js", "sap/gantt/control/Toolbar.js", "sap/gantt/legend/LegendContainer.js", "sap/gantt/library.js", "sap/gantt/misc/Utility.js", "sap/ui/core/Control.js", "sap/ui/core/Orientation.js", "sap/ui/layout/Splitter.js", "sap/ui/layout/SplitterLayoutData.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/GanttChartContainerRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 3119,
+      "compressedSize" : 2089,
+      "required" : ["jquery.sap.global.js", "sap/gantt/misc/Utility.js", "sap/ui/core/theming/Parameters.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/GanttChartRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 4647,
+      "compressedSize" : 2760,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/GanttChartWithTable.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 52097,
+      "compressedSize" : 29886,
+      "required" : ["jquery.sap.global.js", "sap/gantt/GanttChart.js", "sap/gantt/GanttChartBase.js", "sap/gantt/control/AssociateContainer.js", "sap/gantt/control/Cell.js", "sap/gantt/control/Toolbar.js", "sap/gantt/drawer/SelectionPanel.js", "sap/gantt/eventHandler/MouseWheelHandler.js", "sap/gantt/misc/AxisOrdinal.js", "sap/gantt/misc/Utility.js", "sap/ui/Device.js", "sap/ui/core/Core.js", "sap/ui/core/ScrollBar.js", "sap/ui/layout/Splitter.js", "sap/ui/layout/SplitterLayoutData.js", "sap/ui/table/Column.js", "sap/ui/table/TreeTable.js", "sap/ui/thirdparty/d3.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/GanttChartWithTableRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 1857,
+      "compressedSize" : 970,
+      "required" : ["jquery.sap.global.js", "sap/gantt/misc/Utility.js", "sap/ui/core/theming/Parameters.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/axistime/AxisTimeStrategyBase.js",
+      "description" : "sap.gantt.axistime.AxisTimeCategory = {\n\tconsecutive: \"consecutive\",\n\tdiscretive: \"discretive\"\n};",
+      "size" : 29717,
+      "compressedSize" : 8138,
+      "required" : ["jquery.sap.global.js", "sap/gantt/config/TimeHorizon.js", "sap/gantt/misc/Format.js", "sap/gantt/misc/RelativeTimeFormatter.js", "sap/gantt/misc/Utility.js", "sap/ui/core/Element.js", "sap/ui/core/Locale.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/axistime/FullScreenStrategy.js",
+      "size" : 5752,
+      "compressedSize" : 2870,
+      "required" : ["jquery.sap.global.js", "sap/gantt/axistime/AxisTimeStrategyBase.js", "sap/gantt/config/TimeHorizon.js", "sap/gantt/misc/AxisTime.js", "sap/gantt/misc/Format.js", "sap/gantt/misc/Utility.js", "sap/ui/core/Core.js", "sap/ui/core/Locale.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/axistime/ProportionZoomStrategy.js",
+      "size" : 10687,
+      "compressedSize" : 5750,
+      "required" : ["jquery.sap.global.js", "sap/gantt/axistime/AxisTimeStrategyBase.js", "sap/gantt/config/TimeHorizon.js", "sap/gantt/misc/Format.js", "sap/gantt/misc/Utility.js", "sap/ui/core/Core.js", "sap/ui/core/Locale.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/axistime/StepwiseZoomStrategy.js",
+      "size" : 18798,
+      "compressedSize" : 8487,
+      "required" : ["jquery.sap.global.js", "sap/gantt/axistime/AxisTimeStrategyBase.js", "sap/gantt/misc/Format.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/config/ChartScheme.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 2408,
+      "compressedSize" : 702,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Element.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/config/ColumnAttribute.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 1118,
+      "compressedSize" : 386,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Element.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/config/ContainerLayout.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 2421,
+      "compressedSize" : 892,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Element.js", "sap/ui/core/Orientation.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/config/ExpandChart.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 1552,
+      "compressedSize" : 432,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Element.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/config/ExpandChartGroup.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 1489,
+      "compressedSize" : 400,
+      "required" : ["jquery.sap.global.js", "sap/gantt/config/ToolbarGroup.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/config/GanttChartLayout.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 1448,
+      "compressedSize" : 515,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Element.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/config/Hierarchy.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 2882,
+      "compressedSize" : 800,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Element.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/config/HierarchyColumn.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 1970,
+      "compressedSize" : 640,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Element.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/config/LayoutGroup.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 1206,
+      "compressedSize" : 337,
+      "required" : ["jquery.sap.global.js", "sap/gantt/config/ToolbarGroup.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/config/Locale.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 1514,
+      "compressedSize" : 462,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Element.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/config/Mode.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 1309,
+      "compressedSize" : 444,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Element.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/config/ModeGroup.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 1020,
+      "compressedSize" : 326,
+      "required" : ["jquery.sap.global.js", "sap/gantt/config/ToolbarGroup.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/config/ObjectType.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 1535,
+      "compressedSize" : 526,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Element.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/config/SettingGroup.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 1339,
+      "compressedSize" : 386,
+      "required" : ["jquery.sap.global.js", "sap/gantt/config/SettingItem.js", "sap/gantt/config/ToolbarGroup.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/config/SettingItem.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 1329,
+      "compressedSize" : 435,
+      "required" : ["jquery.sap.global.js", "sap/gantt/config/ToolbarGroup.js", "sap/ui/core/Element.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/config/Shape.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 5704,
+      "compressedSize" : 994,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Element.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/config/TimeAxis.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 2335,
+      "compressedSize" : 746,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Element.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/config/TimeHorizon.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 1820,
+      "compressedSize" : 760,
+      "required" : ["jquery.sap.global.js", "sap/gantt/misc/Format.js", "sap/ui/core/Element.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/config/TimeZoomGroup.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 3089,
+      "compressedSize" : 1102,
+      "required" : ["jquery.sap.global.js", "sap/gantt/config/ToolbarGroup.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/config/ToolbarGroup.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 1617,
+      "compressedSize" : 537,
+      "required" : ["jquery.sap.global.js", "sap/m/OverflowToolbarPriority.js", "sap/ui/core/Element.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/config/ToolbarScheme.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 4228,
+      "compressedSize" : 1054,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Element.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/control/AssociateContainer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 881,
+      "compressedSize" : 554,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/ui/core/Core.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/control/AssociateContainerRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 908,
+      "compressedSize" : 539,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/control/Cell.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 6052,
+      "compressedSize" : 1892,
+      "required" : ["jquery.sap.global.js", "sap/m/Label.js", "sap/ui/core/Control.js", "sap/ui/model/Context.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/control/CellRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 674,
+      "compressedSize" : 331,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/control/Toolbar.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 44066,
+      "compressedSize" : 26219,
+      "required" : ["jquery.sap.global.js", "sap/gantt/control/AssociateContainer.js", "sap/gantt/legend/LegendContainer.js", "sap/gantt/misc/Utility.js", "sap/m/Button.js", "sap/m/ButtonType.js", "sap/m/CheckBox.js", "sap/m/FlexBox.js", "sap/m/FlexDirection.js", "sap/m/FlexJustifyContent.js", "sap/m/OverflowToolbar.js", "sap/m/OverflowToolbarLayoutData.js", "sap/m/OverflowToolbarPriority.js", "sap/m/PlacementType.js", "sap/m/Popover.js", "sap/m/SegmentedButton.js", "sap/m/Select.js", "sap/m/Slider.js", "sap/m/ToolbarSpacer.js", "sap/m/ViewSettingsCustomTab.js", "sap/m/ViewSettingsDialog.js", "sap/ui/core/Control.js", "sap/ui/core/Core.js", "sap/ui/core/Item.js", "sap/ui/core/Orientation.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/control/ToolbarRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 711,
+      "compressedSize" : 449,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/def/DefBase.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 2113,
+      "compressedSize" : 542,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Element.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/def/SvgDefs.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 2473,
+      "compressedSize" : 749,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/ManagedObject.js", "sap/ui/core/Element.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/def/cal/Calendar.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 3217,
+      "compressedSize" : 1383,
+      "required" : ["jquery.sap.global.js", "sap/gantt/def/DefBase.js", "sap/gantt/misc/Format.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/def/cal/CalendarDefs.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 1592,
+      "compressedSize" : 398,
+      "required" : ["jquery.sap.global.js", "sap/gantt/def/SvgDefs.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/def/cal/TimeInterval.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 2515,
+      "compressedSize" : 1266,
+      "required" : ["jquery.sap.global.js", "sap/gantt/def/DefBase.js", "sap/gantt/misc/Format.js", "sap/ui/core/Core.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/def/filter/MorphologyFilter.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 5115,
+      "compressedSize" : 883,
+      "required" : ["jquery.sap.global.js", "sap/gantt/def/DefBase.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/def/gradient/LinearGradient.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 3519,
+      "compressedSize" : 804,
+      "required" : ["jquery.sap.global.js", "sap/gantt/def/DefBase.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/def/gradient/RadialGradient.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 3481,
+      "compressedSize" : 534,
+      "required" : ["jquery.sap.global.js", "sap/gantt/def/DefBase.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/def/gradient/Stop.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 1730,
+      "compressedSize" : 515,
+      "required" : ["jquery.sap.global.js", "sap/gantt/def/DefBase.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/def/pattern/BackSlashPattern.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 5864,
+      "compressedSize" : 1375,
+      "required" : ["jquery.sap.global.js", "sap/gantt/def/pattern/PatternBase.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/def/pattern/PatternBase.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 2604,
+      "compressedSize" : 486,
+      "required" : ["jquery.sap.global.js", "sap/gantt/def/DefBase.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/def/pattern/SlashPattern.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 5858,
+      "compressedSize" : 1384,
+      "required" : ["jquery.sap.global.js", "sap/gantt/def/pattern/PatternBase.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/drawer/AdhocLine.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 4333,
+      "compressedSize" : 2282,
+      "required" : ["jquery.sap.global.js", "sap/gantt/drawer/Drawer.js", "sap/gantt/misc/Format.js", "sap/gantt/misc/Utility.js", "sap/ui/core/Core.js", "sap/ui/thirdparty/d3.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/drawer/CalendarPattern.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 2514,
+      "compressedSize" : 1472,
+      "required" : ["jquery.sap.global.js", "sap/gantt/drawer/Drawer.js", "sap/gantt/misc/Format.js", "sap/gantt/misc/Utility.js", "sap/ui/core/Core.js", "sap/ui/core/format/DateFormat.js", "sap/ui/thirdparty/d3.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/drawer/CursorLine.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 6939,
+      "compressedSize" : 2986,
+      "required" : ["jquery.sap.global.js", "sap/gantt/drawer/Drawer.js", "sap/gantt/misc/Format.js", "sap/gantt/misc/Utility.js", "sap/ui/Device.js", "sap/ui/core/Core.js", "sap/ui/thirdparty/d3.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/drawer/Drawer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 1805,
+      "compressedSize" : 265,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/Object.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/drawer/ExpandedBackground.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 2313,
+      "compressedSize" : 1402,
+      "required" : ["jquery.sap.global.js", "sap/gantt/drawer/Drawer.js", "sap/ui/thirdparty/d3.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/drawer/Legend.js",
+      "size" : 14277,
+      "compressedSize" : 10001,
+      "required" : ["jquery.sap.global.js", "sap/gantt/drawer/Drawer.js", "sap/gantt/misc/Format.js", "sap/ui/thirdparty/d3.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/drawer/NowLine.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 4033,
+      "compressedSize" : 1556,
+      "required" : ["jquery.sap.global.js", "sap/gantt/drawer/Drawer.js", "sap/gantt/misc/Utility.js", "sap/ui/thirdparty/d3.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/drawer/SelectionPanel.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 9770,
+      "compressedSize" : 5313,
+      "required" : ["jquery.sap.global.js", "sap/gantt/drawer/Drawer.js", "sap/gantt/misc/Utility.js", "sap/ui/Device.js", "sap/ui/core/Core.js", "sap/ui/core/IconPool.js", "sap/ui/thirdparty/d3.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/drawer/ShapeCrossRow.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 14111,
+      "compressedSize" : 3978,
+      "required" : ["jquery.sap.global.js", "sap/gantt/drawer/Drawer.js", "sap/gantt/misc/Utility.js", "sap/ui/thirdparty/d3.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/drawer/ShapeInRow.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 24808,
+      "compressedSize" : 12073,
+      "required" : ["jquery.sap.global.js", "sap/gantt/drawer/Drawer.js", "sap/gantt/misc/Format.js", "sap/gantt/misc/Utility.js", "sap/ui/thirdparty/d3.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/drawer/TimePeriodZoomRectangle.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 1214,
+      "compressedSize" : 814,
+      "required" : ["jquery.sap.global.js", "sap/gantt/drawer/Drawer.js", "sap/ui/thirdparty/d3.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/drawer/VerticalLine.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 2613,
+      "compressedSize" : 1282,
+      "required" : ["jquery.sap.global.js", "sap/gantt/drawer/Drawer.js", "sap/gantt/misc/Utility.js", "sap/ui/thirdparty/d3.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/eventHandler/AutoScrollHandler.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 5280,
+      "compressedSize" : 1939,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Core.js", "sap/ui/core/Element.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/eventHandler/MouseWheelHandler.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 9375,
+      "compressedSize" : 3348,
+      "required" : ["jquery.sap.global.js", "sap/ui/Device.js", "sap/ui/base/Object.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/eventHandler/ShapeResizeHandler.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 14384,
+      "compressedSize" : 7048,
+      "required" : ["jquery.sap.global.js", "sap/gantt/drawer/ShapeInRow.js", "sap/gantt/misc/Format.js", "sap/gantt/misc/ShapeManager.js", "sap/gantt/misc/Utility.js", "sap/ui/Device.js", "sap/ui/base/Object.js", "sap/ui/core/Core.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/eventHandler/TimePeriodZoomHandler.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 13796,
+      "compressedSize" : 7848,
+      "required" : ["jquery.sap.global.js", "sap/gantt/config/TimeHorizon.js", "sap/gantt/drawer/TimePeriodZoomRectangle.js", "sap/gantt/misc/Format.js", "sap/gantt/misc/Utility.js", "sap/ui/base/Object.js", "sap/ui/core/Orientation.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/legend/DimensionLegend.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 10747,
+      "compressedSize" : 5270,
+      "required" : ["jquery.sap.global.js", "sap/gantt/drawer/Legend.js", "sap/gantt/legend/LegendBase.js", "sap/ui/core/Control.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/legend/DimensionLegendRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 3385,
+      "compressedSize" : 2058,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/legend/LegendBase.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 5835,
+      "compressedSize" : 2453,
+      "required" : ["jquery.sap.global.js", "sap/gantt/misc/AxisTime.js", "sap/gantt/misc/Format.js", "sap/gantt/misc/Utility.js", "sap/gantt/shape/cal/Calendar.js", "sap/ui/core/Control.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/legend/LegendContainer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 8427,
+      "compressedSize" : 4111,
+      "required" : ["jquery.sap.global.js", "sap/m/List.js", "sap/m/NavContainer.js", "sap/m/Page.js", "sap/m/StandardListItem.js", "sap/ui/core/Control.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/legend/LegendContainerRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 682,
+      "compressedSize" : 438,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/legend/ListLegend.js",
+      "size" : 4085,
+      "compressedSize" : 1980,
+      "required" : ["jquery.sap.global.js", "sap/gantt/drawer/Legend.js", "sap/gantt/legend/LegendBase.js", "sap/m/CheckBox.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/legend/ListLegendRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 3263,
+      "compressedSize" : 1948,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/theming/Parameters.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/library-preload.js",
+      "size" : 408774,
+      "required" : ["jquery.sap.global.js", "sap/m/Button.js", "sap/m/ButtonType.js", "sap/m/CheckBox.js", "sap/m/FlexBox.js", "sap/m/FlexDirection.js", "sap/m/FlexJustifyContent.js", "sap/m/Label.js", "sap/m/List.js", "sap/m/NavContainer.js", "sap/m/OverflowToolbar.js", "sap/m/OverflowToolbarLayoutData.js", "sap/m/OverflowToolbarPriority.js", "sap/m/Page.js", "sap/m/PlacementType.js", "sap/m/Popover.js", "sap/m/SegmentedButton.js", "sap/m/Select.js", "sap/m/Slider.js", "sap/m/StandardListItem.js", "sap/m/ToolbarSpacer.js", "sap/m/ViewSettingsCustomTab.js", "sap/m/ViewSettingsDialog.js", "sap/ui/Device.js", "sap/ui/base/DataType.js", "sap/ui/base/EventProvider.js", "sap/ui/base/ManagedObject.js", "sap/ui/base/Object.js", "sap/ui/core/Control.js", "sap/ui/core/Core.js", "sap/ui/core/Element.js", "sap/ui/core/IconPool.js", "sap/ui/core/Item.js", "sap/ui/core/Locale.js", "sap/ui/core/Orientation.js", "sap/ui/core/ScrollBar.js", "sap/ui/core/format/DateFormat.js", "sap/ui/core/format/NumberFormat.js", "sap/ui/core/library.js", "sap/ui/core/theming/Parameters.js", "sap/ui/layout/Splitter.js", "sap/ui/layout/SplitterLayoutData.js", "sap/ui/model/Context.js", "sap/ui/table/Column.js", "sap/ui/table/Row.js", "sap/ui/table/TreeTable.js", "sap/ui/thirdparty/d3.js"],
+      "includes" : ["sap/gantt/AdhocLine.js", "sap/gantt/GanttChart.js", "sap/gantt/GanttChartBase.js", "sap/gantt/GanttChartContainer.js", "sap/gantt/GanttChartContainerRenderer.js", "sap/gantt/GanttChartRenderer.js", "sap/gantt/GanttChartWithTable.js", "sap/gantt/GanttChartWithTableRenderer.js", "sap/gantt/axistime/AxisTimeStrategyBase.js", "sap/gantt/axistime/FullScreenStrategy.js", "sap/gantt/axistime/ProportionZoomStrategy.js", "sap/gantt/axistime/StepwiseZoomStrategy.js", "sap/gantt/config/ChartScheme.js", "sap/gantt/config/ColumnAttribute.js", "sap/gantt/config/ContainerLayout.js", "sap/gantt/config/ExpandChart.js", "sap/gantt/config/ExpandChartGroup.js", "sap/gantt/config/GanttChartLayout.js", "sap/gantt/config/Hierarchy.js", "sap/gantt/config/HierarchyColumn.js", "sap/gantt/config/LayoutGroup.js", "sap/gantt/config/Locale.js", "sap/gantt/config/Mode.js", "sap/gantt/config/ModeGroup.js", "sap/gantt/config/ObjectType.js", "sap/gantt/config/SettingGroup.js", "sap/gantt/config/SettingItem.js", "sap/gantt/config/Shape.js", "sap/gantt/config/TimeAxis.js", "sap/gantt/config/TimeHorizon.js", "sap/gantt/config/TimeZoomGroup.js", "sap/gantt/config/ToolbarGroup.js", "sap/gantt/config/ToolbarScheme.js", "sap/gantt/control/AssociateContainer.js", "sap/gantt/control/AssociateContainerRenderer.js", "sap/gantt/control/Cell.js", "sap/gantt/control/CellRenderer.js", "sap/gantt/control/Toolbar.js", "sap/gantt/control/ToolbarRenderer.js", "sap/gantt/def/DefBase.js", "sap/gantt/def/SvgDefs.js", "sap/gantt/def/cal/Calendar.js", "sap/gantt/def/cal/CalendarDefs.js", "sap/gantt/def/cal/TimeInterval.js", "sap/gantt/def/filter/MorphologyFilter.js", "sap/gantt/def/gradient/LinearGradient.js", "sap/gantt/def/gradient/RadialGradient.js", "sap/gantt/def/gradient/Stop.js", "sap/gantt/def/pattern/BackSlashPattern.js", "sap/gantt/def/pattern/PatternBase.js", "sap/gantt/def/pattern/SlashPattern.js", "sap/gantt/drawer/AdhocLine.js", "sap/gantt/drawer/CalendarPattern.js", "sap/gantt/drawer/CursorLine.js", "sap/gantt/drawer/Drawer.js", "sap/gantt/drawer/ExpandedBackground.js", "sap/gantt/drawer/Legend.js", "sap/gantt/drawer/NowLine.js", "sap/gantt/drawer/SelectionPanel.js", "sap/gantt/drawer/ShapeCrossRow.js", "sap/gantt/drawer/ShapeInRow.js", "sap/gantt/drawer/TimePeriodZoomRectangle.js", "sap/gantt/drawer/VerticalLine.js", "sap/gantt/eventHandler/AutoScrollHandler.js", "sap/gantt/eventHandler/MouseWheelHandler.js", "sap/gantt/eventHandler/ShapeResizeHandler.js", "sap/gantt/eventHandler/TimePeriodZoomHandler.js", "sap/gantt/legend/DimensionLegend.js", "sap/gantt/legend/DimensionLegendRenderer.js", "sap/gantt/legend/LegendBase.js", "sap/gantt/legend/LegendContainer.js", "sap/gantt/legend/LegendContainerRenderer.js", "sap/gantt/legend/ListLegend.js", "sap/gantt/legend/ListLegendRenderer.js", "sap/gantt/library.js", "sap/gantt/manifest.json", "sap/gantt/misc/AxisOrdinal.js", "sap/gantt/misc/AxisTime.js", "sap/gantt/misc/Format.js", "sap/gantt/misc/RelativeTimeFormatter.js", "sap/gantt/misc/ShapeManager.js", "sap/gantt/misc/ShapeSelectionModel.js", "sap/gantt/misc/Utility.js", "sap/gantt/shape/Circle.js", "sap/gantt/shape/ClipPath.js", "sap/gantt/shape/Definitions.js", "sap/gantt/shape/Group.js", "sap/gantt/shape/Image.js", "sap/gantt/shape/Line.js", "sap/gantt/shape/Path.js", "sap/gantt/shape/Polygon.js", "sap/gantt/shape/Polyline.js", "sap/gantt/shape/Rectangle.js", "sap/gantt/shape/ResizeShadowShape.js", "sap/gantt/shape/SelectedShape.js", "sap/gantt/shape/Shape.js", "sap/gantt/shape/Text.js", "sap/gantt/shape/cal/Calendar.js", "sap/gantt/shape/ext/Chevron.js", "sap/gantt/shape/ext/Cursor.js", "sap/gantt/shape/ext/Diamond.js", "sap/gantt/shape/ext/Iconfont.js", "sap/gantt/shape/ext/Pentangle.js", "sap/gantt/shape/ext/TextRepeat.js", "sap/gantt/shape/ext/Triangle.js", "sap/gantt/shape/ext/rls/Relationship.js", "sap/gantt/shape/ext/rls/SelectedRelationship.js", "sap/gantt/shape/ext/ubc/UbcBorderPath.js", "sap/gantt/shape/ext/ubc/UbcOverCapacityZonePolygon.js", "sap/gantt/shape/ext/ubc/UbcPolygon.js", "sap/gantt/shape/ext/ubc/UbcShortageCapacityPolygon.js", "sap/gantt/shape/ext/ubc/UbcTooltipRectangle.js", "sap/gantt/shape/ext/ubc/UbcUnderCapacityZonePolygon.js", "sap/gantt/shape/ext/ubc/UbcUsedPolygon.js", "sap/gantt/shape/ext/ubc/UtilizationBarChart.js", "sap/gantt/shape/ext/ulc/UlcBorderPath.js", "sap/gantt/shape/ext/ulc/UlcClipPath.js", "sap/gantt/shape/ext/ulc/UlcClipingPath.js", "sap/gantt/shape/ext/ulc/UlcDimension.js", "sap/gantt/shape/ext/ulc/UlcMiddleLine.js", "sap/gantt/shape/ext/ulc/UlcOverCapacityZoneRectangle.js", "sap/gantt/shape/ext/ulc/UlcOverClipRectangle.js", "sap/gantt/shape/ext/ulc/UlcRectangle.js", "sap/gantt/shape/ext/ulc/UlcTooltipRectangle.js", "sap/gantt/shape/ext/ulc/UlcUnderClipRectangle.js", "sap/gantt/shape/ext/ulc/UtilizationLineChart.js"]
+    },
+    {
+      "name" : "sap/gantt/library-preload.json",
+      "size" : 0,
+      "required" : ["jquery.sap.global.js", "sap/m/Button.js", "sap/m/ButtonType.js", "sap/m/CheckBox.js", "sap/m/FlexBox.js", "sap/m/FlexDirection.js", "sap/m/FlexJustifyContent.js", "sap/m/Label.js", "sap/m/List.js", "sap/m/NavContainer.js", "sap/m/OverflowToolbar.js", "sap/m/OverflowToolbarLayoutData.js", "sap/m/OverflowToolbarPriority.js", "sap/m/Page.js", "sap/m/PlacementType.js", "sap/m/Popover.js", "sap/m/SegmentedButton.js", "sap/m/Select.js", "sap/m/Slider.js", "sap/m/StandardListItem.js", "sap/m/ToolbarSpacer.js", "sap/m/ViewSettingsCustomTab.js", "sap/m/ViewSettingsDialog.js", "sap/m/library-preload.json", "sap/ui/Device.js", "sap/ui/base/DataType.js", "sap/ui/base/EventProvider.js", "sap/ui/base/ManagedObject.js", "sap/ui/base/Object.js", "sap/ui/core/Control.js", "sap/ui/core/Core.js", "sap/ui/core/Element.js", "sap/ui/core/IconPool.js", "sap/ui/core/Item.js", "sap/ui/core/Locale.js", "sap/ui/core/Orientation.js", "sap/ui/core/ScrollBar.js", "sap/ui/core/format/DateFormat.js", "sap/ui/core/format/NumberFormat.js", "sap/ui/core/library-preload.json", "sap/ui/core/library.js", "sap/ui/core/theming/Parameters.js", "sap/ui/layout/Splitter.js", "sap/ui/layout/SplitterLayoutData.js", "sap/ui/layout/library-preload.json", "sap/ui/model/Context.js", "sap/ui/table/Column.js", "sap/ui/table/Row.js", "sap/ui/table/TreeTable.js", "sap/ui/table/library-preload.json", "sap/ui/thirdparty/d3.js"],
+      "includes" : ["sap/gantt/AdhocLine.js", "sap/gantt/GanttChart.js", "sap/gantt/GanttChartBase.js", "sap/gantt/GanttChartContainer.js", "sap/gantt/GanttChartContainerRenderer.js", "sap/gantt/GanttChartRenderer.js", "sap/gantt/GanttChartWithTable.js", "sap/gantt/GanttChartWithTableRenderer.js", "sap/gantt/axistime/AxisTimeStrategyBase.js", "sap/gantt/axistime/FullScreenStrategy.js", "sap/gantt/axistime/ProportionZoomStrategy.js", "sap/gantt/axistime/StepwiseZoomStrategy.js", "sap/gantt/config/ChartScheme.js", "sap/gantt/config/ColumnAttribute.js", "sap/gantt/config/ContainerLayout.js", "sap/gantt/config/ExpandChart.js", "sap/gantt/config/ExpandChartGroup.js", "sap/gantt/config/GanttChartLayout.js", "sap/gantt/config/Hierarchy.js", "sap/gantt/config/HierarchyColumn.js", "sap/gantt/config/LayoutGroup.js", "sap/gantt/config/Locale.js", "sap/gantt/config/Mode.js", "sap/gantt/config/ModeGroup.js", "sap/gantt/config/ObjectType.js", "sap/gantt/config/SettingGroup.js", "sap/gantt/config/SettingItem.js", "sap/gantt/config/Shape.js", "sap/gantt/config/TimeAxis.js", "sap/gantt/config/TimeHorizon.js", "sap/gantt/config/TimeZoomGroup.js", "sap/gantt/config/ToolbarGroup.js", "sap/gantt/config/ToolbarScheme.js", "sap/gantt/control/AssociateContainer.js", "sap/gantt/control/AssociateContainerRenderer.js", "sap/gantt/control/Cell.js", "sap/gantt/control/CellRenderer.js", "sap/gantt/control/Toolbar.js", "sap/gantt/control/ToolbarRenderer.js", "sap/gantt/def/DefBase.js", "sap/gantt/def/SvgDefs.js", "sap/gantt/def/cal/Calendar.js", "sap/gantt/def/cal/CalendarDefs.js", "sap/gantt/def/cal/TimeInterval.js", "sap/gantt/def/filter/MorphologyFilter.js", "sap/gantt/def/gradient/LinearGradient.js", "sap/gantt/def/gradient/RadialGradient.js", "sap/gantt/def/gradient/Stop.js", "sap/gantt/def/pattern/BackSlashPattern.js", "sap/gantt/def/pattern/PatternBase.js", "sap/gantt/def/pattern/SlashPattern.js", "sap/gantt/drawer/AdhocLine.js", "sap/gantt/drawer/CalendarPattern.js", "sap/gantt/drawer/CursorLine.js", "sap/gantt/drawer/Drawer.js", "sap/gantt/drawer/ExpandedBackground.js", "sap/gantt/drawer/Legend.js", "sap/gantt/drawer/NowLine.js", "sap/gantt/drawer/SelectionPanel.js", "sap/gantt/drawer/ShapeCrossRow.js", "sap/gantt/drawer/ShapeInRow.js", "sap/gantt/drawer/TimePeriodZoomRectangle.js", "sap/gantt/drawer/VerticalLine.js", "sap/gantt/eventHandler/AutoScrollHandler.js", "sap/gantt/eventHandler/MouseWheelHandler.js", "sap/gantt/eventHandler/ShapeResizeHandler.js", "sap/gantt/eventHandler/TimePeriodZoomHandler.js", "sap/gantt/legend/DimensionLegend.js", "sap/gantt/legend/DimensionLegendRenderer.js", "sap/gantt/legend/LegendBase.js", "sap/gantt/legend/LegendContainer.js", "sap/gantt/legend/LegendContainerRenderer.js", "sap/gantt/legend/ListLegend.js", "sap/gantt/legend/ListLegendRenderer.js", "sap/gantt/library.js", "sap/gantt/manifest.json", "sap/gantt/misc/AxisOrdinal.js", "sap/gantt/misc/AxisTime.js", "sap/gantt/misc/Format.js", "sap/gantt/misc/RelativeTimeFormatter.js", "sap/gantt/misc/ShapeManager.js", "sap/gantt/misc/ShapeSelectionModel.js", "sap/gantt/misc/Utility.js", "sap/gantt/shape/Circle.js", "sap/gantt/shape/ClipPath.js", "sap/gantt/shape/Definitions.js", "sap/gantt/shape/Group.js", "sap/gantt/shape/Image.js", "sap/gantt/shape/Line.js", "sap/gantt/shape/Path.js", "sap/gantt/shape/Polygon.js", "sap/gantt/shape/Polyline.js", "sap/gantt/shape/Rectangle.js", "sap/gantt/shape/ResizeShadowShape.js", "sap/gantt/shape/SelectedShape.js", "sap/gantt/shape/Shape.js", "sap/gantt/shape/Text.js", "sap/gantt/shape/cal/Calendar.js", "sap/gantt/shape/ext/Chevron.js", "sap/gantt/shape/ext/Cursor.js", "sap/gantt/shape/ext/Diamond.js", "sap/gantt/shape/ext/Iconfont.js", "sap/gantt/shape/ext/Pentangle.js", "sap/gantt/shape/ext/TextRepeat.js", "sap/gantt/shape/ext/Triangle.js", "sap/gantt/shape/ext/rls/Relationship.js", "sap/gantt/shape/ext/rls/SelectedRelationship.js", "sap/gantt/shape/ext/ubc/UbcBorderPath.js", "sap/gantt/shape/ext/ubc/UbcOverCapacityZonePolygon.js", "sap/gantt/shape/ext/ubc/UbcPolygon.js", "sap/gantt/shape/ext/ubc/UbcShortageCapacityPolygon.js", "sap/gantt/shape/ext/ubc/UbcTooltipRectangle.js", "sap/gantt/shape/ext/ubc/UbcUnderCapacityZonePolygon.js", "sap/gantt/shape/ext/ubc/UbcUsedPolygon.js", "sap/gantt/shape/ext/ubc/UtilizationBarChart.js", "sap/gantt/shape/ext/ulc/UlcBorderPath.js", "sap/gantt/shape/ext/ulc/UlcClipPath.js", "sap/gantt/shape/ext/ulc/UlcClipingPath.js", "sap/gantt/shape/ext/ulc/UlcDimension.js", "sap/gantt/shape/ext/ulc/UlcMiddleLine.js", "sap/gantt/shape/ext/ulc/UlcOverCapacityZoneRectangle.js", "sap/gantt/shape/ext/ulc/UlcOverClipRectangle.js", "sap/gantt/shape/ext/ulc/UlcRectangle.js", "sap/gantt/shape/ext/ulc/UlcTooltipRectangle.js", "sap/gantt/shape/ext/ulc/UlcUnderClipRectangle.js", "sap/gantt/shape/ext/ulc/UtilizationLineChart.js"]
+    },
+    {
+      "name" : "sap/gantt/library.js",
+      "description" : "Initialization Code and shared classes of library sap.gantt.",
+      "size" : 43437,
+      "compressedSize" : 15533,
+      "required" : ["jquery.sap.global.js", "sap/gantt/misc/Utility.js", "sap/ui/base/DataType.js", "sap/ui/core/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/manifest.json",
+      "size" : 1011,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle.properties",
+      "size" : 5147,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_ar.properties",
+      "size" : 8122,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_bg.properties",
+      "size" : 10370,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_ca.properties",
+      "size" : 5476,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_cs.properties",
+      "size" : 5553,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_da.properties",
+      "size" : 5103,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_de.properties",
+      "size" : 5256,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_el.properties",
+      "size" : 10680,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_en.properties",
+      "size" : 5477,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_es.properties",
+      "size" : 5407,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_et.properties",
+      "size" : 5128,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_fi.properties",
+      "size" : 5477,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_fr.properties",
+      "size" : 5389,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_hi.properties",
+      "size" : 8978,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_hr.properties",
+      "size" : 5192,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_hu.properties",
+      "size" : 5703,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_it.properties",
+      "size" : 5301,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_iw.properties",
+      "size" : 7918,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_ja.properties",
+      "size" : 6517,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_kk.properties",
+      "size" : 9776,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_ko.properties",
+      "size" : 6006,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_lt.properties",
+      "size" : 5503,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_lv.properties",
+      "size" : 5785,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_ms.properties",
+      "size" : 5091,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_nl.properties",
+      "size" : 5117,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_no.properties",
+      "size" : 5070,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_pl.properties",
+      "size" : 5423,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_pt.properties",
+      "size" : 5345,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_ro.properties",
+      "size" : 5457,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_ru.properties",
+      "size" : 10092,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_sh.properties",
+      "size" : 5226,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_sk.properties",
+      "size" : 5596,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_sl.properties",
+      "size" : 5223,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_sv.properties",
+      "size" : 5268,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_th.properties",
+      "size" : 9988,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_tr.properties",
+      "size" : 5642,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_uk.properties",
+      "size" : 9705,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_vi.properties",
+      "size" : 6563,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_zh_CN.properties",
+      "size" : 5772,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/messagebundle_zh_TW.properties",
+      "size" : 5552,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/misc/AxisOrdinal.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 12504,
+      "compressedSize" : 4757,
+      "required" : ["jquery.sap.global.js", "sap/gantt/misc/Utility.js", "sap/ui/thirdparty/d3.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/misc/AxisTime.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 25722,
+      "compressedSize" : 10988,
+      "required" : ["jquery.sap.global.js", "sap/gantt/axistime/ProportionZoomStrategy.js", "sap/gantt/misc/Format.js", "sap/gantt/misc/Utility.js", "sap/ui/base/Object.js", "sap/ui/core/Core.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/misc/Format.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 6932,
+      "compressedSize" : 2364,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/format/DateFormat.js", "sap/ui/thirdparty/d3.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/misc/RelativeTimeFormatter.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 1212,
+      "compressedSize" : 480,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/misc/ShapeManager.js",
+      "description" : "Provides class sap.ui.model.SelectionModel",
+      "size" : 17517,
+      "compressedSize" : 6607,
+      "required" : ["jquery.sap.global.js", "sap/gantt/misc/Utility.js", "sap/ui/base/EventProvider.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/misc/ShapeSelectionModel.js",
+      "description" : "Provides class sap.gantt.ShapeSelectionModel",
+      "size" : 19917,
+      "compressedSize" : 7396,
+      "required" : ["jquery.sap.global.js", "sap/gantt/misc/Utility.js", "sap/ui/base/ManagedObject.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/misc/Utility.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 15919,
+      "compressedSize" : 5205,
+      "required" : ["jquery.sap.global.js", "sap/gantt/config/TimeHorizon.js", "sap/gantt/misc/Format.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/Circle.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 5040,
+      "compressedSize" : 1139,
+      "required" : ["jquery.sap.global.js", "sap/gantt/shape/Shape.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/ClipPath.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 3587,
+      "compressedSize" : 395,
+      "required" : ["jquery.sap.global.js", "sap/gantt/shape/Shape.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/Definitions.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 3418,
+      "compressedSize" : 770,
+      "required" : ["jquery.sap.global.js", "sap/gantt/shape/Shape.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/Group.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 3077,
+      "compressedSize" : 583,
+      "required" : ["jquery.sap.global.js", "sap/gantt/shape/Shape.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/Image.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 6041,
+      "compressedSize" : 1510,
+      "required" : ["jquery.sap.global.js", "sap/gantt/misc/Format.js", "sap/gantt/misc/Utility.js", "sap/gantt/shape/Shape.js", "sap/ui/core/Core.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/Line.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 7173,
+      "compressedSize" : 1599,
+      "required" : ["jquery.sap.global.js", "sap/gantt/misc/Format.js", "sap/gantt/misc/Utility.js", "sap/gantt/shape/Shape.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/Path.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 8428,
+      "compressedSize" : 1677,
+      "required" : ["jquery.sap.global.js", "sap/gantt/misc/Utility.js", "sap/gantt/shape/Shape.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/Polygon.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 5977,
+      "compressedSize" : 1365,
+      "required" : ["jquery.sap.global.js", "sap/gantt/misc/Utility.js", "sap/gantt/shape/Shape.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/Polyline.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 6389,
+      "compressedSize" : 1301,
+      "required" : ["jquery.sap.global.js", "sap/gantt/misc/Utility.js", "sap/gantt/shape/Shape.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/Rectangle.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 9378,
+      "compressedSize" : 2341,
+      "required" : ["jquery.sap.global.js", "sap/gantt/misc/Format.js", "sap/gantt/misc/Utility.js", "sap/gantt/shape/Shape.js", "sap/ui/core/Core.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/ResizeShadowShape.js",
+      "description" : "Provides control sap.gantt.shape.ResizeShadowShape.",
+      "size" : 6232,
+      "compressedSize" : 3174,
+      "required" : ["jquery.sap.global.js", "sap/gantt/misc/Format.js", "sap/gantt/misc/Utility.js", "sap/gantt/shape/Path.js", "sap/ui/core/Core.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/SelectedShape.js",
+      "description" : "Provides control sap.gantt.shape.SelectedShape.",
+      "size" : 11227,
+      "compressedSize" : 3341,
+      "required" : ["jquery.sap.global.js", "sap/gantt/misc/Format.js", "sap/gantt/misc/Utility.js", "sap/gantt/shape/Path.js", "sap/ui/core/Core.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/Shape.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 34124,
+      "compressedSize" : 8236,
+      "required" : ["jquery.sap.global.js", "sap/gantt/misc/Format.js", "sap/gantt/misc/Utility.js", "sap/ui/core/Core.js", "sap/ui/core/Element.js", "sap/ui/core/format/NumberFormat.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/Text.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 10296,
+      "compressedSize" : 2045,
+      "required" : ["jquery.sap.global.js", "sap/gantt/misc/Format.js", "sap/gantt/misc/Utility.js", "sap/gantt/shape/Shape.js", "sap/ui/core/Core.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/cal/Calendar.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 6875,
+      "compressedSize" : 1746,
+      "required" : ["jquery.sap.global.js", "sap/gantt/shape/Rectangle.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/ext/Chevron.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 8964,
+      "compressedSize" : 2270,
+      "required" : ["jquery.sap.global.js", "sap/gantt/misc/Format.js", "sap/gantt/misc/Utility.js", "sap/gantt/shape/Path.js", "sap/ui/core/Core.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/ext/Cursor.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 7041,
+      "compressedSize" : 1398,
+      "required" : ["jquery.sap.global.js", "sap/gantt/shape/Path.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/ext/Diamond.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 6452,
+      "compressedSize" : 1270,
+      "required" : ["jquery.sap.global.js", "sap/gantt/shape/Path.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/ext/Iconfont.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 3760,
+      "compressedSize" : 1095,
+      "required" : ["jquery.sap.global.js", "sap/gantt/misc/Format.js", "sap/gantt/misc/Utility.js", "sap/gantt/shape/Text.js", "sap/ui/core/Core.js", "sap/ui/core/IconPool.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/ext/Pentangle.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 7079,
+      "compressedSize" : 1733,
+      "required" : ["jquery.sap.global.js", "sap/gantt/misc/Utility.js", "sap/gantt/shape/Polygon.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/ext/TextRepeat.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 9023,
+      "compressedSize" : 2646,
+      "required" : ["jquery.sap.global.js", "sap/gantt/misc/Format.js", "sap/gantt/shape/Definitions.js", "sap/ui/core/Core.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/ext/Triangle.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 7230,
+      "compressedSize" : 1467,
+      "required" : ["jquery.sap.global.js", "sap/gantt/shape/Path.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/ext/rls/Relationship.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 25307,
+      "compressedSize" : 9477,
+      "required" : ["jquery.sap.global.js", "sap/gantt/shape/Path.js", "sap/ui/core/Core.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/ext/rls/SelectedRelationship.js",
+      "description" : "Provides control sap.gantt.shape.ext.rls.SelectedRelationship.",
+      "size" : 2565,
+      "compressedSize" : 493,
+      "required" : ["jquery.sap.global.js", "sap/gantt/shape/ext/rls/Relationship.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/ext/ubc/UbcBorderPath.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 8751,
+      "compressedSize" : 2365,
+      "required" : ["jquery.sap.global.js", "sap/gantt/misc/Format.js", "sap/gantt/misc/Utility.js", "sap/gantt/shape/Path.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/ext/ubc/UbcOverCapacityZonePolygon.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 7125,
+      "compressedSize" : 1365,
+      "required" : ["jquery.sap.global.js", "sap/gantt/misc/Utility.js", "sap/gantt/shape/ext/ubc/UbcPolygon.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/ext/ubc/UbcPolygon.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 2887,
+      "compressedSize" : 1028,
+      "required" : ["jquery.sap.global.js", "sap/gantt/misc/Utility.js", "sap/gantt/shape/Polygon.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/ext/ubc/UbcShortageCapacityPolygon.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 8054,
+      "compressedSize" : 1632,
+      "required" : ["jquery.sap.global.js", "sap/gantt/misc/Format.js", "sap/gantt/misc/Utility.js", "sap/gantt/shape/ext/ubc/UbcPolygon.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/ext/ubc/UbcTooltipRectangle.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 11472,
+      "compressedSize" : 2191,
+      "required" : ["jquery.sap.global.js", "sap/gantt/misc/Format.js", "sap/gantt/misc/Utility.js", "sap/gantt/shape/Rectangle.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/ext/ubc/UbcUnderCapacityZonePolygon.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 6196,
+      "compressedSize" : 1276,
+      "required" : ["jquery.sap.global.js", "sap/gantt/misc/Format.js", "sap/gantt/misc/Utility.js", "sap/gantt/shape/ext/ubc/UbcPolygon.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/ext/ubc/UbcUsedPolygon.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 6232,
+      "compressedSize" : 1312,
+      "required" : ["jquery.sap.global.js", "sap/gantt/misc/Format.js", "sap/gantt/misc/Utility.js", "sap/gantt/shape/ext/ubc/UbcPolygon.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/ext/ubc/UtilizationBarChart.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 10028,
+      "compressedSize" : 1663,
+      "required" : ["jquery.sap.global.js", "sap/gantt/misc/Format.js", "sap/gantt/shape/Group.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/ext/ulc/UlcBorderPath.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 6107,
+      "compressedSize" : 1531,
+      "required" : ["jquery.sap.global.js", "sap/gantt/misc/Format.js", "sap/gantt/misc/Utility.js", "sap/gantt/shape/Path.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/ext/ulc/UlcClipPath.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 1779,
+      "compressedSize" : 498,
+      "required" : ["jquery.sap.global.js", "sap/gantt/shape/ClipPath.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/ext/ulc/UlcClipingPath.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 2989,
+      "compressedSize" : 1121,
+      "required" : ["jquery.sap.global.js", "sap/gantt/misc/Format.js", "sap/gantt/misc/Utility.js", "sap/gantt/shape/Path.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/ext/ulc/UlcDimension.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 1772,
+      "compressedSize" : 255,
+      "required" : ["jquery.sap.global.js", "sap/gantt/shape/Group.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/ext/ulc/UlcMiddleLine.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 8345,
+      "compressedSize" : 1575,
+      "required" : ["jquery.sap.global.js", "sap/gantt/shape/Line.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/ext/ulc/UlcOverCapacityZoneRectangle.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 5996,
+      "compressedSize" : 1064,
+      "required" : ["jquery.sap.global.js", "sap/gantt/shape/ext/ulc/UlcRectangle.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/ext/ulc/UlcOverClipRectangle.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 5026,
+      "compressedSize" : 662,
+      "required" : ["jquery.sap.global.js", "sap/gantt/shape/ext/ulc/UlcRectangle.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/ext/ulc/UlcRectangle.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 4997,
+      "compressedSize" : 1127,
+      "required" : ["jquery.sap.global.js", "sap/gantt/shape/Rectangle.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/ext/ulc/UlcTooltipRectangle.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 9174,
+      "compressedSize" : 2001,
+      "required" : ["jquery.sap.global.js", "sap/gantt/misc/Format.js", "sap/gantt/misc/Utility.js", "sap/gantt/shape/ext/ulc/UlcRectangle.js", "sap/ui/core/Core.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/ext/ulc/UlcUnderClipRectangle.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 7638,
+      "compressedSize" : 1498,
+      "required" : ["jquery.sap.global.js", "sap/gantt/shape/ext/ulc/UlcRectangle.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/gantt/shape/ext/ulc/UtilizationLineChart.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n\t\t(c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 9068,
+      "compressedSize" : 428,
+      "required" : ["jquery.sap.global.js", "sap/gantt/shape/Group.js"],
+      "includes" : []
+    }
+  ]
+}

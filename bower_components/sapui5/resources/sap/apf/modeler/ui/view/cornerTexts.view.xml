@@ -1,0 +1,74 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core"
+	visible="true" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout"
+	xmlns="sap.m" class="sapUiSizeCompact">
+	<f:SimpleForm maxContainerCols="1" editable="false"
+		labelMinWidth="300" layout="ResponsiveGridLayout" labelSpanL="4"
+		labelSpanM="4" labelSpanS="4" emptySpanL="2" emptySpanM="2"
+		emptySpanS="2" columnsL="1" columnsM="1">
+		<f:content>
+			<core:Title id="idThumbnailTexts" level="H4" />
+			<Input xmlns="sap.m" id="idLeftUpper" editable="true"
+				change="handleChangeForCornerText" width="60%" showSuggestion="true"
+				suggestionItems="{/Objects}" suggest="handleSuggestions">
+				<core:Item key="{key}" text="{name}" />
+				<customData>
+					<core:CustomData key="setLeftUpperCornerTextKey"
+						value="setLeftUpperCornerTextKey" />
+					<core:CustomData key="getLeftUpperCornerTextKey"
+						value="getLeftUpperCornerTextKey" />
+				</customData>
+				<layoutData>
+					<GridData xmlns="sap.ui.layout" span="L6 M6 S6" />
+				</layoutData>
+			</Input>
+			<Input xmlns="sap.m" id="idRightUpper" editable="true" width="60%"
+				change="handleChangeForCornerText" showSuggestion="true"
+				suggestionItems="{/Objects}" suggest="handleSuggestions">
+				<core:Item key="{key}" text="{name}" />
+				<customData>
+					<core:CustomData key="setRightUpperCornerTextKey"
+						value="setRightUpperCornerTextKey" />
+					<core:CustomData key="getRightUpperCornerTextKey"
+						value="getRightUpperCornerTextKey" />
+				</customData>
+				<layoutData>
+					<GridData xmlns="sap.ui.layout" span="L6 M6 S6" />
+				</layoutData>
+			</Input>
+			<Icon xmlns="sap.ui.core" id="idChartIcon" color="black"
+				visible="true" decorative="true" size="30px">
+				<layoutData>
+					<GridData xmlns="sap.ui.layout" span="L12 M12 S12" />
+				</layoutData>
+			</Icon>
+			<Input xmlns="sap.m" id="idLeftLower" editable="true"
+				change="handleChangeForCornerText" width="60%" showSuggestion="true"
+				suggestionItems="{/Objects}" suggest="handleSuggestions">
+				<core:Item key="{key}" text="{name}" />
+				<customData>
+					<core:CustomData key="setLeftLowerCornerTextKey"
+						value="setLeftLowerCornerTextKey" />
+					<core:CustomData key="getLeftLowerCornerTextKey"
+						value="getLeftLowerCornerTextKey" />
+				</customData>
+				<layoutData>
+					<GridData xmlns="sap.ui.layout" span="L6 M6 S6" />
+				</layoutData>
+			</Input>
+			<Input xmlns="sap.m" id="idRightLower" editable="true"
+				change="handleChangeForCornerText" width="60%" showSuggestion="true"
+				suggestionItems="{/Objects}" suggest="handleSuggestions">
+				<core:Item key="{key}" text="{name}" />
+				<customData>
+					<core:CustomData key="setRightLowerCornerTextKey"
+						value="setRightLowerCornerTextKey" />
+					<core:CustomData key="getRightLowerCornerTextKey"
+						value="getRightLowerCornerTextKey" />
+				</customData>
+				<layoutData>
+					<GridData xmlns="sap.ui.layout" span="L6 M6 S6" />
+				</layoutData>
+			</Input>
+		</f:content>
+	</f:SimpleForm>
+</mvc:View>

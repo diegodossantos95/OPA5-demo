@@ -1,0 +1,75 @@
+<mvc:View controllerName="sap.apf.modeler.ui.controller.previewContent"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" class="sapUiSizeCompact">
+	<Dialog xmlns="sap.m" type="Standard" id="idPreviewContentDialog"
+		initialFocus="idPreviewContentDialog" class="previewDialogStyle">
+		<VBox xmlns="sap.m" id="idThumbnail" height="" width="33%"
+			displayInline="false" direction="Column" fitContainer="false"
+			renderType="Div" justifyContent="Center" alignItems="Center"
+			class="previewThumbnailHolder">
+			<items>
+				<VBox xmlns="sap.m" id="idChartLayout" visible="true"
+					displayInline="false" direction="Column" fitContainer="false"
+					renderType="Div" justifyContent="Start" alignItems="Stretch"
+					class="thumbnailChartLayout">
+					<items>
+						<VBox xmlns="sap.m" id="idThumbnailLayout" visible="true"
+							displayInline="false" direction="Column" fitContainer="false"
+							renderType="Div" justifyContent="Start" alignItems="Stretch"
+							class="previewThumbnailLayout">
+							<items>
+								<FlexBox xmlns="sap.m" id="idTopLayout" visible="true"
+									displayInline="false" direction="Row" fitContainer="false"
+									renderType="Div" justifyContent="SpaceBetween" alignItems="Start"
+									class="previewThumbnailTopLayout">
+									<items>
+										<Text xmlns="sap.m" id="idLeftUpperCornerText"
+											textDirection="Inherit" visible="true" wrapping="true"
+											textAlign="Left" maxLines="2" class="previewThumbnailText">
+										</Text>
+										<Text xmlns="sap.m" id="idRightUpperCornerText"
+											textDirection="Inherit" visible="true" wrapping="true"
+											textAlign="Right" maxLines="2" class="previewThumbnailText">
+										</Text>
+									</items> <!-- sap.ui.core.Control -->
+								</FlexBox>
+								<VBox xmlns="sap.m" id="idThumbnailChartLayout" height="80px"
+									displayInline="false" direction="Column" fitContainer="false"
+									renderType="Div" justifyContent="Center" alignItems="Center">
+									<items></items> <!-- sap.ui.core.Control -->
+								</VBox>
+								<FlexBox xmlns="sap.m" id="idBottomLayout" visible="true"
+									displayInline="false" direction="Row" fitContainer="false"
+									renderType="Div" justifyContent="SpaceBetween" alignItems="Start"
+									class="previewThumbnailBottomLayout">
+									<items>
+										<Text xmlns="sap.m" id="idLeftLowerCornerText"
+											textDirection="Inherit" visible="true" wrapping="true"
+											textAlign="Left" maxLines="2" class="previewThumbnailText">
+										</Text>
+										<Text xmlns="sap.m" id="idRightLowerCornerText"
+											textDirection="Inherit" visible="true" wrapping="true"
+											textAlign="Right" maxLines="2" class="previewThumbnailText">
+										</Text>
+									</items> <!-- sap.ui.core.Control -->
+								</FlexBox>
+							</items> <!-- sap.ui.core.Control -->
+						</VBox>
+						<Text xmlns="sap.m" id="idStepTitleText" textDirection="Inherit"
+							visible="true" wrapping="true" textAlign="Center" width="200px">
+						</Text>
+					</items> <!-- sap.ui.core.Control -->
+				</VBox>
+			</items> <!-- sap.ui.core.Control -->
+		</VBox>
+		<VBox xmlns="sap.m" id="idMainChart" width="67%" displayInline="false"
+			direction="Column" fitContainer="false" renderType="Div"
+			justifyContent="Center" alignItems="Center"
+			class="previewTable previewMainChartHolder">
+			<items></items> <!-- sap.ui.core.Control -->
+		</VBox>
+		<endButton>
+			<Button xmlns="sap.m" id="idCloseButtonDialog" press="handleCloseButtonOfDialog">
+			</Button>
+		</endButton>
+	</Dialog>
+</mvc:View>

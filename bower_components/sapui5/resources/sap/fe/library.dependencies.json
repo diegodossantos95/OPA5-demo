@@ -1,0 +1,723 @@
+{
+  "modules" : [
+    {
+      "name" : "sap/fe/Action.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n        (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 882,
+      "compressedSize" : 613,
+      "required" : ["jquery.sap.global.js", "sap/m/Button.js", "sap/m/ButtonType.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/AppComponent.js",
+      "description" : "----------------------------------------------------------------------------------",
+      "size" : 13638,
+      "compressedSize" : 4689,
+      "required" : ["jquery.sap.global.js", "sap/fe/controller/NavigationController.js", "sap/fe/core/BusyHelper.js", "sap/fe/core/TemplateAssembler.js", "sap/fe/core/internal/testableHelper.js", "sap/fe/model/DraftModel.js", "sap/m/NavContainer.js", "sap/ui/core/ComponentContainer.js", "sap/ui/core/UIComponent.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/FilterBar.designtime.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n        (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 231,
+      "compressedSize" : 197,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/FilterBar.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n        (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 5808,
+      "compressedSize" : 3455,
+      "required" : ["jquery.sap.global.js", "sap/fe/controls/_FilterBar/FilterBarAnnotationHelper.js", "sap/fe/controls/_FilterBar/FilterBarController.js", "sap/ui/Device.js", "sap/ui/base/ManagedObject.js", "sap/ui/core/XMLComposite.js", "sap/ui/model/odata/v4/AnnotationHelper.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/Table.designtime.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n        (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 845,
+      "compressedSize" : 527,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/Table.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n        (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 4772,
+      "compressedSize" : 3120,
+      "required" : ["jquery.sap.global.js", "sap/fe/controls/_Field/FieldAnnotationHelper.js", "sap/fe/controls/_Field/FieldController.js", "sap/fe/controls/_Table/GridTable/GridTableController.js", "sap/fe/controls/_Table/ResponsiveTable/ResponsiveTableController.js", "sap/fe/controls/_Table/TableAnnotationHelper.js", "sap/fe/core/AnnotationHelper.js", "sap/ui/core/XMLComposite.js", "sap/ui/model/odata/v4/AnnotationHelper.js", "sap/ui/table/Table.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controller/ActionController.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n        (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 3450,
+      "compressedSize" : 1477,
+      "required" : ["jquery.sap.global.js", "sap/m/MessageBox.js", "sap/m/MessageToast.js", "sap/ui/base/Object.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controller/NavigationController.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n        (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 1805,
+      "compressedSize" : 911,
+      "required" : ["jquery.sap.global.js", "sap/m/Link.js", "sap/m/MessageBox.js", "sap/m/MessagePage.js", "sap/m/MessageToast.js", "sap/ui/base/Object.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_Field/FieldAnnotationHelper.js",
+      "description" : "This class contains annotation helpers that are needed for the sap.fe.controls._Field.",
+      "size" : 5704,
+      "compressedSize" : 3257,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_Field/FieldController.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n        (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 3087,
+      "compressedSize" : 1829,
+      "required" : ["jquery.sap.global.js", "sap/fe/Action.js", "sap/ui/base/Object.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_Field/Fragments/ContactDetails.fragment.xml",
+      "size" : 3311,
+      "required" : ["sap/m/QuickView.js", "sap/m/QuickViewGroup.js", "sap/m/QuickViewGroupElement.js", "sap/m/QuickViewPage.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_Field/Fragments/DataField.fragment.xml",
+      "size" : 6796,
+      "required" : ["sap/m/HBox.js", "sap/m/Link.js", "sap/m/ObjectIdentifier.js", "sap/m/ObjectMarker.js", "sap/m/ObjectNumber.js", "sap/m/ObjectStatus.js", "sap/m/VBox.js", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js", "sap/ui/mdc/experimental/Field.js", "sap/ui/unified/Currency.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_Field/Fragments/DataFieldForAction.fragment.xml",
+      "size" : 405,
+      "required" : ["sap/fe/Action.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_Field/Fragments/DataFieldForAnnotation.fragment.xml",
+      "size" : 1910,
+      "required" : ["sap/fe/controls/_Field/Fragments/ContactDetails.fragment.xml", "sap/m/Link.js", "sap/m/ProgressIndicator.js", "sap/m/RatingIndicator.js", "sap/m/VBox.js", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_Field/Fragments/FieldContent.fragment.xml",
+      "size" : 2293,
+      "required" : ["sap/fe/controls/_Field/Fragments/DataField.fragment.xml", "sap/fe/controls/_Field/Fragments/DataFieldForAction.fragment.xml", "sap/fe/controls/_Field/Fragments/DataFieldForAnnotation.fragment.xml", "sap/m/Text.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_FilterBar/FilterBar.control.xml",
+      "size" : 2920,
+      "required" : ["sap/fe/controls/_FilterBar/FilterItem.fragment.xml", "sap/m/Button.js", "sap/m/ComboBox.js", "sap/m/Label.js", "sap/m/SearchField.js", "sap/m/VBox.js", "sap/ui/core/Fragment.js", "sap/ui/core/Item.js", "sap/ui/core/XMLComposite.js", "sap/ui/layout/AlignedFlowLayout.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_FilterBar/FilterBarAnnotationHelper.js",
+      "description" : "This class contains annotation helpers that are needed for the sap.fe.controls._Table.",
+      "size" : 2052,
+      "compressedSize" : 1312,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_FilterBar/FilterBarController.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n        (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 15705,
+      "compressedSize" : 7942,
+      "required" : ["jquery.sap.global.js", "sap/m/Bar.js", "sap/m/Button.js", "sap/m/Dialog.js", "sap/m/Label.js", "sap/m/SearchField.js", "sap/ui/base/Object.js", "sap/ui/mdc/FilterField.js", "sap/ui/mdc/FixedValueListProvider.js", "sap/ui/mdc/ODataSuggestProvider.js", "sap/ui/mdc/OperatorSuggestProvider.js", "sap/ui/model/json/JSONModel.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_FilterBar/FilterItem.fragment.xml",
+      "size" : 2605,
+      "required" : ["sap/m/Label.js", "sap/m/VBox.js", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js", "sap/ui/mdc/FilterField.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_Fragments/DraftInfoPopover.fragment.xml",
+      "size" : 2205,
+      "required" : ["sap/m/Button.js", "sap/m/Popover.js", "sap/m/Text.js", "sap/m/VBox.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_P13nSettings/P13nSettings.controller.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n        (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 4430,
+      "compressedSize" : 1809,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/mvc/Controller.js", "sap/ui/model/Sorter.js", "sap/ui/model/json/JSONModel.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_P13nSettings/P13nSettings.view.xml",
+      "size" : 2904,
+      "required" : ["sap/fe/controls/_P13nSettings/P13nSettings.controller.js", "sap/m/P13nDialog.js", "sap/m/P13nGroupItem.js", "sap/m/P13nGroupPanel.js", "sap/m/P13nItem.js", "sap/m/P13nSortItem.js", "sap/m/P13nSortPanel.js", "sap/ui/core/mvc/XMLView.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_Table/GridTable/AddGridTableColumnChange.fragment.xml",
+      "size" : 372,
+      "required" : ["sap/fe/controls/_Table/GridTable/GridTableColumn.fragment.xml", "sap/ui/core/Fragment.js", "sap/ui/table/Table.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_Table/GridTable/GridTable.fragment.xml",
+      "size" : 1273,
+      "required" : ["sap/fe/controls/_Table/GridTable/GridTableColumn.fragment.xml", "sap/fe/controls/_Table/TableToolbar.fragment.xml", "sap/ui/core/Fragment.js", "sap/ui/table/Table.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_Table/GridTable/GridTableColumn.fragment.xml",
+      "size" : 1105,
+      "required" : ["sap/fe/controls/_Field/Fragments/FieldContent.fragment.xml", "sap/m/Label.js", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js", "sap/ui/table/Column.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_Table/GridTable/GridTableController.js",
+      "description" : "@private @name sap.fe.controls._Table.GridTable.GridTableController @author SAP SE @version 1.50.2 @since ?? @param {} @returns {sap.fe.controls._Table.GridTable.GridTableController} new GridTable controller",
+      "size" : 3297,
+      "compressedSize" : 1651,
+      "required" : ["jquery.sap.global.js", "sap/fe/controls/_Table/TableController.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_Table/ResponsiveTable/AddColumnChange.fragment.xml",
+      "size" : 827,
+      "required" : ["sap/fe/controls/_Field/Fragments/FieldContent.fragment.xml", "sap/fe/controls/_Table/ResponsiveTable/ResponsiveTableColumn.fragment.xml", "sap/m/Table.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_Table/ResponsiveTable/ResponsiveTable.fragment.xml",
+      "size" : 1983,
+      "required" : ["sap/fe/controls/_Field/Fragments/FieldContent.fragment.xml", "sap/fe/controls/_Table/ResponsiveTable/ResponsiveTableColumn.fragment.xml", "sap/fe/controls/_Table/TableToolbar.fragment.xml", "sap/m/ColumnListItem.js", "sap/m/Table.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_Table/ResponsiveTable/ResponsiveTableColumn.fragment.xml",
+      "size" : 875,
+      "required" : ["sap/m/Column.js", "sap/m/Label.js", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_Table/ResponsiveTable/ResponsiveTableController.js",
+      "description" : "@private @name sap.fe.controls._Table.ResponsiveTable.ResponsiveTableController @author SAP SE @version 1.50.2 @since ?? @param {} @returns {sap.fe.controls._Table.ResponsiveTable.ResponsiveTableController} new GridTable controller",
+      "size" : 3165,
+      "compressedSize" : 1575,
+      "required" : ["jquery.sap.global.js", "sap/fe/controls/_Table/TableController.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_Table/Table.control.xml",
+      "size" : 1223,
+      "required" : ["sap/fe/controls/_Table/GridTable/GridTable.fragment.xml", "sap/fe/controls/_Table/ResponsiveTable/ResponsiveTable.fragment.xml", "sap/ui/core/Fragment.js", "sap/ui/core/XMLComposite.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_Table/Table.flexibility.js",
+      "size" : 8408,
+      "compressedSize" : 3896,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_Table/TableAnnotationHelper.js",
+      "description" : "This class contains annotation helpers that are needed for the sap.fe.controls._Table.",
+      "size" : 2905,
+      "compressedSize" : 1841,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_Table/TableController.js",
+      "description" : "@private @name sap.fe.controls._Table.TableController @author SAP SE @version 1.50.2 @since ?? @param {} @returns {sap.fe.controls._Table.TableController} new Table controller",
+      "size" : 11967,
+      "compressedSize" : 5821,
+      "required" : ["jquery.sap.global.js", "sap/fe/Action.js", "sap/fe/core/CommonUtils.js", "sap/ui/base/Object.js", "sap/ui/model/Sorter.js", "sap/ui/model/json/JSONModel.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_Table/TableToolbar.fragment.xml",
+      "size" : 1798,
+      "required" : ["sap/fe/Action.js", "sap/m/OverflowToolbar.js", "sap/m/OverflowToolbarButton.js", "sap/m/Title.js", "sap/m/ToolbarSpacer.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_ValueList/Fragments/FilterBar.fragment.xml",
+      "size" : 2728,
+      "required" : ["sap/m/HBox.js", "sap/m/Label.js", "sap/m/VBox.js", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js", "sap/ui/core/Icon.js", "sap/ui/mdc/FilterField.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_ValueList/Fragments/IconTabConditionsView.fragment.xml",
+      "size" : 1361,
+      "required" : ["sap/m/Button.js", "sap/m/Input.js", "sap/m/ScrollContainer.js", "sap/m/Select.js", "sap/m/Text.js", "sap/m/VBox.js", "sap/ui/core/Fragment.js", "sap/ui/core/ListItem.js", "sap/ui/layout/Grid.js", "sap/ui/layout/HorizontalLayout.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_ValueList/Fragments/SelectFromList.fragment.xml",
+      "size" : 1814,
+      "required" : ["sap/fe/controls/_ValueList/Fragments/FilterBar.fragment.xml", "sap/fe/controls/_ValueList/Fragments/SelectFromListTable.fragment.xml", "sap/m/Button.js", "sap/m/HBox.js", "sap/m/ScrollContainer.js", "sap/m/SearchField.js", "sap/m/Toolbar.js", "sap/m/ToolbarSpacer.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_ValueList/Fragments/SelectFromListTable.fragment.xml",
+      "size" : 4009,
+      "required" : ["sap/fe/controls/_Field/Fragments/FieldContent.fragment.xml", "sap/m/Column.js", "sap/m/ColumnListItem.js", "sap/m/CustomListItem.js", "sap/m/FlexItemData.js", "sap/m/HBox.js", "sap/m/Label.js", "sap/m/List.js", "sap/m/Table.js", "sap/m/Text.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_ValueList/SuggestionList.view.xml",
+      "size" : 2361,
+      "required" : ["sap/fe/controls/_Field/Fragments/FieldContent.fragment.xml", "sap/m/Column.js", "sap/m/ColumnListItem.js", "sap/m/Label.js", "sap/m/Table.js", "sap/ui/core/Fragment.js", "sap/ui/core/mvc/XMLView.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_ValueList/ValueList.controller.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n        (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 10620,
+      "compressedSize" : 4998,
+      "required" : ["jquery.sap.global.js", "sap/m/SearchField.js", "sap/ui/core/mvc/Controller.js", "sap/ui/mdc/ConditionModel.js", "sap/ui/mdc/ODataSuggestProvider.js", "sap/ui/mdc/OperatorSuggestProvider.js", "sap/ui/model/json/JSONModel.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_ValueList/ValueList.view.xml",
+      "size" : 2734,
+      "required" : ["sap/fe/controls/_ValueList/Fragments/SelectFromList.fragment.xml", "sap/fe/controls/_ValueList/ValueList.controller.js", "sap/m/IconTabBar.js", "sap/m/IconTabFilter.js", "sap/ui/core/Fragment.js", "sap/ui/core/mvc/XMLView.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_ValueList/ValueListAnnotationHelper.js",
+      "description" : "This class contains annotation helpers that are needed for the sap.fe.controls._Table.",
+      "size" : 2022,
+      "compressedSize" : 1079,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_ViewSettings/ViewSettings.controller.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n        (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 4622,
+      "compressedSize" : 1966,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/mvc/Controller.js", "sap/ui/model/Sorter.js", "sap/ui/model/json/JSONModel.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_ViewSettings/ViewSettings.view.xml",
+      "size" : 2391,
+      "required" : ["sap/fe/controls/_ViewSettings/ViewSettings.controller.js", "sap/m/ViewSettingsDialog.js", "sap/m/ViewSettingsItem.js", "sap/ui/core/mvc/XMLView.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/core/AnnotationHelper.js",
+      "description" : "This class contains annotation helpers that might be used from several templates or controls",
+      "size" : 14929,
+      "compressedSize" : 7225,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/core/BusyHelper.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n        (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 7608,
+      "compressedSize" : 1120,
+      "required" : ["jquery.sap.global.js", "sap/fe/core/internal/testableHelper.js", "sap/ui/base/Object.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/core/CommonUtils.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n        (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 430,
+      "compressedSize" : 292,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/mvc/View.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/core/MessageUtils.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n        (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 9774,
+      "compressedSize" : 5775,
+      "required" : ["jquery.sap.global.js", "sap/m/Button.js", "sap/m/Dialog.js", "sap/m/Label.js", "sap/m/MessageItem.js", "sap/m/MessageToast.js", "sap/m/MessageView.js", "sap/m/NavContainer.js", "sap/m/Page.js", "sap/m/Text.js", "sap/m/Toolbar.js", "sap/m/ToolbarSpacer.js", "sap/ui/base/Object.js", "sap/ui/core/Title.js", "sap/ui/core/message/Message.js", "sap/ui/layout/form/SimpleForm.js", "sap/ui/model/message/MessageModel.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/core/TemplateAssembler.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n        (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 11816,
+      "compressedSize" : 4008,
+      "required" : ["jquery.sap.global.js", "sap/fe/core/TemplateComponent.js", "sap/fe/core/TemplateUtils.js", "sap/fe/core/internal/testableHelper.js", "sap/ui/core/mvc/Controller.js", "sap/ui/model/json/JSONModel.js", "sap/ui/model/resource/ResourceModel.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/core/TemplateComponent.js",
+      "size" : 11563,
+      "compressedSize" : 4320,
+      "required" : ["jquery.sap.global.js", "sap/ui/Device.js", "sap/ui/core/CustomizingConfiguration.js", "sap/ui/core/UIComponent.js", "sap/ui/core/mvc/ViewType.js", "sap/ui/model/json/JSONModel.js", "sap/ui/model/resource/ResourceModel.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/core/TemplateUtils.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n        (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 3948,
+      "compressedSize" : 2008,
+      "required" : ["jquery.sap.global.js", "sap/fe/controller/ActionController.js", "sap/fe/controller/NavigationController.js", "sap/fe/core/CommonUtils.js", "sap/fe/core/MessageUtils.js", "sap/ui/base/Object.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/core/internal/testableHelper.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n        (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 11089,
+      "compressedSize" : 1862,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/library-preload.js",
+      "size" : 163325,
+      "required" : ["jquery.sap.global.js", "sap/f/DynamicPage.js", "sap/f/DynamicPageHeader.js", "sap/f/DynamicPageTitle.js", "sap/m/ActionSheet.js", "sap/m/Bar.js", "sap/m/Button.js", "sap/m/ButtonType.js", "sap/m/Column.js", "sap/m/ColumnListItem.js", "sap/m/ComboBox.js", "sap/m/CustomListItem.js", "sap/m/Dialog.js", "sap/m/FlexItemData.js", "sap/m/HBox.js", "sap/m/IconTabBar.js", "sap/m/IconTabFilter.js", "sap/m/Input.js", "sap/m/Label.js", "sap/m/Link.js", "sap/m/List.js", "sap/m/MessageBox.js", "sap/m/MessageItem.js", "sap/m/MessagePage.js", "sap/m/MessageToast.js", "sap/m/MessageView.js", "sap/m/NavContainer.js", "sap/m/ObjectIdentifier.js", "sap/m/ObjectMarker.js", "sap/m/ObjectNumber.js", "sap/m/ObjectStatus.js", "sap/m/OverflowToolbar.js", "sap/m/OverflowToolbarButton.js", "sap/m/P13nDialog.js", "sap/m/P13nGroupItem.js", "sap/m/P13nGroupPanel.js", "sap/m/P13nItem.js", "sap/m/P13nSortItem.js", "sap/m/P13nSortPanel.js", "sap/m/Page.js", "sap/m/Popover.js", "sap/m/ProgressIndicator.js", "sap/m/QuickView.js", "sap/m/QuickViewGroup.js", "sap/m/QuickViewGroupElement.js", "sap/m/QuickViewPage.js", "sap/m/RatingIndicator.js", "sap/m/ScrollContainer.js", "sap/m/SearchField.js", "sap/m/Select.js", "sap/m/Table.js", "sap/m/Text.js", "sap/m/Title.js", "sap/m/Toolbar.js", "sap/m/ToolbarSpacer.js", "sap/m/VBox.js", "sap/m/ViewSettingsDialog.js", "sap/m/ViewSettingsItem.js", "sap/ui/Device.js", "sap/ui/base/ManagedObject.js", "sap/ui/base/Object.js", "sap/ui/core/ComponentContainer.js", "sap/ui/core/CustomData.js", "sap/ui/core/CustomizingConfiguration.js", "sap/ui/core/Fragment.js", "sap/ui/core/Icon.js", "sap/ui/core/Item.js", "sap/ui/core/ListItem.js", "sap/ui/core/Title.js", "sap/ui/core/UIComponent.js", "sap/ui/core/XMLComposite.js", "sap/ui/core/library.js", "sap/ui/core/message/Message.js", "sap/ui/core/mvc/Controller.js", "sap/ui/core/mvc/View.js", "sap/ui/core/mvc/ViewType.js", "sap/ui/core/mvc/XMLView.js", "sap/ui/core/util/XMLPreprocessor.js", "sap/ui/layout/AlignedFlowLayout.js", "sap/ui/layout/Grid.js", "sap/ui/layout/HorizontalLayout.js", "sap/ui/layout/form/SimpleForm.js", "sap/ui/mdc/ConditionModel.js", "sap/ui/mdc/FilterField.js", "sap/ui/mdc/FixedValueListProvider.js", "sap/ui/mdc/ODataSuggestProvider.js", "sap/ui/mdc/OperatorSuggestProvider.js", "sap/ui/mdc/experimental/Field.js", "sap/ui/model/ChangeReason.js", "sap/ui/model/Filter.js", "sap/ui/model/Sorter.js", "sap/ui/model/json/JSONModel.js", "sap/ui/model/message/MessageModel.js", "sap/ui/model/odata/v4/AnnotationHelper.js", "sap/ui/model/odata/v4/Context.js", "sap/ui/model/odata/v4/ODataListBinding.js", "sap/ui/model/resource/ResourceModel.js", "sap/ui/table/Column.js", "sap/ui/table/Table.js", "sap/ui/unified/Currency.js", "sap/ushell/ui/footerbar/AddBookmarkButton.js"],
+      "includes" : ["sap/fe/Action.js", "sap/fe/AppComponent.js", "sap/fe/FilterBar.designtime.js", "sap/fe/FilterBar.js", "sap/fe/Table.designtime.js", "sap/fe/Table.js", "sap/fe/controller/ActionController.js", "sap/fe/controller/NavigationController.js", "sap/fe/controls/_Field/FieldAnnotationHelper.js", "sap/fe/controls/_Field/FieldController.js", "sap/fe/controls/_Field/Fragments/ContactDetails.fragment.xml", "sap/fe/controls/_Field/Fragments/DataField.fragment.xml", "sap/fe/controls/_Field/Fragments/DataFieldForAction.fragment.xml", "sap/fe/controls/_Field/Fragments/DataFieldForAnnotation.fragment.xml", "sap/fe/controls/_Field/Fragments/FieldContent.fragment.xml", "sap/fe/controls/_FilterBar/FilterBar.control.xml", "sap/fe/controls/_FilterBar/FilterBarAnnotationHelper.js", "sap/fe/controls/_FilterBar/FilterBarController.js", "sap/fe/controls/_FilterBar/FilterItem.fragment.xml", "sap/fe/controls/_Fragments/DraftInfoPopover.fragment.xml", "sap/fe/controls/_P13nSettings/P13nSettings.controller.js", "sap/fe/controls/_P13nSettings/P13nSettings.view.xml", "sap/fe/controls/_Table/GridTable/AddGridTableColumnChange.fragment.xml", "sap/fe/controls/_Table/GridTable/GridTable.fragment.xml", "sap/fe/controls/_Table/GridTable/GridTableColumn.fragment.xml", "sap/fe/controls/_Table/GridTable/GridTableController.js", "sap/fe/controls/_Table/ResponsiveTable/AddColumnChange.fragment.xml", "sap/fe/controls/_Table/ResponsiveTable/ResponsiveTable.fragment.xml", "sap/fe/controls/_Table/ResponsiveTable/ResponsiveTableColumn.fragment.xml", "sap/fe/controls/_Table/ResponsiveTable/ResponsiveTableController.js", "sap/fe/controls/_Table/Table.control.xml", "sap/fe/controls/_Table/Table.flexibility.js", "sap/fe/controls/_Table/TableAnnotationHelper.js", "sap/fe/controls/_Table/TableController.js", "sap/fe/controls/_Table/TableToolbar.fragment.xml", "sap/fe/controls/_ValueList/Fragments/FilterBar.fragment.xml", "sap/fe/controls/_ValueList/Fragments/IconTabConditionsView.fragment.xml", "sap/fe/controls/_ValueList/Fragments/SelectFromList.fragment.xml", "sap/fe/controls/_ValueList/Fragments/SelectFromListTable.fragment.xml", "sap/fe/controls/_ValueList/SuggestionList.view.xml", "sap/fe/controls/_ValueList/ValueList.controller.js", "sap/fe/controls/_ValueList/ValueList.view.xml", "sap/fe/controls/_ValueList/ValueListAnnotationHelper.js", "sap/fe/controls/_ViewSettings/ViewSettings.controller.js", "sap/fe/controls/_ViewSettings/ViewSettings.view.xml", "sap/fe/core/AnnotationHelper.js", "sap/fe/core/BusyHelper.js", "sap/fe/core/CommonUtils.js", "sap/fe/core/MessageUtils.js", "sap/fe/core/TemplateAssembler.js", "sap/fe/core/TemplateComponent.js", "sap/fe/core/TemplateUtils.js", "sap/fe/core/internal/testableHelper.js", "sap/fe/library.js", "sap/fe/manifest.json", "sap/fe/model/DraftModel.js", "sap/fe/templates/ListReport/Component.js", "sap/fe/templates/ListReport/controller/ControllerImplementation.js", "sap/fe/templates/ListReport/manifest.json", "sap/fe/templates/ListReport/view/ListReport.view.xml", "sap/fe/templates/ListReport/view/fragments/ShareSheet.fragment.xml", "sap/fe/util/testableHelper.js"]
+    },
+    {
+      "name" : "sap/fe/library-preload.json",
+      "size" : 0,
+      "required" : ["jquery.sap.global.js", "sap/f/DynamicPage.js", "sap/f/DynamicPageHeader.js", "sap/f/DynamicPageTitle.js", "sap/m/ActionSheet.js", "sap/m/Bar.js", "sap/m/Button.js", "sap/m/ButtonType.js", "sap/m/Column.js", "sap/m/ColumnListItem.js", "sap/m/ComboBox.js", "sap/m/CustomListItem.js", "sap/m/Dialog.js", "sap/m/FlexItemData.js", "sap/m/HBox.js", "sap/m/IconTabBar.js", "sap/m/IconTabFilter.js", "sap/m/Input.js", "sap/m/Label.js", "sap/m/Link.js", "sap/m/List.js", "sap/m/MessageBox.js", "sap/m/MessageItem.js", "sap/m/MessagePage.js", "sap/m/MessageToast.js", "sap/m/MessageView.js", "sap/m/NavContainer.js", "sap/m/ObjectIdentifier.js", "sap/m/ObjectMarker.js", "sap/m/ObjectNumber.js", "sap/m/ObjectStatus.js", "sap/m/OverflowToolbar.js", "sap/m/OverflowToolbarButton.js", "sap/m/P13nDialog.js", "sap/m/P13nGroupItem.js", "sap/m/P13nGroupPanel.js", "sap/m/P13nItem.js", "sap/m/P13nSortItem.js", "sap/m/P13nSortPanel.js", "sap/m/Page.js", "sap/m/Popover.js", "sap/m/ProgressIndicator.js", "sap/m/QuickView.js", "sap/m/QuickViewGroup.js", "sap/m/QuickViewGroupElement.js", "sap/m/QuickViewPage.js", "sap/m/RatingIndicator.js", "sap/m/ScrollContainer.js", "sap/m/SearchField.js", "sap/m/Select.js", "sap/m/Table.js", "sap/m/Text.js", "sap/m/Title.js", "sap/m/Toolbar.js", "sap/m/ToolbarSpacer.js", "sap/m/VBox.js", "sap/m/ViewSettingsDialog.js", "sap/m/ViewSettingsItem.js", "sap/ui/Device.js", "sap/ui/base/ManagedObject.js", "sap/ui/base/Object.js", "sap/ui/core/ComponentContainer.js", "sap/ui/core/CustomData.js", "sap/ui/core/CustomizingConfiguration.js", "sap/ui/core/Fragment.js", "sap/ui/core/Icon.js", "sap/ui/core/Item.js", "sap/ui/core/ListItem.js", "sap/ui/core/Title.js", "sap/ui/core/UIComponent.js", "sap/ui/core/XMLComposite.js", "sap/ui/core/library-preload.json", "sap/ui/core/library.js", "sap/ui/core/message/Message.js", "sap/ui/core/mvc/Controller.js", "sap/ui/core/mvc/View.js", "sap/ui/core/mvc/ViewType.js", "sap/ui/core/mvc/XMLView.js", "sap/ui/core/util/XMLPreprocessor.js", "sap/ui/layout/AlignedFlowLayout.js", "sap/ui/layout/Grid.js", "sap/ui/layout/HorizontalLayout.js", "sap/ui/layout/form/SimpleForm.js", "sap/ui/mdc/ConditionModel.js", "sap/ui/mdc/FilterField.js", "sap/ui/mdc/FixedValueListProvider.js", "sap/ui/mdc/ODataSuggestProvider.js", "sap/ui/mdc/OperatorSuggestProvider.js", "sap/ui/mdc/experimental/Field.js", "sap/ui/model/ChangeReason.js", "sap/ui/model/Filter.js", "sap/ui/model/Sorter.js", "sap/ui/model/json/JSONModel.js", "sap/ui/model/message/MessageModel.js", "sap/ui/model/odata/v4/AnnotationHelper.js", "sap/ui/model/odata/v4/Context.js", "sap/ui/model/odata/v4/ODataListBinding.js", "sap/ui/model/resource/ResourceModel.js", "sap/ui/table/Column.js", "sap/ui/table/Table.js", "sap/ui/unified/Currency.js", "sap/ushell/ui/footerbar/AddBookmarkButton.js"],
+      "includes" : ["sap/fe/Action.js", "sap/fe/AppComponent.js", "sap/fe/FilterBar.designtime.js", "sap/fe/FilterBar.js", "sap/fe/Table.designtime.js", "sap/fe/Table.js", "sap/fe/controller/ActionController.js", "sap/fe/controller/NavigationController.js", "sap/fe/controls/_Field/FieldAnnotationHelper.js", "sap/fe/controls/_Field/FieldController.js", "sap/fe/controls/_Field/Fragments/ContactDetails.fragment.xml", "sap/fe/controls/_Field/Fragments/DataField.fragment.xml", "sap/fe/controls/_Field/Fragments/DataFieldForAction.fragment.xml", "sap/fe/controls/_Field/Fragments/DataFieldForAnnotation.fragment.xml", "sap/fe/controls/_Field/Fragments/FieldContent.fragment.xml", "sap/fe/controls/_FilterBar/FilterBar.control.xml", "sap/fe/controls/_FilterBar/FilterBarAnnotationHelper.js", "sap/fe/controls/_FilterBar/FilterBarController.js", "sap/fe/controls/_FilterBar/FilterItem.fragment.xml", "sap/fe/controls/_Fragments/DraftInfoPopover.fragment.xml", "sap/fe/controls/_P13nSettings/P13nSettings.controller.js", "sap/fe/controls/_P13nSettings/P13nSettings.view.xml", "sap/fe/controls/_Table/GridTable/AddGridTableColumnChange.fragment.xml", "sap/fe/controls/_Table/GridTable/GridTable.fragment.xml", "sap/fe/controls/_Table/GridTable/GridTableColumn.fragment.xml", "sap/fe/controls/_Table/GridTable/GridTableController.js", "sap/fe/controls/_Table/ResponsiveTable/AddColumnChange.fragment.xml", "sap/fe/controls/_Table/ResponsiveTable/ResponsiveTable.fragment.xml", "sap/fe/controls/_Table/ResponsiveTable/ResponsiveTableColumn.fragment.xml", "sap/fe/controls/_Table/ResponsiveTable/ResponsiveTableController.js", "sap/fe/controls/_Table/Table.control.xml", "sap/fe/controls/_Table/Table.flexibility.js", "sap/fe/controls/_Table/TableAnnotationHelper.js", "sap/fe/controls/_Table/TableController.js", "sap/fe/controls/_Table/TableToolbar.fragment.xml", "sap/fe/controls/_ValueList/Fragments/FilterBar.fragment.xml", "sap/fe/controls/_ValueList/Fragments/IconTabConditionsView.fragment.xml", "sap/fe/controls/_ValueList/Fragments/SelectFromList.fragment.xml", "sap/fe/controls/_ValueList/Fragments/SelectFromListTable.fragment.xml", "sap/fe/controls/_ValueList/SuggestionList.view.xml", "sap/fe/controls/_ValueList/ValueList.controller.js", "sap/fe/controls/_ValueList/ValueList.view.xml", "sap/fe/controls/_ValueList/ValueListAnnotationHelper.js", "sap/fe/controls/_ViewSettings/ViewSettings.controller.js", "sap/fe/controls/_ViewSettings/ViewSettings.view.xml", "sap/fe/core/AnnotationHelper.js", "sap/fe/core/BusyHelper.js", "sap/fe/core/CommonUtils.js", "sap/fe/core/MessageUtils.js", "sap/fe/core/TemplateAssembler.js", "sap/fe/core/TemplateComponent.js", "sap/fe/core/TemplateUtils.js", "sap/fe/core/internal/testableHelper.js", "sap/fe/library.js", "sap/fe/manifest.json", "sap/fe/model/DraftModel.js", "sap/fe/templates/ListReport/Component.js", "sap/fe/templates/ListReport/controller/ControllerImplementation.js", "sap/fe/templates/ListReport/manifest.json", "sap/fe/templates/ListReport/view/ListReport.view.xml", "sap/fe/templates/ListReport/view/fragments/ShareSheet.fragment.xml", "sap/fe/util/testableHelper.js"]
+    },
+    {
+      "name" : "sap/fe/library.js",
+      "description" : "Initialization Code and shared classes of library sap.fe",
+      "size" : 1631,
+      "compressedSize" : 761,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/XMLComposite.js", "sap/ui/core/library.js", "sap/ui/core/util/XMLPreprocessor.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/manifest.json",
+      "size" : 1120,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle.properties",
+      "size" : 6605,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_ar.properties",
+      "size" : 10987,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_bg.properties",
+      "size" : 12328,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_ca.properties",
+      "size" : 6909,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_cs.properties",
+      "size" : 7091,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_da.properties",
+      "size" : 6634,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_de.properties",
+      "size" : 6810,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_el.properties",
+      "size" : 12141,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_en.properties",
+      "size" : 6509,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_en_US_sappsd.properties",
+      "size" : 14231,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_en_US_saptrc.properties",
+      "size" : 7912,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_es.properties",
+      "size" : 6943,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_et.properties",
+      "size" : 6666,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_fi.properties",
+      "size" : 6880,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_fr.properties",
+      "size" : 7006,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_hi.properties",
+      "size" : 11686,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_hr.properties",
+      "size" : 6768,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_hu.properties",
+      "size" : 7444,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_it.properties",
+      "size" : 6407,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_iw.properties",
+      "size" : 10168,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_ja.properties",
+      "size" : 8530,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_kk.properties",
+      "size" : 12257,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_ko.properties",
+      "size" : 8069,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_lt.properties",
+      "size" : 7106,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_lv.properties",
+      "size" : 7173,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_ms.properties",
+      "size" : 6596,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_nl.properties",
+      "size" : 6308,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_no.properties",
+      "size" : 6610,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_pl.properties",
+      "size" : 7032,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_pt.properties",
+      "size" : 6990,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_ro.properties",
+      "size" : 6938,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_ru.properties",
+      "size" : 12141,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_sh.properties",
+      "size" : 6725,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_sk.properties",
+      "size" : 7109,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_sl.properties",
+      "size" : 6689,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_sv.properties",
+      "size" : 6724,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_th.properties",
+      "size" : 11679,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_tr.properties",
+      "size" : 7250,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_uk.properties",
+      "size" : 12357,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_vi.properties",
+      "size" : 8735,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_zh_CN.properties",
+      "size" : 7431,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_zh_TW.properties",
+      "size" : 7436,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/model/DraftModel.js",
+      "description" : "Provides class sap.fe.model.DraftModel",
+      "size" : 22845,
+      "compressedSize" : 5998,
+      "required" : ["jquery.sap.global.js", "sap/fe/core/internal/testableHelper.js", "sap/ui/base/ManagedObject.js", "sap/ui/model/ChangeReason.js", "sap/ui/model/Filter.js", "sap/ui/model/json/JSONModel.js", "sap/ui/model/odata/v4/Context.js", "sap/ui/model/odata/v4/ODataListBinding.js", "sap/ui/model/resource/ResourceModel.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/templates/ListReport/Component.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n        (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 13647,
+      "compressedSize" : 6117,
+      "required" : ["jquery.sap.global.js", "sap/fe/core/AnnotationHelper.js", "sap/fe/core/TemplateAssembler.js", "sap/fe/templates/ListReport/controller/ControllerImplementation.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/templates/ListReport/controller/ControllerImplementation.js",
+      "description" : "global hasher",
+      "size" : 10021,
+      "compressedSize" : 3069,
+      "required" : ["jquery.sap.global.js", "sap/ui/mdc/ConditionModel.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/templates/ListReport/i18n/i18n.properties",
+      "size" : 368,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/templates/ListReport/i18n/i18n_en_US_sappsd.properties",
+      "size" : 472,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/templates/ListReport/i18n/i18n_en_US_saptrc.properties",
+      "size" : 310,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/templates/ListReport/manifest.json",
+      "size" : 1477,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/templates/ListReport/view/ListReport.view.xml",
+      "size" : 2819,
+      "required" : ["sap/f/DynamicPage.js", "sap/f/DynamicPageHeader.js", "sap/f/DynamicPageTitle.js", "sap/fe/FilterBar.js", "sap/fe/Table.js", "sap/m/Button.js", "sap/m/Text.js", "sap/m/Title.js", "sap/ui/core/mvc/XMLView.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/templates/ListReport/view/fragments/ShareSheet.fragment.xml",
+      "size" : 806,
+      "required" : ["sap/m/ActionSheet.js", "sap/m/Button.js", "sap/ui/core/Fragment.js", "sap/ushell/ui/footerbar/AddBookmarkButton.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/util/testableHelper.js",
+      "size" : 11106,
+      "compressedSize" : 1740,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    }
+  ]
+}

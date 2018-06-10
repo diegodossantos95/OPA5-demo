@@ -1,0 +1,90 @@
+/* NOTE: This file was generated as an optimized version of "library.source.less" for the Theme Designer. */
+
+/*!
+ * ${copyright}
+ */
+
+@import "../../../../../../Base/baseLib/baseTheme/base.less"; /* ORIGINAL IMPORT PATH: "../../../../../sap/ui/core/themes/base/base.less" */
+
+@import "../../../../../sap/ui/core/themes/base/global.less";
+
+/* START "RichTextEditor.less" */
+.defaultSkin {
+	color: @sapUiText;
+	background-color:  @sapUiExtraLightBG;
+	font-family: @sapUiFontFamily;
+	font-size:  @sapUiFontSize;
+}
+
+.sapUiRTE {
+	display: inline-block;
+}
+
+html[dir=rtl] .sapUiRTE .defaultSkin table {
+	direction: rtl;
+}
+
+/* Styling TinyMCE */
+.sapUiRTE .defaultSkin table.mceToolbar {
+	margin-left: 5px;
+}
+
+.sapUiRTE.sapUiRTELegacyTheme .defaultSkin .mceIcon,
+.sapUiRTE.sapUiRTELegacyTheme .defaultSkin .mceSplitButton span.mceAction {
+	background-image: url("icons.gif");
+}
+
+/* bugfix for IE8 with certain zoom factors */
+html[data-sap-ui-browser="ie8"] .sapUiRTE .defaultSkin .mceIcon.mce_undo {
+	width: 19px;
+	margin-right: 1px;
+}
+	
+.sapUiRTE .defaultSkin table.mceLayout tr.mceFirst > td.mceFirst {
+	background-color: @sapUiExtraLightBG;
+	border-top: 1px solid @sapUiMediumBorder;
+}
+
+.sapUiRTE .defaultSkin td.mceIframeContainer {
+	border-top: 1px solid @sapUiMediumBorder;
+}
+
+.sapUiRTE .defaultSkin.mceEditor table.mceLayout {
+	border-color: @sapUiMediumBorder;
+}
+
+.sapUiRTE .defaultSkin table.mceLayout tr.mceLast td.mceLast {
+	border-bottom: 1px solid @sapUiMediumBorder;
+}
+
+
+.sapUiRTE .defaultSkin table.mceLayout tr.mceFirst td,
+.sapUiRTE .defaultSkin table {
+	background-color: transparent;
+}
+ 
+
+/*RichTextEditor with Custom toolbar*/
+
+.sapUiRTE.sapUiRTEWithCustomToolbar .sapUiRTECustomToolbar .sapMToggleBtn,
+.sapUiRTE.sapUiRTEWithCustomToolbar .sapUiRTECustomToolbar .sapMBtn,
+.sapUiRTE.sapUiRTEWithCustomToolbar .sapUiRTECustomToolbar .sapMMenuBtn,
+.sapUiRTE.sapUiRTEWithCustomToolbar .sapUiRTECustomToolbar .sapMSlt,
+.sapUiRTE.sapUiRTEWithCustomToolbar .sapUiRTECustomToolbar .sapMTBSeparator {
+	margin-right: 0.25rem;
+	margin-left: 0;
+}
+
+.sapUiRTECustomToolbar {
+	border: 1px solid @sapUiContentForegroundBorderColor;
+}
+
+.sapUiRTEWithCustomToolbar .sapMTB {
+	border-bottom: 0;
+}
+
+.sapUiRTEWithCustomToolbar .mce-tinymce {
+	border-top: 0;
+}
+/* END "RichTextEditor.less" */
+

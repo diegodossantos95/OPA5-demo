@@ -1,0 +1,13 @@
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5) (c) Copyright 2009-2014 SAP SE. All rights reserved
+ */
+jQuery.sap.declare("sap.ca.ui.ExpansibleFeedListItem");jQuery.sap.require("sap.ca.ui.library");jQuery.sap.require("sap.m.FeedListItem");sap.m.FeedListItem.extend("sap.ca.ui.ExpansibleFeedListItem",{metadata:{deprecated:true,library:"sap.ca.ui",properties:{"maxLines":{type:"int",group:"Misc",defaultValue:5}}}});
+/*
+ * Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved
+ */
+jQuery.sap.require("sap.ca.ui.utils.resourcebundle");
+sap.ca.ui.ExpansibleFeedListItem.prototype._getSeeMoreLink=function(){if(!this._oSeeMoreLink){jQuery.sap.require("sap.m.Link");this._oSeeMoreLink=new sap.m.Link({text:sap.ca.ui.utils.resourcebundle.getText("extensiblefeedlistitem.seeMore"),press:jQuery.proxy(function(){if(this.$().hasClass("sapCaUiExpansibleFeedListItemSeeLess")){this._collapseText();this._oSeeMoreLink.setText(sap.ca.ui.utils.resourcebundle.getText("extensiblefeedlistitem.seeMore"));}else{var $=jQuery.sap.byId(this.getId()+"-text");$.height("auto");this._oSeeMoreLink.setText(sap.ca.ui.utils.resourcebundle.getText("extensiblefeedlistitem.seeLess"));}this.$().toggleClass("sapCaUiExpansibleFeedListItemSeeLess");},this)});this._oSeeMoreLink.setParent(this,null,true);}return this._oSeeMoreLink;};
+sap.ca.ui.ExpansibleFeedListItem.prototype._collapseText=function(){var $=jQuery.sap.byId(this.getId()+"-text");if(!$.attr('class')||(jQuery.device.is.phone&&$.attr('class').indexOf('sapMFeedListItemText')==-1)||(!jQuery.device.is.phone&&$.attr('class').indexOf('sapMFeedListItemTextText')==-1)){return;}var m=this.getMaxLines();var l=$.css("lineHeight");var L;if(l.indexOf("px")!=-1){L=parseFloat(l);}else{var r=this._convertRelativeCSSSizeToFloat(l)||1.2;var f=$.css("font-size");var F;if(f.indexOf("px")!=-1){F=parseInt(f,10);}else{var R=this._convertRelativeCSSSizeToFloat(f)||1;var a=$.parent();var p="19px";while(a!=null){p=a.css("font-size");if(p.indexOf("px")!=-1){break;}a=a.parent();}F=parseInt(p,10)*R;}L=F*r;}var i=$.height()/L;var M=L*m;if(i>m){this.addStyleClass("sapCaUiExpansibleFeedListItemSeeMore");$.height(M);}else{this.removeStyleClass("sapCaUiExpansibleFeedListItemSeeMore");}};
+sap.ca.ui.ExpansibleFeedListItem.prototype._convertRelativeCSSSizeToFloat=function(s){var r=Number.NaN;if(jQuery.isNumeric(s)||s.indexOf("em")!=-1){r=parseFloat(s);}else if(s.indexOf("%")!=-1){r=parseInt(s,10)/100;}return r;};
+sap.ca.ui.ExpansibleFeedListItem.prototype.onAfterRendering=function(){if(sap.m.FeedListItem.prototype.onAfterRendering){sap.m.FeedListItem.prototype.onAfterRendering.apply(this);}this._collapseText();};
+sap.ca.ui.ExpansibleFeedListItem.prototype._getLinkControl=function(){return this._getLinkSender();};

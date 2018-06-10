@@ -1,0 +1,22 @@
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:DataServices>
+        <Schema Namespace="Annotations" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+            <Annotations Target="sap.hba.r.apf.core.odata.apf.AnalysisPathQueryResultsType" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+            	<!--  Field Groups
+                <Annotation Term="com.sap.vocabularies.UI.v1.FieldGroup" Qualifier="FieldGroup1">
+                    <Record>
+                        <PropertyValue Property="Label" String="my Field Group 1" />
+                        <PropertyValue Property="Data">
+                            <Collection>
+                                <Record Type="com.sap.vocabularies.UI.v1.DataField">
+                                    <PropertyValue Property="Value" Path="Country" />
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                 Field Groups -->
+            </Annotations>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

@@ -1,0 +1,66 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:sap="http://www.sap.com/Protocols/SAPData" Version="1.0">
+	<edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="2.0">
+		<Schema xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="sap.hba.r.apf.core.odata.apf">
+			<EntityType Name="AnalysisPathQueryResultsType">
+				<Key>
+					<PropertyRef Name="AnalysisPath"/>
+				</Key>
+				<Property Name="AnalysisPath" Type="Edm.String" Nullable="false" MaxLength="32" sap:label="Analysis Path"/>
+				<Property Name="AnalysisPathName" Type="Edm.String" MaxLength="255" sap:label="Analysis Path Name"/>
+				<Property Name="LogicalSystem" Type="Edm.String" MaxLength="10" sap:label="Logical System"/>
+				<Property Name="ApplicationConfigurationURL" Type="Edm.String" MaxLength="255" sap:label="URL of Application Configuration"/>
+				<Property Name="CreationUTCDateTime" Type="Edm.DateTime" sap:label="UTC Date Time of Creation"/>
+				<Property Name="LastChangeUTCDateTime" Type="Edm.DateTime" sap:label="UTC Date Time of Last Change"/>
+				<Property Name="SerializedAnalysisPath" Type="Edm.String" MaxLength="2147483647" sap:label="Serialized Analysis Path"/>
+				<Property Name="StructuredAnalysisPath" Type="Edm.String" MaxLength="2147483647" sap:label="Structured Analysis Path"/>
+				<Property Name="AnalyticalConfiguration" Type="Edm.String" MaxLength="32" sap:label="Analytical Configuration"/>
+			</EntityType>
+			<EntityType Name="AnalysisPathCountQueryResultsType" sap:semantics="aggregate">
+				<Key>
+					<PropertyRef Name="GenID"/>
+				</Key>
+				<Property Name="GenID" Type="Edm.String" Nullable="false" MaxLength="2147483647" sap:filterable="false"/>
+				<Property Name="AnalysisPath" Type="Edm.String" MaxLength="32" sap:label="Analysis Path" sap:aggregation-role="dimension"/>
+				<Property Name="AnalysisPathName" Type="Edm.String" MaxLength="255" sap:label="Analysis Path Name" sap:aggregation-role="dimension"/>
+				<Property Name="LogicalSystem" Type="Edm.String" MaxLength="10" sap:label="Logical System" sap:aggregation-role="dimension"/>
+				<Property Name="ApplicationConfigurationURL" Type="Edm.String" MaxLength="255" sap:label="URL of Application Configuration" sap:aggregation-role="dimension"/>
+				<Property Name="CreationUTCDateTime" Type="Edm.DateTime" sap:label="UTC Date Time of Creation" sap:aggregation-role="dimension"/>
+				<Property Name="LastChangeUTCDateTime" Type="Edm.DateTime" sap:label="UTC Date Time of Last Change" sap:aggregation-role="dimension"/>
+				<Property Name="NumberOfAnalysisPaths" Type="Edm.Int32" sap:filterable="false" sap:label="Number of Analysis Paths" sap:aggregation-role="measure"/>
+			</EntityType>
+			<EntityType Name="AnalyticalConfigurationQueryResultsType">
+				<Key>
+					<PropertyRef Name="AnalyticalConfiguration"/>
+				</Key>
+				<Property Name="AnalyticalConfiguration" Type="Edm.String" Nullable="false" MaxLength="32" sap:label="Analytical Configuration"/>
+				<Property Name="AnalyticalConfigurationName" Type="Edm.String" MaxLength="100" sap:label="Name of an Analytical Configuration"/>
+				<Property Name="Application" Type="Edm.String" MaxLength="32" sap:label="Application"/>
+				<Property Name="CreationUTCDateTime" Type="Edm.DateTime" sap:label="UTC Date Time of Creation"/>
+				<Property Name="LastChangeUTCDateTime" Type="Edm.DateTime" sap:label="UTC Date Time of Last Change"/>
+				<Property Name="CreatedByUser" Type="Edm.String" MaxLength="256" sap:label="Created By User"/>
+				<Property Name="LastChangedByUser" Type="Edm.String" MaxLength="256" sap:label="Last Changed By User"/>
+				<Property Name="SerializedAnalyticalConfiguration" Type="Edm.String" MaxLength="2147483647" sap:label="Serialized Analytical Configuration"/>
+			</EntityType>
+			<EntityType Name="TextElementQueryResultsType">
+				<Key>
+					<PropertyRef Name="TextElement"/>
+					<PropertyRef Name="Language"/>
+				</Key>
+				<Property Name="TextElement" Type="Edm.String" Nullable="false" MaxLength="32" sap:label="Text Element"/>
+				<Property Name="Language" Type="Edm.String" Nullable="false" MaxLength="2" sap:label="Language"/>
+				<Property Name="TextElementType" Type="Edm.String" MaxLength="32" sap:label="Type of a Text Element "/>
+				<Property Name="TextElementDescription" Type="Edm.String" MaxLength="255" sap:label="Description of a Text Element"/>
+				<Property Name="Application" Type="Edm.String" MaxLength="32" sap:label="Application"/>
+				<Property Name="MaximumLength" Type="Edm.Int32" sap:label="Maximum Length"/>
+				<Property Name="TranslationHint" Type="Edm.String" MaxLength="1000" sap:label="Translation Hint"/>
+				<Property Name="LastChangeUTCDateTime" Type="Edm.DateTime" sap:label="UTC Date Time of Last Change"/>
+			</EntityType>
+			<EntityContainer Name="apf" m:IsDefaultEntityContainer="true">
+				<EntitySet Name="AnalysisPathQueryResults" EntityType="sap.hba.r.apf.core.odata.apf.AnalysisPathQueryResultsType"/>
+				<EntitySet Name="AnalysisPathCountQueryResults" EntityType="sap.hba.r.apf.core.odata.apf.AnalysisPathCountQueryResultsType"/>
+				<EntitySet Name="AnalyticalConfigurationQueryResults" EntityType="sap.hba.r.apf.core.odata.apf.AnalyticalConfigurationQueryResultsType"/>
+				<EntitySet Name="TextElementQueryResults" EntityType="sap.hba.r.apf.core.odata.apf.TextElementQueryResultsType"/>
+			</EntityContainer>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

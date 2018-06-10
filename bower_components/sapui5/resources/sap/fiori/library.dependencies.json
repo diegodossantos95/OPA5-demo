@@ -1,0 +1,46 @@
+{
+  "modules" : [
+    {
+      "name" : "sap/fiori/core-ext-dbg.js",
+      "size" : 137,
+      "compressedSize" : 115,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/fiori/core-ext-light-dbg.js",
+      "size" : 137,
+      "compressedSize" : 115,
+      "required" : [],
+      "includes" : [],
+      "excludeFromAllInOne" : true
+    },
+    {
+      "name" : "sap/fiori/library-preload.js",
+      "size" : 1786,
+      "required" : ["jquery.sap.global.js", "jquery.sap.resources.js", "sap/ui/core/Core.js", "sap/ui/core/library.js"],
+      "includes" : ["sap/fiori/library.js", "sap/fiori/manifest.json"]
+    },
+    {
+      "name" : "sap/fiori/library-preload.json",
+      "size" : 0,
+      "required" : ["jquery.sap.global.js", "jquery.sap.resources.js", "sap/ui/core/Core.js", "sap/ui/core/library-preload.json", "sap/ui/core/library.js"],
+      "includes" : ["sap/fiori/library.js", "sap/fiori/manifest.json"]
+    },
+    {
+      "name" : "sap/fiori/library.js",
+      "description" : "Initialization Code and shared classes of library sap.fiori.",
+      "size" : 1293,
+      "compressedSize" : 637,
+      "required" : ["jquery.sap.global.js", "jquery.sap.resources.js", "sap/ui/core/Core.js", "sap/ui/core/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fiori/manifest.json",
+      "size" : 906,
+      "required" : [],
+      "includes" : []
+    }
+  ]
+}

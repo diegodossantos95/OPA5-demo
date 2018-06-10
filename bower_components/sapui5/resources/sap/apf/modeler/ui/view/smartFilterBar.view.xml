@@ -1,0 +1,13 @@
+<mvc:View controllerName="sap.apf.modeler.ui.controller.smartFilterBar"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout"
+	class="sapUiSizeCompact">
+	<VBox xmlns="sap.m" id="idSFBVBox" visible="true" displayInline="false"
+		direction="Column" fitContainer="false" renderType="Div"
+		justifyContent="Start" alignItems="Stretch">
+		<items>
+			<ScrollContainer vertical="true">
+				<VBox id="idSFBRequestVBox"></VBox>
+			</ScrollContainer>
+		</items>
+	</VBox>
+</mvc:View>

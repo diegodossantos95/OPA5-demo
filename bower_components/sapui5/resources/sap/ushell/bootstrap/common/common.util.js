@@ -1,0 +1,1 @@
+sap.ui.define([],function(){"use strict";return Object.create(null,{deepFreeze:{value:d}});function d(o){Object.keys(o).filter(function(p){return typeof o[p]==="object";}).forEach(function(p){o[p]=d(o[p]);});return Object.freeze(o);}});

@@ -1,0 +1,1 @@
+define("tinymce/inlite/alien/Uuid",[],function(){var c=0;var s=function(){var r=function(){return Math.round(Math.random()*0xFFFFFFFF).toString(36);};return's'+Date.now().toString(36)+r()+r()+r();};var u=function(p){return p+(c++)+s();};return{uuid:u};});

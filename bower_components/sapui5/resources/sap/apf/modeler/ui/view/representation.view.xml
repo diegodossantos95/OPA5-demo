@@ -1,0 +1,57 @@
+<mvc:View controllerName="sap.apf.modeler.ui.controller.representation"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" class="sapUiSizeCompact viewInline">
+	<VBox xmlns="sap.m" id="idRepresentationform" visible="true"
+		width="100%" displayInline="false" direction="Column" fitContainer="false"
+		renderType="Div" justifyContent="Start" alignItems="Stretch">
+		<items>
+			<ScrollContainer vertical="true">
+				<f:SimpleForm maxContainerCols="1" editable="false"
+					labelMinWidth="300" layout="ResponsiveGridLayout" labelSpanL="3"
+					labelSpanM="4" labelSpanS="4" emptySpanL="1" emptySpanM="1"
+					emptySpanS="1" columnsL="1" columnsM="1">
+					<f:content>
+						<core:Title id="idVisualization" level="H4" />
+						<Label xmlns="sap.m" id="idChartTypeLabel" class="chartTypeLabel">
+							<layoutData>
+								<GridData xmlns="sap.ui.layout" span="L2 M2 S2" />
+							</layoutData>
+						</Label>
+						<Select xmlns="sap.m" id="idChartType" visible="true"
+							enabled="true" width="95%" maxWidth="100%" type="Default"
+							autoAdjustWidth="false" change="handleChangeForChartType" items="{/Objects}"
+							class="chartTypeBox">
+							<core:Item key="{key}" text="{name}" />
+							<layoutData>
+								<GridData xmlns="sap.ui.layout" span="L4 M4 S4" />
+							</layoutData>
+						</Select>
+						<core:Title id="idBasicData" level="H4" />
+					</f:content>
+				</f:SimpleForm>
+				<VBox xmlns="sap.m" id="idBasicDataLayout" width="100%"
+					visible="true" displayInline="false" direction="Column"
+					fitContainer="false" renderType="Div" justifyContent="Start"
+					alignItems="Stretch">
+				</VBox>
+				<f:SimpleForm id="idSecondForm" maxContainerCols="1"
+					editable="false" labelMinWidth="300" layout="ResponsiveGridLayout"
+					labelSpanL="4" labelSpanM="4" labelSpanS="4" emptySpanL="2"
+					emptySpanM="2" emptySpanS="2" columnsL="1" columnsM="1"
+					class="formTopPadding">
+					<f:content>
+						<core:Title id="idSorting" level="H4" />
+					</f:content>
+				</f:SimpleForm>
+				<VBox xmlns="sap.m" id="idSortLayout" visible="true"
+					displayInline="false" direction="Column" fitContainer="false"
+					renderType="Div" justifyContent="Start" alignItems="Stretch">
+				</VBox>
+				<VBox xmlns="sap.m" id="idCornerTextsVBox" visible="true"
+					displayInline="false" direction="Column" fitContainer="false"
+					renderType="Div" justifyContent="Start" alignItems="Stretch">
+				</VBox>
+			</ScrollContainer>
+		</items>
+	</VBox>
+</mvc:View>

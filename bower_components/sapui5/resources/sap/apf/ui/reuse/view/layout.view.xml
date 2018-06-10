@@ -1,0 +1,28 @@
+<!-- SAP APF Analysis Path Framework (c) Copyright 2012-2014 SAP AG. All 
+	rights reserved -->
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	controllerName="sap.apf.ui.reuse.controller.layout" xmlns="sap.m" class="layoutView">
+	<Page id="applicationPage" xmlns="sap.m" showNavButton="true"
+		navButtonPress="handleNavBack" showFooter="false" enableScrolling="false" class="apfAppPage">
+		<content>
+			<ScrollContainer xmlns="sap.m" id="subHeader"
+				vertical="true" height="50px" busy="true"/>
+			<SplitApp xmlns="sap.m" id="applicationView" mode="ShowHideMode">
+				<masterPages>
+					<Page xmlns="sap.m" id="analysisPath" showHeader="false">
+						<footer>
+							<Bar xmlns="sap.m" id="masterFooter" class="applicationFooter"></Bar>
+						</footer>
+					</Page>
+				</masterPages>
+				<detailPages>
+					<Page xmlns="sap.m" id="stepContainer" showHeader="false">
+						<footer>
+							<Bar xmlns="sap.m" id="detailFooter" class="applicationFooter" ></Bar>
+						</footer>
+					</Page>
+				</detailPages>
+			</SplitApp>
+		</content>
+	</Page>
+</mvc:View>

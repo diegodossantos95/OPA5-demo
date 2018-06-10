@@ -1,0 +1,759 @@
+{
+  "modules" : [
+    {
+      "name" : "sap/fileviewer/FileViewer.js",
+      "description" : "Provides control sap.fileviewer.FileViewer.",
+      "size" : 17597,
+      "compressedSize" : 4846,
+      "required" : ["jquery.sap.global.js", "sap/fileviewer/FileViewerModuleLoader.js", "sap/fileviewer/library.js", "sap/ui/core/Control.js", "sap/ui/model/resource/ResourceModel.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/FileViewerModuleLoader.js",
+      "description" : "! ${copyright}",
+      "size" : 1127,
+      "compressedSize" : 452,
+      "required" : ["jquery.sap.global.js", "sap/fileviewer/viewer/build/pdf.js", "sap/fileviewer/viewer/build/pdf.worker.js", "sap/fileviewer/viewer/sap-fpt/pdf2text/pdf2text.js", "sap/fileviewer/viewer/sap-fpt/suv/suv.js", "sap/fileviewer/viewer/sap-fpt/util/removeoperlaps.js", "sap/fileviewer/viewer/sap-fpt/viewer/pdfhighlighter.js", "sap/fileviewer/viewer/web/compatibility.js", "sap/fileviewer/viewer/web/l10n.js", "sap/fileviewer/viewer/web/pdf_viewer.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/library-preload.js",
+      "size" : 1129221,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/ui/core/library.js", "sap/ui/model/resource/ResourceModel.js"],
+      "includes" : ["sap/fileviewer/FileViewer.js", "sap/fileviewer/FileViewerModuleLoader.js", "sap/fileviewer/library.js", "sap/fileviewer/manifest.json", "sap/fileviewer/viewer/build/pdf.js", "sap/fileviewer/viewer/build/pdf.worker.js", "sap/fileviewer/viewer/sap-fpt/pdf2text/pdf2text.js", "sap/fileviewer/viewer/sap-fpt/suv/suv.js", "sap/fileviewer/viewer/sap-fpt/util/removeoperlaps.js", "sap/fileviewer/viewer/sap-fpt/viewer/pdfhighlighter.js", "sap/fileviewer/viewer/web/compatibility.js", "sap/fileviewer/viewer/web/debugger.js", "sap/fileviewer/viewer/web/l10n.js", "sap/fileviewer/viewer/web/pdf_viewer.js", "sap/fileviewer/viewer/web/viewer.js"]
+    },
+    {
+      "name" : "sap/fileviewer/library-preload.json",
+      "size" : 0,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/ui/core/library-preload.json", "sap/ui/core/library.js", "sap/ui/model/resource/ResourceModel.js"],
+      "includes" : ["sap/fileviewer/FileViewer.js", "sap/fileviewer/FileViewerModuleLoader.js", "sap/fileviewer/library.js", "sap/fileviewer/manifest.json", "sap/fileviewer/viewer/build/pdf.js", "sap/fileviewer/viewer/build/pdf.worker.js", "sap/fileviewer/viewer/sap-fpt/pdf2text/pdf2text.js", "sap/fileviewer/viewer/sap-fpt/suv/suv.js", "sap/fileviewer/viewer/sap-fpt/util/removeoperlaps.js", "sap/fileviewer/viewer/sap-fpt/viewer/pdfhighlighter.js", "sap/fileviewer/viewer/web/compatibility.js", "sap/fileviewer/viewer/web/debugger.js", "sap/fileviewer/viewer/web/l10n.js", "sap/fileviewer/viewer/web/pdf_viewer.js", "sap/fileviewer/viewer/web/viewer.js"]
+    },
+    {
+      "name" : "sap/fileviewer/library.js",
+      "description" : "Initialization Code and shared classes of library sap.fileviewer.",
+      "size" : 1395,
+      "compressedSize" : 328,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/manifest.json",
+      "size" : 720,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/resources/messagebundle.properties",
+      "size" : 49646,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/build/pdf.js",
+      "size" : 367696,
+      "compressedSize" : 165110,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/build/pdf.worker.js",
+      "size" : 1429274,
+      "compressedSize" : 701455,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/sap-fpt/pdf2text/pdf2text.js",
+      "size" : 8480,
+      "compressedSize" : 3135,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/sap-fpt/suv/suv.js",
+      "size" : 4849,
+      "compressedSize" : 1624,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/sap-fpt/util/removeoperlaps.js",
+      "size" : 4902,
+      "compressedSize" : 1273,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/sap-fpt/viewer/pdfhighlighter.js",
+      "size" : 7018,
+      "compressedSize" : 2673,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/compatibility.js",
+      "size" : 18222,
+      "compressedSize" : 9359,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/debugger.js",
+      "size" : 19444,
+      "compressedSize" : 10464,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/l10n.js",
+      "size" : 29253,
+      "compressedSize" : 10900,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/ach/viewer.properties",
+      "size" : 6768,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/af/viewer.properties",
+      "size" : 7007,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/ak/viewer.properties",
+      "size" : 5317,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/an/viewer.properties",
+      "size" : 7325,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/ar/viewer.properties",
+      "size" : 8168,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/as/viewer.properties",
+      "size" : 10295,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/ast/viewer.properties",
+      "size" : 7183,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/az/viewer.properties",
+      "size" : 7362,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/be/viewer.properties",
+      "size" : 6416,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/bg/viewer.properties",
+      "size" : 9442,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/bn-BD/viewer.properties",
+      "size" : 10418,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/bn-IN/viewer.properties",
+      "size" : 10814,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/br/viewer.properties",
+      "size" : 7518,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/bs/viewer.properties",
+      "size" : 7216,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/ca/viewer.properties",
+      "size" : 7332,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/cs/viewer.properties",
+      "size" : 7320,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/csb/viewer.properties",
+      "size" : 4832,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/cy/viewer.properties",
+      "size" : 7033,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/da/viewer.properties",
+      "size" : 6516,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/de/viewer.properties",
+      "size" : 6981,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/el/viewer.properties",
+      "size" : 9388,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/en-GB/viewer.properties",
+      "size" : 6916,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/en-US/viewer.properties",
+      "size" : 6924,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/en-ZA/viewer.properties",
+      "size" : 6832,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/eo/viewer.properties",
+      "size" : 7143,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/es-AR/viewer.properties",
+      "size" : 6726,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/es-CL/viewer.properties",
+      "size" : 7334,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/es-ES/viewer.properties",
+      "size" : 5000,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/es-MX/viewer.properties",
+      "size" : 7275,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/et/viewer.properties",
+      "size" : 6947,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/eu/viewer.properties",
+      "size" : 7276,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/fa/viewer.properties",
+      "size" : 8392,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/ff/viewer.properties",
+      "size" : 6995,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/fi/viewer.properties",
+      "size" : 6694,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/fr/viewer.properties",
+      "size" : 7021,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/fy-NL/viewer.properties",
+      "size" : 7210,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/ga-IE/viewer.properties",
+      "size" : 7489,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/gd/viewer.properties",
+      "size" : 7591,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/gl/viewer.properties",
+      "size" : 7399,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/gu-IN/viewer.properties",
+      "size" : 9633,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/he/viewer.properties",
+      "size" : 7784,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/hi-IN/viewer.properties",
+      "size" : 10134,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/hr/viewer.properties",
+      "size" : 7251,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/hu/viewer.properties",
+      "size" : 7556,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/hy-AM/viewer.properties",
+      "size" : 8850,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/id/viewer.properties",
+      "size" : 7087,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/is/viewer.properties",
+      "size" : 7033,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/it/viewer.properties",
+      "size" : 5048,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/ja/viewer.properties",
+      "size" : 7541,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/ka/viewer.properties",
+      "size" : 10805,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/kk/viewer.properties",
+      "size" : 8874,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/km/viewer.properties",
+      "size" : 10851,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/kn/viewer.properties",
+      "size" : 10792,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/ko/viewer.properties",
+      "size" : 7353,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/ku/viewer.properties",
+      "size" : 6146,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/lg/viewer.properties",
+      "size" : 4279,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/lij/viewer.properties",
+      "size" : 4929,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/locale.properties",
+      "size" : 4314,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/lt/viewer.properties",
+      "size" : 7422,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/lv/viewer.properties",
+      "size" : 7108,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/mai/viewer.properties",
+      "size" : 9690,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/mk/viewer.properties",
+      "size" : 6867,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/ml/viewer.properties",
+      "size" : 12359,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/mn/viewer.properties",
+      "size" : 3282,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/mr/viewer.properties",
+      "size" : 10068,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/ms/viewer.properties",
+      "size" : 6943,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/my/viewer.properties",
+      "size" : 10750,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/nb-NO/viewer.properties",
+      "size" : 6949,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/nl/viewer.properties",
+      "size" : 7228,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/nn-NO/viewer.properties",
+      "size" : 6907,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/nso/viewer.properties",
+      "size" : 5440,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/oc/viewer.properties",
+      "size" : 7302,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/or/viewer.properties",
+      "size" : 10748,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/pa-IN/viewer.properties",
+      "size" : 9353,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/pl/viewer.properties",
+      "size" : 4988,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/pt-BR/viewer.properties",
+      "size" : 7348,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/pt-PT/viewer.properties",
+      "size" : 7274,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/rm/viewer.properties",
+      "size" : 7531,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/ro/viewer.properties",
+      "size" : 7523,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/ru/viewer.properties",
+      "size" : 6684,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/rw/viewer.properties",
+      "size" : 3237,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/sah/viewer.properties",
+      "size" : 8551,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/si/viewer.properties",
+      "size" : 9684,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/sk/viewer.properties",
+      "size" : 7501,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/sl/viewer.properties",
+      "size" : 7144,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/son/viewer.properties",
+      "size" : 6902,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/sq/viewer.properties",
+      "size" : 6723,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/sr/viewer.properties",
+      "size" : 9008,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/sv-SE/viewer.properties",
+      "size" : 6895,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/sw/viewer.properties",
+      "size" : 5095,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/ta-LK/viewer.properties",
+      "size" : 3174,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/ta/viewer.properties",
+      "size" : 11152,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/te/viewer.properties",
+      "size" : 10289,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/th/viewer.properties",
+      "size" : 9997,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/tl/viewer.properties",
+      "size" : 3770,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/tn/viewer.properties",
+      "size" : 3498,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/tr/viewer.properties",
+      "size" : 7126,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/uk/viewer.properties",
+      "size" : 8928,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/ur/viewer.properties",
+      "size" : 8058,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/vi/viewer.properties",
+      "size" : 7572,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/wo/viewer.properties",
+      "size" : 4707,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/xh/viewer.properties",
+      "size" : 7512,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/zh-CN/viewer.properties",
+      "size" : 6818,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/zh-TW/viewer.properties",
+      "size" : 6882,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/locale/zu/viewer.properties",
+      "size" : 5501,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/pdf_viewer.js",
+      "size" : 142379,
+      "compressedSize" : 60149,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fileviewer/viewer/web/viewer.js",
+      "size" : 355432,
+      "compressedSize" : 154905,
+      "required" : [],
+      "includes" : []
+    }
+  ]
+}

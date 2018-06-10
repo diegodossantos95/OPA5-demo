@@ -1,0 +1,7 @@
+Version 0.9.7 (2016-12-13)
+  [BUG] Fixed so the context menu key can be used on keyboards to access corrections. #TINY-735
+Version 0.9.6 (2016-10-27)
+  [FEATURE] Added version detection logic that check if this plugin is used with a compatible tinymce version. #TINY-639
+  [FEATURE] Added an option "spellchecker_active" set the default spellchecker active state. #TINY-646
+Version 0.9.5 (2016-09-22)
+  [BUG] Replacing words with suggestions would remove adjacent spaces on Edge. #TINY-594

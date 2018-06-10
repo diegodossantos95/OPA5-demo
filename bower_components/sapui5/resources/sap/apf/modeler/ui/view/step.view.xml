@@ -1,0 +1,111 @@
+<mvc:View controllerName="sap.apf.modeler.ui.controller.step"
+	xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout" class="sapUiSizeCompact viewInline">
+	<VBox xmlns="sap.m" id="idStepform" visible="true" displayInline="false"
+		direction="Column" fitContainer="false" renderType="Div"
+		justifyContent="Start" alignItems="Stretch">
+		<items>
+			<ScrollContainer vertical="true">
+				<f:SimpleForm id="idBasicDataForm" maxContainerCols="1"
+					editable="false" labelMinWidth="300" layout="ResponsiveGridLayout"
+					labelSpanL="4" labelSpanM="4" labelSpanS="4" emptySpanL="2"
+					emptySpanM="2" emptySpanS="2" columnsL="1" columnsM="1"
+					class="formBottomPadding">
+					<f:content>
+						<core:Title id="idStepBasicData" level="H4" />
+						<Label id="idStepTitleLabel" required="true" />
+						<Input id="idStepTitle" editable="true" change="handleChangeForStepTitle"
+							showSuggestion="true" suggestionItems="{/Objects}"
+							suggest="handleSuggestionsForStepTitle">
+							<core:Item key="{key}" text="{name}" />
+						</Input>
+						<Label id="idStepLongTitleLabel" />
+						<Input id="idStepLongTitle" editable="true"
+							change="handleChangeForStepLongTitle" showSuggestion="true"
+							suggestionItems="{/Objects}" suggest="handleSuggestionsForStepLongTitle">
+							<core:Item key="{key}" text="{name}" />
+						</Input>
+						<Label id="idCategoryTitleLabel" required="true" />
+						<MultiComboBox id="idCategorySelect" enabled="true"
+							visible="true" valueState="None" editable="true"
+							selectionChange="handleChangeForCategory" items="{/Objects}">
+							<core:Item key="{CategoryId}" text="{CategoryTitle}" />
+						</MultiComboBox>
+						<core:Title id="idDataRequest" level="H4" />
+					</f:content>
+				</f:SimpleForm>
+				<VBox id="idStepRequestVBox" />
+				<f:SimpleForm id="idDataReductionForm"
+					maxContainerCols="1" editable="false" labelMinWidth="300"
+					layout="ResponsiveGridLayout" labelSpanL="4" labelSpanM="4"
+					labelSpanS="4" emptySpanL="2" emptySpanM="2" emptySpanS="2"
+					columnsL="1" columnsM="1" class="formTopPadding formBottomPadding">
+					<f:content>
+						<core:Title id="idDataReduction" level="H4" />
+						<Label id="idDataReductionLabel" width="100%" visible="true" />
+						<VBox id="idDataReductionRadioButton" visible="true"
+							displayInline="false" direction="Column" fitContainer="true"
+							renderType="Div" justifyContent="Start">
+							<items>
+								<RadioButtonGroup id="idDataReductionRadioGroup"
+									select="handleChangeForDataReductionType" ariaLabelledBy="idAriaPropertyForDataReduction">
+									<buttons>
+										<RadioButton groupName="groupDataReduction" id="idNoDataReduction" />
+										<RadioButton groupName="groupDataReduction" id="idTopN" />
+									</buttons>
+								</RadioButtonGroup>
+							</items>
+						</VBox>
+						<Label id="idNumberOfRecordsLabel" width="100%" required="true"
+							visible="false" />
+						<Input id="idNumberOfRecordsValue" busy="false" width="100%"
+							visible="false" type="Number" enabled="true"
+							liveChange="handleValidationForNumberOfRecords" change="handleChangeForNoOfRecords">
+						</Input>
+					</f:content>
+				</f:SimpleForm>
+				<VBox id="idSortLayout" visible="true" displayInline="false"
+					direction="Column" fitContainer="false" renderType="Div"
+					justifyContent="Start" alignItems="Stretch">
+				</VBox>
+				<f:SimpleForm id="idFilterMappingHeaderForm"
+					maxContainerCols="1" editable="false" labelMinWidth="300"
+					layout="ResponsiveGridLayout" labelSpanL="4" labelSpanM="4"
+					labelSpanS="4" emptySpanL="2" emptySpanM="2" emptySpanS="2"
+					columnsL="1" columnsM="1" class="formTopPadding">
+					<f:content>
+						<core:Title id="idFilterMapping" level="H4" />
+					</f:content>
+				</f:SimpleForm>
+				<VBox id="idStepFilterMappingVBox" visible="false" />
+				<f:SimpleForm id="idFilterMapKeepSourceAndNavTargetForm"
+					maxContainerCols="1" editable="false" labelMinWidth="300"
+					layout="ResponsiveGridLayout" labelSpanL="4" labelSpanM="4"
+					labelSpanS="4" emptySpanL="2" emptySpanM="2" emptySpanS="2"
+					columnsL="1" columnsM="1" class="formTopPadding formBottomPadding">
+					<f:content>
+						<Label id="idFilterMapKeepSourceLabel" visible="false" />
+						<CheckBox xmlns="sap.m" id="idFilterKeepSourceCheckBox"
+							visible="false" selected="false" select="handleFilterMapKeepSource" />
+						<core:Title id="idNavigationTarget" level="H4" />
+						<Label id="idStepSpecificLabel" />
+						<MultiComboBox id="idStepSpecificCombo" enabled="true"
+							visible="true" valueState="None" editable="true"
+							selectionChange="handleChangeForStepSpecificNavTargets" items="{/Objects}"
+							width="100%">
+							<core:Item key="{navTargetKey}" text="{navTargetName}" />
+						</MultiComboBox>
+						<Label id="idGlobalLabel" />
+						<MultiComboBox id="idGlobalCombo" enabled="true"
+							visible="true" valueState="None" editable="false" items="{/Objects}"
+							width="100%">
+							<core:Item key="{navTargetKey}" text="{navTargetName}" />
+						</MultiComboBox>
+					</f:content>
+				</f:SimpleForm>
+				<VBox id="idStepCornerTextVBox" />
+			</ScrollContainer>
+		</items>
+	</VBox>
+	<InvisibleText xmlns="sap.ui.core" id="idAriaPropertyForDataReduction" />
+</mvc:View>

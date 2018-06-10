@@ -1,0 +1,9 @@
+
+TinyMCE Commercial Application License
+--------------------------------------
+This copy of TinyMCE is under a commercial license, the LGPL headers are removed.
+
+A signed agreement from Moxiecode Systems AB is required in order to use this specific copy of TinyMCE.
+
+If you have any questions regarding your license, contact Moxiecode Systems AB (www.moxiecode.com).
+		

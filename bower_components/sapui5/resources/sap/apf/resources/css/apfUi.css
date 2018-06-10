@@ -1,0 +1,242 @@
+/* Print Block */
+@media all {
+	.page-break {
+		visibility: none;
+	}
+}
+
+#apfPrintArea {
+	display: none;
+	margin-left: -999px;
+}
+
+.downArrow {
+	display: block;
+}
+
+.stepThumbnail {
+	border: 1px solid #a2a2a2;
+}
+
+.block-overlay-container {
+	height: 130px;
+	width: 100%;
+	position: absolute;
+	z-index: 2;
+}
+
+.block-overlay-container:hover {
+	background: #f7f7f7;
+	opacity: 0.3;
+}
+
+.smartFilterBarContainer {
+	height: 125px;
+	overflow: auto;
+}
+
+.smartFilterBar {
+	height: 92px;
+	overflow: auto;
+}
+
+.ChartArea {
+	overflow: hidden;
+}
+
+.thumbnailTableImage {
+	width: 200px;
+	height: 108px;
+	outline: none;
+	margin: 0px auto;
+	display: block;
+}
+
+.stepContainer {
+	width: 100%;
+	height: 100% !important;
+}
+
+.stepContainer>div.sapUiVltCell:nth-child(2) {
+	height: 100%;
+}
+
+.stepContainer,.stepContainer>div.sapUiVltCell:nth-child(2) {
+	min-height: 670px;
+}
+
+.thumbnailLayout {
+	margin-left: 10px;
+}
+
+.noDataText {
+	text-align: center !important;
+	height: 80px;
+	width: 158px !important;
+	border: 1px solid #e5e5e5;
+	margin-left: 10px;
+}
+
+.noDataText:hover {
+	border-color: #e5e5e5 !important;
+}
+
+.saveStyle,.textStyle {
+	margin: 10% 4% 10% 4%;
+	width: 92% !important;
+	padding-left: 7%;
+	padding-right: 7%;
+}
+
+.scrollContainerEle,.sapApfObjectHeader .sapMText,.sapApfStepLayout .sapMText,.sapApfMasterTitle,.sapApfDetailTitle,.showSelection,.resetSelection
+	{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.sapApfMasterTitle {
+	font-weight: bold;
+}
+
+/********** DnD css begins *********/
+.DnD-container { /* 	background: blue; */
+	
+}
+
+.DnD-block {
+	transition: transform 0.8s ease 0;
+	-webkit-transition: -webkit-transform 0.8s;
+	-moz-transition: -moz-transform 0.8s;
+	-o-transition: -o-transform 0.8s;
+	-ms-transition: -ms-transform 0.8s;
+}
+
+.DnD-drag {
+	cursor: move;
+	z-index: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: alpha(opacity =           60);
+	opacity: 0.6;
+	transition: transform 0s;
+	-webkit-transition: -webkit-transform 0s;
+	-moz-transition: -moz-transform 0s;
+	-o-transition: -o-transform 0s;
+	-ms-transition: -ms-transform 0s;
+}
+/*  Dnd Css ends */
+
+/* Layout CSS */
+.sapApf,.sapApfHeader {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Layout CSS ends */
+.loadMoreLink {
+	font-size: 18px;
+	margin-left: 5px;
+}
+
+.bottomLayout {
+	padding: 2% 4% 2% 4%;
+	text-transform: uppercase;
+}
+
+.topLayout {
+	padding: 1% 4% 0% 4%;
+	text-transform: uppercase;
+}
+
+.initialText {
+	visibility: visible !important;
+	margin-left: 24%;
+	margin-top: 8%;
+	margin-right: 10%;
+	white-space: pre-wrap;
+}
+
+.thumbnailNoData {
+	visibility: hidden;
+}
+
+.currentStep {
+	padding-left: 20px;
+}
+
+.selectedNumberLink {
+	margin-left: 4px !important;
+}
+
+.selectedNumberEndText {
+	margin-left: 0px !important;
+}
+
+.thumbanilText {
+	font-size: 12px;
+}
+
+.overlayThumbnailWrapper {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 75px;
+	width: 198px;
+	background: rgba(0, 0, 0, 0.0);
+}
+
+.toolbarView {
+	display: block;
+}
+
+.activeStepTitle {
+	font-weight: bold;
+}
+
+.activeStepThumbnail {
+	border: 1px solid #718789;
+}
+
+.lineSeparator {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.repItem>div.sapMLIBContent>div.sapMSLIDiv {
+	margin-top: 20px;
+}
+
+.facetfilter>div {
+	padding-top: 10px;
+}
+
+.tableRepresentation .sapUiTableHdrTitle,.treeTableRepresentation .sapUiTableHdrTitle
+	{
+	padding: 1% 0% 0% 1%;
+}
+
+.treeTableRepresentation {
+	padding-bottom: 3%;
+}
+
+.sapTableSelectionForPrint {
+	background: #e6f2f9;
+}
+
+.apfAppPage>section {
+	overflow-y : visible;
+}
+
+.chartContainerResetStyle {
+	margin-right : 5px !important;
+}
+.facetFilterInitialAlign {
+	padding-left: 1%;
+}

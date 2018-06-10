@@ -1,0 +1,162 @@
+{
+  "modules" : [
+    {
+      "name" : "sap/portal/ui5/core/Collection.js",
+      "size" : 19319,
+      "compressedSize" : 6675,
+      "required" : ["jquery.sap.global.js", "sap/portal/ui5/core/Object.js", "sap/portal/ui5/core/PropertyObserver.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/portal/ui5/core/Component.js",
+      "size" : 58735,
+      "compressedSize" : 18808,
+      "required" : ["jquery.sap.global.js", "sap/portal/ui5/core/ComponentManager.js", "sap/portal/ui5/core/LayoutData.js", "sap/portal/ui5/core/Object.js", "sap/portal/ui5/core/PropertyObserver.js", "sap/portal/ui5/core/View.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/portal/ui5/core/ComponentCollection.js",
+      "size" : 2377,
+      "compressedSize" : 780,
+      "required" : ["jquery.sap.global.js", "sap/portal/ui5/core/Collection.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/portal/ui5/core/ComponentManager.js",
+      "size" : 1710,
+      "compressedSize" : 911,
+      "required" : ["jquery.sap.global.js", "sap/portal/ui5/core/Object.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/portal/ui5/core/DynamicView.js",
+      "size" : 5322,
+      "compressedSize" : 2167,
+      "required" : ["jquery.sap.global.js", "sap/portal/ui5/core/View.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/portal/ui5/core/LayoutData.js",
+      "size" : 1163,
+      "compressedSize" : 466,
+      "required" : ["jquery.sap.global.js", "sap/portal/ui5/core/Collection.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/portal/ui5/core/LayoutInterface.js",
+      "size" : 791,
+      "compressedSize" : 310,
+      "required" : ["jquery.sap.global.js", "sap/portal/ui5/core/Object.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/portal/ui5/core/Object.js",
+      "size" : 5593,
+      "compressedSize" : 2402,
+      "required" : ["jquery.sap.global.js", "sap/portal/ui5/core/ObjectMetadata.js", "sap/ui/base/ManagedObject.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/portal/ui5/core/ObjectMetadata.js",
+      "size" : 8018,
+      "compressedSize" : 3358,
+      "required" : ["jquery.sap.global.js", "sap/portal/ui5/core/PropertyObserver.js", "sap/ui/base/ManagedObjectMetadata.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/portal/ui5/core/ObservablePropertiesMixin.js",
+      "size" : 7933,
+      "compressedSize" : 3493,
+      "required" : ["jquery.sap.global.js", "sap/portal/ui5/externals/es3shims/objectgetprototypeof.js", "sap/portal/ui5/externals/es5shims/arrayprototypeindexof.js", "sap/portal/ui5/externals/es5shims/arrayprototypelastindexof.js", "sap/portal/ui5/externals/es5shims/functionprototypebind.js", "sap/portal/ui5/externals/es5shims/windowprototypegetcomputedstyle.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/portal/ui5/core/PropertyObserver.js",
+      "size" : 4814,
+      "compressedSize" : 2285,
+      "required" : ["jquery.sap.global.js", "sap/portal/ui5/externals/es3shims/objectgetprototypeof.js", "sap/portal/ui5/externals/es5shims/arrayprototypeindexof.js", "sap/portal/ui5/externals/es5shims/arrayprototypelastindexof.js", "sap/portal/ui5/externals/es5shims/functionprototypebind.js", "sap/portal/ui5/externals/es5shims/windowprototypegetcomputedstyle.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/portal/ui5/core/UI5ControlView.js",
+      "size" : 60667,
+      "compressedSize" : 18684,
+      "required" : ["jquery.sap.global.js", "sap/portal/ui5/core/View.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/portal/ui5/core/View.js",
+      "size" : 3982,
+      "compressedSize" : 1579,
+      "required" : ["jquery.sap.global.js", "sap/portal/ui5/core/Object.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/portal/ui5/externals/es3shims/objectgetprototypeof.js",
+      "size" : 262,
+      "compressedSize" : 207,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/portal/ui5/externals/es5shims/arrayprototypeindexof.js",
+      "size" : 702,
+      "compressedSize" : 325,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/portal/ui5/externals/es5shims/arrayprototypelastindexof.js",
+      "size" : 774,
+      "compressedSize" : 351,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/portal/ui5/externals/es5shims/functionprototypebind.js",
+      "size" : 1679,
+      "compressedSize" : 627,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/portal/ui5/externals/es5shims/windowprototypegetcomputedstyle.js",
+      "size" : 650,
+      "compressedSize" : 395,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/portal/ui5/library-preload.js",
+      "size" : 67143,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/ManagedObject.js", "sap/ui/base/ManagedObjectMetadata.js", "sap/ui/core/Core.js", "sap/ui/core/library.js"],
+      "includes" : ["sap/portal/ui5/core/Collection.js", "sap/portal/ui5/core/Component.js", "sap/portal/ui5/core/ComponentCollection.js", "sap/portal/ui5/core/ComponentManager.js", "sap/portal/ui5/core/DynamicView.js", "sap/portal/ui5/core/LayoutData.js", "sap/portal/ui5/core/LayoutInterface.js", "sap/portal/ui5/core/Object.js", "sap/portal/ui5/core/ObjectMetadata.js", "sap/portal/ui5/core/ObservablePropertiesMixin.js", "sap/portal/ui5/core/PropertyObserver.js", "sap/portal/ui5/core/UI5ControlView.js", "sap/portal/ui5/core/View.js", "sap/portal/ui5/externals/es3shims/objectgetprototypeof.js", "sap/portal/ui5/externals/es5shims/arrayprototypeindexof.js", "sap/portal/ui5/externals/es5shims/arrayprototypelastindexof.js", "sap/portal/ui5/externals/es5shims/functionprototypebind.js", "sap/portal/ui5/externals/es5shims/windowprototypegetcomputedstyle.js", "sap/portal/ui5/library.js", "sap/portal/ui5/manifest.json"]
+    },
+    {
+      "name" : "sap/portal/ui5/library-preload.json",
+      "size" : 0,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/ManagedObject.js", "sap/ui/base/ManagedObjectMetadata.js", "sap/ui/core/Core.js", "sap/ui/core/library-preload.json", "sap/ui/core/library.js"],
+      "includes" : ["sap/portal/ui5/core/Collection.js", "sap/portal/ui5/core/Component.js", "sap/portal/ui5/core/ComponentCollection.js", "sap/portal/ui5/core/ComponentManager.js", "sap/portal/ui5/core/DynamicView.js", "sap/portal/ui5/core/LayoutData.js", "sap/portal/ui5/core/LayoutInterface.js", "sap/portal/ui5/core/Object.js", "sap/portal/ui5/core/ObjectMetadata.js", "sap/portal/ui5/core/ObservablePropertiesMixin.js", "sap/portal/ui5/core/PropertyObserver.js", "sap/portal/ui5/core/UI5ControlView.js", "sap/portal/ui5/core/View.js", "sap/portal/ui5/externals/es3shims/objectgetprototypeof.js", "sap/portal/ui5/externals/es5shims/arrayprototypeindexof.js", "sap/portal/ui5/externals/es5shims/arrayprototypelastindexof.js", "sap/portal/ui5/externals/es5shims/functionprototypebind.js", "sap/portal/ui5/externals/es5shims/windowprototypegetcomputedstyle.js", "sap/portal/ui5/library.js", "sap/portal/ui5/manifest.json"]
+    },
+    {
+      "name" : "sap/portal/ui5/library.js",
+      "description" : "Initialization Code and shared classes of library sap.portal.ui5 (1.50.0)",
+      "size" : 2033,
+      "compressedSize" : 1129,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Core.js", "sap/ui/core/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/portal/ui5/library.properties",
+      "size" : 76,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/portal/ui5/manifest.json",
+      "size" : 664,
+      "required" : [],
+      "includes" : []
+    }
+  ]
+}

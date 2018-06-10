@@ -1,0 +1,122 @@
+<mvc:View controllerName="sap.apf.modeler.ui.controller.facetFilter"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" class="sapUiSizeCompact viewInline">
+	<VBox xmlns="sap.m" id="idFacetFilterVBox" visible="true" width="100%"
+		displayInline="false" direction="Column" fitContainer="false"
+		renderType="Div" justifyContent="Start" alignItems="Stretch">
+		<items>
+			<ScrollContainer vertical="true">
+				<f:SimpleForm id="idFFForm" maxContainerCols="1"
+					editable="false" labelMinWidth="300" layout="ResponsiveGridLayout"
+					labelSpanL="4" labelSpanM="4" labelSpanS="4" emptySpanL="2"
+					emptySpanM="2" emptySpanS="2" columnsL="1" columnsM="1"
+					class="formBottomPadding">
+					<f:content>
+						<core:Title id="idFacetFilterBasicData" level="H4" />
+						<Label xmlns="sap.m" id="idFFLabel" width="100%" required="true" />
+						<Input xmlns="sap.m" id="idLabel" editable="true"
+							change="handleChangeForLabel" showSuggestion="true"
+							suggestionItems="{/Objects}" suggest="handleSuggestions">
+							<core:Item key="{key}" text="{name}" />
+						</Input>
+						<Label xmlns="sap.m" id="idFFPropertyLabel" width="100%"
+							required="true" />
+						<Select xmlns="sap.m" id="idFFProperty" visible="true"
+							enabled="true" width="100%" maxWidth="100%" autoAdjustWidth="false"
+							forceSelection="false" change="handleChangeForProperty" items="{/Objects}">
+							<core:Item key="{key}" text="{name}" />
+						</Select>
+						<Label xmlns="sap.m" id="idDoNotShowAtRuntimeLabel" width="100%" />
+						<CheckBox xmlns="sap.m" id="idDoNotShowAtRuntimeCheckBox"
+							selected="false" width="0px" visible="true" enabled="true"
+							activeHandling="true" select="handleChangeForVisibilityAtRuntime">
+						</CheckBox>
+						<Label xmlns="sap.m" id="idSelectionModeLabel" width="100%" />
+						<VBox xmlns="sap.m" id="idSelectionMode" visible="true"
+							displayInline="false" direction="Column" fitContainer="true"
+							renderType="Div" justifyContent="Start">
+							<items>
+								<RadioButtonGroup xmlns="sap.m"
+									id="idSelectionModeRadioGroup" select="handleChangeForSelectionMode"
+									ariaLabelledBy="idAriaPropertyForSelection">
+									<buttons>
+										<RadioButton id="idSingleSelectionMode" />
+										<RadioButton id="idMultiSelectionMode" />
+									</buttons>
+								</RadioButtonGroup>
+							</items>
+						</VBox>
+						<core:Title id="idDefaultValuesTitle" level="H4" />
+						<Label xmlns="sap.m" id="idPreselectionModeLabel" width="100%" />
+						<VBox xmlns="sap.m" id="idPreselectionMode" visible="true"
+							displayInline="false" direction="Column" fitContainer="true"
+							renderType="Div" justifyContent="Start">
+							<items>
+								<RadioButtonGroup xmlns="sap.m"
+									id="idPreselectionModeRadioGroup" select="handleChangeForPreselectionMode"
+									ariaLabelledBy="idAriaPropertyForDefaultMode">
+									<buttons>
+										<RadioButton id="idNoneSelection" />
+										<RadioButton id="idAutomaticSelection" />
+										<RadioButton id="idFixedValue" />
+										<RadioButton id="idFunction" />
+									</buttons>
+								</RadioButtonGroup>
+							</items>
+						</VBox>
+						<Label xmlns="sap.m" id="idPreselectionDefaultsLabel" width="100%"
+							visible="false" required="true" />
+						<MultiInput id="idPreselectionDefaults" width="100%"
+							enableMultiLineMode="true" visible="false"
+							change="handleChangeForPreselectionDefaults" showValueHelp="false" />
+						<Label xmlns="sap.m" id="idPreselectionFunctionLabel" width="100%"
+							visible="false" required="true" />
+						<Input xmlns="sap.m" id="idPreselectionFunction" editable="true"
+							change="handleChangeForPreselectionFunction" visible="false" />
+						<core:Title id="idValueHelpTitle" level="H4" />
+					</f:content>
+					<Label xmlns="sap.m" id="idValueHelpLabel" width="100%" />
+					<VBox xmlns="sap.m" id="idValueHelp" visible="true"
+						displayInline="false" direction="Column" fitContainer="true"
+						renderType="Div" justifyContent="Start">
+						<items>
+							<RadioButtonGroup xmlns="sap.m" id="idValueHelpRadioGroup"
+								select="handleChangeForValueHelpOption" ariaLabelledBy="idAriaPropertyForVHR">
+								<buttons>
+									<RadioButton id="idVHNone" />
+									<RadioButton id="idValueHelpRequest" />
+									<RadioButton id="idConfigListOfValues" />
+								</buttons>
+							</RadioButtonGroup>
+						</items>
+					</VBox>
+					<Label xmlns="sap.m" id="idConfigListOfValuesLabel" width="100%"
+						visible="false" required="true" />
+					<MultiInput id="idConfigListOfValuesMultiInput" width="100%"
+						enableMultiLineMode="true" visible="false"
+						change="handleChangeForConfigListOfValues" showValueHelp="false" />
+				</f:SimpleForm>
+				<VBox id="idVHRVBox" />
+				<f:SimpleForm id="idFFForm1" maxContainerCols="1"
+					editable="false" labelMinWidth="300" layout="ResponsiveGridLayout"
+					labelSpanL="4" labelSpanM="4" labelSpanS="4" emptySpanL="2"
+					emptySpanM="2" emptySpanS="2" columnsL="1" columnsM="1"
+					class="formTopPadding">
+					<f:content>
+						<core:Title id="idFilterResolutionTitle" level="H4" />
+						<Label xmlns="sap.m" id="idUseVHRAsFRRCheckBoxLabel" width="100%"
+							visible="false" />
+						<CheckBox xmlns="sap.m" id="idUseVHRAsFRRCheckBox"
+							selected="false" width="0px" visible="false" enabled="true"
+							activeHandling="true" select="handleChangeForUseVHRAsFRRCheckBox">
+						</CheckBox>
+					</f:content>
+				</f:SimpleForm>
+				<VBox id="idFRRVBox" />
+			</ScrollContainer>
+		</items>
+	</VBox>
+	<InvisibleText xmlns="sap.ui.core" id="idAriaPropertyForSelection" />
+	<InvisibleText xmlns="sap.ui.core" id="idAriaPropertyForDefaultMode" />
+	<InvisibleText xmlns="sap.ui.core" id="idAriaPropertyForVHR" />
+</mvc:View>

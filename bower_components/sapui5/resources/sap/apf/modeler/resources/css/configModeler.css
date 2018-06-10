@@ -1,0 +1,249 @@
+.configTitle {
+	font-size: 20px;
+	padding: 10px 20px 10px 20px;
+}
+
+.newButton {
+	position: relative;
+	padding: 15px;
+}
+
+.configTree {
+	overflow: auto;
+}
+
+.configMasterData {
+	margin: 0px 10px 0px 15px;
+}
+
+.configMasterData .sapUiTreeTransparent {
+	border: solid;
+	border-right-color: #FFFFFF;
+	border-right-width: thick;
+	border-left: none;
+	border-bottom: none;
+	border-top: none;
+}
+
+.configMasterData  .sapUiTreeNodeContent {
+	font-size: 14px;
+}
+
+.configMasterData .sapUiTreeNode {
+	margin-top: 6px;
+}
+
+.configDetailData {
+	margin-top: 5px;
+	margin-left: 10px;
+}
+
+.breadCrumb {
+	font-size: 12px;
+	margin: 30px 5px 30px 25px;
+}
+
+.formTitle {
+	font-size: 20px;
+	margin-left: 25px;
+}
+
+.applicationTitle {
+	font-size: 22px;
+	font-weight: bold;
+	padding: 20px 15px 30px 15px;
+}
+
+.applicationTitleLayout {
+	margin: 0px 10px 0px 10px;
+}
+
+.noConfigSelected {
+	margin: 0% 30% 0% 30%;
+	font-size: 15px;
+}
+
+.addNewConfig {
+	margin: 0px 18% 0% 18%;
+	font-size: 15px;
+}
+
+.dialogContentPadding .sapMDialogSection {
+	padding: 3rem;
+}
+
+.lessIcon {
+	margin-left: 10px;
+}
+
+.plusMinusLayout {
+	margin-top: 7px;
+}
+
+.configDetailData .sapMLabel {
+	margin-top: 3%;
+}
+
+.facetFilterRadioLabel>.sapMLabel  {
+	margin-top: 1.5%;
+}
+
+.configDetailData .sapUiRFLRow {
+	margin-top: 5px;
+}
+
+.configDetailData .sapUiFormM .sapUiRespGrid.sapUiRespGridVSpace0>div {
+	padding-bottom: 1%;
+}
+/*Preview Content CSS*/
+.supressDialogPadding {
+	margin: -3rem 0;
+}
+
+.previewMainChartHolder {
+	padding: 16px;
+	margin-left: 15rem;
+	margin-top: -16rem;
+}
+
+.thumbnailChartLayout {
+	width: 200px;
+	overflow: hidden;
+	margin-top: 5rem;
+}
+
+.previewDialogStyle .sapMDialogSection {
+	padding-bottom: initial;
+}
+
+.previewThumbnailHolder {
+	border-right: 1px solid rgb(230, 230, 230);
+}
+
+.previewThumbnailLayout {
+	border: 1px solid #a2a2a2;
+}
+
+.previewThumbnailTopLayout, .previewThumbnailBottomLayout {
+	padding: 5px 10px 5px 10px;
+	text-transform: uppercase;
+}
+
+.previewThumbnailText {
+	font-size: 12px;
+}
+
+.importFileUploaderDialogLabels {
+	width: 130px;
+	margin-top: 5px;
+	margin-left: 40px;
+}
+
+.configLink {
+	margin-left: 60px;
+}
+
+.textPropertyLink {
+	margin-left: 60px;
+	margin-top: 3%;
+}
+
+.applicationTitleLayout  .appCountLabel {
+	font-weight: bold;
+}
+
+.applicationListScroll::-webkit-scrollbar-thumb {
+	background-color: rgb(102, 102, 102);
+}
+
+.applicationTitleLayout  .applicationCount {
+	font-weight: bold;
+}
+
+.configDetailData  .sapMScrollContScroll {
+	width: 100%
+}
+
+.dialogText {
+	white-space: pre-wrap;
+}
+
+.cursor input[readonly="readonly"] {
+	cursor: pointer;
+}
+
+.cursor input {
+	cursor: text;
+}
+
+.stepRightCornerText {
+	margin: 0% 7% 0% 7%;
+}
+
+.stepLeftCornerText {
+	margin: 0% 38% 0% 38%;
+}
+
+.repRightCornerText {
+	margin: 0% 23% 0% 23%;
+}
+
+.repLeftCornerText {
+	margin: 0% 40% 0% 40%;
+}
+
+.stepChartIcon {
+	margin: 0% 1% 0% 1%;
+}
+
+.repChartIcon {
+	margin: 0% 6% 0% 6%;
+}
+
+.chartTypeLabel {
+	margin: 0% -4% 0% -4%
+}
+
+.chartTypeBox {
+	margin-left: 2px;
+}
+
+.breadCrumbIcon {
+	size: 15px;
+	width: 25px;
+	color: #666666;
+	margin-top: 2px;
+}
+
+.formTopPadding .sapUiFormResGrid>div {
+	padding-top: 0px;
+}
+
+.formBottomPadding .sapUiFormResGrid>div {
+	padding-bottom: 0px;
+}
+
+.viewInline .sapUiView {
+	display: inline;
+}
+
+.appCofigCombo {
+	width: 300px;
+}
+
+.dialogPadding .sapMDialogSection {
+	padding: 0rem;
+}
+
+.newConfigTitleLabel>div:first-child {
+	margin-left: 12%;
+	padding-top: 2%;
+}
+
+.newAppLayout>div:first-child {
+	padding-top: 5%;
+}
+
+.previewTable .sapMScrollCont .sapMScrollContV {
+	height: 100% !important;
+}

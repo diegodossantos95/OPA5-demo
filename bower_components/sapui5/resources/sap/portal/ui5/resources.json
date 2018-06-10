@@ -1,0 +1,401 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".library"
+		},
+		{
+			"name": ".theming"
+		},
+		{
+			"name": "core/Collection-dbg.js",
+			"module": "sap/portal/ui5/core/Collection.js",
+			"isDebug": true,
+			"required": [
+				"sap/portal/ui5/core/Object.js",
+				"sap/portal/ui5/core/PropertyObserver.js"
+			]
+		},
+		{
+			"name": "core/Collection.js",
+			"module": "sap/portal/ui5/core/Collection.js",
+			"required": [
+				"sap/portal/ui5/core/Object.js",
+				"sap/portal/ui5/core/PropertyObserver.js"
+			]
+		},
+		{
+			"name": "core/Component-dbg.js",
+			"module": "sap/portal/ui5/core/Component.js",
+			"isDebug": true,
+			"required": [
+				"sap/portal/ui5/core/ComponentManager.js",
+				"sap/portal/ui5/core/LayoutData.js",
+				"sap/portal/ui5/core/Object.js",
+				"sap/portal/ui5/core/PropertyObserver.js",
+				"sap/portal/ui5/core/View.js"
+			]
+		},
+		{
+			"name": "core/Component.js",
+			"module": "sap/portal/ui5/core/Component.js",
+			"required": [
+				"sap/portal/ui5/core/ComponentManager.js",
+				"sap/portal/ui5/core/LayoutData.js",
+				"sap/portal/ui5/core/Object.js",
+				"sap/portal/ui5/core/PropertyObserver.js",
+				"sap/portal/ui5/core/View.js"
+			]
+		},
+		{
+			"name": "core/ComponentCollection-dbg.js",
+			"module": "sap/portal/ui5/core/ComponentCollection.js",
+			"isDebug": true,
+			"required": [
+				"sap/portal/ui5/core/Collection.js"
+			]
+		},
+		{
+			"name": "core/ComponentCollection.js",
+			"module": "sap/portal/ui5/core/ComponentCollection.js",
+			"required": [
+				"sap/portal/ui5/core/Collection.js"
+			]
+		},
+		{
+			"name": "core/ComponentManager-dbg.js",
+			"module": "sap/portal/ui5/core/ComponentManager.js",
+			"isDebug": true,
+			"required": [
+				"sap/portal/ui5/core/Object.js"
+			]
+		},
+		{
+			"name": "core/ComponentManager.js",
+			"module": "sap/portal/ui5/core/ComponentManager.js",
+			"required": [
+				"sap/portal/ui5/core/Object.js"
+			]
+		},
+		{
+			"name": "core/DynamicView-dbg.js",
+			"module": "sap/portal/ui5/core/DynamicView.js",
+			"isDebug": true,
+			"required": [
+				"sap/portal/ui5/core/View.js"
+			]
+		},
+		{
+			"name": "core/DynamicView.js",
+			"module": "sap/portal/ui5/core/DynamicView.js",
+			"required": [
+				"sap/portal/ui5/core/View.js"
+			]
+		},
+		{
+			"name": "core/LayoutData-dbg.js",
+			"module": "sap/portal/ui5/core/LayoutData.js",
+			"isDebug": true,
+			"required": [
+				"sap/portal/ui5/core/Collection.js"
+			]
+		},
+		{
+			"name": "core/LayoutData.js",
+			"module": "sap/portal/ui5/core/LayoutData.js",
+			"required": [
+				"sap/portal/ui5/core/Collection.js"
+			]
+		},
+		{
+			"name": "core/LayoutInterface-dbg.js",
+			"module": "sap/portal/ui5/core/LayoutInterface.js",
+			"isDebug": true,
+			"required": [
+				"sap/portal/ui5/core/Object.js"
+			]
+		},
+		{
+			"name": "core/LayoutInterface.js",
+			"module": "sap/portal/ui5/core/LayoutInterface.js",
+			"required": [
+				"sap/portal/ui5/core/Object.js"
+			]
+		},
+		{
+			"name": "core/Object-dbg.js",
+			"module": "sap/portal/ui5/core/Object.js",
+			"isDebug": true,
+			"required": [
+				"sap/portal/ui5/core/ObjectMetadata.js",
+				"sap/ui/base/ManagedObject.js"
+			]
+		},
+		{
+			"name": "core/Object.js",
+			"module": "sap/portal/ui5/core/Object.js",
+			"required": [
+				"sap/portal/ui5/core/ObjectMetadata.js",
+				"sap/ui/base/ManagedObject.js"
+			]
+		},
+		{
+			"name": "core/ObjectMetadata-dbg.js",
+			"module": "sap/portal/ui5/core/ObjectMetadata.js",
+			"isDebug": true,
+			"required": [
+				"sap/portal/ui5/core/PropertyObserver.js",
+				"sap/ui/base/ManagedObjectMetadata.js"
+			]
+		},
+		{
+			"name": "core/ObjectMetadata.js",
+			"module": "sap/portal/ui5/core/ObjectMetadata.js",
+			"required": [
+				"sap/portal/ui5/core/PropertyObserver.js",
+				"sap/ui/base/ManagedObjectMetadata.js"
+			]
+		},
+		{
+			"name": "core/ObservablePropertiesMixin-dbg.js",
+			"module": "sap/portal/ui5/core/ObservablePropertiesMixin.js",
+			"isDebug": true,
+			"required": [
+				"sap/portal/ui5/externals/es3shims/objectgetprototypeof.js",
+				"sap/portal/ui5/externals/es5shims/arrayprototypeindexof.js",
+				"sap/portal/ui5/externals/es5shims/arrayprototypelastindexof.js",
+				"sap/portal/ui5/externals/es5shims/functionprototypebind.js",
+				"sap/portal/ui5/externals/es5shims/windowprototypegetcomputedstyle.js"
+			]
+		},
+		{
+			"name": "core/ObservablePropertiesMixin.js",
+			"module": "sap/portal/ui5/core/ObservablePropertiesMixin.js",
+			"required": [
+				"sap/portal/ui5/externals/es3shims/objectgetprototypeof.js",
+				"sap/portal/ui5/externals/es5shims/arrayprototypeindexof.js",
+				"sap/portal/ui5/externals/es5shims/arrayprototypelastindexof.js",
+				"sap/portal/ui5/externals/es5shims/functionprototypebind.js",
+				"sap/portal/ui5/externals/es5shims/windowprototypegetcomputedstyle.js"
+			]
+		},
+		{
+			"name": "core/PropertyObserver-dbg.js",
+			"module": "sap/portal/ui5/core/PropertyObserver.js",
+			"isDebug": true,
+			"required": [
+				"sap/portal/ui5/externals/es3shims/objectgetprototypeof.js",
+				"sap/portal/ui5/externals/es5shims/arrayprototypeindexof.js",
+				"sap/portal/ui5/externals/es5shims/arrayprototypelastindexof.js",
+				"sap/portal/ui5/externals/es5shims/functionprototypebind.js",
+				"sap/portal/ui5/externals/es5shims/windowprototypegetcomputedstyle.js"
+			]
+		},
+		{
+			"name": "core/PropertyObserver.js",
+			"module": "sap/portal/ui5/core/PropertyObserver.js",
+			"required": [
+				"sap/portal/ui5/externals/es3shims/objectgetprototypeof.js",
+				"sap/portal/ui5/externals/es5shims/arrayprototypeindexof.js",
+				"sap/portal/ui5/externals/es5shims/arrayprototypelastindexof.js",
+				"sap/portal/ui5/externals/es5shims/functionprototypebind.js",
+				"sap/portal/ui5/externals/es5shims/windowprototypegetcomputedstyle.js"
+			]
+		},
+		{
+			"name": "core/UI5ControlView-dbg.js",
+			"module": "sap/portal/ui5/core/UI5ControlView.js",
+			"isDebug": true,
+			"required": [
+				"sap/portal/ui5/core/View.js"
+			]
+		},
+		{
+			"name": "core/UI5ControlView.js",
+			"module": "sap/portal/ui5/core/UI5ControlView.js",
+			"required": [
+				"sap/portal/ui5/core/View.js"
+			]
+		},
+		{
+			"name": "core/View-dbg.js",
+			"module": "sap/portal/ui5/core/View.js",
+			"isDebug": true,
+			"required": [
+				"sap/portal/ui5/core/Object.js"
+			]
+		},
+		{
+			"name": "core/View.js",
+			"module": "sap/portal/ui5/core/View.js",
+			"required": [
+				"sap/portal/ui5/core/Object.js"
+			]
+		},
+		{
+			"name": "externals/es3shims/objectgetprototypeof-dbg.js",
+			"module": "sap/portal/ui5/externals/es3shims/objectgetprototypeof.js",
+			"isDebug": true
+		},
+		{
+			"name": "externals/es3shims/objectgetprototypeof.js",
+			"module": "sap/portal/ui5/externals/es3shims/objectgetprototypeof.js"
+		},
+		{
+			"name": "externals/es5shims/arrayprototypeindexof-dbg.js",
+			"module": "sap/portal/ui5/externals/es5shims/arrayprototypeindexof.js",
+			"isDebug": true
+		},
+		{
+			"name": "externals/es5shims/arrayprototypeindexof.js",
+			"module": "sap/portal/ui5/externals/es5shims/arrayprototypeindexof.js"
+		},
+		{
+			"name": "externals/es5shims/arrayprototypelastindexof-dbg.js",
+			"module": "sap/portal/ui5/externals/es5shims/arrayprototypelastindexof.js",
+			"isDebug": true
+		},
+		{
+			"name": "externals/es5shims/arrayprototypelastindexof.js",
+			"module": "sap/portal/ui5/externals/es5shims/arrayprototypelastindexof.js"
+		},
+		{
+			"name": "externals/es5shims/functionprototypebind-dbg.js",
+			"module": "sap/portal/ui5/externals/es5shims/functionprototypebind.js",
+			"isDebug": true
+		},
+		{
+			"name": "externals/es5shims/functionprototypebind.js",
+			"module": "sap/portal/ui5/externals/es5shims/functionprototypebind.js"
+		},
+		{
+			"name": "externals/es5shims/windowprototypegetcomputedstyle-dbg.js",
+			"module": "sap/portal/ui5/externals/es5shims/windowprototypegetcomputedstyle.js",
+			"isDebug": true
+		},
+		{
+			"name": "externals/es5shims/windowprototypegetcomputedstyle.js",
+			"module": "sap/portal/ui5/externals/es5shims/windowprototypegetcomputedstyle.js"
+		},
+		{
+			"name": "library-all-dbg.js",
+			"isDebug": true,
+			"merged": true
+		},
+		{
+			"name": "library-all.js",
+			"merged": true
+		},
+		{
+			"name": "library-dbg.js",
+			"module": "sap/portal/ui5/library.js",
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/Core.js",
+				"sap/ui/core/library.js"
+			]
+		},
+		{
+			"name": "library-preload.js",
+			"module": "sap/portal/ui5/library-preload.js",
+			"merged": true,
+			"required": [
+				"sap/ui/base/ManagedObject.js",
+				"sap/ui/base/ManagedObjectMetadata.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/library.js"
+			],
+			"included": [
+				"sap/portal/ui5/core/Collection.js",
+				"sap/portal/ui5/core/Component.js",
+				"sap/portal/ui5/core/ComponentCollection.js",
+				"sap/portal/ui5/core/ComponentManager.js",
+				"sap/portal/ui5/core/DynamicView.js",
+				"sap/portal/ui5/core/LayoutData.js",
+				"sap/portal/ui5/core/LayoutInterface.js",
+				"sap/portal/ui5/core/Object.js",
+				"sap/portal/ui5/core/ObjectMetadata.js",
+				"sap/portal/ui5/core/ObservablePropertiesMixin.js",
+				"sap/portal/ui5/core/PropertyObserver.js",
+				"sap/portal/ui5/core/UI5ControlView.js",
+				"sap/portal/ui5/core/View.js",
+				"sap/portal/ui5/externals/es3shims/objectgetprototypeof.js",
+				"sap/portal/ui5/externals/es5shims/arrayprototypeindexof.js",
+				"sap/portal/ui5/externals/es5shims/arrayprototypelastindexof.js",
+				"sap/portal/ui5/externals/es5shims/functionprototypebind.js",
+				"sap/portal/ui5/externals/es5shims/windowprototypegetcomputedstyle.js",
+				"sap/portal/ui5/library.js",
+				"sap/portal/ui5/manifest.json"
+			]
+		},
+		{
+			"name": "library-preload.js.map",
+			"isDebug": true
+		},
+		{
+			"name": "library-preload.json",
+			"module": "sap/portal/ui5/library-preload.json",
+			"merged": true,
+			"required": [
+				"sap/ui/base/ManagedObject.js",
+				"sap/ui/base/ManagedObjectMetadata.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/library-preload.json",
+				"sap/ui/core/library.js"
+			],
+			"included": [
+				"sap/portal/ui5/core/Collection.js",
+				"sap/portal/ui5/core/Component.js",
+				"sap/portal/ui5/core/ComponentCollection.js",
+				"sap/portal/ui5/core/ComponentManager.js",
+				"sap/portal/ui5/core/DynamicView.js",
+				"sap/portal/ui5/core/LayoutData.js",
+				"sap/portal/ui5/core/LayoutInterface.js",
+				"sap/portal/ui5/core/Object.js",
+				"sap/portal/ui5/core/ObjectMetadata.js",
+				"sap/portal/ui5/core/ObservablePropertiesMixin.js",
+				"sap/portal/ui5/core/PropertyObserver.js",
+				"sap/portal/ui5/core/UI5ControlView.js",
+				"sap/portal/ui5/core/View.js",
+				"sap/portal/ui5/externals/es3shims/objectgetprototypeof.js",
+				"sap/portal/ui5/externals/es5shims/arrayprototypeindexof.js",
+				"sap/portal/ui5/externals/es5shims/arrayprototypelastindexof.js",
+				"sap/portal/ui5/externals/es5shims/functionprototypebind.js",
+				"sap/portal/ui5/externals/es5shims/windowprototypegetcomputedstyle.js",
+				"sap/portal/ui5/library.js",
+				"sap/portal/ui5/manifest.json"
+			]
+		},
+		{
+			"name": "library.dependencies.json",
+			"designtime": true
+		},
+		{
+			"name": "library.dependencies.xml",
+			"designtime": true
+		},
+		{
+			"name": "library.js",
+			"module": "sap/portal/ui5/library.js",
+			"required": [
+				"sap/ui/core/Core.js",
+				"sap/ui/core/library.js"
+			]
+		},
+		{
+			"name": "library.properties",
+			"module": "sap/portal/ui5/library.properties"
+		},
+		{
+			"name": "library.templates.xml",
+			"designtime": true
+		},
+		{
+			"name": "manifest.json",
+			"module": "sap/portal/ui5/manifest.json"
+		},
+		{
+			"name": "resources.json"
+		}
+	]
+}

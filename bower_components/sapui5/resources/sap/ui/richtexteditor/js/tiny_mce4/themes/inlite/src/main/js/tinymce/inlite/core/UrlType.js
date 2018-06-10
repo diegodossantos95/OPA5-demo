@@ -1,0 +1,1 @@
+define('tinymce/inlite/core/UrlType',[],function(){var i=function(h){return/^www\.|\.(com|org|edu|gov|uk|net|ca|de|jp|fr|au|us|ru|ch|it|nl|se|no|es|mil)$/i.test(h.trim());};var a=function(h){return/^https?:\/\//.test(h.trim());};return{isDomainLike:i,isAbsolute:a};});

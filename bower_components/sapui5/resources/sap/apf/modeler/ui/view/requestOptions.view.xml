@@ -1,0 +1,40 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core"
+	visible="true" xmlns:f="sap.ui.layout.form" xmlns="sap.m" class="sapUiSizeCompact">
+	<f:SimpleForm id="idRequestOptionsForm" maxContainerCols="1"
+		editable="false" labelMinWidth="300" layout="ResponsiveGridLayout"
+		labelSpanL="4" labelSpanM="4" labelSpanS="4" emptySpanL="2"
+		emptySpanM="2" emptySpanS="2" columnsL="1" columnsM="1" width="100%">
+		<f:content>
+			<Label id="idSourceLabel" />
+			<Input id="idSource" editable="true" showValueHelp="true"
+				showSuggestion="true" suggestionItems="{/Objects}" change="handleChangeForSourceAsPromise"
+				valueHelpRequest="handleShowValueHelpRequest" suggest="handleSuggestions">
+				<core:Item key="{key}" text="{name}" />
+			</Input>
+			<Label id="idEntityLabel" />
+			<Select id="idEntity" visible="true" enabled="true" width="100%"
+				maxWidth="100%" type="Default" autoAdjustWidth="false"
+				change="handleChangeForEntity" items="{/Objects}">
+				<core:Item key="{key}" text="{name}" />
+			</Select>
+			<Label id="idOptionalPropertyLabel" visible="false" />
+			<Select id="idOptionalProperty" visible="false" enabled="true" width="100%"
+				maxWidth="100%" type="Default" autoAdjustWidth="false"
+				change="handleChangeForOptionalHierarchicalProperty" items="{/Objects}">
+				<core:Item key="{key}" text="{name}" />
+			</Select>
+			<Label id="idSelectPropertiesLabel" />
+			<MultiComboBox id="idSelectProperties" value="" width="100%"
+				enabled="true" visible="true" valueState="None" editable="true"
+				selectionFinish="handleChangeForSelectProperty" items="{/Objects}">
+				<core:Item key="{key}" text="{name}" />
+			</MultiComboBox>
+			<Label id="idOptionalRequestFieldLabel" visible="false" />
+			<Select id="idOptionalRequestField" visible="false" enabled="true"
+				width="100%" maxWidth="100%" type="Default" autoAdjustWidth="false"
+				change="handleChangeForOptionalRequestField" items="{/Objects}">
+				<core:Item key="{key}" text="{name}" />
+			</Select>
+		</f:content>
+	</f:SimpleForm>
+</mvc:View>

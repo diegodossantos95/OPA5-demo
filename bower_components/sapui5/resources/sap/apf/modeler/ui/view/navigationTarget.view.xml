@@ -1,0 +1,66 @@
+<mvc:View controllerName="sap.apf.modeler.ui.controller.navigationTarget"
+	xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" class="sapUiSizeCompact">
+	<VBox xmlns="sap.m" id="idNavTargetform" visible="true"
+		displayInline="false" direction="Column" fitContainer="false"
+		renderType="Div" justifyContent="Start" alignItems="Stretch">
+		<items>
+			<ScrollContainer vertical="true">
+				<f:SimpleForm maxContainerCols="1" editable="false"
+					labelMinWidth="300" layout="ResponsiveGridLayout" labelSpanL="4"
+					labelSpanM="4" labelSpanS="4" emptySpanL="2" emptySpanM="2"
+					emptySpanS="2" columnsL="1" columnsM="1" class="formBottomPadding">
+					<f:content>
+						<!-- NAVIGATION TARGET BASIC DATA -->
+						<core:Title id="idNavigationTargetHeaderLabel" level="H4" />
+						<Label xmlns="sap.m" id="idSemanticObjectLabel" required="true" />
+						<ComboBox xmlns="sap.m" id="idSemanticObjectField"
+							visible="true" enabled="true" width="100%" maxWidth="100%" type="Default"
+							autoAdjustWidth="false" change="handleChangeSemanticObjectValue"
+							items="{/Objects}">
+							<core:Item key="{id}" text="{id}" />
+						</ComboBox>
+						<Label xmlns="sap.m" id="idActionLabel" required="true" />
+						<ComboBox xmlns="sap.m" id="idActionField" visible="true"
+							enabled="true" width="100%" maxWidth="100%" type="Default"
+							autoAdjustWidth="false" change="handleChangeofAction" items="{/Objects}">
+							<core:Item key="{id}" text="{id}" />
+						</ComboBox>
+						<Label xmlns="sap.m" id="idDescriptionLabel" />
+						<Input xmlns="sap.m" id="idDescription" editable="true"
+							change="handleChangeForTitleText" showSuggestion="true"
+							suggestionItems="{/Objects}" suggest="handleSuggestions">
+							<core:Item key="{key}" text="{name}" />
+						</Input>
+						<!-- NAVIGATION PARAMETERS -->
+						<core:Title id="idNavigationParametersHeaderLabel" level="H4" />
+						<VBox id="idNavigationParameterBox">
+							<layoutData>
+								<l:GridData span="L12 M12 S12" />
+							</layoutData>
+						</VBox>
+						<!-- NAVIGATION TARGET TYPE -->
+						<core:Title id="idNavigationTargetTypeHeaderLabel" level="H4" />
+						<Label xmlns="sap.m" id="idNavigationTargetTypeLabel" />
+						<Select xmlns="sap.m" id="idNavigationTargetTypeField"
+							visible="true" enabled="true" width="100%" type="Default"
+							autoAdjustWidth="false" change="handleChangeOfNavigationTargetType"
+							items="{/Objects}">
+							<core:Item key="{key}" text="{name}" />
+						</Select>
+						<Label xmlns="sap.m" id="idAssignedStepsLabel" visible="false" />
+						<MultiComboBox xmlns="sap.m" id="idAssignedStepsCombo"
+							enabled="true" visible="false" editable="true" valueState="None"
+							selectionFinish="handleChangeForAssignedSteps" items="{/Objects}"
+							width="100%">
+							<core:Item key="{stepKey}" text="{stepName}" />
+						</MultiComboBox>
+						<!-- NAVIGATION TARGET FILETR MAPPING -->
+						<core:Title id="idContextMapping" level="H4" />
+					</f:content>
+				</f:SimpleForm>
+				<VBox id="idContextMappingVBox" />
+			</ScrollContainer>
+		</items>
+	</VBox>
+</mvc:View>

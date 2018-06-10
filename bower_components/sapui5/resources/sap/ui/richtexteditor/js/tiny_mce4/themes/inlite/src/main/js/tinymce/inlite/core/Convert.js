@@ -1,0 +1,1 @@
+define('tinymce/inlite/core/Convert',[],function(){var f=function(c){return{x:c.left,y:c.top,w:c.width,h:c.height};};var t=function(g){return{left:g.x,top:g.y,width:g.w,height:g.h,right:g.x+g.w,bottom:g.y+g.h};};return{fromClientRect:f,toClientRect:t};});

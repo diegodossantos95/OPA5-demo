@@ -1,0 +1,18 @@
+<core:FragmentDefinition xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<Dialog xmlns="sap.m" id="idMandatoryValidationDialog" class="sapUiSizeCompact dialogContentPadding"
+		showHeader="true" type="Standard" state="Warning" initialFocus="idMandatoryValidationDialog">
+		<beginButton>
+			<Button xmlns="sap.m" id="idYesButton" type="Default" enabled="true"
+				visible="true" iconFirst="true" iconDensityAware="true"
+				press="handleValidationNavigation">
+			</Button>
+		</beginButton>
+		<endButton>
+			<Button xmlns="sap.m" id="idNoButton" type="Default" enabled="true"
+				visible="true" iconFirst="true" iconDensityAware="true"
+				press="handlePreventNavigation">
+			</Button>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

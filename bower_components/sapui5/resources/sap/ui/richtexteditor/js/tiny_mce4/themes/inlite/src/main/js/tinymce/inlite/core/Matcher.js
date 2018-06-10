@@ -1,0 +1,1 @@
+define('tinymce/inlite/core/Matcher',[],function(){var r=function(i,a){return{id:i,rect:a};};var m=function(e,a){for(var i=0;i<a.length;i++){var f=a[i];var r=f(e);if(r){return r;}}return null;};return{match:m,result:r};});

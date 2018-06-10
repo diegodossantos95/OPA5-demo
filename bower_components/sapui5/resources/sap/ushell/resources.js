@@ -1,0 +1,2 @@
+// Copyright (c) 2009-2017 SAP SE, All Rights Reserved
+sap.ui.define(['sap/ui/model/resource/ResourceModel'],function(R){"use strict";var r={};r.getTranslationModel=function(l){var t=new R({bundleUrl:jQuery.sap.getModulePath("sap.ushell.renderers.fiori2.resources.resources",".properties"),bundleLocale:l});return t;};r.i18nModel=r.getTranslationModel(sap.ui.getCore().getConfiguration().getLanguage());r.i18n=r.i18nModel.getResourceBundle();return r;},true);

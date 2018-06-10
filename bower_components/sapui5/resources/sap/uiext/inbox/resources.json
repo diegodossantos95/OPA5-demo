@@ -1,0 +1,2258 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".library"
+		},
+		{
+			"name": ".theming"
+		},
+		{
+			"name": "Inbox-dbg.js",
+			"module": "sap/uiext/inbox/Inbox.js",
+			"isDebug": true,
+			"required": [
+				"sap/ui/commons/Button.js",
+				"sap/ui/commons/Dialog.js",
+				"sap/ui/commons/DropdownBox.js",
+				"sap/ui/commons/Image.js",
+				"sap/ui/commons/Label.js",
+				"sap/ui/commons/Link.js",
+				"sap/ui/commons/RadioButtonGroup.js",
+				"sap/ui/commons/SearchField.js",
+				"sap/ui/commons/TextField.js",
+				"sap/ui/commons/TextView.js",
+				"sap/ui/commons/ToggleButton.js",
+				"sap/ui/commons/Toolbar.js",
+				"sap/ui/commons/ToolbarSeparator.js",
+				"sap/ui/commons/layout/BorderLayout.js",
+				"sap/ui/commons/layout/HorizontalLayout.js",
+				"sap/ui/commons/layout/MatrixLayout.js",
+				"sap/ui/commons/layout/VerticalLayout.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/HTML.js",
+				"sap/ui/core/Icon.js",
+				"sap/ui/core/IconPool.js",
+				"sap/ui/core/ListItem.js",
+				"sap/ui/core/Locale.js",
+				"sap/ui/core/format/DateFormat.js",
+				"sap/ui/model/Filter.js",
+				"sap/ui/model/Sorter.js",
+				"sap/ui/table/Table.js",
+				"sap/ui/ux3/FacetFilter.js",
+				"sap/ui/ux3/FacetFilterList.js",
+				"sap/ui/ux3/OverlayContainer.js",
+				"sap/uiext/inbox/InboxConstants.js",
+				"sap/uiext/inbox/InboxDataManager.js",
+				"sap/uiext/inbox/InboxFilters.js",
+				"sap/uiext/inbox/InboxFormattedTextView.js",
+				"sap/uiext/inbox/InboxLink.js",
+				"sap/uiext/inbox/InboxTaskCategoryFilterList.js",
+				"sap/uiext/inbox/InboxToggleTextView.js",
+				"sap/uiext/inbox/InboxUtils.js",
+				"sap/uiext/inbox/SubstitutionRulesManager.js",
+				"sap/uiext/inbox/TCMMetadata.js",
+				"sap/uiext/inbox/TaskInitialFilters.js",
+				"sap/uiext/inbox/controller/InboxControllerFactory.js",
+				"sap/uiext/inbox/library.js",
+				"sap/uiext/inbox/tcm/TCMModel.js"
+			]
+		},
+		{
+			"name": "Inbox.control",
+			"designtime": true
+		},
+		{
+			"name": "Inbox.js",
+			"module": "sap/uiext/inbox/Inbox.js",
+			"required": [
+				"sap/ui/commons/Button.js",
+				"sap/ui/commons/Dialog.js",
+				"sap/ui/commons/DropdownBox.js",
+				"sap/ui/commons/Image.js",
+				"sap/ui/commons/Label.js",
+				"sap/ui/commons/Link.js",
+				"sap/ui/commons/RadioButtonGroup.js",
+				"sap/ui/commons/SearchField.js",
+				"sap/ui/commons/TextField.js",
+				"sap/ui/commons/TextView.js",
+				"sap/ui/commons/ToggleButton.js",
+				"sap/ui/commons/Toolbar.js",
+				"sap/ui/commons/ToolbarSeparator.js",
+				"sap/ui/commons/layout/BorderLayout.js",
+				"sap/ui/commons/layout/HorizontalLayout.js",
+				"sap/ui/commons/layout/MatrixLayout.js",
+				"sap/ui/commons/layout/VerticalLayout.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/HTML.js",
+				"sap/ui/core/Icon.js",
+				"sap/ui/core/IconPool.js",
+				"sap/ui/core/ListItem.js",
+				"sap/ui/core/Locale.js",
+				"sap/ui/core/format/DateFormat.js",
+				"sap/ui/model/Filter.js",
+				"sap/ui/model/Sorter.js",
+				"sap/ui/table/Table.js",
+				"sap/ui/ux3/FacetFilter.js",
+				"sap/ui/ux3/FacetFilterList.js",
+				"sap/ui/ux3/OverlayContainer.js",
+				"sap/uiext/inbox/InboxConstants.js",
+				"sap/uiext/inbox/InboxDataManager.js",
+				"sap/uiext/inbox/InboxFilters.js",
+				"sap/uiext/inbox/InboxFormattedTextView.js",
+				"sap/uiext/inbox/InboxLink.js",
+				"sap/uiext/inbox/InboxTaskCategoryFilterList.js",
+				"sap/uiext/inbox/InboxToggleTextView.js",
+				"sap/uiext/inbox/InboxUtils.js",
+				"sap/uiext/inbox/SubstitutionRulesManager.js",
+				"sap/uiext/inbox/TCMMetadata.js",
+				"sap/uiext/inbox/TaskInitialFilters.js",
+				"sap/uiext/inbox/controller/InboxControllerFactory.js",
+				"sap/uiext/inbox/library.js",
+				"sap/uiext/inbox/tcm/TCMModel.js"
+			]
+		},
+		{
+			"name": "InboxConfiguration-dbg.js",
+			"module": "sap/uiext/inbox/InboxConfiguration.js",
+			"isDebug": true
+		},
+		{
+			"name": "InboxConfiguration.js",
+			"module": "sap/uiext/inbox/InboxConfiguration.js"
+		},
+		{
+			"name": "InboxConstants-dbg.js",
+			"module": "sap/uiext/inbox/InboxConstants.js",
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/IconPool.js"
+			]
+		},
+		{
+			"name": "InboxConstants.js",
+			"module": "sap/uiext/inbox/InboxConstants.js",
+			"required": [
+				"sap/ui/core/IconPool.js"
+			]
+		},
+		{
+			"name": "InboxDataManager-dbg.js",
+			"module": "sap/uiext/inbox/InboxDataManager.js",
+			"isDebug": true
+		},
+		{
+			"name": "InboxDataManager.js",
+			"module": "sap/uiext/inbox/InboxDataManager.js"
+		},
+		{
+			"name": "InboxFilters-dbg.js",
+			"module": "sap/uiext/inbox/InboxFilters.js",
+			"isDebug": true,
+			"required": [
+				"sap/uiext/inbox/InboxPrimaryFilters.js",
+				"sap/uiext/inbox/InboxSecondaryFilters.js",
+				"sap/uiext/inbox/InboxUtils.js"
+			]
+		},
+		{
+			"name": "InboxFilters.js",
+			"module": "sap/uiext/inbox/InboxFilters.js",
+			"required": [
+				"sap/uiext/inbox/InboxPrimaryFilters.js",
+				"sap/uiext/inbox/InboxSecondaryFilters.js",
+				"sap/uiext/inbox/InboxUtils.js"
+			]
+		},
+		{
+			"name": "InboxFormattedTextView-dbg.js",
+			"module": "sap/uiext/inbox/InboxFormattedTextView.js",
+			"isDebug": true
+		},
+		{
+			"name": "InboxFormattedTextView.js",
+			"module": "sap/uiext/inbox/InboxFormattedTextView.js"
+		},
+		{
+			"name": "InboxLaunchPad-dbg.js",
+			"module": "sap/uiext/inbox/InboxLaunchPad.js",
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/Control.js",
+				"sap/ui/core/IconPool.js",
+				"sap/uiext/inbox/InboxTile.js",
+				"sap/uiext/inbox/library.js"
+			]
+		},
+		{
+			"name": "InboxLaunchPad.control",
+			"designtime": true
+		},
+		{
+			"name": "InboxLaunchPad.js",
+			"module": "sap/uiext/inbox/InboxLaunchPad.js",
+			"required": [
+				"sap/ui/core/Control.js",
+				"sap/ui/core/IconPool.js",
+				"sap/uiext/inbox/InboxTile.js",
+				"sap/uiext/inbox/library.js"
+			]
+		},
+		{
+			"name": "InboxLaunchPadRenderer-dbg.js",
+			"module": "sap/uiext/inbox/InboxLaunchPadRenderer.js",
+			"isDebug": true
+		},
+		{
+			"name": "InboxLaunchPadRenderer.js",
+			"module": "sap/uiext/inbox/InboxLaunchPadRenderer.js"
+		},
+		{
+			"name": "InboxLink-dbg.js",
+			"module": "sap/uiext/inbox/InboxLink.js",
+			"isDebug": true,
+			"required": [
+				"sap/uiext/inbox/InboxConstants.js"
+			]
+		},
+		{
+			"name": "InboxLink.js",
+			"module": "sap/uiext/inbox/InboxLink.js",
+			"required": [
+				"sap/uiext/inbox/InboxConstants.js"
+			]
+		},
+		{
+			"name": "InboxPrimaryFilterEnum-dbg.js",
+			"module": "sap/uiext/inbox/InboxPrimaryFilterEnum.js",
+			"isDebug": true
+		},
+		{
+			"name": "InboxPrimaryFilterEnum.js",
+			"module": "sap/uiext/inbox/InboxPrimaryFilterEnum.js"
+		},
+		{
+			"name": "InboxPrimaryFilters-dbg.js",
+			"module": "sap/uiext/inbox/InboxPrimaryFilters.js",
+			"isDebug": true,
+			"required": [
+				"sap/uiext/inbox/InboxPrimaryFilterEnum.js",
+				"sap/uiext/inbox/InboxUtils.js"
+			]
+		},
+		{
+			"name": "InboxPrimaryFilters.js",
+			"module": "sap/uiext/inbox/InboxPrimaryFilters.js",
+			"required": [
+				"sap/uiext/inbox/InboxPrimaryFilterEnum.js",
+				"sap/uiext/inbox/InboxUtils.js"
+			]
+		},
+		{
+			"name": "InboxRenderer-dbg.js",
+			"module": "sap/uiext/inbox/InboxRenderer.js",
+			"isDebug": true
+		},
+		{
+			"name": "InboxRenderer.js",
+			"module": "sap/uiext/inbox/InboxRenderer.js"
+		},
+		{
+			"name": "InboxSecondaryFilterPathEnum-dbg.js",
+			"module": "sap/uiext/inbox/InboxSecondaryFilterPathEnum.js",
+			"isDebug": true,
+			"required": [
+				"sap/uiext/inbox/InboxSecondaryFilterValuesEnum.js"
+			]
+		},
+		{
+			"name": "InboxSecondaryFilterPathEnum.js",
+			"module": "sap/uiext/inbox/InboxSecondaryFilterPathEnum.js",
+			"required": [
+				"sap/uiext/inbox/InboxSecondaryFilterValuesEnum.js"
+			]
+		},
+		{
+			"name": "InboxSecondaryFilterValuesEnum-dbg.js",
+			"module": "sap/uiext/inbox/InboxSecondaryFilterValuesEnum.js",
+			"isDebug": true
+		},
+		{
+			"name": "InboxSecondaryFilterValuesEnum.js",
+			"module": "sap/uiext/inbox/InboxSecondaryFilterValuesEnum.js"
+		},
+		{
+			"name": "InboxSecondaryFilters-dbg.js",
+			"module": "sap/uiext/inbox/InboxSecondaryFilters.js",
+			"isDebug": true,
+			"required": [
+				"sap/uiext/inbox/InboxSecondaryFilterPathEnum.js",
+				"sap/uiext/inbox/InboxSecondaryFilterValuesEnum.js",
+				"sap/uiext/inbox/InboxUtils.js",
+				"sap/uiext/inbox/TaskInitialFilters.js"
+			]
+		},
+		{
+			"name": "InboxSecondaryFilters.js",
+			"module": "sap/uiext/inbox/InboxSecondaryFilters.js",
+			"required": [
+				"sap/uiext/inbox/InboxSecondaryFilterPathEnum.js",
+				"sap/uiext/inbox/InboxSecondaryFilterValuesEnum.js",
+				"sap/uiext/inbox/InboxUtils.js",
+				"sap/uiext/inbox/TaskInitialFilters.js"
+			]
+		},
+		{
+			"name": "InboxSplitApp-dbg.js",
+			"module": "sap/uiext/inbox/InboxSplitApp.js",
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/Control.js",
+				"sap/uiext/inbox/library.js",
+				"sap/uiext/inbox/splitapp/DetailViewPage.js",
+				"sap/uiext/inbox/splitapp/MasterPage.js"
+			],
+			"condRequired": [
+				"sap/uiext/inbox/splitapp/TaskExecutionUIPage.js"
+			]
+		},
+		{
+			"name": "InboxSplitApp.control",
+			"designtime": true
+		},
+		{
+			"name": "InboxSplitApp.js",
+			"module": "sap/uiext/inbox/InboxSplitApp.js",
+			"required": [
+				"sap/ui/core/Control.js",
+				"sap/uiext/inbox/library.js",
+				"sap/uiext/inbox/splitapp/DetailViewPage.js",
+				"sap/uiext/inbox/splitapp/MasterPage.js"
+			],
+			"condRequired": [
+				"sap/uiext/inbox/splitapp/TaskExecutionUIPage.js"
+			]
+		},
+		{
+			"name": "InboxSplitAppRenderer-dbg.js",
+			"module": "sap/uiext/inbox/InboxSplitAppRenderer.js",
+			"isDebug": true
+		},
+		{
+			"name": "InboxSplitAppRenderer.js",
+			"module": "sap/uiext/inbox/InboxSplitAppRenderer.js"
+		},
+		{
+			"name": "InboxTaskCategoryFilterList-dbg.js",
+			"module": "sap/uiext/inbox/InboxTaskCategoryFilterList.js",
+			"isDebug": true
+		},
+		{
+			"name": "InboxTaskCategoryFilterList.js",
+			"module": "sap/uiext/inbox/InboxTaskCategoryFilterList.js"
+		},
+		{
+			"name": "InboxTaskDescription-dbg.js",
+			"module": "sap/uiext/inbox/InboxTaskDescription.js",
+			"isDebug": true,
+			"merged": true,
+			"included": [
+				"sap/uiext/inbox/InboxTaskDetails.js",
+				"sap/uiext/inbox/Inbox.js"
+			]
+		},
+		{
+			"name": "InboxTaskDescription.js",
+			"module": "sap/uiext/inbox/InboxTaskDescription.js",
+			"merged": true,
+			"included": [
+				"sap/uiext/inbox/InboxTaskDetails.js",
+				"sap/uiext/inbox/Inbox.js"
+			]
+		},
+		{
+			"name": "InboxTile-dbg.js",
+			"module": "sap/uiext/inbox/InboxTile.js",
+			"isDebug": true
+		},
+		{
+			"name": "InboxTile.js",
+			"module": "sap/uiext/inbox/InboxTile.js"
+		},
+		{
+			"name": "InboxToggleTextView-dbg.js",
+			"module": "sap/uiext/inbox/InboxToggleTextView.js",
+			"isDebug": true
+		},
+		{
+			"name": "InboxToggleTextView.js",
+			"module": "sap/uiext/inbox/InboxToggleTextView.js"
+		},
+		{
+			"name": "InboxUtils-dbg.js",
+			"module": "sap/uiext/inbox/InboxUtils.js",
+			"isDebug": true,
+			"required": [
+				"sap/ui/model/odata/Filter.js",
+				"sap/uiext/inbox/InboxConstants.js"
+			]
+		},
+		{
+			"name": "InboxUtils.js",
+			"module": "sap/uiext/inbox/InboxUtils.js",
+			"required": [
+				"sap/ui/model/odata/Filter.js",
+				"sap/uiext/inbox/InboxConstants.js"
+			]
+		},
+		{
+			"name": "SubstitutionRulesManager-dbg.js",
+			"module": "sap/uiext/inbox/SubstitutionRulesManager.js",
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/Control.js",
+				"sap/ui/core/IconPool.js",
+				"sap/uiext/inbox/InboxConstants.js",
+				"sap/uiext/inbox/InboxUtils.js",
+				"sap/uiext/inbox/SubstitutionRulesManagerConstants.js",
+				"sap/uiext/inbox/SubstitutionRulesManagerUtils.js",
+				"sap/uiext/inbox/TCMMetadata.js",
+				"sap/uiext/inbox/library.js"
+			]
+		},
+		{
+			"name": "SubstitutionRulesManager.control",
+			"designtime": true
+		},
+		{
+			"name": "SubstitutionRulesManager.js",
+			"module": "sap/uiext/inbox/SubstitutionRulesManager.js",
+			"required": [
+				"sap/ui/core/Control.js",
+				"sap/ui/core/IconPool.js",
+				"sap/uiext/inbox/InboxConstants.js",
+				"sap/uiext/inbox/InboxUtils.js",
+				"sap/uiext/inbox/SubstitutionRulesManagerConstants.js",
+				"sap/uiext/inbox/SubstitutionRulesManagerUtils.js",
+				"sap/uiext/inbox/TCMMetadata.js",
+				"sap/uiext/inbox/library.js"
+			]
+		},
+		{
+			"name": "SubstitutionRulesManagerConstants-dbg.js",
+			"module": "sap/uiext/inbox/SubstitutionRulesManagerConstants.js",
+			"isDebug": true
+		},
+		{
+			"name": "SubstitutionRulesManagerConstants.js",
+			"module": "sap/uiext/inbox/SubstitutionRulesManagerConstants.js"
+		},
+		{
+			"name": "SubstitutionRulesManagerRenderer-dbg.js",
+			"module": "sap/uiext/inbox/SubstitutionRulesManagerRenderer.js",
+			"isDebug": true
+		},
+		{
+			"name": "SubstitutionRulesManagerRenderer.js",
+			"module": "sap/uiext/inbox/SubstitutionRulesManagerRenderer.js"
+		},
+		{
+			"name": "SubstitutionRulesManagerUtils-dbg.js",
+			"module": "sap/uiext/inbox/SubstitutionRulesManagerUtils.js",
+			"isDebug": true
+		},
+		{
+			"name": "SubstitutionRulesManagerUtils.js",
+			"module": "sap/uiext/inbox/SubstitutionRulesManagerUtils.js"
+		},
+		{
+			"name": "TCMMetadata-dbg.js",
+			"module": "sap/uiext/inbox/TCMMetadata.js",
+			"isDebug": true
+		},
+		{
+			"name": "TCMMetadata.js",
+			"module": "sap/uiext/inbox/TCMMetadata.js"
+		},
+		{
+			"name": "TaskInitialFilters-dbg.js",
+			"module": "sap/uiext/inbox/TaskInitialFilters.js",
+			"isDebug": true,
+			"required": [
+				"sap/uiext/inbox/InboxUtils.js"
+			]
+		},
+		{
+			"name": "TaskInitialFilters.js",
+			"module": "sap/uiext/inbox/TaskInitialFilters.js",
+			"required": [
+				"sap/uiext/inbox/InboxUtils.js"
+			]
+		},
+		{
+			"name": "composite/InboxAddAttachmentTile-dbg.js",
+			"module": "sap/uiext/inbox/composite/InboxAddAttachmentTile.js",
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/Control.js",
+				"sap/uiext/inbox/library.js"
+			]
+		},
+		{
+			"name": "composite/InboxAddAttachmentTile.control",
+			"designtime": true
+		},
+		{
+			"name": "composite/InboxAddAttachmentTile.js",
+			"module": "sap/uiext/inbox/composite/InboxAddAttachmentTile.js",
+			"required": [
+				"sap/ui/core/Control.js",
+				"sap/uiext/inbox/library.js"
+			]
+		},
+		{
+			"name": "composite/InboxAddAttachmentTileRenderer-dbg.js",
+			"module": "sap/uiext/inbox/composite/InboxAddAttachmentTileRenderer.js",
+			"isDebug": true
+		},
+		{
+			"name": "composite/InboxAddAttachmentTileRenderer.js",
+			"module": "sap/uiext/inbox/composite/InboxAddAttachmentTileRenderer.js"
+		},
+		{
+			"name": "composite/InboxAttachmentFileUploader-dbg.js",
+			"module": "sap/uiext/inbox/composite/InboxAttachmentFileUploader.js",
+			"isDebug": true
+		},
+		{
+			"name": "composite/InboxAttachmentFileUploader.js",
+			"module": "sap/uiext/inbox/composite/InboxAttachmentFileUploader.js"
+		},
+		{
+			"name": "composite/InboxAttachmentTile-dbg.js",
+			"module": "sap/uiext/inbox/composite/InboxAttachmentTile.js",
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/Control.js",
+				"sap/uiext/inbox/library.js"
+			]
+		},
+		{
+			"name": "composite/InboxAttachmentTile.control",
+			"designtime": true
+		},
+		{
+			"name": "composite/InboxAttachmentTile.js",
+			"module": "sap/uiext/inbox/composite/InboxAttachmentTile.js",
+			"required": [
+				"sap/ui/core/Control.js",
+				"sap/uiext/inbox/library.js"
+			]
+		},
+		{
+			"name": "composite/InboxAttachmentTileRenderer-dbg.js",
+			"module": "sap/uiext/inbox/composite/InboxAttachmentTileRenderer.js",
+			"isDebug": true
+		},
+		{
+			"name": "composite/InboxAttachmentTileRenderer.js",
+			"module": "sap/uiext/inbox/composite/InboxAttachmentTileRenderer.js"
+		},
+		{
+			"name": "composite/InboxAttachmentsTileContainer-dbg.js",
+			"module": "sap/uiext/inbox/composite/InboxAttachmentsTileContainer.js",
+			"isDebug": true,
+			"required": [
+				"sap/ui/commons/MessageBox.js",
+				"sap/ui/core/Control.js",
+				"sap/uiext/inbox/InboxUtils.js",
+				"sap/uiext/inbox/composite/InboxAttachmentFileUploader.js",
+				"sap/uiext/inbox/library.js"
+			]
+		},
+		{
+			"name": "composite/InboxAttachmentsTileContainer.control",
+			"designtime": true
+		},
+		{
+			"name": "composite/InboxAttachmentsTileContainer.js",
+			"module": "sap/uiext/inbox/composite/InboxAttachmentsTileContainer.js",
+			"required": [
+				"sap/ui/commons/MessageBox.js",
+				"sap/ui/core/Control.js",
+				"sap/uiext/inbox/InboxUtils.js",
+				"sap/uiext/inbox/composite/InboxAttachmentFileUploader.js",
+				"sap/uiext/inbox/library.js"
+			]
+		},
+		{
+			"name": "composite/InboxAttachmentsTileContainerRenderer-dbg.js",
+			"module": "sap/uiext/inbox/composite/InboxAttachmentsTileContainerRenderer.js",
+			"isDebug": true
+		},
+		{
+			"name": "composite/InboxAttachmentsTileContainerRenderer.js",
+			"module": "sap/uiext/inbox/composite/InboxAttachmentsTileContainerRenderer.js"
+		},
+		{
+			"name": "composite/InboxBusyIndicator-dbg.js",
+			"module": "sap/uiext/inbox/composite/InboxBusyIndicator.js",
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/Control.js",
+				"sap/uiext/inbox/library.js"
+			]
+		},
+		{
+			"name": "composite/InboxBusyIndicator.control",
+			"designtime": true
+		},
+		{
+			"name": "composite/InboxBusyIndicator.js",
+			"module": "sap/uiext/inbox/composite/InboxBusyIndicator.js",
+			"required": [
+				"sap/ui/core/Control.js",
+				"sap/uiext/inbox/library.js"
+			]
+		},
+		{
+			"name": "composite/InboxBusyIndicatorRenderer-dbg.js",
+			"module": "sap/uiext/inbox/composite/InboxBusyIndicatorRenderer.js",
+			"isDebug": true
+		},
+		{
+			"name": "composite/InboxBusyIndicatorRenderer.js",
+			"module": "sap/uiext/inbox/composite/InboxBusyIndicatorRenderer.js"
+		},
+		{
+			"name": "composite/InboxComment-dbg.js",
+			"module": "sap/uiext/inbox/composite/InboxComment.js",
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/Control.js",
+				"sap/uiext/inbox/library.js"
+			]
+		},
+		{
+			"name": "composite/InboxComment.control",
+			"designtime": true
+		},
+		{
+			"name": "composite/InboxComment.js",
+			"module": "sap/uiext/inbox/composite/InboxComment.js",
+			"required": [
+				"sap/ui/core/Control.js",
+				"sap/uiext/inbox/library.js"
+			]
+		},
+		{
+			"name": "composite/InboxCommentRenderer-dbg.js",
+			"module": "sap/uiext/inbox/composite/InboxCommentRenderer.js",
+			"isDebug": true,
+			"required": [
+				"sap/uiext/inbox/InboxUtils.js"
+			]
+		},
+		{
+			"name": "composite/InboxCommentRenderer.js",
+			"module": "sap/uiext/inbox/composite/InboxCommentRenderer.js",
+			"required": [
+				"sap/uiext/inbox/InboxUtils.js"
+			]
+		},
+		{
+			"name": "composite/InboxTaskComments-dbg.js",
+			"module": "sap/uiext/inbox/composite/InboxTaskComments.js",
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/Control.js",
+				"sap/ui/core/theming/Parameters.js",
+				"sap/ui/ux3/Feeder.js",
+				"sap/uiext/inbox/composite/InboxBusyIndicator.js",
+				"sap/uiext/inbox/library.js"
+			]
+		},
+		{
+			"name": "composite/InboxTaskComments.control",
+			"designtime": true
+		},
+		{
+			"name": "composite/InboxTaskComments.js",
+			"module": "sap/uiext/inbox/composite/InboxTaskComments.js",
+			"required": [
+				"sap/ui/core/Control.js",
+				"sap/ui/core/theming/Parameters.js",
+				"sap/ui/ux3/Feeder.js",
+				"sap/uiext/inbox/composite/InboxBusyIndicator.js",
+				"sap/uiext/inbox/library.js"
+			]
+		},
+		{
+			"name": "composite/InboxTaskCommentsRenderer-dbg.js",
+			"module": "sap/uiext/inbox/composite/InboxTaskCommentsRenderer.js",
+			"isDebug": true
+		},
+		{
+			"name": "composite/InboxTaskCommentsRenderer.js",
+			"module": "sap/uiext/inbox/composite/InboxTaskCommentsRenderer.js"
+		},
+		{
+			"name": "composite/InboxTaskTitleControl-dbg.js",
+			"module": "sap/uiext/inbox/composite/InboxTaskTitleControl.js",
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/Control.js",
+				"sap/ui/core/IconPool.js",
+				"sap/uiext/inbox/library.js"
+			]
+		},
+		{
+			"name": "composite/InboxTaskTitleControl.control",
+			"designtime": true
+		},
+		{
+			"name": "composite/InboxTaskTitleControl.js",
+			"module": "sap/uiext/inbox/composite/InboxTaskTitleControl.js",
+			"required": [
+				"sap/ui/core/Control.js",
+				"sap/ui/core/IconPool.js",
+				"sap/uiext/inbox/library.js"
+			]
+		},
+		{
+			"name": "composite/InboxTaskTitleControlRenderer-dbg.js",
+			"module": "sap/uiext/inbox/composite/InboxTaskTitleControlRenderer.js",
+			"isDebug": true
+		},
+		{
+			"name": "composite/InboxTaskTitleControlRenderer.js",
+			"module": "sap/uiext/inbox/composite/InboxTaskTitleControlRenderer.js"
+		},
+		{
+			"name": "composite/InboxUploadAttachmentTile-dbg.js",
+			"module": "sap/uiext/inbox/composite/InboxUploadAttachmentTile.js",
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/Control.js",
+				"sap/uiext/inbox/library.js"
+			]
+		},
+		{
+			"name": "composite/InboxUploadAttachmentTile.control",
+			"designtime": true
+		},
+		{
+			"name": "composite/InboxUploadAttachmentTile.js",
+			"module": "sap/uiext/inbox/composite/InboxUploadAttachmentTile.js",
+			"required": [
+				"sap/ui/core/Control.js",
+				"sap/uiext/inbox/library.js"
+			]
+		},
+		{
+			"name": "composite/InboxUploadAttachmentTileRenderer-dbg.js",
+			"module": "sap/uiext/inbox/composite/InboxUploadAttachmentTileRenderer.js",
+			"isDebug": true
+		},
+		{
+			"name": "composite/InboxUploadAttachmentTileRenderer.js",
+			"module": "sap/uiext/inbox/composite/InboxUploadAttachmentTileRenderer.js"
+		},
+		{
+			"name": "controller/InboxController-dbg.js",
+			"module": "sap/uiext/inbox/controller/InboxController.js",
+			"isDebug": true
+		},
+		{
+			"name": "controller/InboxController.js",
+			"module": "sap/uiext/inbox/controller/InboxController.js"
+		},
+		{
+			"name": "controller/InboxControllerAsync-dbg.js",
+			"module": "sap/uiext/inbox/controller/InboxControllerAsync.js",
+			"isDebug": true,
+			"required": [
+				"sap/ui/model/json/JSONModel.js",
+				"sap/uiext/inbox/controller/InboxController.js"
+			]
+		},
+		{
+			"name": "controller/InboxControllerAsync.js",
+			"module": "sap/uiext/inbox/controller/InboxControllerAsync.js",
+			"required": [
+				"sap/ui/model/json/JSONModel.js",
+				"sap/uiext/inbox/controller/InboxController.js"
+			]
+		},
+		{
+			"name": "controller/InboxControllerFactory-dbg.js",
+			"module": "sap/uiext/inbox/controller/InboxControllerFactory.js",
+			"isDebug": true,
+			"required": [
+				"sap/uiext/inbox/controller/InboxController.js",
+				"sap/uiext/inbox/controller/InboxControllerAsync.js"
+			]
+		},
+		{
+			"name": "controller/InboxControllerFactory.js",
+			"module": "sap/uiext/inbox/controller/InboxControllerFactory.js",
+			"required": [
+				"sap/uiext/inbox/controller/InboxController.js",
+				"sap/uiext/inbox/controller/InboxControllerAsync.js"
+			]
+		},
+		{
+			"name": "library-all-dbg.js",
+			"isDebug": true,
+			"merged": true
+		},
+		{
+			"name": "library-all.js",
+			"merged": true
+		},
+		{
+			"name": "library-dbg.js",
+			"module": "sap/uiext/inbox/library.js",
+			"isDebug": true,
+			"required": [
+				"sap/ui/commons/library.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/library.js",
+				"sap/ui/ux3/library.js"
+			]
+		},
+		{
+			"name": "library-preload.js",
+			"module": "sap/uiext/inbox/library-preload.js",
+			"merged": true,
+			"required": [
+				"sap/m/MessageToast.js",
+				"sap/m/SelectDialog.js",
+				"sap/ui/commons/Button.js",
+				"sap/ui/commons/Dialog.js",
+				"sap/ui/commons/DropdownBox.js",
+				"sap/ui/commons/Image.js",
+				"sap/ui/commons/Label.js",
+				"sap/ui/commons/Link.js",
+				"sap/ui/commons/MessageBox.js",
+				"sap/ui/commons/RadioButtonGroup.js",
+				"sap/ui/commons/SearchField.js",
+				"sap/ui/commons/TextField.js",
+				"sap/ui/commons/TextView.js",
+				"sap/ui/commons/ToggleButton.js",
+				"sap/ui/commons/Toolbar.js",
+				"sap/ui/commons/ToolbarSeparator.js",
+				"sap/ui/commons/layout/BorderLayout.js",
+				"sap/ui/commons/layout/HorizontalLayout.js",
+				"sap/ui/commons/layout/MatrixLayout.js",
+				"sap/ui/commons/layout/VerticalLayout.js",
+				"sap/ui/commons/library.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/HTML.js",
+				"sap/ui/core/Icon.js",
+				"sap/ui/core/IconPool.js",
+				"sap/ui/core/ListItem.js",
+				"sap/ui/core/Locale.js",
+				"sap/ui/core/format/DateFormat.js",
+				"sap/ui/core/library.js",
+				"sap/ui/core/theming/Parameters.js",
+				"sap/ui/model/Filter.js",
+				"sap/ui/model/Sorter.js",
+				"sap/ui/model/json/JSONModel.js",
+				"sap/ui/model/odata/Filter.js",
+				"sap/ui/table/Table.js",
+				"sap/ui/ux3/FacetFilter.js",
+				"sap/ui/ux3/FacetFilterList.js",
+				"sap/ui/ux3/Feeder.js",
+				"sap/ui/ux3/OverlayContainer.js",
+				"sap/ui/ux3/library.js"
+			],
+			"included": [
+				"sap/uiext/inbox/Inbox.js",
+				"sap/uiext/inbox/InboxConfiguration.js",
+				"sap/uiext/inbox/InboxConstants.js",
+				"sap/uiext/inbox/InboxDataManager.js",
+				"sap/uiext/inbox/InboxFilters.js",
+				"sap/uiext/inbox/InboxFormattedTextView.js",
+				"sap/uiext/inbox/InboxLaunchPad.js",
+				"sap/uiext/inbox/InboxLaunchPadRenderer.js",
+				"sap/uiext/inbox/InboxLink.js",
+				"sap/uiext/inbox/InboxPrimaryFilterEnum.js",
+				"sap/uiext/inbox/InboxPrimaryFilters.js",
+				"sap/uiext/inbox/InboxRenderer.js",
+				"sap/uiext/inbox/InboxSecondaryFilterPathEnum.js",
+				"sap/uiext/inbox/InboxSecondaryFilterValuesEnum.js",
+				"sap/uiext/inbox/InboxSecondaryFilters.js",
+				"sap/uiext/inbox/InboxSplitApp.js",
+				"sap/uiext/inbox/InboxSplitAppRenderer.js",
+				"sap/uiext/inbox/InboxTaskCategoryFilterList.js",
+				"sap/uiext/inbox/InboxTile.js",
+				"sap/uiext/inbox/InboxToggleTextView.js",
+				"sap/uiext/inbox/InboxUtils.js",
+				"sap/uiext/inbox/SubstitutionRulesManager.js",
+				"sap/uiext/inbox/SubstitutionRulesManagerConstants.js",
+				"sap/uiext/inbox/SubstitutionRulesManagerRenderer.js",
+				"sap/uiext/inbox/SubstitutionRulesManagerUtils.js",
+				"sap/uiext/inbox/TCMMetadata.js",
+				"sap/uiext/inbox/TaskInitialFilters.js",
+				"sap/uiext/inbox/composite/InboxAddAttachmentTile.js",
+				"sap/uiext/inbox/composite/InboxAddAttachmentTileRenderer.js",
+				"sap/uiext/inbox/composite/InboxAttachmentFileUploader.js",
+				"sap/uiext/inbox/composite/InboxAttachmentTile.js",
+				"sap/uiext/inbox/composite/InboxAttachmentTileRenderer.js",
+				"sap/uiext/inbox/composite/InboxAttachmentsTileContainer.js",
+				"sap/uiext/inbox/composite/InboxAttachmentsTileContainerRenderer.js",
+				"sap/uiext/inbox/composite/InboxBusyIndicator.js",
+				"sap/uiext/inbox/composite/InboxBusyIndicatorRenderer.js",
+				"sap/uiext/inbox/composite/InboxComment.js",
+				"sap/uiext/inbox/composite/InboxCommentRenderer.js",
+				"sap/uiext/inbox/composite/InboxTaskComments.js",
+				"sap/uiext/inbox/composite/InboxTaskCommentsRenderer.js",
+				"sap/uiext/inbox/composite/InboxTaskTitleControl.js",
+				"sap/uiext/inbox/composite/InboxTaskTitleControlRenderer.js",
+				"sap/uiext/inbox/composite/InboxUploadAttachmentTile.js",
+				"sap/uiext/inbox/composite/InboxUploadAttachmentTileRenderer.js",
+				"sap/uiext/inbox/controller/InboxController.js",
+				"sap/uiext/inbox/controller/InboxControllerAsync.js",
+				"sap/uiext/inbox/controller/InboxControllerFactory.js",
+				"sap/uiext/inbox/library.js",
+				"sap/uiext/inbox/manifest.json",
+				"sap/uiext/inbox/splitapp/DetailViewPage.js",
+				"sap/uiext/inbox/splitapp/MasterPage.js",
+				"sap/uiext/inbox/splitapp/MasterPageController.js",
+				"sap/uiext/inbox/splitapp/TaskExecutionUIPage.js",
+				"sap/uiext/inbox/tcm/TCMModel.js",
+				"sap/uiext/inbox/tcm/fI/TCMFunctionImport.js",
+				"sap/uiext/inbox/tcm/fI/TCMFunctionImportMetaData.js"
+			]
+		},
+		{
+			"name": "library-preload.js.map",
+			"isDebug": true
+		},
+		{
+			"name": "library-preload.json",
+			"module": "sap/uiext/inbox/library-preload.json",
+			"merged": true,
+			"required": [
+				"sap/m/MessageToast.js",
+				"sap/m/SelectDialog.js",
+				"sap/ui/commons/Button.js",
+				"sap/ui/commons/Dialog.js",
+				"sap/ui/commons/DropdownBox.js",
+				"sap/ui/commons/Image.js",
+				"sap/ui/commons/Label.js",
+				"sap/ui/commons/Link.js",
+				"sap/ui/commons/MessageBox.js",
+				"sap/ui/commons/RadioButtonGroup.js",
+				"sap/ui/commons/SearchField.js",
+				"sap/ui/commons/TextField.js",
+				"sap/ui/commons/TextView.js",
+				"sap/ui/commons/ToggleButton.js",
+				"sap/ui/commons/Toolbar.js",
+				"sap/ui/commons/ToolbarSeparator.js",
+				"sap/ui/commons/layout/BorderLayout.js",
+				"sap/ui/commons/layout/HorizontalLayout.js",
+				"sap/ui/commons/layout/MatrixLayout.js",
+				"sap/ui/commons/layout/VerticalLayout.js",
+				"sap/ui/commons/library-preload.json",
+				"sap/ui/commons/library.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/HTML.js",
+				"sap/ui/core/Icon.js",
+				"sap/ui/core/IconPool.js",
+				"sap/ui/core/ListItem.js",
+				"sap/ui/core/Locale.js",
+				"sap/ui/core/format/DateFormat.js",
+				"sap/ui/core/library-preload.json",
+				"sap/ui/core/library.js",
+				"sap/ui/core/theming/Parameters.js",
+				"sap/ui/model/Filter.js",
+				"sap/ui/model/Sorter.js",
+				"sap/ui/model/json/JSONModel.js",
+				"sap/ui/model/odata/Filter.js",
+				"sap/ui/table/Table.js",
+				"sap/ui/ux3/FacetFilter.js",
+				"sap/ui/ux3/FacetFilterList.js",
+				"sap/ui/ux3/Feeder.js",
+				"sap/ui/ux3/OverlayContainer.js",
+				"sap/ui/ux3/library-preload.json",
+				"sap/ui/ux3/library.js"
+			],
+			"included": [
+				"sap/uiext/inbox/Inbox.js",
+				"sap/uiext/inbox/InboxConfiguration.js",
+				"sap/uiext/inbox/InboxConstants.js",
+				"sap/uiext/inbox/InboxDataManager.js",
+				"sap/uiext/inbox/InboxFilters.js",
+				"sap/uiext/inbox/InboxFormattedTextView.js",
+				"sap/uiext/inbox/InboxLaunchPad.js",
+				"sap/uiext/inbox/InboxLaunchPadRenderer.js",
+				"sap/uiext/inbox/InboxLink.js",
+				"sap/uiext/inbox/InboxPrimaryFilterEnum.js",
+				"sap/uiext/inbox/InboxPrimaryFilters.js",
+				"sap/uiext/inbox/InboxRenderer.js",
+				"sap/uiext/inbox/InboxSecondaryFilterPathEnum.js",
+				"sap/uiext/inbox/InboxSecondaryFilterValuesEnum.js",
+				"sap/uiext/inbox/InboxSecondaryFilters.js",
+				"sap/uiext/inbox/InboxSplitApp.js",
+				"sap/uiext/inbox/InboxSplitAppRenderer.js",
+				"sap/uiext/inbox/InboxTaskCategoryFilterList.js",
+				"sap/uiext/inbox/InboxTile.js",
+				"sap/uiext/inbox/InboxToggleTextView.js",
+				"sap/uiext/inbox/InboxUtils.js",
+				"sap/uiext/inbox/SubstitutionRulesManager.js",
+				"sap/uiext/inbox/SubstitutionRulesManagerConstants.js",
+				"sap/uiext/inbox/SubstitutionRulesManagerRenderer.js",
+				"sap/uiext/inbox/SubstitutionRulesManagerUtils.js",
+				"sap/uiext/inbox/TCMMetadata.js",
+				"sap/uiext/inbox/TaskInitialFilters.js",
+				"sap/uiext/inbox/composite/InboxAddAttachmentTile.js",
+				"sap/uiext/inbox/composite/InboxAddAttachmentTileRenderer.js",
+				"sap/uiext/inbox/composite/InboxAttachmentFileUploader.js",
+				"sap/uiext/inbox/composite/InboxAttachmentTile.js",
+				"sap/uiext/inbox/composite/InboxAttachmentTileRenderer.js",
+				"sap/uiext/inbox/composite/InboxAttachmentsTileContainer.js",
+				"sap/uiext/inbox/composite/InboxAttachmentsTileContainerRenderer.js",
+				"sap/uiext/inbox/composite/InboxBusyIndicator.js",
+				"sap/uiext/inbox/composite/InboxBusyIndicatorRenderer.js",
+				"sap/uiext/inbox/composite/InboxComment.js",
+				"sap/uiext/inbox/composite/InboxCommentRenderer.js",
+				"sap/uiext/inbox/composite/InboxTaskComments.js",
+				"sap/uiext/inbox/composite/InboxTaskCommentsRenderer.js",
+				"sap/uiext/inbox/composite/InboxTaskTitleControl.js",
+				"sap/uiext/inbox/composite/InboxTaskTitleControlRenderer.js",
+				"sap/uiext/inbox/composite/InboxUploadAttachmentTile.js",
+				"sap/uiext/inbox/composite/InboxUploadAttachmentTileRenderer.js",
+				"sap/uiext/inbox/controller/InboxController.js",
+				"sap/uiext/inbox/controller/InboxControllerAsync.js",
+				"sap/uiext/inbox/controller/InboxControllerFactory.js",
+				"sap/uiext/inbox/library.js",
+				"sap/uiext/inbox/manifest.json",
+				"sap/uiext/inbox/splitapp/DetailViewPage.js",
+				"sap/uiext/inbox/splitapp/MasterPage.js",
+				"sap/uiext/inbox/splitapp/MasterPageController.js",
+				"sap/uiext/inbox/splitapp/TaskExecutionUIPage.js",
+				"sap/uiext/inbox/tcm/TCMModel.js",
+				"sap/uiext/inbox/tcm/fI/TCMFunctionImport.js",
+				"sap/uiext/inbox/tcm/fI/TCMFunctionImportMetaData.js"
+			]
+		},
+		{
+			"name": "library.dependencies.json",
+			"designtime": true
+		},
+		{
+			"name": "library.dependencies.xml",
+			"designtime": true
+		},
+		{
+			"name": "library.js",
+			"module": "sap/uiext/inbox/library.js",
+			"required": [
+				"sap/ui/commons/library.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/library.js",
+				"sap/ui/ux3/library.js"
+			]
+		},
+		{
+			"name": "library.properties",
+			"module": "sap/uiext/inbox/library.properties"
+		},
+		{
+			"name": "library.templates.xml",
+			"designtime": true
+		},
+		{
+			"name": "manifest.json",
+			"module": "sap/uiext/inbox/manifest.json"
+		},
+		{
+			"name": "messagebundle.properties",
+			"module": "sap/uiext/inbox/messagebundle.properties",
+			"locale": "",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_ar.properties",
+			"module": "sap/uiext/inbox/messagebundle_ar.properties",
+			"locale": "ar",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_bg.properties",
+			"module": "sap/uiext/inbox/messagebundle_bg.properties",
+			"locale": "bg",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_ca.properties",
+			"module": "sap/uiext/inbox/messagebundle_ca.properties",
+			"locale": "ca",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_cs.properties",
+			"module": "sap/uiext/inbox/messagebundle_cs.properties",
+			"locale": "cs",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_da.properties",
+			"module": "sap/uiext/inbox/messagebundle_da.properties",
+			"locale": "da",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_de.properties",
+			"module": "sap/uiext/inbox/messagebundle_de.properties",
+			"locale": "de",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_el.properties",
+			"module": "sap/uiext/inbox/messagebundle_el.properties",
+			"locale": "el",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_en.properties",
+			"module": "sap/uiext/inbox/messagebundle_en.properties",
+			"locale": "en",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_en_US_sappsd.properties",
+			"module": "sap/uiext/inbox/messagebundle_en_US_sappsd.properties",
+			"locale": "en_US_sappsd",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_en_US_saptrc.properties",
+			"module": "sap/uiext/inbox/messagebundle_en_US_saptrc.properties",
+			"locale": "en_US_saptrc",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_es.properties",
+			"module": "sap/uiext/inbox/messagebundle_es.properties",
+			"locale": "es",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_et.properties",
+			"module": "sap/uiext/inbox/messagebundle_et.properties",
+			"locale": "et",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_fi.properties",
+			"module": "sap/uiext/inbox/messagebundle_fi.properties",
+			"locale": "fi",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_fr.properties",
+			"module": "sap/uiext/inbox/messagebundle_fr.properties",
+			"locale": "fr",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_hi.properties",
+			"module": "sap/uiext/inbox/messagebundle_hi.properties",
+			"locale": "hi",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_hr.properties",
+			"module": "sap/uiext/inbox/messagebundle_hr.properties",
+			"locale": "hr",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_hu.properties",
+			"module": "sap/uiext/inbox/messagebundle_hu.properties",
+			"locale": "hu",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_it.properties",
+			"module": "sap/uiext/inbox/messagebundle_it.properties",
+			"locale": "it",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_iw.properties",
+			"module": "sap/uiext/inbox/messagebundle_iw.properties",
+			"locale": "iw",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_ja.properties",
+			"module": "sap/uiext/inbox/messagebundle_ja.properties",
+			"locale": "ja",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_kk.properties",
+			"module": "sap/uiext/inbox/messagebundle_kk.properties",
+			"locale": "kk",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_ko.properties",
+			"module": "sap/uiext/inbox/messagebundle_ko.properties",
+			"locale": "ko",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_lt.properties",
+			"module": "sap/uiext/inbox/messagebundle_lt.properties",
+			"locale": "lt",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_lv.properties",
+			"module": "sap/uiext/inbox/messagebundle_lv.properties",
+			"locale": "lv",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_ms.properties",
+			"module": "sap/uiext/inbox/messagebundle_ms.properties",
+			"locale": "ms",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_nl.properties",
+			"module": "sap/uiext/inbox/messagebundle_nl.properties",
+			"locale": "nl",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_no.properties",
+			"module": "sap/uiext/inbox/messagebundle_no.properties",
+			"locale": "no",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_pl.properties",
+			"module": "sap/uiext/inbox/messagebundle_pl.properties",
+			"locale": "pl",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_pt.properties",
+			"module": "sap/uiext/inbox/messagebundle_pt.properties",
+			"locale": "pt",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_ro.properties",
+			"module": "sap/uiext/inbox/messagebundle_ro.properties",
+			"locale": "ro",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_ru.properties",
+			"module": "sap/uiext/inbox/messagebundle_ru.properties",
+			"locale": "ru",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_sh.properties",
+			"module": "sap/uiext/inbox/messagebundle_sh.properties",
+			"locale": "sh",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_sk.properties",
+			"module": "sap/uiext/inbox/messagebundle_sk.properties",
+			"locale": "sk",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_sl.properties",
+			"module": "sap/uiext/inbox/messagebundle_sl.properties",
+			"locale": "sl",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_sv.properties",
+			"module": "sap/uiext/inbox/messagebundle_sv.properties",
+			"locale": "sv",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_th.properties",
+			"module": "sap/uiext/inbox/messagebundle_th.properties",
+			"locale": "th",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_tr.properties",
+			"module": "sap/uiext/inbox/messagebundle_tr.properties",
+			"locale": "tr",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_uk.properties",
+			"module": "sap/uiext/inbox/messagebundle_uk.properties",
+			"locale": "uk",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_vi.properties",
+			"module": "sap/uiext/inbox/messagebundle_vi.properties",
+			"locale": "vi",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_zh_CN.properties",
+			"module": "sap/uiext/inbox/messagebundle_zh_CN.properties",
+			"locale": "zh_CN",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_zh_TW.properties",
+			"module": "sap/uiext/inbox/messagebundle_zh_TW.properties",
+			"locale": "zh_TW",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "resources.json"
+		},
+		{
+			"name": "splitapp/DetailViewPage-dbg.js",
+			"module": "sap/uiext/inbox/splitapp/DetailViewPage.js",
+			"isDebug": true,
+			"required": [
+				"sap/m/MessageToast.js",
+				"sap/m/SelectDialog.js",
+				"sap/uiext/inbox/InboxConstants.js",
+				"sap/uiext/inbox/InboxUtils.js"
+			]
+		},
+		{
+			"name": "splitapp/DetailViewPage.js",
+			"module": "sap/uiext/inbox/splitapp/DetailViewPage.js",
+			"required": [
+				"sap/m/MessageToast.js",
+				"sap/m/SelectDialog.js",
+				"sap/uiext/inbox/InboxConstants.js",
+				"sap/uiext/inbox/InboxUtils.js"
+			]
+		},
+		{
+			"name": "splitapp/MasterPage-dbg.js",
+			"module": "sap/uiext/inbox/splitapp/MasterPage.js",
+			"isDebug": true,
+			"required": [
+				"sap/uiext/inbox/InboxUtils.js"
+			],
+			"condRequired": [
+				"sap/uiext/inbox/SubstitutionRulesManager.js",
+				"sap/uiext/inbox/tcm/TCMModel.js"
+			]
+		},
+		{
+			"name": "splitapp/MasterPage.js",
+			"module": "sap/uiext/inbox/splitapp/MasterPage.js",
+			"required": [
+				"sap/uiext/inbox/InboxUtils.js"
+			],
+			"condRequired": [
+				"sap/uiext/inbox/SubstitutionRulesManager.js",
+				"sap/uiext/inbox/tcm/TCMModel.js"
+			]
+		},
+		{
+			"name": "splitapp/MasterPageController-dbg.js",
+			"module": "sap/uiext/inbox/splitapp/MasterPageController.js",
+			"isDebug": true,
+			"condRequired": [
+				"sap/uiext/inbox/SubstitutionRulesManager.js",
+				"sap/uiext/inbox/splitapp/TaskExecutionUIPage.js",
+				"sap/uiext/inbox/tcm/TCMModel.js"
+			]
+		},
+		{
+			"name": "splitapp/MasterPageController.js",
+			"module": "sap/uiext/inbox/splitapp/MasterPageController.js",
+			"condRequired": [
+				"sap/uiext/inbox/SubstitutionRulesManager.js",
+				"sap/uiext/inbox/splitapp/TaskExecutionUIPage.js",
+				"sap/uiext/inbox/tcm/TCMModel.js"
+			]
+		},
+		{
+			"name": "splitapp/TaskExecutionUIPage-dbg.js",
+			"module": "sap/uiext/inbox/splitapp/TaskExecutionUIPage.js",
+			"isDebug": true,
+			"required": [
+				"sap/m/MessageToast.js"
+			]
+		},
+		{
+			"name": "splitapp/TaskExecutionUIPage.js",
+			"module": "sap/uiext/inbox/splitapp/TaskExecutionUIPage.js",
+			"required": [
+				"sap/m/MessageToast.js"
+			]
+		},
+		{
+			"name": "tcm/TCMModel-dbg.js",
+			"module": "sap/uiext/inbox/tcm/TCMModel.js",
+			"isDebug": true,
+			"required": [
+				"sap/uiext/inbox/tcm/fI/TCMFunctionImport.js"
+			]
+		},
+		{
+			"name": "tcm/TCMModel.js",
+			"module": "sap/uiext/inbox/tcm/TCMModel.js",
+			"required": [
+				"sap/uiext/inbox/tcm/fI/TCMFunctionImport.js"
+			]
+		},
+		{
+			"name": "tcm/fI/TCMFunctionImport-dbg.js",
+			"module": "sap/uiext/inbox/tcm/fI/TCMFunctionImport.js",
+			"isDebug": true,
+			"required": [
+				"sap/uiext/inbox/tcm/fI/TCMFunctionImportMetaData.js"
+			]
+		},
+		{
+			"name": "tcm/fI/TCMFunctionImport.js",
+			"module": "sap/uiext/inbox/tcm/fI/TCMFunctionImport.js",
+			"required": [
+				"sap/uiext/inbox/tcm/fI/TCMFunctionImportMetaData.js"
+			]
+		},
+		{
+			"name": "tcm/fI/TCMFunctionImportMetaData-dbg.js",
+			"module": "sap/uiext/inbox/tcm/fI/TCMFunctionImportMetaData.js",
+			"isDebug": true
+		},
+		{
+			"name": "tcm/fI/TCMFunctionImportMetaData.js",
+			"module": "sap/uiext/inbox/tcm/fI/TCMFunctionImportMetaData.js"
+		},
+		{
+			"name": "themes/base/.theming",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/Inbox.css",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/InboxAddAttachmentTile.css",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/InboxAttachmentTile.css",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/InboxAttachmentsTileContainer.css",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/InboxBusyIndicator.css",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/InboxComment.css",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/InboxLaunchPad.css",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/InboxSplitApp.css",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/InboxTaskComments.css",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/InboxTaskTitleControl.css",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/InboxUploadAttachmentTile.css",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/IndexLayout.css",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/SubstitutionRulesManager.css",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/Info.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/alert.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/attachment.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/claim_action.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/close_button.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/close_hover.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/comments.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/comments/person_placeholder_48.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/comments/person_placeholder_grey_512.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/complete_action.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/completed_status.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/custom_attributes.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/delete.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/delete_blue.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/drilldown_filter_selected.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/drilldown_filter_unselected.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/error.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/forwardTask.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/high_priority.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/inprocess_status.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/loading_ani.gif",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/low_priority.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/medium_priority.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/next.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/notification.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/previous.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/ready_status.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/refresh.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/refresh_ani.gif",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/release_action.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/reserved_status.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/rr_view_alert.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/rr_view_notification.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/rr_view_selected.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/rr_view_todo.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/rr_view_unselected.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/sap_logo.gif",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/settings_button_hover.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/settings_button_regular.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/sort_asc.gif",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/sort_desc.gif",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/success.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/table_view_selected.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/table_view_unselected.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/task.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/taskInitiator_default.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/todo.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/very_high_priority.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/warning.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/Info.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/alert.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/attachment.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/claim_action.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/close_button.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/close_hover.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/comments.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/comments/person_placeholder_48.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/comments/person_placeholder_grey_512.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/complete_action.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/completed_status.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/custom_attributes.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/delete.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/delete_blue.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/drilldown_filter_selected.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/drilldown_filter_unselected.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/error.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/forwardTask.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/high_priority.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/inprocess_status.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/loading_ani.gif",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/low_priority.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/medium_priority.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/next.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/notification.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/previous.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/ready_status.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/refresh.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/refresh_ani.gif",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/release_action.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/reserved_status.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/rr_view_alert.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/rr_view_notification.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/rr_view_selected.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/rr_view_todo.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/rr_view_unselected.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/sap_logo.gif",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/settings_button_hover.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/settings_button_regular.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/sort_asc.gif",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/sort_desc.gif",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/success.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/table_view_selected.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/table_view_unselected.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/task.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/taskInitiator_default.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/todo.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/very_high_priority.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/warning.png",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library-RTL-dbg.css",
+			"isDebug": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library-RTL.css",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library-dbg.css",
+			"isDebug": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library-parameters.json",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library.css",
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library.less",
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library.source.less",
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/shared.css",
+			"theme": "base"
+		},
+		{
+			"name": "themes/sap_bluecrystal/.theming",
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/Inbox.css",
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/SubstitutionRulesManager.css",
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/library-RTL-dbg.css",
+			"isDebug": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/library-RTL.css",
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/library-dbg.css",
+			"isDebug": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/library-parameters.json",
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/library.css",
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/library.less",
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/library.source.less",
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_hcb/.theming",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/Inbox.css",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/InboxComment.css",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/InboxTaskComments.css",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/SubstitutionRulesManager.css",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img-RTL/Info.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img-RTL/alert.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img-RTL/attachment.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img-RTL/claim_action.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img-RTL/comments.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img-RTL/complete_action.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img-RTL/custom_attributes.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img-RTL/delete.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img-RTL/drilldown_filter_unselected.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img-RTL/error.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img-RTL/next.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img-RTL/notification.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img-RTL/previous.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img-RTL/refresh.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img-RTL/refresh_ani.gif",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img-RTL/release_action.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img-RTL/rr_view_alert.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img-RTL/rr_view_notification.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img-RTL/rr_view_todo.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img-RTL/rr_view_unselected.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img-RTL/settings_button_regular.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img-RTL/sort_asc.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img-RTL/sort_desc.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img-RTL/success.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img-RTL/table_view_unselected.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img-RTL/task.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img-RTL/taskInitiator_default.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img-RTL/todo.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img-RTL/warning.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img/Info.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img/alert.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img/attachment.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img/claim_action.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img/comments.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img/complete_action.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img/custom_attributes.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img/delete.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img/drilldown_filter_unselected.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img/error.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img/next.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img/notification.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img/previous.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img/refresh.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img/refresh_ani.gif",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img/release_action.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img/rr_view_alert.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img/rr_view_notification.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img/rr_view_todo.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img/rr_view_unselected.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img/settings_button_regular.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img/sort_asc.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img/sort_desc.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img/success.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img/table_view_unselected.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img/task.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img/taskInitiator_default.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img/todo.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img/warning.png",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library-RTL-dbg.css",
+			"isDebug": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library-RTL.css",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library-dbg.css",
+			"isDebug": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library-parameters.json",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library.css",
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library.less",
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library.source.less",
+			"designtime": true,
+			"theme": "sap_hcb"
+		}
+	]
+}

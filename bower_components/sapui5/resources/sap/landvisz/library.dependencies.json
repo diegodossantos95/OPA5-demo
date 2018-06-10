@@ -1,0 +1,621 @@
+{
+  "modules" : [
+    {
+      "name" : "sap/landvisz/ConnectionEntity.js",
+      "description" : "Provides control sap.landvisz.ConnectionEntity.",
+      "size" : 16822,
+      "compressedSize" : 4998,
+      "required" : ["jquery.sap.global.js", "sap/landvisz/internal/LinearRowField.js", "sap/landvisz/library.js", "sap/ui/core/Control.js", "sap/ui/core/HTML.js", "sap/ui/ux3/ToolPopup.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/ConnectionEntityRenderer.js",
+      "description" : "! @copyright 2012-2014 SAP SE. All rights reserved@",
+      "size" : 5870,
+      "compressedSize" : 3747,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/Connector.js",
+      "description" : "Provides control sap.landvisz.Connector.",
+      "size" : 4353,
+      "compressedSize" : 527,
+      "required" : ["jquery.sap.global.js", "sap/landvisz/library.js", "sap/ui/core/Control.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/ConnectorRenderer.js",
+      "description" : "! @copyright 2012-2014 SAP SE. All rights reserved@",
+      "size" : 712,
+      "compressedSize" : 205,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/EntityConstants.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2013 SAP AG. All rights reserved",
+      "size" : 362,
+      "compressedSize" : 351,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/LandscapeEntity.js",
+      "description" : "Provides control sap.landvisz.LandscapeEntity.",
+      "size" : 43053,
+      "compressedSize" : 8218,
+      "required" : ["jquery.sap.global.js", "sap/landvisz/EntityConstants.js", "sap/landvisz/internal/IdentificationBarRenderer.js", "sap/landvisz/library.js", "sap/ui/core/Control.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/LandscapeEntityRenderer.js",
+      "description" : "! @copyright 2012-2014 SAP SE. All rights reserved@",
+      "size" : 55485,
+      "compressedSize" : 36382,
+      "required" : ["jquery.sap.global.js", "sap/ui/commons/Button.js", "sap/ui/commons/Label.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/LandscapeViewer.js",
+      "description" : "Provides control sap.landvisz.LandscapeViewer.",
+      "size" : 98021,
+      "compressedSize" : 27333,
+      "required" : ["jquery.sap.global.js", "sap/landvisz/Option.js", "sap/landvisz/internal/Connection.js", "sap/landvisz/library.js", "sap/landvisz/libs/lvsvg.js", "sap/ui/thirdparty/jqueryui/jquery-ui-core.js", "sap/ui/thirdparty/jqueryui/jquery-ui-draggable.js", "sap/ui/thirdparty/jqueryui/jquery-ui-droppable.js", "sap/ui/thirdparty/jqueryui/jquery-ui-mouse.js", "sap/ui/thirdparty/jqueryui/jquery-ui-widget.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/LandscapeViewerRenderer.js",
+      "size" : 77077,
+      "compressedSize" : 32151,
+      "required" : ["jquery.sap.global.js", "sap/landvisz/internal/Connection.js", "sap/landvisz/libs/lvsvg.js", "sap/ui/commons/layout/ResponsiveFlowLayout.js", "sap/ui/commons/layout/ResponsiveFlowLayoutData.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/LongTextField.js",
+      "description" : "Provides control sap.landvisz.LongTextField.",
+      "size" : 4903,
+      "compressedSize" : 837,
+      "required" : ["jquery.sap.global.js", "sap/landvisz/library.js", "sap/ui/core/Control.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/LongTextFieldRenderer.js",
+      "description" : "*/",
+      "size" : 1830,
+      "compressedSize" : 1007,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/Option.js",
+      "description" : "Provides control sap.landvisz.Option.",
+      "size" : 7463,
+      "compressedSize" : 642,
+      "required" : ["jquery.sap.global.js", "sap/landvisz/library.js", "sap/ui/core/Control.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/OptionEntity.js",
+      "description" : "Provides control sap.landvisz.OptionEntity.",
+      "size" : 12884,
+      "compressedSize" : 1752,
+      "required" : ["jquery.sap.global.js", "sap/landvisz/OptionSource.js", "sap/landvisz/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/OptionEntityRenderer.js",
+      "description" : "! @copyright 2012-2014 SAP SE. All rights reserved@",
+      "size" : 2041,
+      "compressedSize" : 1178,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/OptionRenderer.js",
+      "description" : "! @copyright 2012-2014 SAP SE. All rights reserved@",
+      "size" : 659,
+      "compressedSize" : 196,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/OptionSource.js",
+      "description" : "Provides control sap.landvisz.OptionSource.",
+      "size" : 3679,
+      "compressedSize" : 480,
+      "required" : ["jquery.sap.global.js", "sap/landvisz/library.js", "sap/ui/core/Control.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/OptionSourceRenderer.js",
+      "description" : "! @copyright 2012-2014 SAP SE. All rights reserved@",
+      "size" : 677,
+      "compressedSize" : 213,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/internal/ActionBar.js",
+      "description" : "Provides control sap.landvisz.internal.ActionBar.",
+      "size" : 18837,
+      "compressedSize" : 3424,
+      "required" : ["jquery.sap.global.js", "sap/landvisz/library.js", "sap/ui/commons/Menu.js", "sap/ui/commons/MenuButton.js", "sap/ui/commons/MenuItem.js", "sap/ui/core/Control.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/internal/ActionBarRenderer.js",
+      "description" : "! @copyright 2012-2014 SAP SE. All rights reserved@",
+      "size" : 5209,
+      "compressedSize" : 3286,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/internal/Connection.js",
+      "size" : 24467,
+      "compressedSize" : 13785,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/internal/DataContainer.js",
+      "description" : "Provides control sap.landvisz.internal.DataContainer.",
+      "size" : 12930,
+      "compressedSize" : 1838,
+      "required" : ["jquery.sap.global.js", "sap/landvisz/library.js", "sap/ui/core/Control.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/internal/DataContainerRenderer.js",
+      "description" : "! @copyright 2012-2014 SAP SE. All rights reserved@",
+      "size" : 3455,
+      "compressedSize" : 2071,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/internal/DeploymentType.js",
+      "description" : "Provides control sap.landvisz.internal.DeploymentType.",
+      "size" : 4440,
+      "compressedSize" : 1051,
+      "required" : ["jquery.sap.global.js", "sap/landvisz/library.js", "sap/ui/core/Control.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/internal/DeploymentTypeRenderer.js",
+      "description" : "! @copyright 2012-2014 SAP SE. All rights reserved@",
+      "size" : 4080,
+      "compressedSize" : 2710,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/internal/EntityAction.js",
+      "description" : "Provides control sap.landvisz.internal.EntityAction.",
+      "size" : 8499,
+      "compressedSize" : 1286,
+      "required" : ["jquery.sap.global.js", "sap/landvisz/library.js", "sap/ui/core/Control.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/internal/EntityActionRenderer.js",
+      "description" : "! @copyright 2012-2014 SAP SE. All rights reserved@",
+      "size" : 1782,
+      "compressedSize" : 1025,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/internal/EntityCustomAction.js",
+      "description" : "Provides control sap.landvisz.internal.EntityCustomAction.",
+      "size" : 8033,
+      "compressedSize" : 1175,
+      "required" : ["jquery.sap.global.js", "sap/landvisz/library.js", "sap/ui/core/Control.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/internal/EntityCustomActionRenderer.js",
+      "description" : "! @copyright 2012-2014 SAP SE. All rights reserved@",
+      "size" : 1159,
+      "compressedSize" : 593,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/internal/EntityRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2013 SAP AG. All rights reserved",
+      "size" : 845,
+      "compressedSize" : 374,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/internal/EntityUtils.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2013 SAP AG. All rights reserved",
+      "size" : 346,
+      "compressedSize" : 288,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/internal/HeaderList.js",
+      "description" : "Provides control sap.landvisz.internal.HeaderList.",
+      "size" : 9579,
+      "compressedSize" : 1514,
+      "required" : ["jquery.sap.global.js", "sap/landvisz/library.js", "sap/ui/core/Control.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/internal/HeaderListRenderer.js",
+      "description" : "! @copyright 2012-2014 SAP SE. All rights reserved@",
+      "size" : 1804,
+      "compressedSize" : 1088,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/internal/IdentificationBar.js",
+      "description" : "Provides control sap.landvisz.internal.IdentificationBar.",
+      "size" : 16323,
+      "compressedSize" : 3310,
+      "required" : ["jquery.sap.global.js", "sap/landvisz/library.js", "sap/ui/core/Control.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/internal/IdentificationBarRenderer.js",
+      "description" : "! @copyright 2012-2014 SAP SE. All rights reserved@",
+      "size" : 14053,
+      "compressedSize" : 10481,
+      "required" : ["jquery.sap.global.js", "sap/ui/commons/Callout.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/internal/LinearRowField.js",
+      "description" : "Provides control sap.landvisz.internal.LinearRowField.",
+      "size" : 12015,
+      "compressedSize" : 2160,
+      "required" : ["jquery.sap.global.js", "sap/landvisz/library.js", "sap/ui/core/Control.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/internal/LinearRowFieldRenderer.js",
+      "description" : "! @copyright 2012-2014 SAP SE. All rights reserved@",
+      "size" : 6386,
+      "compressedSize" : 4281,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/internal/ModelingStatus.js",
+      "description" : "Provides control sap.landvisz.internal.ModelingStatus.",
+      "size" : 7398,
+      "compressedSize" : 1333,
+      "required" : ["jquery.sap.global.js", "sap/landvisz/library.js", "sap/ui/core/Control.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/internal/ModelingStatusRenderer.js",
+      "description" : "! @copyright 2012-2014 SAP SE. All rights reserved@",
+      "size" : 3425,
+      "compressedSize" : 2169,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/internal/NestedRowField.js",
+      "description" : "Provides control sap.landvisz.internal.NestedRowField.",
+      "size" : 13616,
+      "compressedSize" : 1871,
+      "required" : ["jquery.sap.global.js", "sap/landvisz/library.js", "sap/ui/core/Control.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/internal/NestedRowFieldRenderer.js",
+      "description" : "! @copyright 2012-2014 SAP SE. All rights reserved@",
+      "size" : 3368,
+      "compressedSize" : 2278,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/internal/SingleDataContainer.js",
+      "description" : "Provides control sap.landvisz.internal.SingleDataContainer.",
+      "size" : 11498,
+      "compressedSize" : 1502,
+      "required" : ["jquery.sap.global.js", "sap/landvisz/library.js", "sap/ui/core/Control.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/internal/SingleDataContainerRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2013 SAP AG. All rights reserved",
+      "size" : 2277,
+      "compressedSize" : 1368,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/internal/TreeField.js",
+      "description" : "Provides control sap.landvisz.internal.TreeField.",
+      "size" : 9050,
+      "compressedSize" : 1265,
+      "required" : ["jquery.sap.global.js", "sap/landvisz/library.js", "sap/ui/core/Control.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/internal/TreeFieldRenderer.js",
+      "description" : "! @copyright 2012-2014 SAP SE. All rights reserved@",
+      "size" : 3802,
+      "compressedSize" : 2777,
+      "required" : ["jquery.sap.global.js", "sap/ui/commons/Tree.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/internal/types/TechnicalSystemTypes.js",
+      "size" : 255,
+      "compressedSize" : 181,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/library-preload.js",
+      "size" : 194285,
+      "required" : ["jquery.sap.global.js", "sap/landvisz/libs/lvsvg.js", "sap/ui/commons/Button.js", "sap/ui/commons/Callout.js", "sap/ui/commons/Label.js", "sap/ui/commons/Menu.js", "sap/ui/commons/MenuButton.js", "sap/ui/commons/MenuItem.js", "sap/ui/commons/Tree.js", "sap/ui/commons/layout/ResponsiveFlowLayout.js", "sap/ui/commons/layout/ResponsiveFlowLayoutData.js", "sap/ui/core/Control.js", "sap/ui/core/Core.js", "sap/ui/core/HTML.js", "sap/ui/core/library.js", "sap/ui/thirdparty/jqueryui/jquery-ui-core.js", "sap/ui/thirdparty/jqueryui/jquery-ui-draggable.js", "sap/ui/thirdparty/jqueryui/jquery-ui-droppable.js", "sap/ui/thirdparty/jqueryui/jquery-ui-mouse.js", "sap/ui/thirdparty/jqueryui/jquery-ui-widget.js", "sap/ui/ux3/ToolPopup.js"],
+      "includes" : ["sap/landvisz/ConnectionEntity.js", "sap/landvisz/ConnectionEntityRenderer.js", "sap/landvisz/Connector.js", "sap/landvisz/ConnectorRenderer.js", "sap/landvisz/EntityConstants.js", "sap/landvisz/LandscapeEntity.js", "sap/landvisz/LandscapeEntityRenderer.js", "sap/landvisz/LandscapeViewer.js", "sap/landvisz/LandscapeViewerRenderer.js", "sap/landvisz/LongTextField.js", "sap/landvisz/LongTextFieldRenderer.js", "sap/landvisz/Option.js", "sap/landvisz/OptionEntity.js", "sap/landvisz/OptionEntityRenderer.js", "sap/landvisz/OptionRenderer.js", "sap/landvisz/OptionSource.js", "sap/landvisz/OptionSourceRenderer.js", "sap/landvisz/internal/ActionBar.js", "sap/landvisz/internal/ActionBarRenderer.js", "sap/landvisz/internal/Connection.js", "sap/landvisz/internal/DataContainer.js", "sap/landvisz/internal/DataContainerRenderer.js", "sap/landvisz/internal/DeploymentType.js", "sap/landvisz/internal/DeploymentTypeRenderer.js", "sap/landvisz/internal/EntityAction.js", "sap/landvisz/internal/EntityActionRenderer.js", "sap/landvisz/internal/EntityCustomAction.js", "sap/landvisz/internal/EntityCustomActionRenderer.js", "sap/landvisz/internal/EntityRenderer.js", "sap/landvisz/internal/EntityUtils.js", "sap/landvisz/internal/HeaderList.js", "sap/landvisz/internal/HeaderListRenderer.js", "sap/landvisz/internal/IdentificationBar.js", "sap/landvisz/internal/IdentificationBarRenderer.js", "sap/landvisz/internal/LinearRowField.js", "sap/landvisz/internal/LinearRowFieldRenderer.js", "sap/landvisz/internal/ModelingStatus.js", "sap/landvisz/internal/ModelingStatusRenderer.js", "sap/landvisz/internal/NestedRowField.js", "sap/landvisz/internal/NestedRowFieldRenderer.js", "sap/landvisz/internal/SingleDataContainer.js", "sap/landvisz/internal/SingleDataContainerRenderer.js", "sap/landvisz/internal/TreeField.js", "sap/landvisz/internal/TreeFieldRenderer.js", "sap/landvisz/internal/types/TechnicalSystemTypes.js", "sap/landvisz/library.js", "sap/landvisz/manifest.json"]
+    },
+    {
+      "name" : "sap/landvisz/library-preload.json",
+      "size" : 0,
+      "required" : ["jquery.sap.global.js", "sap/landvisz/libs/lvsvg.js", "sap/ui/commons/Button.js", "sap/ui/commons/Callout.js", "sap/ui/commons/Label.js", "sap/ui/commons/Menu.js", "sap/ui/commons/MenuButton.js", "sap/ui/commons/MenuItem.js", "sap/ui/commons/Tree.js", "sap/ui/commons/layout/ResponsiveFlowLayout.js", "sap/ui/commons/layout/ResponsiveFlowLayoutData.js", "sap/ui/core/Control.js", "sap/ui/core/Core.js", "sap/ui/core/HTML.js", "sap/ui/core/library-preload.json", "sap/ui/core/library.js", "sap/ui/thirdparty/jqueryui/jquery-ui-core.js", "sap/ui/thirdparty/jqueryui/jquery-ui-draggable.js", "sap/ui/thirdparty/jqueryui/jquery-ui-droppable.js", "sap/ui/thirdparty/jqueryui/jquery-ui-mouse.js", "sap/ui/thirdparty/jqueryui/jquery-ui-widget.js", "sap/ui/ux3/ToolPopup.js"],
+      "includes" : ["sap/landvisz/ConnectionEntity.js", "sap/landvisz/ConnectionEntityRenderer.js", "sap/landvisz/Connector.js", "sap/landvisz/ConnectorRenderer.js", "sap/landvisz/EntityConstants.js", "sap/landvisz/LandscapeEntity.js", "sap/landvisz/LandscapeEntityRenderer.js", "sap/landvisz/LandscapeViewer.js", "sap/landvisz/LandscapeViewerRenderer.js", "sap/landvisz/LongTextField.js", "sap/landvisz/LongTextFieldRenderer.js", "sap/landvisz/Option.js", "sap/landvisz/OptionEntity.js", "sap/landvisz/OptionEntityRenderer.js", "sap/landvisz/OptionRenderer.js", "sap/landvisz/OptionSource.js", "sap/landvisz/OptionSourceRenderer.js", "sap/landvisz/internal/ActionBar.js", "sap/landvisz/internal/ActionBarRenderer.js", "sap/landvisz/internal/Connection.js", "sap/landvisz/internal/DataContainer.js", "sap/landvisz/internal/DataContainerRenderer.js", "sap/landvisz/internal/DeploymentType.js", "sap/landvisz/internal/DeploymentTypeRenderer.js", "sap/landvisz/internal/EntityAction.js", "sap/landvisz/internal/EntityActionRenderer.js", "sap/landvisz/internal/EntityCustomAction.js", "sap/landvisz/internal/EntityCustomActionRenderer.js", "sap/landvisz/internal/EntityRenderer.js", "sap/landvisz/internal/EntityUtils.js", "sap/landvisz/internal/HeaderList.js", "sap/landvisz/internal/HeaderListRenderer.js", "sap/landvisz/internal/IdentificationBar.js", "sap/landvisz/internal/IdentificationBarRenderer.js", "sap/landvisz/internal/LinearRowField.js", "sap/landvisz/internal/LinearRowFieldRenderer.js", "sap/landvisz/internal/ModelingStatus.js", "sap/landvisz/internal/ModelingStatusRenderer.js", "sap/landvisz/internal/NestedRowField.js", "sap/landvisz/internal/NestedRowFieldRenderer.js", "sap/landvisz/internal/SingleDataContainer.js", "sap/landvisz/internal/SingleDataContainerRenderer.js", "sap/landvisz/internal/TreeField.js", "sap/landvisz/internal/TreeFieldRenderer.js", "sap/landvisz/internal/types/TechnicalSystemTypes.js", "sap/landvisz/library.js", "sap/landvisz/manifest.json"]
+    },
+    {
+      "name" : "sap/landvisz/library.js",
+      "description" : "Initialization Code and shared classes of library sap.landvisz (1.50.0)",
+      "size" : 19017,
+      "compressedSize" : 4154,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Core.js", "sap/ui/core/library.js"],
+      "includes" : ["sap/landvisz/ActionType.js", "sap/landvisz/ComponentType.js", "sap/landvisz/ConnectionLine.js", "sap/landvisz/ConnectionType.js", "sap/landvisz/DependencyType.js", "sap/landvisz/DependencyVisibility.js", "sap/landvisz/EntityCSSSize.js", "sap/landvisz/LandscapeObject.js", "sap/landvisz/ModelingStatus.js", "sap/landvisz/OptionType.js", "sap/landvisz/SelectionViewPosition.js", "sap/landvisz/SolutionType.js", "sap/landvisz/TechnicalSystemType.js", "sap/landvisz/ViewType.js", "sap/landvisz/internal/ContainerType.js"]
+    },
+    {
+      "name" : "sap/landvisz/library.properties",
+      "size" : 2533,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/manifest.json",
+      "size" : 724,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle.properties",
+      "size" : 2100,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_ar.properties",
+      "size" : 2867,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_bg.properties",
+      "size" : 3641,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_ca.properties",
+      "size" : 2089,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_cs.properties",
+      "size" : 2099,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_da.properties",
+      "size" : 1991,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_de.properties",
+      "size" : 2031,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_el.properties",
+      "size" : 3463,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_en.properties",
+      "size" : 1992,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_es.properties",
+      "size" : 2082,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_et.properties",
+      "size" : 2035,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_fi.properties",
+      "size" : 2086,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_fr.properties",
+      "size" : 2086,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_hi.properties",
+      "size" : 3227,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_hr.properties",
+      "size" : 2062,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_hu.properties",
+      "size" : 2175,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_it.properties",
+      "size" : 2043,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_iw.properties",
+      "size" : 2701,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_ja.properties",
+      "size" : 2491,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_ko.properties",
+      "size" : 2351,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_lt.properties",
+      "size" : 2161,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_lv.properties",
+      "size" : 2146,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_nl.properties",
+      "size" : 2008,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_no.properties",
+      "size" : 1999,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_pl.properties",
+      "size" : 2050,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_pt.properties",
+      "size" : 2070,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_ro.properties",
+      "size" : 2070,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_ru.properties",
+      "size" : 3164,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_sh.properties",
+      "size" : 2051,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_sk.properties",
+      "size" : 2148,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_sl.properties",
+      "size" : 2068,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_sv.properties",
+      "size" : 2016,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_th.properties",
+      "size" : 3208,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_tr.properties",
+      "size" : 2193,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_uk.properties",
+      "size" : 3388,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_vi.properties",
+      "size" : 2696,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_zh_CN.properties",
+      "size" : 2256,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/landvisz/messagebundle_zh_TW.properties",
+      "size" : 2239,
+      "required" : [],
+      "includes" : []
+    }
+  ]
+}

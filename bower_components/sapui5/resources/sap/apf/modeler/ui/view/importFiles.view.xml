@@ -1,0 +1,32 @@
+<mvc:View controllerName="sap.apf.modeler.ui.controller.importFiles"
+	xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" class="sapUiSizeCompact">
+	<Dialog xmlns="sap.m" id="idImportFilesDialog" showHeader="true"
+		afterOpen="addAcceptAttribute" contentWidth="700px"
+		class="sapUiSizeCompact dialogContentPadding" initialFocus="idImportFilesDialog">
+		<VBox xmlns="sap.m">
+			<HBox xmlns="sap.m">
+				<Label xmlns="sap.m" id="idJsonFileLabel" class="importFileUploaderDialogLabels" />
+				<FileUploader xmlns="sap.ui.unified" id="idJsonFileUploader"
+					class="jsonfileuploader" width="374px" fileType="json"
+					typeMissmatch="handleTypeMissmatchForJSONFile" uploadComplete="handleJSONFileUploadComplete"
+					sameFilenameAllowed="true" ariaLabelledBy="idJsonFileLabel"></FileUploader>
+			</HBox>
+			<HBox xmlns="sap.m">
+				<Label xmlns="sap.m" id="idTextFileLabel" class="importFileUploaderDialogLabels" />
+				<FileUploader xmlns="sap.ui.unified" id="idTextFileUploader"
+					class="propertiesfileuploader" width="374px" fileType="properties"
+					typeMissmatch="handleTypeMissmatchForPropertiesFile"
+					uploadComplete="handleTextFileUploadComplete" sameFilenameAllowed="true"
+					ariaLabelledBy="idTextFileLabel"></FileUploader>
+			</HBox>
+		</VBox>
+		<beginButton>
+			<Button xmlns="sap.m" id="idUploadOfConfig" press="handleUploadOfConfig">
+			</Button>
+		</beginButton>
+		<endButton>
+			<Button xmlns="sap.m" id="idCancelImportOfConfig" press="handleCancelOfImportFilesDialog">
+			</Button>
+		</endButton>
+	</Dialog>
+</mvc:View>

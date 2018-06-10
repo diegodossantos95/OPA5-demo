@@ -1,0 +1,264 @@
+/* NOTE: This file was generated as an optimized version of "library.source.less" for the Theme Designer. */
+
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5)
+ *
+ * (c) Copyright 2009-2017 SAP SE. All rights reserved
+ */
+
+@import "../base/library.less";
+@import "../../../../../sap/ui/core/themes/sap_hcb/global.less";
+
+/* START "Chart.css" */
+/* ====================================================== */
+/* CSS for Chart Component							   	  */
+/* HCB                                                    */
+/* ====================================================== */
+
+/* tooltips on charts */
+.zenControl .v-m-tooltip .v-background {
+	background-color: #1f1f1f !important;
+}
+
+.zenControl .v-m-tooltip .v-background * {
+	color: #fff !important;
+}
+/* END "Chart.css" */
+
+/* START "ChartTypeSwitch.css" */
+/* ======================================================  */
+/* CSS for control sap.ui.commons/ChartTypeSwitch.control  */
+/* HCB                                                     */
+/* ======================================================  */
+
+/* fix for switcher positioning */
+.zenControl .viz-controls-switchbar-chart, .zenControl .viz-controls-switchbar-chart-selected
+	{
+	float: left;
+	left: auto !important;
+	top: auto !important;
+	position: relative !important;
+	margin-right: 10px !important;
+	margin-bottom: 10px !important;
+}
+
+/*styles switcher */
+.zenControl .viz-controls-switchbar-switcher {
+	cursor: pointer;
+	background-color: #000 !important;
+	border: solid 1px #fff !important;
+}
+
+.zenControl .viz-controls-switchbar-switcher:hover {
+	background-color: #7a5100 !important;
+}
+
+.zenControl .viz-controls-switchbar-splitter {
+	visibility: hidden !important;
+}
+
+.zenControl .viz-controls-switchbar-switcher:hover .viz-controls-switchbar-dropdown-arrow
+	{
+	border-left: solid 1px #fff !important;
+	position: absolute;
+	right: 0px;
+	height: 100% !important;
+}
+
+.zenControl .viz-controls-switchbar-switcher .viz-controls-switchbar-dropdown-arrow .viz-controls-switchbar-dropdown-arrow-icon
+	{
+	background: none !important;
+	padding-top: 3px;
+	text-align: center;
+	width: 16px;
+}
+
+.zenControl .viz-controls-switchbar-switcher .viz-controls-switchbar-dropdown-arrow .viz-controls-switchbar-dropdown-arrow-icon:before
+	{
+	content: '\25bc';
+}
+
+.zenControl .viz-controls-switchbar-switcher.viz-controls-switchbar-chart-selected:hover .viz-controls-switchbar-dropdown-arrow .viz-controls-switchbar-dropdown-arrow-icon
+	{
+	color: #fff;
+}
+
+.zenControl .viz-controls-switchbar-switcher.viz-controls-switchbar-chart-selected,
+	.zenControl .viz-controls-switchbar-chart:hover {
+	background-image: none !important;
+	background-color: #7a5100 !important;
+}
+
+/* now the popup  */
+.zenControl .viz-controls-switchbar-dropDownList-container {
+	/*margin-left: 60px;*/
+	
+}
+
+.zenControl .viz-controls-switchbar-dropDownList-arrow {
+	/* margin-left: -60px;*/
+	background: #000000 !important;
+	border: 1px solid #ffffff !important;
+}
+
+.zenControl .viz-controls-switchbar-dropDownList-content {
+	border: 1px solid #ffffff !important;
+	border-radius: 0px !important;
+}
+
+.zenControl .viz-controls-switchbar-dropDownList-content {
+	background: #000000 !important;
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
+.zenControl .viz-controls-switchbar-chart-list-header {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 30px !important;
+	padding: 30px 0px 0px 0px !important;
+	margin: 0px !important;
+	color: #fff !important;
+	font-size: 12px !important;
+	font-weight: bold !important;
+	text-align: center;
+	background: #000000 !important;
+}
+
+.zenControl .viz-controls-switchbar-chart-list-container {
+	box-sizing: border-box;
+	background: #000000 !important;
+	width: 100% !important;
+	overflow: hidden !important;
+	padding: 60px 8px 10px 8px !important;
+}
+
+.zenControl .viz-controls-switchbar-chart-list-container li.chartList {
+	background-color: #000000 !important;
+	border: 1px solid #ffffff !important;
+	padding: 4px 8px 4px 8px !important;
+}
+
+.zenControl .viz-controls-switchbar-chart-list-container li .viz-controls-switchbar-dropDownList-chart-list
+	{
+	background: none !important;
+}
+
+.zenControl .viz-controls-switchbar-chart-list-container li.chartList:hover:not(viz-controls-switchbar-dropDownList-chart-list-selected)
+	{
+	background-color: #7a5100 !important;
+}
+
+.zenControl .viz-controls-switchbar-chart-list-container li.chartList+li.chartList
+	{
+	border-top: none !important;
+}
+
+.zenControl .viz-controls-switchbar-chart-list-container li.chartList.viz-controls-switchbar-dropDownList-chart-list-selected
+	{
+	background-color: #7a5100 !important;
+}
+
+.zenControl .viz-controls-switchbar-chart-list-container li.chartList {
+	overflow: hidden !important;
+}
+
+.zenControl .viz-controls-switchbar-chart-list-container li.chartList span
+	{
+	text-overflow: ellipsis !important;
+	display: inline;
+	color: #ffffff !important;
+}
+/* END "ChartTypeSwitch.css" */
+
+/* START "InfoFeeding.css" */
+/* ================================================== */
+/* CSS for infocharts feeding panel 							*/
+/* 		HCB	 for M-Library	                           */
+/* ================================================== */
+
+.sapzeninfofeedingM {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;  
+  padding: 0px;
+
+}
+.sapzeninfofeedingM .innerFeedingContainer {
+  
+}
+.sapzeninfofeedingM .feedingContainer {
+  background-color: #000;
+}
+.sapzeninfofeedingM .feedTypeTitle {
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: bold;  
+}
+
+.sapzeninfofeedingM .bucketContainer{
+  background-color: #000;
+  border: none;
+ 
+}
+
+.sapzeninfofeedingM .bucketContainer + .bucketContainer{
+   border-top: solid 1px #ffffff;  
+}
+
+.sapzeninfofeedingM .feedContainer {
+  background-color: #000;
+  border: none;
+  border-top: solid 1px #ffffff;  
+  border-bottom: solid 1px #ffffff;  
+}
+.sapzeninfofeedingM .feedTypeContainer + .feedTypeContainer .feedContainer {
+  border-bottom: none;  
+}
+
+
+.sapzeninfofeedingM .feeding-sortable-list .placeholder {
+  background: #7A5100;
+  color: #ffffff;
+  border: none;
+}
+
+
+
+ .sapzeninfofeedingM .feedContainer {
+     top: 30px;     
+ }
+
+
+ .sapzeninfofeedingM .feedTypeTitle {
+    line-height: 20px;
+    padding-left:10px;
+    padding-top:5px;   
+
+ }
+
+ .sapzeninfofeedingM .bucket.sapUiLblEmph.sapUiLblNowrap.sapUiLbl.feeding-id-label {
+    font-size: 16px;
+    font-weight: bold;
+ 		text-transform: uppercase;
+ 		padding: 5px;
+ }
+
+  .sapzeninfofeedingM .bucket.sapUiLblEmph.sapUiLblNowrap.sapUiLbl.feeding-id-label > *{
+ 		text-transform: none;
+ 		font-size: 16px; 		
+ }
+
+  .sapzeninfofeedingM .feeding-sortable-item{
+    padding-top: 3px;
+  }
+
+.sapzeninfofeedingM .feedingContainer{
+  padding: 0px ;
+}
+
+
+
+/* END "InfoFeeding.css" */
+

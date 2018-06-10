@@ -1,0 +1,29 @@
+<mvc:View controllerName="sap.apf.modeler.ui.controller.category" xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form" class="sapUiSizeCompact">
+	<VBox xmlns="sap.m" id="idCategoryform" visible="true"
+		displayInline="false" direction="Column" fitContainer="false"
+		renderType="Div" justifyContent="Start" alignItems="Stretch">
+		<items>
+			<ScrollContainer vertical="true">
+				<f:SimpleForm maxContainerCols="1" editable="false"
+					labelMinWidth="300" layout="ResponsiveGridLayout" labelSpanL="4"
+					labelSpanM="4" labelSpanS="4" emptySpanL="2" emptySpanM="2"
+					emptySpanS="2" columnsL="1" columnsM="1">
+					<f:content>
+						<core:Title id="idCategoryBasicData" level="H4" />
+						<!-- CATEGORY TITLE -->
+						<Label xmlns="sap.m" id="idCategoryTitleLabel" required="true" />
+						<Input xmlns="sap.m" id="idCategoryTitle" editable="true"
+							change="handleChangeDetailValue" showSuggestion="true"
+							suggestionItems="{/Objects}" suggest="handleSuggestions">
+							<core:Item key="{key}" text="{name}" />
+						</Input>
+						<Label xmlns="sap.m" id="idTotalStepsLabel" />
+						<Input xmlns="sap.m" id="idTotalSteps" editable="false" />
+					</f:content>
+				</f:SimpleForm>
+			</ScrollContainer>
+		</items>
+	</VBox>
+</mvc:View>

@@ -1,0 +1,6 @@
+{
+  "name": "OPA5Demo",
+  "dependencies": {
+    "sapui5": "http://nexus.wdf.sap.corp:8081/nexus/content/repositories/deploy.releases/com/sap/ui5/dist/sapui5-dist/1.50.6/sapui5-dist-1.50.6-static.zip"
+  }
+}

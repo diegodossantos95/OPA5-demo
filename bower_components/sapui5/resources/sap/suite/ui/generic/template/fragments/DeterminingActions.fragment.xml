@@ -1,0 +1,22 @@
+<core:FragmentDefinition
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns="sap.m" xmlns:build="sap.build" xmlns:core="sap.ui.core">
+	<template:if test="{= ${tmpEntitySet>EntitySet} === ${parameter>/entitySet} }">
+		<template:repeat list="{tmpEntitySet>Actions}" var="customaction">
+			 <template:if test="{= ${customaction>determining} === true &amp;&amp; (!${customaction>filter} || ${customaction>filter} === 'table')}">
+				<Button id="{customaction>id}"
+					text="{customaction>text}"
+					press="{customaction>press}" type="Transparent">
+					<customData>
+						<core:CustomData key="Filter" value="Table"/>
+					</customData>
+					<layoutData>
+						<OverflowToolbarLayoutData
+							moveToOverflow="{= !(${customaction>importance} === 'com.sap.vocabularies.UI.v1.ImportanceType/High')}"
+							stayInOverflow="{= ${customaction>importance} === 'com.sap.vocabularies.UI.v1.ImportanceType/Low'}"/>
+						</layoutData>
+				</Button>
+			</template:if>
+		</template:repeat>
+	</template:if>
+</core:FragmentDefinition>

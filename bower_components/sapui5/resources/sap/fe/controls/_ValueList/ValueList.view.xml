@@ -1,0 +1,63 @@
+<core:View xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+		   xmlns="sap.m"
+		   xmlns:core="sap.ui.core"
+		   xmlns:l="sap.ui.layout"
+		   xmlns:u="sap.ui.unified"
+		   template:require="sap.fe.controls._ValueList.ValueListAnnotationHelper"
+		   controllerName="sap.fe.controls._ValueList.ValueList">
+
+	<template:alias name=".MODEL" value="sap.ui.model.odata.v4.AnnotationHelper">
+		<!-- currently there can be only one value list - collective search is not yet supported -->
+		<template:with path="valueList>"
+					   helper="sap.fe.controls._ValueList.ValueListAnnotationHelper.getCollectionEntitySet"
+					   var="entitySet">
+<!-- 			<HBox>
+				<items>
+					<HBox width="80%">
+						<layoutData>
+							<l:GridData id="GridData" span="XL12 L12 M12 S12" />
+						</layoutData>
+						<VBox width="100%">
+							<items> -->
+								<IconTabBar id="template::SelectValueList"
+											select="onSelectFromList"
+											width="100%" class="sapUiNoContentPadding">
+									<items>
+										<IconTabFilter text="{parts : [{path: 'sap.fe.i18n>SAPFE_SELECT_FROM_LIST'},{path: 'cm>'}], formatter: 'sap.fe.controls._ValueList.ValueListAnnotationHelper.formatIconTabFilterText'}"
+													   key="selectFromList">
+											<core:Fragment
+													fragmentName="sap.fe.controls._ValueList.Fragments.SelectFromList"
+													type="XML"/>
+										</IconTabFilter>
+<!--										<IconTabFilter text="{parts : [{path: 'sap.fe.i18n>SAPFE_SELECT_WITH_OPERATOR'},{path: 'cm>'}], formatter: 'sap.fe.controls._ValueList.ValueListAnnotationHelper.formatIconTabFilterText'}"
+													   key="selectWithOperator">
+											<core:Fragment type="XML" fragmentName="sap.fe.controls._ValueList.Fragments.IconTabConditionsView"/>
+										</IconTabFilter> -->
+
+									</items>
+								</IconTabBar>
+<!-- 							</items>
+						</VBox>
+					</HBox>
+					<HBox width="20%">
+						<items>
+							<VBox width="100%">
+								<Toolbar id="template::TokenizerToolbar">
+									<content>
+										<Title text="{parts : [{path: 'sap.fe.i18n>SAPFE_SELECTED_ITEM'},{path: 'cm>'}], formatter: 'sap.fe.controls._ValueList.ValueListAnnotationHelper.formatSelectedItemTitle'}"/>
+									</content>
+								</Toolbar>
+								<Tokenizer id="template::Tokenizer" width="100%"
+										   tokens="{path: 'cm>/conditions'}"
+										   tokenUpdate="handleTokenUpdate">
+										<Token key="{cm>values/0}" text="{parts : [{path: 'oTempPrivate>/FilterFieldType'},{path: 'cm>'}], formatter: 'sap.fe.controls._ValueList.ValueListAnnotationHelper.formatedTokenText'}"/>
+							</Tokenizer>
+						</VBox>
+						</items>
+					</HBox>
+				</items>
+			</HBox> -->
+		</template:with>
+	</template:alias>
+
+</core:View>

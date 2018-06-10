@@ -1,0 +1,10 @@
+[{
+	"CustomerGroup" : "CG01",
+	"CustomerGroupName" : "Industry"
+},{
+	"CustomerGroup" : "CG02",
+	"CustomerGroupName" : "Retail"
+},{
+	"CustomerGroup" : "CG03",
+	"CustomerGroupName" : "Wholesales"
+}]

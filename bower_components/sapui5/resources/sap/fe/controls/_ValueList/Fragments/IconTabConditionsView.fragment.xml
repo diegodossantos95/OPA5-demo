@@ -1,0 +1,31 @@
+<core:FragmentDefinition xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+						 xmlns="sap.m"
+						 xmlns:u="sap.ui.unified"
+						 xmlns:core="sap.ui.core"
+						 xmlns:l="sap.ui.layout">
+	<ScrollContainer vertical="true"
+					 height="24rem" width="100%" focusable="true">
+		<VBox>
+			<!--<l:HorizontalLayout>-->
+				<!--<Text text="{valueList>/title}"/>-->
+				<!--<Button press="addCondition" type="Transparent" icon="sap-icon://add"/>-->
+			<!--</l:HorizontalLayout>-->
+			<l:Grid id="template::DefineConditions" content="{ path:'cm>/conditions', filters:[{path: 'operator', operator:'NE', value1:'EEQ'}]}"
+					width="100%" defaultSpan="XL12 L12 M12 S12">
+				<l:Grid width="auto">
+					<Text text="{valueList>/title}"/>
+					<Select items="{om>/}" selectedKey="{cm>operator}" showSecondaryValues="true">
+						<core:ListItem key="{om>key}" text="{om>key}" additionalText="{om>additionalText}"/>
+					</Select>
+					<Input value="{cm>values/0}"/>
+					<Input value="{cm>values/1}" visible="{= ${cm>operator} === 'BT'}"/>
+					<l:HorizontalLayout>
+						<Button press="removeCondition" type="Transparent" icon="sap-icon://decline"/>
+						<Button press="addCondition" type="Transparent" icon="sap-icon://add"/>
+					</l:HorizontalLayout>
+				</l:Grid>
+			</l:Grid>
+		</VBox>
+	</ScrollContainer>
+
+</core:FragmentDefinition>

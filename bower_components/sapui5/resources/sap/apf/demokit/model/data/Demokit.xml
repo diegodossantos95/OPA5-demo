@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="2.0">
+        <Schema Namespace="tmp.demokit.demokit" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityType Name="RevenueQueryResultsType" sap:semantics="aggregate">
+                <Key>
+                    <PropertyRef Name="GenID" />
+                </Key>
+                <Property Name="GenID" Type="Edm.String" Nullable="false" MaxLength="2147483647" sap:filterable="false" />
+                <Property Name="Customer" Type="Edm.String" MaxLength="4" sap:label="Customer" sap:aggregation-role="dimension" sap:text="CustomerName" />
+                <Property Name="CustomerName" Type="Edm.String" MaxLength="30" sap:label="Customer Name" />
+                <Property Name="Product" Type="Edm.String" MaxLength="4" sap:label="Product" sap:aggregation-role="dimension" sap:text="ProductName" />
+                <Property Name="ProductName" Type="Edm.String" MaxLength="30" sap:label="Product Name" />
+                <Property Name="Country" Type="Edm.String" MaxLength="2" sap:label="Country" sap:aggregation-role="dimension" sap:text="CountryName" />
+                <Property Name="CountryName" Type="Edm.String" MaxLength="20" sap:label="Country Name" />
+                <Property Name="CustomerGroup" Type="Edm.String" MaxLength="4" sap:label="Customer Group" sap:aggregation-role="dimension" sap:text="CustomerGroupName" />
+                <Property Name="CustomerGroupName" Type="Edm.String" MaxLength="20" sap:label="Customer Group Name" />
+                <Property Name="CompanyCode" Type="Edm.String" MaxLength="4" sap:label="Company Code" sap:aggregation-role="dimension" sap:text="CompanyCodeName" />
+                <Property Name="CompanyCodeName" Type="Edm.String" MaxLength="15" sap:label="Company Code Name" />
+                <Property Name="Currency" Type="Edm.String" MaxLength="3" sap:semantics="currency-code" sap:label="Currency" sap:aggregation-role="dimension" sap:text="CurrencyName" />
+                <Property Name="CurrencyName" Type="Edm.String" MaxLength="10" sap:label="Currency Name" />
+                <Property Name="Year" Type="Edm.String" MaxLength="4" sap:label="Year" sap:aggregation-role="dimension" />
+                <Property Name="Month" Type="Edm.String" MaxLength="2" sap:label="Month" sap:aggregation-role="dimension" />
+                <Property Name="YearMonth" Type="Edm.String" MaxLength="6" sap:label="Year and Month" sap:aggregation-role="dimension" />
+                <Property Name="Date" sap:display-format="Date" Type="Edm.DateTime" sap:label="Date" sap:aggregation-role="dimension" />
+                <Property Name="Revenue" Type="Edm.Decimal" Precision="13" Scale="3" sap:filterable="false" sap:label="Revenue" sap:aggregation-role="measure" sap:unit="Currency" />
+                <Property Name="ShippingCosts" Type="Edm.Decimal" Precision="13" Scale="3" sap:filterable="false" sap:label="Shipping Costs" sap:aggregation-role="measure" sap:unit="Currency" />
+                <Property Name="Discount" Type="Edm.Decimal" Precision="13" Scale="3" sap:filterable="false" sap:label="Discount" sap:aggregation-role="measure" sap:unit="Currency" />
+                <Property Name="NumberOfOrders" Type="Edm.Int32" sap:filterable="false" sap:label="Number of Orders" sap:aggregation-role="measure" />
+            </EntityType>
+            <EntityType Name="CustomerType" sap:semantics="aggregate">
+            	<Key>
+                    <PropertyRef Name="Customer" />
+                </Key>
+                <Property Name="Customer" Type="Edm.String" MaxLength="4" sap:label="Customer" sap:aggregation-role="dimension" sap:text="CustomerName" />
+                <Property Name="CustomerName" Type="Edm.String" MaxLength="30" sap:label="Customer Name" />
+                <Property Name="CustomerGroup" Type="Edm.String" MaxLength="4" sap:label="Customer Group" sap:aggregation-role="dimension" sap:text="CustomerGroupName" />
+                <Property Name="CustomerGroupName" Type="Edm.String" MaxLength="20" sap:label="Customer Group Name" />
+            </EntityType>
+            <EntityType Name="CustomerGroupType" sap:semantics="aggregate">
+            	<Key>
+                    <PropertyRef Name="CustomerGroup" />
+                </Key>
+                <Property Name="CustomerGroup" Type="Edm.String" MaxLength="4" sap:label="Customer Group" sap:aggregation-role="dimension" sap:text="CustomerGroupName" />
+                <Property Name="CustomerGroupName" Type="Edm.String" MaxLength="20" sap:label="Customer Group Name" />
+            </EntityType>
+            <EntityType Name="CompanyCodeType" sap:semantics="aggregate">
+            	<Key>
+                    <PropertyRef Name="CompanyCode" />
+                </Key>
+                <Property Name="CompanyCode" Type="Edm.String" MaxLength="4" sap:label="Company Code" sap:aggregation-role="dimension" sap:text="CompanyCodeName" />
+                <Property Name="CompanyCodeName" Type="Edm.String" MaxLength="15" sap:label="Company Code Name" />
+            </EntityType>
+            <EntityType Name="ProductType" sap:semantics="aggregate">
+            	<Key>
+                    <PropertyRef Name="Product" />
+                </Key>
+                <Property Name="Product" Type="Edm.String" MaxLength="4" sap:label="Product" sap:aggregation-role="dimension" sap:text="ProductName" />
+                <Property Name="ProductName" Type="Edm.String" MaxLength="30" sap:label="Product Name" />
+            </EntityType>
+            <EntityType Name="CountryType" sap:semantics="aggregate">
+            	<Key>
+                    <PropertyRef Name="Country" />
+                </Key>
+                <Property Name="Country" Type="Edm.String" MaxLength="2" sap:label="Country" sap:aggregation-role="dimension" sap:text="CountryName" />
+                <Property Name="CountryName" Type="Edm.String" MaxLength="20" sap:label="Country Name" />
+            </EntityType>
+            <EntityType Name="RevenueQueryType" sap:semantics="parameters">
+                <Key>
+                    <PropertyRef Name="P_Currency" />
+                </Key>
+                <Property Name="P_Currency" Type="Edm.String" Nullable="false" DefaultValue="USD" MaxLength="3" sap:label="Currency" sap:parameter="mandatory" />
+                <NavigationProperty Name="Results" Relationship="tmp.demokit.demokit.RevenueQuery_RevenueQueryResultsType" FromRole="RevenueQueryPrincipal" ToRole="RevenueQueryResultsDependent" />
+            </EntityType>
+            <Association Name="RevenueQuery_RevenueQueryResultsType">
+                <End Type="tmp.demokit.demokit.RevenueQueryType" Role="RevenueQueryPrincipal" Multiplicity="*" />
+                <End Type="tmp.demokit.demokit.RevenueQueryResultsType" Role="RevenueQueryResultsDependent" Multiplicity="*" />
+                <ReferentialConstraint>
+					<Principal Role="RevenueQueryPrincipal">
+						<PropertyRef Name="P_Currency" />
+					</Principal>
+					<Dependent Role="RevenueQueryResultsDependent">
+						<PropertyRef Name="Currency" />
+					</Dependent>
+				</ReferentialConstraint>
+            </Association>
+            <EntityContainer Name="demokit" m:IsDefaultEntityContainer="true">
+                <EntitySet Name="CompanyCode" EntityType="tmp.demokit.demokit.CompanyCodeType" sap:addressable="false" />
+                <EntitySet Name="Product" EntityType="tmp.demokit.demokit.ProductType" sap:addressable="false" />
+                <EntitySet Name="Customer" EntityType="tmp.demokit.demokit.CustomerType" sap:addressable="false" />
+                <EntitySet Name="CustomerGroup" EntityType="tmp.demokit.demokit.CustomerGroupType" sap:addressable="false" />
+                <EntitySet Name="Country" EntityType="tmp.demokit.demokit.CountryType" sap:addressable="false" />
+                <EntitySet Name="RevenueQueryResults" EntityType="tmp.demokit.demokit.RevenueQueryResultsType" sap:addressable="false" />
+                <EntitySet Name="RevenueQuery" EntityType="tmp.demokit.demokit.RevenueQueryType" sap:addressable="false" />
+                <AssociationSet Name="RevenueQuery_RevenueQueryResults" Association="tmp.demokit.demokit.RevenueQuery_RevenueQueryResultsType">
+                    <End Role="RevenueQueryPrincipal" EntitySet="RevenueQuery" />
+                    <End Role="RevenueQueryResultsDependent" EntitySet="RevenueQueryResults" />
+                </AssociationSet>
+            </EntityContainer>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

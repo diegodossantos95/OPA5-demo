@@ -1,0 +1,52 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core"
+	xmlns:l="sap.ui.layout" visible="true" xmlns:f="sap.ui.layout.form"
+	xmlns="sap.m" class="sapUiSizeCompact">
+	<f:SimpleForm id="idSortPropertyTypeForm"
+		maxContainerCols="1" editable="false" labelMinWidth="300"
+		layout="ResponsiveGridLayout" labelSpanL="4" labelSpanM="4"
+		labelSpanS="4" emptySpanL="2" emptySpanM="2" emptySpanS="1" columnsL="1"
+		columnsM="1" width="100%" class="formTopPadding formBottomPadding">
+		<f:content>
+			<Label id="idSortLabel">
+				<layoutData>
+					<l:GridData id="idGridSortLabel" />
+				</layoutData>
+			</Label>
+			<Select id="idSortProperty" visible="true" width="100%"
+				maxWidth="100%" type="Default" autoAdjustWidth="false"
+				change="handleChangeForSortProperty" items="{/Objects}">
+				<core:Item key="{key}" text="{name}" />
+				<layoutData>
+					<l:GridData id="idGridSortProperty" />
+				</layoutData>
+			</Select>
+			<Label id="idSortDirectionLabel">
+				<layoutData>
+					<l:GridData id="idGridSortDirectionLabel" />
+				</layoutData>
+			</Label>
+			<Select id="idSortDirection" visible="true" width="100%"
+				maxWidth="100%" type="Default" autoAdjustWidth="false"
+				change="handleChangeForSortDirection" items="{/Objects}">
+				<core:Item key="{key}" text="{name}" />
+				<layoutData>
+					<l:GridData id="idGridSortDirection" />
+				</layoutData>
+			</Select>
+			<HBox xmlns="sap.m" id="idIconLayout" class="plusMinusLayout">
+				<layoutData>
+					<l:GridData id="idGridIconLayout" />
+				</layoutData>
+				<items>
+					<core:Icon id="idAddPropertyIcon" src="sap-icon://add"
+						width="100%" press="handlePressOfAddPropertyIcon" ariaLabelledBy="idAriaPropertyForAdd" />
+					<core:Icon id="idRemovePropertyIcon" src="sap-icon://less"
+						width="100%" press="handlePressOfRemovePropertyIcon" class="lessIcon"
+						ariaLabelledBy="idAriaPropertyForDelete" />
+				</items>
+			</HBox>
+		</f:content>
+	</f:SimpleForm>
+	<core:InvisibleText id="idAriaPropertyForAdd" />
+	<core:InvisibleText id="idAriaPropertyForDelete" />
+</mvc:View>

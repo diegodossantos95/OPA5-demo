@@ -1,0 +1,2 @@
+// Copyright (c) 2009-2017 SAP SE, All Rights Reserved
+sap.ui.define(['sap/ushell/resources'],function(r){"use strict";var H={},t=r.i18n;H.render=function(R,c){R.write("<");R.write(c.getHeaderLevel().toLowerCase());R.writeControlData(c);R.addClass("sapUshellHeaderTile");if(!c.getVisible()){R.addClass("sapUshellHidden");}R.writeClasses();R.writeAccessibilityState(c,{label:c.getHeaderText()+t.getText("HeaderCategory")});R.write(">");R.writeEscaped(c.getHeaderText());R.write("</");R.write(c.getHeaderLevel().toLowerCase());R.write(">");};return H;});

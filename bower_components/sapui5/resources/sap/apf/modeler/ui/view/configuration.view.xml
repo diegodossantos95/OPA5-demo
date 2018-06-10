@@ -1,0 +1,52 @@
+<mvc:View controllerName="sap.apf.modeler.ui.controller.configuration" xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form"
+	xmlns:l="sap.ui.layout"
+	xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	class="sapUiSizeCompact">
+	<VBox xmlns="sap.m" id="idConfigform" visible="true"
+		displayInline="false" direction="Column" fitContainer="false"
+		renderType="Div" justifyContent="Start" alignItems="Stretch">
+		<items>
+			<ScrollContainer vertical="true">
+				<f:SimpleForm maxContainerCols="1" editable="false"
+					labelMinWidth="300" layout="ResponsiveGridLayout" labelSpanL="4"
+					labelSpanM="4" labelSpanS="4" emptySpanL="2" emptySpanM="2"
+					emptySpanS="2" columnsL="1" columnsM="1">
+					<f:content>
+						<core:Title id="idConfigurationBasicData" level="H4" />
+						<!-- CONFIGURATION TITLE -->
+						<Label xmlns="sap.m" id="idConfigTitleLabel" required="true" />
+						<Input xmlns="sap.m" id="idConfigTitle" editable="true"
+							change="handleChangeDetailValue" />
+						<Label xmlns="sap.m" id="idConfigurationIdLabel" />
+						<Input xmlns="sap.m" id="idConfigurationId" editable="false" />
+						<Label xmlns="sap.m" id="idSemanticObjectLabel" />
+						<Input xmlns="sap.m" id="idSemanticObject" editable="false" />
+						<Label xmlns="sap.m" id="idNoOfCategoriesLabel" />
+						<Input xmlns="sap.m" id="idNoOfCategories" editable="false" />
+						<Label xmlns="sap.m" id="idNoOfStepsLabel" />
+						<Input xmlns="sap.m" id="idNoOfSteps" editable="false" />
+						<core:Title id="idFilterTypeData" level="H4" />
+						<Label xmlns="sap.m" id="idFilterTypeLabel" width="100%" />
+						<VBox xmlns="sap.m" id="idFilterTypeRadioGroupVBox" visible="true"
+							displayInline="false" direction="Column" fitContainer="true"
+							renderType="Div" justifyContent="Start">
+							<items>
+								<RadioButtonGroup xmlns="sap.m"
+									id="idFilterTypeRadioGroup" select="handleChangeForFilterType"
+									enabled="false"	ariaLabelledBy="idAriaPropertyForFilterRadioGp">
+									<buttons>
+										<RadioButton id="smartFilterBar" app:value="smartFilterBar" />
+										<RadioButton id="facetFilter" app:value="facetFilter" class="facetFilterRadioLabel"/>
+										<RadioButton id="none" app:value="none" />
+									</buttons>
+								</RadioButtonGroup>
+							</items>
+						</VBox>
+						<InvisibleText xmlns="sap.ui.core" id="idAriaPropertyForFilterRadioGp" />
+					</f:content>
+				</f:SimpleForm>
+			</ScrollContainer>
+		</items>
+	</VBox>
+</mvc:View>

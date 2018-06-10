@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/core/Element"],function(E){var L=E.extend("sap.suite.ui.commons.networkgraph.layout.LayoutAlgorithm",{metadata:{"abstract":true,publicMethods:["isLayered","layout"]}});return L;});

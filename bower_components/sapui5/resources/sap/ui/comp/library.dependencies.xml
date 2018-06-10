@@ -1,0 +1,2427 @@
+<?xml version="1.0" ?>
+<library  version="2.0" name="sap.ui.comp">
+  <module name="sap/ui/comp/config/condition/DateRangeType.js" size="69857" compressedSize="39526">
+    <description>Provides sap.ui.comp.config.condition.DateRangeType.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/DatePicker.js"/>
+      <module name="sap/m/DateRangeSelection.js"/>
+      <module name="sap/m/Input.js"/>
+      <module name="sap/m/Select.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/ui/comp/config/condition/Type.js"/>
+      <module name="sap/ui/core/Locale.js"/>
+      <module name="sap/ui/core/LocaleData.js"/>
+      <module name="sap/ui/core/date/UniversalDate.js"/>
+      <module name="sap/ui/model/odata/Filter.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/config/condition/Type.js" size="12844" compressedSize="8281">
+    <description>Provides sap.ui.comp.config.condition.Type.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Select.js"/>
+      <module name="sap/ui/base/EventProvider.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/filterbar/FilterBar.designtime.js" size="1188" compressedSize="754">
+    <description>Provides the Design Time Metadata for the sap.ui.comp.filerbar.FilterBar control.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/filterbar/FilterBar.js" size="186739" compressedSize="94377">
+    <description>Provides control sap.ui.comp.filterbar.FilterBar.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Bar.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/ButtonType.js"/>
+      <module name="sap/m/CheckBox.js"/>
+      <module name="sap/m/CustomListItem.js" conditional="true"/>
+      <module name="sap/m/Dialog.js" conditional="true"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/LabelDesign.js"/>
+      <module name="sap/m/Link.js"/>
+      <module name="sap/m/List.js"/>
+      <module name="sap/m/ListMode.js" conditional="true"/>
+      <module name="sap/m/ListSeparators.js"/>
+      <module name="sap/m/MultiInput.js"/>
+      <module name="sap/m/OverflowToolbarLayoutData.js" conditional="true"/>
+      <module name="sap/m/OverflowToolbarPriority.js" conditional="true"/>
+      <module name="sap/m/Panel.js"/>
+      <module name="sap/m/PlacementType.js"/>
+      <module name="sap/m/SearchField.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/Toolbar.js"/>
+      <module name="sap/m/ToolbarLayoutData.js" conditional="true"/>
+      <module name="sap/m/ToolbarSeparator.js" conditional="true"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/comp/filterbar/VariantConverterFrom.js"/>
+      <module name="sap/ui/comp/filterbar/VariantConverterTo.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/smartvariants/PersonalizableInfo.js"/>
+      <module name="sap/ui/comp/smartvariants/SmartVariantManagementUi2.js"/>
+      <module name="sap/ui/comp/state/UIState.js"/>
+      <module name="sap/ui/comp/util/IdentifierUtil.js"/>
+      <module name="sap/ui/comp/variants/VariantManagement.js"/>
+      <module name="sap/ui/core/Icon.js"/>
+      <module name="sap/ui/core/InvisibleText.js" conditional="true"/>
+      <module name="sap/ui/core/TextAlign.js"/>
+      <module name="sap/ui/core/Title.js"/>
+      <module name="sap/ui/core/ValueState.js"/>
+      <module name="sap/ui/layout/Grid.js"/>
+      <module name="sap/ui/layout/GridData.js"/>
+      <module name="sap/ui/layout/GridRenderer.js"/>
+      <module name="sap/ui/layout/HorizontalLayout.js"/>
+      <module name="sap/ui/layout/ResponsiveFlowLayout.js"/>
+      <module name="sap/ui/layout/ResponsiveFlowLayoutData.js"/>
+      <module name="sap/ui/layout/VerticalLayout.js"/>
+      <module name="sap/ui/layout/form/Form.js"/>
+      <module name="sap/ui/layout/form/FormContainer.js"/>
+      <module name="sap/ui/layout/form/FormElement.js"/>
+      <module name="sap/ui/layout/form/FormRenderer.js"/>
+      <module name="sap/ui/layout/form/ResponsiveGridLayout.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/filterbar/FilterGroupItem.js" size="2978" compressedSize="1013">
+    <description>Provides control sap.ui.comp.filterbar.FilterGroupItem.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/comp/filterbar/FilterItem.js"/>
+      <module name="sap/ui/comp/library.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/filterbar/FilterItem.js" size="6720" compressedSize="2836">
+    <description>Provides control sap.ui.comp.filterbar.FilterItem.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/util/IdentifierUtil.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/core/TooltipBase.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/filterbar/VariantConverterFrom.js" size="16785" compressedSize="6768">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/DatePicker.js"/>
+      <module name="sap/m/DateRangeSelection.js"/>
+      <module name="sap/m/MultiComboBox.js"/>
+      <module name="sap/m/MultiInput.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/valuehelpdialog/ValueHelpDialog.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/filterbar/VariantConverterTo.js" size="14854" compressedSize="5972">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/odata/ODataType.js"/>
+      <module name="sap/ui/comp/util/FormatUtil.js"/>
+      <module name="sap/ui/comp/valuehelpdialog/ValueHelpDialog.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/library-preload.js" size="1063812" dynamicDependencies="true">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/chart/Chart.js"/>
+      <module name="sap/chart/data/Dimension.js"/>
+      <module name="sap/chart/data/Measure.js"/>
+      <module name="sap/chart/library.js"/>
+      <module name="sap/m/ActionSheet.js"/>
+      <module name="sap/m/Bar.js"/>
+      <module name="sap/m/Breadcrumbs.js" conditional="true"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/ButtonType.js"/>
+      <module name="sap/m/CheckBox.js"/>
+      <module name="sap/m/Column.js"/>
+      <module name="sap/m/ColumnListItem.js"/>
+      <module name="sap/m/ColumnListItemRenderer.js"/>
+      <module name="sap/m/ComboBox.js"/>
+      <module name="sap/m/CustomListItem.js" conditional="true"/>
+      <module name="sap/m/DatePicker.js"/>
+      <module name="sap/m/DateRangeSelection.js"/>
+      <module name="sap/m/DateTimePicker.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/m/DialogRenderer.js"/>
+      <module name="sap/m/FlexAlignItems.js" conditional="true"/>
+      <module name="sap/m/FlexAlignSelf.js" conditional="true"/>
+      <module name="sap/m/FlexDirection.js" conditional="true"/>
+      <module name="sap/m/FlexItemData.js"/>
+      <module name="sap/m/FlexJustifyContent.js"/>
+      <module name="sap/m/HBox.js"/>
+      <module name="sap/m/Image.js"/>
+      <module name="sap/m/Input.js"/>
+      <module name="sap/m/InputType.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/LabelDesign.js"/>
+      <module name="sap/m/LabelRenderer.js"/>
+      <module name="sap/m/Link.js"/>
+      <module name="sap/m/LinkRenderer.js"/>
+      <module name="sap/m/List.js"/>
+      <module name="sap/m/ListMode.js" conditional="true"/>
+      <module name="sap/m/ListSeparators.js"/>
+      <module name="sap/m/MessageBox.js"/>
+      <module name="sap/m/MultiComboBox.js"/>
+      <module name="sap/m/MultiInput.js"/>
+      <module name="sap/m/ObjectIdentifier.js"/>
+      <module name="sap/m/ObjectNumber.js"/>
+      <module name="sap/m/ObjectStatus.js"/>
+      <module name="sap/m/OverflowToolbar.js"/>
+      <module name="sap/m/OverflowToolbarButton.js"/>
+      <module name="sap/m/OverflowToolbarLayoutData.js" conditional="true"/>
+      <module name="sap/m/OverflowToolbarPriority.js" conditional="true"/>
+      <module name="sap/m/P13nColumnsItem.js" conditional="true"/>
+      <module name="sap/m/P13nColumnsPanel.js" conditional="true"/>
+      <module name="sap/m/P13nConditionPanel.js"/>
+      <module name="sap/m/P13nDialog.js"/>
+      <module name="sap/m/P13nDimMeasureItem.js" conditional="true"/>
+      <module name="sap/m/P13nDimMeasurePanel.js" conditional="true"/>
+      <module name="sap/m/P13nFilterItem.js"/>
+      <module name="sap/m/P13nFilterPanel.js" conditional="true"/>
+      <module name="sap/m/P13nGroupItem.js" conditional="true"/>
+      <module name="sap/m/P13nGroupPanel.js" conditional="true"/>
+      <module name="sap/m/P13nItem.js"/>
+      <module name="sap/m/P13nSelectionItem.js"/>
+      <module name="sap/m/P13nSelectionPanel.js"/>
+      <module name="sap/m/P13nSortItem.js" conditional="true"/>
+      <module name="sap/m/P13nSortPanel.js" conditional="true"/>
+      <module name="sap/m/Page.js"/>
+      <module name="sap/m/Panel.js"/>
+      <module name="sap/m/PlacementType.js"/>
+      <module name="sap/m/PopinDisplay.js"/>
+      <module name="sap/m/RadioButton.js"/>
+      <module name="sap/m/ResponsivePopover.js"/>
+      <module name="sap/m/ResponsivePopoverRenderer.js"/>
+      <module name="sap/m/ScreenSize.js"/>
+      <module name="sap/m/SearchField.js"/>
+      <module name="sap/m/SegmentedButton.js"/>
+      <module name="sap/m/Select.js"/>
+      <module name="sap/m/SelectList.js"/>
+      <module name="sap/m/SelectionDetails.js"/>
+      <module name="sap/m/SelectionDetailsItem.js"/>
+      <module name="sap/m/SelectionDetailsItemLine.js"/>
+      <module name="sap/m/StandardListItem.js"/>
+      <module name="sap/m/Table.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/TextArea.js"/>
+      <module name="sap/m/TimePicker.js"/>
+      <module name="sap/m/Title.js"/>
+      <module name="sap/m/Token.js"/>
+      <module name="sap/m/Toolbar.js"/>
+      <module name="sap/m/ToolbarDesign.js"/>
+      <module name="sap/m/ToolbarLayoutData.js" conditional="true"/>
+      <module name="sap/m/ToolbarSeparator.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/m/Tree.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/m/VBoxRenderer.js"/>
+      <module name="sap/m/ValueColor.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/base/BindingParser.js"/>
+      <module name="sap/ui/base/DataType.js"/>
+      <module name="sap/ui/base/EventProvider.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="sap/ui/base/Object.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="sap/ui/core/CustomData.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/core/HTML.js"/>
+      <module name="sap/ui/core/Icon.js"/>
+      <module name="sap/ui/core/InvisibleText.js"/>
+      <module name="sap/ui/core/Item.js"/>
+      <module name="sap/ui/core/Locale.js"/>
+      <module name="sap/ui/core/LocaleData.js"/>
+      <module name="sap/ui/core/MessageType.js"/>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="sap/ui/core/ResizeHandler.js" conditional="true"/>
+      <module name="sap/ui/core/TextAlign.js"/>
+      <module name="sap/ui/core/Title.js"/>
+      <module name="sap/ui/core/TitleLevel.js"/>
+      <module name="sap/ui/core/TooltipBase.js"/>
+      <module name="sap/ui/core/ValueState.js"/>
+      <module name="sap/ui/core/VariantLayoutData.js"/>
+      <module name="sap/ui/core/VerticalAlign.js"/>
+      <module name="sap/ui/core/date/UniversalDate.js"/>
+      <module name="sap/ui/core/format/DateFormat.js"/>
+      <module name="sap/ui/core/format/NumberFormat.js"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="sap/ui/fl/Change.js"/>
+      <module name="sap/ui/fl/ChangePersistenceFactory.js"/>
+      <module name="sap/ui/fl/FlexControllerFactory.js"/>
+      <module name="sap/ui/fl/Persistence.js"/>
+      <module name="sap/ui/fl/Utils.js"/>
+      <module name="sap/ui/fl/changeHandler/Base.js"/>
+      <module name="sap/ui/fl/changeHandler/BaseRename.js"/>
+      <module name="sap/ui/fl/changeHandler/ChangeHandlerMediator.js"/>
+      <module name="sap/ui/fl/changeHandler/JsControlTreeModifier.js"/>
+      <module name="sap/ui/fl/fieldExt/Access.js" conditional="true"/>
+      <module name="sap/ui/fl/registry/Settings.js"/>
+      <module name="sap/ui/fl/transport/TransportDialog.js"/>
+      <module name="sap/ui/fl/transport/TransportSelection.js"/>
+      <module name="sap/ui/layout/Grid.js"/>
+      <module name="sap/ui/layout/GridData.js"/>
+      <module name="sap/ui/layout/GridRenderer.js"/>
+      <module name="sap/ui/layout/HorizontalLayout.js"/>
+      <module name="sap/ui/layout/ResponsiveFlowLayout.js"/>
+      <module name="sap/ui/layout/ResponsiveFlowLayoutData.js"/>
+      <module name="sap/ui/layout/VerticalLayout.js"/>
+      <module name="sap/ui/layout/form/Form.js"/>
+      <module name="sap/ui/layout/form/FormContainer.js"/>
+      <module name="sap/ui/layout/form/FormElement.js"/>
+      <module name="sap/ui/layout/form/FormRenderer.js"/>
+      <module name="sap/ui/layout/form/ResponsiveGridLayout.js"/>
+      <module name="sap/ui/layout/form/ResponsiveLayout.js"/>
+      <module name="sap/ui/layout/form/SimpleForm.js"/>
+      <module name="sap/ui/layout/form/SimpleFormLayout.js"/>
+      <module name="sap/ui/model/Filter.js"/>
+      <module name="sap/ui/model/FilterOperator.js"/>
+      <module name="sap/ui/model/FormatException.js"/>
+      <module name="sap/ui/model/ParseException.js"/>
+      <module name="sap/ui/model/SimpleType.js"/>
+      <module name="sap/ui/model/Sorter.js"/>
+      <module name="sap/ui/model/ValidateException.js"/>
+      <module name="sap/ui/model/analytics/odata4analytics.js" conditional="true"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="sap/ui/model/odata/AnnotationHelper.js"/>
+      <module name="sap/ui/model/odata/CountMode.js"/>
+      <module name="sap/ui/model/odata/Filter.js"/>
+      <module name="sap/ui/model/odata/ODataAnnotations.js"/>
+      <module name="sap/ui/model/odata/ODataModel.js"/>
+      <module name="sap/ui/model/odata/type/Boolean.js"/>
+      <module name="sap/ui/model/odata/type/Byte.js"/>
+      <module name="sap/ui/model/odata/type/DateTime.js"/>
+      <module name="sap/ui/model/odata/type/DateTimeOffset.js"/>
+      <module name="sap/ui/model/odata/type/Decimal.js"/>
+      <module name="sap/ui/model/odata/type/Double.js"/>
+      <module name="sap/ui/model/odata/type/Guid.js"/>
+      <module name="sap/ui/model/odata/type/Int16.js"/>
+      <module name="sap/ui/model/odata/type/Int32.js"/>
+      <module name="sap/ui/model/odata/type/Int64.js"/>
+      <module name="sap/ui/model/odata/type/SByte.js"/>
+      <module name="sap/ui/model/odata/type/Single.js"/>
+      <module name="sap/ui/model/odata/type/String.js"/>
+      <module name="sap/ui/model/odata/type/Time.js"/>
+      <module name="sap/ui/model/odata/v2/ODataModel.js"/>
+      <module name="sap/ui/model/type/Boolean.js"/>
+      <module name="sap/ui/model/type/Currency.js"/>
+      <module name="sap/ui/model/type/Date.js"/>
+      <module name="sap/ui/model/type/Float.js"/>
+      <module name="sap/ui/model/type/Integer.js"/>
+      <module name="sap/ui/model/type/String.js"/>
+      <module name="sap/ui/rta/RuntimeAuthoring.js" conditional="true"/>
+      <module name="sap/ui/table/AnalyticalColumn.js"/>
+      <module name="sap/ui/table/AnalyticalTable.js"/>
+      <module name="sap/ui/table/Column.js"/>
+      <module name="sap/ui/table/Table.js"/>
+      <module name="sap/ui/table/TreeTable.js"/>
+      <module name="sap/viz/ui5/controls/Popover.js" conditional="true"/>
+      <module name="sap/viz/ui5/controls/VizTooltip.js"/>
+    </requires>
+    <includes>
+      <module name="sap/ui/comp/config/condition/DateRangeType.js"/>
+      <module name="sap/ui/comp/config/condition/Type.js"/>
+      <module name="sap/ui/comp/filterbar/FilterBar.designtime.js"/>
+      <module name="sap/ui/comp/filterbar/FilterBar.js"/>
+      <module name="sap/ui/comp/filterbar/FilterGroupItem.js"/>
+      <module name="sap/ui/comp/filterbar/FilterItem.js"/>
+      <module name="sap/ui/comp/filterbar/VariantConverterFrom.js"/>
+      <module name="sap/ui/comp/filterbar/VariantConverterTo.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/manifest.json"/>
+      <module name="sap/ui/comp/navpopover/Factory.js"/>
+      <module name="sap/ui/comp/navpopover/FlexConnector.js"/>
+      <module name="sap/ui/comp/navpopover/FlexHandler.js"/>
+      <module name="sap/ui/comp/navpopover/LinkData.js"/>
+      <module name="sap/ui/comp/navpopover/NavigationContainer.js"/>
+      <module name="sap/ui/comp/navpopover/NavigationPopover.js"/>
+      <module name="sap/ui/comp/navpopover/NavigationPopoverHandler.js"/>
+      <module name="sap/ui/comp/navpopover/RTAHandler.js"/>
+      <module name="sap/ui/comp/navpopover/SemanticObjectController.js"/>
+      <module name="sap/ui/comp/navpopover/SmartLink.designtime.js"/>
+      <module name="sap/ui/comp/navpopover/SmartLink.js"/>
+      <module name="sap/ui/comp/navpopover/SmartLinkRenderer.js"/>
+      <module name="sap/ui/comp/navpopover/Util.js"/>
+      <module name="sap/ui/comp/navpopover/flexibility/changes/AddLink.js"/>
+      <module name="sap/ui/comp/navpopover/flexibility/changes/RemoveLink.js"/>
+      <module name="sap/ui/comp/odata/ChartMetadata.js"/>
+      <module name="sap/ui/comp/odata/CriticalityMetadata.js"/>
+      <module name="sap/ui/comp/odata/FieldSelector.js"/>
+      <module name="sap/ui/comp/odata/FieldSelectorController.js"/>
+      <module name="sap/ui/comp/odata/FieldSelectorModelConverter.js"/>
+      <module name="sap/ui/comp/odata/FieldSelectorRenderer.js"/>
+      <module name="sap/ui/comp/odata/MetadataAnalyser.js"/>
+      <module name="sap/ui/comp/odata/ODataModelUtil.js"/>
+      <module name="sap/ui/comp/odata/ODataType.js"/>
+      <module name="sap/ui/comp/odata/SideEffects.js"/>
+      <module name="sap/ui/comp/personalization/BaseController.js"/>
+      <module name="sap/ui/comp/personalization/ChartWrapper.js"/>
+      <module name="sap/ui/comp/personalization/ColumnHelper.js"/>
+      <module name="sap/ui/comp/personalization/ColumnWrapper.js"/>
+      <module name="sap/ui/comp/personalization/ColumnsController.js"/>
+      <module name="sap/ui/comp/personalization/Controller.js"/>
+      <module name="sap/ui/comp/personalization/DimeasureController.js"/>
+      <module name="sap/ui/comp/personalization/FilterController.js"/>
+      <module name="sap/ui/comp/personalization/GroupController.js"/>
+      <module name="sap/ui/comp/personalization/SelectionController.js"/>
+      <module name="sap/ui/comp/personalization/SelectionWrapper.js"/>
+      <module name="sap/ui/comp/personalization/SortController.js"/>
+      <module name="sap/ui/comp/personalization/Util.js"/>
+      <module name="sap/ui/comp/personalization/Validator.js"/>
+      <module name="sap/ui/comp/providers/BaseValueListProvider.js"/>
+      <module name="sap/ui/comp/providers/ChartProvider.js"/>
+      <module name="sap/ui/comp/providers/ControlProvider.js"/>
+      <module name="sap/ui/comp/providers/TableProvider.js"/>
+      <module name="sap/ui/comp/providers/TokenParser.js"/>
+      <module name="sap/ui/comp/providers/ValueHelp.designtime.js"/>
+      <module name="sap/ui/comp/providers/ValueHelpProvider.js"/>
+      <module name="sap/ui/comp/providers/ValueListProvider.js"/>
+      <module name="sap/ui/comp/smartchart/SmartChart.designtime.js"/>
+      <module name="sap/ui/comp/smartchart/SmartChart.js"/>
+      <module name="sap/ui/comp/smartfield/AnnotationHelper.js"/>
+      <module name="sap/ui/comp/smartfield/BindingUtil.js"/>
+      <module name="sap/ui/comp/smartfield/Configuration.js"/>
+      <module name="sap/ui/comp/smartfield/ControlFactoryBase.js"/>
+      <module name="sap/ui/comp/smartfield/ControlProposal.js"/>
+      <module name="sap/ui/comp/smartfield/FieldControl.js"/>
+      <module name="sap/ui/comp/smartfield/JSONControlFactory.js"/>
+      <module name="sap/ui/comp/smartfield/JSONTypes.js"/>
+      <module name="sap/ui/comp/smartfield/ODataControlFactory.js"/>
+      <module name="sap/ui/comp/smartfield/ODataControlSelector.js"/>
+      <module name="sap/ui/comp/smartfield/ODataHelper.js"/>
+      <module name="sap/ui/comp/smartfield/ODataTypes.js"/>
+      <module name="sap/ui/comp/smartfield/ObjectStatus.js"/>
+      <module name="sap/ui/comp/smartfield/SideEffectUtil.js"/>
+      <module name="sap/ui/comp/smartfield/SmartField.designtime.js"/>
+      <module name="sap/ui/comp/smartfield/SmartField.js"/>
+      <module name="sap/ui/comp/smartfield/SmartLabel.js"/>
+      <module name="sap/ui/comp/smartfield/flexibility/SmartField.flexibility.js"/>
+      <module name="sap/ui/comp/smartfield/type/AbapBool.js"/>
+      <module name="sap/ui/comp/smartfield/type/DateTime.js"/>
+      <module name="sap/ui/comp/smartfield/type/DateTimeOffset.js"/>
+      <module name="sap/ui/comp/smartfield/type/Decimal.js"/>
+      <module name="sap/ui/comp/smartfield/type/Int16.js"/>
+      <module name="sap/ui/comp/smartfield/type/Int32.js"/>
+      <module name="sap/ui/comp/smartfield/type/Int64.js"/>
+      <module name="sap/ui/comp/smartfield/type/SByte.js"/>
+      <module name="sap/ui/comp/smartfield/type/String.js"/>
+      <module name="sap/ui/comp/smartfield/type/Time.js"/>
+      <module name="sap/ui/comp/smartfilterbar/AdditionalConfigurationHelper.js"/>
+      <module name="sap/ui/comp/smartfilterbar/ControlConfiguration.js"/>
+      <module name="sap/ui/comp/smartfilterbar/FilterProvider.js"/>
+      <module name="sap/ui/comp/smartfilterbar/GroupConfiguration.js"/>
+      <module name="sap/ui/comp/smartfilterbar/SelectOption.js"/>
+      <module name="sap/ui/comp/smartfilterbar/SmartFilterBar.designtime.js"/>
+      <module name="sap/ui/comp/smartfilterbar/SmartFilterBar.js"/>
+      <module name="sap/ui/comp/smartform/Group.designtime.js"/>
+      <module name="sap/ui/comp/smartform/Group.js"/>
+      <module name="sap/ui/comp/smartform/GroupElement.designtime.js"/>
+      <module name="sap/ui/comp/smartform/GroupElement.js"/>
+      <module name="sap/ui/comp/smartform/Layout.js"/>
+      <module name="sap/ui/comp/smartform/SmartForm.designtime.js"/>
+      <module name="sap/ui/comp/smartform/SmartForm.js"/>
+      <module name="sap/ui/comp/smartform/flexibility/changes/AddField.js"/>
+      <module name="sap/ui/comp/smartform/flexibility/changes/AddFields.js"/>
+      <module name="sap/ui/comp/smartform/flexibility/changes/AddGroup.js"/>
+      <module name="sap/ui/comp/smartform/flexibility/changes/CombineFields.js"/>
+      <module name="sap/ui/comp/smartform/flexibility/changes/MoveFields.js"/>
+      <module name="sap/ui/comp/smartform/flexibility/changes/MoveGroups.js"/>
+      <module name="sap/ui/comp/smartform/flexibility/changes/RemoveField.js"/>
+      <module name="sap/ui/comp/smartform/flexibility/changes/RemoveGroup.js"/>
+      <module name="sap/ui/comp/smartform/flexibility/changes/RenameField.js"/>
+      <module name="sap/ui/comp/smartform/flexibility/changes/RenameGroup.js"/>
+      <module name="sap/ui/comp/smartform/flexibility/changes/RenameTitle.js"/>
+      <module name="sap/ui/comp/smartform/flexibility/changes/SplitField.js"/>
+      <module name="sap/ui/comp/smartform/flexibility/changes/UnhideControl.js"/>
+      <module name="sap/ui/comp/smartlist/SmartList.js"/>
+      <module name="sap/ui/comp/smartmicrochart/SmartAreaMicroChart.designtime.js"/>
+      <module name="sap/ui/comp/smartmicrochart/SmartAreaMicroChart.js"/>
+      <module name="sap/ui/comp/smartmicrochart/SmartAreaMicroChartRenderer.js"/>
+      <module name="sap/ui/comp/smartmicrochart/SmartBulletMicroChart.designtime.js"/>
+      <module name="sap/ui/comp/smartmicrochart/SmartBulletMicroChart.js"/>
+      <module name="sap/ui/comp/smartmicrochart/SmartBulletMicroChartRenderer.js"/>
+      <module name="sap/ui/comp/smartmicrochart/SmartMicroChart.designtime.js"/>
+      <module name="sap/ui/comp/smartmicrochart/SmartMicroChart.js"/>
+      <module name="sap/ui/comp/smartmicrochart/SmartMicroChartCommons.js"/>
+      <module name="sap/ui/comp/smartmicrochart/SmartMicroChartRenderer.js"/>
+      <module name="sap/ui/comp/smartmicrochart/SmartRadialMicroChart.designtime.js"/>
+      <module name="sap/ui/comp/smartmicrochart/SmartRadialMicroChart.js"/>
+      <module name="sap/ui/comp/smartmicrochart/SmartRadialMicroChartRenderer.js"/>
+      <module name="sap/ui/comp/smarttable/SmartTable.designtime.js"/>
+      <module name="sap/ui/comp/smarttable/SmartTable.js"/>
+      <module name="sap/ui/comp/smartvariants/PersonalizableInfo.js"/>
+      <module name="sap/ui/comp/smartvariants/SmartVariantManagement.designtime.js"/>
+      <module name="sap/ui/comp/smartvariants/SmartVariantManagement.js"/>
+      <module name="sap/ui/comp/smartvariants/SmartVariantManagementUi2.js"/>
+      <module name="sap/ui/comp/smartvariants/flexibility/changes/AddFavorite.js"/>
+      <module name="sap/ui/comp/smartvariants/flexibility/changes/RemoveFavorite.js"/>
+      <module name="sap/ui/comp/state/UIState.js"/>
+      <module name="sap/ui/comp/transport/TransportDialog.js"/>
+      <module name="sap/ui/comp/util/FormatUtil.js"/>
+      <module name="sap/ui/comp/util/FullScreenUtil.js"/>
+      <module name="sap/ui/comp/util/IdentifierUtil.js"/>
+      <module name="sap/ui/comp/util/MultiCurrencyUtil.js"/>
+      <module name="sap/ui/comp/valuehelpdialog/ItemsCollection.js"/>
+      <module name="sap/ui/comp/valuehelpdialog/ValueHelpDialog.js"/>
+      <module name="sap/ui/comp/variants/EditableVariantItem.js"/>
+      <module name="sap/ui/comp/variants/VariantItem.js"/>
+      <module name="sap/ui/comp/variants/VariantManagement.designtime.js"/>
+      <module name="sap/ui/comp/variants/VariantManagement.js"/>
+    </includes>
+  </module>
+  <module name="sap/ui/comp/library-preload.json" size="0" dynamicDependencies="true">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/chart/Chart.js"/>
+      <module name="sap/chart/data/Dimension.js"/>
+      <module name="sap/chart/data/Measure.js"/>
+      <module name="sap/chart/library.js"/>
+      <module name="sap/m/ActionSheet.js"/>
+      <module name="sap/m/Bar.js"/>
+      <module name="sap/m/Breadcrumbs.js" conditional="true"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/ButtonType.js"/>
+      <module name="sap/m/CheckBox.js"/>
+      <module name="sap/m/Column.js"/>
+      <module name="sap/m/ColumnListItem.js"/>
+      <module name="sap/m/ColumnListItemRenderer.js"/>
+      <module name="sap/m/ComboBox.js"/>
+      <module name="sap/m/CustomListItem.js" conditional="true"/>
+      <module name="sap/m/DatePicker.js"/>
+      <module name="sap/m/DateRangeSelection.js"/>
+      <module name="sap/m/DateTimePicker.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/m/DialogRenderer.js"/>
+      <module name="sap/m/FlexAlignItems.js" conditional="true"/>
+      <module name="sap/m/FlexAlignSelf.js" conditional="true"/>
+      <module name="sap/m/FlexDirection.js" conditional="true"/>
+      <module name="sap/m/FlexItemData.js"/>
+      <module name="sap/m/FlexJustifyContent.js"/>
+      <module name="sap/m/HBox.js"/>
+      <module name="sap/m/Image.js"/>
+      <module name="sap/m/Input.js"/>
+      <module name="sap/m/InputType.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/LabelDesign.js"/>
+      <module name="sap/m/LabelRenderer.js"/>
+      <module name="sap/m/Link.js"/>
+      <module name="sap/m/LinkRenderer.js"/>
+      <module name="sap/m/List.js"/>
+      <module name="sap/m/ListMode.js" conditional="true"/>
+      <module name="sap/m/ListSeparators.js"/>
+      <module name="sap/m/MessageBox.js"/>
+      <module name="sap/m/MultiComboBox.js"/>
+      <module name="sap/m/MultiInput.js"/>
+      <module name="sap/m/ObjectIdentifier.js"/>
+      <module name="sap/m/ObjectNumber.js"/>
+      <module name="sap/m/ObjectStatus.js"/>
+      <module name="sap/m/OverflowToolbar.js"/>
+      <module name="sap/m/OverflowToolbarButton.js"/>
+      <module name="sap/m/OverflowToolbarLayoutData.js" conditional="true"/>
+      <module name="sap/m/OverflowToolbarPriority.js" conditional="true"/>
+      <module name="sap/m/P13nColumnsItem.js" conditional="true"/>
+      <module name="sap/m/P13nColumnsPanel.js" conditional="true"/>
+      <module name="sap/m/P13nConditionPanel.js"/>
+      <module name="sap/m/P13nDialog.js"/>
+      <module name="sap/m/P13nDimMeasureItem.js" conditional="true"/>
+      <module name="sap/m/P13nDimMeasurePanel.js" conditional="true"/>
+      <module name="sap/m/P13nFilterItem.js"/>
+      <module name="sap/m/P13nFilterPanel.js" conditional="true"/>
+      <module name="sap/m/P13nGroupItem.js" conditional="true"/>
+      <module name="sap/m/P13nGroupPanel.js" conditional="true"/>
+      <module name="sap/m/P13nItem.js"/>
+      <module name="sap/m/P13nSelectionItem.js"/>
+      <module name="sap/m/P13nSelectionPanel.js"/>
+      <module name="sap/m/P13nSortItem.js" conditional="true"/>
+      <module name="sap/m/P13nSortPanel.js" conditional="true"/>
+      <module name="sap/m/Page.js"/>
+      <module name="sap/m/Panel.js"/>
+      <module name="sap/m/PlacementType.js"/>
+      <module name="sap/m/PopinDisplay.js"/>
+      <module name="sap/m/RadioButton.js"/>
+      <module name="sap/m/ResponsivePopover.js"/>
+      <module name="sap/m/ResponsivePopoverRenderer.js"/>
+      <module name="sap/m/ScreenSize.js"/>
+      <module name="sap/m/SearchField.js"/>
+      <module name="sap/m/SegmentedButton.js"/>
+      <module name="sap/m/Select.js"/>
+      <module name="sap/m/SelectList.js"/>
+      <module name="sap/m/SelectionDetails.js"/>
+      <module name="sap/m/SelectionDetailsItem.js"/>
+      <module name="sap/m/SelectionDetailsItemLine.js"/>
+      <module name="sap/m/StandardListItem.js"/>
+      <module name="sap/m/Table.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/TextArea.js"/>
+      <module name="sap/m/TimePicker.js"/>
+      <module name="sap/m/Title.js"/>
+      <module name="sap/m/Token.js"/>
+      <module name="sap/m/Toolbar.js"/>
+      <module name="sap/m/ToolbarDesign.js"/>
+      <module name="sap/m/ToolbarLayoutData.js" conditional="true"/>
+      <module name="sap/m/ToolbarSeparator.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/m/Tree.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/m/VBoxRenderer.js"/>
+      <module name="sap/m/ValueColor.js"/>
+      <module name="sap/m/library-preload.json"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/base/BindingParser.js"/>
+      <module name="sap/ui/base/DataType.js"/>
+      <module name="sap/ui/base/EventProvider.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="sap/ui/base/Object.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="sap/ui/core/CustomData.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/core/HTML.js"/>
+      <module name="sap/ui/core/Icon.js"/>
+      <module name="sap/ui/core/InvisibleText.js"/>
+      <module name="sap/ui/core/Item.js"/>
+      <module name="sap/ui/core/Locale.js"/>
+      <module name="sap/ui/core/LocaleData.js"/>
+      <module name="sap/ui/core/MessageType.js"/>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="sap/ui/core/ResizeHandler.js" conditional="true"/>
+      <module name="sap/ui/core/TextAlign.js"/>
+      <module name="sap/ui/core/Title.js"/>
+      <module name="sap/ui/core/TitleLevel.js"/>
+      <module name="sap/ui/core/TooltipBase.js"/>
+      <module name="sap/ui/core/ValueState.js"/>
+      <module name="sap/ui/core/VariantLayoutData.js"/>
+      <module name="sap/ui/core/VerticalAlign.js"/>
+      <module name="sap/ui/core/date/UniversalDate.js"/>
+      <module name="sap/ui/core/format/DateFormat.js"/>
+      <module name="sap/ui/core/format/NumberFormat.js"/>
+      <module name="sap/ui/core/library-preload.json"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="sap/ui/fl/Change.js"/>
+      <module name="sap/ui/fl/ChangePersistenceFactory.js"/>
+      <module name="sap/ui/fl/FlexControllerFactory.js"/>
+      <module name="sap/ui/fl/Persistence.js"/>
+      <module name="sap/ui/fl/Utils.js"/>
+      <module name="sap/ui/fl/changeHandler/Base.js"/>
+      <module name="sap/ui/fl/changeHandler/BaseRename.js"/>
+      <module name="sap/ui/fl/changeHandler/ChangeHandlerMediator.js"/>
+      <module name="sap/ui/fl/changeHandler/JsControlTreeModifier.js"/>
+      <module name="sap/ui/fl/fieldExt/Access.js" conditional="true"/>
+      <module name="sap/ui/fl/registry/Settings.js"/>
+      <module name="sap/ui/fl/transport/TransportDialog.js"/>
+      <module name="sap/ui/fl/transport/TransportSelection.js"/>
+      <module name="sap/ui/layout/Grid.js"/>
+      <module name="sap/ui/layout/GridData.js"/>
+      <module name="sap/ui/layout/GridRenderer.js"/>
+      <module name="sap/ui/layout/HorizontalLayout.js"/>
+      <module name="sap/ui/layout/ResponsiveFlowLayout.js"/>
+      <module name="sap/ui/layout/ResponsiveFlowLayoutData.js"/>
+      <module name="sap/ui/layout/VerticalLayout.js"/>
+      <module name="sap/ui/layout/form/Form.js"/>
+      <module name="sap/ui/layout/form/FormContainer.js"/>
+      <module name="sap/ui/layout/form/FormElement.js"/>
+      <module name="sap/ui/layout/form/FormRenderer.js"/>
+      <module name="sap/ui/layout/form/ResponsiveGridLayout.js"/>
+      <module name="sap/ui/layout/form/ResponsiveLayout.js"/>
+      <module name="sap/ui/layout/form/SimpleForm.js"/>
+      <module name="sap/ui/layout/form/SimpleFormLayout.js"/>
+      <module name="sap/ui/model/Filter.js"/>
+      <module name="sap/ui/model/FilterOperator.js"/>
+      <module name="sap/ui/model/FormatException.js"/>
+      <module name="sap/ui/model/ParseException.js"/>
+      <module name="sap/ui/model/SimpleType.js"/>
+      <module name="sap/ui/model/Sorter.js"/>
+      <module name="sap/ui/model/ValidateException.js"/>
+      <module name="sap/ui/model/analytics/odata4analytics.js" conditional="true"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="sap/ui/model/odata/AnnotationHelper.js"/>
+      <module name="sap/ui/model/odata/CountMode.js"/>
+      <module name="sap/ui/model/odata/Filter.js"/>
+      <module name="sap/ui/model/odata/ODataAnnotations.js"/>
+      <module name="sap/ui/model/odata/ODataModel.js"/>
+      <module name="sap/ui/model/odata/type/Boolean.js"/>
+      <module name="sap/ui/model/odata/type/Byte.js"/>
+      <module name="sap/ui/model/odata/type/DateTime.js"/>
+      <module name="sap/ui/model/odata/type/DateTimeOffset.js"/>
+      <module name="sap/ui/model/odata/type/Decimal.js"/>
+      <module name="sap/ui/model/odata/type/Double.js"/>
+      <module name="sap/ui/model/odata/type/Guid.js"/>
+      <module name="sap/ui/model/odata/type/Int16.js"/>
+      <module name="sap/ui/model/odata/type/Int32.js"/>
+      <module name="sap/ui/model/odata/type/Int64.js"/>
+      <module name="sap/ui/model/odata/type/SByte.js"/>
+      <module name="sap/ui/model/odata/type/Single.js"/>
+      <module name="sap/ui/model/odata/type/String.js"/>
+      <module name="sap/ui/model/odata/type/Time.js"/>
+      <module name="sap/ui/model/odata/v2/ODataModel.js"/>
+      <module name="sap/ui/model/type/Boolean.js"/>
+      <module name="sap/ui/model/type/Currency.js"/>
+      <module name="sap/ui/model/type/Date.js"/>
+      <module name="sap/ui/model/type/Float.js"/>
+      <module name="sap/ui/model/type/Integer.js"/>
+      <module name="sap/ui/model/type/String.js"/>
+      <module name="sap/ui/rta/RuntimeAuthoring.js" conditional="true"/>
+      <module name="sap/ui/table/AnalyticalColumn.js"/>
+      <module name="sap/ui/table/AnalyticalTable.js"/>
+      <module name="sap/ui/table/Column.js"/>
+      <module name="sap/ui/table/Table.js"/>
+      <module name="sap/ui/table/TreeTable.js"/>
+      <module name="sap/viz/ui5/controls/Popover.js" conditional="true"/>
+      <module name="sap/viz/ui5/controls/VizTooltip.js"/>
+    </requires>
+    <includes>
+      <module name="sap/ui/comp/config/condition/DateRangeType.js"/>
+      <module name="sap/ui/comp/config/condition/Type.js"/>
+      <module name="sap/ui/comp/filterbar/FilterBar.designtime.js"/>
+      <module name="sap/ui/comp/filterbar/FilterBar.js"/>
+      <module name="sap/ui/comp/filterbar/FilterGroupItem.js"/>
+      <module name="sap/ui/comp/filterbar/FilterItem.js"/>
+      <module name="sap/ui/comp/filterbar/VariantConverterFrom.js"/>
+      <module name="sap/ui/comp/filterbar/VariantConverterTo.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/manifest.json"/>
+      <module name="sap/ui/comp/navpopover/Factory.js"/>
+      <module name="sap/ui/comp/navpopover/FlexConnector.js"/>
+      <module name="sap/ui/comp/navpopover/FlexHandler.js"/>
+      <module name="sap/ui/comp/navpopover/LinkData.js"/>
+      <module name="sap/ui/comp/navpopover/NavigationContainer.js"/>
+      <module name="sap/ui/comp/navpopover/NavigationPopover.js"/>
+      <module name="sap/ui/comp/navpopover/NavigationPopoverHandler.js"/>
+      <module name="sap/ui/comp/navpopover/RTAHandler.js"/>
+      <module name="sap/ui/comp/navpopover/SemanticObjectController.js"/>
+      <module name="sap/ui/comp/navpopover/SmartLink.designtime.js"/>
+      <module name="sap/ui/comp/navpopover/SmartLink.js"/>
+      <module name="sap/ui/comp/navpopover/SmartLinkRenderer.js"/>
+      <module name="sap/ui/comp/navpopover/Util.js"/>
+      <module name="sap/ui/comp/navpopover/flexibility/changes/AddLink.js"/>
+      <module name="sap/ui/comp/navpopover/flexibility/changes/RemoveLink.js"/>
+      <module name="sap/ui/comp/odata/ChartMetadata.js"/>
+      <module name="sap/ui/comp/odata/CriticalityMetadata.js"/>
+      <module name="sap/ui/comp/odata/FieldSelector.js"/>
+      <module name="sap/ui/comp/odata/FieldSelectorController.js"/>
+      <module name="sap/ui/comp/odata/FieldSelectorModelConverter.js"/>
+      <module name="sap/ui/comp/odata/FieldSelectorRenderer.js"/>
+      <module name="sap/ui/comp/odata/MetadataAnalyser.js"/>
+      <module name="sap/ui/comp/odata/ODataModelUtil.js"/>
+      <module name="sap/ui/comp/odata/ODataType.js"/>
+      <module name="sap/ui/comp/odata/SideEffects.js"/>
+      <module name="sap/ui/comp/personalization/BaseController.js"/>
+      <module name="sap/ui/comp/personalization/ChartWrapper.js"/>
+      <module name="sap/ui/comp/personalization/ColumnHelper.js"/>
+      <module name="sap/ui/comp/personalization/ColumnWrapper.js"/>
+      <module name="sap/ui/comp/personalization/ColumnsController.js"/>
+      <module name="sap/ui/comp/personalization/Controller.js"/>
+      <module name="sap/ui/comp/personalization/DimeasureController.js"/>
+      <module name="sap/ui/comp/personalization/FilterController.js"/>
+      <module name="sap/ui/comp/personalization/GroupController.js"/>
+      <module name="sap/ui/comp/personalization/SelectionController.js"/>
+      <module name="sap/ui/comp/personalization/SelectionWrapper.js"/>
+      <module name="sap/ui/comp/personalization/SortController.js"/>
+      <module name="sap/ui/comp/personalization/Util.js"/>
+      <module name="sap/ui/comp/personalization/Validator.js"/>
+      <module name="sap/ui/comp/providers/BaseValueListProvider.js"/>
+      <module name="sap/ui/comp/providers/ChartProvider.js"/>
+      <module name="sap/ui/comp/providers/ControlProvider.js"/>
+      <module name="sap/ui/comp/providers/TableProvider.js"/>
+      <module name="sap/ui/comp/providers/TokenParser.js"/>
+      <module name="sap/ui/comp/providers/ValueHelp.designtime.js"/>
+      <module name="sap/ui/comp/providers/ValueHelpProvider.js"/>
+      <module name="sap/ui/comp/providers/ValueListProvider.js"/>
+      <module name="sap/ui/comp/smartchart/SmartChart.designtime.js"/>
+      <module name="sap/ui/comp/smartchart/SmartChart.js"/>
+      <module name="sap/ui/comp/smartfield/AnnotationHelper.js"/>
+      <module name="sap/ui/comp/smartfield/BindingUtil.js"/>
+      <module name="sap/ui/comp/smartfield/Configuration.js"/>
+      <module name="sap/ui/comp/smartfield/ControlFactoryBase.js"/>
+      <module name="sap/ui/comp/smartfield/ControlProposal.js"/>
+      <module name="sap/ui/comp/smartfield/FieldControl.js"/>
+      <module name="sap/ui/comp/smartfield/JSONControlFactory.js"/>
+      <module name="sap/ui/comp/smartfield/JSONTypes.js"/>
+      <module name="sap/ui/comp/smartfield/ODataControlFactory.js"/>
+      <module name="sap/ui/comp/smartfield/ODataControlSelector.js"/>
+      <module name="sap/ui/comp/smartfield/ODataHelper.js"/>
+      <module name="sap/ui/comp/smartfield/ODataTypes.js"/>
+      <module name="sap/ui/comp/smartfield/ObjectStatus.js"/>
+      <module name="sap/ui/comp/smartfield/SideEffectUtil.js"/>
+      <module name="sap/ui/comp/smartfield/SmartField.designtime.js"/>
+      <module name="sap/ui/comp/smartfield/SmartField.js"/>
+      <module name="sap/ui/comp/smartfield/SmartLabel.js"/>
+      <module name="sap/ui/comp/smartfield/flexibility/SmartField.flexibility.js"/>
+      <module name="sap/ui/comp/smartfield/type/AbapBool.js"/>
+      <module name="sap/ui/comp/smartfield/type/DateTime.js"/>
+      <module name="sap/ui/comp/smartfield/type/DateTimeOffset.js"/>
+      <module name="sap/ui/comp/smartfield/type/Decimal.js"/>
+      <module name="sap/ui/comp/smartfield/type/Int16.js"/>
+      <module name="sap/ui/comp/smartfield/type/Int32.js"/>
+      <module name="sap/ui/comp/smartfield/type/Int64.js"/>
+      <module name="sap/ui/comp/smartfield/type/SByte.js"/>
+      <module name="sap/ui/comp/smartfield/type/String.js"/>
+      <module name="sap/ui/comp/smartfield/type/Time.js"/>
+      <module name="sap/ui/comp/smartfilterbar/AdditionalConfigurationHelper.js"/>
+      <module name="sap/ui/comp/smartfilterbar/ControlConfiguration.js"/>
+      <module name="sap/ui/comp/smartfilterbar/FilterProvider.js"/>
+      <module name="sap/ui/comp/smartfilterbar/GroupConfiguration.js"/>
+      <module name="sap/ui/comp/smartfilterbar/SelectOption.js"/>
+      <module name="sap/ui/comp/smartfilterbar/SmartFilterBar.designtime.js"/>
+      <module name="sap/ui/comp/smartfilterbar/SmartFilterBar.js"/>
+      <module name="sap/ui/comp/smartform/Group.designtime.js"/>
+      <module name="sap/ui/comp/smartform/Group.js"/>
+      <module name="sap/ui/comp/smartform/GroupElement.designtime.js"/>
+      <module name="sap/ui/comp/smartform/GroupElement.js"/>
+      <module name="sap/ui/comp/smartform/Layout.js"/>
+      <module name="sap/ui/comp/smartform/SmartForm.designtime.js"/>
+      <module name="sap/ui/comp/smartform/SmartForm.js"/>
+      <module name="sap/ui/comp/smartform/flexibility/changes/AddField.js"/>
+      <module name="sap/ui/comp/smartform/flexibility/changes/AddFields.js"/>
+      <module name="sap/ui/comp/smartform/flexibility/changes/AddGroup.js"/>
+      <module name="sap/ui/comp/smartform/flexibility/changes/CombineFields.js"/>
+      <module name="sap/ui/comp/smartform/flexibility/changes/MoveFields.js"/>
+      <module name="sap/ui/comp/smartform/flexibility/changes/MoveGroups.js"/>
+      <module name="sap/ui/comp/smartform/flexibility/changes/RemoveField.js"/>
+      <module name="sap/ui/comp/smartform/flexibility/changes/RemoveGroup.js"/>
+      <module name="sap/ui/comp/smartform/flexibility/changes/RenameField.js"/>
+      <module name="sap/ui/comp/smartform/flexibility/changes/RenameGroup.js"/>
+      <module name="sap/ui/comp/smartform/flexibility/changes/RenameTitle.js"/>
+      <module name="sap/ui/comp/smartform/flexibility/changes/SplitField.js"/>
+      <module name="sap/ui/comp/smartform/flexibility/changes/UnhideControl.js"/>
+      <module name="sap/ui/comp/smartlist/SmartList.js"/>
+      <module name="sap/ui/comp/smartmicrochart/SmartAreaMicroChart.designtime.js"/>
+      <module name="sap/ui/comp/smartmicrochart/SmartAreaMicroChart.js"/>
+      <module name="sap/ui/comp/smartmicrochart/SmartAreaMicroChartRenderer.js"/>
+      <module name="sap/ui/comp/smartmicrochart/SmartBulletMicroChart.designtime.js"/>
+      <module name="sap/ui/comp/smartmicrochart/SmartBulletMicroChart.js"/>
+      <module name="sap/ui/comp/smartmicrochart/SmartBulletMicroChartRenderer.js"/>
+      <module name="sap/ui/comp/smartmicrochart/SmartMicroChart.designtime.js"/>
+      <module name="sap/ui/comp/smartmicrochart/SmartMicroChart.js"/>
+      <module name="sap/ui/comp/smartmicrochart/SmartMicroChartCommons.js"/>
+      <module name="sap/ui/comp/smartmicrochart/SmartMicroChartRenderer.js"/>
+      <module name="sap/ui/comp/smartmicrochart/SmartRadialMicroChart.designtime.js"/>
+      <module name="sap/ui/comp/smartmicrochart/SmartRadialMicroChart.js"/>
+      <module name="sap/ui/comp/smartmicrochart/SmartRadialMicroChartRenderer.js"/>
+      <module name="sap/ui/comp/smarttable/SmartTable.designtime.js"/>
+      <module name="sap/ui/comp/smarttable/SmartTable.js"/>
+      <module name="sap/ui/comp/smartvariants/PersonalizableInfo.js"/>
+      <module name="sap/ui/comp/smartvariants/SmartVariantManagement.designtime.js"/>
+      <module name="sap/ui/comp/smartvariants/SmartVariantManagement.js"/>
+      <module name="sap/ui/comp/smartvariants/SmartVariantManagementUi2.js"/>
+      <module name="sap/ui/comp/smartvariants/flexibility/changes/AddFavorite.js"/>
+      <module name="sap/ui/comp/smartvariants/flexibility/changes/RemoveFavorite.js"/>
+      <module name="sap/ui/comp/state/UIState.js"/>
+      <module name="sap/ui/comp/transport/TransportDialog.js"/>
+      <module name="sap/ui/comp/util/FormatUtil.js"/>
+      <module name="sap/ui/comp/util/FullScreenUtil.js"/>
+      <module name="sap/ui/comp/util/IdentifierUtil.js"/>
+      <module name="sap/ui/comp/util/MultiCurrencyUtil.js"/>
+      <module name="sap/ui/comp/valuehelpdialog/ItemsCollection.js"/>
+      <module name="sap/ui/comp/valuehelpdialog/ValueHelpDialog.js"/>
+      <module name="sap/ui/comp/variants/EditableVariantItem.js"/>
+      <module name="sap/ui/comp/variants/VariantItem.js"/>
+      <module name="sap/ui/comp/variants/VariantManagement.designtime.js"/>
+      <module name="sap/ui/comp/variants/VariantManagement.js"/>
+    </includes>
+  </module>
+  <module name="sap/ui/comp/library.js" size="20710" compressedSize="6780">
+    <description>Initialization Code and shared classes of library sap.ui.comp.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="sap/ui/core/library.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/manifest.json" size="1276">
+  </module>
+  <module name="sap/ui/comp/messagebundle.properties" size="30786">
+  </module>
+  <module name="sap/ui/comp/messagebundle_ar.properties" size="51575">
+  </module>
+  <module name="sap/ui/comp/messagebundle_bg.properties" size="59325">
+  </module>
+  <module name="sap/ui/comp/messagebundle_ca.properties" size="32874">
+  </module>
+  <module name="sap/ui/comp/messagebundle_cs.properties" size="34795">
+  </module>
+  <module name="sap/ui/comp/messagebundle_da.properties" size="32187">
+  </module>
+  <module name="sap/ui/comp/messagebundle_de.properties" size="33174">
+  </module>
+  <module name="sap/ui/comp/messagebundle_el.properties" size="58307">
+  </module>
+  <module name="sap/ui/comp/messagebundle_en.properties" size="31499">
+  </module>
+  <module name="sap/ui/comp/messagebundle_en_US_sappsd.properties" size="65775">
+  </module>
+  <module name="sap/ui/comp/messagebundle_en_US_saptrc.properties" size="38100">
+  </module>
+  <module name="sap/ui/comp/messagebundle_es.properties" size="33158">
+  </module>
+  <module name="sap/ui/comp/messagebundle_et.properties" size="32757">
+  </module>
+  <module name="sap/ui/comp/messagebundle_fi.properties" size="33489">
+  </module>
+  <module name="sap/ui/comp/messagebundle_fr.properties" size="34254">
+  </module>
+  <module name="sap/ui/comp/messagebundle_hi.properties" size="54404">
+  </module>
+  <module name="sap/ui/comp/messagebundle_hr.properties" size="32857">
+  </module>
+  <module name="sap/ui/comp/messagebundle_hu.properties" size="35881">
+  </module>
+  <module name="sap/ui/comp/messagebundle_it.properties" size="32463">
+  </module>
+  <module name="sap/ui/comp/messagebundle_iw.properties" size="47465">
+  </module>
+  <module name="sap/ui/comp/messagebundle_ja.properties" size="40327">
+  </module>
+  <module name="sap/ui/comp/messagebundle_kk.properties" size="55063">
+  </module>
+  <module name="sap/ui/comp/messagebundle_ko.properties" size="37617">
+  </module>
+  <module name="sap/ui/comp/messagebundle_lt.properties" size="34326">
+  </module>
+  <module name="sap/ui/comp/messagebundle_lv.properties" size="35203">
+  </module>
+  <module name="sap/ui/comp/messagebundle_ms.properties" size="32020">
+  </module>
+  <module name="sap/ui/comp/messagebundle_nl.properties" size="32191">
+  </module>
+  <module name="sap/ui/comp/messagebundle_no.properties" size="32035">
+  </module>
+  <module name="sap/ui/comp/messagebundle_pl.properties" size="34211">
+  </module>
+  <module name="sap/ui/comp/messagebundle_pt.properties" size="33282">
+  </module>
+  <module name="sap/ui/comp/messagebundle_ro.properties" size="34213">
+  </module>
+  <module name="sap/ui/comp/messagebundle_ru.properties" size="56222">
+  </module>
+  <module name="sap/ui/comp/messagebundle_sh.properties" size="32806">
+  </module>
+  <module name="sap/ui/comp/messagebundle_sk.properties" size="34618">
+  </module>
+  <module name="sap/ui/comp/messagebundle_sl.properties" size="32531">
+  </module>
+  <module name="sap/ui/comp/messagebundle_sv.properties" size="32715">
+  </module>
+  <module name="sap/ui/comp/messagebundle_th.properties" size="55901">
+  </module>
+  <module name="sap/ui/comp/messagebundle_tr.properties" size="34643">
+  </module>
+  <module name="sap/ui/comp/messagebundle_uk.properties" size="56407">
+  </module>
+  <module name="sap/ui/comp/messagebundle_vi.properties" size="41560">
+  </module>
+  <module name="sap/ui/comp/messagebundle_zh_CN.properties" size="35529">
+  </module>
+  <module name="sap/ui/comp/messagebundle_zh_TW.properties" size="35377">
+  </module>
+  <module name="sap/ui/comp/navpopover/Factory.js" size="1022" compressedSize="566">
+    <description>@namespace Factory to access &lt;code&gt;ushell&lt;/code&gt; services. @name sap.ui.comp.navpopover.Factory @author SAP SE @version 1.50.6 @private @since 1.36.0 @ui5-metamodel This control/element also will be described in the UI5 (legacy) designtime metamodel</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/navpopover/FlexConnector.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/navpopover/FlexConnector.js" size="9939" compressedSize="3360">
+    <description>Connector to layered repository (LRep) APIs.  @alias sap.ui.comp.personalization.FlexConnector @author SAP SE @version 1.50.6 @private @since 1.44.0 @ui5-metamodel This control/element also will be described in the UI5 (legacy) designtime metamodel</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/navpopover/flexibility/changes/AddLink.js"/>
+      <module name="sap/ui/comp/navpopover/flexibility/changes/RemoveLink.js"/>
+      <module name="sap/ui/fl/ChangePersistenceFactory.js"/>
+      <module name="sap/ui/fl/FlexControllerFactory.js"/>
+      <module name="sap/ui/fl/Utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/navpopover/FlexHandler.js" size="11971" compressedSize="4884">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/navpopover/Factory.js"/>
+      <module name="sap/ui/comp/navpopover/Util.js"/>
+      <module name="sap/ui/comp/personalization/Controller.js"/>
+      <module name="sap/ui/comp/personalization/Util.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/navpopover/LinkData.js" size="3398" compressedSize="991">
+    <description>Provides control sap.ui.comp.navpopover.LinkData.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/core/Element.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/navpopover/NavigationContainer.js" size="19895" compressedSize="10194">
+    <description>Provides control sap.ui.comp.navpopover.NavigationContainer.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/HBox.js"/>
+      <module name="sap/m/Image.js"/>
+      <module name="sap/m/Link.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/Title.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/m/VBoxRenderer.js"/>
+      <module name="sap/ui/comp/navpopover/Factory.js"/>
+      <module name="sap/ui/comp/navpopover/FlexHandler.js"/>
+      <module name="sap/ui/comp/navpopover/LinkData.js"/>
+      <module name="sap/ui/comp/navpopover/Util.js"/>
+      <module name="sap/ui/comp/personalization/Util.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/TitleLevel.js"/>
+      <module name="sap/ui/layout/HorizontalLayout.js"/>
+      <module name="sap/ui/layout/VerticalLayout.js"/>
+      <module name="sap/ui/layout/form/SimpleForm.js"/>
+      <module name="sap/ui/layout/form/SimpleFormLayout.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/navpopover/NavigationPopover.js" size="26792" compressedSize="12681">
+    <description>Provides control sap.ui.comp.navpopover.NavigationPopover.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/HBox.js"/>
+      <module name="sap/m/Image.js"/>
+      <module name="sap/m/Link.js"/>
+      <module name="sap/m/MessageBox.js" conditional="true"/>
+      <module name="sap/m/ResponsivePopover.js"/>
+      <module name="sap/m/ResponsivePopoverRenderer.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/Title.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/ui/comp/navpopover/Factory.js"/>
+      <module name="sap/ui/comp/navpopover/LinkData.js"/>
+      <module name="sap/ui/layout/form/SimpleForm.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/navpopover/NavigationPopoverHandler.js" size="47606" compressedSize="18241">
+    <description>Provides control sap.ui.comp.navpopover.NavigationPopoverHandler.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/MessageBox.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/navpopover/Factory.js"/>
+      <module name="sap/ui/comp/navpopover/FlexHandler.js"/>
+      <module name="sap/ui/comp/navpopover/LinkData.js"/>
+      <module name="sap/ui/comp/navpopover/NavigationContainer.js"/>
+      <module name="sap/ui/comp/navpopover/NavigationPopover.js"/>
+      <module name="sap/ui/comp/navpopover/SemanticObjectController.js"/>
+      <module name="sap/ui/comp/navpopover/Util.js"/>
+      <module name="sap/ui/comp/personalization/Controller.js"/>
+      <module name="sap/ui/comp/personalization/Util.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/navpopover/RTAHandler.js" size="4756" compressedSize="2452">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/navpopover/Factory.js"/>
+      <module name="sap/ui/comp/navpopover/Util.js"/>
+      <module name="sap/ui/comp/navpopover/flexibility/changes/AddLink.js"/>
+      <module name="sap/ui/comp/navpopover/flexibility/changes/RemoveLink.js"/>
+      <module name="sap/ui/comp/personalization/Controller.js"/>
+      <module name="sap/ui/comp/personalization/Util.js"/>
+      <module name="sap/ui/fl/changeHandler/JsControlTreeModifier.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/navpopover/SemanticObjectController.js" size="29015" compressedSize="9174">
+    <description>Provides control sap.ui.comp.navpopover.SemanticObjectController.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/navpopover/Factory.js"/>
+      <module name="sap/ui/comp/odata/MetadataAnalyser.js" conditional="true"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/navpopover/SmartLink.designtime.js" size="8374" compressedSize="2078">
+    <description>Provides the Design Time Metadata for the sap.ui.comp.navpopover.SmartLink control.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/ObjectIdentifier.js"/>
+      <module name="sap/ui/comp/navpopover/RTAHandler.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/navpopover/SmartLink.js" size="25433" compressedSize="8975">
+    <description>Provides control sap.ui.comp.navpopover.SmartLink.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Link.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="sap/ui/comp/navpopover/LinkData.js"/>
+      <module name="sap/ui/comp/navpopover/NavigationPopoverHandler.js"/>
+      <module name="sap/ui/comp/navpopover/SemanticObjectController.js"/>
+      <module name="sap/ui/comp/personalization/Util.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/navpopover/SmartLinkRenderer.js" size="1267" compressedSize="766">
+    <description>Provides control sap.ui.comp.navpopover.SmartLink.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/LinkRenderer.js"/>
+      <module name="sap/ui/core/Renderer.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/navpopover/Util.js" size="20052" compressedSize="8890">
+    <description>Provides utility functions for the personalization dialog  @author SAP SE @version 1.50.6 @private @since 1.25.0 @alias sap.ui.comp.personalization.Util @ui5-metamodel This control/element also will be described in the UI5 (legacy) designtime metamodel</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Image.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/Link.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/navpopover/Factory.js"/>
+      <module name="sap/ui/comp/navpopover/LinkData.js"/>
+      <module name="sap/ui/core/Title.js"/>
+      <module name="sap/ui/core/TitleLevel.js"/>
+      <module name="sap/ui/layout/form/SimpleForm.js"/>
+      <module name="sap/ui/layout/form/SimpleFormLayout.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/navpopover/flexibility/changes/AddLink.js" size="2534" compressedSize="1006">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/Utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/navpopover/flexibility/changes/RemoveLink.js" size="2554" compressedSize="1008">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/Utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/odata/ChartMetadata.js" size="7881" compressedSize="4236">
+    <description>---------------------------------------------------------------------------------</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/odata/CriticalityMetadata.js" size="2431" compressedSize="877">
+    <description>--------------------------------------------------------------------------------------------</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/odata/FieldSelector.js" size="18737" compressedSize="10580">
+    <description>Provides control sap.ui.comp.odata.FieldSelector.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/FlexAlignItems.js" conditional="true"/>
+      <module name="sap/m/FlexAlignSelf.js" conditional="true"/>
+      <module name="sap/m/FlexDirection.js" conditional="true"/>
+      <module name="sap/m/FlexItemData.js" conditional="true"/>
+      <module name="sap/m/HBox.js" conditional="true"/>
+      <module name="sap/m/Label.js" conditional="true"/>
+      <module name="sap/m/VBox.js" conditional="true"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/odata/FieldSelectorController.js"/>
+      <module name="sap/ui/comp/odata/FieldSelectorModelConverter.js" conditional="true"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/ResizeHandler.js" conditional="true"/>
+      <module name="sap/ui/fl/fieldExt/Access.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/odata/FieldSelectorController.js" size="10394" compressedSize="3204">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/comp/odata/FieldSelectorModelConverter.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/odata/FieldSelectorModelConverter.js" size="10432" compressedSize="3399">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/comp/odata/MetadataAnalyser.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/odata/FieldSelectorRenderer.js" size="1032" compressedSize="351">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/odata/MetadataAnalyser.js" size="84150" compressedSize="26630">
+    <description>global Promise</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/comp/odata/ODataType.js"/>
+      <module name="sap/ui/model/odata/AnnotationHelper.js" conditional="true"/>
+      <module name="sap/ui/model/odata/ODataAnnotations.js"/>
+      <module name="sap/ui/model/odata/ODataModel.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/odata/ODataModelUtil.js" size="2296" compressedSize="621">
+    <description>-------------------------------------------------------------------------------</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/model/odata/v2/ODataModel.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/odata/ODataType.js" size="4001" compressedSize="1665">
+    <description>-------------------------------------------------------------------------------</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/model/odata/type/Boolean.js"/>
+      <module name="sap/ui/model/odata/type/Byte.js"/>
+      <module name="sap/ui/model/odata/type/DateTime.js"/>
+      <module name="sap/ui/model/odata/type/DateTimeOffset.js"/>
+      <module name="sap/ui/model/odata/type/Decimal.js"/>
+      <module name="sap/ui/model/odata/type/Double.js"/>
+      <module name="sap/ui/model/odata/type/Guid.js"/>
+      <module name="sap/ui/model/odata/type/Int16.js"/>
+      <module name="sap/ui/model/odata/type/Int32.js"/>
+      <module name="sap/ui/model/odata/type/Int64.js"/>
+      <module name="sap/ui/model/odata/type/SByte.js"/>
+      <module name="sap/ui/model/odata/type/Single.js"/>
+      <module name="sap/ui/model/odata/type/String.js"/>
+      <module name="sap/ui/model/odata/type/Time.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/odata/SideEffects.js" size="4153" compressedSize="1207">
+    <description>SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/personalization/BaseController.js" size="12204" compressedSize="4442">
+    <description>Provides BaseController</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="sap/ui/comp/personalization/Util.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/personalization/ChartWrapper.js" size="2308" compressedSize="1097">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Element.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/personalization/ColumnHelper.js" size="7080" compressedSize="3355">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="sap/ui/comp/personalization/ColumnWrapper.js"/>
+      <module name="sap/ui/comp/personalization/Util.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/personalization/ColumnWrapper.js" size="2442" compressedSize="769">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Element.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/personalization/ColumnsController.js" size="37614" compressedSize="15586">
+    <description>Provides ColumnsController</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/P13nColumnsItem.js" conditional="true"/>
+      <module name="sap/m/P13nColumnsPanel.js" conditional="true"/>
+      <module name="sap/m/P13nItem.js" conditional="true"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/ui/comp/personalization/BaseController.js"/>
+      <module name="sap/ui/comp/personalization/Util.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/personalization/Controller.js" size="51672" compressedSize="23516">
+    <description>Provides Controller</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/P13nDialog.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/personalization/ChartWrapper.js"/>
+      <module name="sap/ui/comp/personalization/ColumnHelper.js"/>
+      <module name="sap/ui/comp/personalization/ColumnsController.js"/>
+      <module name="sap/ui/comp/personalization/DimeasureController.js"/>
+      <module name="sap/ui/comp/personalization/FilterController.js"/>
+      <module name="sap/ui/comp/personalization/GroupController.js"/>
+      <module name="sap/ui/comp/personalization/SelectionController.js"/>
+      <module name="sap/ui/comp/personalization/SelectionWrapper.js"/>
+      <module name="sap/ui/comp/personalization/SortController.js"/>
+      <module name="sap/ui/comp/personalization/Util.js"/>
+      <module name="sap/ui/comp/personalization/Validator.js"/>
+      <module name="sap/ui/core/MessageType.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/personalization/DimeasureController.js" size="24578" compressedSize="12078">
+    <description>Provides DimeasureController</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/P13nDimMeasureItem.js" conditional="true"/>
+      <module name="sap/m/P13nDimMeasurePanel.js" conditional="true"/>
+      <module name="sap/m/P13nItem.js" conditional="true"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/personalization/BaseController.js"/>
+      <module name="sap/ui/comp/personalization/ChartWrapper.js"/>
+      <module name="sap/ui/comp/personalization/Util.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/personalization/FilterController.js" size="21271" compressedSize="10583">
+    <description>Provides FilterController</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/P13nFilterItem.js" conditional="true"/>
+      <module name="sap/m/P13nFilterPanel.js" conditional="true"/>
+      <module name="sap/m/P13nItem.js" conditional="true"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/ui/comp/filterbar/VariantConverterFrom.js"/>
+      <module name="sap/ui/comp/filterbar/VariantConverterTo.js"/>
+      <module name="sap/ui/comp/personalization/BaseController.js"/>
+      <module name="sap/ui/comp/personalization/ChartWrapper.js"/>
+      <module name="sap/ui/comp/personalization/Util.js"/>
+      <module name="sap/ui/model/odata/type/Boolean.js" conditional="true"/>
+      <module name="sap/ui/model/type/Boolean.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/personalization/GroupController.js" size="16655" compressedSize="8248">
+    <description>Provides GroupController</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/P13nConditionPanel.js"/>
+      <module name="sap/m/P13nGroupItem.js" conditional="true"/>
+      <module name="sap/m/P13nGroupPanel.js" conditional="true"/>
+      <module name="sap/m/P13nItem.js" conditional="true"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/ui/comp/personalization/BaseController.js"/>
+      <module name="sap/ui/comp/personalization/Util.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/personalization/SelectionController.js" size="9916" compressedSize="4499">
+    <description>Provides SelectionController</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/P13nItem.js"/>
+      <module name="sap/m/P13nSelectionItem.js"/>
+      <module name="sap/m/P13nSelectionPanel.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/personalization/BaseController.js"/>
+      <module name="sap/ui/comp/personalization/Util.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/personalization/SelectionWrapper.js" size="1050" compressedSize="474">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Element.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/personalization/SortController.js" size="13061" compressedSize="6588">
+    <description>Provides SortController</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/P13nItem.js" conditional="true"/>
+      <module name="sap/m/P13nSortItem.js" conditional="true"/>
+      <module name="sap/m/P13nSortPanel.js" conditional="true"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/ui/comp/personalization/BaseController.js"/>
+      <module name="sap/ui/comp/personalization/Util.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/personalization/Util.js" size="20958" compressedSize="8652">
+    <description>@namespace Provides utitlity functions for the personalization dialog @name sap.ui.comp.personalization.Util @author SAP SE @version 1.50.6 @private @since 1.25.0</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/personalization/ChartWrapper.js"/>
+      <module name="sap/ui/comp/personalization/ColumnWrapper.js"/>
+      <module name="sap/ui/comp/personalization/SelectionWrapper.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/personalization/Validator.js" size="2559" compressedSize="1384">
+    <description>@namespace Provides validator functions for the personalization dialog @name sap.ui.comp.personalization.Validator @author SAP SE @version 1.50.6 @private @since 1.48.0</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/ui/core/MessageType.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/providers/BaseValueListProvider.js" size="19831" compressedSize="9440">
+    <description>-----------------------------------------------------------------------------</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/EventProvider.js"/>
+      <module name="sap/ui/comp/odata/MetadataAnalyser.js"/>
+      <module name="sap/ui/comp/odata/ODataType.js"/>
+      <module name="sap/ui/comp/util/FormatUtil.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/providers/ChartProvider.js" size="18887" compressedSize="8571">
+    <description>-----------------------------------------------------------------------------</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/comp/odata/ChartMetadata.js"/>
+      <module name="sap/ui/comp/odata/MetadataAnalyser.js"/>
+      <module name="sap/ui/comp/odata/ODataType.js"/>
+      <module name="sap/ui/comp/providers/ControlProvider.js"/>
+      <module name="sap/ui/core/format/DateFormat.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/providers/ControlProvider.js" size="36519" compressedSize="17789">
+    <description>-------------------------------------------------------------------------------</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/CheckBox.js"/>
+      <module name="sap/m/ComboBox.js"/>
+      <module name="sap/m/DatePicker.js"/>
+      <module name="sap/m/HBox.js"/>
+      <module name="sap/m/Image.js"/>
+      <module name="sap/m/Input.js"/>
+      <module name="sap/m/Link.js"/>
+      <module name="sap/m/ObjectIdentifier.js"/>
+      <module name="sap/m/ObjectStatus.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/TimePicker.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/ui/comp/navpopover/SemanticObjectController.js"/>
+      <module name="sap/ui/comp/navpopover/SmartLink.js"/>
+      <module name="sap/ui/comp/odata/CriticalityMetadata.js"/>
+      <module name="sap/ui/comp/odata/MetadataAnalyser.js"/>
+      <module name="sap/ui/comp/odata/ODataType.js"/>
+      <module name="sap/ui/comp/smartfield/ODataHelper.js"/>
+      <module name="sap/ui/comp/smartfield/SmartField.js"/>
+      <module name="sap/ui/comp/util/FormatUtil.js"/>
+      <module name="sap/ui/comp/util/MultiCurrencyUtil.js" conditional="true"/>
+      <module name="sap/ui/core/Control.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/providers/TableProvider.js" size="19806" compressedSize="8986">
+    <description>-----------------------------------------------------------------------------</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/comp/odata/MetadataAnalyser.js"/>
+      <module name="sap/ui/comp/providers/ControlProvider.js"/>
+      <module name="sap/ui/comp/util/FormatUtil.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/providers/TokenParser.js" size="13055" compressedSize="6163">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/providers/ValueHelp.designtime.js" size="9468" compressedSize="1243">
+    <description>Provides the Design Time Metadata for the sap.ui.comp.provider.ValueHelpProvider</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/providers/ValueHelpProvider.js" size="20238" compressedSize="11564">
+    <description>-----------------------------------------------------------------------------</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/List.js"/>
+      <module name="sap/m/PlacementType.js"/>
+      <module name="sap/m/ResponsivePopover.js"/>
+      <module name="sap/m/StandardListItem.js"/>
+      <module name="sap/ui/comp/providers/BaseValueListProvider.js"/>
+      <module name="sap/ui/comp/util/FormatUtil.js"/>
+      <module name="sap/ui/comp/valuehelpdialog/ValueHelpDialog.js" conditional="true"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/providers/ValueListProvider.js" size="18093" compressedSize="8695">
+    <description>-----------------------------------------------------------------------------</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Column.js"/>
+      <module name="sap/m/ColumnListItem.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/Token.js"/>
+      <module name="sap/ui/comp/providers/BaseValueListProvider.js"/>
+      <module name="sap/ui/comp/util/FormatUtil.js"/>
+      <module name="sap/ui/core/Item.js"/>
+      <module name="sap/ui/model/Filter.js"/>
+      <module name="sap/ui/model/Sorter.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartchart/SmartChart.designtime.js" size="17575" compressedSize="2748">
+    <description>Provides the Design Time Metadata for the sap.ui.comp.smartchart.SmartChart control.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartchart/SmartChart.js" size="133830" compressedSize="60861">
+    <description>Provides control sap.ui.comp.smartchart.SmartChart.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/chart/Chart.js"/>
+      <module name="sap/chart/data/Dimension.js"/>
+      <module name="sap/chart/data/Measure.js"/>
+      <module name="sap/chart/library.js"/>
+      <module name="sap/m/Breadcrumbs.js" conditional="true"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/FlexItemData.js"/>
+      <module name="sap/m/Link.js" conditional="true"/>
+      <module name="sap/m/OverflowToolbar.js"/>
+      <module name="sap/m/OverflowToolbarButton.js"/>
+      <module name="sap/m/P13nFilterItem.js"/>
+      <module name="sap/m/SegmentedButton.js"/>
+      <module name="sap/m/SelectionDetails.js"/>
+      <module name="sap/m/SelectionDetailsItem.js"/>
+      <module name="sap/m/SelectionDetailsItemLine.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/Title.js"/>
+      <module name="sap/m/ToolbarDesign.js"/>
+      <module name="sap/m/ToolbarSeparator.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/m/VBoxRenderer.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/navpopover/NavigationPopoverHandler.js" conditional="true"/>
+      <module name="sap/ui/comp/odata/MetadataAnalyser.js"/>
+      <module name="sap/ui/comp/odata/ODataModelUtil.js"/>
+      <module name="sap/ui/comp/personalization/Controller.js" conditional="true"/>
+      <module name="sap/ui/comp/personalization/Util.js"/>
+      <module name="sap/ui/comp/providers/ChartProvider.js"/>
+      <module name="sap/ui/comp/smartfilterbar/FilterProvider.js"/>
+      <module name="sap/ui/comp/smartvariants/SmartVariantManagement.js"/>
+      <module name="sap/ui/comp/state/UIState.js"/>
+      <module name="sap/ui/comp/util/FormatUtil.js" conditional="true"/>
+      <module name="sap/ui/comp/util/FullScreenUtil.js" conditional="true"/>
+      <module name="sap/ui/core/Item.js"/>
+      <module name="sap/ui/model/Filter.js"/>
+      <module name="sap/ui/model/FilterOperator.js"/>
+      <module name="sap/viz/ui5/controls/Popover.js" conditional="true"/>
+      <module name="sap/viz/ui5/controls/VizTooltip.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartfield/AnnotationHelper.js" size="12331" compressedSize="3935">
+    <description>Utility to access annotations for SmartField control. OData V2 annotations are supported and vocabulary-based OData V4 annotations, which are used as fall-back. For &lt;code&gt;sap:updatable-path&lt;/code&gt; currently no OData V4 annotation is considered, because it is replaced by the instance annotation &lt;code&gt;com.sap.vocabularies.Common.v1.Updatable&lt;/code&gt;, which is meaningless in a context of OData V2 with additional OData V4 annotations. An additional exception is &lt;code&gt;sap:visible&lt;/code&gt;, as there is no replacement available. Additionally please note that &lt;code&gt;sap:display-format&lt;/code&gt; with value &lt;code&gt;Date&lt;/code&gt; is not considered here, as it is replaced by the new primitive type &lt;code&gt;Edm.Date&lt;/code&gt; from V4 onwards. And &lt;code&gt;sap:semantics&lt;/code&gt; with value &lt;code&gt;fixed-values&lt;/code&gt; on entity set is not considered here. It addresses value help use cases, especially the entity set used for value help.  @name sap.ui.comp.smartfield.AnnotationHelper @author SAP SE @version 1.50.6 @private @since 1.29.0 @return {sap.ui.comp.smartfield.AnnotationHelper} the annotation access class.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartfield/BindingUtil.js" size="6694" compressedSize="1940">
+    <description>Utility to access control binding for &lt;code&gt;SmartField&lt;/code&gt; control.  @name sap.ui.comp.smartfield.BindingUtil @author SAP SE @version 1.50.6 @private @since 1.28.0 @returns {sap.ui.comp.smartfield.BindingUtil} The binding access class.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/BindingParser.js"/>
+      <module name="sap/ui/model/odata/AnnotationHelper.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartfield/Configuration.js" size="2335" compressedSize="614">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/core/Element.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartfield/ControlFactoryBase.js" size="16165" compressedSize="6224">
+    <description>Base class for factory implementations that create controls that are hosted by &lt;code&gt;sap.ui.comp.smartfield.SmartField&lt;/code&gt;.  @name sap.ui.comp.smartfield.ControlFactoryBase @author SAP SE @version 1.50.6 @private @since 1.28.0</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/HBox.js"/>
+      <module name="sap/ui/base/Object.js"/>
+      <module name="sap/ui/comp/providers/ValueHelpProvider.js"/>
+      <module name="sap/ui/comp/providers/ValueListProvider.js"/>
+      <module name="sap/ui/comp/smartfield/BindingUtil.js"/>
+      <module name="sap/ui/comp/util/FormatUtil.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartfield/ControlProposal.js" size="1762" compressedSize="568">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/core/Element.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartfield/FieldControl.js" size="24579" compressedSize="9413">
+    <description>Field Control Implementation for &lt;code&gt;SmartField&lt;/code&gt; Control. The implementation operates on OData meta data.  @name sap.ui.comp.smartfield.FieldControl @author SAP SE @version 1.50.6 @private @since 1.28.0 @returns {sap.ui.comp.smartfield.FieldControl} the field control class.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/comp/smartfield/BindingUtil.js"/>
+      <module name="sap/ui/model/ParseException.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartfield/JSONControlFactory.js" size="6804" compressedSize="2780">
+    <description>Factory class to create controls that are hosted by &lt;code&gt;sap.ui.comp.smartfield.SmartField&lt;/code&gt;.  @name sap.ui.comp.smartfield.JSONControlFactory @author SAP SE @version 1.50.6 @private @since 1.28.0 @returns {sap.ui.comp.smartfield.JSONControlFactory} new control factory instance.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/CheckBox.js"/>
+      <module name="sap/m/ComboBox.js"/>
+      <module name="sap/m/DatePicker.js"/>
+      <module name="sap/m/Input.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/ui/comp/smartfield/ControlFactoryBase.js"/>
+      <module name="sap/ui/comp/smartfield/JSONTypes.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartfield/JSONTypes.js" size="1590" compressedSize="582">
+    <description>Utility class to access data types, if the SmartField uses a JSON model.  @name sap.ui.comp.smartfield.JSONTypes @author SAP SE @version 1.50.6 @private @since 1.28.0 @returns {sap.ui.comp.smartfield.JSONTypes} the new instance.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/model/type/Boolean.js"/>
+      <module name="sap/ui/model/type/Date.js"/>
+      <module name="sap/ui/model/type/Float.js"/>
+      <module name="sap/ui/model/type/Integer.js"/>
+      <module name="sap/ui/model/type/String.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartfield/ODataControlFactory.js" size="71809" compressedSize="35761">
+    <description>Factory class to create controls that are hosted by &lt;code&gt;sap.ui.comp.smartfield.SmartField&lt;/code&gt;.  @name sap.ui.comp.smartfield.ODataControlFactory @author SAP SE @version 1.50.6 @private @since 1.28.0 @return {sap.ui.comp.smartfield.ODataControlFactory} new control factory instance.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/CheckBox.js"/>
+      <module name="sap/m/ComboBox.js"/>
+      <module name="sap/m/DatePicker.js"/>
+      <module name="sap/m/DateTimePicker.js"/>
+      <module name="sap/m/FlexItemData.js"/>
+      <module name="sap/m/FlexJustifyContent.js"/>
+      <module name="sap/m/HBox.js"/>
+      <module name="sap/m/Input.js"/>
+      <module name="sap/m/InputType.js"/>
+      <module name="sap/m/Link.js"/>
+      <module name="sap/m/ObjectIdentifier.js"/>
+      <module name="sap/m/ObjectNumber.js"/>
+      <module name="sap/m/ObjectStatus.js"/>
+      <module name="sap/m/Select.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/TextArea.js"/>
+      <module name="sap/m/TimePicker.js"/>
+      <module name="sap/ui/comp/navpopover/SemanticObjectController.js"/>
+      <module name="sap/ui/comp/navpopover/SmartLink.js"/>
+      <module name="sap/ui/comp/odata/MetadataAnalyser.js"/>
+      <module name="sap/ui/comp/smartfield/ControlFactoryBase.js"/>
+      <module name="sap/ui/comp/smartfield/FieldControl.js"/>
+      <module name="sap/ui/comp/smartfield/ODataControlSelector.js"/>
+      <module name="sap/ui/comp/smartfield/ODataHelper.js"/>
+      <module name="sap/ui/comp/smartfield/ODataTypes.js"/>
+      <module name="sap/ui/comp/util/FormatUtil.js"/>
+      <module name="sap/ui/core/InvisibleText.js" conditional="true"/>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="sap/ui/core/TextAlign.js"/>
+      <module name="sap/ui/core/ValueState.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartfield/ODataControlSelector.js" size="12187" compressedSize="5014">
+    <description>Selector for controls that are hosted by &lt;code&gt;sap.ui.comp.smartfield.SmartField&lt;/code&gt;.  @private @name sap.ui.comp.smartfield.ODataControlSelector @author SAP SE @version 1.50.6 @since 1.28.0 @param {jQuery} jQuery a reference to the jQuery implementation. @returns {sap.ui.comp.smartfield.ODataControlSelector} new control selector instance.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartfield/ODataHelper.js" size="24987" compressedSize="6821">
+    <description>Utility class to access OData Meta Data.  @name sap.ui.comp.smartfield.ODataHelper @author SAP SE @version 1.50.6 @private @since 1.28.0 @returns {sap.ui.comp.smartfield.ODataHelper} the new instance.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/comp/odata/MetadataAnalyser.js"/>
+      <module name="sap/ui/comp/smartfield/AnnotationHelper.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartfield/ODataTypes.js" size="11816" compressedSize="4155">
+    <description>Utility class to access OData Types. The implementation operates on OData meta data, so an instance of &lt;code&gt;sap.ui.model.odata.ODataModel&lt;/code&gt;.  @private @name sap.ui.comp.smartfield.ODataTypes @author SAP SE @version 1.50.6 @since 1.28.0</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/comp/odata/MetadataAnalyser.js"/>
+      <module name="sap/ui/comp/smartfield/type/AbapBool.js"/>
+      <module name="sap/ui/comp/smartfield/type/DateTime.js"/>
+      <module name="sap/ui/comp/smartfield/type/DateTimeOffset.js"/>
+      <module name="sap/ui/comp/smartfield/type/Decimal.js"/>
+      <module name="sap/ui/comp/smartfield/type/Int16.js"/>
+      <module name="sap/ui/comp/smartfield/type/Int32.js"/>
+      <module name="sap/ui/comp/smartfield/type/Int64.js"/>
+      <module name="sap/ui/comp/smartfield/type/SByte.js"/>
+      <module name="sap/ui/comp/smartfield/type/String.js"/>
+      <module name="sap/ui/comp/smartfield/type/Time.js"/>
+      <module name="sap/ui/core/format/NumberFormat.js"/>
+      <module name="sap/ui/model/odata/type/Boolean.js"/>
+      <module name="sap/ui/model/odata/type/Guid.js"/>
+      <module name="sap/ui/model/type/Currency.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartfield/ObjectStatus.js" size="1589" compressedSize="576">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/core/Element.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartfield/SideEffectUtil.js" size="7009" compressedSize="2217">
+    <description>SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/comp/odata/SideEffects.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartfield/SmartField.designtime.js" size="36028" compressedSize="6740">
+    <description>Provides the Design Time Metadata for the sap.ui.comp.smartfield.SmartField control.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/Utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartfield/SmartField.js" size="60091" compressedSize="21229">
+    <description>Provides control sap.ui.comp.smartfield.SmartField.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/smartfield/BindingUtil.js"/>
+      <module name="sap/ui/comp/smartfield/JSONControlFactory.js"/>
+      <module name="sap/ui/comp/smartfield/ODataControlFactory.js"/>
+      <module name="sap/ui/comp/smartfield/ODataHelper.js"/>
+      <module name="sap/ui/comp/smartfield/SideEffectUtil.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/ValueState.js"/>
+      <module name="sap/ui/model/ParseException.js"/>
+      <module name="sap/ui/model/ValidateException.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartfield/SmartLabel.js" size="10429" compressedSize="5168">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/LabelRenderer.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/smartfield/AnnotationHelper.js"/>
+      <module name="sap/ui/comp/smartfield/BindingUtil.js"/>
+      <module name="sap/ui/comp/smartfield/SmartField.js"/>
+      <module name="sap/ui/core/Control.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartfield/flexibility/SmartField.flexibility.js" size="2258" compressedSize="1013">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/changeHandler/ChangeHandlerMediator.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartfield/type/AbapBool.js" size="2727" compressedSize="905">
+    <description>SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/model/FormatException.js"/>
+      <module name="sap/ui/model/ParseException.js"/>
+      <module name="sap/ui/model/SimpleType.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartfield/type/DateTime.js" size="1832" compressedSize="528">
+    <description>Date Time data type that supports field-control.  @name sap.ui.comp.smartfield.type.DateTime @author SAP SE @version 1.50.6 @private @since 1.28.0 @extends sap.ui.model.odata.type.DateTime @returns {sap.ui.comp.smartfield.type.DateTime} the date time implementation.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/model/odata/type/DateTime.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartfield/type/DateTimeOffset.js" size="1905" compressedSize="546">
+    <description>Date Time Offset data type that supports field-control.  @name sap.ui.comp.smartfield.type.DateTimeOffset @author SAP SE @version 1.50.6 @private @since 1.28.0 @extends sap.ui.model.odata.type.DateTimeOffset @returns {sap.ui.comp.smartfield.type.DateTimeOffset} the date time implementation.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/model/odata/type/DateTimeOffset.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartfield/type/Decimal.js" size="1835" compressedSize="525">
+    <description>Decimal data type that supports field-control.  @name sap.ui.comp.smartfield.type.Decimal @author SAP SE @version 1.50.6 @private @since 1.28.0 @extends sap.ui.model.odata.type.Decimal @returns {sap.ui.comp.smartfield.type.Decimal} the decimal implementation.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/model/odata/type/Decimal.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartfield/type/Int16.js" size="1801" compressedSize="519">
+    <description>16 byte integer data type that supports field-control.  @name sap.ui.comp.smartfield.type.Int16 @author SAP SE @version 1.50.6 @private @since 1.28.0 @extends sap.ui.model.odata.type.Int16 @returns {sap.ui.comp.smartfield.type.Int16} the integer implementation.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/model/odata/type/Int16.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartfield/type/Int32.js" size="1801" compressedSize="519">
+    <description>32 byte integer data type that supports field-control.  @name sap.ui.comp.smartfield.type.Int32 @author SAP SE @version 1.50.6 @private @since 1.28.0 @extends sap.ui.model.odata.type.Int32 @returns {sap.ui.comp.smartfield.type.Int32} the integer implementation.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/model/odata/type/Int32.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartfield/type/Int64.js" size="1802" compressedSize="519">
+    <description>64 byte integer data type that supports field-control.  @name sap.ui.comp.smartfield.type.Int64. @author SAP SE @version 1.50.6 @private @since 1.31.0 @extends sap.ui.model.odata.type.Int64 @returns {sap.ui.comp.smartfield.type.Int64} the integer implementation.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/model/odata/type/Int64.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartfield/type/SByte.js" size="1794" compressedSize="519">
+    <description>SByte data type that supports field-control.  @name sap.ui.comp.smartfield.type.SByte @author SAP SE @version 1.50.6 @private @since 1.28.0 @extends sap.ui.model.odata.type.SByte @returns {sap.ui.comp.smartfield.type.SByte} the byte implementation.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/model/odata/type/SByte.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartfield/type/String.js" size="949" compressedSize="526">
+    <description>String data type that supports field-control.  @name sap.ui.comp.smartfield.type.String @author SAP SE @version 1.50.6 @private @since 1.28.0 @extends sap.ui.model.odata.type.String</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/model/odata/type/String.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartfield/type/Time.js" size="1746" compressedSize="520">
+    <description>Time data type that supports field-control.  @name sap.ui.comp.smartfield.type.Time @author SAP SE @version 1.50.6 @private @since 1.34.0 @extends sap.ui.model.odata.type.Time @returns {sap.ui.comp.smartfield.type.Time} the time implementation.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/model/odata/type/Time.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartfilterbar/AdditionalConfigurationHelper.js" size="4254" compressedSize="1946">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartfilterbar/ControlConfiguration.js" size="7315" compressedSize="2227">
+    <description>Provides control sap.ui.comp.smartfilterbar.ControlConfiguration.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/core/Element.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartfilterbar/FilterProvider.js" size="109413" compressedSize="44427" dynamicDependencies="true">
+    <description>-----------------------------------------------------------------------------</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/ComboBox.js"/>
+      <module name="sap/m/DatePicker.js"/>
+      <module name="sap/m/DateRangeSelection.js"/>
+      <module name="sap/m/Input.js"/>
+      <module name="sap/m/MultiComboBox.js"/>
+      <module name="sap/m/MultiInput.js"/>
+      <module name="sap/m/SearchField.js"/>
+      <module name="sap/m/Select.js"/>
+      <module name="sap/m/TimePicker.js"/>
+      <module name="sap/m/Token.js"/>
+      <module name="sap/ui/base/EventProvider.js"/>
+      <module name="sap/ui/comp/odata/MetadataAnalyser.js"/>
+      <module name="sap/ui/comp/odata/ODataType.js"/>
+      <module name="sap/ui/comp/providers/TokenParser.js"/>
+      <module name="sap/ui/comp/providers/ValueHelpProvider.js"/>
+      <module name="sap/ui/comp/providers/ValueListProvider.js"/>
+      <module name="sap/ui/comp/util/FormatUtil.js"/>
+      <module name="sap/ui/comp/util/IdentifierUtil.js"/>
+      <module name="sap/ui/core/Item.js"/>
+      <module name="sap/ui/core/format/DateFormat.js"/>
+      <module name="sap/ui/model/Filter.js"/>
+      <module name="sap/ui/model/analytics/odata4analytics.js" conditional="true"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartfilterbar/GroupConfiguration.js" size="2373" compressedSize="673">
+    <description>Provides control sap.ui.comp.smartfilterbar.GroupConfiguration.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/core/Element.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartfilterbar/SelectOption.js" size="2222" compressedSize="708">
+    <description>Provides control sap.ui.comp.smartfilterbar.SelectOption.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/model/FilterOperator.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartfilterbar/SmartFilterBar.designtime.js" size="25994" compressedSize="3952">
+    <description>Provides the Design Time Metadata for the sap.ui.comp.smartfilerbar.SmartFilterBar control.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartfilterbar/SmartFilterBar.js" size="66989" compressedSize="27065">
+    <description>Provides control sap.ui.comp.smartfilterbar.SmartFilterBar.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/DatePicker.js" conditional="true"/>
+      <module name="sap/m/MessageBox.js"/>
+      <module name="sap/ui/comp/filterbar/FilterBar.js"/>
+      <module name="sap/ui/comp/filterbar/FilterGroupItem.js"/>
+      <module name="sap/ui/comp/filterbar/FilterItem.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/odata/ODataModelUtil.js"/>
+      <module name="sap/ui/comp/smartfilterbar/AdditionalConfigurationHelper.js"/>
+      <module name="sap/ui/comp/smartfilterbar/ControlConfiguration.js"/>
+      <module name="sap/ui/comp/smartfilterbar/FilterProvider.js"/>
+      <module name="sap/ui/comp/smartfilterbar/GroupConfiguration.js"/>
+      <module name="sap/ui/comp/smartvariants/PersonalizableInfo.js"/>
+      <module name="sap/ui/comp/smartvariants/SmartVariantManagement.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartform/Group.designtime.js" size="2901" compressedSize="1570">
+    <description>Provides the Design Time Metadata for the sap.ui.comp.smartform.Group control</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/comp/smartform/GroupElement.designtime.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartform/Group.js" size="24149" compressedSize="8067">
+    <description>Provides control sap.ui.comp.smartform.Group.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/smartform/GroupElement.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/layout/ResponsiveFlowLayoutData.js"/>
+      <module name="sap/ui/layout/form/FormContainer.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartform/GroupElement.designtime.js" size="5407" compressedSize="2751">
+    <description>Provides the Design Time Metadata for the sap.ui.comp.smartform.GroupElement control</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/comp/smartform/SmartForm.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartform/GroupElement.js" size="48337" compressedSize="19626">
+    <description>Provides control sap.ui.comp.smartform.GroupElement.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/FlexItemData.js"/>
+      <module name="sap/m/HBox.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/smartfield/SmartField.js"/>
+      <module name="sap/ui/comp/smartfield/SmartLabel.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/core/VariantLayoutData.js"/>
+      <module name="sap/ui/layout/GridData.js"/>
+      <module name="sap/ui/layout/form/FormElement.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartform/Layout.js" size="6220" compressedSize="1863">
+    <description>Provides control sap.ui.comp.smartform.Layout.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/core/Element.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartform/SmartForm.designtime.js" size="1234" compressedSize="802">
+    <description>Provides the Design Time Metadata for the sap.ui.comp.smartform.Group control</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartform/SmartForm.js" size="46820" compressedSize="21012">
+    <description>Provides control sap.ui.comp.smartform.SmartForm.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/ButtonType.js"/>
+      <module name="sap/m/MessageBox.js"/>
+      <module name="sap/m/OverflowToolbar.js"/>
+      <module name="sap/m/Panel.js"/>
+      <module name="sap/m/Title.js"/>
+      <module name="sap/m/ToolbarSeparator.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/fl/Utils.js"/>
+      <module name="sap/ui/fl/registry/Settings.js"/>
+      <module name="sap/ui/layout/form/Form.js"/>
+      <module name="sap/ui/layout/form/ResponsiveGridLayout.js"/>
+      <module name="sap/ui/layout/form/ResponsiveLayout.js"/>
+      <module name="sap/ui/rta/RuntimeAuthoring.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartform/flexibility/changes/AddField.js" size="6733" compressedSize="2516">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/Utils.js"/>
+      <module name="sap/ui/fl/changeHandler/Base.js"/>
+      <module name="sap/ui/fl/changeHandler/JsControlTreeModifier.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartform/flexibility/changes/AddFields.js" size="6701" compressedSize="2607">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/Utils.js"/>
+      <module name="sap/ui/fl/changeHandler/Base.js"/>
+      <module name="sap/ui/fl/changeHandler/JsControlTreeModifier.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartform/flexibility/changes/AddGroup.js" size="4035" compressedSize="1487">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/Utils.js"/>
+      <module name="sap/ui/fl/changeHandler/Base.js"/>
+      <module name="sap/ui/fl/changeHandler/JsControlTreeModifier.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartform/flexibility/changes/CombineFields.js" size="5932" compressedSize="2094">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/Utils.js"/>
+      <module name="sap/ui/fl/changeHandler/Base.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartform/flexibility/changes/MoveFields.js" size="6476" compressedSize="2485">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/Utils.js"/>
+      <module name="sap/ui/fl/changeHandler/Base.js"/>
+      <module name="sap/ui/fl/changeHandler/JsControlTreeModifier.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartform/flexibility/changes/MoveGroups.js" size="5956" compressedSize="2335">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/Utils.js"/>
+      <module name="sap/ui/fl/changeHandler/Base.js"/>
+      <module name="sap/ui/fl/changeHandler/JsControlTreeModifier.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartform/flexibility/changes/RemoveField.js" size="1981" compressedSize="469">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/changeHandler/Base.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartform/flexibility/changes/RemoveGroup.js" size="2085" compressedSize="559">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/changeHandler/Base.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartform/flexibility/changes/RenameField.js" size="2706" compressedSize="904">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/Utils.js"/>
+      <module name="sap/ui/fl/changeHandler/BaseRename.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartform/flexibility/changes/RenameGroup.js" size="633" compressedSize="345">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/changeHandler/BaseRename.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartform/flexibility/changes/RenameTitle.js" size="631" compressedSize="345">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/changeHandler/BaseRename.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartform/flexibility/changes/SplitField.js" size="5651" compressedSize="2172">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/Utils.js"/>
+      <module name="sap/ui/fl/changeHandler/Base.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartform/flexibility/changes/UnhideControl.js" size="2446" compressedSize="580">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartlist/SmartList.js" size="26531" compressedSize="10169">
+    <description>Provides control sap.ui.comp.smartlist.SmartList.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/List.js"/>
+      <module name="sap/m/OverflowToolbar.js"/>
+      <module name="sap/m/OverflowToolbarButton.js"/>
+      <module name="sap/m/Title.js"/>
+      <module name="sap/m/ToolbarDesign.js"/>
+      <module name="sap/m/Tree.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/m/VBoxRenderer.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/odata/ODataModelUtil.js"/>
+      <module name="sap/ui/comp/util/FullScreenUtil.js" conditional="true"/>
+      <module name="sap/ui/core/format/NumberFormat.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartmicrochart/SmartAreaMicroChart.designtime.js" size="11687" compressedSize="2134">
+    <description>Provides the Design Time Metadata for the sap.ui.comp.smartmicrochart.SmartAreaMicroChart control.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartmicrochart/SmartAreaMicroChart.js" size="15111" compressedSize="5916">
+    <description>Provides control sap.ui.comp.smartmicrochart.SmartAreaMicroChart.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/ValueColor.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/smartmicrochart/SmartMicroChartCommons.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/format/DateFormat.js"/>
+      <module name="sap/ui/model/odata/CountMode.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartmicrochart/SmartAreaMicroChartRenderer.js" size="1005" compressedSize="374">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartmicrochart/SmartBulletMicroChart.designtime.js" size="11013" compressedSize="1751">
+    <description>Provides the Design Time Metadata for the sap.ui.comp.smartmicrochart.SmartBulletMicroChart control.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartmicrochart/SmartBulletMicroChart.js" size="13718" compressedSize="6334">
+    <description>Provides sap.ui.comp.smartmicrochart.SmartBulletMicroChart control</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/ValueColor.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/smartmicrochart/SmartMicroChartCommons.js"/>
+      <module name="sap/ui/core/Control.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartmicrochart/SmartBulletMicroChartRenderer.js" size="1018" compressedSize="376">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartmicrochart/SmartMicroChart.designtime.js" size="4225" compressedSize="768">
+    <description>Provides the Design Time Metadata for the sap.ui.comp.smartmicrochart.SmartMicroChart control.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartmicrochart/SmartMicroChart.js" size="13080" compressedSize="5869">
+    <description>Provides control sap.ui.comp.smartmicrochart.SmartAreaMicroChart.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/providers/ChartProvider.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/CustomData.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartmicrochart/SmartMicroChartCommons.js" size="32855" compressedSize="14380">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/ValueColor.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/providers/ChartProvider.js"/>
+      <module name="sap/ui/core/format/DateFormat.js"/>
+      <module name="sap/ui/core/format/NumberFormat.js"/>
+      <module name="sap/ui/model/type/Date.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartmicrochart/SmartMicroChartRenderer.js" size="994" compressedSize="376">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartmicrochart/SmartRadialMicroChart.designtime.js" size="10491" compressedSize="1819">
+    <description>Provides the Design Time Metadata for the sap.ui.comp.smartmicrochart.SmartRadialMicroChart control.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartmicrochart/SmartRadialMicroChart.js" size="8957" compressedSize="3374">
+    <description>Provides sap.ui.comp.smartmicrochart.SmartRadialMicroChart control</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/smartmicrochart/SmartMicroChartCommons.js"/>
+      <module name="sap/ui/core/Control.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartmicrochart/SmartRadialMicroChartRenderer.js" size="1018" compressedSize="376">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smarttable/SmartTable.designtime.js" size="29426" compressedSize="6136">
+    <description>Provides the Design Time Metadata for the sap.ui.comp.smarttable.SmartTable control.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smarttable/SmartTable.js" size="97666" compressedSize="42666">
+    <description>Provides control sap.ui.comp.smarttable.SmartTable.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Column.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/MessageBox.js"/>
+      <module name="sap/m/OverflowToolbar.js"/>
+      <module name="sap/m/OverflowToolbarButton.js"/>
+      <module name="sap/m/Table.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/Title.js"/>
+      <module name="sap/m/ToolbarDesign.js"/>
+      <module name="sap/m/ToolbarSeparator.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/m/VBoxRenderer.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/odata/ODataModelUtil.js"/>
+      <module name="sap/ui/comp/odata/ODataType.js"/>
+      <module name="sap/ui/comp/personalization/Controller.js" conditional="true"/>
+      <module name="sap/ui/comp/personalization/Util.js"/>
+      <module name="sap/ui/comp/providers/TableProvider.js"/>
+      <module name="sap/ui/comp/smartfilterbar/FilterProvider.js"/>
+      <module name="sap/ui/comp/smartvariants/SmartVariantManagement.js"/>
+      <module name="sap/ui/comp/util/FormatUtil.js"/>
+      <module name="sap/ui/comp/util/FullScreenUtil.js" conditional="true"/>
+      <module name="sap/ui/core/format/NumberFormat.js" conditional="true"/>
+      <module name="sap/ui/model/FilterOperator.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="sap/ui/table/AnalyticalColumn.js"/>
+      <module name="sap/ui/table/AnalyticalTable.js"/>
+      <module name="sap/ui/table/Column.js"/>
+      <module name="sap/ui/table/Table.js"/>
+      <module name="sap/ui/table/TreeTable.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartvariants/PersonalizableInfo.js" size="1830" compressedSize="581">
+    <description>Provides control sap.ui.comp.smartvariants.PersonalizableInfo.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/core/Element.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartvariants/SmartVariantManagement.designtime.js" size="400" compressedSize="241">
+    <description>Provides the Design Time Metadata for the sap.ui.comp.smartvariants.SmartVariantManagement control.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartvariants/SmartVariantManagement.js" size="53498" compressedSize="24098">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/smartvariants/PersonalizableInfo.js"/>
+      <module name="sap/ui/comp/variants/VariantItem.js"/>
+      <module name="sap/ui/comp/variants/VariantManagement.js"/>
+      <module name="sap/ui/fl/Change.js"/>
+      <module name="sap/ui/fl/Persistence.js"/>
+      <module name="sap/ui/fl/Utils.js"/>
+      <module name="sap/ui/fl/transport/TransportSelection.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartvariants/SmartVariantManagementUi2.js" size="19168" compressedSize="7827">
+    <description>Provides control sap.ui.comp.smartvariants.SmartVariantManagementUi2.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/smartvariants/PersonalizableInfo.js"/>
+      <module name="sap/ui/comp/variants/VariantItem.js"/>
+      <module name="sap/ui/comp/variants/VariantManagement.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartvariants/flexibility/changes/AddFavorite.js" size="2425" compressedSize="965">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/Utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/smartvariants/flexibility/changes/RemoveFavorite.js" size="2448" compressedSize="967">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/Utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/state/UIState.js" size="2401" compressedSize="382">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/transport/TransportDialog.js" size="866" compressedSize="263">
+    <description>Provides control sap.ui.comp.transport.TransportDialog.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/transport/TransportDialog.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/util/FormatUtil.js" size="12478" compressedSize="3864">
+    <description>--------------------------------------------------------------------------------</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/format/DateFormat.js" conditional="true"/>
+      <module name="sap/ui/core/format/NumberFormat.js"/>
+      <module name="sap/ui/model/FilterOperator.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/util/FullScreenUtil.js" size="5787" compressedSize="1552">
+    <description>------------------------------------------------------------------------------------------</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/ui/core/HTML.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/util/IdentifierUtil.js" size="1183" compressedSize="372">
+    <description>------------------------------------------------------------------------------------------</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/DataType.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/util/MultiCurrencyUtil.js" size="5575" compressedSize="2195">
+    <description>----------------------------------------------------------------</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/valuehelpdialog/ItemsCollection.js" size="3692" compressedSize="1125">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/comp/util/FormatUtil.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/valuehelpdialog/ValueHelpDialog.js" size="89555" compressedSize="47479">
+    <description>Provides control sap.ui.comp.valuehelpdialog.ValueHelpDialog.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/ButtonType.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/m/DialogRenderer.js"/>
+      <module name="sap/m/HBox.js"/>
+      <module name="sap/m/MessageBox.js"/>
+      <module name="sap/m/MultiInput.js"/>
+      <module name="sap/m/P13nConditionPanel.js" conditional="true"/>
+      <module name="sap/m/P13nFilterPanel.js" conditional="true"/>
+      <module name="sap/m/Token.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/util/FormatUtil.js"/>
+      <module name="sap/ui/comp/valuehelpdialog/ItemsCollection.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/format/DateFormat.js"/>
+      <module name="sap/ui/core/format/NumberFormat.js"/>
+      <module name="sap/ui/model/odata/type/Boolean.js" conditional="true"/>
+      <module name="sap/ui/table/Table.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/variants/EditableVariantItem.js" size="3246" compressedSize="1002">
+    <description>Provides control sap.ui.comp.variants.EditableVariantItem.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/ColumnListItem.js"/>
+      <module name="sap/m/ColumnListItemRenderer.js"/>
+      <module name="sap/ui/comp/library.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/variants/VariantItem.js" size="3138" compressedSize="956">
+    <description>Provides control sap.ui.comp.variants.VariantItem.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/core/Item.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/variants/VariantManagement.designtime.js" size="893" compressedSize="579">
+    <description>Provides the Design Time Metadata for the sap.ui.comp.variants.VariantManagement control.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/comp/variants/VariantManagement.js" size="88942" compressedSize="53816">
+    <description>Provides control sap.ui.comp.variants.VariantManagement.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/ActionSheet.js"/>
+      <module name="sap/m/Bar.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/ButtonType.js"/>
+      <module name="sap/m/CheckBox.js"/>
+      <module name="sap/m/Column.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/m/Input.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/ObjectIdentifier.js"/>
+      <module name="sap/m/Page.js"/>
+      <module name="sap/m/PlacementType.js"/>
+      <module name="sap/m/PopinDisplay.js"/>
+      <module name="sap/m/RadioButton.js"/>
+      <module name="sap/m/ResponsivePopover.js"/>
+      <module name="sap/m/ScreenSize.js"/>
+      <module name="sap/m/SearchField.js"/>
+      <module name="sap/m/SelectList.js"/>
+      <module name="sap/m/Table.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/Toolbar.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/variants/EditableVariantItem.js"/>
+      <module name="sap/ui/comp/variants/VariantItem.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/InvisibleText.js"/>
+      <module name="sap/ui/core/Item.js"/>
+      <module name="sap/ui/core/TextAlign.js"/>
+      <module name="sap/ui/core/ValueState.js"/>
+      <module name="sap/ui/core/VerticalAlign.js"/>
+      <module name="sap/ui/fl/transport/TransportSelection.js" conditional="true"/>
+      <module name="sap/ui/layout/Grid.js"/>
+      <module name="sap/ui/layout/HorizontalLayout.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+    </requires>
+  </module>
+</library>

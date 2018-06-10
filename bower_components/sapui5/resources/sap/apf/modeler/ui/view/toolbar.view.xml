@@ -1,0 +1,43 @@
+<mvc:View controllerName="sap.apf.modeler.ui.controller.toolbar"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout">
+	<Toolbar xmlns="sap.m" id="idTreeToolbar" visible="true" width="100%"
+		active="false" enabled="true" design="Auto">
+		<content>
+			<FlexBox alignItems="Start" width="100%">
+				<items>
+					<Button xmlns="sap.m" id="idAddButton" type="Default" width="100%"
+						tap="" press="_handlePressAddButton">
+						<layoutData>
+							<FlexItemData growFactor="1" />
+						</layoutData>
+					</Button>
+					<Button xmlns="sap.m" id="idCopyButton" enabled="false"
+						width="100%" type="Default" tap="" press="_handlePressCopyButton">
+						<layoutData>
+							<FlexItemData growFactor="1" />
+						</layoutData>
+					</Button>
+					<Button xmlns="sap.m" id="idDeleteButton" type="Default"
+						enabled="false" width="100%" tap="" press="_handlePressDeleteButton">
+						<layoutData>
+							<FlexItemData growFactor="1" />
+						</layoutData>
+					</Button>
+					<Button xmlns="sap.m" id="idMoveUp" type="Default" width="100%"
+						tap="" press="_handlePressMoveUpButton" icon="sap-icon://up">
+						<layoutData>
+							<FlexItemData growFactor="1" />
+						</layoutData>
+					</Button>
+					<Button xmlns="sap.m" id="idMoveDown" type="Default" width="100%"
+						tap="" press="_handlePressMoveDownButton" icon="sap-icon://down">
+						<layoutData>
+							<FlexItemData growFactor="1" />
+						</layoutData>
+					</Button>
+				</items>
+			</FlexBox>
+
+		</content>
+	</Toolbar>
+</mvc:View>
