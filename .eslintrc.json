@@ -19,7 +19,7 @@
         "strictEqual":true
     },
     "rules": {
-        "indent": ["error", 2],
+        "indent": ["error", 4],
         "comma-dangle": [
       2,
       "never"

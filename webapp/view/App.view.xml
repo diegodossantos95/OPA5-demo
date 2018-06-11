@@ -1,10 +1,10 @@
-<mvc:View
-		controllerName="com.sap.CloudSCAME.OPA5Demo.controller.App"
-		xmlns:mvc="sap.ui.core.mvc"
-		displayBlock="true"
-		xmlns="sap.m">
-		<App id="idAppControl">
-			<Page id="idPageControl" title="{i18n>appPageTitle}">
-  		</Page>
-		</App>
+<mvc:View controllerName="com.sap.CloudSCAME.OPA5Demo.controller.App"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc">
+	<App id="myApp">
+        <Page>
+            <Button id="pressMeButton" text="Press me" press="onPress" visible="false"/>
+        </Page>
+	</App>
 </mvc:View>
